@@ -88,6 +88,7 @@ const merge_object = (confirmed, deaths, recovered) => {
           if(key == time.date)
             time.deaths = parseInt(val)
         })
+        
       }
     })
   })
