@@ -11,6 +11,7 @@ export default class IndexPage extends React.Component{
 		super(props);
 		this.state = {
       countries: props.data.countries.nodes.slice(1),
+      countries_in_select_box: props.data.countries.nodes.slice(13),
       selected_country: 'New Zealand',
       numberFormat: new Intl.NumberFormat()
 		}
@@ -21,7 +22,7 @@ export default class IndexPage extends React.Component{
   }
   
   render(){
-    const {countries} = this.state
+    const {countries, countries_in_select_box} = this.state
     let active_country = countries.filter( (c) => c.country_name === this.state.selected_country )[0]
     
     
@@ -32,7 +33,7 @@ export default class IndexPage extends React.Component{
         active_country.highest = time
     })
 
-    const top_thirty = countries.slice(0, 30)
+    const top_thirty = countries.slice(0, 12)
     
     top_thirty.forEach( (country) => {
       let earliest = {}
@@ -72,9 +73,8 @@ export default class IndexPage extends React.Component{
                     <div className="control">
                       <div className="select is-large">
                         <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>>
-                          <option>Choose Your country</option> 
-                          {countries.map( ({country_name }) => (
-                            <option key={country_name} value={country_name}>{country_name}</option>
+                          {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
+                            <option key={country_name} value={country_name}>{country_name}:     {highest_confirmed}</option>
                           ))}
                         </select>
                       </div>
@@ -124,9 +124,9 @@ export default class IndexPage extends React.Component{
         
         <section className="section">
           <div className="container">
-            <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top 30 countries ranked by confirmed cases.</h3>
+            <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top 12 countries ranked by confirmed cases.</h3>
             <p style={{marginTop: 0, marginBottom: '20px'}}>Excluding China as early data only goes back to when they had 300 cases</p>
-            <h3 className="is-size-3 title">When did each country last have a case count similar to {this.state.selected_country}?</h3>
+            <h3 className="is-size-3 title">When did each country last reach a case count similar to {this.state.selected_country}?</h3>
             <div className="columns" style={{flexWrap: 'wrap'}}>
               { top_thirty.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
@@ -134,7 +134,7 @@ export default class IndexPage extends React.Component{
                     <div className="content" style={{position: 'relative'}}>
                     <p className="is-size-4" style={{marginBottom: 0}}>
                         <strong>
-                          {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
+                          {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/15/20', 'MM/dd/yy', new Date()) ) } ago
                         </strong>
                       </p>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
@@ -212,11 +212,12 @@ export default class IndexPage extends React.Component{
               <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">John Hopkins repo</a></p>
               <h3>Things Next on the list to do:</h3>
               <ul>
+                <li>Fix fatal bug related to incorrect times in time series data if the selected country is within the result set</li>
                 <li>Account for population</li>
                 <li>Make each tile clickable showing growth, and use this countries growth as a projection of the currently selected countries future</li>
               </ul>
-              <p>Code available at  <a hrefs="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener">Github</a>. 
-                Currently in developement by <a hrefs="https://carlaiau.com/">Carl Aiau</a></p>
+              <p>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener">Github</a>. 
+                Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a></p>
             </div>
         </section>
       </React.Fragment>
