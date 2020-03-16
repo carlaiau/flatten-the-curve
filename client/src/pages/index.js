@@ -71,7 +71,7 @@ export default class IndexPage extends React.Component{
                   <h2 className="subtitle">A unique way of showing the importance of early protective measures</h2>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
-                      <div className="select is-large">
+                      <div className="select">
                         <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>>
                           {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
                             <option key={country_name} value={country_name}>{country_name}:     {highest_confirmed}</option>
@@ -80,7 +80,7 @@ export default class IndexPage extends React.Component{
                       </div>
                     </div>
                     <div className="control">
-                      <button className="button is-large is-success">Go</button>
+                      <button className="button is-success">Go</button>
                     </div>
                   </div>
                   <p className="is-size-6">Work in Progress. 
