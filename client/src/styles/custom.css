@@ -1,0 +1,21 @@
+.hero table td{
+    border: none;
+    color: #fff;
+    font-weight: 500;
+}
+.hero a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+.box table{
+    background: none;
+    color: #fff;
+}
+.box table strong{
+    color: #fff;
+}
+.box table td{
+    border: none;
+}
