@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component{
 		super(props);
 		this.state = {
       countries: props.data.countries.nodes,
-      countries_in_select_box: props.data.countries.nodes.slice(1),
+      countries_in_select_box: props.data.select_countries.nodes.filter( (c) => c.country_name !== 'China'),
       selected_country: 'New Zealand',
       numberFormat: new Intl.NumberFormat()
 		}
@@ -70,7 +70,7 @@ export default class IndexPage extends React.Component{
                   <h1 className="title">
                     COVID-19: Flatten The Curve
                   </h1>
-                  <h2 className="subtitle">A unique way of showing the importance of early protective measures</h2>
+                  <h2 className="subtitle is-size-5">A unique way of showing the importance of early protective measures</h2>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
                       <div className="select">
@@ -85,10 +85,15 @@ export default class IndexPage extends React.Component{
                       <button className="button is-success">Go</button>
                     </div>
                   </div>
-                  <p className="is-size-6">Work in Progress. 
-                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
-                    Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins</a>
+                  <p className="is-size-7" style={{marginBottom: '10px'}}>
+                    <strong style={{color: '#fff'}}>If your country is not show</strong>: we are filtering for populations over 3 million and at least 3 confirmed cases.
                   </p>
+                  <p className="is-size-5">Work in Progress. 
+                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                    Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins</a>.
+                  </p>
+                  
+                  
                   <p className="is-size-6">Data last updated: <strong style={{color: 'white'}}>8:58am March 17, 2020 NZT</strong> </p>
                 </div>
                 <div className="column">
@@ -252,5 +257,12 @@ export const query = graphql`
         highest_confirmed
       }
     }
+    select_countries: allOutputJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 3}, population: {gte: 3000000}}) {
+      nodes {
+        country_name
+        highest_confirmed
+      }
+    }
   }
+  
 `
