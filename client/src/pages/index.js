@@ -10,7 +10,7 @@ export default class IndexPage extends React.Component{
   constructor(props){
 		super(props);
 		this.state = {
-      countries: props.data.countries.nodes.slice(1),
+      countries: props.data.countries.nodes,
       countries_in_select_box: props.data.countries.nodes.slice(1),
       selected_country: 'New Zealand',
       numberFormat: new Intl.NumberFormat()
@@ -129,7 +129,6 @@ export default class IndexPage extends React.Component{
         <section className="section">
           <div className="container">
             <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top {top_thirty.length} countr{top_thirty.length == 1? 'y': 'ies'} with a higher confirmed case count.</h3>
-            <p style={{marginTop: 0, marginBottom: '20px'}}>Excluding China as early data only goes back to when they had 300 cases</p>
             <h3 className="is-size-3 title">When did each country last reach a case count similar to {this.state.selected_country}?</h3>
             <div className="columns" style={{flexWrap: 'wrap'}}>
               { top_thirty.map( (country) => (
