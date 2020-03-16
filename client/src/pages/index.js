@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component{
 		super(props);
 		this.state = {
       countries: props.data.countries.nodes.slice(1),
-      countries_in_select_box: props.data.countries.nodes.slice(13),
+      countries_in_select_box: props.data.countries.nodes.slice(1),
       selected_country: 'New Zealand',
       numberFormat: new Intl.NumberFormat()
 		}
@@ -33,7 +33,9 @@ export default class IndexPage extends React.Component{
         active_country.highest = time
     })
 
-    const top_thirty = countries.slice(0, 12)
+    const top_thirty = countries.filter(
+      country => country.highest_confirmed > active_country.highest_confirmed
+    ).slice(0, 30)
     
     top_thirty.forEach( (country) => {
       let earliest = {}
@@ -126,7 +128,7 @@ export default class IndexPage extends React.Component{
         
         <section className="section">
           <div className="container">
-            <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top 12 countries ranked by confirmed cases.</h3>
+            <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top {top_thirty.length} countr{top_thirty.length == 1? 'y': 'ies'} with a higher confirmed case count.</h3>
             <p style={{marginTop: 0, marginBottom: '20px'}}>Excluding China as early data only goes back to when they had 300 cases</p>
             <h3 className="is-size-3 title">When did each country last reach a case count similar to {this.state.selected_country}?</h3>
             <div className="columns" style={{flexWrap: 'wrap'}}>
@@ -218,8 +220,8 @@ export default class IndexPage extends React.Component{
               <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">John Hopkins repo</a></p>
               <h3>Things Next on the list to do:</h3>
               <ul>
-                <li>Fix fatal bug related to incorrect times in time series data if the selected country is within the result set</li>
-                <li>Account for population</li>
+                <li>Allow for ranking by deaths as well as confirmed</li>
+                <li>Allow for ranking on per mil, as well as absolute</li>
                 <li>Make each tile clickable showing growth, and use this countries growth as a projection of the currently selected countries future</li>
               </ul>
               <p>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener">Github</a>. 
