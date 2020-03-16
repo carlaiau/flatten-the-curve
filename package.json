@@ -1,0 +1,16 @@
+{
+  "name": "ftc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "play.js",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
