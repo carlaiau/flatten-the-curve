@@ -16,6 +16,20 @@
 .box table strong{
     color: #fff;
 }
-.box table td{
+.box table.is-narrow td, .box table.is-narrow  th,
+.hero table td, .hero table  th{
+    color: #fff;
     border: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+.box table.is-narrow thead td,
+.hero .table thead td{
+    color: #000;
+}
+.box table.is-narrow td{
+    text-align: right;
+}
+.hero table tbody td{
+    color: #fff;
 }

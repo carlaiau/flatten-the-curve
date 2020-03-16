@@ -87,32 +87,34 @@ export default class IndexPage extends React.Component{
                     Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener">Flattenthecurve.com</a>. 
                     Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">John Hopkins</a>
                   </p>
+                  <p className="is-size-6">Data last updated: <strong style={{color: 'white'}}>8:17am March 17, 2020 NZT</strong> </p>
                 </div>
                 <div className="column">
-                  <h3 className="is-size-3 title">{this.state.selected_country}'s Current state</h3>  
-                  <table className="table is-borderless is-size-5" style={{border: 'none', background: 'none'}}>
-                    
+                  <h3 className="is-size-4 title">{this.state.selected_country}'s Current State Today</h3>  
+                  <table className="table is-borderless is-size-6" style={{border: 'none', background: 'none'}}>
+                    <thead>
+                      <tr>
+                        <td></td>
+                        <td>Total</td>
+                        <td>Per Million</td>
+                      </tr>
+                    </thead>
                     <tbody>
-                      
                       <tr>
-                        <td>
-                          <strong>{this.tidyFormat(active_country.highest.confirmed)}</strong>
+                        <td>Confirmed</td>
+                        <td>{this.tidyFormat(active_country.highest.confirmed)}</td>
+                        <td>{active_country.highest.confirmed_per_mil.toFixed(2)}
                         </td>
-                        <td>
-                          Confirmed Cases
-                        </td>
-                        </tr>
+                      </tr>
                       <tr>
-                        <td>
-                          <strong>{this.tidyFormat(active_country.highest.deaths)}</strong>
-                        </td>
-                        <td>Deaths</td>
-                        </tr>
+                      <td>Deaths</td>
+                        <td>{this.tidyFormat(active_country.highest.deaths)}</td>
+                        <td>{active_country.highest.deaths_per_mil ? active_country.highest.deaths_per_mil.toFixed(2): ''}</td>
+                      </tr>
                       <tr>
-                        <td>
-                          <strong>{this.tidyFormat(active_country.highest.recovered)}</strong>
-                        </td>
-                        <td>Recoveries</td>
+                        <td>Recovered</td>
+                        <td>{this.tidyFormat(active_country.highest.recovered)}</td>
+                        <td>{active_country.highest.recovered_per_mil ? active_country.highest.recovered_per_mil.toFixed(2): ''}</td>
                       </tr>
                     </tbody>
                     </table>
@@ -139,66 +141,70 @@ export default class IndexPage extends React.Component{
                       </p>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
                       
-                      <div className="columns">
-                        <div className="column">
-                          <p className="is-size-4 ">
+                      <table className="table is-narrow ">
+                      <thead>
+                        <tr>
+                          <th colspan="3" className="is-size-4">
                             {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
-                          </p>
-                          <table className="table is-narrow ">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.earliest.confirmed)}</strong>
-                                </td>
-                                <td>
-                                  Confirmed
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.earliest.deaths)}</strong>
-                                </td>
-                                <td>Deaths</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.earliest.recovered)}</strong>
-                                </td>
-                                <td>Recoveries</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div className="column">
-                          <p className="is-size-4"><strong></strong>Today</p>
-                          <table className="table is-narrow is-borderless">
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.highest.confirmed)}</strong>
-                                </td>
-                                <td>
-                                  Confirmed
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.highest.deaths)}</strong>
-                                </td>
-                                <td>Deaths</td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <strong>{this.tidyFormat(country.highest.recovered)}</strong>
-                                </td>
-                                <td>Recoveries</td>
-                              </tr>
-                            </tbody>
-                            </table>
-                        </div>
-                      </div>
+                          </th>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>Total</td>
+                          <td>Per Million</td>
+                        </tr>
+                      </thead>
+                        <tbody>
+                          <tr>
+                            <th>Confirmed</th>
+                            <td>{this.tidyFormat(country.earliest.confirmed)}</td>
+                            <td>{country.earliest.confirmed_per_mil ? country.earliest.confirmed_per_mil.toFixed(2): ''}</td>
+                            
+                          </tr>
+                          <tr>
+                            <th>Deaths</th>
+                            <td>{this.tidyFormat(country.earliest.deaths)}</td>
+                            <td>{country.earliest.deaths_per_mil ? country.earliest.deaths_per_mil.toFixed(2): ''}</td>
+                          </tr>
+                          <tr>
+                            <th>Recovered</th>
+                            <td>{this.tidyFormat(country.earliest.recovered)}</td>
+                            <td>{country.earliest.recovered_per_mil ? country.earliest.recovered_per_mil.toFixed(2): ''}</td>
+                            
+                          </tr>
+                        </tbody>
+                      </table>
+                        
                       
-                      
+                      <table className="table is-narrow is-borderless">
+                        <thead>
+                          <tr>
+                            <th colspan="3" className="is-size-4">Today</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td>Total</td>
+                            <td>Per Million</td>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th>Confirmed</th>
+                            <td>{this.tidyFormat(country.highest.confirmed)}</td>
+                            <td>{country.highest.confirmed_per_mil ? country.highest.confirmed_per_mil.toFixed(2): ''}</td>
+                          </tr>
+                          <tr>
+                            <th>Deaths</th>
+                            <td>{this.tidyFormat(country.highest.deaths)}</td>
+                            <td>{country.highest.deaths_per_mil ? country.highest.deaths_per_mil.toFixed(2): ''}</td>
+                          </tr>
+                          <tr>
+                            <th>Recovered</th>
+                            <td>{this.tidyFormat(country.highest.recovered)}</td>
+                            <td>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>
+                          </tr>
+                        </tbody>
+                        </table>
                     </div>
                   </div>
                 </div>
