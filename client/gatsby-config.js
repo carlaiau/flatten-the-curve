@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Flatten the Curve`,
-    description: `COVID-19: A different way of showing the importance of early social distancing .`,
+    description: `COVID-19: A unique way of showing the importance of early protective measures.`,
     author: `@carlaiau`,
   },
   plugins: [
