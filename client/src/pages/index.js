@@ -86,10 +86,10 @@ export default class IndexPage extends React.Component{
                     </div>
                   </div>
                   <p className="is-size-6">Work in Progress. 
-                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener">Flattenthecurve.com</a>. 
-                    Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">John Hopkins</a>
+                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                    Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins</a>
                   </p>
-                  <p className="is-size-6">Data last updated: <strong style={{color: 'white'}}>8:17am March 17, 2020 NZT</strong> </p>
+                  <p className="is-size-6">Data last updated: <strong style={{color: 'white'}}>8:58am March 17, 2020 NZT</strong> </p>
                 </div>
                 <div className="column">
                   <h3 className="is-size-4 title">{this.state.selected_country}'s Current State Today</h3>  
@@ -216,14 +216,14 @@ export default class IndexPage extends React.Component{
         <section className="section  has-background-light footer">
             <div className="container">
               <h2 className="is-size-3">This is a prototype / work in progress</h2>
-              <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">John Hopkins repo</a></p>
+              <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
               <h3>Things Next on the list to do:</h3>
               <ul>
                 <li>Allow for ranking by deaths as well as confirmed</li>
                 <li>Allow for ranking on per mil, as well as absolute</li>
                 <li>Make each tile clickable showing growth, and use this countries growth as a projection of the currently selected countries future</li>
               </ul>
-              <p>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener">Github</a>. 
+              <p>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. 
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a></p>
             </div>
         </section>
