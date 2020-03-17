@@ -17,11 +17,11 @@ export default class IndexPage extends React.Component{
       field: 'confirmed',
       per: 'total',
       limit: 60,
-		}
       modalOpen: false,
       active_country: null,
       comparable_country: null,
     }
+  }
 
   tidyFormat(numberString){
     return this.state.numberFormat.format(numberString)
@@ -30,11 +30,11 @@ export default class IndexPage extends React.Component{
   render(){
     const {selected_country, countries_in_select_box, countries, field, per, limit} = this.state
 
-    let full_field_name = field == 'confirmed' ? 
-      (per == 'total' ? 'confirmed' : 'confirmed_per_mil') :
-      (per == 'total') ? 'deaths' : 'deaths_per_mil'
+    let full_field_name = field === 'confirmed' ? 
+      (per === 'total' ? 'confirmed' : 'confirmed_per_mil') :
+      (per === 'total') ? 'deaths' : 'deaths_per_mil'
 
-    let active_country = countries.filter( (c) => c.country_name === this.state.selected_country )[0]
+    let active_country = countries.filter( (c) => c.country_name ===  this.state.selected_country )[0]
     
     active_country.time_series.forEach( (time) => {
       if(active_country.highest && time[full_field_name] > active_country.highest[full_field_name])
@@ -72,47 +72,161 @@ export default class IndexPage extends React.Component{
 
 
     // Then choose top
-    top_countries = countries.filter(
+    const top = countries.filter(
       c => c.highest[full_field_name] > active_country.highest[full_field_name]
-    ).slice(0, this.state.limit)
+    ).slice(0, limit)
     
     
     const Modal = () => {
       if(this.state.modalOpen){
+
+        // Remember you can do some logic up here
+        const time_series = this.state.comparable_country.time_series.filter( time => time.confirmed_per_mil > active_country.highest.confirmed_per_mil )
+
+        const deltas = [] 
+        let previous_confirmed = 0
+        let previous_deaths = 0
+        
+        
+        time_series.forEach( (time, i) => {
+          if(i === 0){
+            previous_confirmed = time.confirmed_per_mil
+            previous_deaths = time.deaths_per_mil  
+          }
+          else{
+            deltas.push({
+              index: i,
+              confirmed: ( time.confirmed_per_mil - previous_confirmed ) / previous_confirmed,
+              deaths: ( time.deaths_per_mil - previous_deaths ) / previous_deaths,
+              death_ratio: time.deaths / time.confirmed
+            })
+            previous_confirmed = time.confirmed_per_mil
+            previous_deaths = time.deaths_per_mil
+          }
+        })
+
+
+        const forecast = [
+          {
+            day: 0,
+            confirmed: active_country.highest.confirmed,
+            deaths: active_country.highest.deaths
+          }
+        ]
+
+        deltas.forEach( (delta, day) => {
+          if(day === 0){
+            previous_confirmed = forecast[0].confirmed
+            previous_deaths = forecast[0].deaths
+          }
+          else{
+            const confirmed = previous_confirmed * (1 + delta.confirmed)
+            let deaths = 0
+            if(! previous_deaths){ // If death doesn't exist yet, trigger at this point
+              const projected_deaths = delta.death_ratio * previous_confirmed
+              if(projected_deaths > 0) 
+                deaths = projected_deaths
+            }
+            else 
+              deaths = previous_deaths * (1 + delta.deaths)
+            
+            forecast.push({day, confirmed: confirmed.toFixed(0), deaths: deaths.toFixed(0) })
+            previous_confirmed = confirmed
+            previous_deaths = deaths
+            
+          }
+        })
+
+
+        
+
+        
+
+
+
+
+        
         return (
           <div className='modal is-active'>
-            <div className="modal-background"></div>
-            <div className="modal-card">
-              <header className="modal-card-head">
-                <p className="modal-card-title">{this.state.comparable_country.country_name}</p>
-                <button className="delete" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
+            <div className="modal-background" onClick={e => this.setState({modalOpen: false})}></div>
+            <div className="modal-card ">
+              <header className="modal-card-head has-background-danger">
+                <p className="modal-card-title is-size-4 "><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
+                <button className="delete has-background-dark" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
               </header>
-              <section className="modal-card-body">
-                <table>
+              <section className="modal-card-body has-background-light has-text-dark">
+                <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
+                <p className="is-size-6" style={{marginBottom: '10px'}}>Here is the forecased next {time_series.length - 2} days for {active_country.country_name}.</p>
+                <p className="is-size-7" style={{marginBottom: '10px'}}>*Description of forecast below table</p>
+                <table className="table is-fullwidth" style={{marginTop: '10px'}}>
                   <tbody>
                     <tr>
-                      <th>Date</th>
+                      <th>Days</th>
                       <th>Confirmed</th>
+                      <th>Deaths</th>
                     </tr>
-                    {this.state.comparable_country.time_series.map( time => {
-                      console.log(time)
-                      return (
-                        <tr>
-                          <td>
-
-                          </td>
-                          <td>
-
-                          </td>
+                    {
+                      forecast.map( (time, i) => (
+                        <tr key={i}>
+                          <td>{i}</td>
+                          <td>{this.tidyFormat(time.confirmed)}</td>
+                          <td>{time.deaths ? this.tidyFormat(time.deaths): 0}</td>
                         </tr>
-
                       )
-                    })}
+                    )}
+                  </tbody>
+                </table>
+                <p className="is-size-7" style={{marginBottom: '10px'}}>This is calculated using the daily growth of confirmed cases and deaths on a per million basis in {this.state.comparable_country.country_name} {}
+                since {this.state.comparable_country.country_name} reached the same confirmed case count as {active_country.country_name}.</p>
+                <p className="is-size-7" style={{marginBottom: '10px'}}>
+                  Using this strategy we can forecast the number of days that have passed since {active_country.country_name} surpassed {this.state.comparable_country.country_name} confirmed case count.
+                </p>
+                <p className="is-size-7" style={{marginBottom: '10px'}}>
+                  If {active_country.country_name} currently has 0 deaths, we use the {this.state.comparable_country.country_name} ratio of confirmed cases to deaths to forecast when {active_country.country_name} will encounter it's first death. 
+                  Once this forecasted death occurs the death rate grows based on the growth of {active_country.country_name} death rate itself.</p>
+                <p className="is-size-7" style={{marginBottom: '10px'}}>
+                  Our forecast relies on no modelling. If there are flaws in our logic with this naivie approach please reach out to us and tell us how we can ensure this is done correctly.
+                </p>
+                <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>Progression for {this.state.comparable_country.country_name}</h2>
+                <p className="is-size-6" style={{marginBottom: '10px'}}>Here is the previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
+                <table className="table  is-striped is-fullwidth">
+                  <thead> 
+                    <tr>
+                      <th></th>
+                      <th colSpan="2">Total</th>
+                      <th colSpan="2">Per Million</th>
+                      <th colSpan="2">Delta / Change</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Days Ago</td>
+                      <td>Confirmed</td>
+                      <td>Deaths</td>
+                      <td>Confirmed</td>
+                      <td>Deaths</td>
+                      <td>Confirmed</td>
+                      <td>Deaths</td>
+                    </tr>
+                    {
+                      
+                      time_series.map( (time, i) => (
+                        <tr key={i}>
+                          <td>{time_series.length - (i + 1) }</td>
+                          <td style={{textAlign: 'right'}}>{this.tidyFormat(time.confirmed)}</td>
+                          <td style={{textAlign: 'right'}}>{time.deaths ? this.tidyFormat(time.deaths): 0}</td>
+                          <td style={{textAlign: 'right'}}>{time.confirmed_per_mil.toFixed(2)}</td>
+                          <td style={{textAlign: 'right'}}>{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
+                          <td style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
+                          <td style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
+                        </tr>
+                      )
+                    )}
                   </tbody>
                 </table>
               </section>
-              <footer className="modal-card-foot">
-                <button className="button" onClick={e => this.setState({modalOpen: false})}>Cancel</button>
+              <footer className="modal-card-foot has-background-danger">
+                <button className="button is-dark" >Back to Results</button>
               </footer>
             </div>
           </div>
@@ -212,7 +326,7 @@ export default class IndexPage extends React.Component{
             <div className="columns">
               <div className="column title-with-inputs">
                 <p className="is-size-5">
-                  Showing The {this.top.length} Countr{this.top.length == 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
+                  Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
                 </p>
                 <div className="field is-grouped is-horizontal">
                   <div className="control">
@@ -248,7 +362,7 @@ export default class IndexPage extends React.Component{
               </div>
             </div>
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { this.state.top_countries.map( (country) => (
+              { top.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
                   <div className="box has-background-danger has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
@@ -257,7 +371,7 @@ export default class IndexPage extends React.Component{
                         </strong>
                       <h2 className="is-size-3  has-text-white" style={{paddingTop: '25px', marginTop: 0}}>{country.country_name}</h2>
                       <p className="is-size-6 has-text-white">
-                        Reached {active_country.country_name}'s {this.state.per == 'total' ? ' Total': 'Per Million'} {this.state.field == 'deaths'? 'Deaths': 'Confirmed Cases'} on 
+                        Reached {active_country.country_name}'s {this.state.per === 'total' ? ' Total': 'Per Million'} {this.state.field === 'deaths'? 'Deaths': 'Confirmed Cases'} on 
                         { } {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
                       </p>
                       <table className="table is-narrow ">
@@ -316,12 +430,12 @@ export default class IndexPage extends React.Component{
                           </tr>
                         </tbody>
                         </table>
-                      <button className='button' onClick={e => this.setState({
+                      <button className='button is-dark has-text-white' onClick={e => this.setState({
                         modalOpen: true,
                         active_country,
                         comparable_country: country
                       })}>
-                        View {country.country_name}'s Progression</button>
+                        View Forecast and  Progression</button>
                     </div>
                   </div>
                 </div>
@@ -333,7 +447,7 @@ export default class IndexPage extends React.Component{
             <div className="container">
               <h2 className="is-size-3">This is a prototype / work in progress</h2>
               <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
-              <p>Ppoulation data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
+              <p>Population data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
               <h3>Things Next on the list to do:</h3>
               <ul>
                 <li>Allow for ranking by deaths as well as confirmed</li>

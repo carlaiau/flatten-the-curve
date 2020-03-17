@@ -83,3 +83,14 @@
         margin: 5px 10px 5px 0;
     }
 }
+@media screen and (max-width: 420px){
+    .modal-card .modal-card-head{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .modal-card .modal-card-foot{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+}
+    
