@@ -212,7 +212,7 @@ export default class IndexPage extends React.Component{
                         </strong>
                       </p>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
-                      <p className="is-size-5 has-text-white" style={{marginBottom: 0}}>reached the same count on</p>
+                      <p className="is-size-5 has-text-white" style={{marginBottom: 0}}>reached the same count as {active_country.country_name} on</p>
                       <table className="table is-narrow ">
                       <thead>
                         <tr>
