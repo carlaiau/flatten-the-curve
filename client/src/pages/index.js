@@ -156,9 +156,9 @@ export default class IndexPage extends React.Component{
               </header>
               <section className="modal-card-body has-background-light has-text-dark">
                 <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>Here is the forecased next {time_series.length - 2} days for {active_country.country_name}.</p>
+                <p className="is-size-6" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days for {active_country.country_name}.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>*Description of forecast below table</p>
-                <table className="table is-fullwidth" style={{marginTop: '10px'}}>
+                <table className="table  is-striped is-fullwidth" style={{marginTop: '10px'}}>
                   <tbody>
                     <tr>
                       <th>Days</th>
@@ -188,37 +188,34 @@ export default class IndexPage extends React.Component{
                   Our forecast relies on no modelling. If there are flaws in our logic with this naivie approach please reach out to us and tell us how we can ensure this is done correctly.
                 </p>
                 <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>Progression for {this.state.comparable_country.country_name}</h2>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>Here is the previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
-                <table className="table  is-striped is-fullwidth">
+                <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
+                <table className="table is-striped is-fullwidth">
                   <thead> 
                     <tr>
                       <th></th>
-                      <th colSpan="2">Total</th>
-                      <th colSpan="2">Per Million</th>
-                      <th colSpan="2">Delta / Change</th>
+                      
+                      <th colSpan="2" className="is-size-7">Per Million</th>
+                      <th colSpan="2" className="is-size-7">Daily Change</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Days Ago</td>
-                      <td>Confirmed</td>
-                      <td>Deaths</td>
-                      <td>Confirmed</td>
-                      <td>Deaths</td>
-                      <td>Confirmed</td>
-                      <td>Deaths</td>
+                      <td className="is-size-7">Days Ago</td>
+                      
+                      <td className="is-size-7">Confirmed</td>
+                      <td className="is-size-7">Deaths</td>
+                      <td className="is-size-7">Confirmed</td>
+                      <td className="is-size-7">Deaths</td>
                     </tr>
                     {
                       
                       time_series.map( (time, i) => (
                         <tr key={i}>
-                          <td>{time_series.length - (i + 1) }</td>
-                          <td style={{textAlign: 'right'}}>{this.tidyFormat(time.confirmed)}</td>
-                          <td style={{textAlign: 'right'}}>{time.deaths ? this.tidyFormat(time.deaths): 0}</td>
-                          <td style={{textAlign: 'right'}}>{time.confirmed_per_mil.toFixed(2)}</td>
-                          <td style={{textAlign: 'right'}}>{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
-                          <td style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
-                          <td style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
+                          <td className="is-size-7">{time_series.length - (i + 1) }</td>
+                          <td className="is-size-7" style={{textAlign: 'right'}}>{time.confirmed_per_mil.toFixed(2)}</td>
+                          <td className="is-size-7" style={{textAlign: 'right'}}>{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
+                          <td className="is-size-7" style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
+                          <td className="is-size-7" style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
                         </tr>
                       )
                     )}
