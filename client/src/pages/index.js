@@ -171,7 +171,7 @@ export default class IndexPage extends React.Component{
 
             <div className="columns">
               <div className="column title-with-inputs">
-                <p className="is-size-5">{top.length} Countr{top.length == 1? 'y': 'ies'} With Higher</p>
+                <p className="is-size-5">{top.length} Countr{top.length == 1? 'y': 'ies'} With Highest</p>
                 <div className="field is-grouped is-horizontal">
                   <div className="control">
                     <div className="select">
