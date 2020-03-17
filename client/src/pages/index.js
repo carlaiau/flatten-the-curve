@@ -387,17 +387,14 @@ export default class IndexPage extends React.Component{
                 <div className="column is-one-third" key={country.country_name}>
                   <div className="box has-background-success has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
-                        <strong className="has-text-white" style={{position: 'absolute', top: 0, right: 0}}>
-                          {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
-                        </strong>
-                      <h2 className="is-size-3  has-text-white" style={{paddingTop: '25px', marginTop: 0}}>{country.country_name}</h2>
+                      <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                       <p className="is-size-6 has-text-white">
-                        Reached {active_country.country_name}'s {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} on 
-                        { } 
+                        Was at the same {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as 
+                        {' '}{active_country.country_name}{' '} <br/>{formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago.
                       </p>
                       <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
                         <strong className="has-text-white">
-                          {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
+                        On {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
                         </strong>
                       </p>
                       <table className="table is-narrow ">
@@ -430,9 +427,7 @@ export default class IndexPage extends React.Component{
                       </table>
                         
                       <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
-                        <strong className="has-text-white">
-                          Today
-                        </strong>
+                        <strong className="has-text-white">Compared To Now</strong>
                       </p>
                       <table className="table is-narrow is-borderless">
                         <thead>
