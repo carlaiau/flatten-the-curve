@@ -212,10 +212,10 @@ export default class IndexPage extends React.Component{
                       time_series.map( (time, i) => (
                         <tr key={i}>
                           <td className="is-size-7">{time_series.length - (i + 1) }</td>
-                          <td className="is-size-7" style={{textAlign: 'right'}}>{time.confirmed_per_mil.toFixed(2)}</td>
-                          <td className="is-size-7" style={{textAlign: 'right'}}>{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
-                          <td className="is-size-7" style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
-                          <td className="is-size-7" style={{textAlign: 'right'}}>{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
+                          <td className="is-size-7">{time.confirmed_per_mil.toFixed(2)}</td>
+                          <td className="is-size-7">{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
+                          <td className="is-size-7">{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
+                          <td className="is-size-7">{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? deltas[i - 1].deaths === Infinity ? '--' : (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
                         </tr>
                       )
                     )}
