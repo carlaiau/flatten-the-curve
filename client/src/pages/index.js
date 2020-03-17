@@ -246,20 +246,18 @@ export default class IndexPage extends React.Component{
                   <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>
                 </div>
                 <div className="column">
-                  <div className="field is-grouped is-horizontal">
+                  <div className="field">
+                      <label class="label has-text-white">Choose your country</label>
                       <div className="control">
                         <div className="select is-medium">
                           <select value={selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
                             {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
-                              <option key={country_name} value={country_name}>{country_name}:     {this.tidyFormat(highest_confirmed)}</option>
+                              <option key={country_name} value={country_name}>{country_name}</option>
                             ))}
                           </select>
                         </div>
                       </div>
                     </div>
-                    <p className="is-size-7">
-                      Please note: If your country is not showing we are filtering for populations over 3 million and at least 10 confirmed cases.
-                    </p>
                 </div>
               </div>
             </div>
@@ -314,6 +312,10 @@ export default class IndexPage extends React.Component{
                     COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
                     {} and was last updated at 8:29pm Mar, 17 2020 NZT.
                     </p>
+                  <p className="is-size-6">
+                    If your country is not in the dropdown we are filtering out countries below 3 million population and less than 10 confirmed cases. 
+                    If your country is not shown but should be, please contact us!
+                  </p>
                 </div>
             </div>
 
