@@ -462,14 +462,14 @@ export default class IndexPage extends React.Component{
                         </table>
                       <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
                           'is-dark'  :
-                          'is-danger is-size-7'
+                          'has-background-success is-size-7'
                         } has-text-white`} onClick={e => this.setState({
                             modalOpen: country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? true: false,
                             active_country,
                             comparable_country: country
                           })
                         }
-                        style={{width: '100%', maxWidth: '100%', height: '40px'}}
+                        style={{width: '100%', maxWidth: '100%', height: '40px', border: 'none'}}
                       >
                         {country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
                           'View Forecast and  Progression'  :
