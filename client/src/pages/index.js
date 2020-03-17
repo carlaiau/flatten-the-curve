@@ -184,7 +184,7 @@ export default class IndexPage extends React.Component{
                   If {active_country.country_name} currently has 0 deaths, we use the {this.state.comparable_country.country_name} ratio of confirmed cases to deaths to forecast when {active_country.country_name} will encounter it's first death. 
                   Once the forecasted deaths are above 1 the projected death rate grows based on the growth of the {this.state.comparable_country.country_name} observed death rate.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
-                  This forecast is not meant to reflective of {active_country.country_name}'s future, merely an inication of what is possible.
+                  This forecast is not meant to reflective of {active_country.country_name}'s future, merely an indication of what is possible.
                   If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
                 </p>
                 <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
