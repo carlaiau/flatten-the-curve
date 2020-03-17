@@ -16,16 +16,19 @@ export default class IndexPage extends React.Component{
       numberFormat: new Intl.NumberFormat(),
       field: 'confirmed',
       per: 'total',
-      limit: 60
+      limit: 60,
 		}
-  }
-  
+      modalOpen: false,
+      active_country: null,
+      comparable_country: null,
+    }
+
   tidyFormat(numberString){
     return this.state.numberFormat.format(numberString)
   }
   
   render(){
-    const {countries, countries_in_select_box, field, per, limit} = this.state
+    const {selected_country, countries_in_select_box, countries, field, per, limit} = this.state
 
     let full_field_name = field == 'confirmed' ? 
       (per == 'total' ? 'confirmed' : 'confirmed_per_mil') :
@@ -69,14 +72,54 @@ export default class IndexPage extends React.Component{
 
 
     // Then choose top
-    let top = countries.filter(c => c.highest[full_field_name] > active_country.highest[full_field_name])
-
-    top = top.slice(0, limit)
-
-
-
-
+    top_countries = countries.filter(
+      c => c.highest[full_field_name] > active_country.highest[full_field_name]
+    ).slice(0, this.state.limit)
     
+    
+    const Modal = () => {
+      if(this.state.modalOpen){
+        return (
+          <div className='modal is-active'>
+            <div className="modal-background"></div>
+            <div className="modal-card">
+              <header className="modal-card-head">
+                <p className="modal-card-title">{this.state.comparable_country.country_name}</p>
+                <button className="delete" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
+              </header>
+              <section className="modal-card-body">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Date</th>
+                      <th>Confirmed</th>
+                    </tr>
+                    {this.state.comparable_country.time_series.map( time => {
+                      console.log(time)
+                      return (
+                        <tr>
+                          <td>
+
+                          </td>
+                          <td>
+
+                          </td>
+                        </tr>
+
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </section>
+              <footer className="modal-card-foot">
+                <button className="button" onClick={e => this.setState({modalOpen: false})}>Cancel</button>
+              </footer>
+            </div>
+          </div>
+        )
+      }
+      return <React.Fragment></React.Fragment>
+    }
 
     return (
       <React.Fragment>
@@ -95,7 +138,7 @@ export default class IndexPage extends React.Component{
                   <div className="field is-grouped is-horizontal">
                       <div className="control">
                         <div className="select">
-                          <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
+                          <select value={selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
                             {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
                               <option key={country_name} value={country_name}>{country_name}:     {this.tidyFormat(highest_confirmed)}</option>
                             ))}
@@ -169,7 +212,7 @@ export default class IndexPage extends React.Component{
             <div className="columns">
               <div className="column title-with-inputs">
                 <p className="is-size-5">
-                  Showing The {top.length} Countr{top.length == 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
+                  Showing The {this.top.length} Countr{this.top.length == 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
                 </p>
                 <div className="field is-grouped is-horizontal">
                   <div className="control">
@@ -195,21 +238,26 @@ export default class IndexPage extends React.Component{
             </div>
             <div className="columns">
               <div className="column">
+                <p className="is-size-6" style={{marginBottom: '10px'}}>
+                  We want to show when these countries were at a similar level to {active_country.country_name} and how their situation has progressed since then.
+                </p>
                 <p className="is-size-6">
-                  More Importantly we want to show when these countries were at a similar level to {active_country.country_name}, and how their situation has progressed since then.</p>
+                  Each countries progression can be used as a potential forecast for {active_country.country_name}'s future.
+                </p>
+
               </div>
             </div>
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { top.map( (country) => (
+              { this.state.top_countries.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
                   <div className="box has-background-danger has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
-                        <strong className="has-text-white">
+                        <strong className="has-text-white" style={{position: 'absolute', top: 0, right: 0}}>
                           {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
                         </strong>
-                      <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
+                      <h2 className="is-size-3  has-text-white" style={{paddingTop: '25px', marginTop: 0}}>{country.country_name}</h2>
                       <p className="is-size-6 has-text-white">
-                        Reached {active_country.country_name}'s {per == 'total' ? ' Total': 'Per Million'} {field == 'deaths'? 'Deaths': 'Confirmed Cases'} on 
+                        Reached {active_country.country_name}'s {this.state.per == 'total' ? ' Total': 'Per Million'} {this.state.field == 'deaths'? 'Deaths': 'Confirmed Cases'} on 
                         { } {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
                       </p>
                       <table className="table is-narrow ">
@@ -268,6 +316,12 @@ export default class IndexPage extends React.Component{
                           </tr>
                         </tbody>
                         </table>
+                      <button className='button' onClick={e => this.setState({
+                        modalOpen: true,
+                        active_country,
+                        comparable_country: country
+                      })}>
+                        View {country.country_name}'s Progression</button>
                     </div>
                   </div>
                 </div>
@@ -290,6 +344,7 @@ export default class IndexPage extends React.Component{
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a></p>
             </div>
         </section>
+        <Modal/>
       </React.Fragment>
     )
   }
