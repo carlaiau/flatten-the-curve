@@ -183,7 +183,7 @@ export default class IndexPage extends React.Component{
                 </p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
                   If {active_country.country_name} currently has 0 deaths, we use the {this.state.comparable_country.country_name} ratio of confirmed cases to deaths to forecast when {active_country.country_name} will encounter it's first death. 
-                  Once this forecasted death occurs the death rate grows based on the growth of {active_country.country_name} death rate itself.</p>
+                  Once the forecasted deaths are above 1 the projected death rate grows based on the growth of {this.state.comparable_country.country_name} observed death rate.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
                   Our forecast relies on no modelling. If there are flaws in our logic with this naivie approach please reach out to us and tell us how we can ensure this is done correctly.
                 </p>
@@ -221,12 +221,7 @@ export default class IndexPage extends React.Component{
                   </tbody>
                 </table>
               </section>
-              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? '': 'is-hidden'}`}>
-                <h2></h2>
-                <p className="is-size-6">Although {this.state.comparable_country.country_name} has higher {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'}
-                {} than {active_country.country_name}, {this.state.comparable_country.country_name} has lower confirmed cases per million and therefore can't be used.
-                </p>
-              </section>
+              
               <footer className="modal-card-foot has-background-danger">
                 <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
               </footer>
@@ -253,16 +248,13 @@ export default class IndexPage extends React.Component{
                 <div className="column">
                   <div className="field is-grouped is-horizontal">
                       <div className="control">
-                        <div className="select">
+                        <div className="select is-medium">
                           <select value={selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
                             {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
                               <option key={country_name} value={country_name}>{country_name}:     {this.tidyFormat(highest_confirmed)}</option>
                             ))}
                           </select>
                         </div>
-                      </div>
-                      <div className="control">
-                        <button className="button is-success">Go</button>
                       </div>
                     </div>
                     <p className="is-size-7">
@@ -432,12 +424,22 @@ export default class IndexPage extends React.Component{
                           </tr>
                         </tbody>
                         </table>
-                      <button className='button is-dark has-text-white' onClick={e => this.setState({
-                        modalOpen: true,
-                        active_country,
-                        comparable_country: country
-                      })}>
-                        View Forecast and  Progression</button>
+                      <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
+                          'is-dark'  :
+                          'is-danger is-size-7'
+                        } has-text-white`} onClick={e => this.setState({
+                            modalOpen: country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? true: false,
+                            active_country,
+                            comparable_country: country
+                          })
+                        }
+                        style={{width: '100%', maxWidth: '100%'}}
+                      >
+                        {country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
+                          'View Forecast and  Progression'  :
+                          'Insufficient confirmed cases per million for forecast'
+                        }
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -447,16 +449,10 @@ export default class IndexPage extends React.Component{
         </section>
         <section className="section  has-background-light footer">
             <div className="container">
-              <h2 className="is-size-3">This is a prototype / work in progress</h2>
+              <h2 className="is-size-3">This is a work in progress</h2>
               <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
               <p>Population data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
-              <h3>Things Next on the list to do:</h3>
-              <ul>
-                <li>Allow for ranking by deaths as well as confirmed</li>
-                <li>Allow for ranking on per mil, as well as absolute</li>
-                <li>Make each tile clickable showing growth, and use this countries growth as a projection of the currently selected countries future</li>
-              </ul>
-              <p>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. 
+              <p style={{marginTop: '10px'}}>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. 
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a></p>
             </div>
         </section>

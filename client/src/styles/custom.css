@@ -94,3 +94,23 @@
     }
 }
     
+
+
+/* Quick Color Overwrites */
+
+
+.has-background-danger{
+    background: #84817a !important;
+}
+.is-success{
+    background: #33d9b2 !important;
+}
+.has-background-success{
+    background: #218c74 !important;
+}
+.hero.is-info{
+    background: #227093;
+}
+.is-danger{
+    background: #84817a !important;
+}
