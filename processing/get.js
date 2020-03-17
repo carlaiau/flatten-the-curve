@@ -26,7 +26,12 @@ const mainThread = () => {
         .on('end', () => {  
           countries = merge_object(restructure_inputs(confirmed), restructure_inputs(deaths), restructure_inputs(recovered))
           countries = add_population_data(countries, population_data)
-
+          
+          // Relabel country names
+          _.forEach(countries, (c) => {
+            c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
+          })
+          
           removed_key = _.map(countries, (country) => country)
 
           fs.writeFile("./output.json", JSON.stringify(removed_key , null, 2), function(err) {
@@ -65,7 +70,9 @@ const merge_object = (confirmed, deaths, recovered) => {
   let combined = {}
   
   confirmed.forEach( (country) => {
-    const country_name = country['Country/Region']
+    let country_name = country['Country/Region'] 
+    
+    
     highest_confirmed = 0
     time_series = []
     _.forEach(country, (val, key) => {
@@ -110,15 +117,20 @@ const merge_object = (confirmed, deaths, recovered) => {
 }
 
 const restructure_inputs = (all_countries) => {
-  countries = all_countries.filter( c => c['Country/Region'] != 'US' && c['Country/Region'] != 'China' && c['Country/Region'] != 'Australia' )
-  combined_america = combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'US' ))
-  combined_china = combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'China' ))
-  combined_australia = combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'Australia' ))
+  countries = all_countries.filter( c => {
+    return c['Country/Region'] != 'US' 
+      && c['Country/Region'] != 'China' 
+      && c['Country/Region'] != 'Australia' 
+      && c['Country/Region'] != 'Canada' 
+      && c['Country/Region'] != 'United Kingdom' 
+  })
 
-  countries.push(combined_america)
-  countries.push(combined_china)
-  countries.push(combined_australia)
 
+  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'US'             )))
+  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'China'          )))
+  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'Australia'      )))
+  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'Canada'         )))
+  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'United Kingdom' )))
   
   return countries.filter(remove_negatives)
 }

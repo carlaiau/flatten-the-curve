@@ -112,7 +112,7 @@ export default class IndexPage extends React.Component{
                       </div>
                     </div>
                     <p className="is-size-7">
-                      Please note: If your country is not showing we are filtering for populations over 3 million and at least 3 confirmed cases.
+                      Please note: If your country is not showing we are filtering for populations over 3 million and at least 10 confirmed cases.
                     </p>
                 </div>
               </div>
@@ -164,7 +164,8 @@ export default class IndexPage extends React.Component{
                     Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. Please visit this site for actionable steps to slow the spread.
                   </p>
                   <p className="is-size-5">
-                    COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> and was last updated at 3:36pm Mar, 17 2020 NZT.
+                    COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
+                    and was last updated at 8:29pm Mar, 17 2020 NZT.
                     </p>
                 </div>
             </div>
@@ -306,7 +307,7 @@ export default class IndexPage extends React.Component{
 
 export const query = graphql`
   query {
-    countries: allOutputJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 3}, population: {gte: 3000000}}) {
+    countries: allOutputJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 10}, population: {gte: 3000000}}) {
       nodes {
         country_name
         id
@@ -322,7 +323,7 @@ export const query = graphql`
         highest_confirmed
       }
     }
-    select_countries: allOutputJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 3}, population: {gte: 3000000}}) {
+    select_countries: allOutputJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 3000000}}) {
       nodes {
         country_name
         highest_confirmed
