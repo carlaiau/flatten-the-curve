@@ -222,7 +222,7 @@ export default class IndexPage extends React.Component{
                 </table>
               </section>
               
-              <footer className="modal-card-foot has-background-success">
+              <footer className="modal-card-foot has-background-success is-hidden-mobile">
                 <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
               </footer>
             </div>
@@ -392,8 +392,13 @@ export default class IndexPage extends React.Component{
                         </strong>
                       <h2 className="is-size-3  has-text-white" style={{paddingTop: '25px', marginTop: 0}}>{country.country_name}</h2>
                       <p className="is-size-6 has-text-white">
-                        Reached {active_country.country_name}'s {this.state.per === 'total' ? ' Total': 'Per Million'} {this.state.field === 'deaths'? 'Deaths': 'Confirmed Cases'} on 
-                        { } {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
+                        Reached {active_country.country_name}'s {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} on 
+                        { } 
+                      </p>
+                      <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
+                        <strong className="has-text-white">
+                          {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
+                        </strong>
                       </p>
                       <table className="table is-narrow ">
                       <thead>
@@ -424,7 +429,11 @@ export default class IndexPage extends React.Component{
                         </tbody>
                       </table>
                         
-                      <p></p>
+                      <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
+                        <strong className="has-text-white">
+                          Today
+                        </strong>
+                      </p>
                       <table className="table is-narrow is-borderless">
                         <thead>
                           <tr>
