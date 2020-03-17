@@ -20,6 +20,7 @@ export default class IndexPage extends React.Component{
       modalOpen: false,
       active_country: null,
       comparable_country: null,
+      active_tab: 'about'
     }
   }
 
@@ -300,63 +301,88 @@ export default class IndexPage extends React.Component{
                 </div>
               </div>
               <div className="column desc">
-                  <p className="is-size-6">
-                    This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
-                      GitHub</a> and pull requests are welcome.
-                  </p>
-                  <p className="is-size-6">
-                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
-                    Please visit this site for actionable steps to slow the spread.
-                  </p>
-                  <p className="is-size-6">
-                    COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
-                    {} and was last updated at 8:29pm Mar, 17 2020 NZT.
-                    </p>
-                  <p className="is-size-6">
-                    If your country is not in the dropdown we are filtering out countries below 3 million population and less than 10 confirmed cases. 
-                    If your country is not shown but should be, please contact us!
-                  </p>
-                </div>
-            </div>
-
-            <div className="columns">
-              <div className="column title-with-inputs">
-                <p className="is-size-5">
-                  Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
-                </p>
-                <div className="field is-grouped is-horizontal">
-                  <div className="control">
-                    <div className="select">
-                      <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
-                        <option value="confirmed">Confirmed Cases</option>
-                        <option value="deaths">Deaths</option>
-                      </select>
+                <div className="box">
+                    <div class="tabs">
+                      <ul>
+                        <li class={this.state.active_tab =='about' ? 'is-active' : ''}>
+                          <a onClick={(e)=> this.setState({active_tab: 'about'})}>About</a>
+                        </li>
+                        <li class={this.state.active_tab =='forecast' ? 'is-active' : ''}>
+                        <a onClick={(e)=> this.setState({active_tab: 'forecast'})}>Potential Forecast Notes</a>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-                <div className="field is-grouped is-horizontal">
-                  <div className="control">
-                    <div className="select">
-                      <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
-                        <option value="total">Total</option>
-                        <option value="per_million">Per Millon</option>
-                      </select>
+                    <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
+                      <p className="is-size-7">
+                        This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
+                          GitHub</a> and pull requests are welcome.
+                      </p>
+                      <p className="is-size-7">
+                        Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                        Please visit this site for actionable steps to slow the spread.
+                      </p>
+                      <p className="is-size-7">
+                        COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
+                        {} and was last updated at 8:29pm Mar, 17 2020 NZT.
+                        </p>
+                      <p className="is-size-7">
+                        If your country is not in the dropdown we are filtering out countries below 3 million population and less than 10 confirmed cases. 
+                        If your country is not shown but should be, please contact us!
+                      </p>
                     </div>
-                  </div>
+                    <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
+                      <p className="is-size-7">
+                        The potential forecast does not take into account the comparison between country's doubling time. 
+                      </p>
+                      <p className="is-size-7">
+                        The true forecast depends on a multitidue of factors such as: The number and speed of tests done, 
+                        the quality of the case tracking, the testing of tracked cases, and the support for people who need to go into isolation.
+                      </p>
+                      <p className="is-size-7">
+                        This sites goal is to motivate people to take actionable steps by showing them where countries have ended up from a situation
+                        that was the same as {active_country.country_name} 
+                      </p>
+                    </div>
+                  </div>  
                 </div>
               </div>
-            </div>
-            <div className="columns">
+
+            <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
               <div className="column">
+                <div className="title-with-inputs" style={{marginBottom: '10px'}}>
+                  <p className="is-size-5">
+                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
+                  </p>
+                  <div className="field is-grouped is-horizontal">
+                    <div className="control">
+                      <div className="select">
+                        <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
+                          <option value="confirmed">Confirmed Cases</option>
+                          <option value="deaths">Deaths</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="field is-grouped is-horizontal">
+                    <div className="control">
+                      <div className="select">
+                        <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
+                          <option value="total">Total</option>
+                          <option value="per_million">Per Millon</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>
                   We want to show when these countries were at a similar level to {active_country.country_name} and how their situation has progressed since then.
                 </p>
-                <p className="is-size-6">
+                <p className="is-size-6" style={{marginBottom: '10px'}}>
                   Each countries progression can be used as a potential forecast for {active_country.country_name}'s future.
                 </p>
-
-              </div>
+              </div>              
             </div>
+
             <div className="columns" style={{flexWrap: 'wrap'}}>
               { top.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
@@ -435,7 +461,7 @@ export default class IndexPage extends React.Component{
                             comparable_country: country
                           })
                         }
-                        style={{width: '100%', maxWidth: '100%'}}
+                        style={{width: '100%', maxWidth: '100%', height: '40px'}}
                       >
                         {country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
                           'View Forecast and  Progression'  :
@@ -449,12 +475,12 @@ export default class IndexPage extends React.Component{
             </div>
           </div>
         </section>
-        <section className="section  has-background-light footer">
+        <section className="section  has-background-dark has-text-white footer">
             <div className="container">
-              <h2 className="is-size-3">This is a work in progress</h2>
-              <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
-              <p>Population data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
-              <p style={{marginTop: '10px'}}>Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. 
+              <h2 className="is-size-4">This is a work in progress</h2>
+              <p className="is-size-7">COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
+              <p className="is-size-7">Population data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
+              <p className="is-size-7">Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. 
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a></p>
             </div>
         </section>
