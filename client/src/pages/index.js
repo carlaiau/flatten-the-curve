@@ -11,11 +11,12 @@ export default class IndexPage extends React.Component{
 		super(props);
 		this.state = {
       countries: props.data.countries.nodes,
-      countries_in_select_box: props.data.select_countries.nodes.filter( (c) => c.country_name !== 'China'),
+      countries_in_select_box: props.data.select_countries.nodes,
       selected_country: 'New Zealand',
       numberFormat: new Intl.NumberFormat(),
       field: 'confirmed',
-      per: 'total'
+      per: 'total',
+      limit: 60
 		}
   }
   
@@ -24,59 +25,53 @@ export default class IndexPage extends React.Component{
   }
   
   render(){
-    const {countries, countries_in_select_box, field, per} = this.state
+    const {countries, countries_in_select_box, field, per, limit} = this.state
+
+    let full_field_name = field == 'confirmed' ? 
+      (per == 'total' ? 'confirmed' : 'confirmed_per_mil') :
+      (per == 'total') ? 'deaths' : 'deaths_per_mil'
+
     let active_country = countries.filter( (c) => c.country_name === this.state.selected_country )[0]
     
-    
     active_country.time_series.forEach( (time) => {
-      if(active_country.highest && time.confirmed > active_country.highest.confirmed)
+      if(active_country.highest && time[full_field_name] > active_country.highest[full_field_name])
         active_country.highest = time
       else if(!active_country.highest)
         active_country.highest = time
     })
-
-
     
     countries.forEach( (country) => {
       let earliest = {}
       let highest = {}
       country.time_series.forEach( (time) => {
-        if(earliest.confirmed){
-          if(time.confirmed < earliest.confirmed && ( time.confirmed >= active_country.highest_confirmed) )  
+        if(earliest[full_field_name]){
+          if(time[full_field_name] < earliest[full_field_name] && ( time[full_field_name] >= active_country.highest[full_field_name]) )  
             earliest = time
         }
-        else if(!earliest.confirmed && time.confirmed >= active_country.highest_confirmed)
+        else if(!earliest[full_field_name] && time[full_field_name] >= active_country.highest[full_field_name])
           earliest = time
         
-        if(highest.confirmed && time.confirmed > highest.confirmed)
+        if(highest[full_field_name] && time[full_field_name] > highest[full_field_name])
           highest = time
-        else if(!highest.confirmed)
+        else if(!highest[full_field_name])
           highest = time
       })
       country.earliest = earliest
       country.highest = highest
     })
 
+    
 
-    // Sort
-    if(per === 'per_million'){
-      if(field === 'confirmed') 
-        countries.sort((a, b) => (a.highest.confirmed_per_mil < b.highest.confirmed_per_mil) ? 1 : -1)
-      else 
-        countries.sort((a, b) => (a.highest.deaths_per_mil < b.highest.deaths_per_mil) ? 1 : -1)
-    } 
-    else{
-      if(field === 'confirmed') 
-        countries.sort((a, b) => (a.highest.confirmed < b.highest.confirmed) ? 1 : -1)
-      else 
-        countries.sort((a, b) => (a.highest.deaths < b.highest.deaths) ? 1 : -1)
-    }
+
+    
+    //sort
+    countries.sort((a, b) => (a.highest[full_field_name] < b.highest[full_field_name]) ? 1 : -1)
 
 
     // Then choose top
-    const top= countries.filter(
-      country => country.highest_confirmed > active_country.highest_confirmed
-    ).slice(0, 60)
+    let top = countries.filter(c => c.highest[full_field_name] > active_country.highest[full_field_name])
+
+    top = top.slice(0, limit)
 
 
 
@@ -102,7 +97,7 @@ export default class IndexPage extends React.Component{
                         <div className="select">
                           <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
                             {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
-                              <option key={country_name} value={country_name}>{country_name}:     {highest_confirmed}</option>
+                              <option key={country_name} value={country_name}>{country_name}:     {this.tidyFormat(highest_confirmed)}</option>
                             ))}
                           </select>
                         </div>
@@ -156,28 +151,31 @@ export default class IndexPage extends React.Component{
                 </div>
               </div>
               <div className="column desc">
-                  <p className="is-size-5">
+                  <p className="is-size-6">
                     This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
                       GitHub</a> and pull requests are welcome.
                   </p>
-                  <p className="is-size-5">
-                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. Please visit this site for actionable steps to slow the spread.
+                  <p className="is-size-6">
+                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                    Please visit this site for actionable steps to slow the spread.
                   </p>
-                  <p className="is-size-5">
+                  <p className="is-size-6">
                     COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
-                    and was last updated at 8:29pm Mar, 17 2020 NZT.
+                    {} and was last updated at 8:29pm Mar, 17 2020 NZT.
                     </p>
                 </div>
             </div>
 
             <div className="columns">
               <div className="column title-with-inputs">
-                <p className="is-size-5">Showing {top.length} Countr{top.length == 1? 'y': 'ies'} With Highest</p>
+                <p className="is-size-5">
+                  Showing The {top.length} Countr{top.length == 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
+                </p>
                 <div className="field is-grouped is-horizontal">
                   <div className="control">
                     <div className="select">
                       <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
-                        <option value="confirmed">Confirmed</option>
+                        <option value="confirmed">Confirmed Cases</option>
                         <option value="deaths">Deaths</option>
                       </select>
                     </div>
@@ -193,32 +191,29 @@ export default class IndexPage extends React.Component{
                     </div>
                   </div>
                 </div>
-
               </div>
             </div>
-
-            
-            
-
-            
-            
+            <div className="columns">
+              <div className="column">
+                <p className="is-size-6">
+                  More Importantly we want to show when these countries were at a similar level to {active_country.country_name}, and how their situation has progressed since then.</p>
+              </div>
+            </div>
             <div className="columns" style={{flexWrap: 'wrap'}}>
               { top.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
                   <div className="box has-background-danger has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
-                    <p className="is-size-4" style={{marginBottom: 0}}>
-                        <strong>
-                          {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/15/20', 'MM/dd/yy', new Date()) ) } ago
+                        <strong className="has-text-white">
+                          {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
                         </strong>
-                      </p>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
-                      <p className="is-size-5 has-text-white" style={{marginBottom: 0}}>reached the same count as {active_country.country_name} on</p>
+                      <p className="is-size-6 has-text-white">
+                        Reached {active_country.country_name}'s {per == 'total' ? ' Total': 'Per Million'} {field == 'deaths'? 'Deaths': 'Confirmed Cases'} on 
+                        { } {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
+                      </p>
                       <table className="table is-narrow ">
                       <thead>
-                        <tr>
-                          <th colSpan="3" className="is-size-5" style={{padding: 0}}>{format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}</th>
-                        </tr>
                         <tr>
                           <td></td>
                           <td>Total</td>
@@ -246,12 +241,9 @@ export default class IndexPage extends React.Component{
                         </tbody>
                       </table>
                         
-                      
+                      <p></p>
                       <table className="table is-narrow is-borderless">
                         <thead>
-                          <tr>
-                            <th colSpan="3" className="is-size-4" style={{paddingBottom: 0}}>Today</th>
-                          </tr>
                           <tr>
                             <td></td>
                             <td>Total</td>
