@@ -117,20 +117,34 @@ const merge_object = (confirmed, deaths, recovered) => {
 }
 
 const restructure_inputs = (all_countries) => {
-  countries = all_countries.filter( c => {
-    return c['Country/Region'] != 'US' 
-      && c['Country/Region'] != 'China' 
-      && c['Country/Region'] != 'Australia' 
-      && c['Country/Region'] != 'Canada' 
-      && c['Country/Region'] != 'United Kingdom' 
+
+  const seen_countries = []
+  all_countries.forEach( c => {
+    const found = _.find( seen_countries, (seen_country) => seen_country.name == c['Country/Region'] );
+    if(found){
+      found.count += 1
+    }
+    else{
+      seen_countries.push({
+        name: c['Country/Region'],
+        count: 1
+      })
+    }
+
   })
 
+  
+  countries_multiple_column_names = seen_countries.filter( (c) => c.count > 1 ).map( c => c.name)
 
-  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'US'             )))
-  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'China'          )))
-  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'Australia'      )))
-  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'Canada'         )))
-  countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == 'United Kingdom' )))
+  console.log(countries_multiple_column_names)
+  
+  
+
+  countries = all_countries.filter( c => ! countries_multiple_column_names.includes(c) )
+
+  countries_multiple_column_names.forEach( country_name => {
+    countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == country_name)))
+  })
   
   return countries.filter(remove_negatives)
 }

@@ -180,15 +180,13 @@ export default class IndexPage extends React.Component{
                 <p className="is-size-7" style={{marginBottom: '10px'}}>This is calculated using the daily growth of confirmed cases and deaths on a per million basis in {this.state.comparable_country.country_name} {}
                 since {this.state.comparable_country.country_name} reached the same confirmed case count as {active_country.country_name}.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
-                  Using this strategy we can forecast the number of days that have passed since {active_country.country_name} surpassed {this.state.comparable_country.country_name} confirmed case count.
-                </p>
-                <p className="is-size-7" style={{marginBottom: '10px'}}>
                   If {active_country.country_name} currently has 0 deaths, we use the {this.state.comparable_country.country_name} ratio of confirmed cases to deaths to forecast when {active_country.country_name} will encounter it's first death. 
-                  Once the forecasted deaths are above 1 the projected death rate grows based on the growth of {this.state.comparable_country.country_name} observed death rate.</p>
+                  Once the forecasted deaths are above 1 the projected death rate grows based on the growth of the {this.state.comparable_country.country_name} observed death rate.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
-                  Our forecast relies on no modelling. If there are flaws in our logic with this naivie approach please reach out to us and tell us how we can ensure this is done correctly.
+                  This forecast is not meant to reflective of {active_country.country_name}'s future, merely an inication of what is possible.
+                  If there are flaws with this naivie approach please reach out to us so we can ensure it is done correctly.
                 </p>
-                <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>Progression for {this.state.comparable_country.country_name}</h2>
+                <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
                 <table className="table is-striped is-fullwidth">
                   <thead> 
