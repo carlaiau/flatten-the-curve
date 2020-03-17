@@ -13,7 +13,9 @@ export default class IndexPage extends React.Component{
       countries: props.data.countries.nodes,
       countries_in_select_box: props.data.select_countries.nodes.filter( (c) => c.country_name !== 'China'),
       selected_country: 'New Zealand',
-      numberFormat: new Intl.NumberFormat()
+      numberFormat: new Intl.NumberFormat(),
+      field: 'confirmed',
+      per: 'total'
 		}
   }
   
@@ -22,7 +24,7 @@ export default class IndexPage extends React.Component{
   }
   
   render(){
-    const {countries, countries_in_select_box} = this.state
+    const {countries, countries_in_select_box, field, per} = this.state
     let active_country = countries.filter( (c) => c.country_name === this.state.selected_country )[0]
     
     
@@ -33,11 +35,9 @@ export default class IndexPage extends React.Component{
         active_country.highest = time
     })
 
-    const top_thirty = countries.filter(
-      country => country.highest_confirmed > active_country.highest_confirmed
-    ).slice(0, 30)
+
     
-    top_thirty.forEach( (country) => {
+    countries.forEach( (country) => {
       let earliest = {}
       let highest = {}
       country.time_series.forEach( (time) => {
@@ -57,6 +57,30 @@ export default class IndexPage extends React.Component{
       country.highest = highest
     })
 
+
+    // Sort
+    if(per === 'per_million'){
+      if(field === 'confirmed') 
+        countries.sort((a, b) => (a.highest.confirmed_per_mil < b.highest.confirmed_per_mil) ? 1 : -1)
+      else 
+        countries.sort((a, b) => (a.highest.deaths_per_mil < b.highest.deaths_per_mil) ? 1 : -1)
+    } 
+    else{
+      if(field === 'confirmed') 
+        countries.sort((a, b) => (a.highest.confirmed < b.highest.confirmed) ? 1 : -1)
+      else 
+        countries.sort((a, b) => (a.highest.deaths < b.highest.deaths) ? 1 : -1)
+    }
+
+
+    // Then choose top
+    const top= countries.filter(
+      country => country.highest_confirmed > active_country.highest_confirmed
+    ).slice(0, 60)
+
+
+
+
     
 
     return (
@@ -70,42 +94,38 @@ export default class IndexPage extends React.Component{
                   <h1 className="title">
                     COVID-19: Flatten The Curve
                   </h1>
-                  <h2 className="subtitle is-size-5">A unique way of showing the importance of early protective measures</h2>
-                  <div className="field is-grouped is-horizontal">
-                    <div className="control">
-                      <div className="select">
-                        <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>>
-                          {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
-                            <option key={country_name} value={country_name}>{country_name}:     {highest_confirmed}</option>
-                          ))}
-                        </select>
-                      </div>
-                    </div>
-                    <div className="control">
-                      <button className="button is-success">Go</button>
-                    </div>
-                  </div>
-                  <p className="is-size-7" style={{marginBottom: '10px'}}>
-                    <strong style={{color: '#fff'}}>If your country is not showing</strong>, we are filtering for populations over 3 million and at least 3 confirmed cases.
-                  </p>
-                  <p className="is-size-5" style={{marginBottom: '10px'}}>
-                    Work in Progress. Inspired by 
-                    <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">
-                      Flattenthecurve.com
-                    </a>.
-                  </p>
-                  <p className="is-size-5">
-                    Data from 
-                    <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">
-                      John Hopkins
-                    </a>.
-                  </p>
-                  
-                  
-                  <p className="is-size-7">Data last updated: <strong style={{color: 'white'}}>3:36pm Mar, 17 2020 NZT</strong> </p>
+                  <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>
                 </div>
                 <div className="column">
-                  <h3 className="is-size-4 title">{this.state.selected_country}'s Current State Today</h3>  
+                  <div className="field is-grouped is-horizontal">
+                      <div className="control">
+                        <div className="select">
+                          <select value={this.state.selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
+                            {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
+                              <option key={country_name} value={country_name}>{country_name}:     {highest_confirmed}</option>
+                            ))}
+                          </select>
+                        </div>
+                      </div>
+                      <div className="control">
+                        <button className="button is-success">Go</button>
+                      </div>
+                    </div>
+                    <p className="is-size-7">
+                      Please note: If your country is not showing we are filtering for populations over 3 million and at least 3 confirmed cases.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section className="section">
+          <div className="container">
+            <div className="columns info">
+              <div className="column is-narrow">
+                <div className="box has-background-success">
+                  <h3 className="is-size-4 title has-text-white">{this.state.selected_country}'s Current State</h3>  
                   <table className="table is-borderless is-size-6" style={{border: 'none', background: 'none'}}>
                     <thead>
                       <tr>
@@ -116,37 +136,75 @@ export default class IndexPage extends React.Component{
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Confirmed</td>
+                        <th>Confirmed</th>
                         <td>{this.tidyFormat(active_country.highest.confirmed)}</td>
                         <td>{active_country.highest.confirmed_per_mil.toFixed(2)}
                         </td>
                       </tr>
                       <tr>
-                      <td>Deaths</td>
+                        <th>Deaths</th>
                         <td>{this.tidyFormat(active_country.highest.deaths)}</td>
                         <td>{active_country.highest.deaths_per_mil ? active_country.highest.deaths_per_mil.toFixed(2): ''}</td>
                       </tr>
                       <tr>
-                        <td>Recovered</td>
+                        <th>Recovered</th>
                         <td>{this.tidyFormat(active_country.highest.recovered)}</td>
                         <td>{active_country.highest.recovered_per_mil ? active_country.highest.recovered_per_mil.toFixed(2): ''}</td>
                       </tr>
                     </tbody>
-                    </table>
+                  </table>
                 </div>
               </div>
+              <div className="column desc">
+                  <p className="is-size-5">
+                    This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
+                      GitHub</a> and pull requests are welcome.
+                  </p>
+                  <p className="is-size-5">
+                    Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. Please visit this site for actionable steps to slow the spread.
+                  </p>
+                  <p className="is-size-5">
+                    COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> and was last updated at 3:36pm Mar, 17 2020 NZT.
+                    </p>
+                </div>
             </div>
-          </div>
-        </section>
-        
-        <section className="section">
-          <div className="container">
-            <h3 className="is-size-3 title" style={{marginBottom: 0}}>Top {top_thirty.length} countr{top_thirty.length == 1? 'y': 'ies'} with a higher confirmed case count.</h3>
-            <h3 className="is-size-3 title">When did each country last reach a case count similar to {this.state.selected_country}?</h3>
+
+            <div className="columns">
+              <div className="column title-with-inputs">
+                <p className="is-size-5">{top.length} Countr{top.length == 1? 'y': 'ies'} With Higher</p>
+                <div className="field is-grouped is-horizontal">
+                  <div className="control">
+                    <div className="select">
+                      <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="deaths">Deaths</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div className="field is-grouped is-horizontal">
+                  <div className="control">
+                    <div className="select">
+                      <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
+                        <option value="total">Total</option>
+                        <option value="per_million">Per Millon</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <p className="is-size-5">Count</p>
+              </div>
+            </div>
+
+            
+            
+
+            
+            
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { top_thirty.map( (country) => (
+              { top.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
-                  <div className="box has-background-danger has-text-white">
+                  <div className="box has-background-danger has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
                     <p className="is-size-4" style={{marginBottom: 0}}>
                         <strong>
@@ -154,13 +212,11 @@ export default class IndexPage extends React.Component{
                         </strong>
                       </p>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: '15px'}}>{country.country_name}</h2>
-                      
+                      <p className="is-size-5 has-text-white" style={{marginBottom: 0}}>reached the same count on</p>
                       <table className="table is-narrow ">
                       <thead>
                         <tr>
-                          <th colspan="3" className="is-size-4">
-                            {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
-                          </th>
+                          <th colSpan="3" className="is-size-5" style={{padding: 0}}>{format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}</th>
                         </tr>
                         <tr>
                           <td></td>
@@ -193,7 +249,7 @@ export default class IndexPage extends React.Component{
                       <table className="table is-narrow is-borderless">
                         <thead>
                           <tr>
-                            <th colspan="3" className="is-size-4">Today</th>
+                            <th colSpan="3" className="is-size-4" style={{paddingBottom: 0}}>Today</th>
                           </tr>
                           <tr>
                             <td></td>
@@ -230,6 +286,7 @@ export default class IndexPage extends React.Component{
             <div className="container">
               <h2 className="is-size-3">This is a prototype / work in progress</h2>
               <p>COVID daily updated infection data is from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins repo</a></p>
+              <p>Ppoulation data sourced from Population data sourced from <a href="https://data.worldbank.org/indicator/SP.POP.TOTL" target="_blank" rel="noopener noreferrer">The World Bank</a></p>
               <h3>Things Next on the list to do:</h3>
               <ul>
                 <li>Allow for ranking by deaths as well as confirmed</li>

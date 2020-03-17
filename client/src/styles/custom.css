@@ -1,35 +1,85 @@
-.hero table td{
+.info{
+    padding-bottom: 20px;
+    align-items: center;
+}
+@media screen and (min-width: 769px){
+    .info .desc{
+        margin-left: 30px;
+        
+    }
+    .info .box{
+        padding: 20px;
+    }
+}
+.info .table td, .info .table th{
     border: none;
     color: #fff;
-    font-weight: 500;
+    line-height: 1;
 }
-.hero a{
-    text-decoration: none;
-    color: #fff;
+.info .table th{
     font-weight: 700;
 }
+.info .table thead td{
+    color: #000;
+}
 
-.box table{
+.info a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+.info p{
+    margin-bottom: 0.5em;
+}
+.box.country table{
     background: none;
     color: #fff;
 }
-.box table strong{
+.box.country table strong{
     color: #fff;
 }
-.box table.is-narrow td, .box table.is-narrow  th,
+.box.country table.is-narrow td, .box.country table.is-narrow  th,
 .hero table td, .hero table  th{
     color: #fff;
     border: none;
     margin-left: 0;
     padding-left: 0;
+    line-height: 1;
+    
 }
-.box table.is-narrow thead td,
+.box.country table.is-narrow thead td,
 .hero .table thead td{
     color: #000;
+    line-height: 1
 }
-.box table.is-narrow td{
+.box table td{
     text-align: right;
 }
 .hero table tbody td{
     color: #fff;
+}
+
+.title-with-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.title-with-inputs p{
+    margin-bottom: 0;
+    font-weight: 700;
+    
+}
+.title-with-inputs .field{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    
+}
+.title-with-inputs .field .select select{
+    font-weight: 700;
+}
+@media screen and (max-width: 420px){
+    .title-with-inputs .field{
+        margin: 5px 10px 5px 0;
+    }
 }

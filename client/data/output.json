@@ -15569,11 +15569,11 @@
       },
       {
         "date": "3/16/20",
-        "confirmed": 8,
-        "confirmed_per_mil": 1.6374987207041243
+        "confirmed": 11,
+        "confirmed_per_mil": 2.251560741
       }
     ],
-    "highest_confirmed": 8,
+    "highest_confirmed": 11,
     "population": 4885500
   },
   {
