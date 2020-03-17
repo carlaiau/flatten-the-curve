@@ -152,7 +152,7 @@ export default class IndexPage extends React.Component{
           <div className='modal is-active'>
             <div className="modal-background" onClick={e => this.setState({modalOpen: false})}></div>
             <div className="modal-card ">
-              <header className="modal-card-head has-background-danger">
+              <header className="modal-card-head has-background-success">
                 <p className="modal-card-title is-size-4 "><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
                 <button className="delete has-background-dark" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
               </header>
@@ -185,7 +185,7 @@ export default class IndexPage extends React.Component{
                   Once the forecasted deaths are above 1 the projected death rate grows based on the growth of the {this.state.comparable_country.country_name} observed death rate.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>
                   This forecast is not meant to reflective of {active_country.country_name}'s future, merely an inication of what is possible.
-                  If there are flaws with this naivie approach please reach out to us so we can ensure it is done correctly.
+                  If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
                 </p>
                 <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
@@ -222,7 +222,7 @@ export default class IndexPage extends React.Component{
                 </table>
               </section>
               
-              <footer className="modal-card-foot has-background-danger">
+              <footer className="modal-card-foot has-background-success">
                 <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
               </footer>
             </div>
@@ -331,7 +331,7 @@ export default class IndexPage extends React.Component{
                     </div>
                     <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
                       <p className="is-size-7">
-                        The potential forecast does not take into account the comparison between country's doubling time. 
+                        The potential forecast does not take into account the relative doubling time of each country
                       </p>
                       <p className="is-size-7">
                         The true forecast depends on a multitidue of factors such as: The number and speed of tests done, 
@@ -385,7 +385,7 @@ export default class IndexPage extends React.Component{
             <div className="columns" style={{flexWrap: 'wrap'}}>
               { top.map( (country) => (
                 <div className="column is-one-third" key={country.country_name}>
-                  <div className="box has-background-danger has-text-white country">
+                  <div className="box has-background-success has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
                         <strong className="has-text-white" style={{position: 'absolute', top: 0, right: 0}}>
                           {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
