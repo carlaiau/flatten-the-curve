@@ -88,13 +88,13 @@ export default class IndexPage extends React.Component{
                   <p className="is-size-7" style={{marginBottom: '10px'}}>
                     <strong style={{color: '#fff'}}>If your country is not show</strong>: we are filtering for populations over 3 million and at least 3 confirmed cases.
                   </p>
-                  <p className="is-size-5">Work in Progress. 
+                  <p className="is-size-5" style={{marginBottom: '10px'}}>Work in Progress. 
                     Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                     Data from <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">John Hopkins</a>.
                   </p>
                   
                   
-                  <p className="is-size-6">Data last updated: <strong style={{color: 'white'}}>8:58am March 17, 2020 NZT</strong> </p>
+                  <p className="is-size-7">Data last updated: <strong style={{color: 'white'}}>1:11pm March 17, 2020 NZT</strong> </p>
                 </div>
                 <div className="column">
                   <h3 className="is-size-4 title">{this.state.selected_country}'s Current State Today</h3>  
