@@ -154,7 +154,7 @@ export default class IndexPage extends React.Component{
                 <p className="modal-card-title is-size-4 "><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
                 <button className="delete has-background-dark" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
               </header>
-              <section className="modal-card-body has-background-light has-text-dark">
+              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? 'is-hidden': ''}`}>
                 <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days for {active_country.country_name}.</p>
                 <p className="is-size-7" style={{marginBottom: '10px'}}>*Description of forecast below table</p>
@@ -208,7 +208,6 @@ export default class IndexPage extends React.Component{
                       <td className="is-size-7">Deaths</td>
                     </tr>
                     {
-                      
                       time_series.map( (time, i) => (
                         <tr key={i}>
                           <td className="is-size-7">{time_series.length - (i + 1) }</td>
@@ -221,6 +220,12 @@ export default class IndexPage extends React.Component{
                     )}
                   </tbody>
                 </table>
+              </section>
+              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? '': 'is-hidden'}`}>
+                <h2></h2>
+                <p className="is-size-6">Although {this.state.comparable_country.country_name} has higher {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'}
+                {} than {active_country.country_name}, {this.state.comparable_country.country_name} has lower confirmed cases per million and therefore can't be used.
+                </p>
               </section>
               <footer className="modal-card-foot has-background-danger">
                 <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
