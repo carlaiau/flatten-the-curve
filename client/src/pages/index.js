@@ -223,7 +223,7 @@ export default class IndexPage extends React.Component{
                 </table>
               </section>
               <footer className="modal-card-foot has-background-danger">
-                <button className="button is-dark" >Back to Results</button>
+                <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
               </footer>
             </div>
           </div>
