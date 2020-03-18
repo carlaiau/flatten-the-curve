@@ -2,10 +2,7 @@
 body{
     background: #f7f1e3;
 }
-.info{
-    padding-bottom: 20px;
-    align-items: center;
-}
+
 .hero .columns{
     align-items: center;
 }
@@ -41,8 +38,10 @@ body{
     color: #000;
     font-weight: 700;
 }
-.info p{
-    margin-bottom: 0.5em;
+@media screen and (min-width: 769px){
+    .info .field{
+        margin-top: 40px
+    }
 }
 .box.country table{
     background: none;

@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
 import { format, parse, formatDistance } from "date-fns"
-import {LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts'
+import {LineChart, Line, XAxis, YAxis, Tooltip, Legend} from 'recharts'
 
 // Need to actually make it dynamically determine the date
 
@@ -119,7 +119,7 @@ export default class IndexPage extends React.Component{
           {
             day: 0,
             confirmed: active_country.highest.confirmed,
-            deaths: active_country.highest.deaths
+            deaths: active_country.highest.deaths | 0
           }
         ]
 
@@ -139,33 +139,41 @@ export default class IndexPage extends React.Component{
             else 
               deaths = previous_deaths * (1 + delta.deaths)
             
-            forecast.push({day, confirmed: confirmed.toFixed(0), deaths: deaths.toFixed(0) })
+            forecast.push({day, confirmed: parseInt(confirmed.toFixed(0)), deaths: parseInt(deaths.toFixed(0)) })
             previous_confirmed = confirmed
             previous_deaths = deaths
             
           }
         })
-
-
-        
-
-        
-
-
-
-
         
         return (
           <div className='modal is-active'>
             <div className="modal-background" onClick={e => this.setState({modalOpen: false})}></div>
             <div className="modal-card ">
               <header className="modal-card-head has-background-success">
-                <p className="modal-card-title is-size-4 "><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
+                <p className="modal-card-title is-size-4"><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
                 <button className="delete has-background-dark" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
               </header>
-              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? 'is-hidden': ''}`}>
+              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? 'is-hidden': ''}`} style={{overflowX: 'hidden'}}>
                 <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days for {active_country.country_name}.</p>
+                <p className="is-size-6 subtitle" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days</p>
+                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="projection">
+                  <XAxis dataKey="day"/>
+                  <YAxis width={50}/>
+                  <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
+                  <Tooltip/>
+                  <Legend verticalAlign="top"/>
+                </LineChart>
+                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="projection">
+                  <XAxis dataKey="day"/>
+                  <YAxis width={50}/>
+                  <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
+                  <Tooltip/>
+                  <Legend verticalAlign="top"/>
+                </LineChart>
+                
+              
+                
                 <p className="is-size-7" style={{marginBottom: '10px'}}>*Description of forecast below table</p>
                 <table className="table  is-striped is-fullwidth" style={{marginTop: '10px'}}>
                   <tbody>
@@ -196,7 +204,20 @@ export default class IndexPage extends React.Component{
                 </p>
                 <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
-                <table className="table is-striped is-fullwidth">
+                
+                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="progression">
+                  <YAxis width={50}/>
+                  <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
+                  <Tooltip/>
+                  <Legend verticalAlign="top"/>
+                </LineChart>
+                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="progression">
+                  <YAxis width={50}/>
+                  <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
+                  <Tooltip/>
+                  <Legend verticalAlign="top"/>
+                </LineChart>
+                <table className="table is-striped is-fullwidth" style={{marginTop: '10px'}}>
                   <thead> 
                     <tr>
                       <th></th>
@@ -271,8 +292,6 @@ export default class IndexPage extends React.Component{
     </section>
     )
 
-    
-
     const Tabs = (props) => (
       <React.Fragment>
       <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
@@ -309,11 +328,12 @@ export default class IndexPage extends React.Component{
       </div> 
       </React.Fragment>
     )
+
     const Graph = () => {
       const filteredData = this.state.field == 'confirmed' ? active_country.time_series.filter(t => parseInt(t.confirmed) > 0) : active_country.time_series.filter(t => parseInt(t.deaths) > 0)
       if(filteredData.length){
         return (
-          <LineChart width={this.state.width >= 768 ? 620 : 303} height={this.state.width >= 768 ? 300 : 150} data={filteredData} margin={{top: 5, right: 30, left: 20, bottom: 5}}>
+          <LineChart width={this.state.width >= 768 ? 620 : 303} height={this.state.width >= 768 ? 300 : 150} data={filteredData}>
             <XAxis dataKey="date"/>
             <YAxis width={40}/>
             {
@@ -350,7 +370,7 @@ export default class IndexPage extends React.Component{
             <div className="columns info">
               <div className="column"> 
                 <h2 className="is-size-3 title">{active_country.country_name}</h2>
-                <p className="is-size-4">
+                <p className="is-size-4 subtitle">
                   {active_country.highest.confirmed ? this.tidyFormat(active_country.highest.confirmed) + ' Cases' : '' }
                   <span style={{float: 'right'}}>
                     {active_country.highest.deaths ?  ' ' + this.tidyFormat(active_country.highest.deaths) + ' Deaths' : '' }
