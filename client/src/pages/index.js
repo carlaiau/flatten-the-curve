@@ -277,6 +277,7 @@ export default class IndexPage extends React.Component{
                   <h3 className="is-size-4 title has-text-white">{this.state.selected_country}'s Current State</h3>  
                   <table className="table is-borderless is-size-6" style={{border: 'none', background: 'none'}}>
                     <thead>
+                      
                       <tr>
                         <td></td>
                         <td>Total</td>
@@ -317,38 +318,32 @@ export default class IndexPage extends React.Component{
                       </ul>
                     </div>
                     <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
-                      <p className="is-size-6" style={{marginBottom: '10px'}}>
-                        We want to show when these countries were at a similar level to {active_country.country_name} and how their situation has progressed since then.
-                      </p>
-                  <p className="is-size-6" style={{marginBottom: '10px'}}>
-                    Each countries progression can be used as a potential forecast for {active_country.country_name}'s future.
-                  </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
                           GitHub</a> and pull requests are welcome.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                         Please visit this site for actionable steps to slow the spread.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
                         {} and was last updated at 8:29pm Mar, 17 2020 NZT.
                         </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         If your country is not in the dropdown we are filtering out countries below 3 million population and less than 5 confirmed cases. 
                         If your country is not shown but should be, please contact us!
                       </p>
                     </div>
                     <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         The potential forecast does not take into account the relative doubling time of each country
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         The true forecast depends on a multitidue of factors such as: The number and speed of tests done, 
                         the quality of the case tracking, the testing of tracked cases, and the support for people who need to go into isolation.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         This sites goal is to motivate people to take actionable steps by showing them where countries have ended up from a situation
                         that was the same as {active_country.country_name} 
                       </p>
@@ -360,8 +355,8 @@ export default class IndexPage extends React.Component{
             <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
               <div className="column">
                 <div className="title-with-inputs" style={{marginBottom: '10px'}}>
-                  <p className="is-size-5">
-                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
+                  <p className="is-size-5" style={{textTransform: 'capitalize'}}>
+                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are presently ranked higher than {active_country.country_name} by
                   </p>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
@@ -394,21 +389,29 @@ export default class IndexPage extends React.Component{
                   <div className="box has-background-success has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
-                      <p className="is-size-6 has-text-white">
-                        Was the same as {active_country.country_name} {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} 
-                        {' '}{formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
+                      <p className="is-size-6 has-text-white" style={{textTransform: 'capitalize'}}>
+                      {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago {country.country_name}  had the same {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as
+                      {' '} {active_country.country_name}
+                        
                       </p>
-                      <table className="table is-narrow ">
+                      <table className="t able is-narrow ">
+
+
                       <thead>
+                        <tr>
+                          <th></th>
+                          <th style={{textAlign: 'right'}}>Then</th>
+                          <th style={{textAlign: 'right'}}>Now</th>
+                        </tr>
                         <tr>
                           <th className={this.state.per != 'total' ? 'is-hidden': ''}>Total</th>
                           <th className={this.state.per == 'total' ? 'is-hidden': ''}>Per Million</th>
-                          <th style={{textAlign: 'right'}}>
+                          <td style={{textAlign: 'right'}}>
                             {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
-                          </th>
-                          <th style={{textAlign: 'right'}}>
+                          </td>
+                          <td style={{textAlign: 'right'}}>
                             { format( parse( country.highest.date, 'MM/dd/yy', new Date() ), 'PP') }
-                          </th>
+                          </td>
                         </tr>
                       </thead>
                         <tbody>
