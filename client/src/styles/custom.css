@@ -6,11 +6,21 @@ body{
     padding-bottom: 20px;
     align-items: center;
 }
-@media screen and (min-width: 769px){
-    .info .desc{
-        margin-left: 30px;
-        
+.hero .columns{
+    align-items: center;
+}
+.section.bar{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+@media screen and (max-width: 768px){
+    .section{
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
+}
+@media screen and (min-width: 769px){
+
     .info .box{
         padding: 20px;
     }
@@ -49,7 +59,13 @@ body{
     margin-left: 0;
     padding-left: 0;
     line-height: 1;
-    
+}
+
+.box.country .table.is-narrow.is-dark th{
+    color: #000;
+}
+.box.country .table.is-narrow.is-dark td{
+    color: #333;
 }
 .box.country table.is-narrow thead td,
 .hero .table thead td{
@@ -77,7 +93,6 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 0;
-    
 }
 .title-with-inputs .field .select select{
     font-weight: 700;
@@ -111,6 +126,9 @@ body{
 }
 .has-background-success{
     background: #218c74 !important;
+}
+.has-background-gold{
+    background: #cc8e35;
 }
 .hero.is-info{
     background: #227093;
