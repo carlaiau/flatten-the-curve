@@ -338,7 +338,7 @@ export default class IndexPage extends React.Component{
         return (
           <LineChart width={this.state.width >= 768 ? 620 : 303} height={this.state.width >= 768 ? 372 : 150} data={filteredData}>
             <XAxis dataKey="date"/>
-            <YAxis width={40}/>
+            <YAxis width={55}/>
             {
               full_field_name == 'confirmed' ? 
                 <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f"/> :
