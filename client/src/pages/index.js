@@ -350,6 +350,13 @@ export default class IndexPage extends React.Component{
             <div className="columns info">
               <div className="column"> 
                 <h2 className="is-size-3 title">{active_country.country_name}</h2>
+                <p className="is-size-4">
+                  {active_country.highest.confirmed ? this.tidyFormat(active_country.highest.confirmed) + ' Cases' : '' }
+                  <span style={{float: 'right'}}>
+                    {active_country.highest.deaths ?  ' ' + this.tidyFormat(active_country.highest.deaths) + ' Deaths' : '' }
+                  </span>
+                </p>  
+
                 <div className="box" style={{padding: '10px'}}><Graph /></div>
               </div>
               <div className="column">
@@ -378,7 +385,7 @@ export default class IndexPage extends React.Component{
                         <a onClick={(e)=> this.setState({active_tab: 'about'})}>About</a>
                       </li>
                       <li className={this.state.active_tab =='forecast' ? 'is-active' : ''}>
-                        <a onClick={(e)=> this.setState({active_tab: 'forecast'})}>Forecast</a>
+                        <a onClick={(e)=> this.setState({active_tab: 'forecast'})}>Note on Forecasts</a>
                       </li>
                     </ul>
                   </div>
