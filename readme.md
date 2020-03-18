@@ -63,6 +63,7 @@ Gatsby will automatically load the countries data into GraphQL based on what fil
 ### Next Up
 - Create Graph that outputs your countries various projected outcomes from the top 6 - 12 countries.
 - Give ability for user to filter the comparable countries by population range
+- Dynamically route to pre-select country based on slug for easier sharing to non NZ populations
 - PurgeCSS
 
 ### Later
