@@ -157,14 +157,14 @@ export default class IndexPage extends React.Component{
               <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? 'is-hidden': ''}`} style={{overflowX: 'hidden'}}>
                 <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
                 <p className="is-size-6 subtitle" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days</p>
-                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="projection">
+                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="projection">
                   <XAxis dataKey="day"/>
                   <YAxis width={50}/>
                   <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
                   <Tooltip/>
                   <Legend verticalAlign="top"/>
                 </LineChart>
-                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="projection">
+                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="projection">
                   <XAxis dataKey="day"/>
                   <YAxis width={50}/>
                   <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
@@ -205,13 +205,13 @@ export default class IndexPage extends React.Component{
                 <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
                 <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
                 
-                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="progression">
+                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="progression">
                   <YAxis width={50}/>
                   <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
                   <Tooltip/>
                   <Legend verticalAlign="top"/>
                 </LineChart>
-                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={200} syncId="progression">
+                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="progression">
                   <YAxis width={50}/>
                   <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
                   <Tooltip/>
@@ -295,6 +295,7 @@ export default class IndexPage extends React.Component{
     const Tabs = (props) => (
       <React.Fragment>
       <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
+      <p className="is-size-6">The goal of this site is to motivate people to take actionable steps now to slow the spread of COVID-19.</p>
         <p className="is-size-6">
           This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
             GitHub</a> and pull requests are welcome.
@@ -311,19 +312,21 @@ export default class IndexPage extends React.Component{
           If your country is not shown but should be, please contact us!
         </p>
       </div>
+      
+
+
+
+
       <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
+        
+        <p className="is-size-6">The forecasts below show a future projection of COVID-19 in the selected country of {props.active_country.country_name}. This is based on the historical growth data of each country that is currently ahead of {props.active_country.country_name} in the outbreak.</p>
         <p className="is-size-6">
-          This sites goal is to motivate people to take eary actionable steps to slow the spread of COVID-19. 
+          Viewing this can offer unique insights into the range of possible outcomes. Not based on epidemiological models, only on historical data experienced by other countries.</p>
+        <p className="is-size-6">
+          The potential forecast does not take into account the relative doubling time of each country.
         </p>
         <p className="is-size-6">
-          Viewing the forecast of any of the countries below will show you a future projection of {props.active_country.country_name} infection state. 
-          This is based on the other countries historical data, viewing this can offer unique insights, but it not based on epidemiology or statistics and therefore should not be used to indicate the probabilities of future outcomes.
-        </p>
-        <p className="is-size-6">
-          The potential forecast does not take into account the relative doubling time of each country
-        </p>
-        <p className="is-size-6">
-          The true forecast depends on a multitidue of factors such as, the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
+          The true forecast depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
         </p>
       </div> 
       </React.Fragment>
@@ -333,7 +336,7 @@ export default class IndexPage extends React.Component{
       const filteredData = this.state.field == 'confirmed' ? active_country.time_series.filter(t => parseInt(t.confirmed) > 0) : active_country.time_series.filter(t => parseInt(t.deaths) > 0)
       if(filteredData.length){
         return (
-          <LineChart width={this.state.width >= 768 ? 620 : 303} height={this.state.width >= 768 ? 300 : 150} data={filteredData}>
+          <LineChart width={this.state.width >= 768 ? 620 : 303} height={this.state.width >= 768 ? 372 : 150} data={filteredData}>
             <XAxis dataKey="date"/>
             <YAxis width={40}/>
             {
@@ -353,7 +356,7 @@ export default class IndexPage extends React.Component{
           </LineChart>
         )
       }
-      return <React.Fragment>No Results!</React.Fragment>
+      return <React.Fragment><p className="is-size-4">No Results to Graph!</p></React.Fragment>
     }
 
 
