@@ -5,6 +5,8 @@ import 'bulma/css/bulma.css'
 import '../styles/custom.css'
 import { format, parse, formatDistance } from "date-fns"
 
+// Need to actually make it dynamically determine the date
+
 export default class IndexPage extends React.Component{
   
   constructor(props){
@@ -66,6 +68,9 @@ export default class IndexPage extends React.Component{
     })
 
     
+    const the_latest_date = active_country.highest
+
+    
 
 
     
@@ -78,7 +83,7 @@ export default class IndexPage extends React.Component{
       c => c.highest[full_field_name] > active_country.highest[full_field_name]
     ).slice(0, limit)
     
-    
+    /* the Modal component */
     const Modal = () => {
       if(this.state.modalOpen){
 
@@ -269,9 +274,10 @@ export default class IndexPage extends React.Component{
             <div className="columns info">
               <div className="column is-narrow">
                 <div className="box has-background-success">
-                  <h3 className="is-size-4 title has-text-white">{this.state.selected_country}'s Current State</h3>  
+                  <h3 className="is-size-4 title has-text-white">{this.state.selected_country} Now</h3>  
                   <table className="table is-borderless is-size-6" style={{border: 'none', background: 'none'}}>
                     <thead>
+                      
                       <tr>
                         <td></td>
                         <td>Total</td>
@@ -312,32 +318,32 @@ export default class IndexPage extends React.Component{
                       </ul>
                     </div>
                     <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
                           GitHub</a> and pull requests are welcome.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                         Please visit this site for actionable steps to slow the spread.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
-                        {} and was last updated at 8:29pm Mar, 17 2020 NZT.
+                        {} and was last updated at 3:28pm Mar, 18 2020 NZT.
                         </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         If your country is not in the dropdown we are filtering out countries below 3 million population and less than 5 confirmed cases. 
                         If your country is not shown but should be, please contact us!
                       </p>
                     </div>
                     <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         The potential forecast does not take into account the relative doubling time of each country
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         The true forecast depends on a multitidue of factors such as: The number and speed of tests done, 
                         the quality of the case tracking, the testing of tracked cases, and the support for people who need to go into isolation.
                       </p>
-                      <p className="is-size-7">
+                      <p className="is-size-6">
                         This sites goal is to motivate people to take actionable steps by showing them where countries have ended up from a situation
                         that was the same as {active_country.country_name} 
                       </p>
@@ -349,8 +355,8 @@ export default class IndexPage extends React.Component{
             <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
               <div className="column">
                 <div className="title-with-inputs" style={{marginBottom: '10px'}}>
-                  <p className="is-size-5">
-                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} Ranked Higher Than {active_country.country_name} by
+                  <p className="is-size-5" style={{textTransform: 'capitalize'}}>
+                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
                   </p>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
@@ -373,12 +379,7 @@ export default class IndexPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>
-                  We want to show when these countries were at a similar level to {active_country.country_name} and how their situation has progressed since then.
-                </p>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>
-                  Each countries progression can be used as a potential forecast for {active_country.country_name}'s future.
-                </p>
+                
               </div>              
             </div>
 
@@ -388,73 +389,56 @@ export default class IndexPage extends React.Component{
                   <div className="box has-background-success has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
-                      <p className="is-size-6 has-text-white">
-                        Was at the same {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as 
-                        {' '}{active_country.country_name}{' '} <br/>{formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago.
+                      <p className="is-size-6 has-text-white" style={{textTransform: 'capitalize'}}>
+                      {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago {country.country_name}  had similar {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as
+                      {' '} {active_country.country_name}
+                        
                       </p>
-                      <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
-                        <strong className="has-text-white">
-                        On {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
-                        </strong>
-                      </p>
-                      <table className="table is-narrow ">
+                      <table className="t able is-narrow ">
+
+
                       <thead>
+
                         <tr>
-                          <td></td>
-                          <td>Total</td>
-                          <td>Per Million</td>
+                          <th className={this.state.per != 'total' ? 'is-hidden': ''}>Total</th>
+                          <th className={this.state.per == 'total' ? 'is-hidden': ''}>Per Million</th>
+                          <th style={{textAlign: 'right', textTransform: 'capitalize'}}>
+                            
+                            {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
+                          </th>
+                          <th style={{textAlign: 'right'}}>
+                            Now
+                          </th>
                         </tr>
                       </thead>
                         <tbody>
                           <tr>
                             <th>Confirmed</th>
-                            <td>{this.tidyFormat(country.earliest.confirmed)}</td>
-                            <td>{country.earliest.confirmed_per_mil ? country.earliest.confirmed_per_mil.toFixed(2): ''}</td>
-                            
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.earliest.confirmed)}</td>
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.highest.confirmed)}</td>
+
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.earliest.confirmed_per_mil ? country.earliest.confirmed_per_mil.toFixed(2): ''}</td>
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.highest.confirmed_per_mil ? country.highest.confirmed_per_mil.toFixed(2): ''}</td>
                           </tr>
                           <tr>
                             <th>Deaths</th>
-                            <td>{this.tidyFormat(country.earliest.deaths)}</td>
-                            <td>{country.earliest.deaths_per_mil ? country.earliest.deaths_per_mil.toFixed(2): ''}</td>
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.earliest.deaths)}</td>
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.highest.deaths)}</td>
+                            
+                            
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.earliest.deaths_per_mil ? country.earliest.deaths_per_mil.toFixed(2): ''}</td>
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.highest.deaths_per_mil ? country.highest.deaths_per_mil.toFixed(2): ''}</td>
                           </tr>
                           <tr>
                             <th>Recovered</th>
-                            <td>{this.tidyFormat(country.earliest.recovered)}</td>
-                            <td>{country.earliest.recovered_per_mil ? country.earliest.recovered_per_mil.toFixed(2): ''}</td>
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.earliest.recovered)}</td>
+                            <td className={this.state.per != 'total' ? 'is-hidden': ''}>{this.tidyFormat(country.highest.recovered)}</td>
                             
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.earliest.recovered_per_mil ? country.earliest.recovered_per_mil.toFixed(2): ''}</td>
+                            <td className={this.state.per == 'total' ? 'is-hidden': ''}>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>
                           </tr>
                         </tbody>
                       </table>
-                        
-                      <p className="is-size-4  has-text-white" style={{marginTop: 0, marginBottom: 0}}>
-                        <strong className="has-text-white">Compared To Now</strong>
-                      </p>
-                      <table className="table is-narrow is-borderless">
-                        <thead>
-                          <tr>
-                            <td></td>
-                            <td>Total</td>
-                            <td>Per Million</td>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th>Confirmed</th>
-                            <td>{this.tidyFormat(country.highest.confirmed)}</td>
-                            <td>{country.highest.confirmed_per_mil ? country.highest.confirmed_per_mil.toFixed(2): ''}</td>
-                          </tr>
-                          <tr>
-                            <th>Deaths</th>
-                            <td>{this.tidyFormat(country.highest.deaths)}</td>
-                            <td>{country.highest.deaths_per_mil ? country.highest.deaths_per_mil.toFixed(2): ''}</td>
-                          </tr>
-                          <tr>
-                            <th>Recovered</th>
-                            <td>{this.tidyFormat(country.highest.recovered)}</td>
-                            <td>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>
-                          </tr>
-                        </tbody>
-                        </table>
                       <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
                           'is-dark'  :
                           'has-background-success is-size-7'
