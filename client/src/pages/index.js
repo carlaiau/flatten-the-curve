@@ -274,7 +274,7 @@ export default class IndexPage extends React.Component{
             <div className="columns info">
               <div className="column is-narrow">
                 <div className="box has-background-success">
-                  <h3 className="is-size-4 title has-text-white">{this.state.selected_country}'s Current State</h3>  
+                  <h3 className="is-size-4 title has-text-white">{this.state.selected_country} Now</h3>  
                   <table className="table is-borderless is-size-6" style={{border: 'none', background: 'none'}}>
                     <thead>
                       
@@ -328,7 +328,7 @@ export default class IndexPage extends React.Component{
                       </p>
                       <p className="is-size-6">
                         COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
-                        {} and was last updated at 8:29pm Mar, 17 2020 NZT.
+                        {} and was last updated at 3:28pm Mar, 18 2020 NZT.
                         </p>
                       <p className="is-size-6">
                         If your country is not in the dropdown we are filtering out countries below 3 million population and less than 5 confirmed cases. 
@@ -356,7 +356,7 @@ export default class IndexPage extends React.Component{
               <div className="column">
                 <div className="title-with-inputs" style={{marginBottom: '10px'}}>
                   <p className="is-size-5" style={{textTransform: 'capitalize'}}>
-                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are presently ranked higher than {active_country.country_name} by
+                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
                   </p>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
@@ -390,7 +390,7 @@ export default class IndexPage extends React.Component{
                     <div className="content" style={{position: 'relative'}}>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                       <p className="is-size-6 has-text-white" style={{textTransform: 'capitalize'}}>
-                      {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago {country.country_name}  had the same {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as
+                      {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago {country.country_name}  had similar {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as
                       {' '} {active_country.country_name}
                         
                       </p>
@@ -398,20 +398,17 @@ export default class IndexPage extends React.Component{
 
 
                       <thead>
-                        <tr>
-                          <th></th>
-                          <th style={{textAlign: 'right'}}>Then</th>
-                          <th style={{textAlign: 'right'}}>Now</th>
-                        </tr>
+
                         <tr>
                           <th className={this.state.per != 'total' ? 'is-hidden': ''}>Total</th>
                           <th className={this.state.per == 'total' ? 'is-hidden': ''}>Per Million</th>
-                          <td style={{textAlign: 'right'}}>
-                            {format(parse(country.earliest.date, 'MM/dd/yy', new Date()), 'PP')}
-                          </td>
-                          <td style={{textAlign: 'right'}}>
-                            { format( parse( country.highest.date, 'MM/dd/yy', new Date() ), 'PP') }
-                          </td>
+                          <th style={{textAlign: 'right', textTransform: 'capitalize'}}>
+                            
+                            {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
+                          </th>
+                          <th style={{textAlign: 'right'}}>
+                            Now
+                          </th>
                         </tr>
                       </thead>
                         <tbody>

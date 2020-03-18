@@ -1,6 +1,7 @@
 const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
+const request = require('request')
 
 const mainThread = () => {
   let confirmed = [];
@@ -8,15 +9,15 @@ const mainThread = () => {
   let recovered = []
   let population_data = []
 
-  fs.createReadStream('data/time_series_19-covid-Confirmed.csv')
+  request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv')
   .pipe(csv())
   .on('data', data => { confirmed.push(data) })
   .on('end', () => {    
-    fs.createReadStream('data/time_series_19-covid-Deaths.csv')
+    request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv')
     .pipe(csv())
     .on('data', data => { deaths.push(data) })
     .on('end', () => {    
-      fs.createReadStream('data/time_series_19-covid-Recovered.csv')
+      request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
       .pipe(csv())
       .on('data', data => { recovered.push(data) })
       .on('end', () => {   
