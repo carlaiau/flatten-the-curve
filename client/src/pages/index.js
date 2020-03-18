@@ -355,8 +355,8 @@ export default class IndexPage extends React.Component{
             <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
               <div className="column">
                 <div className="title-with-inputs" style={{marginBottom: '10px'}}>
-                  <p className="is-size-5" style={{textTransform: 'capitalize'}}>
-                    Showing The {top.length} Countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
+                  <p className="is-size-5">
+                    Showing the {top.length} countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
                   </p>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
@@ -389,7 +389,7 @@ export default class IndexPage extends React.Component{
                   <div className="box has-background-success has-text-white country">
                     <div className="content" style={{position: 'relative'}}>
                       <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
-                      <p className="is-size-6 has-text-white" style={{textTransform: 'capitalize'}}>
+                      <p className="is-size-6 has-text-white">
                       {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago {country.country_name}  had similar {this.state.per === 'total' ? ' total': 'per million'} {this.state.field === 'deaths'? 'deaths': 'confirmed cases'} as
                       {' '} {active_country.country_name}
                         
@@ -439,14 +439,15 @@ export default class IndexPage extends React.Component{
                           </tr>
                         </tbody>
                       </table>
-                      <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
-                          'is-dark'  :
-                          'has-background-success is-size-7'
-                        } has-text-white`} onClick={e => this.setState({
-                            modalOpen: country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? true: false,
-                            active_country,
-                            comparable_country: country
-                          })
+                      <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? 'is-dark'  : 'has-background-success is-size-7'} has-text-white`} 
+                        onClick={e => {
+                          if(country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil){
+                            return this.setState({
+                              modalOpen: country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? true: false,
+                              active_country,
+                              comparable_country: country
+                            })
+                          }}
                         }
                         style={{width: '100%', maxWidth: '100%', height: '40px', border: 'none'}}
                       >
