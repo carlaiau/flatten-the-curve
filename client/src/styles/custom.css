@@ -94,8 +94,11 @@ body{
     margin-right: 10px;
     margin-bottom: 0;
 }
-.title-with-inputs .field .select select{
+.field .select select{
     font-weight: 700;
+}
+.field .select:not(.is-multiple):not(.is-loading)::after{
+    border-color: #218c74;
 }
 @media screen and (max-width: 420px){
     .title-with-inputs .field{
