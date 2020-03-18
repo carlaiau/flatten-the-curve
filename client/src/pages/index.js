@@ -249,6 +249,7 @@ export default class IndexPage extends React.Component{
                 COVID-19: Flatten The Curve
               </h1>
               <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>  
+              <p className="is-size-6">Data updated at <strong className="has-text-white">3:28pm March 18 2020 NZT</strong></p>
             </div>
             <div className="column is-narrow">
               <div className="field">
@@ -276,9 +277,6 @@ export default class IndexPage extends React.Component{
       <React.Fragment>
       <div className={this.state.active_tab =='about' ? '' : 'is-hidden'}>
         <p className="is-size-6">
-          Data updated at <strong>3:28pm March 18 2020 NZT</strong>
-        </p>
-        <p className="is-size-6">
           This is a work in Progress. Code is freely available on <a href="https://github.com/carlaiau/flatten-the-curve"  target="_blank" rel="noopener noreferrer">
             GitHub</a> and pull requests are welcome.
         </p>
@@ -296,15 +294,17 @@ export default class IndexPage extends React.Component{
       </div>
       <div className={this.state.active_tab =='forecast' ? '' : 'is-hidden'}>
         <p className="is-size-6">
+          This sites goal is to motivate people to take eary actionable steps to slow the spread of COVID-19. 
+        </p>
+        <p className="is-size-6">
+          Viewing the forecast of any of the countries below will show you a future projection of {props.active_country.country_name} infection state. 
+          This is based on the other countries historical data, viewing this can offer unique insights, but it not based on epidemiology or statistics and therefore should not be used to indicate the probabilities of future outcomes.
+        </p>
+        <p className="is-size-6">
           The potential forecast does not take into account the relative doubling time of each country
         </p>
         <p className="is-size-6">
-          The true forecast depends on a multitidue of factors such as: The number and speed of tests done, 
-          the quality of the case tracking, the testing of tracked cases, and the support for people who need to go into isolation.
-        </p>
-        <p className="is-size-6">
-          This sites goal is to motivate people to take actionable steps by showing them where countries have ended up from a situation
-          that was the same as {props.active_country.country_name} 
+          The true forecast depends on a multitidue of factors such as, the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
         </p>
       </div> 
       </React.Fragment>
@@ -349,12 +349,8 @@ export default class IndexPage extends React.Component{
           <div className="container">
             <div className="columns info">
               <div className="column"> 
-                <div className="column">
-                  <h2 className="is-size-3 title">{active_country.country_name}</h2>
-                  <div className="box" style={{padding: 0}}>
-                    <Graph />
-                  </div>
-                </div>
+                <h2 className="is-size-3 title">{active_country.country_name}</h2>
+                <div className="box" style={{padding: '10px'}}><Graph /></div>
               </div>
               <div className="column">
                 <div className="field is-grouped is-horizontal">
@@ -375,7 +371,7 @@ export default class IndexPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <div className="box">
+                <div className="box tab-container">
                   <div className="tabs">
                     <ul>
                       <li className={this.state.active_tab =='about' ? 'is-active' : ''}>
