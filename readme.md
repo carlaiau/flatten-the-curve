@@ -18,7 +18,7 @@ Because the site is statically generated we have zero infrastructure costs. This
 I am on leave from my day job until Monday so I can fully commit (no pun intended) to working towards something that can create more impact.
 
 ### What I'm Working On
-- Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.
+- ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
 - Split site into multiple pages, with each country page (similar to current index) available at `c/new-zealand` or `c/australia`
 - Create two new **Graph Components**  that showcases:
   - Cumulative number of deaths, by number of days since 10th deaths
