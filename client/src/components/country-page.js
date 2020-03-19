@@ -34,7 +34,7 @@ export default class CountryPage extends React.Component{
         comparable_country: null,
         width:  800,
         height: 182,
-        min_days_ahead: 10 // This is two weeks, offset of 3 bug
+        min_days_ahead: 7
     }
   }
 

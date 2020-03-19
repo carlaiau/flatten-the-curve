@@ -133,7 +133,14 @@ body{
 .has-background-gold{
     background: #cc8e35;
 }
-.hero.is-info{
+.has-background-death{
+    background: #ff5252;
+}
+.has-background-newt{
+    background: #b33939;
+}
+.hero.is-info,
+.box.is-info{
     background: #227093;
 }
 .is-danger{
@@ -146,4 +153,18 @@ body{
 .footer a{
     color: #fff;
     font-weight: 700;   
+}
+
+.expanded-country .box{
+    position: relative;
+}
+.expanded-country .modal-close{
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    transition: 0.5s;
+}
+.expanded-country .modal-close:hover{
+    background: #b33939;
+    opacity: 1
 }
