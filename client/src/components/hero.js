@@ -1,6 +1,8 @@
 import React from 'react'
-
-const Hero = ({selected_country, countries, changeFn}) => (
+import { useNavigate } from "@reach/router"
+const Hero = ({selected_country, countries}) => {
+  const navigate = useNavigate()
+  return (
     <section className="hero is-info ">
       <div className="hero-body">
         <div className="container">
@@ -17,7 +19,12 @@ const Hero = ({selected_country, countries, changeFn}) => (
                 <label className="label has-text-white is-size-5">Choose your country</label>
                 <div className="control">
                   <div className="select is-medium">
-                    <select value={selected_country} onChange={changeFn}>
+                    <select value={selected_country} onChange={
+                      (e) => {
+                        if(e.target.value == 'index') navigate(`/`)
+                        else navigate('/' + e.target.value.toLowerCase().replace(/\s+/g, "-"))
+                      }
+                    }>
                       {countries.map( ({country_name } ) => (
                         <option key={country_name} value={country_name}>{country_name}</option>
                       ))}
@@ -30,5 +37,6 @@ const Hero = ({selected_country, countries, changeFn}) => (
         </div>
       </div>
     </section>
-)
+  )
+}
 export default Hero

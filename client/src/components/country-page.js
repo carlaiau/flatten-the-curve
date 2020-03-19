@@ -1,4 +1,6 @@
 import React from "react"
+
+
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
@@ -19,21 +21,22 @@ import '../styles/custom.css'
 export default class CountryPage extends React.Component{
   
     constructor(props){
-		super(props);
-		this.state = {
-            countries: props.countries,
-            selected_country: props.selected_country,
-            numberFormat: new Intl.NumberFormat(),
-            field: 'confirmed',
-            per: 'total',
-            sort: 'worst',
-            limit: 60,
-            modal_open: false,
-            comparable_country: null,
-            width:  800,
-            height: 182,
-            min_days_ahead: 10 // This is two weeks, offset of 3 bug
-        }
+      super(props);
+      this.state = {
+        countries: props.countries,
+        selected_country: props.selected_country,
+        countries_in_select_box: props.select_countries,
+        numberFormat: new Intl.NumberFormat(),
+        field: 'confirmed',
+        per: 'total',
+        sort: 'worst',
+        limit: 60,
+        modal_open: false,
+        comparable_country: null,
+        width:  800,
+        height: 182,
+        min_days_ahead: 10 // This is two weeks, offset of 3 bug
+    }
   }
 
   tidyFormat = (numberString) => {
@@ -44,7 +47,7 @@ export default class CountryPage extends React.Component{
 
   
   render(){
-    const {selected_country, countries, field, sort, per, limit} = this.state
+    const {selected_country, countries_in_select_box, countries, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -72,8 +75,11 @@ export default class CountryPage extends React.Component{
 
     return (
       <React.Fragment>
-        <SEO title="Home" />
-        <Hero countries={countries} selected_country={selected_country} changeFn={ (e) => this.setState({selected_country: e.target.value}) }/>
+        <SEO title={selected_country.country_name + ' COVID-19 Progress'} />
+        <Hero 
+          countries={countries_in_select_box} 
+          selected_country={selected_country} 
+        />
         <section className="section">
           <div className="container">
             <div className="columns info">

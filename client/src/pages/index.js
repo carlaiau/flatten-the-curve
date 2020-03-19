@@ -74,8 +74,11 @@ export default class IndexPage extends React.Component{
 
     return (
       <React.Fragment>
-        <SEO title="Home" />
-        <Hero countries={countries_in_select_box} selected_country={selected_country} changeFn={ (e) => this.setState({selected_country: e.target.value}) }/>
+        <SEO title="COVID-19" />
+        <Hero 
+          countries={countries_in_select_box} 
+          selected_country={selected_country}
+        />
         <section className="section">
           <div className="container">
             <div className="columns info">
@@ -191,7 +194,7 @@ export default class IndexPage extends React.Component{
 
 export const query = graphql`
   query {
-    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 1}, population: {gte: 1000000}}) {
+    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
       nodes {
         country_name
         id
@@ -208,7 +211,7 @@ export const query = graphql`
         population
       }
     }
-    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 1}, population: {gte: 1000000}}) {
+    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
       nodes {
         country_name
         highest_confirmed

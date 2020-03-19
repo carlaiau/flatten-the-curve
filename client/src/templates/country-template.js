@@ -12,11 +12,11 @@ const CountryTemplate = ({pathContext}) => {
         <StaticQuery
         query={graphql`
             query {
-                countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 1}, population: {gte: 1000000}}) {
-                nodes {
-                    country_name
-                    id
-                    time_series {
+                countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
+                    nodes {
+                      country_name
+                      id
+                      time_series {
                         date
                         confirmed
                         confirmed_per_mil
@@ -24,15 +24,24 @@ const CountryTemplate = ({pathContext}) => {
                         deaths_per_mil
                         recovered
                         recovered_per_mil
+                      }
+                      highest_confirmed
+                      population
                     }
-                    highest_confirmed
-                    population
-                }
-            }
+                  }
+                  select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
+                    nodes {
+                      country_name
+                      highest_confirmed
+                    }
+                  }
             }
             `}
             render={ data => (
-                <CountryPage selected_country={pathContext.country} countries={data.countries.nodes} />
+                <CountryPage 
+                  selected_country={pathContext.country} 
+                  countries={data.countries.nodes} 
+                  select_countries={data.select_countries.nodes}/>
             )}
         
         
