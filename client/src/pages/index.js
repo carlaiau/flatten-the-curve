@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import Tabs from "../components/tabs"
 import Modal from "../components/modal"
 import CountryOverviewGraph from "../components/country-overview-graph"
-
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
@@ -46,6 +45,7 @@ export default class IndexPage extends React.Component{
 
   
   render(){
+    
     const {selected_country, countries_in_select_box, countries, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
@@ -72,12 +72,18 @@ export default class IndexPage extends React.Component{
       limit 
     })
 
+    
     return (
       <React.Fragment>
         <SEO title="COVID-19" />
         <Hero 
           countries={countries_in_select_box} 
           selected_country={selected_country}
+          changeFn={ (e) => {
+            //window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
+            return this.setState({selected_country: e.target.value}) 
+            
+          }}
         />
         <section className="section">
           <div className="container">

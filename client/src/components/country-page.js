@@ -6,7 +6,6 @@ import SEO from "../components/seo"
 import Tabs from "../components/tabs"
 import Modal from "../components/modal"
 import CountryOverviewGraph from "../components/country-overview-graph"
-
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
@@ -72,13 +71,17 @@ export default class CountryPage extends React.Component{
       sort, 
       limit 
     })
-
+    
     return (
       <React.Fragment>
         <SEO title={selected_country.country_name + ' COVID-19 Progress'} />
         <Hero 
           countries={countries_in_select_box} 
           selected_country={selected_country} 
+          changeFn={ (e) => {
+            // window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
+            return this.setState({selected_country: e.target.value}) 
+          }}
         />
         <section className="section">
           <div className="container">

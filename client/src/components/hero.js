@@ -1,7 +1,6 @@
 import React from 'react'
-import { useNavigate } from "@reach/router"
-const Hero = ({selected_country, countries}) => {
-  const navigate = useNavigate()
+const Hero = ({selected_country, countries, changeFn}) => {
+
   return (
     <section className="hero is-info ">
       <div className="hero-body">
@@ -19,14 +18,7 @@ const Hero = ({selected_country, countries}) => {
                 <label className="label has-text-white is-size-5">Choose your country</label>
                 <div className="control">
                   <div className="select is-medium">
-                    <select value={selected_country} onChange={
-                      (e) => {
-                        if(e.target.value == 'index') navigate(`/`)
-                        else //Ghost this so there is no page refresh. navigate('/' + e.target.value.toLowerCase().replace(/\s+/g, "-"))
-                          window.hitory.replaceState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
-                        
-                      }
-                    }>
+                    <select value={selected_country} onChange={changeFn}>
                       {countries.map( ({country_name } ) => (
                         <option key={country_name} value={country_name}>{country_name}</option>
                       ))}
