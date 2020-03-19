@@ -8,9 +8,9 @@ const Hero = ({selected_country, countries, changeFn}) => {
           <div className="columns">
             <div className="column">
               <h1 className="title">
-                COVID-19: Flatten The Curve
+                Flatten The Curve
               </h1>
-              <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>  
+              <p className="subtitle is-size-5">COVID-19 by the numbers</p>  
               <p className="is-size-6">Data updated at <strong className="has-text-white">4:13pm March 19 2020 NZT</strong></p>
             </div>
             <div className="column is-narrow">
