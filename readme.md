@@ -92,20 +92,3 @@ npm run develop
 Gatsby will automatically load the countries data into GraphQL based on what file is sitting at `/client/data/output.json`
 
 
-<<<<<<< HEAD
-=======
-# To do
-
-### Next Up
-- Create Graph that outputs your countries various projected outcomes from the top 6 - 12 countries.
-- Give ability for user to filter the comparable countries by population range
-- Dynamically route to pre-select country based on slug for easier sharing to non NZ populations
-- PurgeCSS
-
-### Later
-- Add meta data to countries about climate / social economical status and region, and allow the frontend user to also filter by these fields.
-- Rewrite the app to prevent unnesccary re-renders.
-- Rewrite app to actually use components.
-- Make app usable offline
-
->>>>>>> master
