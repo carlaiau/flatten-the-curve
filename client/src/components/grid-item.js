@@ -20,7 +20,7 @@ export default class GridItem extends React.Component{
                 <div className="content" style={{position: 'relative'}}>
                     <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                     <p className="is-size-6 has-text-white">
-                    {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago 
+                    {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), new Date() ) } ago 
                     {' '} had similar {per === 'total' ? ' total': 'per million'} 
                     {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
                     {' '} {active_country.country_name}

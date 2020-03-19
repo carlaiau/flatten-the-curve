@@ -27,7 +27,7 @@ const GetTopCountries = ({countries, active_country, min_days_ahead = 7, field, 
         })
         country.earliest = earliest
         country.highest = highest
-        country.days_ahead_of_active = country.time_series.length  - index_when_exceeds_active
+        country.days_ahead_of_active = country.time_series.length  - (index_when_exceeds_active + 1)
         
     })
     
