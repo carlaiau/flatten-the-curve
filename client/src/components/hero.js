@@ -1,6 +1,7 @@
 import React from 'react'
+const Hero = ({selected_country, countries, changeFn}) => {
 
-const Hero = ({selected_country, countries, changeFn}) => (
+  return (
     <section className="hero is-info ">
       <div className="hero-body">
         <div className="container">
@@ -30,5 +31,6 @@ const Hero = ({selected_country, countries, changeFn}) => (
         </div>
       </div>
     </section>
-)
+  )
+}
 export default Hero

@@ -37,7 +37,7 @@ export default class Tabs extends React.Component{
                         COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
                     </p>
                     <p className="is-size-6">
-                        We support countries with over a 1 million population and a confirmed case. 
+                        We support countries with over 1 million population and 10 confirmed cases. 
                         If your country is not shown but should be, please contact us!
                     </p>
                     <p>Countries below were at a similar level as {country_name} at least {min_days} days ago</p>

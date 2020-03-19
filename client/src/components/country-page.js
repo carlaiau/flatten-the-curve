@@ -1,5 +1,6 @@
 import React from "react"
-import { graphql} from "gatsby"
+
+
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
@@ -16,24 +17,24 @@ import '../styles/custom.css'
 
 // Need to actually make it dynamically determine the date
 
-export default class IndexPage extends React.Component{
+export default class CountryPage extends React.Component{
   
-  constructor(props){
-		super(props);
-		this.state = {
-      countries: props.data.countries.nodes,
-      countries_in_select_box: props.data.select_countries.nodes,
-      selected_country: 'New Zealand',
-      numberFormat: new Intl.NumberFormat(),
-      field: 'confirmed',
-      per: 'total',
-      sort: 'worst',
-      limit: 60,
-      modal_open: false,
-      comparable_country: null,
-      width:  800,
-      height: 182,
-      min_days_ahead: 10 // This is two weeks, offset of 3 bug
+    constructor(props){
+      super(props);
+      this.state = {
+        countries: props.countries,
+        selected_country: props.selected_country,
+        countries_in_select_box: props.select_countries,
+        numberFormat: new Intl.NumberFormat(),
+        field: 'confirmed',
+        per: 'total',
+        sort: 'worst',
+        limit: 60,
+        modal_open: false,
+        comparable_country: null,
+        width:  800,
+        height: 182,
+        min_days_ahead: 10 // This is two weeks, offset of 3 bug
     }
   }
 
@@ -45,7 +46,6 @@ export default class IndexPage extends React.Component{
 
   
   render(){
-    
     const {selected_country, countries_in_select_box, countries, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
@@ -71,18 +71,16 @@ export default class IndexPage extends React.Component{
       sort, 
       limit 
     })
-
     
     return (
       <React.Fragment>
-        <SEO title="COVID-19" />
+        <SEO title={selected_country.country_name + ' COVID-19 Progress'} />
         <Hero 
           countries={countries_in_select_box} 
-          selected_country={selected_country}
+          selected_country={selected_country} 
           changeFn={ (e) => {
-            //window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
+            // window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
             return this.setState({selected_country: e.target.value}) 
-            
           }}
         />
         <section className="section">
@@ -147,9 +145,10 @@ export default class IndexPage extends React.Component{
         <section className="section">
           <div className="container">
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { topCountries.map( (country) => (
+              { topCountries.map( (country, i) => (
                 <GridItem 
                   country={country} 
+                  key={i}
                   active_country={active_country} 
                   openModalFn={ () => this.setState({ modal_open: true, active_country, comparable_country: country } ) }
                   per={per}
@@ -196,33 +195,3 @@ export default class IndexPage extends React.Component{
   }
   
 }
-
-
-export const query = graphql`
-  query {
-    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
-      nodes {
-        country_name
-        id
-        time_series {
-          date
-          confirmed
-          confirmed_per_mil
-          deaths
-          deaths_per_mil
-          recovered
-          recovered_per_mil
-        }
-        highest_confirmed
-        population
-      }
-    }
-    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
-      nodes {
-        country_name
-        highest_confirmed
-      }
-    }
-  }
-  
-`
