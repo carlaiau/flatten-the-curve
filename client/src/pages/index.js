@@ -270,7 +270,7 @@ export default class IndexPage extends React.Component{
                 COVID-19: Flatten The Curve
               </h1>
               <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>  
-              <p className="is-size-6">Data updated at <strong className="has-text-white">3:28pm March 18 2020 NZT</strong></p>
+              <p className="is-size-6">Data updated at <strong className="has-text-white">4:13pm March 19 2020 NZT</strong></p>
             </div>
             <div className="column is-narrow">
               <div className="field">
@@ -589,7 +589,7 @@ export default class IndexPage extends React.Component{
 
 export const query = graphql`
   query {
-    countries: allOutputJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
+    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
       nodes {
         country_name
         id
@@ -605,7 +605,7 @@ export const query = graphql`
         highest_confirmed
       }
     }
-    select_countries: allOutputJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
+    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
       nodes {
         country_name
         highest_confirmed

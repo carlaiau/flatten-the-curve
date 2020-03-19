@@ -48,7 +48,7 @@ cd processing
 npm install 
 node get.py
 ```
-This will create an output.json array of countries in the format. 
+This will create an countries.json array of countries in the format. 
 ```
 {
     "country_name": "New Zealand",

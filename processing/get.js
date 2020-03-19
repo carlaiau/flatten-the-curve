@@ -35,7 +35,7 @@ const mainThread = () => {
           
           removed_key = _.map(countries, (country) => country)
 
-          fs.writeFile("./output.json", JSON.stringify(removed_key , null, 2), function(err) {
+          fs.writeFile("./countries.json", JSON.stringify(removed_key , null, 2), function(err) {
             if(err) {
               return console.log(err);
             }
