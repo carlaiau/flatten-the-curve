@@ -2,7 +2,7 @@ import React from 'react'
 import { format, parse, formatDistance } from "date-fns"
 
 const GridItem = ({country, active_country, openModalFn, per, field, tidy}) => (
-    <div className="column is-one-third" key={country.country_name}>
+    <div className="column is-one-third">
         <div className="box has-background-success has-text-white country">
             <div className="content" style={{position: 'relative'}}>
                 <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>
