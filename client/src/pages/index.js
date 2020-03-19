@@ -2,6 +2,8 @@ import React from "react"
 import { graphql} from "gatsby"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
+import Modal from "../components/modal"
+
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
 import { format, parse, formatDistance } from "date-fns"
@@ -21,10 +23,9 @@ export default class IndexPage extends React.Component{
       field: 'confirmed',
       per: 'total',
       limit: 60,
-      modalOpen: false,
+      modal_open: false,
       active_country: null,
       comparable_country: null,
-      active_tab: 'about',
       width:  800,
       height: 182
     }
@@ -86,180 +87,7 @@ export default class IndexPage extends React.Component{
       c => c.highest[full_field_name] > active_country.highest[full_field_name]
     ).slice(0, limit)
     
-    /* the Modal component */
-    const Modal = () => {
-      if(this.state.modalOpen){
-
-        // Remember you can do some logic up here
-        const time_series = this.state.comparable_country.time_series.filter( time => time.confirmed_per_mil > active_country.highest.confirmed_per_mil )
-
-        const deltas = [] 
-        let previous_confirmed = 0
-        let previous_deaths = 0
-        
-        
-        time_series.forEach( (time, i) => {
-          if(i === 0){
-            previous_confirmed = time.confirmed_per_mil
-            previous_deaths = time.deaths_per_mil  
-          }
-          else{
-            deltas.push({
-              index: i,
-              confirmed: ( time.confirmed_per_mil - previous_confirmed ) / previous_confirmed,
-              deaths: ( time.deaths_per_mil - previous_deaths ) / previous_deaths,
-              death_ratio: time.deaths / time.confirmed
-            })
-            previous_confirmed = time.confirmed_per_mil
-            previous_deaths = time.deaths_per_mil
-          }
-        })
-
-
-        const forecast = [
-          {
-            day: 0,
-            confirmed: active_country.highest.confirmed,
-            deaths: active_country.highest.deaths | 0
-          }
-        ]
-
-        deltas.forEach( (delta, day) => {
-          if(day === 0){
-            previous_confirmed = forecast[0].confirmed
-            previous_deaths = forecast[0].deaths
-          }
-          else{
-            const confirmed = previous_confirmed * (1 + delta.confirmed)
-            let deaths = 0
-            if(! previous_deaths){ // If death doesn't exist yet, trigger at this point
-              const projected_deaths = delta.death_ratio * previous_confirmed
-              if(projected_deaths > 0) 
-                deaths = projected_deaths
-            }
-            else 
-              deaths = previous_deaths * (1 + delta.deaths)
-            
-            forecast.push({day, confirmed: parseInt(confirmed.toFixed(0)), deaths: parseInt(deaths.toFixed(0)) })
-            previous_confirmed = confirmed
-            previous_deaths = deaths
-            
-          }
-        })
-        
-        return (
-          <div className='modal is-active'>
-            <div className="modal-background" onClick={e => this.setState({modalOpen: false})}></div>
-            <div className="modal-card ">
-              <header className="modal-card-head has-background-success">
-                <p className="modal-card-title is-size-4"><strong className="has-text-white">Forecast for {active_country.country_name}</strong></p>
-                <button className="delete has-background-dark" aria-label="close" onClick={e => this.setState({modalOpen: false})}></button>
-              </header>
-              <section className={`modal-card-body has-background-light has-text-dark ${forecast.length == 1 ? 'is-hidden': ''}`} style={{overflowX: 'hidden'}}>
-                <h2 className="is-size-4" style={{marginBottom: '10px'}}>Based on {this.state.comparable_country.country_name} Progression</h2>
-                <p className="is-size-6 subtitle" style={{marginBottom: '10px'}}>Forecasted next {time_series.length - 2} days</p>
-                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="projection">
-                  <XAxis dataKey="day"/>
-                  <YAxis width={50}/>
-                  <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
-                  <Tooltip/>
-                  <Legend verticalAlign="top"/>
-                </LineChart>
-                <LineChart data={forecast} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="projection">
-                  <XAxis dataKey="day"/>
-                  <YAxis width={50}/>
-                  <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
-                  <Tooltip/>
-                  <Legend verticalAlign="top"/>
-                </LineChart>
-                
-              
-                
-                <p className="is-size-7" style={{marginBottom: '10px'}}>*Description of forecast below table</p>
-                <table className="table  is-striped is-fullwidth" style={{marginTop: '10px'}}>
-                  <tbody>
-                    <tr>
-                      <th>Days</th>
-                      <th>Confirmed</th>
-                      <th>Deaths</th>
-                    </tr>
-                    {
-                      forecast.map( (time, i) => (
-                        <tr key={i}>
-                          <td>{i}</td>
-                          <td>{this.tidyFormat(time.confirmed)}</td>
-                          <td>{time.deaths ? this.tidyFormat(time.deaths): 0}</td>
-                        </tr>
-                      )
-                    )}
-                  </tbody>
-                </table>
-                <p className="is-size-7" style={{marginBottom: '10px'}}>This is calculated using the daily growth of confirmed cases and deaths on a per million basis in {this.state.comparable_country.country_name} {}
-                since {this.state.comparable_country.country_name} reached the same confirmed case count as {active_country.country_name}.</p>
-                <p className="is-size-7" style={{marginBottom: '10px'}}>
-                  If {active_country.country_name} currently has 0 deaths, we use the {this.state.comparable_country.country_name} ratio of confirmed cases to deaths to forecast when {active_country.country_name} will encounter it's first death. 
-                  Once the forecasted deaths are above 1 the projected death rate grows based on the growth of the {this.state.comparable_country.country_name} observed death rate.</p>
-                <p className="is-size-7" style={{marginBottom: '10px'}}>
-                  This forecast is not meant to reflective of {active_country.country_name}'s future, merely an indication of what is possible.
-                  If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
-                </p>
-                <h2 className="is-size-4" style={{marginBottom: '10px', marginTop: '30px'}}>COVID-19 Progression in {this.state.comparable_country.country_name}</h2>
-                <p className="is-size-6" style={{marginBottom: '10px'}}>Previous {time_series.length - 1} days of data from {this.state.comparable_country.country_name}.</p>
-                
-                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="progression">
-                  <YAxis width={50}/>
-                  <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
-                  <Tooltip/>
-                  <Legend verticalAlign="top"/>
-                </LineChart>
-                <LineChart data={time_series} width={this.state.width >= 768 ? 565 : 303} height={this.state.width >= 768 ? 300: 150} syncId="progression">
-                  <YAxis width={50}/>
-                  <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
-                  <Tooltip/>
-                  <Legend verticalAlign="top"/>
-                </LineChart>
-                <table className="table is-striped is-fullwidth" style={{marginTop: '10px'}}>
-                  <thead> 
-                    <tr>
-                      <th></th>
-                      
-                      <th colSpan="2" className="is-size-7">Per Million</th>
-                      <th colSpan="2" className="is-size-7">Daily Change</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td className="is-size-7">Days Ago</td>
-                      
-                      <td className="is-size-7">Confirmed</td>
-                      <td className="is-size-7">Deaths</td>
-                      <td className="is-size-7">Confirmed</td>
-                      <td className="is-size-7">Deaths</td>
-                    </tr>
-                    {
-                      time_series.map( (time, i) => (
-                        <tr key={i}>
-                          <td className="is-size-7">{time_series.length - (i + 1) }</td>
-                          <td className="is-size-7">{time.confirmed_per_mil.toFixed(2)}</td>
-                          <td className="is-size-7">{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
-                          <td className="is-size-7">{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
-                          <td className="is-size-7">{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? deltas[i - 1].deaths === Infinity ? '--' : (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
-                        </tr>
-                      )
-                    )}
-                  </tbody>
-                </table>
-              </section>
-              
-              <footer className="modal-card-foot has-background-success is-hidden-mobile">
-                <button className="button is-dark" onClick={e => this.setState({modalOpen: false})}>Back to Results</button>
-              </footer>
-            </div>
-          </div>
-        )
-      }
-      return <React.Fragment></React.Fragment>
-    }
+    
 
     const Hero = () => (
       <section className="hero is-info ">
@@ -462,23 +290,23 @@ export default class IndexPage extends React.Component{
                           </tr>
                         </tbody>
                       </table>
-                      <button className={`button ${country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? 'is-dark'  : 'has-background-success is-size-7'} has-text-white`} 
-                        onClick={e => {
-                          if(country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil){
-                            return this.setState({
-                              modalOpen: country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ? true: false,
+                        { country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
+                          <button className='button is-dark has-text-white'
+                            onClick={() => this.setState({
+                              modal_open: true,
                               active_country,
                               comparable_country: country
-                            })
-                          }}
-                        }
-                        style={{width: '100%', maxWidth: '100%', height: '40px', border: 'none'}}
-                      >
-                        {country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
-                          'View Forecast and  Progression'  :
-                          'Insufficient confirmed cases per million for forecast'
-                        }
-                      </button>
+                              })  
+                            }
+                            style={{width: '100%', maxWidth: '100%', height: '40px', border: 'none'}}
+                          >
+                            View Forecast and  Progression
+                          </button>
+                        :
+                          <button className='button has-background-success is-size-7 has-text-white'>
+                            Insufficient confirmed cases per million for forecast
+                          </button>
+                      }
                     </div>
                   </div>
                 </div>
@@ -508,7 +336,7 @@ export default class IndexPage extends React.Component{
             </p>
           </div>
         </section>
-        <Modal/>
+        <Modal open={this.state.modal_open} active={this.state.active_country} compare={this.state.comparable_country} width={this.state.width} closeFn={() => this.setState({modal_open: false})}/>
       </React.Fragment>
     )
   }
@@ -540,7 +368,7 @@ export default class IndexPage extends React.Component{
 
 export const query = graphql`
   query {
-    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
+    countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 1}, population: {gte: 100000}}) {
       nodes {
         country_name
         id
@@ -556,7 +384,7 @@ export const query = graphql`
         highest_confirmed
       }
     }
-    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 5}, population: {gte: 3000000}}) {
+    select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 1}, population: {gte: 100000}}) {
       nodes {
         country_name
         highest_confirmed

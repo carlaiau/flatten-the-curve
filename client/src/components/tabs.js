@@ -1,6 +1,6 @@
 import React from "react"
 
-export default class tabs extends React.Component{
+export default class Tabs extends React.Component{
 
     constructor(props){
 		super(props);
@@ -36,8 +36,9 @@ export default class tabs extends React.Component{
                         COVID-19 Data belongs to <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">Johns Hopkins University</a> 
                     </p>
                     <p className="is-size-6">
-                        If your country is not in the dropdown we are filtering out countries below 3 million population and less than 5 confirmed cases. 
+                        We support countries with over a 1 million population and a confirmed case. 
                         If your country is not shown but should be, please contact us!
+                        
                     </p>
                 </div>
                 <div className={this.state.active =='forecast' ? '' : 'is-hidden'}>

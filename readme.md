@@ -26,6 +26,9 @@ I am on leave from my day job until Monday so I can fully commit (no pun intende
   - Allow This component to be passed in array of countries so that user can choose to compare their country to any other countries.
 - Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results, that can act as navigation to country specific index pages.
 - Rename the use of *projection* to *compare*
+- Show well performing comparisons to give people hope
+- Add real data to the start of projection graphs
+- Write logic to pull Taiwan and Hong Kong out of China
 
 ### Nice To Haves
 - Allow filtering of countries by meta data: *population, GDP, climate*
