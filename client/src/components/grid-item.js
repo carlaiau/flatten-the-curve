@@ -37,7 +37,7 @@ export default class GridItem extends React.Component{
                         <th className={per == 'total' ? 'is-hidden': ''}>Per Million</th>
                         <th style={{textAlign: 'right', textTransform: 'capitalize'}}>
                         
-                        {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), parse('03/16/20', 'MM/dd/yy', new Date()) ) } ago
+                        {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), new Date() ) } ago
                         </th>
                         <th style={{textAlign: 'right'}}>
                         Now

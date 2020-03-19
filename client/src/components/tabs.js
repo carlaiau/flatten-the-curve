@@ -40,7 +40,7 @@ export default class Tabs extends React.Component{
                         We support countries with over 1 million population and 10 confirmed cases. 
                         If your country is not shown but should be, please contact us!
                     </p>
-                    <p>Countries below were at a similar level as {country_name} at least {min_days} days ago</p>
+                    <p>Countries below were at a similar level as {country_name} at least {min_days} days ago.</p>
                 </div>
                 <div className={this.state.active =='forecast' ? '' : 'is-hidden'}>
                 

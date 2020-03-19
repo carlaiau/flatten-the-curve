@@ -73,7 +73,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
         <div className="box is-info">
             <button class="modal-close is-large has-background-newt" aria-label="close" onClick={closeFn}></button>
             <div className="columns">
-                <div className="column is-third">
+                <div className="column is-one-third">
                     <p className="is-size-3 has-text-white title" style={{marginTop: '50px'}}>
                         {active.country_name}
                     </p>
@@ -95,7 +95,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                         </div>
                     </div>
                 </div>
-                <div className='column is-third'>
+                <div className='column is-one-third'>
                     <p className="is-size-5 has-text-white" 
                         style={{marginBottom: '10px', textAlign: 'center'}}
                     >
@@ -108,7 +108,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                         padding: '5px'
                      }}
                     >
-                        <LineChart data={forecast} width={width >= 768 ? 565 : 280} height={width >= 768 ? 300: 150} syncId="projection">
+                        <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <XAxis dataKey="day"/>
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
@@ -122,7 +122,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                         padding: '5px'
                         }}
                     >
-                        <LineChart data={forecast} width={width >= 768 ? 565 : 280} height={width >= 768 ? 300: 150} syncId="projection">
+                        <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <XAxis dataKey="day"/>
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
@@ -152,7 +152,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                     
                 </div>
             
-                <div className={`column is-third`}>
+                <div className={`column is-one-third`}>
                     <p className="is-size-5 has-text-white" style={{marginBottom: '10px', textAlign: 'center'}}>
                         Previous {time_series.length - 1} days of data from {compare.country_name}
                     </p>
@@ -163,7 +163,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                         marginBottom: '20px'
                         }}
                     >   
-                        <LineChart data={time_series} width={width >= 768 ? 565 : 280} height={width >= 768 ? 300: 150} syncId="progression">
+                        <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
                             <Tooltip/>
@@ -175,7 +175,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                         padding: '5px',
                         borderRadius: '4px'}}
                     >
-                        <LineChart data={time_series} width={width >= 768 ? 565 : 280} height={width >= 768 ? 300: 150} syncId="progression">
+                        <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
                             <Tooltip/>

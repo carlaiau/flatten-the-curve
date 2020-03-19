@@ -33,7 +33,7 @@ export default class IndexPage extends React.Component{
       comparable_country: null,
       width:  800,
       height: 182,
-      min_days_ahead: 10 // This is two weeks, offset of 3 bug
+      min_days_ahead: 7
     }
   }
 
@@ -129,7 +129,7 @@ export default class IndexPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <Tabs country_name={active_country.country_name} min_days={this.state.min_days_ahead - 3}/>
+                <Tabs country_name={active_country.country_name} min_days={this.state.min_days_ahead}/>
               </div>
             </div>
           </div>                
@@ -155,6 +155,7 @@ export default class IndexPage extends React.Component{
                   per={per}
                   field={field}
                   tidy={this.tidyFormat}
+                  width={this.state.width}
                 />
               ))}              
             </div>
