@@ -80,9 +80,13 @@ export default class IndexPage extends React.Component{
           <div className="container">
             <div className="columns info">
               <div className="column"> 
-                <h2 className="is-size-3 title">{active_country.country_name}</h2>
+                <h2 className="is-size-3 title">
+                  {active_country.country_name}
+                </h2>
                 <p className="is-size-4 subtitle">
-                  {active_country.highest.confirmed ? this.tidyFormat(active_country.highest.confirmed) + ' Cases' : ''}
+                  {
+                    // Notice use of country wide constant variable, not dynamically based on highest. due to sorting
+                  active_country.highest_confirmed ? this.tidyFormat(active_country.highest_confirmed) + ' Cases' : ''}
                   <span style={{float: 'right'}}>
                     {active_country.highest.deaths ? this.tidyFormat(active_country.highest.deaths) + ' Deaths' : ''}
                   </span>
