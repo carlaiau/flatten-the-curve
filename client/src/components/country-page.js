@@ -1,10 +1,8 @@
 import React from "react"
 
-
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
-import Modal from "../components/modal"
 import CountryOverviewGraph from "../components/country-overview-graph"
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
@@ -30,8 +28,6 @@ export default class CountryPage extends React.Component{
         per: 'total',
         sort: 'worst',
         limit: 60,
-        modal_open: false,
-        comparable_country: null,
         width:  800,
         height: 182,
         min_days_ahead: 7
@@ -74,7 +70,7 @@ export default class CountryPage extends React.Component{
     
     return (
       <React.Fragment>
-        <SEO title={selected_country.country_name + ' COVID-19 Progress'} />
+        <SEO title={selected_country + ' COVID-19 Progress'} />
         <Hero 
           countries={countries_in_select_box} 
           selected_country={selected_country} 
@@ -154,20 +150,13 @@ export default class CountryPage extends React.Component{
                   per={per}
                   field={field}
                   tidy={this.tidyFormat}
+                  width={this.state.width}
                 />
               ))}              
             </div>
           </div>
         </section>
         <Footer />
-        <Modal 
-          open={this.state.modal_open} 
-          active={this.state.active_country} 
-          compare={this.state.comparable_country} 
-          width={this.state.width} 
-          closeFn={() => this.setState({modal_open: false})}
-          tidy={this.tidyFormat}
-        />
       </React.Fragment>
     )
   }

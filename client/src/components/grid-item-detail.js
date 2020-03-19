@@ -2,7 +2,7 @@ import React from "react"
 
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend} from 'recharts'
 
-const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
+const GridItemDetail = ({ active, compare, width, details_open, closeFn, detailsFn }) => {
         
     const time_series = compare.time_series.filter( time => time.confirmed_per_mil >= active.highest.confirmed_per_mil )
     
@@ -74,32 +74,41 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
             <button class="modal-close is-large has-background-newt" aria-label="close" onClick={closeFn}></button>
             <div className="columns">
                 <div className="column is-one-third">
-                    <p className="is-size-3 has-text-white title" style={{marginTop: '50px'}}>
+                    <p className="is-size-3 has-text-white title country-title">
                         {active.country_name}
                     </p>
                     <p className="is-size-5 subtitle has-text-white">
-                        Projection based on historical data from {compare.country_name}
+                        Projection based on historical data from 
+                    </p>
+                    <p className="is-size-3 has-text-white title country-title">
+                        {compare.country_name}
                     </p>
                     <p className="is-size-6 has-text-white" style={{marginBottom: '10px'}}>
-                        This is calculated using the daily growth of confirmed cases and deaths on a per million basis in {compare.country_name} {}
-                        since {compare.country_name} reached the same confirmed case count as {active.country_name}.
+                        Calculated using the daily growth of confirmed cases and deaths on a per million basis in {compare.country_name} {}
+                        since {compare.country_name} reached the a similar case count to {active.country_name}.
                     </p>
-                    <div className="columns is-hidden" style={{marginTop: '10px'}}>
-                        <div className="column">
-                            <button className="button is-dark has-text-white ">
-                                Switch to tables
-                            </button>
-                            <button className="button is-white ">
-                                More Info
-                            </button>
-                        </div>
-                    </div>
+                    { details_open ? 
+                        <React.Fragment>
+                            
+                            <p className="is-size-6 has-text-white" style={{marginBottom: '10px'}}>
+                                If {active.country_name} currently has 0 deaths, we use the {compare.country_name} number of deaths to confirmed case ratio to 
+                                estimate when {active.country_name} will encounter the first death. 
+                                Once forecasted death has occured the projected deaths grow based on the {compare.country_name} observed death rate.
+                            </p>
+                            <p className="is-size-6 has-text-white" style={{marginBottom: '10px'}}>
+                                This forecast is not meant to reflect the futre of {active.country_name}, merely an indication of what is possible.
+                                If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
+                            </p>
+                        </React.Fragment>
+                    :
+                        <button className="button is-white is-outlined is-size-7" onClick={detailsFn}>Expand Method</button>
+                    }
                 </div>
                 <div className='column is-one-third'>
                     <p className="is-size-5 has-text-white" 
                         style={{marginBottom: '10px', textAlign: 'center'}}
                     >
-                        Forecasted next {time_series.length - 2} days
+                        Forecast for next {time_series.length - 2} days
                     </p>
                     <div style={{
                         background: '#fff',
@@ -110,7 +119,7 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                     >
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <XAxis dataKey="day"/>
-                            <YAxis width={50}/>
+                            <YAxis width={60}/>
                             <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
                             <Tooltip/>
                             <Legend verticalAlign="top"/>
@@ -124,32 +133,12 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                     >
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <XAxis dataKey="day"/>
-                            <YAxis width={50}/>
+                            <YAxis width={60}/>
                             <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
                             <Tooltip/>
                             <Legend verticalAlign="top"/>
                         </LineChart>
                     </div>
-
-                    <table className="table is-narrow is-hidden" style={{marginTop: '10px'}}>
-                        <tbody>
-                        <tr>
-                            <th>Days</th>
-                            <th>Confirmed</th>
-                            <th>Deaths</th>
-                        </tr>
-                        {
-                            forecast.map( (time, i) => (
-                            <tr key={i}>
-                                <td>{i}</td>
-                                <td>{tidy(time.confirmed)}</td>
-                                <td>{time.deaths ? tidy(time.deaths): 0}</td>
-                            </tr>
-                            )
-                        )}
-                        </tbody>
-                    </table>
-                    
                 </div>
             
                 <div className={`column is-one-third`}>
@@ -182,30 +171,6 @@ const GridItemDetail = ({ active, compare, width, tidy, closeFn }) => {
                             <Legend verticalAlign="top"/>
                         </LineChart>
                     </div>
-                    <table className="table is-narrow is-hidden" style={{marginTop: '10px'}}>
-                        <thead> 
-                        <tr>
-                            <th></th><th colSpan="2">Per Million</th><th colSpan="2">Daily Change</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>Days Ago</td><td>Confirmed</td><td>Deaths</td><td>Confirmed</td><td>Deaths</td>
-                        </tr>
-                        {
-                            time_series.map( (time, i) => (
-                            <tr key={i}>
-                                <td>{time_series.length - (i + 1) }</td>
-                                <td>{time.confirmed_per_mil.toFixed(2)}</td>
-                                <td>{time.deaths_per_mil ? time.deaths_per_mil.toFixed(2): 0}</td>
-                                <td>{i !== 0 && deltas[i - 1] && deltas[i - 1].confirmed ? (deltas[i -1].confirmed * 100).toFixed(2) : 0}%</td>
-                                <td>{i !== 0 && deltas[i - 1] && deltas[i - 1].deaths ? deltas[i - 1].deaths === Infinity ? '--' : (deltas[i - 1].deaths * 100).toFixed(2): 0}%</td>
-                            </tr>
-                            )
-                        )}
-                        </tbody>
-                    </table>
-                     
                 </div>    
                     
                                 
