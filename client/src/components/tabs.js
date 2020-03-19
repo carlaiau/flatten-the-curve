@@ -10,6 +10,7 @@ export default class Tabs extends React.Component{
     }
 
     render(){
+        const {country_name, min_days} = this.props
         return (
             <div className="box tab-container">
                 <div className="tabs">
@@ -38,14 +39,14 @@ export default class Tabs extends React.Component{
                     <p className="is-size-6">
                         We support countries with over a 1 million population and a confirmed case. 
                         If your country is not shown but should be, please contact us!
-                        
                     </p>
+                    <p>Countries below were at a similar level as {country_name} at least {min_days} days ago</p>
                 </div>
                 <div className={this.state.active =='forecast' ? '' : 'is-hidden'}>
                 
                     <p className="is-size-6">
-                    The forecasts below show a future projection of COVID-19 in the selected country of {this.props.country_name}. 
-                    This is based on the historical growth data of each country that is currently ahead of {this.props.country_name} in the outbreak.
+                    The forecasts below show a future projection of COVID-19 in the selected country of {country_name}. 
+                    This is based on the historical growth data of each country that is currently ahead of {country_name} in the outbreak.
                     </p>
                     <p className="is-size-6">
                     Viewing this can offer unique insights into the range of possible outcomes. Not based on epidemiological models, only on historical data experienced by other countries.
