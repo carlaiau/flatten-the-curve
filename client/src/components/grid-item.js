@@ -7,7 +7,7 @@ export default class GridItem extends React.Component{
 		super(props);
 		this.state = {
             expanded: false,
-            show_tables: false
+            details_open: false
         }
     }
 
@@ -98,7 +98,8 @@ export default class GridItem extends React.Component{
                 compare={country}
                 width={this.props.width}
                 tidy={tidy}
-                show_tables={this.state.show_tables}
+                details_open={this.state.details_open}
+                detailsFn={(() => this.setState({details_open: true}))}
                 closeFn={() => this.setState({expanded: false})}
             />
         : ''

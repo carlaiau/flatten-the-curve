@@ -3,7 +3,6 @@ import { graphql} from "gatsby"
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
-import Modal from "../components/modal"
 import CountryOverviewGraph from "../components/country-overview-graph"
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
@@ -29,8 +28,6 @@ export default class IndexPage extends React.Component{
       per: 'total',
       sort: 'worst',
       limit: 60,
-      modal_open: false,
-      comparable_country: null,
       width:  800,
       height: 182,
       min_days_ahead: 7
@@ -162,14 +159,6 @@ export default class IndexPage extends React.Component{
           </div>
         </section>
         <Footer />
-        <Modal 
-          open={this.state.modal_open} 
-          active={this.state.active_country} 
-          compare={this.state.comparable_country} 
-          width={this.state.width} 
-          closeFn={() => this.setState({modal_open: false})}
-          tidy={this.tidyFormat}
-        />
       </React.Fragment>
     )
   }
