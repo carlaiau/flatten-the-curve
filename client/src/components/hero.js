@@ -22,7 +22,9 @@ const Hero = ({selected_country, countries}) => {
                     <select value={selected_country} onChange={
                       (e) => {
                         if(e.target.value == 'index') navigate(`/`)
-                        else navigate('/' + e.target.value.toLowerCase().replace(/\s+/g, "-"))
+                        else //Ghost this so there is no page refresh. navigate('/' + e.target.value.toLowerCase().replace(/\s+/g, "-"))
+                          window.hitory.replaceState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
+                        
                       }
                     }>
                       {countries.map( ({country_name } ) => (
