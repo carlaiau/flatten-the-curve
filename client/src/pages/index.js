@@ -1,8 +1,10 @@
 import React from "react"
 import { graphql} from "gatsby"
+import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
 import Modal from "../components/modal"
+import GetTopCountries from '../utils/get-top-countries.js'
 
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -22,12 +24,14 @@ export default class IndexPage extends React.Component{
       numberFormat: new Intl.NumberFormat(),
       field: 'confirmed',
       per: 'total',
+      sort: 'worst',
       limit: 60,
       modal_open: false,
       active_country: null,
       comparable_country: null,
       width:  800,
-      height: 182
+      height: 182,
+      min_days_ahead: 10 // This is actually meant to be 7
     }
   }
 
@@ -36,7 +40,7 @@ export default class IndexPage extends React.Component{
   }
   
   render(){
-    const {selected_country, countries_in_select_box, countries, field, per, limit} = this.state
+    const {selected_country, countries_in_select_box, countries, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       (per === 'total' ? 'confirmed' : 'confirmed_per_mil') :
@@ -51,77 +55,16 @@ export default class IndexPage extends React.Component{
         active_country.highest = time
     })
     
-    countries.forEach( (country) => {
-      let earliest = {}
-      let highest = {}
-      country.time_series.forEach( (time) => {
-        if(earliest[full_field_name]){
-          if(time[full_field_name] < earliest[full_field_name] && ( time[full_field_name] >= active_country.highest[full_field_name]) )  
-            earliest = time
-        }
-        else if(!earliest[full_field_name] && time[full_field_name] >= active_country.highest[full_field_name])
-          earliest = time
-        
-        if(highest[full_field_name] && time[full_field_name] > highest[full_field_name])
-          highest = time
-        else if(!highest[full_field_name])
-          highest = time
-      })
-      country.earliest = earliest
-      country.highest = highest
+    
+    
+    const top = GetTopCountries({ 
+      countries, 
+      active_country, 
+      field: full_field_name, 
+      min_days_ahead: this.state.min_days_ahead, 
+      sort, 
+      limit 
     })
-
-    
-    const the_latest_date = active_country.highest
-
-    
-
-
-    
-    //sort
-    countries.sort((a, b) => (a.highest[full_field_name] < b.highest[full_field_name]) ? 1 : -1)
-
-
-    // Then choose top
-    const top = countries.filter(
-      c => c.highest[full_field_name] > active_country.highest[full_field_name]
-    ).slice(0, limit)
-    
-    
-
-    const Hero = () => (
-      <section className="hero is-info ">
-      <div className="hero-body">
-        <div className="container">
-          <div className="columns">
-            <div className="column">
-              <h1 className="title">
-                COVID-19: Flatten The Curve
-              </h1>
-              <p className="subtitle is-size-5">A unique way of showing the importance of early protective measures</p>  
-              <p className="is-size-6">Data updated at <strong className="has-text-white">4:13pm March 19 2020 NZT</strong></p>
-            </div>
-            <div className="column is-narrow">
-              <div className="field">
-                <label className="label has-text-white is-size-5">Choose your country</label>
-                <div className="control">
-                  <div className="select is-medium">
-                    <select value={selected_country} onChange={e => this.setState({selected_country: e.target.value})}>
-                      {countries_in_select_box.map( ({country_name, highest_confirmed }) => (
-                        <option key={country_name} value={country_name}>{country_name}</option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-              </div>  
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    )
-
-    
 
     const Graph = () => {
       const filteredData = this.state.field == 'confirmed' ? active_country.time_series.filter(t => parseInt(t.confirmed) > 0) : active_country.time_series.filter(t => parseInt(t.deaths) > 0)
@@ -155,7 +98,7 @@ export default class IndexPage extends React.Component{
     return (
       <React.Fragment>
         <SEO title="Home" />
-        <Hero/>
+        <Hero countries={countries_in_select_box} selected_country={selected_country} changeFn={ (e) => this.setState({selected_country: e.target.value}) }/>
         
 
         
@@ -171,7 +114,9 @@ export default class IndexPage extends React.Component{
                   </span>
                 </p>  
 
-                <div className="box" style={{padding: '10px'}}><Graph /></div>
+                <div className="box" style={{padding: '10px'}}>
+                  <Graph />
+                </div>
               </div>
               <div className="column">
                 <div className="field is-grouped is-horizontal">
@@ -204,7 +149,7 @@ export default class IndexPage extends React.Component{
               <div className="column">
                 <div className="title-with-inputs" style={{marginBottom: '10px'}}>
                   <p className="is-size-5">
-                    Showing the {top.length} countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} sorted by
+                    Showing the {top.length} countr{top.length === 1? 'y': 'ies'} that are now ranked higher than {active_country.country_name} by
                   </p>
                   <div className="field is-grouped is-horizontal">
                     <div className="control">
@@ -222,6 +167,16 @@ export default class IndexPage extends React.Component{
                         <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
                           <option value="total">Total</option>
                           <option value="per_million">Per Millon</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="field is-grouped is-horizontal">
+                    <div className="control">
+                      <div className="select">
+                        <select value={this.state.sort} onChange={e => this.setState({sort: e.target.sort})}>
+                          <option value="worst">Worst First</option>
+                          <option value="best">Best First</option>
                         </select>
                       </div>
                     </div>
