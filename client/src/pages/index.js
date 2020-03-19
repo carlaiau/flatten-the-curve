@@ -6,7 +6,7 @@ import Tabs from "../components/tabs"
 import Modal from "../components/modal"
 import CountryOverviewGraph from "../components/country-overview-graph"
 
-import GridBar from "../components/grid-item"
+import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
 import GetTopCountries from '../utils/get-top-countries.js'
@@ -31,7 +31,6 @@ export default class IndexPage extends React.Component{
       sort: 'worst',
       limit: 60,
       modal_open: false,
-      active_country: null,
       comparable_country: null,
       width:  800,
       height: 182,
@@ -64,7 +63,7 @@ export default class IndexPage extends React.Component{
     
     
     
-    const top = GetTopCountries({ 
+    const topCountries = GetTopCountries({ 
       countries, 
       active_country, 
       field: full_field_name, 
@@ -72,9 +71,6 @@ export default class IndexPage extends React.Component{
       sort, 
       limit 
     })
-
-    
-
 
     return (
       <React.Fragment>
@@ -130,7 +126,7 @@ export default class IndexPage extends React.Component{
           per={this.state.per}
           field={this.state.field}
           sort={this.state.sort}
-          length={top.length}
+          length={topCountries.length}
           fieldFn={e => this.setState({field: e.target.value})}
           perFn={e => this.setState({per: e.target.value})}
           sortFn={e => this.setState({sort: e.target.value})}
@@ -138,7 +134,7 @@ export default class IndexPage extends React.Component{
         <section className="section">
           <div className="container">
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { top.map( (country) => (
+              { topCountries.map( (country) => (
                 <GridItem 
                   country={country} 
                   active_country={active_country} 
@@ -147,12 +143,19 @@ export default class IndexPage extends React.Component{
                   field={field}
                   tidy={this.tidyFormat}
                 />
-              ))}                    
+              ))}              
             </div>
           </div>
         </section>
         <Footer />
-        <Modal open={this.state.modal_open} active={this.state.active_country} compare={this.state.comparable_country} width={this.state.width} closeFn={() => this.setState({modal_open: false})}/>
+        <Modal 
+          open={this.state.modal_open} 
+          active={this.state.active_country} 
+          compare={this.state.comparable_country} 
+          width={this.state.width} 
+          closeFn={() => this.setState({modal_open: false})}
+          tidy={this.tidyFormat}
+        />
       </React.Fragment>
     )
   }

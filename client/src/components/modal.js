@@ -2,10 +2,8 @@ import React from "react"
 
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend} from 'recharts'
 
-const Modal = (props) => {
-    const { open, active, compare, width, closeFn } = props
-    const tidyFormat = (numberString) => new Intl.NumberFormat().format(numberString)
-    
+const Modal = ({ open, active, compare, width, closeFn, tidy }) => {
+
     if(open){
         // Remember you can do some logic up here
         
@@ -112,8 +110,8 @@ const Modal = (props) => {
                             forecast.map( (time, i) => (
                             <tr key={i}>
                                 <td>{i}</td>
-                                <td>{tidyFormat(time.confirmed)}</td>
-                                <td>{time.deaths ? tidyFormat(time.deaths): 0}</td>
+                                <td>{tidy(time.confirmed)}</td>
+                                <td>{time.deaths ? tidy(time.deaths): 0}</td>
                             </tr>
                             )
                         )}
