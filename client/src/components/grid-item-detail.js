@@ -78,9 +78,9 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         {active.country_name}
                     </p>
                     <p className="is-size-5 subtitle has-text-white">
-                        Projection based on historical data from 
+                        Forecast based on historical data from 
                     </p>
-                    <p className="is-size-3 has-text-white title country-title">
+                    <p className="is-size-4 has-text-white title country-title">
                         {compare.country_name}
                     </p>
                     <p className="is-size-6 has-text-white" style={{marginBottom: '10px'}}>
@@ -118,7 +118,6 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                      }}
                     >
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
-                            <XAxis dataKey="day"/>
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" />
                             <Tooltip/>
@@ -132,7 +131,6 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         }}
                     >
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
-                            <XAxis dataKey="day"/>
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/>
                             <Tooltip/>

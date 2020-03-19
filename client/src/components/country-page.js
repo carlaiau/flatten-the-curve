@@ -74,10 +74,6 @@ export default class CountryPage extends React.Component{
         <Hero 
           countries={countries_in_select_box} 
           selected_country={selected_country} 
-          changeFn={ (e) => {
-            // window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
-            return this.setState({selected_country: e.target.value}) 
-          }}
         />
         <section className="section">
           <div className="container">

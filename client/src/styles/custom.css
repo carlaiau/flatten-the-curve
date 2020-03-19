@@ -171,6 +171,11 @@ body{
 .expanded-country .country-title{
     margin-top: 10px;
 }
+.expanded-country .button.is-outlined:hover{
+    color: #fff;
+    border-color: #fff;
+    background: none;
+}
 @media screen and (min-width: 769px){
     .expanded-country .country-title{
         margin-top: 50px;

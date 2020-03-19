@@ -12,7 +12,7 @@ export default class GridItem extends React.Component{
     }
 
     render(){
-        const { country, active_country, openModalFn, per, field, tidy } = this.props
+        const { country, active_country, per, field, tidy } = this.props
         return (
         <React.Fragment>
         <div className='column is-one-third'>
@@ -25,8 +25,12 @@ export default class GridItem extends React.Component{
                     {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
                     {' '} {active_country.country_name}
                     </p>
-                    <p className="is-size-6 has-text-white">{tidy((country.population / 1000000).toFixed(0))} Million People</p>
-                    
+                    <p className="is-size-6 has-text-white">
+                        <strong className="has-text-white">{tidy((country.population / 1000000).toFixed(0))} million</strong> people<br/>
+                        1 confirmed case per <strong className="has-text-white">{tidy(( country.population / country.highest.confirmed ).toFixed(0))}</strong><br/>
+                        <span>1 death per <strong className="has-text-white">{tidy(( country.population / country.highest.deaths ).toFixed(0))}</strong></span>
+                    </p>
+
                     <table className="table is-narrow ">
 
 

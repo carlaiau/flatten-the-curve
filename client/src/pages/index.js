@@ -3,6 +3,7 @@ import { graphql} from "gatsby"
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import Tabs from "../components/tabs"
+
 import CountryOverviewGraph from "../components/country-overview-graph"
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
@@ -76,11 +77,6 @@ export default class IndexPage extends React.Component{
         <Hero 
           countries={countries_in_select_box} 
           selected_country={selected_country}
-          changeFn={ (e) => {
-            //window.history.pushState({}, '', window.location.origin + '/' + e.target.value.toLowerCase().replace(/\s+/g, "-"));
-            return this.setState({selected_country: e.target.value}) 
-            
-          }}
         />
         <section className="section">
           <div className="container">

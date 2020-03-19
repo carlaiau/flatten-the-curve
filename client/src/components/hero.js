@@ -1,4 +1,5 @@
 import React from 'react'
+import { navigate } from "@reach/router"
 const Hero = ({selected_country, countries, changeFn}) => {
 
   return (
@@ -18,7 +19,9 @@ const Hero = ({selected_country, countries, changeFn}) => {
                 <label className="label has-text-white is-size-5">Choose your country</label>
                 <div className="control">
                   <div className="select is-medium">
-                    <select value={selected_country} onChange={changeFn}>
+                    <select value={selected_country} onChange={(e) => {
+                      navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
+                    }}>
                       {countries.map( ({country_name } ) => (
                         <option key={country_name} value={country_name}>{country_name}</option>
                       ))}
