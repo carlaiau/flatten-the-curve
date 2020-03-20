@@ -181,3 +181,40 @@ body{
         margin-top: 50px;
     }
 }
+
+.navbar-item{
+    text-transform: uppercase;    
+}
+.navbar-item img {
+    max-height: 2.5rem;
+}
+.navbar-brand div{
+    margin-left: 10px;
+}
+.navbar-brand h1{
+    text-transform: uppercase;
+    margin: 0;
+}
+.navbar-brand h2{
+    margin: 0;
+}
+.country-selector{
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1034px){
+    .navbar-brand{
+        float: left;
+        margin-left: 10px
+    }
+    .country-selector{
+        float: right;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 7000px){
+
+    .navbar-brand h1{
+        display: none;
+    }
+}
