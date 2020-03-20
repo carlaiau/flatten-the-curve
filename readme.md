@@ -21,6 +21,7 @@ I am on leave from my day job until Monday so I can fully commit (no pun intende
 - ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
 - ~~Split site into multiple pages, with each country page (similar to current index) available at `c/new-zealand` or `c/australia`~~
 - ~~Show well performing comparisons to give people hope~~ (Can now sort by worst or best)
+- Global State (without redux). The graphQL query on evey route is stupid
 - Add real data to the start of projection graphs
 - Create two new **Graph Components**  that showcases:
   - Cumulative number of deaths, by number of days since 10th deaths

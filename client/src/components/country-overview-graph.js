@@ -14,7 +14,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
             name="Days"
             type="number"
             scale="time">
-              <Label value="Days Since First Confirmed Case" offset={-15} position="insideBottom" />
+              <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
           
           <YAxis width={55}/>
