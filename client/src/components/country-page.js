@@ -9,6 +9,7 @@ import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
 import GetTopCountries from '../utils/get-top-countries'
 import SetupCountry from '../utils/setup-country'
+import { navigate } from "@reach/router"
 
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -38,7 +39,9 @@ export default class CountryPage extends React.Component{
   }
 
   heroSelectFn = (e) => {
-      this.setState({selected_country: e.target.value})   
+      // this.setState({selected_country: e.target.value})   
+      if(e.target.value) 
+        navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
   }
 
   
