@@ -92,7 +92,7 @@ export default class GridItem extends React.Component{
                         </div>
                         <div className="column tallies">
                             <p>
-                                <strong>1</strong> confirmed case per
+                                <strong>1</strong> case per
                                 <strong>{tidy(( country.population / country.highest.confirmed ).toFixed(0))}</strong>
                             </p>
                             <p>
