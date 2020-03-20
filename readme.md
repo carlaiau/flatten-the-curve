@@ -6,11 +6,9 @@ This site is aimed at motivating non technical or non scientific users to start 
 
 The ability to compare your own countries current case level and see how another country's infection has spread from a similar level seems to "click" for a lot of people, and therefore motivate change. 
 
-The site has had over 1,000 visits in two days, and often has 10 - 30 people active at any given time. 
-This should increase substantially if we can:
-  - Convincingly present supporting evidence 
-  - Gets shared organically through friends and family
-  - Picks up traction with some pulic figure or agency
+The site has had over 1,000 visits in two days, and often has 10 - 30 people active at any given time, so hopefully we can create some impact.
+
+I understand that the comparisons/projections are not the best way of looking at the outbreaks and could let to incorrect outcomes, so I am actively working on getting data reformulated into culmulative confirmed / death so they can be used on the log graphs that are commonly seen. These graphs will replace what is currently getting output on the index.
 
 Because the site is statically generated we have zero infrastructure costs. This is just a conversion of our time into potentially saved lifes by avoiding healthcare system overload.
 
@@ -21,7 +19,7 @@ I am on leave from my day job until Monday so I can fully commit (no pun intende
 - ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
 - ~~Split site into multiple pages, with each country page (similar to current index) available at `c/new-zealand` or `c/australia`~~
 - ~~Show well performing comparisons to give people hope~~ (Can now sort by worst or best)
-- Global State (without redux). The graphQL query on evey route is stupid
+- ~~Global State (without redux). The graphQL query on evey route is stupid
 - Add real data to the start of projection graphs
 - Create two new **Graph Components**  that showcases:
   - Cumulative number of deaths, by number of days since 10th deaths
