@@ -1,16 +1,18 @@
 import React from 'react' 
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend} from 'recharts'
 
+
 const CountryOverviewGraph = ({active_country, field, full_field_name, width}) => {
-    const filteredData = field == 'confirmed' 
-      ? 
-      active_country.time_series.filter(t => parseInt(t.confirmed) > 0) 
-      : 
-      active_country.time_series.filter(t => parseInt(t.deaths) > 0)
+    
+    const filteredData = active_country.time_series.filter(t => parseInt(t[field]) > 0)
+    
     if(filteredData.length){
       return (
         <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 150} data={filteredData}>
-          <XAxis dataKey="date"/>
+          <XAxis 
+            dataKey="date_string"
+            
+          />
           <YAxis width={55}/>
           {
             full_field_name == 'confirmed' ? 

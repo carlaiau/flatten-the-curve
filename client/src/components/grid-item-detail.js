@@ -71,7 +71,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
     return (
     <div className="column is-full expanded-country">
         <div className="box is-info">
-            <button class="modal-close is-large has-background-newt" aria-label="close" onClick={closeFn}></button>
+            <button className="modal-close is-large has-background-newt" aria-label="close" onClick={closeFn}></button>
             <div className="columns">
                 <div className="column is-one-third">
                     <p className="is-size-3 has-text-white title country-title">

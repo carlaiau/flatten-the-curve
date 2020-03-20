@@ -14,12 +14,12 @@ const Hero = ({selected_country, countries}) => {
   ]
   return ( 
     <React.Fragment>
-      <section class="hero is-white is-medium">
-        <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
+      <section className="hero is-white is-medium">
+        <div className="hero-head">
+          <nav className="navbar">
+            <div className="container">
+              <div className="navbar-brand">
+                <a className="navbar-item">
                   <img src={logo} alt="Logo"/>
                     <div>
                     <h1 className="title is-size-5">Flatten The Curve</h1>
@@ -27,11 +27,11 @@ const Hero = ({selected_country, countries}) => {
                   
                 </a>
               </div>
-              <div class="navbar-menu">
-                <div class="navbar-end">
+              <div className="navbar-menu">
+                <div className="navbar-end">
                   {
-                    links.map( link => (
-                      <Link to={link.path} className="navbar-item" activeClassName="is-active">{link.label}</Link>
+                    links.map( (link, i) => (
+                      <Link key={i} to={link.path} className="navbar-item" activeClassName="is-active">{link.label}</Link>
                     ))
 
                   }

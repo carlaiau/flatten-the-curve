@@ -8,7 +8,8 @@ import CountryOverviewGraph from "../components/country-overview-graph"
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
-import GetTopCountries from '../utils/get-top-countries.js'
+import GetTopCountries from '../utils/get-top-countries'
+import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -50,15 +51,11 @@ export default class IndexPage extends React.Component{
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
       per === 'total' ? 'deaths' : 'deaths_per_mil'
 
-    let active_country = countries.filter( (c) => c.country_name ===  this.state.selected_country )[0]
     
-    active_country.time_series.forEach( (time) => {
-      if(active_country.highest && time[full_field_name] > active_country.highest[full_field_name])
-        active_country.highest = time
-      else if(!active_country.highest)
-        active_country.highest = time
+    const active_country = SetupCountry({
+      country: countries.filter( (c) => c.country_name ===  this.state.selected_country )[0],
+      field: full_field_name
     })
-    
     
     
     const topCountries = GetTopCountries({ 
@@ -140,8 +137,9 @@ export default class IndexPage extends React.Component{
         <section className="section">
           <div className="container">
             <div className="columns" style={{flexWrap: 'wrap'}}>
-              { topCountries.map( (country) => (
+              { topCountries.map( (country, i) => (
                 <GridItem 
+                  key={i}
                   country={country} 
                   active_country={active_country} 
                   openModalFn={ () => this.setState({ modal_open: true, active_country, comparable_country: country } ) }

@@ -5,6 +5,7 @@
   "main": "play.js",
   "dependencies": {
     "csv-parser": "^2.3.2",
+    "date-fns": "^2.11.0",
     "lodash": "^4.17.15",
     "request": "^2.88.2"
   },

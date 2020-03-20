@@ -1,5 +1,5 @@
 import React from 'react'
-import { format, parse, formatDistance } from "date-fns"
+import { parseJSON, formatDistance } from "date-fns"
 import GridItemDetail from './grid-item-detail'
 export default class GridItem extends React.Component{
 
@@ -20,7 +20,7 @@ export default class GridItem extends React.Component{
                 <div className="content" style={{position: 'relative'}}>
                     <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                     <p className="is-size-6 has-text-white">
-                    {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), new Date() ) } ago 
+                    {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago 
                     {' '} had similar {per === 'total' ? ' total': 'per million'} 
                     {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
                     {' '} {active_country.country_name}
@@ -41,7 +41,7 @@ export default class GridItem extends React.Component{
                         <th className={per == 'total' ? 'is-hidden': ''}>Per Million</th>
                         <th style={{textAlign: 'right', textTransform: 'capitalize'}}>
                         
-                        {formatDistance(parse(country.earliest.date, 'MM/dd/yy', new Date()), new Date() ) } ago
+                        {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago
                         </th>
                         <th style={{textAlign: 'right'}}>
                         Now

@@ -2,6 +2,7 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
 const request = require('request')
+const { format, parse, formatDistance } = require('date-fns')
 
 const mainThread = () => {
   let confirmed = [];
@@ -35,6 +36,18 @@ const mainThread = () => {
           
           removed_key = _.map(countries, (country) => country)
 
+
+          removed_key.map(c => {
+            if(c.country_name == 'New Zealand'){
+              c.time_series.push({
+                "date": parse(t.date, '3/19/20', new Date() ),
+                "confirmed": 39,
+                "confirmed_per_mil": 7.982806263
+              })
+              c.highest_confirmed = 39
+            }
+          })
+          
           fs.writeFile("./countries.json", JSON.stringify(removed_key , null, 2), function(err) {
             if(err) {
               return console.log(err);
@@ -48,9 +61,17 @@ const mainThread = () => {
 }
 
 const add_population_data = (countries, population_data) => {
+  
   // Remove the empty time series data
-  countries = _.forEach(countries, (data) => {
+  _.forEach(countries, (data) => {
     data.time_series = data.time_series.filter( (t) => t.confirmed != 0 )
+  })
+
+  // convert stupid date strings to actual dates 
+  _.forEach(countries, (data) => {
+    data.time_series.map( (t) => {
+      t.date = parse(t.date, 'MM/dd/yy', new Date() )
+    })
   })
 
   _.forEach(countries, (data, country_name) => {
