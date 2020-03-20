@@ -1,7 +1,7 @@
 import React from 'react'
 import { navigate } from "@reach/router"
 import { Link } from "gatsby"
-import logo from '../images/icon_512.png'
+import logo from '../images/icon_green_180.png'
 
 const Hero = ({selected_country, countries}) => {
   const links = [
@@ -14,7 +14,7 @@ const Hero = ({selected_country, countries}) => {
   ]
   return ( 
     <React.Fragment>
-      <section className="hero is-white is-medium">
+      <section className="hero is-dark is-medium">
         <div className="hero-head">
           <nav className="navbar">
             <div className="container">

@@ -8,6 +8,7 @@ const SetupCountry = ({country, field}) => {
                 country.highest = time
         if(isValid(parseJSON(time.date)))
             time.date_string = format(parseJSON(time.date), 'dd/MM')
+        time.index = i
     })
     return country
 }

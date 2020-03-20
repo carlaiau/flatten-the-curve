@@ -1,5 +1,5 @@
 import React from 'react' 
-import {LineChart, Line, XAxis, YAxis, Tooltip, Legend} from 'recharts'
+import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
 
 const CountryOverviewGraph = ({active_country, field, full_field_name, width}) => {
@@ -8,11 +8,15 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
     
     if(filteredData.length){
       return (
-        <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 150} data={filteredData}>
+        <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 150} data={filteredData} margin={{ bottom: 15 }}>
           <XAxis 
-            dataKey="date_string"
-            
-          />
+            dataKey="index"
+            name="Days"
+            type="number"
+            scale="time">
+              <Label value="Days Since First Confirmed Case" offset={-15} position="insideBottom" />
+            </XAxis>
+          
           <YAxis width={55}/>
           {
             full_field_name == 'confirmed' ? 
@@ -27,7 +31,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
           }
           <Tooltip/>
           <Legend verticalAlign="top"/>
-
+          
         </LineChart>
       )
     }
