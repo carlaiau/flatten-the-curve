@@ -13,7 +13,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
             dataKey="index"
             name="Days"
             type="number"
-            
+            interval="number"
             >
               <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
