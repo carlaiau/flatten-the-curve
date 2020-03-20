@@ -212,7 +212,7 @@ body{
         margin-right: 10px;
     }
 }
-@media screen and (max-width: 7000px){
+@media screen and (max-width: 700px){
 
     .navbar-brand h1{
         display: none;
