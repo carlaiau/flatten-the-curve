@@ -21,17 +21,7 @@ body{
         padding: 20px;
     }
 }
-.info .table td, .info .table th{
-    border: none;
-    color: #fff;
-    line-height: 1;
-}
-.info .table th{
-    font-weight: 700;
-}
-.info .table thead td{
-    color: #000;
-}
+
 
 .info a{
     text-decoration: none;
@@ -43,41 +33,12 @@ body{
         margin-top: 40px
     }
 }
-.box.country table{
-    background: none;
-    color: #fff;
-}
-.box.country table strong{
-    color: #fff;
-}
-.box.country table.is-narrow td, .box.country table.is-narrow  th,
-.hero table td, .hero table  th{
-    color: #fff;
-    border: none;
-    margin-left: 0;
-    padding-left: 0;
-    line-height: 1;
-}
+
 .tab-container p{
     margin-bottom: 10px;
 }
-.box.country .table.is-narrow.is-dark th{
-    color: #000;
-}
-.box.country .table.is-narrow.is-dark td{
-    color: #333;
-}
-.box.country table.is-narrow thead td,
-.hero .table thead td{
-    color: #000;
-    line-height: 1
-}
-.box table td{
-    text-align: right;
-}
-.hero table tbody td{
-    color: #fff;
-}
+
+
 
 .title-with-inputs{
     display: flex;

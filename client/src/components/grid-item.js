@@ -1,6 +1,8 @@
 import React from 'react'
 import { parseJSON, formatDistance } from "date-fns"
 import GridItemDetail from './grid-item-detail'
+import styled from '@emotion/styled'
+
 export default class GridItem extends React.Component{
 
     constructor(props){
@@ -11,44 +13,108 @@ export default class GridItem extends React.Component{
         }
     }
 
+    
+
     render(){
+        const TallyTable = styled('table')`
+            width: 100%;
+            background: none;
+            color: #fff;
+            thead{
+                th{
+                    font-weight: 400;
+                    &.right{
+                        text-align: right;
+                        
+                    }
+                }
+            }
+            tbody{
+                th{
+                    font-weight: 700;
+                }
+                td{
+                    font-weight: 700;
+                    text-align:right;
+                    padding-right: 0 !important;
+                }
+            }
+            th, td{
+                padding: 0.25em 0 !important;
+                border: none !important;
+                margin-left: 0;
+                padding-left: 0;
+                line-height: 1;
+                color: #fff !important;
+            }
+        `
+        const DeathToll = styled('div')`
+            align-items: center;
+            p{
+                color: #fff;
+                strong{
+                    color: #fff;
+                }
+            }
+            .tallies{
+                p{
+                    width: 100%;
+                    text-align: right;
+                    font-weight: 400;
+                    strong{
+                        font-weight: 700;
+                        margin-left: 3px;
+                    }
+                    margin-bottom: 5px;
+                }
+                
+            }
+        `
         const { country, active_country, per, field, tidy } = this.props
         return (
-        <React.Fragment>
+        <>
         <div className='column is-one-third'>
             <div className="box has-background-success has-text-white country">
                 <div className="content" style={{position: 'relative'}}>
                     <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                     <p className="is-size-6 has-text-white">
-                    {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago 
-                    {' '} had similar {per === 'total' ? ' total': 'per million'} 
-                    {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
-                    {' '} {active_country.country_name}
+                        {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago 
+                        {' '} had similar {per === 'total' ? ' total': 'per million'} 
+                        {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
+                        {' '} {active_country.country_name}
                     </p>
-                    <p className="is-size-6 has-text-white">
-                        <strong className="has-text-white">{tidy((country.population / 1000000).toFixed(0))} million</strong> people<br/>
-                        1 confirmed case per <strong className="has-text-white">{tidy(( country.population / country.highest.confirmed ).toFixed(0))}</strong><br/>
-                        <span>1 death per <strong className="has-text-white">{tidy(( country.population / country.highest.deaths ).toFixed(0))}</strong></span>
-                    </p>
-
-                    <table className="table is-narrow ">
-
-
-                    <thead>
-
-                    <tr>
-                        <th className={per != 'total' ? 'is-hidden': ''}>Total</th>
-                        <th className={per == 'total' ? 'is-hidden': ''}>Per Million</th>
-                        <th style={{textAlign: 'right', textTransform: 'capitalize'}}>
-                        
-                        {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago
-                        </th>
-                        <th style={{textAlign: 'right'}}>
-                        Now
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
+                    <DeathToll className="columns">
+                        <div className="column is-narrow">
+                            <p>
+                                <strong className="is-size-4">{tidy((country.population / 1000000).toFixed(0))}</strong><br/>
+                                million people
+                            </p>
+                        </div>
+                        <div className="column tallies">
+                            <p>
+                                <strong>1</strong> confirmed case per
+                                <strong>{tidy(( country.population / country.highest.confirmed ).toFixed(0))}</strong>
+                            </p>
+                            <p>
+                                <strong>1</strong> death per 
+                                <strong>{tidy(( country.population / country.highest.deaths ).toFixed(0))}</strong>
+                            </p>
+                        </div>
+                    </DeathToll>
+                    
+                    
+                    <TallyTable>
+                        <thead>
+                            <tr>
+                                <th className={per != 'total' ? 'is-hidden': ''}>Total</th>
+                                <th className={per == 'total' ? 'is-hidden': ''}>Per Million</th>
+                                <th className="right">
+                                    {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago
+                                </th>
+                                <th className="right">Now</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                         <tr>
                         <th>Confirmed</th>
                         <td className={per != 'total' ? 'is-hidden': ''}>
@@ -60,12 +126,17 @@ export default class GridItem extends React.Component{
 
                         <td className={per == 'total' ? 'is-hidden': ''}>
                             {country.earliest.confirmed_per_mil ? country.earliest.confirmed_per_mil.toFixed(2): ''}</td>
-                        <td className={per == 'total' ? 'is-hidden': ''}>{country.highest.confirmed_per_mil ? country.highest.confirmed_per_mil.toFixed(2): ''}</td>
+                        <td className={per == 'total' ? 'is-hidden': ''}>
+                            {country.highest.confirmed_per_mil ? country.highest.confirmed_per_mil.toFixed(2): ''}</td>
                         </tr>
                         <tr>
                         <th>Deaths</th>
-                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.earliest.deaths)}</td>
-                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.highest.deaths)}</td>
+                        <td className={per != 'total' ? 'is-hidden': ''}>
+                            {tidy(country.earliest.deaths)}
+                        </td>
+                        <td className={per != 'total' ? 'is-hidden': ''}>
+                            {tidy(country.highest.deaths)}
+                        </td>
                         
                         
                         <td className={per == 'total' ? 'is-hidden': ''}>{country.earliest.deaths_per_mil ? country.earliest.deaths_per_mil.toFixed(2): ''}</td>
@@ -80,7 +151,8 @@ export default class GridItem extends React.Component{
                         <td className={per == 'total' ? 'is-hidden': ''}>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>
                         </tr>
                     </tbody>
-                    </table>
+
+                    </TallyTable>
                     { country.highest.confirmed_per_mil > active_country.highest.confirmed_per_mil ?
                         <button className={`button ${this.state.expanded ? 'has-background-newt' : 'is-dark'} has-text-white`} onClick={() => this.setState({expanded: ! this.state.expanded})} style={{width: '100%', maxWidth: '100%', height: '40px', border: 'none'}}
                         >
@@ -108,7 +180,7 @@ export default class GridItem extends React.Component{
             />
         : ''
         }
-        </React.Fragment>
+        </>
         
         )
     }
