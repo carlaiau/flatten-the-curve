@@ -34,4 +34,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         },
       });
     });
+
+    // Remember this redirect!
+    actions.createPage({
+      path: `/`,
+      component: require.resolve('./src/templates/country-template.js'),
+      context: {
+        country: 'New Zealand'
+      }
+    })
   };

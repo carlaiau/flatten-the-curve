@@ -21,5 +21,6 @@ const Footer = () => (
             </p>
         </div>
     </section>
-)
+  )
+
 export default Footer

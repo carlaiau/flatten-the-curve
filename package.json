@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "gatsby-plugin-offline": "^3.0.42"
+  }
+}

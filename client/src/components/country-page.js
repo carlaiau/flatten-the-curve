@@ -21,9 +21,7 @@ export default class CountryPage extends React.Component{
     constructor(props){
       super(props);
       this.state = {
-        countries: props.countries,
         selected_country: props.selected_country,
-        countries_in_select_box: props.select_countries,
         numberFormat: new Intl.NumberFormat(),
         field: 'confirmed',
         per: 'total',
@@ -38,12 +36,11 @@ export default class CountryPage extends React.Component{
   tidyFormat = (numberString) => {
     return this.state.numberFormat.format(numberString)
   }
-
-  
-
   
   render(){
-    const {selected_country, countries_in_select_box, countries, field, sort, per, limit} = this.state
+    const {countries, select_countries} = this.props.stateHook
+    console.log(countries)
+    const {selected_country, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -67,10 +64,7 @@ export default class CountryPage extends React.Component{
     return (
       <React.Fragment>
         <SEO title={selected_country + ' COVID-19 Progress'} />
-        <Hero 
-          countries={countries_in_select_box} 
-          selected_country={selected_country} 
-        />
+        <Hero countries={select_countries} selected_country={selected_country}/>
         <section className="section">
           <div className="container">
             <div className="columns info">
