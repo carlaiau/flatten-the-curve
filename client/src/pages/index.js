@@ -31,7 +31,7 @@ export default class IndexPage extends React.Component{
       limit: 60,
       width:  800,
       height: 182,
-      min_days_ahead: 7
+      min_days_ahead: 3
     }
   }
 

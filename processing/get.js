@@ -48,6 +48,11 @@ const mainThread = () => {
 }
 
 const add_population_data = (countries, population_data) => {
+  // Remove the empty time series data
+  countries = _.forEach(countries, (data) => {
+    data.time_series = data.time_series.filter( (t) => t.confirmed != 0 )
+  })
+
   _.forEach(countries, (data, country_name) => {
     population_data.forEach( (pop_data) => {
       if( pop_data['Country Name'].toLowerCase()  == country_name.toLowerCase() ){
@@ -59,9 +64,8 @@ const add_population_data = (countries, population_data) => {
             time.deaths_per_mil = time.deaths / (data.population / 1000000)
           if(time.recovered)
             time.recovered_per_mil = time.recovered / (data.population / 1000000)
-        })
+        })      
       }
-
     })
   })
   return countries

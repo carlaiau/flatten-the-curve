@@ -30,7 +30,7 @@ export default class CountryPage extends React.Component{
         limit: 60,
         width:  800,
         height: 182,
-        min_days_ahead: 7
+        min_days_ahead: 3
     }
   }
 
@@ -119,7 +119,7 @@ export default class CountryPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <Tabs country_name={active_country.country_name} min_days={this.state.min_days_ahead - 3}/>
+                <Tabs country_name={active_country.country_name} min_days={this.state.min_days_ahead}/>
               </div>
             </div>
           </div>                
