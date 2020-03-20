@@ -6,13 +6,14 @@ export default class Tabs extends React.Component{
 		super(props);
 		this.state = {
             active: 'welcome',
-            update_time: '1:28pm March 20 2020 NZT'
+            update_time: '1:28pm 20 March NZT',
+            nz_time: '11:26am 21 March NZT'
         }
     }
 
     render(){
         const {country_name, min_days} = this.props
-        const {active, update_time} = this.state
+        const {active, update_time, nz_time} = this.state
         return (
             <div className="box tab-container">
                 <div className="tabs">
@@ -31,7 +32,12 @@ export default class Tabs extends React.Component{
                 <div className={active == 'welcome' ? '' : 'is-hidden'}>
                     <p className="is-size-6">The goal of this site is to motivate people to take actionable steps now to slow the spread of COVID-19.</p>
                     
-                    <p className="is-size-6">Data updated at <strong>{update_time}</strong></p>
+                    <p className="is-size-6">Global data updated at <strong>{update_time}</strong></p>
+                    {country_name == 'New Zealand' ?
+                    <p className="is-size-6"><strong>New Zealand</strong> data updated at <strong>{nz_time}</strong></p>
+                    :
+                    <></>
+                    }
                     <p className="is-size-6">
                         Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                         Please visit this site for actionable steps to slow the spread.
