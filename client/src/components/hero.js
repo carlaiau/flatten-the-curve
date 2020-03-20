@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from "gatsby"
 import logo from '../images/icon_green_180.png'
+import { navigate } from "@reach/router"
 
 const Hero = ({countries, selected_country, selectFn}) => {
   const links = [
-    {   path: '/',                label: 'World'    },
+    //{   path: '/',                label: 'World'    },
     {   path: '/new-zealand',     label: 'NZ'       },
     {   path: '/australia',       label: 'AU'       },
     {   path: '/united-kingdom',  label: 'UK'       },
@@ -40,7 +41,10 @@ const Hero = ({countries, selected_country, selectFn}) => {
                     <div className="field">
                       <div className="control">
                         <div className="select">
-                          <select value={selected_country} onChange={selectFn}>
+                          <select value={selected_country} onChange={e => {
+                              if(e.target.value) navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
+                          }}
+                          >
                             <option value=''>Choose your country</option>
                             {countries.map( ({country_name } ) => (
                               <option key={country_name} value={country_name}>{country_name}</option>

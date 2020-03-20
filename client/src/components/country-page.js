@@ -9,7 +9,6 @@ import GridItem from "../components/grid-item"
 import Footer from "../components/footer"
 import GetTopCountries from '../utils/get-top-countries'
 import SetupCountry from '../utils/setup-country'
-import { navigate } from "@reach/router"
 
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -37,13 +36,6 @@ export default class CountryPage extends React.Component{
   tidyFormat = (numberString) => {
     return this.state.numberFormat.format(numberString)
   }
-
-  heroSelectFn = (e) => {
-      // this.setState({selected_country: e.target.value})   
-      if(e.target.value) 
-        navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
-  }
-
   
   render(){
     const {countries, select_countries} = this.props.stateHook
@@ -72,7 +64,7 @@ export default class CountryPage extends React.Component{
     return (
       <React.Fragment>
         <SEO title={selected_country + ' COVID-19 Progress'} />
-        <Hero countries={select_countries} selected_country={selected_country} selectFn={this.heroSelectFn}/>
+        <Hero countries={select_countries} selected_country={selected_country}/>
         <section className="section">
           <div className="container">
             <div className="columns info">
