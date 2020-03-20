@@ -8,12 +8,13 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
     
     if(filteredData.length){
       return (
-        <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 150} data={filteredData} margin={{ bottom: 25, top: 15 }}>
+        <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 250} data={filteredData} margin={{ bottom: 25, top: 15, right: 10 }}>
           <XAxis 
             dataKey="index"
             name="Days"
             type="number"
-            scale="time">
+            
+            >
               <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
           
