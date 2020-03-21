@@ -42,7 +42,7 @@ const CumulativeGraph = ({width, countries_to_graph = [], field = 'confirmed', m
     ]
 
     // Make one big array of objects 
-    if(countries_to_graph.length > 1){
+    if(countries_to_graph.length > 0){
         for(let i = 0; i < max_days; i++){
             if(i == 0){
                 if(typeof ready_to_graph[i] != 'undefined')
@@ -50,7 +50,13 @@ const CumulativeGraph = ({width, countries_to_graph = [], field = 'confirmed', m
             }
             else if(typeof ready_to_graph[i] != 'undefined')
                 ready_to_graph[i][growth_label] = (ready_to_graph[i - 1][growth_label] * daily_increase).toFixed(0)
-            
+             
+        }
+    }
+    else{
+        ready_to_graph.push({})
+        for(let i = 0; i < max_days; i++){
+            ready_to_graph[0].num_day = i
         }
     }
 
@@ -72,7 +78,7 @@ const CumulativeGraph = ({width, countries_to_graph = [], field = 'confirmed', m
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
-                    return <Line type="monotone" stroke={colors[i]} dataKey={key} dot={false} strokeWidth={3}/>
+                    return <Line type="monotone" stroke={colors[i]} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
                 {
                     countries_to_graph.length > 1 ? (

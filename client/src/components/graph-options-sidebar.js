@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 const GraphOptionsSideBar = ({field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn }) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
-    const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed : cumulative_deaths).slice(0,35)
+    const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed.filter(c => c.confirmed) : cumulative_deaths.filter(c => c.deaths)).slice(0,35)
     
     const SideBar = styled('div')`
         .field{

@@ -14,6 +14,18 @@ export default class IndexPage extends React.Component{
     
     constructor(props){
         super(props);
+
+        const default_countries = [
+            'Singapore',
+            'China',
+            'Italy',
+            'Spain',,
+            'Iran',
+            'South Korea',
+            'Australia',
+            'United States',
+            'United Kingdom',
+          ]
         this.state = {
           selected_country: '',
           numberFormat: new Intl.NumberFormat(),
@@ -21,33 +33,9 @@ export default class IndexPage extends React.Component{
           width:  800,
           height: 182,
           num_scale: 'linear',
-          num_graph_countries: [
-            'China',
-            'Italy',
-            'Spain',
-            'Japan',
-            'Iran',
-            'France',
-            'South Korea',
-            'Singapore',
-            'United States',
-            'United Kingdom',
-            'Australia',
-            'Canada'
-          ],
+          num_graph_countries: default_countries,
           death_scale: 'linear',
-          death_graph_countries: [
-            'Singapore',
-            'China',
-            'Italy',
-            'Spain',
-            'Japan',
-            'Iran',
-            'France',
-            'South Korea',
-            'United Kingdom',
-            'United States'
-          ]
+          death_graph_countries: default_countries
       }
     }
 
@@ -92,8 +80,8 @@ export default class IndexPage extends React.Component{
                         <Tab/>
                     </div>
                 </div>
-                <div className="columns" style={{marginTop: '20px', alignItems: 'center'}}>
-                    <div className="column is-quarter">
+                <div className="columns">
+                    <div className="column is-narrow">
                         <div className="box has-background-success">
                             <h3 className="is-size-3 has-text-white title">
                                 Cumulative number of cases
@@ -102,6 +90,11 @@ export default class IndexPage extends React.Component{
                                 by number of days since 100th case
                             </p>
                         </div>
+                    </div>
+                </div>
+                <div className="columns">
+                    <div className="column is-quarter">
+                        
                         <div className="box">
                             <GraphOptionsSideBar
                                 scale={this.state.num_scale} 
@@ -120,26 +113,27 @@ export default class IndexPage extends React.Component{
                                     }
                                 }
                             }/>
-                            <button class="button is-warning" onClick={e => this.setState({num_graph_countries: []})}>Clear All</button>
+                            <button class="button " onClick={e => this.setState({num_graph_countries: []})}>Clear All</button>
                         </div>
                     </div>
                     <div className="column is-three-quarters">
                         <CumulativeGraph width={this.state.width} scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
                     </div>
-                </div> 
-
-                <div className="columns" style={{paddingTop: '30px', paddingBottom: '30px', alignItems: 'center'}}>
-                    <div className="column">
-                        <div className="box has-background-success">
-                            <h3 className="is-size-3 has-text-white title">
-                            Cumulative number of deaths
-                            </h3>
-                            <p className="is-size-5 subtitle has-text-white">
-                            by numbers of days since 10th deaths
-                            </p>
+                </div>  
+                
+                <div className="columns">
+                    <div className="column is-narrow">
+                        <div className="box has-background-success is-full">
+                            <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
+                            <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th deaths</p>
                         </div>
+                    </div>
+                </div>
+                <div className="columns" style={{marginBottom: '30px'}}>
+                    <div className="column">
                         <div className="box">
                             <GraphOptionsSideBar
+                                field='death'
                                 scale={this.state.death_scale} 
                                 scaleFn={e => {this.setState({death_scale: e.target.value})}}
                                 checkCountries={this.state.death_graph_countries}
