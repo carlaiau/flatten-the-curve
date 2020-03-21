@@ -21,12 +21,13 @@ export default class Tabs extends React.Component{
                         <li className={active == 'welcome' ? 'is-active' : ''}>
                             <a onClick={(e)=> this.setState({active: 'welcome'})}>Welcome</a>
                         </li>
+                        
                         <li className={active == 'about' ? 'is-active' : ''}>
                         <a onClick={(e)=> this.setState({active: 'about'})}>About</a>
                         </li>
-                        <li className={active == 'forecast' ? 'is-active' : ''}>
+                        { country_name ? (<li className={active == 'forecast' ? 'is-active' : ''}>
                         <a onClick={(e)=> this.setState({active: 'forecast'})}>Forecasts</a>
-                        </li>
+                        </li>) : '' }
                     </ul>
                 </div>
                 <div className={active == 'welcome' ? '' : 'is-hidden'}>
@@ -41,6 +42,9 @@ export default class Tabs extends React.Component{
                     <p className="is-size-6">
                         Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                         Please visit this site for actionable steps to slow the spread.
+                    </p>
+                    <p className="is-size-5">
+                        <strong>Home Page Graphs will not work on mobile yet!</strong>
                     </p>
                     
                 </div>
