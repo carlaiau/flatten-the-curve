@@ -32,7 +32,7 @@ export default class CountryPage extends React.Component{
         min_days_ahead: 3
     }
   }
-
+  
   tidyFormat = (numberString) => {
     return this.state.numberFormat.format(numberString)
   }
@@ -80,15 +80,12 @@ export default class CountryPage extends React.Component{
                     {active_country.highest.deaths ? this.tidyFormat(active_country.highest.deaths) + ' Deaths' : ''}
                   </span>
                 </p>  
-
-                <div className="box" style={{padding: '10px'}}>
-                  <CountryOverviewGraph 
-                    active_country={active_country}
-                    field={field}
-                    full_field_name={full_field_name}
-                    width={this.state.width}
-                  />
-                </div>
+                <CountryOverviewGraph 
+                  active_country={active_country}
+                  field={field}
+                  full_field_name={full_field_name}
+                  width={this.state.width}
+                />
               </div>
               <div className="column">
                 <div className="field is-grouped is-horizontal">

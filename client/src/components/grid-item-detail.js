@@ -1,5 +1,6 @@
 import React from "react"
 import styled from '@emotion/styled'
+import SingularGraphTooltip from './graph-tooltip'
 import {LineChart, Line, YAxis, Tooltip, Legend} from 'recharts'
 
 
@@ -8,9 +9,6 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
 
     const time_series = compare.time_series.filter( time => time.confirmed_per_mil >= active.highest.confirmed_per_mil )
     
-    // Rememner to use these for plotting the real data on the set
-    
-
     let prev_series = active.time_series.filter( time => time.confirmed_per_mil < active.highest.confirmed_per_mil )
 
     // Reduce the length of max_historical to ensure
@@ -35,7 +33,8 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
             index: i,
             confirmed: ( time.confirmed_per_mil - previous_confirmed ) / previous_confirmed,
             deaths: ( time.deaths_per_mil - previous_deaths ) / previous_deaths,
-            death_ratio: time.deaths / time.confirmed
+            death_ratio: time.deaths / time.confirmed,
+            date: time.date
         })
         previous_confirmed = time.confirmed_per_mil
         previous_deaths = time.deaths_per_mil
@@ -49,7 +48,8 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
         forecast.push({
             day: current_day,
             real_confirmed: time.confirmed,
-            real_deaths: time.deaths | 0
+            real_deaths: time.deaths | 0,
+            date: time.date
         })
         current_day++   
     })
@@ -60,7 +60,8 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
             forecast.push({
                 day: current_day,
                 real_confirmed: active.highest.confirmed,
-                real_deaths: active.highest.deaths | 0
+                real_deaths: active.highest.deaths | 0,
+                date: active.highest.date
             })
 
             previous_confirmed = active.highest.confirmed
@@ -81,7 +82,8 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
             forecast.push({
                 day: current_day, 
                 confirmed: parseInt(confirmed.toFixed(0)), 
-                deaths: parseInt(deaths.toFixed(0)) 
+                deaths: parseInt(deaths.toFixed(0)),
+                date: delta.date
             })
             previous_confirmed = confirmed
             previous_deaths = deaths
@@ -103,10 +105,6 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
             }
             &.is-size-6{
                 margin-bottom: 10px;
-            }
-            
-            &.recharts-tooltip-label{
-                display: none;
             }
         }
     `
@@ -142,7 +140,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                     
                      
                     { details_open ? 
-                        <React.Fragment>
+                        <>
                             <p className="is-size-6">
                                 If {active.country_name} currently has 0 deaths, we use the {compare.country_name} number of deaths to confirmed case ratio to 
                                 estimate when {active.country_name} will encounter the first death. 
@@ -153,7 +151,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                                 If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
                             </p>
                             
-                        </React.Fragment>
+                        </>
                     :
                         <button className="button is-white is-outlined is-size-7" onClick={detailsFn}>Expand Method</button>
                     }
@@ -172,7 +170,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093" />
                             <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" />
-                            <Tooltip/>
+                            <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top"/>
                         </LineChart>
                     </div>
@@ -187,7 +185,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" />
                             <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252"/>
-                            <Tooltip/>
+                            <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top"/>
                         </LineChart>
                     </div>
@@ -207,7 +205,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
-                            <Tooltip/>
+                            <Tooltip content={SingularGraphTooltip}/>
                             
                         </LineChart>
                     </div>
@@ -220,7 +218,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
-                            <Tooltip/>
+                            <Tooltip content={SingularGraphTooltip}/>
                         </LineChart>
                     </div>
                 </div>    
