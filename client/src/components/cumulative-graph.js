@@ -54,8 +54,9 @@ const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30
     return (
         <>
             <LineChart width={1000} height={450} data={ready_to_graph} margin={{right: 20}}>
-                <XAxis dataKey="num_day" name="Days" type="number" interval="number" />
+                
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart"/>
+                <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
                     return <Line type="monotone" stroke={colors[i]} dataKey={key} dot={false} strokeWidth={3}/>
                 })}

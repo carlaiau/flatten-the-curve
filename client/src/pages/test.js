@@ -28,6 +28,21 @@ const TestPage = () => {
                         <div className="box"><CumulativeGraph/></div>
                     </div>
                 </div>
+
+                <div className="columns" style={{paddingTop: '30px', alignItems: 'center'}}>
+                    <div className="column">
+                        <h3 className="is-size-3">
+                            Cumulative number of cases
+                        </h3>
+                        <p className="is-size-5">
+                            by number of days since 100th case
+                        </p>
+                    </div>
+                    <div className="column is-three-quarters">
+                        <div className="box"><CumulativeGraph scale="linear"/></div>
+                    </div>
+                </div>
+
                 <div className="columns" style={{paddingTop: '30px', paddingBottom: '30px', alignItems: 'center'}}>
                     <div className="column">
                         <h3 className="is-size-3">
