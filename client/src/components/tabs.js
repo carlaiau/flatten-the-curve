@@ -21,12 +21,13 @@ export default class Tabs extends React.Component{
                         <li className={active == 'welcome' ? 'is-active' : ''}>
                             <a onClick={(e)=> this.setState({active: 'welcome'})}>Welcome</a>
                         </li>
+                        
                         <li className={active == 'about' ? 'is-active' : ''}>
                         <a onClick={(e)=> this.setState({active: 'about'})}>About</a>
                         </li>
-                        <li className={active == 'forecast' ? 'is-active' : ''}>
+                        { country_name ? (<li className={active == 'forecast' ? 'is-active' : ''}>
                         <a onClick={(e)=> this.setState({active: 'forecast'})}>Forecasts</a>
-                        </li>
+                        </li>) : '' }
                     </ul>
                 </div>
                 <div className={active == 'welcome' ? '' : 'is-hidden'}>

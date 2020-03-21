@@ -23,10 +23,8 @@ const GraphOptionsSideBar = ({field = 'confirmed', scale, scaleFn, checkCountrie
                     margin-left: 5px;
                 }
             }
-        }
-        
+        }   
     `
-    console.log(checkCountries)
     return (
         <SideBar>
             <div className="field is-horizontal">

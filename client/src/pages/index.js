@@ -101,7 +101,7 @@ export default class IndexPage extends React.Component{
                 <div className="columns" style={{paddingTop: '30px', paddingBottom: '30px', alignItems: 'center'}}>
                     <div className="column">
                         <div className="box has-background-success">
-                            <h3 className="is-size-2 has-text-white title">
+                            <h3 className="is-size-3 has-text-white title">
                             Cumulative number of deaths
                             </h3>
                             <p className="is-size-5 subtitle has-text-white">

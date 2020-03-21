@@ -44,8 +44,13 @@ const CumulativeGraph = ({countries_to_graph = [], field = 'confirmed', max_days
     // Make one big array of objects 
     if(countries_to_graph.length > 1){
         for(let i = 0; i < max_days; i++){
-            if(i == 0) ready_to_graph[i][growth_label] = field == 'confirmed' ? 100: 10
-            else ready_to_graph[i][growth_label] = (ready_to_graph[i - 1][growth_label] * daily_increase).toFixed(0)
+            if(i == 0){
+                if(typeof ready_to_graph[i] != 'undefined')
+                    ready_to_graph[i][growth_label] = field == 'confirmed' ? 100: 10
+            }
+            else if(typeof ready_to_graph[i] != 'undefined')
+                ready_to_graph[i][growth_label] = (ready_to_graph[i - 1][growth_label] * daily_increase).toFixed(0)
+            
         }
     }
 
