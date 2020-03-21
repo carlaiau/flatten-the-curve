@@ -3,6 +3,8 @@ import Hero from '../components/hero'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import CumulativeGraph from '../components/cumulative-graph'
 
+import 'bulma/css/bulma.css'
+import '../styles/custom.css'
 
 
 
