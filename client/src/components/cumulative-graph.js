@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
-const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30}) => {
+const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
 
@@ -44,8 +44,8 @@ const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30
     // Make one big array of objects 
     
     for(let i = 0; i < max_days; i++){
-        if(i == 0) ready_to_graph[i]['30% Growth'] = field == 'confirmed' ? 100: 10
-        else ready_to_graph[i]['30% Growth'] = (ready_to_graph[i - 1]['30% Growth'] * 1.3).toFixed(0)
+        if(i == 0) ready_to_graph[i][growth_label] = field == 'confirmed' ? 100: 10
+        else ready_to_graph[i][growth_label] = (ready_to_graph[i - 1][growth_label] * daily_increase).toFixed(0)
     }
 
 
@@ -55,11 +55,11 @@ const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30
         <>
             <LineChart width={1000} height={450} data={ready_to_graph} margin={{right: 20}}>
                 <XAxis dataKey="num_day" name="Days" type="number" />
-                <YAxis width={55} type="number" scale="log" domain={['auto', 'auto']}/>
-                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != '30% Growth').map( (key, i) => {
+                <YAxis width={55} type="number" scale="log" domain={['auto', 'auto']} interval="number"/>
+                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
                     return <Line type="monotone" stroke={colors[i]} dataKey={key} dot={false} strokeWidth={3}/>
                 })}
-                <Line type="monotone" stroke='#aaa' dataKey='30% Growth' strokeOpacity={0.25} dot={false} strokeWidth={3}/>
+                <Line type="monotone" stroke='#aaa' dataKey={growth_label} strokeOpacity={0.25} dot={false} strokeWidth={3}/>
                 <Tooltip/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             
