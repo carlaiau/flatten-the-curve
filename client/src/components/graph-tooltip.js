@@ -3,7 +3,7 @@ import { parseJSON, format, add } from "date-fns"
 import styled from '@emotion/styled'
 const SingularGraphTooltip = (tooltipProps)  => {
 
-    if(! tooltipProps.payload.length) return <></>
+    if(! tooltipProps.hasOwnProperty('payload')  || ! tooltipProps.payload.length) return <></>
 
     const {value, dataKey, payload } = tooltipProps.payload[0]
 
