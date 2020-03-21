@@ -28,8 +28,7 @@ export default class CountryPage extends React.Component{
         sort: 'worst',
         limit: 60,
         width:  800,
-        height: 182,
-        min_days_ahead: 3
+        height: 182
     }
   }
   
@@ -56,7 +55,6 @@ export default class CountryPage extends React.Component{
       countries, 
       active_country, 
       field: full_field_name, 
-      min_days_ahead: this.state.min_days_ahead, 
       sort, 
       limit 
     })
@@ -106,7 +104,7 @@ export default class CountryPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <Tabs country_name={active_country.country_name} min_days={this.state.min_days_ahead}/>
+                <Tabs country_name={active_country.country_name}/>
               </div>
             </div>
           </div>                

@@ -12,7 +12,7 @@ export default class Tabs extends React.Component{
     }
 
     render(){
-        const {country_name, min_days} = this.props
+        const {country_name} = this.props
         const {active, update_time, nz_time} = this.state
         return (
             <div className="box tab-container">
@@ -56,7 +56,6 @@ export default class Tabs extends React.Component{
                         We support countries with over 1 million population and 10 confirmed cases. 
                         If your country is not shown but should be, please contact us!
                     </p>
-                    <p>Countries below were at a similar level as {country_name} at least {min_days} days ago.</p>
                 </div>
                 <div className={active =='forecast' ? '' : 'is-hidden'}>
                 

@@ -5,18 +5,7 @@ export const GlobalStateContext = React.createContext()
 export const GlobalDispatchContext = React.createContext()
 
 
-function reducer(state, action) {
-    switch (action.type) {
-      case "TOGGLE_THEME": {
-        return {
-          ...state,
-          theme: state.theme === "light" ? "dark" : "light",
-        }
-      }
-      default:
-        throw new Error("Bad Action Type")
-    }
-  }
+function reducer(){ }
 
 const GlobalContextProvider = ({ children }) => {
     const globalData = useStaticQuery(graphql`query {
@@ -43,12 +32,34 @@ const GlobalContextProvider = ({ children }) => {
                 highest_confirmed
             }
         }
+        cumulative: allCumulativeJson {
+            nodes {
+              country_name
+              highest_confirmed
+              population
+              confirmed {
+                confirmed
+                date
+                num_day
+              }
+              deaths {
+                num_day
+                date
+                deaths
+              }
+            }
+          }
+
+        
     }`)
     
+    const {countries, select_countries, cumulative } = globalData
     
     const [state, dispatch] = React.useReducer(reducer, {
-        countries: globalData.countries.nodes,
-        select_countries: globalData.select_countries.nodes
+        countries: countries.nodes,
+        select_countries: select_countries.nodes,
+        cumulative_confirmed: cumulative.nodes.filter(c => c.confirmed),
+        cumulative_deaths: cumulative.nodes.filter(c => c.deaths)
     });
   
   return (

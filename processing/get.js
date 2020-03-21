@@ -2,9 +2,9 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
 const request = require('request')
-const { format, parse, formatDistance } = require('date-fns')
+const { parse } = require('date-fns')
 
-const getCountries = () => {
+const createFiles = (country_path, cum_path) => {
   let confirmed = [];
   let deaths = []
   let recovered = []
@@ -34,10 +34,10 @@ const getCountries = () => {
             c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
           })
           
-          removed_key = _.map(countries, (country) => country)
+          country_array = _.map(countries, (country) => country)
 
 
-          removed_key.map(c => {
+          country_array.map(c => {
             if(c.country_name == 'New Zealand'){
               c.time_series.push({
                 "date": parse('3/21/20', 'MM/dd/yy', new Date() ),
@@ -47,13 +47,18 @@ const getCountries = () => {
               c.highest_confirmed = 53
             }
           })
+
+          const cumulative = getCumulatives(country_array)
           
-          fs.writeFile("./countries.json", JSON.stringify(removed_key , null, 2), function(err) {
-            if(err) {
-              return console.log(err);
-            }
-            console.log("The file was saved!");
+          fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
+            if(err) return console.log(err);
+            console.log("Country file was saved!");
           }); 
+          fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
+            if(err) return console.log(err);
+            console.log("Cumulative was saved!");
+          }); 
+          
         })
       })
     }); 
@@ -158,13 +163,8 @@ const restructure_inputs = (all_countries) => {
     }
 
   })
-
   
   countries_multiple_column_names = seen_countries.filter( (c) => c.count > 1 ).map( c => c.name)
-
-  console.log(countries_multiple_column_names)
-  
-  
 
   countries = all_countries.filter( c => ! countries_multiple_column_names.includes(c) )
 
@@ -205,6 +205,68 @@ const remove_negatives = (country) => {
 
 const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && key != 'Lat' && key != 'Long'
 
+// Country Logic = Cumulative number of cases, by number of days since 100th case
+// Death Logic = cumulative number of deaths, by number of days since 10th deaths
+const getCumulatives = (countries) => {
+
+  const output_countries = []
+  // The structure needs to e 
+  // We get an array of countries
+  
+  countries.forEach(country => {
+    const confirmed = []
+    const deaths = []
+    
+    let count_of_days = 0
+    country.time_series.forEach(day => {
+      if(day.confirmed >= 100){
+        confirmed.push({
+          num_day: count_of_days,
+          date: day.date,
+          confirmed: day.confirmed
+        })
+        count_of_days++
+      }
+    })
+
+    count_of_days = 0
+    country.time_series.forEach(day => {
+      if(day.hasOwnProperty('deaths') && day.deaths >= 10){
+        deaths.push({
+          num_day: count_of_days,
+          date: day.date,
+          deaths: day.deaths
+        })
+        count_of_days++
+      }
+    })
+
+    // Either array is populated. Then append country to cumulative output
+    if(confirmed.length || deaths.length){ 
+      const country_to_append = {
+        highest_confirmed: country.highest_confirmed,
+        population: country.population,
+        country_name: country.country_name,
+      }
+
+      if(confirmed.length) country_to_append.confirmed = confirmed
+      if(deaths.length) country_to_append.deaths = deaths
+      
+      output_countries.push(country_to_append)
+    }
+    
+  })
+
+  return output_countries
+
+}
 
 
-getCountries()
+
+
+if(process.argv.length == 4 ){
+  createFiles(process.argv[2], process.argv[3])
+}
+else{
+  console.log("Whoops!Usage:\nnode get.js country.out cumulative.out")
+}
