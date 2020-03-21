@@ -49,7 +49,7 @@ const Hero = ({selected_country, selectFn}) => {
                           else navigate('/')
                       }}
                       >
-                        <option value=''>World Comparison</option>
+                        <option value=''>World</option>
                         {select_countries.map( ({country_name } ) => (
                           <option key={country_name} value={country_name}>{country_name}</option>
                         ))}

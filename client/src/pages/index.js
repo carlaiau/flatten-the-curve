@@ -4,7 +4,7 @@ import Tab from '../components/tabs'
 import Footer from '../components/footer'
 import CumulativeGraph from '../components/cumulative-graph'
 import GraphOptionsSideBar from '../components/graph-options-sidebar'
-
+import styled from '@emotion/styled'
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
 
@@ -51,12 +51,43 @@ export default class IndexPage extends React.Component{
       }
     }
 
+    
+
     render(){
-        
+        const IndexContainer = styled('div')`
+            
+            .box{
+                color: #ff0000;
+                @media screen and (max-width: 480px){
+                    margin-left: 10px;  
+                    margin-right: 10px;
+                }
+            }
+            .recharts-legend-item{
+                @media screen and (max-width: 480px){
+                    svg{
+                        height: 7px;
+                        width: 7px;
+                    }
+                    span{
+                        font-size: 10px;
+                    }
+                }
+            }
+            .recharts-layer.recharts-cartesian-axis{
+                @media screen and (max-width: 480px){
+                    text{
+                        tspan{
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        `
         return(<>
             <Hero selected_country=''/>
             
-            <div className="container">
+            <IndexContainer className="container">
                 <div className="columns">
                     <div className="column is-full" style={{marginTop: '30px'}}>
                         <Tab/>
@@ -94,7 +125,7 @@ export default class IndexPage extends React.Component{
                         </div>
                     </div>
                     <div className="column is-three-quarters">
-                        <CumulativeGraph scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
+                        <CumulativeGraph width={this.state.width} scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
                     </div>
                 </div> 
 
@@ -130,13 +161,35 @@ export default class IndexPage extends React.Component{
                         </div>
                     </div>
                     <div className="column is-three-quarters">
-                        <CumulativeGraph field="deaths" scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
+                        <CumulativeGraph width={this.state.width} field="deaths" scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
                     </div>
                 </div>
-            </div>
+            </IndexContainer>
             <Footer/>
         </>
     )
     }
+  
+  /**
+   * Calculate & Update state of new dimensions
+   */
+  updateDimensions = () => {  
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
+  /**
+   * Add event listener
+   */
+  componentDidMount = () => {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions);
+  }
+
+  /**
+   * Remove event listener
+   */
+  componentWillUnmount = () => {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
     
 }
