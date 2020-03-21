@@ -4,7 +4,7 @@ const _ = require('lodash')
 const request = require('request')
 const { format, parse, formatDistance } = require('date-fns')
 
-const mainThread = () => {
+const getCountries = () => {
   let confirmed = [];
   let deaths = []
   let recovered = []
@@ -40,11 +40,11 @@ const mainThread = () => {
           removed_key.map(c => {
             if(c.country_name == 'New Zealand'){
               c.time_series.push({
-                "date": parse(t.date, '3/19/20', new Date() ),
-                "confirmed": 39,
-                "confirmed_per_mil": 7.982806263
+                "date": parse('3/21/20', 'MM/dd/yy', new Date() ),
+                "confirmed": 53,
+                "confirmed_per_mil": 10.848429025
               })
-              c.highest_confirmed = 39
+              c.highest_confirmed = 53
             }
           })
           
@@ -206,4 +206,5 @@ const remove_negatives = (country) => {
 const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && key != 'Lat' && key != 'Long'
 
 
-mainThread()
+
+getCountries()
