@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
+import CumulativeGraphTooltip from "../components/cumulative-graph-tooltip"
 
-const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase", scale="log"}) => {
+const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     // Array of Objects 
@@ -31,31 +32,15 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
     // This is to ensure that colors do not change as the number of countries gets added / removed
     let color_definitions = {}
     const colors= [
-        "#b33939",
-        "#e84118",
-        "#2c2c54",
-        "#218c74",
-        "#4cd137",
-        "#33d9b2",
-        "#34ace0",
-        "#ffda79",
-        "#706fd3", "#474787", "#ff793f", "#cd6133", "#40407a", "#227093",
-        "#ffb142", "#ccae62", "#cc8e35", "#ff5252", "#8c7ae6",
-        "#f6e58d", "#30336b", "#95afc0", "#e1b12c", "#40739e",
-        "#ff7979",
-        "#7ed6df",
-        "#686de0",
-        "#ffbe76",
-        "#e056fd",
-        "#f9ca24",
-        "#eb4d4b",
-        "#22a6b3",
-        "#4834d4",
-        "#f0932b",
-        "#be2edd"
+        "#b33939", "#e84118", "#2c2c54", "#218c74", "#4cd137",
+        "#33d9b2", "#34ace0", "#ffda79", "#706fd3", "#474787", 
+        "#ff793f", "#cd6133", "#40407a", "#227093", "#ffb142", 
+        "#ccae62", "#cc8e35", "#ff5252", "#8c7ae6", "#f6e58d", 
+        "#30336b", "#95afc0", "#e1b12c", "#40739e", "#ff7979",
+        "#7ed6df", "#686de0", "#ffbe76", "#e056fd", "#f9ca24",
+        "#eb4d4b", "#22a6b3", "#4834d4", "#f0932b", "#be2edd"
 
     ]
-    console.log(all_possible_countries.length)
     all_possible_countries.forEach( (c, i) => {
         color_definitions[c.country_name] = colors[i]
     })
@@ -93,7 +78,6 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
         </>
     )
 
-    console.log(color_definitions)
     return (
 
         <>
@@ -110,7 +94,7 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
                     ): <></>
                 }
                 
-                <Tooltip/>
+                <Tooltip content={CumulativeGraphTooltip}/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             
             </LineChart>
