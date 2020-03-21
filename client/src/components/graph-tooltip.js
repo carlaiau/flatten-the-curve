@@ -27,21 +27,6 @@ const SingularGraphTooltip = (tooltipProps)  => {
         }
     
     `
-        /*
-        This outputs this:
-          0:
-          stroke: "#ff793f"
-          strokeWidth: 1
-          fill: "#fff"
-          dataKey: "confirmed"
-          unit: undefined
-          formatter: undefined
-          name: "Total confirmed cases"
-          color: "#ff793f"
-          value: 63
-          type: undefined
-          payload: {date: "2020-03-06T11:00:00.000Z", confirmed: 63, confirmed_per_mil: 2.5207694396637628, deaths: 2, deaths_per_mil: 0.08002442665599248, …}
-       */
         let outputString = new Intl.NumberFormat().format(value, 2)
         let customClass = 'confirmed'
         switch(dataKey){
@@ -64,7 +49,7 @@ const SingularGraphTooltip = (tooltipProps)  => {
                 customClass = 'historical'
                 outputString += ' deaths'
                 break;
-            case "real_confirms":
+            case "real_confirmed":
                 customClass = 'historical'
                 outputString += ' cases'
                 break;

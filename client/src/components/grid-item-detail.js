@@ -204,7 +204,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                     >   
                         <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
-                            <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/>
+                            <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#227093" dot={false} strokeWidth={3} formatter={value => value.toFixed(2)}/>
                             <Tooltip content={SingularGraphTooltip}/>
                             
                         </LineChart>
@@ -217,7 +217,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                     >
                         <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
                             <YAxis width={50}/>
-                            <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#ff5252" formatter={value => value.toFixed(2)}/>
+                            <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#227093" dot={false} strokeWidth={3} formatter={value => value.toFixed(2)}/>
                             <Tooltip content={SingularGraphTooltip}/>
                         </LineChart>
                     </div>
