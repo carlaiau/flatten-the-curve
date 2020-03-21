@@ -113,7 +113,13 @@ export default class IndexPage extends React.Component{
                                     }
                                 }
                             }/>
-                            <button class="button " onClick={e => this.setState({num_graph_countries: []})}>Clear All</button>
+                            <div style={{textAlign:'right'}}>
+                                <button class="button has-background-newt has-text-white" 
+                                style={{marginTop: '10px'}}
+                                onClick={e => this.setState({num_graph_countries: []})}>
+                                    <strong>Clear All</strong>    
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div className="column is-three-quarters">
@@ -150,7 +156,13 @@ export default class IndexPage extends React.Component{
                                     }
                                 }
                             }/>
-                            <button class="button is-warning" onClick={e => this.setState({death_graph_countries: []})}>Clear All</button>
+                            <div style={{textAlign:'right'}}>
+                                <button class="button has-background-newt has-text-white" 
+                                style={{marginTop: '10px'}}
+                                onClick={e => this.setState({death_graph_countries: []})}>
+                                    <strong>Clear All</strong>    
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div className="column is-three-quarters">

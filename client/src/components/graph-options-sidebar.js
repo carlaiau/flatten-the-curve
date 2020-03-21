@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
-const GraphOptionsSideBar = ({field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn }) => {
+const GraphOptionsSideBar = ({max_count = 35, field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn }) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
-    const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed.filter(c => c.confirmed) : cumulative_deaths.filter(c => c.deaths)).slice(0,35)
+    const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed.filter(c => c.confirmed.length > 1) : cumulative_deaths.filter(c => c.deaths.length > 1)).slice(0,max_count)
     
     const SideBar = styled('div')`
         .field{
