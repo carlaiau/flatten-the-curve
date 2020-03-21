@@ -42,22 +42,22 @@ const Hero = ({selected_country, selectFn}) => {
                 </div>
               </div>
               <div className="country-selector is-narrow navbar-item">
-                    <div className="field">
-                      <div className="control">
-                        <div className="select">
-                          <select value={selected_country} onChange={e => {
-                              if(e.target.value) navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
-                          }}
-                          >
-                            <option value=''>Choose your country</option>
-                            {select_countries.map( ({country_name } ) => (
-                              <option key={country_name} value={country_name}>{country_name}</option>
-                            ))}
-                          </select>
-                        </div>
-                      </div>
-                    </div>  
+                <div className="field">
+                  <div className="control">
+                    <div className="select">
+                      <select value={selected_country} onChange={e => {
+                          if(e.target.value) navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
+                      }}
+                      >
+                        <option value=''>Choose your country</option>
+                        {select_countries.map( ({country_name } ) => (
+                          <option key={country_name} value={country_name}>{country_name}</option>
+                        ))}
+                      </select>
+                    </div>
                   </div>
+                </div>  
+              </div>
             </div>
           </nav>
         </div>
