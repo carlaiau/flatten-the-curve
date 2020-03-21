@@ -57,7 +57,6 @@ export default class IndexPage extends React.Component{
         const IndexContainer = styled('div')`
             
             .box{
-                color: #ff0000;
                 @media screen and (max-width: 480px){
                     margin-left: 10px;  
                     margin-right: 10px;
