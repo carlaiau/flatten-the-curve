@@ -63,11 +63,17 @@ export default class IndexPage extends React.Component{
             }
             .recharts-layer.recharts-cartesian-axis{
                 @media screen and (max-width: 480px){
+                    
                     text{
                         tspan{
                             font-size: 10px;
                         }
                     }
+                }
+            }
+            .recharts-legend-wrapper{
+                @media screen and (max-width: 480px){
+                    display: none;
                 }
             }
         `

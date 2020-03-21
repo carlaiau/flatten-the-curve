@@ -71,7 +71,7 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
 
     if(countries_to_graph.length == 0) return (
         <>
-            <LineChart width={width >= 768 ? 1000 : 450} height={width >= 768 ? 500 : 250}  margin={{right: 20}}>
+            <LineChart width={width >= 768 ? 1000 : 360} height={width >= 768 ? 500 : 250}  margin={{right: 20}}>
                 <Tooltip/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             </LineChart>
@@ -81,7 +81,7 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
     return (
 
         <>
-            <LineChart width={width >= 768 ? 1000 : 450} height={width >= 768 ? 500 : 250} data={ready_to_graph} margin={{right: 20}}>
+            <LineChart width={width >= 768 ? 1000 : 360} height={width >= 768 ? 500 : 250} data={ready_to_graph}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
