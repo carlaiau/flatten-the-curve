@@ -44,7 +44,7 @@ export default class Tabs extends React.Component{
                         Please visit this site for actionable steps to slow the spread.
                     </p>
                     <p className="is-size-5">
-                        <strong>Home Page Graphs will not work on mobile yet!</strong>
+                        <strong>Please use a computer to get the best use out of the comparison cumulative graphs</strong>
                     </p>
                     
                 </div>

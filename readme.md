@@ -21,12 +21,15 @@ I am on leave from my day job until Monday so I can fully commit (no pun intende
 - ~~Show well performing comparisons to give people hope~~ (Can now sort by worst or best)
 - ~~Global State (without redux). The graphQL query on evey route is stupid~~
 - ~~Add real data to the start of projection graphs~~
-- Create two new **Graph Components**  that showcases:
-  - Cumulative number of deaths, by number of days since 10th deaths
-  - Culumlative number of cases, by number of days since 100th case
-  - Allow This component to be passed in array of countries so that user can choose to compare their country to any other countries.
-- Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results
+- ~~Create two new **Graph Components**  that showcases:~~
+  - ~~Cumulative number of deaths, by number of days since 10th deaths~~
+  - ~~Culumlative number of cases, by number of days since 100th case~~
+  - ~~Allow This component to be passed in array of countries so that user can choose to compare their country to any other countries.~~
+- ~~Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results~~
+- Incorporate fancy styling for home page tool tip, and link to countries from tool tip
+- Incorporate the cumulative graph on country pages where it is applicable.
 - Backend: Write logic to pull Taiwan and Hong Kong out of China
+
 
 ### Nice To Haves
 - Allow filtering of countries by meta data: *population, GDP, climate*
