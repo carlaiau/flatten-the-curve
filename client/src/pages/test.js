@@ -1,47 +1,50 @@
 import React, { useContext } from 'react'
+import Hero from '../components/hero'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
-
-import SingularGraphTooltip from '../components/graph-tooltip'
-import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
+import CumulativeGraph from '../components/cumulative-graph'
 
 
 
 
 const TestPage = () => {
-    const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
-    
-    //cumulative_confirmed.forEach()
-    return (
+    const {select_countries} = useContext(GlobalStateContext)
+    return ( 
         <>
-            <LineChart width={620} height={372} data={cumulative_confirmed} margin={{ bottom: 25, top: 15, right: 10 }}>
-            <XAxis 
-                dataKey="index"
-                name="Days"
-                type="number"
-                interval="number"
-                >
-                <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
-                </XAxis>
-            
-            <YAxis width={55}/>
-            <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f"/> :
-            
-            <Tooltip/>
-            <Legend verticalAlign="top"/>
-            
-            </LineChart>
-
-            <h1>cumulative_confirmed</h1>
-            <pre>{JSON.stringify(cumulative_confirmed, null, 2)}</pre>
-
-            <h1>cumulative Deaths</h1>
-            <pre>{JSON.stringify(cumulative_deaths, null, 2)}</pre>
-
-
-
-            
+            <Hero countries={select_countries} selected_country=''/>
+            <div className="container">
+        
+                <div className="columns" style={{paddingTop: '30px', alignItems: 'center'}}>
+                    <div className="column">
+                        <h3 className="is-size-3">
+                            Cumulative number of cases
+                        </h3>
+                        <p className="is-size-5">
+                            by number of days since 100th case
+                        </p>
+                    </div>
+                    <div className="column is-three-quarters">
+                        <div className="box"><CumulativeGraph/></div>
+                    </div>
+                </div>
+                <div className="columns" style={{paddingTop: '30px', paddingBottom: '30px', alignItems: 'center'}}>
+                    <div className="column">
+                        <h3 className="is-size-3">
+                            Cumulative number of deaths
+                        </h3>
+                        <p className="is-size-5">
+                            by numbers of days since 10th deaths
+                        </p>
+                    </div>
+                    <div className="column is-three-quarters">
+                        <div className="box">
+                            <CumulativeGraph field="deaths"/>  
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
+    
 }
 
 export default TestPage

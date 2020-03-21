@@ -208,7 +208,7 @@ const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && 
 // Country Logic = Cumulative number of cases, by number of days since 100th case
 // Death Logic = cumulative number of deaths, by number of days since 10th deaths
 const getCumulatives = (countries) => {
-
+  const max_days = 30
   const output_countries = []
   // The structure needs to e 
   // We get an array of countries
@@ -219,7 +219,7 @@ const getCumulatives = (countries) => {
     
     let count_of_days = 0
     country.time_series.forEach(day => {
-      if(day.confirmed >= 100){
+      if(day.confirmed >= 100 && count_of_days <= max_days){
         confirmed.push({
           num_day: count_of_days,
           date: day.date,
@@ -231,7 +231,7 @@ const getCumulatives = (countries) => {
 
     count_of_days = 0
     country.time_series.forEach(day => {
-      if(day.hasOwnProperty('deaths') && day.deaths >= 10){
+      if(day.hasOwnProperty('deaths') && day.deaths >= 10 && count_of_days <= max_days){
         deaths.push({
           num_day: count_of_days,
           date: day.date,

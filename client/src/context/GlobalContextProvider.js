@@ -32,7 +32,7 @@ const GlobalContextProvider = ({ children }) => {
                 highest_confirmed
             }
         }
-        cumulative: allCumulativeJson {
+        cumulative: allCumulativeJson(sort: {order: DESC, fields: highest_confirmed}, filter: {population: {gte: 100000}}) {
             nodes {
               country_name
               highest_confirmed
