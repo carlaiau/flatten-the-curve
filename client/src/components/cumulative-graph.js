@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
-const CumulativeGraph = ({countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase", scale="log"}) => {
+const CumulativeGraph = ({width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase", scale="log"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     const ready_to_graph = [];
@@ -57,7 +57,7 @@ const CumulativeGraph = ({countries_to_graph = [], field = 'confirmed', max_days
 
     if(countries_to_graph.length == 0) return (
         <>
-            <LineChart width={1000} height={500} margin={{right: 20}}>
+            <LineChart width={width >= 768 ? 1000 : 450} height={width >= 768 ? 500 : 250}  margin={{right: 20}}>
                 <Tooltip/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             </LineChart>
@@ -67,7 +67,7 @@ const CumulativeGraph = ({countries_to_graph = [], field = 'confirmed', max_days
     return (
 
         <>
-            <LineChart width={1000} height={500} data={ready_to_graph} margin={{right: 20}}>
+            <LineChart width={width >= 768 ? 1000 : 450} height={width >= 768 ? 500 : 250} data={ready_to_graph} margin={{right: 20}}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
