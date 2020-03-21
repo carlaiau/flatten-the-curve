@@ -9,7 +9,7 @@ const Hero = ({selected_country, selectFn}) => {
 
   const {select_countries} = useContext(GlobalStateContext)
   const links = [
-    //{   path: '/',                label: 'World'    },
+    {   path: '/',                label: 'World'    },
     {   path: '/new-zealand',     label: 'NZ'       },
     {   path: '/australia',       label: 'AU'       },
     {   path: '/united-kingdom',  label: 'UK'       },
@@ -23,13 +23,12 @@ const Hero = ({selected_country, selectFn}) => {
           <nav className="navbar">
             <div className="container">
               <div className="navbar-brand">
-                <a className="navbar-item">
+                <Link to='/' className="navbar-item">
                   <img src={logo} alt="Logo"/>
                     <div>
-                    <h1 className="title is-size-5">Flatten The Curve</h1>
-                  </div>
-                  
-                </a>
+                      <h1 className="title is-size-5">Flatten The Curve</h1>
+                    </div>
+                </Link>
               </div>
               <div className="navbar-menu">
                 <div className="navbar-end">
@@ -47,9 +46,10 @@ const Hero = ({selected_country, selectFn}) => {
                     <div className="select">
                       <select value={selected_country} onChange={e => {
                           if(e.target.value) navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
+                          else navigate('/')
                       }}
                       >
-                        <option value=''>Choose your country</option>
+                        <option value=''>World Comparison</option>
                         {select_countries.map( ({country_name } ) => (
                           <option key={country_name} value={country_name}>{country_name}</option>
                         ))}

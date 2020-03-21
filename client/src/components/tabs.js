@@ -42,6 +42,9 @@ export default class Tabs extends React.Component{
                         Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                         Please visit this site for actionable steps to slow the spread.
                     </p>
+                    <p className="is-size-5">
+                        <strong>Home Page Graphs will not work on mobile yet!</strong>
+                    </p>
                     
                 </div>
                 <div className={active =='about' ? '' : 'is-hidden'}>
