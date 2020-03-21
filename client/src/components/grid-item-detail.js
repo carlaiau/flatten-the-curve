@@ -168,10 +168,10 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                     >   
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <YAxis width={60}/>
-                            <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093" />
-                            <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" />
+                            <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093"dot={false} strokeWidth={3} />
+                            <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" dot={false} strokeWidth={3}/>
                             <Tooltip content={SingularGraphTooltip}/>
-                            <Legend verticalAlign="top"/>
+                            <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>
                     </div>
                     <p className="is-size-6" style={{textAlign: 'center'}}>Deaths</p>
@@ -183,10 +183,10 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                     >
                         <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
                             <YAxis width={60}/>
-                            <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" />
-                            <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252"/>
+                            <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" dot={false} strokeWidth={3}/>
+                            <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252" dot={false} strokeWidth={3}/>
                             <Tooltip content={SingularGraphTooltip}/>
-                            <Legend verticalAlign="top"/>
+                            <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>
                     </div>
                 </div>

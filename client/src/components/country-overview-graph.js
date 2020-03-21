@@ -22,17 +22,17 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
           <YAxis width={55}/>
           {
             full_field_name == 'confirmed' ? 
-              <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f"/> :
+              <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" dot={false} strokeWidth={3}/> :
             full_field_name == 'deaths' ? 
-              <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"/> 
+              <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"dot={false} strokeWidth={3}/> 
               :
             full_field_name == 'confirmed_per_mil' ? 
-              <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed cases per million" stroke="#ff793f" formatter={value => value.toFixed(2)}/> 
+              <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed cases per million" stroke="#ff793f" formatter={value => value.toFixed(2)}dot={false} strokeWidth={3}/> 
               :
-              <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million"stroke="#ff5252" formatter={value => value.toFixed(2)}/>
+              <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million"stroke="#ff5252" formatter={value => value.toFixed(2)}dot={false} strokeWidth={3}/>
           }
           <Tooltip content={SingularGraphTooltip}/>
-          <Legend verticalAlign="top"/>
+          <Legend verticalAlign="top" iconType="square"/>
           
         </LineChart>
       )
