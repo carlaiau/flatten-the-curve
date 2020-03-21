@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
-const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase"}) => {
+const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% daily Increase", scale="log"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
 
@@ -54,8 +54,8 @@ const CumulativeGraph = ({max_countries = 10, field = 'confirmed', max_days = 30
     return (
         <>
             <LineChart width={1000} height={450} data={ready_to_graph} margin={{right: 20}}>
-                <XAxis dataKey="num_day" name="Days" type="number" />
-                <YAxis width={55} type="number" scale="log" domain={['auto', 'auto']} interval="number"/>
+                <XAxis dataKey="num_day" name="Days" type="number" interval="number" />
+                <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart"/>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
                     return <Line type="monotone" stroke={colors[i]} dataKey={key} dot={false} strokeWidth={3}/>
                 })}
