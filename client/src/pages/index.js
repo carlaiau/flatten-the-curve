@@ -131,7 +131,7 @@ export default class IndexPage extends React.Component{
                     <div className="column is-narrow">
                         <div className="box has-background-success is-full">
                             <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
-                            <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th deaths</p>
+                            <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
                         </div>
                     </div>
                 </div>

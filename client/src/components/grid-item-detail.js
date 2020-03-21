@@ -1,7 +1,7 @@
 import React from "react"
 import styled from '@emotion/styled'
 import SingularGraphTooltip from './graph-tooltip'
-import {LineChart, Line, YAxis, Tooltip, Legend} from 'recharts'
+import {LineChart, Line, YAxis, Tooltip, Legend, ReferenceLine} from 'recharts'
 
 
 const GridItemDetail = ({ active, compare, width, details_open, closeFn, detailsFn }) => {
@@ -61,7 +61,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                 day: current_day,
                 real_confirmed: active.highest.confirmed,
                 real_deaths: active.highest.deaths | 0,
-                date: active.highest.date
+                date: active.highest.date,
             })
 
             previous_confirmed = active.highest.confirmed
@@ -83,7 +83,9 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                 day: current_day, 
                 confirmed: parseInt(confirmed.toFixed(0)), 
                 deaths: parseInt(deaths.toFixed(0)),
-                date: delta.date
+                date: active.highest.date,
+                offset: i
+                
             })
             previous_confirmed = confirmed
             previous_deaths = deaths
@@ -105,6 +107,11 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
             }
             &.is-size-6{
                 margin-bottom: 10px;
+            }
+        }
+        .historical{
+            .box{
+                background: #227093;
             }
         }
     `
@@ -170,6 +177,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093"dot={false} strokeWidth={3} />
                             <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" dot={false} strokeWidth={3}/>
+                            <ReferenceLine x={max_historical -1} stroke="#aaa" label="Today" strokeWidth={3} strokeOpacity={0.25}/>
                             <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>
@@ -185,13 +193,14 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" dot={false} strokeWidth={3}/>
                             <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252" dot={false} strokeWidth={3}/>
+                            <ReferenceLine x={max_historical - 1} stroke="#aaa" label="Today" strokeWidth={3} strokeOpacity={0.25}/>
                             <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>
                     </div>
                 </div>
             
-                <div className={`column is-one-third`}>
+                <div className='column is-one-third historical'>
                     <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{compare.country_name} Historical</h3>
                     <p className="is-size-6 subtitle" style={{textAlign: 'center'}}>Confirmed per million</p>
                     
