@@ -1,6 +1,5 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Hero from '../components/hero'
-import {GlobalStateContext} from "../context/GlobalContextProvider"
 import CumulativeGraph from '../components/cumulative-graph'
 
 import 'bulma/css/bulma.css'
@@ -8,11 +7,13 @@ import '../styles/custom.css'
 
 
 
-const TestPage = () => {
-    const {select_countries} = useContext(GlobalStateContext)
-    return ( 
-        <>
-            <Hero countries={select_countries} selected_country=''/>
+export default class TestPage extends React.Component{
+    
+
+    render(){
+        
+        return(<>
+            <Hero selected_country=''/>
             <div className="container">
         
                 <div className="columns" style={{paddingTop: '30px', alignItems: 'center'}}>
@@ -61,7 +62,6 @@ const TestPage = () => {
             </div>
         </>
     )
+    }
     
 }
-
-export default TestPage

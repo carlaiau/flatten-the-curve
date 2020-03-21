@@ -37,7 +37,7 @@ export default class CountryPage extends React.Component{
   }
   
   render(){
-    const {countries, select_countries} = this.props.stateHook
+    const {countries} = this.props.stateHook
     console.log(countries)
     const {selected_country, field, sort, per, limit} = this.state
 
@@ -62,7 +62,7 @@ export default class CountryPage extends React.Component{
     return (
       <React.Fragment>
         <SEO title={selected_country + ' COVID-19 Progress'} />
-        <Hero countries={select_countries} selected_country={selected_country}/>
+        <Hero selected_country={selected_country}/>
         <section className="section">
           <div className="container">
             <div className="columns info">

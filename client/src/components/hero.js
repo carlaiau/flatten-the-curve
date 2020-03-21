@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "gatsby"
 import logo from '../images/icon_green_180.png'
+import {GlobalStateContext} from "../context/GlobalContextProvider"
 import { navigate } from "@reach/router"
 
-const Hero = ({countries, selected_country, selectFn}) => {
+
+const Hero = ({selected_country, selectFn}) => {
+
+  const {select_countries} = useContext(GlobalStateContext)
   const links = [
     //{   path: '/',                label: 'World'    },
     {   path: '/new-zealand',     label: 'NZ'       },
@@ -46,7 +50,7 @@ const Hero = ({countries, selected_country, selectFn}) => {
                           }}
                           >
                             <option value=''>Choose your country</option>
-                            {countries.map( ({country_name } ) => (
+                            {select_countries.map( ({country_name } ) => (
                               <option key={country_name} value={country_name}>{country_name}</option>
                             ))}
                           </select>
