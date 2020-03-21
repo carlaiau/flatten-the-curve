@@ -1,6 +1,7 @@
 import React from "react"
 import styled from '@emotion/styled'
 import SingularGraphTooltip from './graph-tooltip'
+import { parseJSON, format, add } from "date-fns"
 import {LineChart, Line, YAxis, Tooltip, Legend, ReferenceLine} from 'recharts'
 
 
@@ -95,7 +96,9 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
 
     const days_of_forecast = time_series.length - 1
 
-    
+    forecast.forEach(time => {
+        time.dateString = time.offset ? format(add(parseJSON(active.highest.date), {days: time.offset}),'MMM dd') : format(parseJSON(time.date),'MMM dd') 
+    })
     
 
     // At this point
@@ -177,7 +180,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093"dot={false} strokeWidth={3} />
                             <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" dot={false} strokeWidth={3}/>
-                            <ReferenceLine x={max_historical -1} stroke="#aaa" label="Today" strokeWidth={3} strokeOpacity={0.25}/>
+                            <ReferenceLine x={max_historical -1} stroke="#aaa" label="Latest" strokeWidth={3} strokeOpacity={0.25}/>
                             <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>
@@ -193,7 +196,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" dot={false} strokeWidth={3}/>
                             <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252" dot={false} strokeWidth={3}/>
-                            <ReferenceLine x={max_historical - 1} stroke="#aaa" label="Today" strokeWidth={3} strokeOpacity={0.25}/>
+                            <ReferenceLine x={max_historical - 1} stroke="#aaa" label="Latest" strokeWidth={3} strokeOpacity={0.25}/>
                             <Tooltip content={SingularGraphTooltip}/>
                             <Legend verticalAlign="top" iconType="square"/>
                         </LineChart>

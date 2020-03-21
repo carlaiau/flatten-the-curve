@@ -1,5 +1,5 @@
 import React from 'react'
-import { parseJSON, format, add } from "date-fns"
+
 import styled from '@emotion/styled'
 const SingularGraphTooltip = (tooltipProps)  => {
 
@@ -28,41 +28,38 @@ const SingularGraphTooltip = (tooltipProps)  => {
         }
     
     `   
-    let date = ''
+    let date = payload.dateString
     let outputString = new Intl.NumberFormat().format(value, 2)
     let customClass = 'confirmed'
-
+    
     
     const {offset = 0} = payload
     
     switch(dataKey){
         case "confirmed":
             outputString += ' cases'
-            date = offset != 0 ? format(add(parseJSON(payload.date), {days: offset}) ,'MMM dd') : format(parseJSON(payload.date),'MMM dd') 
+            
             break;
         case "confirmed_per_mil":
-            outputString += ' cases per million'
-            date = format(parseJSON(payload.date), 'MMM dd')
+            outputString += ' cases per million'    
             break;
+
         case "deaths":
             outputString += ' deaths'
-            customClass = 'death'
-            date = offset != 0 ? format( add(parseJSON(payload.date), {days: offset}), 'MMM dd'): format(parseJSON(payload.date), 'MMM dd')
+            customClass = 'death'            
             break;
-        case "deaths_per_mil":
+        
+            case "deaths_per_mil":
             outputString += ' deaths per million'
             customClass = 'death'
-            date = format(parseJSON(payload.date), 'MMM dd')
             break;
         
         case "real_deaths":
             customClass = 'historical'
             outputString += ' deaths'
-            date = format(parseJSON(payload.date), 'MMM dd')
             break;
         case "real_confirmed":
             customClass = 'historical'
-            date = format(parseJSON(payload.date), 'MMM dd')
             outputString += ' cases'
             break;
     }
@@ -70,7 +67,7 @@ const SingularGraphTooltip = (tooltipProps)  => {
         return (
             <TooltipBox className={`box ${customClass}`}>
                 <p className="is-size-7">
-                    {date.length ? date : ''}
+                    {date ? date : ''}
                     <br/>
                     <strong>
                     {outputString}
