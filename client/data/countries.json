@@ -13186,11 +13186,11 @@
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 67,
-        "confirmed_per_mil": 13.714051786
+        "confirmed": 66,
+        "confirmed_per_mil": 13.509364446
       }
     ],
-    "highest_confirmed": 67,
+    "highest_confirmed": 66,
     "population": 4885500
   },
   {
