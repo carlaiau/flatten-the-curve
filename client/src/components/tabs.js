@@ -44,17 +44,18 @@ export default class Tabs extends React.Component{
                         Please visit this site for actionable steps to slow the spread.
                     </p>
                     { ! country_name ?
-                    <p className="is-size-6">
-                        Please use the dropdown in the header for country specific comparisons and projections. 
-                        We support countries with over 1 million population and 10 confirmed cases.
-                    </p>
+                    <>
+                        <p className="is-size-6">
+                            Please use the dropdown in the header for country specific comparisons and projections. 
+                            We support countries with over 1 million population and 10 confirmed cases.
+                        </p>
+                        
+                    </>
                     :
                     <></>
                     }
 
-                    <p className="is-size-5">
-                        <strong>Please use a computer to get the best use out of the comparison cumulative graphs</strong>
-                    </p>
+                    
                     
                     
                 </div>

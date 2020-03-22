@@ -81,10 +81,24 @@ export default class IndexPage extends React.Component{
             <Hero selected_country=''/>
             
             <IndexContainer className="container">
-                <div className="columns">
-                    <div className="column is-full" style={{marginTop: '30px'}}>
+                <div className="columns" style={{marginTop: '30px'}}>
+                    <div className="column" >
                         <Tab/>
                     </div>
+                    { this.state.width < 480 ?
+                    <div className="column">
+                        <div class="box has-background-newt">
+                            <p className="is-size-6">
+                                <strong className="has-text-white">
+                                    Please use a computer to get the best use out of this interface
+                                </strong>
+                            </p>
+                            
+                        </div>
+                    </div>
+                    : 
+                    <></>
+                    }
                 </div>
                 <div className="columns">
                     <div className="column is-narrow">
