@@ -37,8 +37,6 @@ const GridBar = ( {active_country_name, per, field, sort, length, fieldFn, perFn
                                     <select value={sort} onChange={sortFn}>
                                         <option value="worst">Worst First</option>
                                         <option value="best">Best First</option>
-                                        <option value="alpha_asc">A - Z</option>
-                                        <option value="alpha_desc">Z - A</option>
                                     </select>
                                 </div>
                             </div>
