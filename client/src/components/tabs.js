@@ -25,7 +25,7 @@ export default class Tabs extends React.Component{
                     <>
                         <p className="is-size-6">
                             If you are currently at the bottom of the curve you can use our tool to see how your situation may develop.
-                            You can compare yourself to other countries that have already been in your position and observe how things escalate. 
+                            You can compare yourself to other countries who are of the curve observe how things could escalate. 
                             
                         </p>
                         <p className="is-size-6">
