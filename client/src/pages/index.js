@@ -30,13 +30,13 @@ export default class IndexPage extends React.Component{
         this.state = {
           selected_country: '',
           numberFormat: new Intl.NumberFormat(),
-          limit: 60,
           cum_width:  800,
           cum_height: 182,
           num_scale: 'linear',
           num_graph_countries: default_countries,
           death_scale: 'linear',
-          death_graph_countries: default_countries
+          death_graph_countries: default_countries,
+          max_count: 40
       }
     }
 
@@ -120,6 +120,7 @@ export default class IndexPage extends React.Component{
                             <div className="box">
                                 <GraphOptionsSideBar
                                     scale={this.state.num_scale} 
+                                    max_count={this.state.max_count} 
                                     scaleFn={e => {this.setState({num_scale: e.target.value})}}
                                     checkCountries={this.state.num_graph_countries}
                                     checkFn={e => {
@@ -145,7 +146,7 @@ export default class IndexPage extends React.Component{
                             </div>
                         </div>
                         <div className="column is-three-quarters">
-                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
+                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} scale={this.state.num_scale} max_count={this.state.max_count} countries_to_graph={this.state.num_graph_countries}/>
                         </div>
                     </div>  
                     
@@ -163,6 +164,7 @@ export default class IndexPage extends React.Component{
                                 <GraphOptionsSideBar
                                     field='death'
                                     scale={this.state.death_scale} 
+                                    max_count={this.state.max_count}
                                     scaleFn={e => {this.setState({death_scale: e.target.value})}}
                                     checkCountries={this.state.death_graph_countries}
                                     checkFn={e => {
@@ -188,7 +190,7 @@ export default class IndexPage extends React.Component{
                             </div>
                         </div>
                         <div className="column is-three-quarters">
-                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths" scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
+                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
                         </div>
                     </div>
                 </IndexContainer>

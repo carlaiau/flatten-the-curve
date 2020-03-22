@@ -3,7 +3,7 @@ import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 import CumulativeGraphTooltip from "../components/cumulative-graph-tooltip"
 
-const CumulativeGraph = ({max_count = 35, height, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
+const CumulativeGraph = ({max_count = 40, height, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     // Array of Objects 
