@@ -25,11 +25,11 @@ export default class Tabs extends React.Component{
                     <>
                         <p className="is-size-6">
                             If you are currently at the bottom of the curve you can use our tool to see how your situation may develop.
-                            You can compare yourself to other countries who are of the curve observe how things could escalate. 
+                            You can compare yourself to other countries who have progressed ahead and observe how things escalate. 
                             
                         </p>
                         <p className="is-size-6">
-                            Because of this explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme.
+                            Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme.
                             Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
                         </p>
                     
