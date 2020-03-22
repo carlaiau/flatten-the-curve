@@ -7,6 +7,7 @@ import GraphOptionsSideBar from '../components/graph-options-sidebar'
 import styled from '@emotion/styled'
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
+import SEO from '../components/seo'
 
 
 
@@ -78,6 +79,7 @@ export default class IndexPage extends React.Component{
             }
         `
         return(<>
+            <SEO title={' COVID-19: Showing why we must act early'}/>
             <Hero selected_country=''/>
             
             <IndexContainer className="container">

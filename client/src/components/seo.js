@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
+import logo from '../images/icon_green_1024.png'
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -33,7 +33,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`COVID-19 | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} | ${title}`}
       meta={[
         {
           name: `description`,
@@ -46,6 +46,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:description`,
           content: metaDescription,
+        },
+        { 
+          property:`og:image`,
+          content: logo
         },
         {
           property: `og:type`,
@@ -62,6 +66,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: 'twitter:image',
+          content: logo
         },
         {
           name: `twitter:description`,

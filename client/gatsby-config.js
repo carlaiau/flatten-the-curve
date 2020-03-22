@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Flatten the Curve`,
-    description: `COVID-19: by the numbers.`,
+    description: `COVID-19 by the numbers. 
+      Comparing countries using cumulative growth charts and historical data in an intuitive UI. Built for non specialists.`,
     author: `@carlaiau`,
   },
   plugins: [
