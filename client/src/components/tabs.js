@@ -23,8 +23,8 @@ export default class Tabs extends React.Component{
                     </h3>
                     <p className="is-size-6">
                         If you are currently at the bottom of a curve you can use our tool to see how your situation may develop.
-                        You can compare yourself against other countries that have already been in your position. This will show you 
-                        quickly things can get scary. It is critcal we flatten the curve and the earlier we start the better.
+                        You can compare yourself against other countries that have already been in your position. This will show you how
+                        quickly things can get scary and why it is critical we all do our best to flatten the curve.
                     </p>
                    
 
