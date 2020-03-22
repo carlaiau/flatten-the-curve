@@ -6,8 +6,8 @@ export default class Tabs extends React.Component{
 		super(props);
 		this.state = {
             active: 'welcome',
-            update_time: '2:45pm 21 March NZT',
-            nz_time: '11:26am 21 March NZT'
+            update_time: '1:05pm 22 March NZT',
+            nz_time: '1:14pm 22 March NZT'
         }
     }
 

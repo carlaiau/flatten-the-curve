@@ -36,18 +36,6 @@ const createFiles = (country_path, cum_path) => {
           
           country_array = _.map(countries, (country) => country)
 
-
-          country_array.map(c => {
-            if(c.country_name == 'New Zealand'){
-              c.time_series.push({
-                "date": parse('3/21/20', 'MM/dd/yy', new Date() ),
-                "confirmed": 53,
-                "confirmed_per_mil": 10.848429025
-              })
-              c.highest_confirmed = 53
-            }
-          })
-
           const cumulative = getCumulatives(country_array)
           
           fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
