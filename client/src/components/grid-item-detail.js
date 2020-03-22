@@ -62,6 +62,8 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                 day: current_day,
                 real_confirmed: active.highest.confirmed,
                 real_deaths: active.highest.deaths | 0,
+                confirmed: active.highest.confirmed,
+                deaths: active.highest.deaths | 0,
                 date: active.highest.date,
             })
 

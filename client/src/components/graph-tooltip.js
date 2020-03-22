@@ -3,7 +3,9 @@ import React from 'react'
 import styled from '@emotion/styled'
 const SingularGraphTooltip = (tooltipProps)  => {
 
-    if(! tooltipProps.hasOwnProperty('payload')  || ! tooltipProps.payload.length) return <></>
+    if(! tooltipProps.hasOwnProperty('payload')) return <></>
+
+    if(! tooltipProps.payload || tooltipProps.payload.length == 0) return <></>
 
     const {value, dataKey, payload } = tooltipProps.payload[0]
 

@@ -38,7 +38,6 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries} = this.props.stateHook
-    console.log(countries)
     const {selected_country, field, sort, per, limit} = this.state
 
     let full_field_name = field === 'confirmed' ? 
