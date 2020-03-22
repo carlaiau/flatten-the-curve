@@ -157,8 +157,18 @@ export default class IndexPage extends React.Component{
                             </div>
                         </div>
                     </div>
+
+                </IndexContainer>
+            </div>
+            <Footer/>
+        </>
+    )
+    }
+  /*
                     <div className="columns" style={{marginBottom: '30px'}}>
-                        <div className="column">
+                        
+                    
+  <div className="column">
                             <div className="box">
                                 <GraphOptionsSideBar
                                     field='death'
@@ -175,14 +185,9 @@ export default class IndexPage extends React.Component{
                         <div className="column is-three-quarters">
                             <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
                         </div>
-                    </div>
-                </IndexContainer>
-            </div>
-            <Footer/>
-        </>
-    )
-    }
-  
+                        </div>
+
+*/
   /**
    * Calculate & Update state of new dimensions
    */
