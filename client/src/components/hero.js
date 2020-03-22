@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby"
+import styled from '@emotion/styled'
 import logo from '../images/icon_green_180.png'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import { navigate } from "@reach/router"
@@ -16,6 +19,34 @@ const Hero = ({selected_country, selectFn}) => {
     {   path: '/united-states',   label: 'US'       }
     
   ]
+
+  const Share = styled('div')`
+    p{
+      margin: 0;
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .icon{
+      &.facebook{
+          color: #3b5998;
+      }
+      &.twitter{
+          color: #1DA1F2;
+      }
+      
+    }
+    .navbar-item{
+      transition: 0.25s;
+      &:hover{
+        color: inherit;
+        border-radius: 0 0 5px 5px;
+        background: #fff;
+      }
+    }
+    padding-right: 5px;
+    padding-bottom: 0;
+  `
   return ( 
     <React.Fragment>
       <section className="hero is-dark is-medium">
@@ -62,6 +93,37 @@ const Hero = ({selected_country, selectFn}) => {
           </nav>
         </div>
       </section>
+      <div className="container">
+        <div className="columns">
+          <div className="column">
+            <Share style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
+              <p className="is-size-7">Share {selected_country ? selected_country: ''}</p>
+                <a 
+                  className="navbar-item" 
+                  href={`https://www.facebook.com/sharer/sharer.php?u=https://flattenthecurve.co.nz/${selected_country ? 
+                    selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`} 
+                  target="_blank" 
+                  rel="noopener"
+                >
+                  <span className="icon facebook">
+                    <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
+                  </span>
+                </a>
+                <a className="navbar-item"
+                  href={`https://twitter.com/intent/tweet?url=https://flattenthecurve.co.nz/${selected_country ? 
+                    selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`}
+                  target="_blank" 
+                  rel="noopener"
+                >
+                  <span className="icon twitter">
+                    <FontAwesomeIcon icon={faTwitter} size="lg"/>
+                  </span>
+                </a>  
+            </Share>
+          </div> 
+        </div>
+      </div>
+      
     </React.Fragment>
     
 

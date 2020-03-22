@@ -58,7 +58,7 @@ export default class CountryPage extends React.Component{
     
     return (
       <React.Fragment>
-        <SEO title={selected_country + ' COVID-19 status'} />
+        <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
         <Hero selected_country={selected_country}/>
         <section className="section">
           <div className="container">

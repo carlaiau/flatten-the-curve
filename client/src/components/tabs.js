@@ -16,45 +16,42 @@ export default class Tabs extends React.Component{
         const {active, update_time, nz_time} = this.state
         return (
             <div className="box tab-container">
-                <div className="tabs">
-                    <ul>
-                        <li className={active == 'welcome' ? 'is-active' : ''}>
-                            <a onClick={(e)=> this.setState({active: 'welcome'})}>Welcome</a>
-                        </li>
-                        
-                        <li className={active == 'about' ? 'is-active' : ''}>
-                        <a onClick={(e)=> this.setState({active: 'about'})}>About</a>
-                        </li>
-                        { country_name ? (<li className={active == 'forecast' ? 'is-active' : ''}>
-                        <a onClick={(e)=> this.setState({active: 'forecast'})}>Forecasts</a>
-                        </li>) : '' }
-                    </ul>
-                </div>
                 <div className={active == 'welcome' ? '' : 'is-hidden'}>
-                    <p className="is-size-6">The goal of this site is to motivate people to take actionable steps now to slow the spread of COVID-19.</p>
+                    <h2 className="is-size-3"><strong>We must act now!</strong></h2>
+                    <h3 className="is-size-4 subtitle">
+                        Compare your country to the evolving situations in the rest of the world
+                    </h3>
+                    <p className="is-size-6">
+                        If you are currently at the bottom of a curve you can use our tool to see how your situation may develop.
+                        You can compare yourself against other countries that have already been in your position. This will show you how
+                        quickly things can get scary and why it is critical we all do our best to flatten the curve.
+                    </p>
+                   
+
+                    <p className="is-size-6">
+                        For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                    </p>
                     
                     <p className="is-size-6">Global data updated at <strong>{update_time}</strong></p>
+                    
                     {country_name == 'New Zealand' ?
                     <p className="is-size-6"><strong>New Zealand</strong> data updated at <strong>{nz_time}</strong></p>
                     :
                     <></>
                     }
-                    <p className="is-size-6">
-                        Inspired by <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
-                        Please visit this site for actionable steps to slow the spread.
-                    </p>
+                    
                     { ! country_name ?
                     <>
                         <p className="is-size-6">
                             Please use the dropdown in the header for country specific comparisons and projections. 
-                            We support countries with over 1 million population and 10 confirmed cases.
+                            
                         </p>
                         
                     </>
                     :
                     <></>
                     }
-
+                    <p className="is-size-6">We support countries with over 1 million population and 10 confirmed cases.</p>
                     
                     
                     
