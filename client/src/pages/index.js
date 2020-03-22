@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '../components/hero'
-import Tab from '../components/tabs'
 import Footer from '../components/footer'
 import CumulativeGraph from '../components/cumulative-graph'
 import GraphOptionsSideBar from '../components/graph-options-sidebar'
@@ -37,9 +36,14 @@ export default class IndexPage extends React.Component{
           num_graph_countries: default_countries,
           death_scale: 'linear',
           death_graph_countries: default_countries,
-          max_count: 40
+          max_count: 40,
+          update_time: '5:12pm 22 March NZT'
       }
     }
+
+
+    
+    
 
 
     // num_graph_countries
@@ -92,6 +96,37 @@ export default class IndexPage extends React.Component{
                 }
             }
         `
+        
+
+        const ContentBlock = () => (
+            <div className="box">
+                <h2 className="is-size-3"><strong>We must act now!</strong></h2>
+                <h3 className="is-size-4 subtitle">
+                    Compare your country to evolving situations in the rest of the world
+                </h3>
+                <p className="is-size-6">
+                    If you are currently at the bottom of the curve you can use our tool to see how your situation may develop.
+                    You can compare yourself to other countries who have progressed ahead and observe how things escalate.     
+                </p>
+                <p className="is-size-6">
+                    Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme.
+                    Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
+                </p>
+                <p className="is-size-6" style={{marginBottom: '20px'}}>
+                    For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                </p>
+                <p className="is-size-7">Global data updated at <strong>{this.state.update_time}</strong></p>
+                
+                <p className="is-size-7">
+                    Please use the dropdown in the header for country-specific comparisons and projections.     
+                </p>                            
+                <p className="is-size-7">
+                    We present data for countries that have populations larger than 1 million and at least 10 confirmed cases.
+                </p>    
+            </div>
+        )
+
+        
         return(<>
             <SEO title={' COVID-19: Showing why we must act early'}/>
             <Hero selected_country=''/>
@@ -99,7 +134,7 @@ export default class IndexPage extends React.Component{
                 <IndexContainer className="container">
                     <div className="columns">
                         <div className="column is-two-thirds">
-                            <Tab/>
+                            <ContentBlock/>
                         </div>
                         { this.state.width < 480 ?
                         <div className="column">

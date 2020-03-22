@@ -2,7 +2,6 @@ import React from "react"
 
 import Hero from "../components/hero"
 import SEO from "../components/seo"
-import Tabs from "../components/tabs"
 import CountryOverviewGraph from "../components/country-overview-graph"
 import GridBar from "../components/grid-bar"
 import GridItem from "../components/grid-item"
@@ -32,7 +31,10 @@ export default class CountryPage extends React.Component{
         grid_width: 0,
         grid_height: 0,
         max_count: 30,
-        is_mobile: false
+        is_mobile: false,
+        update_time: '5:12pm 22 March NZT',
+        nz_time: '12:40pm 23 March NZT',
+        forecast_faq_open: false,
     }
   }
   
@@ -61,8 +63,67 @@ export default class CountryPage extends React.Component{
       field: full_field_name, 
       sort, 
     })
+
+
+    const ContentBlock = () => {
+      const {country_name, highest} = active_country
+      const {confirmed, deaths} = highest
+      return (
+      <div className="box">
+          <h3 className="is-size-4 title">{country_name} must act now</h3>
+          
+          <p className="is-size-6">
+            Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
+            Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
+          </p>
+          { confirmed > 100 ||deaths > 10 ?
+          <p className="is-size-6">
+            The cumulative daily growth is based on compounding daily growth starting from the daily figure when {country_name} first exceeded{' '}
+            { confirmed > 100 ? <strong>100 confirmed cases</strong> : <></> }{' '}
+            { deaths > 10 ? <>and <strong>10 deaths</strong></> : <></> }
+          </p>
+          : <></> }
+          <div style={{marginTop: '10px', marginBottom: '10px'}}>
+            <p className="is-size-6">
+              Global data updated at <strong>{this.state.update_time}</strong>
+            </p>
+            
+            {country_name == 'New Zealand' ?
+            <p className="is-size-6">
+              New Zealand data updated at 
+              <strong>{this.state.nz_time}</strong>
+            </p>
+            : <></> }
+          </div>
+          { this.state.forecast_faq_open ? 
+            < div style={{margin: '20px 10px'}}>
+              <p className="is-size-7">
+                The forecasts below show a future projection of COVID-19 in {country_name}. 
+                This is based on the historical growth data of each country that is currently ahead of {country_name} in the outbreak.
+              </p>
+              <p className="is-size-7">
+                Viewing this can offer unique insights into the range of possible outcomes. The forecast is not based on epidemiological models, just on historical data experienced by other countries.
+              </p>
+              <p className="is-size-7">
+                  The forecast does not take into account the relative doubling time of each country.
+              </p>
+              <p className="is-size-7">
+                  Forecasting accuracy depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
+              </p>
+            </div>
+            : <></> }
+          <button className="button is-dark is-outlined is-size-7" onClick={e => this.setState({forecast_faq_open: ! this.state.forecast_faq_open})}>
+            {this.state.forecast_faq_open ? 'Close': 'Forecast info'}
+          </button>
+          
+      </div>
+      )
+  }
     
     return (
+
+
+      
       <React.Fragment>
         <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
         <Hero selected_country={selected_country}/>
@@ -90,12 +151,12 @@ export default class CountryPage extends React.Component{
                   height={this.state.overview_height}
                 />
               </div>
-              <div className="column">
+              <div className="column is-one-third">
                 <div className="field is-grouped is-horizontal">
                   <div className="control">
                     <div className="select">
                       <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
-                        <option value="confirmed">Confirmed Cases</option>
+                        <option value="confirmed">Confirmed</option>
                         <option value="deaths">Deaths</option>
                       </select>
                     </div>
@@ -104,7 +165,7 @@ export default class CountryPage extends React.Component{
                     <div className="select">
                       <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
                         <option value="total">Total</option>
-                        <option value="per_million">Per Millon</option>
+                        <option value="per_million">Per Mil</option>
                       </select>
                     </div>
                   </div>
@@ -117,7 +178,7 @@ export default class CountryPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <Tabs country_name={active_country.country_name}/>
+                <ContentBlock/>
               </div>
             </div>
           </div>                

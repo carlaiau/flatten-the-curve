@@ -149,26 +149,21 @@ const GridItemDetail = ({ active, compare, width, height, details_open, closeFn,
                         <br/>
                         based on <strong>{time_series.length -1}</strong> days of {compare.country_name} data
                     </p>
-                        
-                    
-                    
-                     
                     { details_open ? 
                         <>
-                            <p className="is-size-6">
+                            <p className="is-size-7">
                                 If {active.country_name} currently has 0 deaths, we use the {compare.country_name} number of deaths to confirmed case ratio to 
                                 estimate when {active.country_name} will encounter the first death. 
                                 Once forecasted death has occured the projected deaths grow based on the {compare.country_name} observed death rate.
                             </p>
-                            <p className="is-size-6">
+                            <p className="is-size-7" style={{marginBottom: '10px'}}>
                                 This forecast is not meant to reflect the futre of {active.country_name}, merely an indication of what is possible.
                                 If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
                             </p>
                             
                         </>
-                    :
-                        <button className="button is-white is-outlined is-size-7" onClick={detailsFn}>Expand Method</button>
-                    }
+                    : <></> }
+                    <button className="button is-white is-outlined is-size-7" onClick={detailsFn}>{details_open ? 'Close' :'Expand Method' }</button>
                 </div>
                 <div className='column is-one-third'>
                     <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{active.country_name} Forecast</h3>

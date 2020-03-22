@@ -176,7 +176,7 @@ export default class GridItem extends React.Component{
                 height={height}
                 tidy={tidy}
                 details_open={this.state.details_open}
-                detailsFn={(() => this.setState({details_open: true}))}
+                detailsFn={(() => this.setState({details_open: ! this.state.details_open}))}
                 closeFn={() => this.setState({expanded: false})}
             />
         : ''
