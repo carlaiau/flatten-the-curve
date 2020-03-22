@@ -28,9 +28,10 @@ export default class CountryPage extends React.Component{
         sort: 'worst',
         overview_width: 0,
         overview_height: 0,
+        overview_scale: 'linear',
         grid_width: 0,
         grid_height: 0,
-        max_count: 20,
+        max_count: 30,
         is_mobile: false
     }
   }
@@ -82,6 +83,7 @@ export default class CountryPage extends React.Component{
                 </p>  
                 <CountryOverviewGraph 
                   active_country={active_country}
+                  scale={this.state.overview_scale}
                   field={field}
                   full_field_name={full_field_name}
                   width={this.state.overview_width}
@@ -103,6 +105,14 @@ export default class CountryPage extends React.Component{
                       <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
                         <option value="total">Total</option>
                         <option value="per_million">Per Millon</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="control">
+                    <div className="select">
+                      <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>
+                        <option value="linear">Linear Scale</option>
+                        <option value="log">Log Scale</option>
                       </select>
                     </div>
                   </div>

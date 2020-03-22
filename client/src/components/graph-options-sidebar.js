@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
-const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn }) => {
+const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn, clearFn, allFn }) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed.filter(c => c.confirmed.length > 1) : cumulative_deaths.filter(c => c.deaths.length > 1)).slice(0,max_count)
@@ -28,7 +28,7 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
     return (
         <SideBar>
             <div className="field is-horizontal">
-                <label className="label">Scale</label>
+                <label className="label">Vertical Scale</label>
                 <div className="control">
                     <div className="select">
                     <select value={scale} onChange={scaleFn}>
@@ -39,6 +39,7 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
                 </div>
             </div>
             <div className="field">
+                <label className="label">Countries</label>
                 <div className="check-container">
                 {
                     countries_avaliable.map(c => (
@@ -52,10 +53,24 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
                 }
                 </div>
             </div>
+            <div className="columns">
+                <div className="column" style={{textAlign:'left'}}>
+                    <button 
+                        className="button has-background-info has-text-white" style={{marginTop: '10px'}} 
+                        onClick={() => allFn(countries_avaliable)}
+                    >
+                        <strong>Choose All</strong>    
+                    </button>
+                </div>
+                <div className="column" style={{textAlign:'right'}}>
+                    <button className="button has-background-newt has-text-white" style={{marginTop: '10px'}} onClick={clearFn}>
+                    <strong>Clear All</strong>    
+                    </button>
+                </div>
+            </div>
             
             
-        
-        
+
     </SideBar>)
 }
 export default GraphOptionsSideBar

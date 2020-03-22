@@ -20,13 +20,14 @@ export default class IndexPage extends React.Component{
             'Singapore',
             'China',
             'Italy',
-            'Spain',,
+            'Spain',
             'Iran',
             'South Korea',
             'Australia',
             'United States',
             'United Kingdom',
           ]
+
         this.state = {
           selected_country: '',
           numberFormat: new Intl.NumberFormat(),
@@ -40,7 +41,20 @@ export default class IndexPage extends React.Component{
       }
     }
 
-    
+
+    // num_graph_countries
+    countryChecked = (e, graph_type) => {
+        const checkedCountry = e.target.value
+        if(this.state[graph_type].includes(checkedCountry)){
+            const newCountries =  this.state[graph_type].filter(c => c != checkedCountry)
+            return this.setState({[graph_type]: newCountries})
+        }
+        else{
+            let newCountries = this.state[graph_type]
+            newCountries.push(checkedCountry)
+            return this.setState({[graph_type]: newCountries})
+        }
+    }
 
     render(){
         const IndexContainer = styled('div')`
@@ -123,26 +137,11 @@ export default class IndexPage extends React.Component{
                                     max_count={this.state.max_count} 
                                     scaleFn={e => {this.setState({num_scale: e.target.value})}}
                                     checkCountries={this.state.num_graph_countries}
-                                    checkFn={e => {
-                                        const checkedCountry = e.target.value
-                                        if(this.state.num_graph_countries.includes(checkedCountry)){
-                                            const newCountries =  this.state.num_graph_countries.filter(c => c != checkedCountry)
-                                            return this.setState({num_graph_countries: newCountries})
-                                        }
-                                        else{
-                                            let newCountries = this.state.num_graph_countries
-                                            newCountries.push(checkedCountry)
-                                            return this.setState({num_graph_countries: newCountries})
-                                        }
-                                    }
-                                }/>
-                                <div style={{textAlign:'right'}}>
-                                    <button className="button has-background-newt has-text-white" 
-                                    style={{marginTop: '10px'}}
-                                    onClick={e => this.setState({num_graph_countries: []})}>
-                                        <strong>Clear All</strong>    
-                                    </button>
-                                </div>
+                                    checkFn={e => this.countryChecked(e, 'num_graph_countries') }
+                                    clearFn={e => this.setState({num_graph_countries: []})}
+                                    allFn={ (countries) => this.setState({num_graph_countries: countries.map(c => c.country_name)})}
+                                />
+                                
                             </div>
                         </div>
                         <div className="column is-three-quarters">
@@ -167,26 +166,10 @@ export default class IndexPage extends React.Component{
                                     max_count={this.state.max_count}
                                     scaleFn={e => {this.setState({death_scale: e.target.value})}}
                                     checkCountries={this.state.death_graph_countries}
-                                    checkFn={e => {
-                                        const checkedCountry = e.target.value
-                                        if(this.state.death_graph_countries.includes(checkedCountry)){
-                                            const newCountries =  this.state.death_graph_countries.filter(c => c != checkedCountry)
-                                            return this.setState({death_graph_countries: newCountries})
-                                        }
-                                        else{
-                                            let newCountries = this.state.death_graph_countries
-                                            newCountries.push(checkedCountry)
-                                            return this.setState({death_graph_countries: newCountries})
-                                        }
-                                    }
-                                }/>
-                                <div style={{textAlign:'right'}}>
-                                    <button className="button has-background-newt has-text-white" 
-                                    style={{marginTop: '10px'}}
-                                    onClick={e => this.setState({death_graph_countries: []})}>
-                                        <strong>Clear All</strong>    
-                                    </button>
-                                </div>
+                                    checkFn={e => this.countryChecked(e, 'death_graph_countries')}
+                                    clearFn={e => this.setState({death_graph_countries: []})}
+                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
+                                />
                             </div>
                         </div>
                         <div className="column is-three-quarters">

@@ -38,8 +38,11 @@ const CumulativeGraph = ({max_count = 40, height, width, countries_to_graph = []
         "#ccae62", "#cc8e35", "#ff5252", "#8c7ae6", "#f6e58d", 
         "#30336b", "#95afc0", "#e1b12c", "#40739e", "#ff7979",
         "#7ed6df", "#686de0", "#ffbe76", "#e056fd", "#f9ca24",
-        "#eb4d4b", "#22a6b3", "#4834d4", "#f0932b", "#be2edd"
-
+        "#eb4d4b", "#22a6b3", "#4834d4", "#f0932b", "#be2edd",
+        "#ED4C67", "#FFC312", "#FDA7DF", "#C4E538", "#12CBC4", 
+        "#B53471", "#F79F1F", "#D980FA", "#A3CB38", "#1289A7", 
+        "#833471", "#EE5A24", "#9980FA", "#009432", "#0652DD", 
+        "#6F1E51", "#EA2027", "#5758BB", "#006266", "#1B1464",
     ]
     all_possible_countries.forEach( (c, i) => {
         color_definitions[c.country_name] = colors[i]

@@ -4,7 +4,7 @@ import { parseJSON, format } from "date-fns"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
 
-const CountryOverviewGraph = ({active_country, field, full_field_name, width, height}) => {
+const CountryOverviewGraph = ({active_country, field, full_field_name, width, height, scale}) => {
     
     
     const filteredData = active_country.time_series.filter(t => parseInt(t[field]) > 0)
@@ -20,12 +20,11 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
             dataKey="index"
             name="Days"
             type="number"
-            interval="number"
             >
               <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
           
-          <YAxis width={55}/>
+          <YAxis width={55} scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
           {
             full_field_name == 'confirmed' ? 
               <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" dot={false} strokeWidth={3}/> :
