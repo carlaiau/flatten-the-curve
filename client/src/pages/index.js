@@ -241,14 +241,14 @@ export default class IndexPage extends React.Component{
    */
   componentDidMount = () => {
     this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions);
+    //window.addEventListener("resize", this.updateDimensions);
   }
 
   /**
    * Remove event listener
    */
   componentWillUnmount = () => {
-    window.removeEventListener("resize", this.updateDimensions);
+    //window.removeEventListener("resize", this.updateDimensions);
   }
     
 }
