@@ -101,6 +101,8 @@ const GridItemDetail = ({ active, compare, width, height, details_open, closeFn,
     forecast.forEach(time => {
         time.dateString = time.offset ? format(add(parseJSON(active.highest.date), {days: time.offset}),'MMM dd') : format(parseJSON(time.date),'MMM dd') 
     })
+
+    time_series.forEach(time => { time.dateString = format(parseJSON(time.date),'MMM dd') })
     
 
     // At this point

@@ -29,7 +29,9 @@ export default class CountryPage extends React.Component{
         overview_width: 0,
         overview_height: 0,
         grid_width: 0,
-        grid_height: 0
+        grid_height: 0,
+        max_count: 20,
+        is_mobile: false
     }
   }
   
@@ -39,7 +41,7 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries} = this.props.stateHook
-    const {selected_country, field, sort, per} = this.state
+    const {selected_country, field, sort, per, max_count} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -52,6 +54,7 @@ export default class CountryPage extends React.Component{
     })
     
     const topCountries = GetTopCountries({ 
+      max_count: this.state.is_mobile ? this.state.max_count : 100,
       countries, 
       active_country, 
       field: full_field_name, 
@@ -111,6 +114,7 @@ export default class CountryPage extends React.Component{
         </section>
           <GridBar 
             active_country_name={active_country.country_name}
+            max_count={this.state.is_mobile ? this.state.max_count : 100}
             per={this.state.per}
             field={this.state.field}
             sort={this.state.sort}
@@ -148,51 +152,54 @@ export default class CountryPage extends React.Component{
    */
   updateDimensions = () => {  
 
-
-    // For Overview: width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 250}
-    
-    // For grid width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150}
     let overview_width =  860
     let overview_height = 500
     
     let grid_width = 391
     let grid_height = 200
+
+    let is_mobile = false
     
     if(window.innerWidth < 1408){ // FullHD
       overview_width =  740
       overview_height = 550
       grid_width = 350
       grid_height = 180
+      is_mobile = false
     }
     if(window.innerWidth < 1216){ // Desktop
       overview_width =  600
       overview_height = 400
       grid_width = 285
       grid_height = 160
+      is_mobile = false
     }
     if(window.innerWidth < 1024){
       overview_width =  450
       overview_height = 400
       grid_width = 200
       grid_height = 120
+      is_mobile = false
     }
 
     if(window.innerWidth < 769){
       overview_width =  650
       overview_height = 450
       grid_width = 600
-      grid_height = 300   
+      grid_height = 300
+      is_mobile = true   
     }
     if(window.innerWidth < 480){
       overview_width = 300
       overview_height = 300
       grid_width = 280
-      grid_height = 150   
+      grid_height = 150  
+       
     }
 
     //window.innerHeight
     
-    this.setState({ overview_width, overview_height, grid_width, grid_height });
+    this.setState({ overview_width, overview_height, grid_width, grid_height, is_mobile });
   
   }
 
@@ -201,14 +208,14 @@ export default class CountryPage extends React.Component{
    */
   componentDidMount = () => {
     this.updateDimensions();
-    //window.addEventListener("resize", this.updateDimensions);
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   /**
    * Remove event listener
    */
   componentWillUnmount = () => {
-    //window.removeEventListener("resize", this.updateDimensions);
+    window.removeEventListener("resize", this.updateDimensions);
   }
   
 }

@@ -229,9 +229,6 @@ export default class IndexPage extends React.Component{
         cum_width = 350
         cum_height = 300
     }
-
-
-    //window.innerHeight
     
     this.setState({ cum_width, cum_height });
   }
@@ -241,14 +238,14 @@ export default class IndexPage extends React.Component{
    */
   componentDidMount = () => {
     this.updateDimensions();
-    //window.addEventListener("resize", this.updateDimensions);
+    window.addEventListener("resize", this.updateDimensions);
   }
 
   /**
    * Remove event listener
    */
   componentWillUnmount = () => {
-    //window.removeEventListener("resize", this.updateDimensions);
+    window.removeEventListener("resize", this.updateDimensions);
   }
     
 }

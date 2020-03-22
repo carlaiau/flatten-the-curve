@@ -16,6 +16,9 @@ const SingularGraphTooltip = (tooltipProps)  => {
     const TooltipBox = styled('div')`
         padding: 3px 5px !important;
         color: #fff;
+        p{
+            color: #fff;
+        }
         strong{
             color: #fff;
         }
