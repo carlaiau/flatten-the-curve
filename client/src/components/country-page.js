@@ -26,7 +26,6 @@ export default class CountryPage extends React.Component{
         field: 'confirmed',
         per: 'total',
         sort: 'worst',
-        limit: 60,
         width:  800,
         height: 182
     }
@@ -38,7 +37,7 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries} = this.props.stateHook
-    const {selected_country, field, sort, per, limit} = this.state
+    const {selected_country, field, sort, per} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -55,7 +54,6 @@ export default class CountryPage extends React.Component{
       active_country, 
       field: full_field_name, 
       sort, 
-      limit 
     })
     
     return (
