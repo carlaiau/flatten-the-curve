@@ -9,6 +9,10 @@ const SingularGraphTooltip = (tooltipProps)  => {
 
     const {value, dataKey, payload } = tooltipProps.payload[0]
 
+    const growth = tooltipProps.payload.length == 2 && tooltipProps.payload[1].dataKey == 'growth' ?
+        tooltipProps.payload[1].value: 0
+    
+
     
     
     
@@ -31,14 +35,21 @@ const SingularGraphTooltip = (tooltipProps)  => {
         &.historical{
             background: #227093;
         }
+        &.growth{
+            background: #fff;
+            p{
+                color: #4a4a4a
+            }
+            strong{
+                color: #333;
+            }
+        }
     
     `   
     let date = payload.dateString
     let outputString = new Intl.NumberFormat().format(value, 2)
     let customClass = 'confirmed'
     
-    
-    const {offset = 0} = payload
     
     switch(dataKey){
         case "confirmed":
@@ -70,15 +81,57 @@ const SingularGraphTooltip = (tooltipProps)  => {
     }
         
         return (
-            <TooltipBox className={`box ${customClass}`}>
-                <p className="is-size-7">
-                    {date ? date : ''}
-                    <br/>
-                    <strong>
-                    {outputString}
-                    </strong>
-                </p>
-            </TooltipBox>
+            <>
+                <TooltipBox className={`box ${customClass}`}>
+                    <p className="is-size-7">
+                        {date ? date : ''}
+                        <br/>
+                        <strong>
+                        {outputString}
+                        </strong>
+                    </p>
+                </TooltipBox>
+                { 
+                    growth ?
+                    <TooltipBox className={`box growth`}>
+                        <p className="is-size-7">
+                            Cumulative<br/>
+                            Growth
+                            <br/>
+                            <strong>
+                            {new Intl.NumberFormat().format(growth, 2)}
+                            </strong>
+                        </p>
+                    </TooltipBox>
+                    : <></>
+                }
+
+                { 
+                    growth  & growth > value ?
+                    <TooltipBox className={`box has-background-dark`}>
+                        <p className="is-size-7">
+                            Below by
+                            <br/>
+                            <strong>
+                            {new Intl.NumberFormat().format(growth - value, 2)}
+                            </strong>
+                        </p>
+                    </TooltipBox>
+                    : <></>
+                }
+                { 
+                    growth  & growth < value ?
+                    <TooltipBox className={`box has-background-newt`}>
+                        <p className="is-size-7">
+                            Above by<br/>
+                            <strong>
+                            {new Intl.NumberFormat().format(value - growth, 2)}
+                            </strong>
+                        </p>
+                    </TooltipBox>
+                    : <></>
+                }
+            </>
         )
 }
 export default SingularGraphTooltip

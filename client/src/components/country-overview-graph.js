@@ -13,6 +13,30 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
       t.dateString = format(parseJSON(t.date), 'MMM dd') 
     })
 
+    // Add growth to the countryOverView too!
+    const growth_label =  '33% cumulative daily growth'
+    
+    const growth_rate = 1.333
+    
+    let found_for_growth = false
+
+    if( (full_field_name == 'confirmed' && active_country.highest.confirmed >= 100) || (full_field_name == 'deaths' && active_country.highest.deaths >= 10) ){  
+      filteredData.forEach( (t, i) => {
+        if(found_for_growth){
+          t.growth = (filteredData[i - 1].growth * growth_rate).toFixed(0)
+        }
+        else{
+          if(t[field] >= ( field == 'confirmed' ? 100 : field == 'deaths' ? 10 : Infinity)){
+            found_for_growth = true
+            t.growth = t[field]
+          }
+          else{
+            t.growth = null
+          }
+        }
+      })
+    }
+    
     if(filteredData.length){
       return (
         <LineChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10 }}>
@@ -36,6 +60,12 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
               :
               <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million"stroke="#ff5252" formatter={value => value.toFixed(2)}dot={false} strokeWidth={3}/>
           }
+          {
+            found_for_growth ?
+              <Line type="monotone" stroke='#aaa' name={growth_label} dataKey='growth' strokeOpacity={0.5} dot={false} strokeWidth={3} isAnimationActive={true}/>
+            : 
+              <></>
+          }  
           <Tooltip content={SingularGraphTooltip}/>
           <Legend verticalAlign="top" iconType="square"/>
           

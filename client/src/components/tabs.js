@@ -41,6 +41,14 @@ export default class Tabs extends React.Component{
                     :
                     <></>
                     }
+                    { country_name ?
+                        <p className="is-size-">
+                            The cumulative daily growth is based on compounding daily growth starting from the daily figure when {country_name } first exceeded 100 confirmed cases
+                            and/or 10 deaths.
+                        </p>
+                    :
+                    <></>
+                    }
                     
                     <p className="is-size-7">Global data updated at <strong>{update_time}</strong></p>
                     
@@ -51,17 +59,17 @@ export default class Tabs extends React.Component{
                     }
                     
                     { ! country_name ?
-                    <>
-                        <p className="is-size-7">
-                            Please use the dropdown in the header for country-specific comparisons and projections. 
-                            
-                        </p>
-                        
-                    </>
+                    <p className="is-size-7">
+                        Please use the dropdown in the header for country-specific comparisons and projections.     
+                    </p>    
                     :
                     <></>
                     }
-                    <p className="is-size-7">We present data for countries that have populations larger than 1 million and at least 10 confirmed cases.</p>
+
+                    
+                    <p className="is-size-7">
+                        We present data for countries that have populations larger than 1 million and at least 10 confirmed cases.
+                    </p>
                     
                     
                     
