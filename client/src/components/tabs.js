@@ -53,7 +53,7 @@ export default class Tabs extends React.Component{
                     { ! country_name ?
                     <>
                         <p className="is-size-7">
-                            Please use the dropdown in the header for country specific comparisons and projections. 
+                            Please use the dropdown in the header for country-specific comparisons and projections. 
                             
                         </p>
                         
@@ -61,7 +61,7 @@ export default class Tabs extends React.Component{
                     :
                     <></>
                     }
-                    <p className="is-size-7">We support countries with over 1 million population and 10 confirmed cases.</p>
+                    <p className="is-size-7">We present data for countries that have populations larger than 1 million and at least 10 confirmed cases.</p>
                     
                     
                     
@@ -85,13 +85,13 @@ export default class Tabs extends React.Component{
                     This is based on the historical growth data of each country that is currently ahead of {country_name} in the outbreak.
                     </p>
                     <p className="is-size-6">
-                    Viewing this can offer unique insights into the range of possible outcomes. Not based on epidemiological models, only on historical data experienced by other countries.
+                    Viewing this can offer unique insights into the range of possible outcomes. The forecast is not based on epidemiological models, just on historical data experienced by other countries.
                     </p>
                     <p className="is-size-6">
-                        The potential forecast does not take into account the relative doubling time of each country.
+                        The forecast does not take into account the relative doubling time of each country.
                     </p>
                     <p className="is-size-6">
-                        The true forecast depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
+                        Forecasting accuracy depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
                     </p>
                 </div> 
             </div>
