@@ -70,7 +70,7 @@ export default class GridItem extends React.Component{
                 
             }
         `
-        const { country, active_country, per, field, tidy } = this.props
+        const { country, active_country, per, field, tidy, width, height } = this.props
         return (
         <>
         <div className='column is-one-third'>
@@ -172,7 +172,8 @@ export default class GridItem extends React.Component{
             <GridItemDetail
                 active={active_country} 
                 compare={country}
-                width={this.props.width}
+                width={width}
+                height={height}
                 tidy={tidy}
                 details_open={this.state.details_open}
                 detailsFn={(() => this.setState({details_open: true}))}

@@ -4,7 +4,7 @@ import { parseJSON, format } from "date-fns"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 
 
-const CountryOverviewGraph = ({active_country, field, full_field_name, width}) => {
+const CountryOverviewGraph = ({active_country, field, full_field_name, width, height}) => {
     
     
     const filteredData = active_country.time_series.filter(t => parseInt(t[field]) > 0)
@@ -15,7 +15,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width}) =
 
     if(filteredData.length){
       return (
-        <LineChart width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 250} data={filteredData} margin={{ bottom: 25, top: 15, right: 10 }}>
+        <LineChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10 }}>
           <XAxis 
             dataKey="index"
             name="Days"

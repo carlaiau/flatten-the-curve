@@ -28,7 +28,7 @@ const GraphOptionsSideBar = ({max_count = 35, field = 'confirmed', scale, scaleF
     return (
         <SideBar>
             <div className="field is-horizontal">
-                <label class="label">Scale</label>
+                <label className="label">Scale</label>
                 <div className="control">
                     <div className="select">
                     <select value={scale} onChange={scaleFn}>
@@ -42,7 +42,7 @@ const GraphOptionsSideBar = ({max_count = 35, field = 'confirmed', scale, scaleF
                 <div className="check-container">
                 {
                     countries_avaliable.map(c => (
-                        <label class="checkbox">
+                        <label className="checkbox" key={c.country_name}>
                             <input type="checkbox" name={c.country_name} value={c.country_name} defaultChecked={checkCountries.includes(c.country_name)} onChange={checkFn}/>
                                 {c.country_name}
                         </label>

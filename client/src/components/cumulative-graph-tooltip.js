@@ -30,13 +30,15 @@ const CumulativeGraphTooltip = (tooltipProps)  => {
                 Day {label}
             </p>
             <table>
+                <tbody>
             {payload.map(c => {
                 return (
-                <tr className="is-size-7">
+                <tr className="is-size-7" key={c.dataKey}>
                     <th style={{color: c.stroke}}>{c.dataKey}</th>
                     <th style={{paddingLeft: '2px', textAlign: 'right'}}>{tidy.format(c.value, 2)}</th>
                 </tr>
-            )})}                
+            )})}       
+            </tbody>         
             </table>
         </TooltipBox>
     )

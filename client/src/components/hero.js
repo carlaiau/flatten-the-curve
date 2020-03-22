@@ -26,6 +26,9 @@ const Hero = ({selected_country, selectFn}) => {
       margin-right: 5px;
       text-transform: uppercase;
       font-weight: 700;
+      @media screen and (max-width: 768px){
+        margin-top: -4px;
+      }
     }
     .icon{
       &.facebook{
@@ -46,6 +49,9 @@ const Hero = ({selected_country, selectFn}) => {
     }
     padding-right: 5px;
     padding-bottom: 0;
+    @media screen and (max-width: 768px){
+      padding-top: 10px;
+    }
   `
   return ( 
     <React.Fragment>
@@ -93,34 +99,36 @@ const Hero = ({selected_country, selectFn}) => {
           </nav>
         </div>
       </section>
-      <div className="container">
-        <div className="columns">
-          <div className="column">
-            <Share style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
-              <p className="is-size-7">Share {selected_country ? selected_country: ''}</p>
-                <a 
-                  className="navbar-item" 
-                  href={`https://www.facebook.com/sharer/sharer.php?u=https://flattenthecurve.co.nz/${selected_country ? 
-                    selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`} 
-                  target="_blank" 
-                  rel="noopener"
-                >
-                  <span className="icon facebook">
-                    <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
-                  </span>
-                </a>
-                <a className="navbar-item"
-                  href={`https://twitter.com/intent/tweet?url=https://flattenthecurve.co.nz/${selected_country ? 
-                    selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`}
-                  target="_blank" 
-                  rel="noopener"
-                >
-                  <span className="icon twitter">
-                    <FontAwesomeIcon icon={faTwitter} size="lg"/>
-                  </span>
-                </a>  
-            </Share>
-          </div> 
+      <div className="section" style={{paddingTop: 0, paddingBottom: 0}}>
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+              <Share style={{display: 'flex', alignItems: 'center', justifyContent: 'flex-end'}}>
+                <p className="is-size-7">Share {selected_country ? selected_country: ''}</p>
+                  <a 
+                    className="navbar-item" 
+                    href={`https://www.facebook.com/sharer/sharer.php?u=https://flattenthecurve.co.nz/${selected_country ? 
+                      selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`} 
+                    target="_blank" 
+                    rel="noopener"
+                  >
+                    <span className="icon facebook">
+                      <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
+                    </span>
+                  </a>
+                  <a className="navbar-item"
+                    href={`https://twitter.com/intent/tweet?url=https://flattenthecurve.co.nz/${selected_country ? 
+                      selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`}
+                    target="_blank" 
+                    rel="noopener"
+                  >
+                    <span className="icon twitter">
+                      <FontAwesomeIcon icon={faTwitter} size="lg"/>
+                    </span>
+                  </a>  
+              </Share>
+            </div> 
+          </div>
         </div>
       </div>
       

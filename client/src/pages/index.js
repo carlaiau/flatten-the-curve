@@ -31,8 +31,8 @@ export default class IndexPage extends React.Component{
           selected_country: '',
           numberFormat: new Intl.NumberFormat(),
           limit: 60,
-          width:  800,
-          height: 182,
+          cum_width:  800,
+          cum_height: 182,
           num_scale: 'linear',
           num_graph_countries: default_countries,
           death_scale: 'linear',
@@ -81,117 +81,118 @@ export default class IndexPage extends React.Component{
         return(<>
             <SEO title={' COVID-19: Showing why we must act early'}/>
             <Hero selected_country=''/>
-            
-            <IndexContainer className="container">
-                <div className="columns">
-                    <div className="column is-two-thirds">
-                        <Tab/>
+            <div className="section">
+                <IndexContainer className="container">
+                    <div className="columns">
+                        <div className="column is-two-thirds">
+                            <Tab/>
+                        </div>
+                        { this.state.width < 480 ?
+                        <div className="column">
+                            <div className="box has-background-newt">
+                                <p className="is-size-6">
+                                    <strong className="has-text-white">
+                                        Please use a computer to get the best use out of this interface
+                                    </strong>
+                                </p>
+                                
+                            </div>
+                        </div>
+                        : 
+                        <></>
+                        }
                     </div>
-                    { this.state.width < 480 ?
-                    <div className="column">
-                        <div class="box has-background-newt">
-                            <p className="is-size-6">
-                                <strong className="has-text-white">
-                                    Please use a computer to get the best use out of this interface
-                                </strong>
-                            </p>
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success">
+                                <h3 className="is-size-3 has-text-white title">
+                                    Cumulative number of cases
+                                </h3>
+                                <p className="is-size-5 subtitle has-text-white">
+                                    by number of days since 100th case
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns">
+                        <div className="column is-quarter">
                             
-                        </div>
-                    </div>
-                    : 
-                    <></>
-                    }
-                </div>
-                <div className="columns">
-                    <div className="column is-narrow">
-                        <div className="box has-background-success">
-                            <h3 className="is-size-3 has-text-white title">
-                                Cumulative number of cases
-                            </h3>
-                            <p className="is-size-5 subtitle has-text-white">
-                                by number of days since 100th case
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className="columns">
-                    <div className="column is-quarter">
-                        
-                        <div className="box">
-                            <GraphOptionsSideBar
-                                scale={this.state.num_scale} 
-                                scaleFn={e => {this.setState({num_scale: e.target.value})}}
-                                checkCountries={this.state.num_graph_countries}
-                                checkFn={e => {
-                                    const checkedCountry = e.target.value
-                                    if(this.state.num_graph_countries.includes(checkedCountry)){
-                                        const newCountries =  this.state.num_graph_countries.filter(c => c != checkedCountry)
-                                        return this.setState({num_graph_countries: newCountries})
+                            <div className="box">
+                                <GraphOptionsSideBar
+                                    scale={this.state.num_scale} 
+                                    scaleFn={e => {this.setState({num_scale: e.target.value})}}
+                                    checkCountries={this.state.num_graph_countries}
+                                    checkFn={e => {
+                                        const checkedCountry = e.target.value
+                                        if(this.state.num_graph_countries.includes(checkedCountry)){
+                                            const newCountries =  this.state.num_graph_countries.filter(c => c != checkedCountry)
+                                            return this.setState({num_graph_countries: newCountries})
+                                        }
+                                        else{
+                                            let newCountries = this.state.num_graph_countries
+                                            newCountries.push(checkedCountry)
+                                            return this.setState({num_graph_countries: newCountries})
+                                        }
                                     }
-                                    else{
-                                        let newCountries = this.state.num_graph_countries
-                                        newCountries.push(checkedCountry)
-                                        return this.setState({num_graph_countries: newCountries})
-                                    }
-                                }
-                            }/>
-                            <div style={{textAlign:'right'}}>
-                                <button class="button has-background-newt has-text-white" 
-                                style={{marginTop: '10px'}}
-                                onClick={e => this.setState({num_graph_countries: []})}>
-                                    <strong>Clear All</strong>    
-                                </button>
+                                }/>
+                                <div style={{textAlign:'right'}}>
+                                    <button className="button has-background-newt has-text-white" 
+                                    style={{marginTop: '10px'}}
+                                    onClick={e => this.setState({num_graph_countries: []})}>
+                                        <strong>Clear All</strong>    
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="column is-three-quarters">
+                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
+                        </div>
+                    </div>  
+                    
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success is-full">
+                                <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
+                                <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
                             </div>
                         </div>
                     </div>
-                    <div className="column is-three-quarters">
-                        <CumulativeGraph width={this.state.width} scale={this.state.num_scale} countries_to_graph={this.state.num_graph_countries}/>
-                    </div>
-                </div>  
-                
-                <div className="columns">
-                    <div className="column is-narrow">
-                        <div className="box has-background-success is-full">
-                            <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
-                            <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="columns" style={{marginBottom: '30px'}}>
-                    <div className="column">
-                        <div className="box">
-                            <GraphOptionsSideBar
-                                field='death'
-                                scale={this.state.death_scale} 
-                                scaleFn={e => {this.setState({death_scale: e.target.value})}}
-                                checkCountries={this.state.death_graph_countries}
-                                checkFn={e => {
-                                    const checkedCountry = e.target.value
-                                    if(this.state.death_graph_countries.includes(checkedCountry)){
-                                        const newCountries =  this.state.death_graph_countries.filter(c => c != checkedCountry)
-                                        return this.setState({death_graph_countries: newCountries})
+                    <div className="columns" style={{marginBottom: '30px'}}>
+                        <div className="column">
+                            <div className="box">
+                                <GraphOptionsSideBar
+                                    field='death'
+                                    scale={this.state.death_scale} 
+                                    scaleFn={e => {this.setState({death_scale: e.target.value})}}
+                                    checkCountries={this.state.death_graph_countries}
+                                    checkFn={e => {
+                                        const checkedCountry = e.target.value
+                                        if(this.state.death_graph_countries.includes(checkedCountry)){
+                                            const newCountries =  this.state.death_graph_countries.filter(c => c != checkedCountry)
+                                            return this.setState({death_graph_countries: newCountries})
+                                        }
+                                        else{
+                                            let newCountries = this.state.death_graph_countries
+                                            newCountries.push(checkedCountry)
+                                            return this.setState({death_graph_countries: newCountries})
+                                        }
                                     }
-                                    else{
-                                        let newCountries = this.state.death_graph_countries
-                                        newCountries.push(checkedCountry)
-                                        return this.setState({death_graph_countries: newCountries})
-                                    }
-                                }
-                            }/>
-                            <div style={{textAlign:'right'}}>
-                                <button class="button has-background-newt has-text-white" 
-                                style={{marginTop: '10px'}}
-                                onClick={e => this.setState({death_graph_countries: []})}>
-                                    <strong>Clear All</strong>    
-                                </button>
+                                }/>
+                                <div style={{textAlign:'right'}}>
+                                    <button className="button has-background-newt has-text-white" 
+                                    style={{marginTop: '10px'}}
+                                    onClick={e => this.setState({death_graph_countries: []})}>
+                                        <strong>Clear All</strong>    
+                                    </button>
+                                </div>
                             </div>
                         </div>
+                        <div className="column is-three-quarters">
+                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths" scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
+                        </div>
                     </div>
-                    <div className="column is-three-quarters">
-                        <CumulativeGraph width={this.state.width} field="deaths" scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
-                    </div>
-                </div>
-            </IndexContainer>
+                </IndexContainer>
+            </div>
             <Footer/>
         </>
     )
@@ -201,7 +202,36 @@ export default class IndexPage extends React.Component{
    * Calculate & Update state of new dimensions
    */
   updateDimensions = () => {  
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+    let cum_width =  1000
+
+    let cum_height = 500
+    
+    if(window.innerWidth < 1408){ // FullHD
+        cum_width = 860
+        cum_height = 430
+    }
+    if(window.innerWidth < 1216){ // Desktop
+        cum_width = 720
+        cum_height = 360
+    }
+    if(window.innerWidth < 1024){
+        cum_width = 565
+        cum_height = 300
+    }
+    if(window.innerWidth < 769){
+        cum_width = 740
+        cum_height = 450
+    }
+
+    if(window.innerWidth < 480){
+        cum_width = 350
+        cum_height = 300
+    }
+
+
+    //window.innerHeight
+    
+    this.setState({ cum_width, cum_height });
   }
 
   /**

@@ -1,6 +1,6 @@
 import React from 'react'
 const Footer = () => (
-    <section className="section  has-background-dark has-text-white footer">
+    <section className="section  has-background-dark has-text-white footer" style={{marginTop: '20px', paddingTop: '20px'}}>
         <div className="container">
           <div className="columns">
             <div className="column">

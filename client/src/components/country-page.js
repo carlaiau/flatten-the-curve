@@ -26,8 +26,10 @@ export default class CountryPage extends React.Component{
         field: 'confirmed',
         per: 'total',
         sort: 'worst',
-        width:  800,
-        height: 182
+        overview_width: 0,
+        overview_height: 0,
+        grid_width: 0,
+        grid_height: 0
     }
   }
   
@@ -63,7 +65,7 @@ export default class CountryPage extends React.Component{
         <section className="section">
           <div className="container">
             <div className="columns info">
-              <div className="column"> 
+              <div className="column is-two-thirds"> 
                 <h2 className="is-size-3 title">
                   {active_country.country_name}
                 </h2>
@@ -79,7 +81,8 @@ export default class CountryPage extends React.Component{
                   active_country={active_country}
                   field={field}
                   full_field_name={full_field_name}
-                  width={this.state.width}
+                  width={this.state.overview_width}
+                  height={this.state.overview_height}
                 />
               </div>
               <div className="column">
@@ -106,16 +109,16 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
-        <GridBar 
-          active_country_name={active_country.country_name}
-          per={this.state.per}
-          field={this.state.field}
-          sort={this.state.sort}
-          length={topCountries.length}
-          fieldFn={e => this.setState({field: e.target.value})}
-          perFn={e => this.setState({per: e.target.value})}
-          sortFn={e => this.setState({sort: e.target.value})}
-        />
+          <GridBar 
+            active_country_name={active_country.country_name}
+            per={this.state.per}
+            field={this.state.field}
+            sort={this.state.sort}
+            length={topCountries.length}
+            fieldFn={e => this.setState({field: e.target.value})}
+            perFn={e => this.setState({per: e.target.value})}
+            sortFn={e => this.setState({sort: e.target.value})}
+          />
         <section className="section">
           <div className="container">
             <div className="columns" style={{flexWrap: 'wrap'}}>
@@ -128,7 +131,8 @@ export default class CountryPage extends React.Component{
                   per={per}
                   field={field}
                   tidy={this.tidyFormat}
-                  width={this.state.width}
+                  width={this.state.grid_width}
+                  height={this.state.grid_height}
                 />
               ))}              
             </div>
@@ -143,7 +147,53 @@ export default class CountryPage extends React.Component{
    * Calculate & Update state of new dimensions
    */
   updateDimensions = () => {  
-    this.setState({ width: window.innerWidth, height: window.innerHeight });
+
+
+    // For Overview: width={width >= 768 ? 620 : 303} height={width >= 768 ? 372 : 250}
+    
+    // For grid width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150}
+    let overview_width =  860
+    let overview_height = 500
+    
+    let grid_width = 391
+    let grid_height = 200
+    
+    if(window.innerWidth < 1408){ // FullHD
+      overview_width =  740
+      overview_height = 550
+      grid_width = 350
+      grid_height = 180
+    }
+    if(window.innerWidth < 1216){ // Desktop
+      overview_width =  600
+      overview_height = 400
+      grid_width = 285
+      grid_height = 160
+    }
+    if(window.innerWidth < 1024){
+      overview_width =  450
+      overview_height = 400
+      grid_width = 200
+      grid_height = 120
+    }
+
+    if(window.innerWidth < 769){
+      overview_width =  650
+      overview_height = 450
+      grid_width = 600
+      grid_height = 300   
+    }
+    if(window.innerWidth < 480){
+      overview_width = 300
+      overview_height = 300
+      grid_width = 280
+      grid_height = 150   
+    }
+
+    //window.innerHeight
+    
+    this.setState({ overview_width, overview_height, grid_width, grid_height });
+  
   }
 
   /**

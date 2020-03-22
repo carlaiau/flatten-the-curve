@@ -3,7 +3,7 @@ import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 import CumulativeGraphTooltip from "../components/cumulative-graph-tooltip"
 
-const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
+const CumulativeGraph = ({max_count = 35, height, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     // Array of Objects 
@@ -71,7 +71,7 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
 
     if(countries_to_graph.length == 0) return (
         <>
-            <LineChart width={width >= 768 ? 1000 : 360} height={width >= 768 ? 500 : 250}  margin={{right: 20}}>
+            <LineChart width={width} height={height}  margin={{right: 20}}>
                 <Tooltip/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             </LineChart>
@@ -81,15 +81,15 @@ const CumulativeGraph = ({max_count = 35, width, countries_to_graph = [], field 
     return (
 
         <>
-            <LineChart width={width >= 768 ? 1000 : 360} height={width >= 768 ? 500 : 250} data={ready_to_graph}>
+            <LineChart width={width} height={height} data={ready_to_graph}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
-                <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
+                <XAxis dataKey="num_day" name="Days" type="number" tickCount={0}/>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
-                    return <Line type="monotone" stroke={color_definitions[key]} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
+                    return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
                 {
-                    countries_to_graph.length > 1 ? (
+                    countries_to_graph.length > 0 ? (
                         <Line type="monotone" stroke='#aaa' dataKey={growth_label} strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
                     ): <></>
                 }

@@ -5,7 +5,7 @@ import { parseJSON, format, add } from "date-fns"
 import {LineChart, Line, YAxis, Tooltip, Legend, ReferenceLine} from 'recharts'
 
 
-const GridItemDetail = ({ active, compare, width, details_open, closeFn, detailsFn }) => {
+const GridItemDetail = ({ active, compare, width, height, details_open, closeFn, detailsFn }) => {
     let max_historical = 7
 
     const time_series = compare.time_series.filter( time => time.confirmed_per_mil >= active.highest.confirmed_per_mil )
@@ -178,7 +178,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         padding: '5px'
                      }}
                     >   
-                        <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
+                        <LineChart data={forecast} width={width} height={height} syncId="projection">
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_confirmed" name="Historical" stroke="#227093"dot={false} strokeWidth={3} />
                             <Line type="monotone" dataKey="confirmed" name="Forecast" stroke="#ff793f" dot={false} strokeWidth={3}/>
@@ -194,7 +194,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         padding: '5px'
                         }}
                     >
-                        <LineChart data={forecast} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="projection">
+                        <LineChart data={forecast} width={width} height={height} syncId="projection">
                             <YAxis width={60}/>
                             <Line type="monotone" dataKey="real_deaths" name="Historical" stroke="#227093" dot={false} strokeWidth={3}/>
                             <Line type="monotone" dataKey="deaths" name="Forecast" stroke="#ff5252" dot={false} strokeWidth={3}/>
@@ -216,7 +216,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         marginBottom: '20px'
                         }}
                     >   
-                        <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
+                        <LineChart data={time_series} width={width} height={height} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed per million" stroke="#227093" dot={false} strokeWidth={3} formatter={value => value.toFixed(2)}/>
                             <Tooltip content={SingularGraphTooltip}/>
@@ -229,7 +229,7 @@ const GridItemDetail = ({ active, compare, width, details_open, closeFn, details
                         padding: '5px',
                         borderRadius: '4px'}}
                     >
-                        <LineChart data={time_series} width={width >= 768 ? 391 : 280} height={width >= 768 ? 200: 150} syncId="progression">
+                        <LineChart data={time_series} width={width} height={height} syncId="progression">
                             <YAxis width={50}/>
                             <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million" stroke="#227093" dot={false} strokeWidth={3} formatter={value => value.toFixed(2)}/>
                             <Tooltip content={SingularGraphTooltip}/>

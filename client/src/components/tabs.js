@@ -19,30 +19,40 @@ export default class Tabs extends React.Component{
                 <div className={active == 'welcome' ? '' : 'is-hidden'}>
                     <h2 className="is-size-3"><strong>We must act now!</strong></h2>
                     <h3 className="is-size-4 subtitle">
-                        Compare your country to the evolving situations in the rest of the world
+                        Compare your country to evolving situations in the rest of the world
                     </h3>
-                    <p className="is-size-6">
-                        If you are currently at the bottom of a curve you can use our tool to see how your situation may develop.
-                        You can compare yourself against other countries that have already been in your position. This will show you how
-                        quickly things can get scary and why it is critical we all do our best to flatten the curve.
-                    </p>
-                   
-
-                    <p className="is-size-6">
-                        For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
-                    </p>
+                    { ! country_name ?
+                    <>
+                        <p className="is-size-6">
+                            If you are currently at the bottom of the curve you can use our tool to see how your situation may develop.
+                            You can compare yourself to other countries that have already been in your position and observe how things esculate. 
+                            
+                        </p>
+                        <p className="is-size-6">
+                            Because of this explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme.
+                            Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
+                        </p>
                     
-                    <p className="is-size-6">Global data updated at <strong>{update_time}</strong></p>
+
+                        <p className="is-size-6" style={{marginBottom: '20px'}}>
+                            For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
+                        </p>
+                    </>
+                    :
+                    <></>
+                    }
+                    
+                    <p className="is-size-7">Global data updated at <strong>{update_time}</strong></p>
                     
                     {country_name == 'New Zealand' ?
-                    <p className="is-size-6"><strong>New Zealand</strong> data updated at <strong>{nz_time}</strong></p>
+                    <p className="is-size-7"><strong>New Zealand</strong> data updated at <strong>{nz_time}</strong></p>
                     :
                     <></>
                     }
                     
                     { ! country_name ?
                     <>
-                        <p className="is-size-6">
+                        <p className="is-size-7">
                             Please use the dropdown in the header for country specific comparisons and projections. 
                             
                         </p>
@@ -51,7 +61,7 @@ export default class Tabs extends React.Component{
                     :
                     <></>
                     }
-                    <p className="is-size-6">We support countries with over 1 million population and 10 confirmed cases.</p>
+                    <p className="is-size-7">We support countries with over 1 million population and 10 confirmed cases.</p>
                     
                     
                     
