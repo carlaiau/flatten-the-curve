@@ -83,8 +83,8 @@ export default class IndexPage extends React.Component{
             <Hero selected_country=''/>
             
             <IndexContainer className="container">
-                <div className="columns" style={{marginTop: '30px'}}>
-                    <div className="column" >
+                <div className="columns">
+                    <div className="column is-two-thirds">
                         <Tab/>
                     </div>
                     { this.state.width < 480 ?

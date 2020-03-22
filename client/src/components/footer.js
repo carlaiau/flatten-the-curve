@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Footer = () => (
     <section className="section  has-background-dark has-text-white footer">
         <div className="container">
@@ -25,8 +24,12 @@ const Footer = () => (
                 </p>
               <p className="is-size-7" style={{marginTop: '10px'}}>
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a>.
-                Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>
+                Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. Please Don't hesitate to contribute to the repo or give me any feedback.
               </p>
+              <p className="is-size-7">
+                 Things I'm working on next; world count table, cumulative graphs on country pages, cumulative graphs for comparing between regions within a country.
+              </p>
+              
             </div>
             <div className="column">
               <p className="is-size-5">Terms of Use</p>
