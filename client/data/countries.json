@@ -498,9 +498,18 @@
         "confirmed_per_mil": 5.919757130369069,
         "deaths_per_mil": 0.014403302020362697,
         "recovered_per_mil": 0.6049386848552333
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 599,
+        "deaths": 1,
+        "recovered": 44,
+        "confirmed_per_mil": 8.627577910197257,
+        "deaths_per_mil": 0.014403302020362697,
+        "recovered_per_mil": 0.6337452888959587
       }
     ],
-    "highest_confirmed": 411,
+    "highest_confirmed": 599,
     "population": 69428524
   },
   {
@@ -1019,9 +1028,18 @@
         "confirmed_per_mil": 7.958643505723189,
         "deaths_per_mil": 0.276616209235662,
         "recovered_per_mil": 1.8335703012192452
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1086,
+        "deaths": 40,
+        "recovered": 235,
+        "confirmed_per_mil": 8.583005806569398,
+        "deaths_per_mil": 0.3161328105550423,
+        "recovered_per_mil": 1.8572802620108735
       }
     ],
-    "highest_confirmed": 1007,
+    "highest_confirmed": 1086,
     "population": 126529100
   },
   {
@@ -1483,9 +1501,18 @@
         "confirmed_per_mil": 76.61372988978263,
         "deaths_per_mil": 0.35469319393417886,
         "recovered_per_mil": 24.82852357539252
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 455,
+        "deaths": 2,
+        "recovered": 144,
+        "confirmed_per_mil": 80.69270162002569,
+        "deaths_per_mil": 0.35469319393417886,
+        "recovered_per_mil": 25.537909963260876
       }
     ],
-    "highest_confirmed": 432,
+    "highest_confirmed": 455,
     "population": 5638676
   },
   {
@@ -1871,9 +1898,16 @@
         "recovered": 1,
         "confirmed_per_mil": 0.03560255599294087,
         "recovered_per_mil": 0.03560255599294087
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "recovered": 1,
+        "confirmed_per_mil": 0.07120511198588174,
+        "recovered_per_mil": 0.03560255599294087
       }
     ],
-    "highest_confirmed": 1,
+    "highest_confirmed": 2,
     "population": 28087871
   },
   {
@@ -2326,9 +2360,18 @@
         "confirmed_per_mil": 37.521506277557336,
         "deaths_per_mil": 0.12686899840256072,
         "recovered_per_mil": 3.615766454472981
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1306,
+        "deaths": 10,
+        "recovered": 139,
+        "confirmed_per_mil": 41.42272797843608,
+        "deaths_per_mil": 0.3171724960064018,
+        "recovered_per_mil": 4.4086976944889855
       }
     ],
-    "highest_confirmed": 1183,
+    "highest_confirmed": 1306,
     "population": 31528585
   },
   {
@@ -2777,9 +2820,18 @@
         "confirmed_per_mil": 34.48568406968634,
         "deaths_per_mil": 0.51269796347734,
         "recovered_per_mil": 0.2698410334091263
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1465,
+        "deaths": 21,
+        "recovered": 10,
+        "confirmed_per_mil": 39.531711394437,
+        "deaths_per_mil": 0.5666661701591652,
+        "recovered_per_mil": 0.2698410334091263
       }
     ],
-    "highest_confirmed": 1278,
+    "highest_confirmed": 1465,
     "population": 37058856
   },
   {
@@ -3249,9 +3301,18 @@
         "confirmed_per_mil": 42.85308047428397,
         "deaths_per_mil": 0.28008549329597365,
         "recovered_per_mil": 1.0403175465279022
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1314,
+        "deaths": 7,
+        "recovered": 88,
+        "confirmed_per_mil": 52.576048312987055,
+        "deaths_per_mil": 0.28008549329597365,
+        "recovered_per_mil": 3.521074772863669
       }
     ],
-    "highest_confirmed": 1071,
+    "highest_confirmed": 1314,
     "population": 24992369
   },
   {
@@ -3625,9 +3686,16 @@
         "recovered": 1,
         "confirmed_per_mil": 3.261579005474407,
         "recovered_per_mil": 0.06153922651838503
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 84,
+        "recovered": 1,
+        "confirmed_per_mil": 5.169295027544343,
+        "recovered_per_mil": 0.06153922651838503
       }
     ],
-    "highest_confirmed": 53,
+    "highest_confirmed": 84,
     "population": 16249798
   },
   {
@@ -4005,9 +4073,16 @@
         "recovered": 1,
         "confirmed_per_mil": 3.5532994923857864,
         "recovered_per_mil": 0.046146746654360866
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 82,
+        "recovered": 3,
+        "confirmed_per_mil": 3.784033225657591,
+        "recovered_per_mil": 0.13844023996308258
       }
     ],
-    "highest_confirmed": 77,
+    "highest_confirmed": 82,
     "population": 21670000
   },
   {
@@ -4448,9 +4523,18 @@
         "confirmed_per_mil": 267.8591174634763,
         "deaths_per_mil": 1.0129278290610009,
         "recovered_per_mil": 2.809668859181109
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 24873,
+        "deaths": 94,
+        "recovered": 266,
+        "confirmed_per_mil": 299.9351653837413,
+        "deaths_per_mil": 1.1335144753777866,
+        "recovered_per_mil": 3.2076047920265025
       }
     ],
-    "highest_confirmed": 22213,
+    "highest_confirmed": 24873,
     "population": 82927922
   },
   {
@@ -4866,9 +4950,18 @@
         "confirmed_per_mil": 94.77985882694068,
         "deaths_per_mil": 0.18122343943965713,
         "recovered_per_mil": 1.8122343943965713
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 626,
+        "deaths": 1,
+        "recovered": 10,
+        "confirmed_per_mil": 113.44587308922537,
+        "deaths_per_mil": 0.18122343943965713,
+        "recovered_per_mil": 1.8122343943965713
       }
     ],
-    "highest_confirmed": 523,
+    "highest_confirmed": 626,
     "population": 5518050
   },
   {
@@ -5279,6 +5372,15 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 153,
+        "deaths": 2,
+        "recovered": 38,
+        "confirmed_per_mil": 15.88626843910352,
+        "deaths_per_mil": 0.20766363972684337,
+        "recovered_per_mil": 3.9456091548100245
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 153,
         "deaths": 2,
         "recovered": 38,
@@ -5744,9 +5846,18 @@
         "confirmed_per_mil": 2.8785229018188723,
         "deaths_per_mil": 0.17814962584546765,
         "recovered_per_mil": 0.1218918492626884
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 380,
+        "deaths": 25,
+        "recovered": 17,
+        "confirmed_per_mil": 3.562992516909353,
+        "deaths_per_mil": 0.23440740242824692,
+        "recovered_per_mil": 0.1593970336512079
       }
     ],
-    "highest_confirmed": 307,
+    "highest_confirmed": 380,
     "population": 106651922
   },
   {
@@ -6161,9 +6272,18 @@
         "confirmed_per_mil": 0.24397144201009377,
         "deaths_per_mil": 0.002957229600122349,
         "recovered_per_mil": 0.017004070200703505
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 396,
+        "deaths": 7,
+        "recovered": 27,
+        "confirmed_per_mil": 0.2927657304121125,
+        "deaths_per_mil": 0.0051751518002141105,
+        "recovered_per_mil": 0.019961299800825855
       }
     ],
-    "highest_confirmed": 330,
+    "highest_confirmed": 396,
     "population": 1352617328
   },
   {
@@ -6584,9 +6704,18 @@
         "confirmed_per_mil": 886.5937862017591,
         "deaths_per_mil": 79.84275296620791,
         "recovered_per_mil": 100.47776083125689
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 59138,
+        "deaths": 5476,
+        "recovered": 7024,
+        "confirmed_per_mil": 978.5991139721458,
+        "deaths_per_mil": 90.61531922133773,
+        "recovered_per_mil": 116.23119105381231
       }
     ],
-    "highest_confirmed": 53578,
+    "highest_confirmed": 59138,
     "population": 60431283
   },
   {
@@ -6972,9 +7101,18 @@
         "confirmed_per_mil": 173.12871476725087,
         "deaths_per_mil": 1.9640239905530446,
         "recovered_per_mil": 1.5712191924424357
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1934,
+        "deaths": 21,
+        "recovered": 16,
+        "confirmed_per_mil": 189.9211198864794,
+        "deaths_per_mil": 2.0622251900806967,
+        "recovered_per_mil": 1.5712191924424357
       }
     ],
-    "highest_confirmed": 1763,
+    "highest_confirmed": 1934,
     "population": 10183175
   },
   {
@@ -7384,9 +7522,18 @@
         "confirmed_per_mil": 543.0642990569957,
         "deaths_per_mil": 29.428289241088084,
         "recovered_per_mil": 45.48008337259067
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 28768,
+        "deaths": 1772,
+        "recovered": 2575,
+        "confirmed_per_mil": 615.7040181000887,
+        "deaths_per_mil": 37.925038934696786,
+        "recovered_per_mil": 55.111159851492225
       }
     ],
-    "highest_confirmed": 25374,
+    "highest_confirmed": 28768,
     "population": 46723749
   },
   {
@@ -7765,9 +7912,18 @@
         "confirmed_per_mil": 246.4527439339356,
         "deaths_per_mil": 5.8658379550883435,
         "recovered_per_mil": 23.02560271922738
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3401,
+        "deaths": 75,
+        "recovered": 263,
+        "confirmed_per_mil": 297.75693858590233,
+        "deaths_per_mil": 6.566236516889936,
+        "recovered_per_mil": 23.02560271922738
       }
     ],
-    "highest_confirmed": 2815,
+    "highest_confirmed": 3401,
     "population": 11422068
   },
   {
@@ -8068,9 +8224,18 @@
         "confirmed_per_mil": 2.9870886142697795,
         "deaths_per_mil": 0.10160165354659113,
         "recovered_per_mil": 0.41656677954102367
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 327,
+        "deaths": 14,
+        "recovered": 56,
+        "confirmed_per_mil": 3.32237407097353,
+        "deaths_per_mil": 0.1422423149652276,
+        "recovered_per_mil": 0.5689692598609104
       }
     ],
-    "highest_confirmed": 294,
+    "highest_confirmed": 327,
     "population": 98423595
   },
   {
@@ -8315,9 +8480,18 @@
         "confirmed_per_mil": 27.303554937453686,
         "deaths_per_mil": 0.5840332606941965,
         "recovered_per_mil": 0.5840332606941965
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 248,
+        "deaths": 4,
+        "recovered": 8,
+        "confirmed_per_mil": 36.210062163040185,
+        "deaths_per_mil": 0.5840332606941965,
+        "recovered_per_mil": 1.168066521388393
       }
     ],
-    "highest_confirmed": 187,
+    "highest_confirmed": 248,
     "population": 6848925
   },
   {
@@ -8542,9 +8716,18 @@
         "confirmed_per_mil": 5.5680446276175015,
         "deaths_per_mil": 0.4423213021939137,
         "recovered_per_mil": 1.3269639065817411
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 233,
+        "deaths": 20,
+        "recovered": 57,
+        "confirmed_per_mil": 6.062403730069523,
+        "deaths_per_mil": 0.5203780025810749,
+        "recovered_per_mil": 1.4830773073560635
       }
     ],
-    "highest_confirmed": 214,
+    "highest_confirmed": 233,
     "population": 38433600
   },
   {
@@ -8733,9 +8916,16 @@
         "recovered": 12,
         "confirmed_per_mil": 10.767198062401297,
         "recovered_per_mil": 2.4847380144002993
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 55,
+        "recovered": 17,
+        "confirmed_per_mil": 11.388382566001372,
+        "recovered_per_mil": 3.520045520400424
       }
     ],
-    "highest_confirmed": 52,
+    "highest_confirmed": 55,
     "population": 4829483
   },
   {
@@ -8744,132 +8934,154 @@
       {
         "date": "2020-02-23T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-24T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-25T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-26T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-27T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-28T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.026901689872692054
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.10760675949076821
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.10760675949076821
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 5,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.13450844936346026
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.1883118291088444
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.1883118291088444
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.1883118291088444
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 11,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.2959185885996126
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 16,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.43042703796307286
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 21,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.5649354873265332,
         "recovered_per_mil": 0.026901689872692054
@@ -8877,6 +9089,7 @@
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 22,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.5918371771992252,
         "recovered_per_mil": 0.026901689872692054
@@ -8884,6 +9097,7 @@
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 22,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.5918371771992252,
         "recovered_per_mil": 0.026901689872692054
@@ -8891,6 +9105,7 @@
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 22,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.5918371771992252,
         "recovered_per_mil": 0.026901689872692054
@@ -8898,6 +9113,7 @@
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 24,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.6456405569446093,
         "recovered_per_mil": 0.026901689872692054
@@ -8905,12 +9121,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 24,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.6456405569446093,
         "recovered_per_mil": 0.026901689872692054
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 40,
+        "deaths": 1,
+        "recovered": 1,
+        "confirmed_per_mil": 1.0760675949076821,
+        "deaths_per_mil": 0.026901689872692054,
+        "recovered_per_mil": 0.026901689872692054
       }
     ],
-    "highest_confirmed": 24,
+    "highest_confirmed": 40,
     "population": 37172386
   },
   {
@@ -9126,9 +9352,18 @@
         "confirmed_per_mil": 194.33695734590512,
         "deaths_per_mil": 0.6371703519537874,
         "recovered_per_mil": 79.64629399422341
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 332,
+        "deaths": 2,
+        "recovered": 149,
+        "confirmed_per_mil": 211.5405568486574,
+        "deaths_per_mil": 1.2743407039075747,
+        "recovered_per_mil": 94.93838244111431
       }
     ],
-    "highest_confirmed": 305,
+    "highest_confirmed": 332,
     "population": 1569439
   },
   {
@@ -9309,9 +9544,16 @@
         "recovered": 27,
         "confirmed_per_mil": 42.53972811796267,
         "recovered_per_mil": 6.525981018096545
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 188,
+        "recovered": 27,
+        "confirmed_per_mil": 45.44016412600558,
+        "recovered_per_mil": 6.525981018096545
       }
     ],
-    "highest_confirmed": 176,
+    "highest_confirmed": 188,
     "population": 4137309
   },
   {
@@ -9518,9 +9760,18 @@
         "confirmed_per_mil": 3.291621386151969,
         "deaths_per_mil": 0.35521094095165134,
         "recovered_per_mil": 0.7577833406968562
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 201,
+        "deaths": 17,
+        "recovered": 65,
+        "confirmed_per_mil": 4.759826608752128,
+        "deaths_per_mil": 0.4025723997452048,
+        "recovered_per_mil": 1.539247410790489
       }
     ],
-    "highest_confirmed": 139,
+    "highest_confirmed": 201,
     "population": 42228429
   },
   {
@@ -9719,9 +9970,18 @@
         "confirmed_per_mil": 50.37413801535677,
         "deaths_per_mil": 0.24453465055998433,
         "recovered_per_mil": 1.2226732527999216
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 254,
+        "deaths": 1,
+        "recovered": 5,
+        "confirmed_per_mil": 62.11180124223602,
+        "deaths_per_mil": 0.24453465055998433,
+        "recovered_per_mil": 1.2226732527999216
       }
     ],
-    "highest_confirmed": 206,
+    "highest_confirmed": 254,
     "population": 4089400
   },
   {
@@ -9944,9 +10204,18 @@
         "confirmed_per_mil": 772.0268658304196,
         "deaths_per_mil": 8.806390104529502,
         "recovered_per_mil": 1.7612780209059002
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 7245,
+        "deaths": 98,
+        "recovered": 131,
+        "confirmed_per_mil": 850.6972840975499,
+        "deaths_per_mil": 11.507016403251882,
+        "recovered_per_mil": 15.381828049244863
       }
     ],
-    "highest_confirmed": 6575,
+    "highest_confirmed": 7245,
     "population": 8516543
   },
   {
@@ -10156,9 +10425,18 @@
         "confirmed_per_mil": 318.07259311789926,
         "deaths_per_mil": 0.9042575497310569,
         "recovered_per_mil": 1.0172897434474388
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3244,
+        "deaths": 16,
+        "recovered": 9,
+        "confirmed_per_mil": 366.67643641594356,
+        "deaths_per_mil": 1.8085150994621138,
+        "recovered_per_mil": 1.0172897434474388
       }
     ],
-    "highest_confirmed": 2814,
+    "highest_confirmed": 3244,
     "population": 8847037
   },
   {
@@ -10398,9 +10676,18 @@
         "confirmed_per_mil": 99.39440329588689,
         "deaths_per_mil": 0.11256444314369976,
         "recovered_per_mil": 4.052319953173192
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1071,
+        "deaths": 1,
+        "recovered": 37,
+        "confirmed_per_mil": 120.55651860690244,
+        "deaths_per_mil": 0.11256444314369976,
+        "recovered_per_mil": 4.164884396316891
       }
     ],
-    "highest_confirmed": 883,
+    "highest_confirmed": 1071,
     "population": 8883800
   },
   {
@@ -10597,9 +10884,18 @@
         "confirmed_per_mil": 3.4399071545497977,
         "deaths_per_mil": 0.014136604744725195,
         "recovered_per_mil": 0.061258620560475846
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 776,
+        "deaths": 5,
+        "recovered": 5,
+        "confirmed_per_mil": 3.6566684273022507,
+        "deaths_per_mil": 0.023561007907875325,
+        "recovered_per_mil": 0.023561007907875325
       }
     ],
-    "highest_confirmed": 730,
+    "highest_confirmed": 776,
     "population": 212215030
   },
   {
@@ -10790,9 +11086,18 @@
         "confirmed_per_mil": 4.874221850890221,
         "deaths_per_mil": 0.07160952768203066,
         "recovered_per_mil": 0.009547937024270755
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1593,
+        "deaths": 25,
+        "recovered": 2,
+        "confirmed_per_mil": 7.604931839831656,
+        "deaths_per_mil": 0.11934921280338444,
+        "recovered_per_mil": 0.009547937024270755
       }
     ],
-    "highest_confirmed": 1021,
+    "highest_confirmed": 1593,
     "population": 209469333
   },
   {
@@ -10953,9 +11258,16 @@
         "recovered": 1,
         "confirmed_per_mil": 13.133208255159476,
         "recovered_per_mil": 0.2680246582685607
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 54,
+        "recovered": 3,
+        "confirmed_per_mil": 14.473331546502278,
+        "recovered_per_mil": 0.8040739748056821
       }
     ],
-    "highest_confirmed": 49,
+    "highest_confirmed": 54,
     "population": 3731000
   },
   {
@@ -11154,9 +11466,18 @@
         "confirmed_per_mil": 49.40495921387575,
         "deaths_per_mil": 1.2118197543026128,
         "recovered_per_mil": 1.771121179365357
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 624,
+        "deaths": 15,
+        "recovered": 19,
+        "confirmed_per_mil": 58.16734820652541,
+        "deaths_per_mil": 1.3982535626568608,
+        "recovered_per_mil": 1.771121179365357
       }
     ],
-    "highest_confirmed": 530,
+    "highest_confirmed": 624,
     "population": 10727668
   },
   {
@@ -11165,102 +11486,119 @@
       {
         "date": "2020-02-25T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-02-26T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-02-27T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-02-28T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.4800864923824676
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.4402594771474029
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.4402594771474029
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.4402594771474029
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.4402594771474029
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 3.3606054466772735
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 3.3606054466772735
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 7,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 3.3606054466772735
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 14,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 6.721210893354547,
         "recovered_per_mil": 0.4800864923824676
@@ -11268,6 +11606,7 @@
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 14,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 6.721210893354547,
         "recovered_per_mil": 0.4800864923824676
@@ -11275,6 +11614,7 @@
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 14,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 6.721210893354547,
         "recovered_per_mil": 0.4800864923824676
@@ -11282,6 +11622,7 @@
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 18,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 8.641556862884418,
         "recovered_per_mil": 0.4800864923824676
@@ -11289,6 +11630,7 @@
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 26,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 12.482248801944158,
         "recovered_per_mil": 0.4800864923824676
@@ -11296,6 +11638,7 @@
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 35,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 16.803027233386366,
         "recovered_per_mil": 0.4800864923824676
@@ -11303,6 +11646,7 @@
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 48,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 23.044151634358446,
         "recovered_per_mil": 0.4800864923824676
@@ -11310,6 +11654,7 @@
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 67,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 32.16579498962533,
         "recovered_per_mil": 0.4800864923824676
@@ -11317,12 +11662,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 85,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 40.80735185250975,
         "recovered_per_mil": 0.4800864923824676
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 114,
+        "deaths": 1,
+        "recovered": 1,
+        "confirmed_per_mil": 54.729860131601306,
+        "deaths_per_mil": 0.4800864923824676,
+        "recovered_per_mil": 0.4800864923824676
       }
     ],
-    "highest_confirmed": 85,
+    "highest_confirmed": 114,
     "population": 2082958
   },
   {
@@ -11523,9 +11878,18 @@
         "confirmed_per_mil": 398.5446159219139,
         "deaths_per_mil": 1.3171918373245501,
         "recovered_per_mil": 0.18817026247493573
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2383,
+        "deaths": 7,
+        "recovered": 1,
+        "confirmed_per_mil": 448.40973547777185,
+        "deaths_per_mil": 1.3171918373245501,
+        "recovered_per_mil": 0.18817026247493573
       }
     ],
-    "highest_confirmed": 2118,
+    "highest_confirmed": 2383,
     "population": 5314336
   },
   {
@@ -11534,48 +11898,56 @@
       {
         "date": "2020-02-25T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.051350687400841824
       },
       {
         "date": "2020-02-26T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.051350687400841824
       },
       {
         "date": "2020-02-27T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.15405206220252549
       },
       {
         "date": "2020-02-28T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.15405206220252549
       },
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.15405206220252549
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.15405206220252549
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.15405206220252549
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.2054027496033673,
         "recovered_per_mil": 0.051350687400841824
@@ -11583,6 +11955,7 @@
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 6,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.30810412440505097,
         "recovered_per_mil": 0.051350687400841824
@@ -11590,6 +11963,7 @@
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 9,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 0.46215618660757646,
         "recovered_per_mil": 0.051350687400841824
@@ -11597,6 +11971,7 @@
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 9,
+        "deaths": 0,
         "recovered": 3,
         "confirmed_per_mil": 0.46215618660757646,
         "recovered_per_mil": 0.15405206220252549
@@ -11604,6 +11979,7 @@
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 15,
+        "deaths": 0,
         "recovered": 3,
         "confirmed_per_mil": 0.7702603110126274,
         "recovered_per_mil": 0.15405206220252549
@@ -11611,6 +11987,7 @@
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 15,
+        "deaths": 0,
         "recovered": 3,
         "confirmed_per_mil": 0.7702603110126274,
         "recovered_per_mil": 0.15405206220252549
@@ -11618,6 +11995,7 @@
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 25,
+        "deaths": 0,
         "recovered": 3,
         "confirmed_per_mil": 1.2837671850210457,
         "recovered_per_mil": 0.15405206220252549
@@ -11625,6 +12003,7 @@
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 45,
+        "deaths": 0,
         "recovered": 6,
         "confirmed_per_mil": 2.3107809330378823,
         "recovered_per_mil": 0.30810412440505097
@@ -11632,6 +12011,7 @@
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 49,
+        "deaths": 0,
         "recovered": 6,
         "confirmed_per_mil": 2.5161836826412496,
         "recovered_per_mil": 0.30810412440505097
@@ -11639,6 +12019,7 @@
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 89,
+        "deaths": 0,
         "recovered": 7,
         "confirmed_per_mil": 4.570211178674922,
         "recovered_per_mil": 0.3594548118058928
@@ -11646,6 +12027,7 @@
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 123,
+        "deaths": 0,
         "recovered": 9,
         "confirmed_per_mil": 6.316134550303545,
         "recovered_per_mil": 0.46215618660757646
@@ -11653,6 +12035,7 @@
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 131,
+        "deaths": 0,
         "recovered": 9,
         "confirmed_per_mil": 6.726940049510279,
         "recovered_per_mil": 0.46215618660757646
@@ -11660,6 +12043,7 @@
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 158,
+        "deaths": 0,
         "recovered": 9,
         "confirmed_per_mil": 8.113408609333009,
         "recovered_per_mil": 0.46215618660757646
@@ -11667,6 +12051,7 @@
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 184,
+        "deaths": 0,
         "recovered": 16,
         "confirmed_per_mil": 9.448526481754897,
         "recovered_per_mil": 0.8216109984134692
@@ -11674,6 +12059,7 @@
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 260,
+        "deaths": 0,
         "recovered": 19,
         "confirmed_per_mil": 13.351178724218874,
         "recovered_per_mil": 0.9756630606159947
@@ -11681,6 +12067,7 @@
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 277,
+        "deaths": 0,
         "recovered": 25,
         "confirmed_per_mil": 14.224140410033186,
         "recovered_per_mil": 1.2837671850210457
@@ -11688,6 +12075,7 @@
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 308,
+        "deaths": 0,
         "recovered": 25,
         "confirmed_per_mil": 15.816011719459283,
         "recovered_per_mil": 1.2837671850210457
@@ -11695,12 +12083,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 367,
+        "deaths": 0,
         "recovered": 52,
         "confirmed_per_mil": 18.845702276108952,
         "recovered_per_mil": 2.670235744843775
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 433,
+        "deaths": 3,
+        "recovered": 64,
+        "confirmed_per_mil": 22.23484764456451,
+        "deaths_per_mil": 0.15405206220252549,
+        "recovered_per_mil": 3.2864439936538767
       }
     ],
-    "highest_confirmed": 367,
+    "highest_confirmed": 433,
     "population": 19473936
   },
   {
@@ -11856,9 +12254,16 @@
         "recovered": 1,
         "confirmed_per_mil": 231.66303778378722,
         "recovered_per_mil": 0.7570687509274092
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 326,
+        "recovered": 2,
+        "confirmed_per_mil": 246.8044128023354,
+        "recovered_per_mil": 1.5141375018548184
       }
     ],
-    "highest_confirmed": 306,
+    "highest_confirmed": 326,
     "population": 1320884
   },
   {
@@ -12058,9 +12463,18 @@
         "confirmed_per_mil": 4262.2465591238715,
         "deaths_per_mil": 591.9786887672043,
         "recovered_per_mil": 118.39573775344087
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 160,
+        "deaths": 20,
+        "recovered": 4,
+        "confirmed_per_mil": 4735.829510137634,
+        "deaths_per_mil": 591.9786887672043,
+        "recovered_per_mil": 118.39573775344087
       }
     ],
-    "highest_confirmed": 144,
+    "highest_confirmed": 160,
     "population": 33785
   },
   {
@@ -12212,6 +12626,13 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 76,
+        "recovered": 15,
+        "confirmed_per_mil": 8.012325486806757,
+        "recovered_per_mil": 1.5813800302908074
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 76,
         "recovered": 15,
         "confirmed_per_mil": 8.012325486806757,
@@ -12399,9 +12820,18 @@
         "confirmed_per_mil": 1337.7680485556064,
         "deaths_per_mil": 2.828262259102762,
         "recovered_per_mil": 62.221769700260765
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 568,
+        "deaths": 1,
+        "recovered": 36,
+        "confirmed_per_mil": 1606.4529631703688,
+        "deaths_per_mil": 2.828262259102762,
+        "recovered_per_mil": 101.81744132769944
       }
     ],
-    "highest_confirmed": 473,
+    "highest_confirmed": 568,
     "population": 353574
   },
   {
@@ -12575,9 +13005,18 @@
         "confirmed_per_mil": 29.75408428579264,
         "deaths_per_mil": 0.35848294320232094,
         "recovered_per_mil": 0.35848294320232094
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 131,
+        "deaths": 1,
+        "recovered": 1,
+        "confirmed_per_mil": 46.96126555950404,
+        "deaths_per_mil": 0.35848294320232094,
+        "recovered_per_mil": 0.35848294320232094
       }
     ],
-    "highest_confirmed": 83,
+    "highest_confirmed": 131,
     "population": 2789533
   },
   {
@@ -12765,9 +13204,18 @@
         "confirmed_per_mil": 1.608675270337483,
         "deaths_per_mil": 0.0158490174417486,
         "recovered_per_mil": 0.0316980348834972
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 251,
+        "deaths": 2,
+        "recovered": 4,
+        "confirmed_per_mil": 1.9890516889394494,
+        "deaths_per_mil": 0.0158490174417486,
+        "recovered_per_mil": 0.0316980348834972
       }
     ],
-    "highest_confirmed": 203,
+    "highest_confirmed": 251,
     "population": 126190788
   },
   {
@@ -13046,9 +13494,16 @@
         "recovered": 1,
         "confirmed_per_mil": 0.11231667748480482,
         "recovered_per_mil": 0.0051053035220365835
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 30,
+        "recovered": 2,
+        "confirmed_per_mil": 0.1531591056610975,
+        "recovered_per_mil": 0.010210607044073167
       }
     ],
-    "highest_confirmed": 22,
+    "highest_confirmed": 30,
     "population": 195874740
   },
   {
@@ -13223,9 +13678,18 @@
         "confirmed_per_mil": 161.73875132739096,
         "deaths_per_mil": 0.6181098776842966,
         "recovered_per_mil": 1.0301831294738277
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 906,
+        "deaths": 4,
+        "recovered": 5,
+        "confirmed_per_mil": 186.6691830606576,
+        "deaths_per_mil": 0.8241465035790622,
+        "recovered_per_mil": 1.0301831294738277
       }
     ],
-    "highest_confirmed": 785,
+    "highest_confirmed": 906,
     "population": 4853506
   },
   {
@@ -13235,90 +13699,105 @@
         "date": "2020-02-28T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6454729747518626
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 2,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 3.290945949503725
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 2,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 3.290945949503725
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 3,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 4.936418924255587
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 3,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 4.936418924255587
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 5,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 8.227364873759313
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 7,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 11.518310823263038
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 19,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 31.26398652028539
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 34,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 55.946081141563326
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 51,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 83.91912171234499,
         "deaths_per_mil": 1.6454729747518626
       },
@@ -13326,6 +13805,7 @@
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 59,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 97.0829055103599,
         "deaths_per_mil": 1.6454729747518626
       },
@@ -13333,6 +13813,7 @@
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 77,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 126.70141905589341,
         "deaths_per_mil": 1.6454729747518626
       },
@@ -13340,6 +13821,7 @@
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 140,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 230.36621646526075,
         "deaths_per_mil": 1.6454729747518626
       },
@@ -13347,6 +13829,7 @@
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 203,
         "deaths": 2,
+        "recovered": 0,
         "confirmed_per_mil": 334.0310138746281,
         "deaths_per_mil": 3.290945949503725
       },
@@ -13354,6 +13837,7 @@
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 335,
         "deaths": 4,
+        "recovered": 0,
         "confirmed_per_mil": 551.233446541874,
         "deaths_per_mil": 6.58189189900745
       },
@@ -13361,6 +13845,7 @@
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 484,
         "deaths": 4,
+        "recovered": 0,
         "confirmed_per_mil": 796.4089197799015,
         "deaths_per_mil": 6.58189189900745
       },
@@ -13368,11 +13853,21 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 670,
         "deaths": 8,
+        "recovered": 0,
         "confirmed_per_mil": 1102.466893083748,
         "deaths_per_mil": 13.1637837980149
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 798,
+        "deaths": 8,
+        "recovered": 6,
+        "confirmed_per_mil": 1313.0874338519864,
+        "deaths_per_mil": 13.1637837980149,
+        "recovered_per_mil": 9.872837848511175
       }
     ],
-    "highest_confirmed": 670,
+    "highest_confirmed": 798,
     "population": 607728
   },
   {
@@ -13381,115 +13876,144 @@
       {
         "date": "2020-02-28T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.851817382762007
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 2,
+        "recovered": 0,
         "confirmed_per_mil": 51.703634765524015
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 2,
+        "recovered": 0,
         "confirmed_per_mil": 51.703634765524015
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 2,
+        "recovered": 0,
         "confirmed_per_mil": 51.703634765524015
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 2,
+        "recovered": 0,
         "confirmed_per_mil": 51.703634765524015
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 7,
+        "recovered": 0,
         "confirmed_per_mil": 180.96272167933404
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 7,
+        "recovered": 0,
         "confirmed_per_mil": 180.96272167933404
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 7,
+        "recovered": 0,
         "confirmed_per_mil": 180.96272167933404
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 7,
+        "recovered": 0,
         "confirmed_per_mil": 180.96272167933404
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 11,
+        "recovered": 0,
         "confirmed_per_mil": 284.36999121038207
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 11,
+        "recovered": 0,
         "confirmed_per_mil": 284.36999121038207
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 23,
+        "recovered": 1,
+        "confirmed_per_mil": 594.5917998035262,
+        "recovered_per_mil": 25.851817382762007
       }
     ],
-    "highest_confirmed": 11,
+    "highest_confirmed": 23,
     "population": 38682
   },
   {
@@ -13634,9 +14158,16 @@
         "recovered": 27,
         "confirmed_per_mil": 172.91727256615343,
         "recovered_per_mil": 9.706374967330857
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 494,
+        "recovered": 33,
+        "confirmed_per_mil": 177.59071236523866,
+        "recovered_per_mil": 11.863347182293271
       }
     ],
-    "highest_confirmed": 481,
+    "highest_confirmed": 494,
     "population": 2781677
   },
   {
@@ -13797,9 +14328,18 @@
         "confirmed_per_mil": 29.61773744250369,
         "deaths_per_mil": 0.4097315456472842,
         "recovered_per_mil": 0.1755992338488361
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 789,
+        "deaths": 14,
+        "recovered": 3,
+        "confirmed_per_mil": 46.18259850224389,
+        "deaths_per_mil": 0.8194630912945684,
+        "recovered_per_mil": 0.1755992338488361
       }
     ],
-    "highest_confirmed": 506,
+    "highest_confirmed": 789,
     "population": 17084357
   },
   {
@@ -13971,9 +14511,18 @@
         "confirmed_per_mil": 5.330740246706658,
         "deaths_per_mil": 0.10058000465484261,
         "recovered_per_mil": 1.1063800512032687
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 65,
+        "deaths": 1,
+        "recovered": 10,
+        "confirmed_per_mil": 6.53770030256477,
+        "deaths_per_mil": 0.10058000465484261,
+        "recovered_per_mil": 1.005800046548426
       }
     ],
-    "highest_confirmed": 53,
+    "highest_confirmed": 65,
     "population": 9942334
   },
   {
@@ -14109,9 +14658,16 @@
         "recovered": 1,
         "confirmed_per_mil": 54.20465509577962,
         "recovered_per_mil": 0.33877909434862263
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 194,
+        "recovered": 2,
+        "confirmed_per_mil": 65.7231443036328,
+        "recovered_per_mil": 0.6775581886972453
       }
     ],
-    "highest_confirmed": 160,
+    "highest_confirmed": 194,
     "population": 2951776
   },
   {
@@ -14247,9 +14803,16 @@
         "deaths": 2,
         "confirmed_per_mil": 10.53902898844612,
         "deaths_per_mil": 0.18819694622225214
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 202,
+        "deaths": 3,
+        "confirmed_per_mil": 19.007891568447466,
+        "deaths_per_mil": 0.2822954193333782
       }
     ],
-    "highest_confirmed": 112,
+    "highest_confirmed": 202,
     "population": 10627165
   },
   {
@@ -14417,9 +14980,18 @@
         "confirmed_per_mil": 1.6812158149281766,
         "deaths_per_mil": 0.1419693354828238,
         "recovered_per_mil": 0.056040527164272554
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 514,
+        "deaths": 48,
+        "recovered": 29,
+        "confirmed_per_mil": 1.9203220641624061,
+        "deaths_per_mil": 0.17932968692567217,
+        "recovered_per_mil": 0.10834501918426026
       }
     ],
-    "highest_confirmed": 450,
+    "highest_confirmed": 514,
     "population": 267663435
   },
   {
@@ -14578,9 +15150,18 @@
         "confirmed_per_mil": 124.49228060326624,
         "deaths_per_mil": 1.1671151306556211,
         "recovered_per_mil": 0.48629797110650874
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1600,
+        "deaths": 14,
+        "recovered": 5,
+        "confirmed_per_mil": 155.6153507540828,
+        "deaths_per_mil": 1.3616343190982245,
+        "recovered_per_mil": 0.48629797110650874
       }
     ],
-    "highest_confirmed": 1280,
+    "highest_confirmed": 1600,
     "population": 10281762
   },
   {
@@ -14589,66 +15170,77 @@
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 12.986001090824091,
         "recovered_per_mil": 12.986001090824091
@@ -14656,12 +15248,14 @@
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.986001090824091
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 12.986001090824091,
         "recovered_per_mil": 12.986001090824091
@@ -14669,6 +15263,7 @@
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 12.986001090824091,
         "recovered_per_mil": 12.986001090824091
@@ -14676,6 +15271,7 @@
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 25.972002181648183,
         "recovered_per_mil": 12.986001090824091
@@ -14683,6 +15279,7 @@
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 39,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 506.4540425421395,
         "recovered_per_mil": 12.986001090824091
@@ -14690,6 +15287,7 @@
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 39,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 506.4540425421395,
         "recovered_per_mil": 12.986001090824091
@@ -14697,6 +15295,7 @@
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 53,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 688.2580578136768,
         "recovered_per_mil": 12.986001090824091
@@ -14704,6 +15303,7 @@
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 75,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 973.9500818118069,
         "recovered_per_mil": 12.986001090824091
@@ -14711,12 +15311,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 88,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 1142.76809599252,
         "recovered_per_mil": 12.986001090824091
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 113,
+        "deaths": 1,
+        "recovered": 1,
+        "confirmed_per_mil": 1467.4181232631222,
+        "deaths_per_mil": 12.986001090824091,
+        "recovered_per_mil": 12.986001090824091
       }
     ],
-    "highest_confirmed": 88,
+    "highest_confirmed": 113,
     "population": 77006
   },
   {
@@ -14853,9 +15463,16 @@
         "recovered": 1,
         "confirmed_per_mil": 64.3640263228105,
         "recovered_per_mil": 0.5190647284097621
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 139,
+        "recovered": 1,
+        "confirmed_per_mil": 72.14999724895694,
+        "recovered_per_mil": 0.5190647284097621
       }
     ],
-    "highest_confirmed": 124,
+    "highest_confirmed": 139,
     "population": 1926542
   },
   {
@@ -15021,9 +15638,18 @@
         "confirmed_per_mil": 2.6645100418444647,
         "deaths_per_mil": 0.08326593880763952,
         "recovered_per_mil": 0.08326593880763952
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 115,
+        "deaths": 4,
+        "recovered": 3,
+        "confirmed_per_mil": 3.1918609876261814,
+        "deaths_per_mil": 0.11102125174351936,
+        "recovered_per_mil": 0.08326593880763952
       }
     ],
-    "highest_confirmed": 96,
+    "highest_confirmed": 115,
     "population": 36029138
   },
   {
@@ -15160,9 +15786,16 @@
         "recovered": 16,
         "confirmed_per_mil": 11.632065771498096,
         "recovered_per_mil": 0.47477819475502436
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 511,
+        "recovered": 16,
+        "confirmed_per_mil": 15.16322859498859,
+        "recovered_per_mil": 0.47477819475502436
       }
     ],
-    "highest_confirmed": 392,
+    "highest_confirmed": 511,
     "population": 33699947
   },
   {
@@ -15301,9 +15934,16 @@
         "recovered": 5,
         "confirmed_per_mil": 2.9644842175906185,
         "recovered_per_mil": 0.3153706614458105
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 67,
+        "recovered": 5,
+        "confirmed_per_mil": 4.225966863373861,
+        "recovered_per_mil": 0.3153706614458105
       }
     ],
-    "highest_confirmed": 47,
+    "highest_confirmed": 67,
     "population": 15854360
   },
   {
@@ -15463,9 +16103,18 @@
         "confirmed_per_mil": 3.5510005258627237,
         "deaths_per_mil": 0.08989874749019554,
         "recovered_per_mil": 0.06742406061764665
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 225,
+        "deaths": 4,
+        "recovered": 3,
+        "confirmed_per_mil": 5.056804546323499,
+        "deaths_per_mil": 0.08989874749019554,
+        "recovered_per_mil": 0.06742406061764665
       }
     ],
-    "highest_confirmed": 158,
+    "highest_confirmed": 225,
     "population": 44494502
   },
   {
@@ -15474,108 +16123,126 @@
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.05339267751463493
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.05339267751463493
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.21357071005853973
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.21357071005853973
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.21357071005853973
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 8,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.42714142011707945
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 8,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.42714142011707945
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 13,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.6941048076902541
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 23,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.2280315828366035
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 23,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.2280315828366035
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 43,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 2.295885133129302
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 61,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 3.256953328392731
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 74,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 3.951058136082985
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 155,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 8.275865014768414
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 201,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 10.73192818044162
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 238,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.707457248483113
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 238,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 12.707457248483113
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 434,
+        "deaths": 0,
         "recovered": 6,
         "confirmed_per_mil": 23.17242204135156,
         "recovered_per_mil": 0.3203560650878096
@@ -15583,12 +16250,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 537,
+        "deaths": 0,
         "recovered": 6,
         "confirmed_per_mil": 28.67186782535896,
         "recovered_per_mil": 0.3203560650878096
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 632,
+        "deaths": 1,
+        "recovered": 8,
+        "confirmed_per_mil": 33.74417218924928,
+        "deaths_per_mil": 0.05339267751463493,
+        "recovered_per_mil": 0.42714142011707945
       }
     ],
-    "highest_confirmed": 537,
+    "highest_confirmed": 632,
     "population": 18729160
   },
   {
@@ -15716,9 +16393,16 @@
         "recovered": 1,
         "confirmed_per_mil": 8.537555854448131,
         "recovered_per_mil": 0.10044183358174273
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 112,
+        "recovered": 1,
+        "confirmed_per_mil": 11.249485361155186,
+        "recovered_per_mil": 0.10044183358174273
       }
     ],
-    "highest_confirmed": 85,
+    "highest_confirmed": 112,
     "population": 9956011
   },
   {
@@ -15866,9 +16550,18 @@
         "confirmed_per_mil": 1.0532799181471526,
         "deaths_per_mil": 0.0672306330732225,
         "recovered_per_mil": 0.0224102110244075
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 73,
+        "deaths": 3,
+        "recovered": 1,
+        "confirmed_per_mil": 1.6359454047817474,
+        "deaths_per_mil": 0.0672306330732225,
+        "recovered_per_mil": 0.0224102110244075
       }
     ],
-    "highest_confirmed": 47,
+    "highest_confirmed": 73,
     "population": 44622516
   },
   {
@@ -16014,9 +16707,18 @@
         "confirmed_per_mil": 10.543788198839467,
         "deaths_per_mil": 0.4094675028675521,
         "recovered_per_mil": 0.7165681300182162
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 131,
+        "deaths": 6,
+        "recovered": 16,
+        "confirmed_per_mil": 13.410060718912332,
+        "deaths_per_mil": 0.6142012543013282,
+        "recovered_per_mil": 1.6378700114702085
       }
     ],
-    "highest_confirmed": 103,
+    "highest_confirmed": 131,
     "population": 9768785
   },
   {
@@ -16109,6 +16811,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 37,
+        "confirmed_per_mil": 975.9957794777104
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 37,
         "confirmed_per_mil": 975.9957794777104
       }
@@ -16260,9 +16967,18 @@
         "confirmed_per_mil": 14.113230447883367,
         "deaths_per_mil": 0.13165326910338962,
         "recovered_per_mil": 0.026330653820677924
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 634,
+        "deaths": 7,
+        "recovered": 1,
+        "confirmed_per_mil": 16.693634522309804,
+        "deaths_per_mil": 0.18431457674474547,
+        "recovered_per_mil": 0.026330653820677924
       }
     ],
-    "highest_confirmed": 536,
+    "highest_confirmed": 634,
     "population": 37978548
   },
   {
@@ -16272,96 +16988,112 @@
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.08646626553236761
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.08646626553236761
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.08646626553236761
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.08646626553236761
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 2,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.17293253106473522
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 2,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.17293253106473522
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 5,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.43233132766183807
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 7,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.6052638587265733
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 7,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.6052638587265733
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 16,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.3834602485178817
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 18,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.5563927795826171
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 18,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.5563927795826171
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 20,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.7293253106473523
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 24,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 2.075190372776823
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 29,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 2.507521700438661
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 39,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 3.3721843557623368,
         "deaths_per_mil": 0.08646626553236761
       },
@@ -16369,6 +17101,7 @@
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 54,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 4.669178338747851,
         "deaths_per_mil": 0.08646626553236761
       },
@@ -16376,11 +17109,21 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 60,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 5.187975931942057,
         "deaths_per_mil": 0.08646626553236761
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 75,
+        "deaths": 3,
+        "recovered": 1,
+        "confirmed_per_mil": 6.484969914927571,
+        "deaths_per_mil": 0.25939879659710285,
+        "recovered_per_mil": 0.08646626553236761
       }
     ],
-    "highest_confirmed": 60,
+    "highest_confirmed": 75,
     "population": 11565204
   },
   {
@@ -16510,9 +17253,18 @@
         "confirmed_per_mil": 27.978936974887247,
         "deaths_per_mil": 0.30084878467620696,
         "recovered_per_mil": 0.6016975693524139
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 126,
+        "deaths": 1,
+        "recovered": 2,
+        "confirmed_per_mil": 37.90694686920208,
+        "deaths_per_mil": 0.30084878467620696,
+        "recovered_per_mil": 0.6016975693524139
       }
     ],
-    "highest_confirmed": 93,
+    "highest_confirmed": 126,
     "population": 3323929
   },
   {
@@ -16627,9 +17379,16 @@
         "deaths": 1,
         "confirmed_per_mil": 185.25935342067126,
         "deaths_per_mil": 0.48370588360488576
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 414,
+        "deaths": 2,
+        "confirmed_per_mil": 200.2542358124227,
+        "deaths_per_mil": 0.9674117672097715
       }
     ],
-    "highest_confirmed": 383,
+    "highest_confirmed": 414,
     "population": 2067372
   },
   {
@@ -16719,9 +17478,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 240,
         "confirmed_per_mil": 4.153713570504148
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 274,
+        "confirmed_per_mil": 4.742156326325568
       }
     ],
-    "highest_confirmed": 240,
+    "highest_confirmed": 274,
     "population": 57779622
   },
   {
@@ -16804,6 +17568,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 2.65113455303197
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 2.65113455303197
       }
@@ -16893,9 +17662,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 27,
         "confirmed_per_mil": 1.0707386673118595
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 40,
+        "confirmed_per_mil": 1.5862795071286806
       }
     ],
-    "highest_confirmed": 27,
+    "highest_confirmed": 40,
     "population": 25216237
   },
   {
@@ -16904,72 +17678,84 @@
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.020141520364537348
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.020141520364537348
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.020141520364537348
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.020141520364537348
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.06042456109361204
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 9,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.18127368328083615
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 9,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.18127368328083615
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 13,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.2618397647389855
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 22,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.44311344801982167
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 34,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 0.6848116923942699
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 54,
+        "deaths": 0,
         "recovered": 0,
         "confirmed_per_mil": 1.087642099685017
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 65,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 1.3091988236949277,
         "recovered_per_mil": 0.020141520364537348
@@ -16977,6 +17763,7 @@
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 93,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 1.8731613939019733,
         "recovered_per_mil": 0.020141520364537348
@@ -16984,6 +17771,7 @@
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 102,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 2.0544350771828097,
         "recovered_per_mil": 0.020141520364537348
@@ -16991,6 +17779,7 @@
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 128,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 2.5781146066607805,
         "recovered_per_mil": 0.020141520364537348
@@ -16998,12 +17787,22 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 196,
+        "deaths": 0,
         "recovered": 1,
         "confirmed_per_mil": 3.9477379914493205,
         "recovered_per_mil": 0.020141520364537348
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 231,
+        "deaths": 2,
+        "recovered": 3,
+        "confirmed_per_mil": 4.652691204208128,
+        "deaths_per_mil": 0.040283040729074696,
+        "recovered_per_mil": 0.06042456109361204
       }
     ],
-    "highest_confirmed": 196,
+    "highest_confirmed": 231,
     "population": 49648685
   },
   {
@@ -17124,9 +17923,18 @@
         "confirmed_per_mil": 23.40261641251492,
         "deaths_per_mil": 0.400044725000255,
         "recovered_per_mil": 0.400044725000255
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 134,
+        "deaths": 2,
+        "recovered": 2,
+        "confirmed_per_mil": 26.802996575017087,
+        "deaths_per_mil": 0.400044725000255,
+        "recovered_per_mil": 0.400044725000255
       }
     ],
-    "highest_confirmed": 117,
+    "highest_confirmed": 134,
     "population": 4999441
   },
   {
@@ -17250,9 +18058,18 @@
         "confirmed_per_mil": 9.940837636236367,
         "deaths_per_mil": 0.15630247855717558,
         "recovered_per_mil": 0.03126049571143511
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 363,
+        "deaths": 5,
+        "recovered": 1,
+        "confirmed_per_mil": 11.347559943250946,
+        "deaths_per_mil": 0.15630247855717558,
+        "recovered_per_mil": 0.03126049571143511
       }
     ],
-    "highest_confirmed": 318,
+    "highest_confirmed": 363,
     "population": 31989256
   },
   {
@@ -17377,9 +18194,18 @@
         "confirmed_per_mil": 24.491255046487552,
         "deaths_per_mil": 0.14322371372214943,
         "recovered_per_mil": 0.14322371372214943
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 222,
+        "deaths": 2,
+        "recovered": 1,
+        "confirmed_per_mil": 31.795664446317172,
+        "deaths_per_mil": 0.28644742744429885,
+        "recovered_per_mil": 0.14322371372214943
       }
     ],
-    "highest_confirmed": 171,
+    "highest_confirmed": 222,
     "population": 6982084
   },
   {
@@ -17389,78 +18215,91 @@
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.18358692501263538
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 1,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.18358692501263538
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 3,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.5507607750379061
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 3,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 0.5507607750379061
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 7,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.2851084750884476
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 10,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.8358692501263538
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 16,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 2.937390800202166
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 32,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 5.874781600404332
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 44,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 8.077824700555956
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 54,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 9.91369395068231
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 63,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 11.565976275796029
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 72,
         "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 13.218258600909747
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 105,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 19.276627126326716,
         "deaths_per_mil": 0.18358692501263538
       },
@@ -17468,6 +18307,7 @@
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 123,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 22.581191776554153,
         "deaths_per_mil": 0.18358692501263538
       },
@@ -17475,6 +18315,7 @@
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 137,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 25.151408726731045,
         "deaths_per_mil": 0.18358692501263538
       },
@@ -17482,11 +18323,21 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 178,
         "deaths": 1,
+        "recovered": 0,
         "confirmed_per_mil": 32.6784726522491,
         "deaths_per_mil": 0.18358692501263538
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 185,
+        "deaths": 1,
+        "recovered": 7,
+        "confirmed_per_mil": 33.96358112733755,
+        "deaths_per_mil": 0.18358692501263538,
+        "recovered_per_mil": 1.2851084750884476
       }
     ],
-    "highest_confirmed": 178,
+    "highest_confirmed": 185,
     "population": 5447011
   },
   {
@@ -17585,6 +18436,13 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 16,
+        "recovered": 1,
+        "confirmed_per_mil": 2.028116283061147,
+        "recovered_per_mil": 0.1267572676913217
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 16,
         "recovered": 1,
         "confirmed_per_mil": 2.028116283061147,
@@ -17695,9 +18553,16 @@
         "recovered": 2,
         "confirmed_per_mil": 150.97305234421856,
         "recovered_per_mil": 4.136248009430646
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 90,
+        "recovered": 2,
+        "confirmed_per_mil": 186.13116042437903,
+        "recovered_per_mil": 4.136248009430646
       }
     ],
-    "highest_confirmed": 73,
+    "highest_confirmed": 90,
     "population": 483530
   },
   {
@@ -17798,9 +18663,16 @@
         "deaths": 1,
         "confirmed_per_mil": 858.7376556462001,
         "deaths_per_mil": 26.835551738943753
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 37,
+        "deaths": 1,
+        "confirmed_per_mil": 992.9154143409189,
+        "deaths_per_mil": 26.835551738943753
       }
     ],
-    "highest_confirmed": 32,
+    "highest_confirmed": 37,
     "population": 37264
   },
   {
@@ -17915,9 +18787,18 @@
         "confirmed_per_mil": 23.20543673486123,
         "deaths_per_mil": 0.42709392763548276,
         "recovered_per_mil": 0.42709392763548276
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 187,
+        "deaths": 3,
+        "recovered": 3,
+        "confirmed_per_mil": 26.62218815594509,
+        "deaths_per_mil": 0.42709392763548276,
+        "recovered_per_mil": 0.42709392763548276
       }
     ],
-    "highest_confirmed": 163,
+    "highest_confirmed": 187,
     "population": 7024216
   },
   {
@@ -17990,6 +18871,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 13,
+        "confirmed_per_mil": 25.208650057398156
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 13,
         "confirmed_per_mil": 25.208650057398156
       }
@@ -18107,9 +18993,18 @@
         "confirmed_per_mil": 0.15493687224188737,
         "deaths_per_mil": 0.01239494977935099,
         "recovered_per_mil": 0.018592424669026487
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 27,
+        "deaths": 2,
+        "recovered": 3,
+        "confirmed_per_mil": 0.16733182202123836,
+        "deaths_per_mil": 0.01239494977935099,
+        "recovered_per_mil": 0.018592424669026487
       }
     ],
-    "highest_confirmed": 25,
+    "highest_confirmed": 27,
     "population": 161356039
   },
   {
@@ -18199,9 +19094,16 @@
         "deaths": 1,
         "confirmed_per_mil": 2.5876676646917494,
         "deaths_per_mil": 0.14375931470509717
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 22,
+        "deaths": 1,
+        "confirmed_per_mil": 3.162704923512138,
+        "deaths_per_mil": 0.14375931470509717
       }
     ],
-    "highest_confirmed": 18,
+    "highest_confirmed": 22,
     "population": 6956071
   },
   {
@@ -18309,9 +19211,18 @@
         "confirmed_per_mil": 26.514316335330747,
         "deaths_per_mil": 0.6977451667192301,
         "recovered_per_mil": 0.6977451667192301
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 89,
+        "deaths": 2,
+        "recovered": 2,
+        "confirmed_per_mil": 31.049659919005745,
+        "deaths_per_mil": 0.6977451667192301,
+        "recovered_per_mil": 0.6977451667192301
       }
     ],
-    "highest_confirmed": 76,
+    "highest_confirmed": 89,
     "population": 2866376
   },
   {
@@ -18320,70 +19231,105 @@
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 1.6817109727436694
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 2.522566459115504
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 6,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 5.045132918231008
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 6,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 5.045132918231008
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 14,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 11.771976809205686
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 26,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 21.862242645667703
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 26,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 21.862242645667703
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 33,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 27.748231050270544
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 46,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 38.67935237310439
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 49,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 41.2019188322199
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 67,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 56.337317586912924
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 67,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 56.337317586912924
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 84,
+        "deaths": 0,
+        "recovered": 0,
         "confirmed_per_mil": 70.63186085523411
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 95,
+        "deaths": 1,
+        "recovered": 3,
+        "confirmed_per_mil": 79.8812712053243,
+        "deaths_per_mil": 0.8408554863718347,
+        "recovered_per_mil": 2.522566459115504
       }
     ],
-    "highest_confirmed": 84,
+    "highest_confirmed": 95,
     "population": 1189265
   },
   {
@@ -18468,9 +19414,16 @@
         "recovered": 2,
         "confirmed_per_mil": 193.49033247700262,
         "recovered_per_mil": 4.662417650048256
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 88,
+        "recovered": 2,
+        "confirmed_per_mil": 205.14637660212327,
+        "recovered_per_mil": 4.662417650048256
       }
     ],
-    "highest_confirmed": 83,
+    "highest_confirmed": 88,
     "population": 428962
   },
   {
@@ -18955,9 +19908,17 @@
         "recovered": 0,
         "confirmed_per_mil": 77.90812089200784,
         "deaths_per_mil": 0.9383574527775279
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 33272,
+        "deaths": 417,
+        "recovered": 0,
+        "confirmed_per_mil": 101.69716341633195,
+        "deaths_per_mil": 1.274576735531691
       }
     ],
-    "highest_confirmed": 25489,
+    "highest_confirmed": 33272,
     "population": 327167434
   },
   {
@@ -19051,9 +20012,18 @@
         "confirmed_per_mil": 3.24025449161293,
         "deaths_per_mil": 0.10125795286290407,
         "recovered_per_mil": 0.25314488215726016
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 75,
+        "deaths": 4,
+        "recovered": 5,
+        "confirmed_per_mil": 3.7971732323589027,
+        "deaths_per_mil": 0.20251590572580813,
+        "recovered_per_mil": 0.25314488215726016
       }
     ],
-    "highest_confirmed": 64,
+    "highest_confirmed": 75,
     "population": 19751535
   },
   {
@@ -19122,6 +20092,10 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1
       }
     ],
     "highest_confirmed": 1
@@ -19186,6 +20160,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 3.1543671582432444
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 10,
         "confirmed_per_mil": 3.1543671582432444
       }
@@ -19278,9 +20257,16 @@
         "deaths": 1,
         "confirmed_per_mil": 47.88271034335974,
         "deaths_per_mil": 0.23941355171679868
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 245,
+        "deaths": 3,
+        "confirmed_per_mil": 58.65632017061568,
+        "deaths_per_mil": 0.718240655150396
       }
     ],
-    "highest_confirmed": 200,
+    "highest_confirmed": 245,
     "population": 4176873
   },
   {
@@ -19825,9 +20811,18 @@
         "confirmed_per_mil": 58.378149390046886,
         "deaths_per_mil": 2.340008472568265,
         "recovered_per_mil": 51.594350663804185
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 81397,
+        "deaths": 3265,
+        "recovered": 72362,
+        "confirmed_per_mil": 58.4442067019451,
+        "deaths_per_mil": 2.3443165581268444,
+        "recovered_per_mil": 51.9569478649846
       }
     ],
-    "highest_confirmed": 81305,
+    "highest_confirmed": 81397,
     "population": 1392730000
   },
   {
@@ -20113,9 +21108,18 @@
         "confirmed_per_mil": 251.9551616633437,
         "deaths_per_mil": 19.021942336155398,
         "recovered_per_mil": 93.33710137310185
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 21638,
+        "deaths": 1685,
+        "recovered": 7931,
+        "confirmed_per_mil": 264.5223574998268,
+        "deaths_per_mil": 20.5989542650526,
+        "recovered_per_mil": 96.95567138049387
       }
     ],
-    "highest_confirmed": 20610,
+    "highest_confirmed": 21638,
     "population": 81800269
   },
   {
@@ -20615,9 +21619,18 @@
         "confirmed_per_mil": 170.40682436047186,
         "deaths_per_mil": 1.97539448627891,
         "recovered_per_mil": 29.824583420289425
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 8897,
+        "deaths": 104,
+        "recovered": 2909,
+        "confirmed_per_mil": 172.30475239630846,
+        "deaths_per_mil": 2.014127711500065,
+        "recovered_per_mil": 56.33747608417009
       }
     ],
-    "highest_confirmed": 8799,
+    "highest_confirmed": 8897,
     "population": 51635256
   },
   {
@@ -21103,9 +22116,18 @@
         "confirmed_per_mil": 215.42907482505174,
         "deaths_per_mil": 8.389656992008806,
         "recovered_per_mil": 0.17913858345926278
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 16176,
+        "deaths": 674,
+        "recovered": 2206,
+        "confirmed_per_mil": 241.4788105030862,
+        "deaths_per_mil": 10.061617104295259,
+        "recovered_per_mil": 32.931642925927804
       }
     ],
-    "highest_confirmed": 14431,
+    "highest_confirmed": 16176,
     "population": 66987244
   },
   {
@@ -21374,6 +22396,12 @@
         "confirmed": 712,
         "deaths": 8,
         "recovered": 325
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 712,
+        "deaths": 8,
+        "recovered": 325
       }
     ],
     "highest_confirmed": 712
@@ -21572,9 +22600,18 @@
         "confirmed_per_mil": 244.93544226198915,
         "deaths_per_mil": 2.242366724933704,
         "recovered_per_mil": 0.17248974807182335
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1514,
+        "deaths": 13,
+        "recovered": 1,
+        "confirmed_per_mil": 261.14947858074055,
+        "deaths_per_mil": 2.242366724933704,
+        "recovered_per_mil": 0.17248974807182335
       }
     ],
-    "highest_confirmed": 1420,
+    "highest_confirmed": 1514,
     "population": 5797446
   },
   {
@@ -21583,110 +22620,137 @@
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 5,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 8,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 12,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 18,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 19,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 31,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 31,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 41,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 91,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 94,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 141,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 189,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 253,
+        "deaths": 0,
         "recovered": 0
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 298,
+        "deaths": 0,
         "recovered": 3
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 396,
+        "deaths": 0,
         "recovered": 3
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 464,
+        "deaths": 0,
         "recovered": 3
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 694,
+        "deaths": 0,
         "recovered": 3
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 833,
+        "deaths": 0,
         "recovered": 4
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 995,
+        "deaths": 0,
+        "recovered": 6
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1120,
+        "deaths": 1,
         "recovered": 6
       }
     ],
-    "highest_confirmed": 995
+    "highest_confirmed": 1120
   },
   {
     "country_name": "Taiwan*",
@@ -22050,9 +23114,15 @@
         "confirmed": 153,
         "deaths": 2,
         "recovered": 28
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 169,
+        "deaths": 2,
+        "recovered": 28
       }
     ],
-    "highest_confirmed": 153
+    "highest_confirmed": 169
   },
   {
     "country_name": "Vietnam",
@@ -22460,9 +23530,16 @@
         "recovered": 17,
         "confirmed_per_mil": 0.9838770291874971,
         "recovered_per_mil": 0.17793520740624946
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 113,
+        "recovered": 17,
+        "confirmed_per_mil": 1.1827457904062464,
+        "recovered_per_mil": 0.17793520740624946
       }
     ],
-    "highest_confirmed": 94,
+    "highest_confirmed": 113,
     "population": 95540395
   },
   {
@@ -22866,9 +23943,17 @@
         "confirmed_per_mil": 2.117968784877703,
         "deaths_per_mil": 0.006921466617247395,
         "recovered_per_mil": 0.08305759940696875
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 367,
+        "deaths": 0,
+        "recovered": 16,
+        "confirmed_per_mil": 2.540178248529794,
+        "recovered_per_mil": 0.11074346587595832
       }
     ],
-    "highest_confirmed": 306,
+    "highest_confirmed": 367,
     "population": 144478050
   },
   {
@@ -22980,9 +24065,18 @@
         "confirmed_per_mil": 22.56137610857437,
         "deaths_per_mil": 0.2820172013571796,
         "recovered_per_mil": 0.2820172013571796
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 94,
+        "deaths": 1,
+        "recovered": 1,
+        "confirmed_per_mil": 26.509616927574882,
+        "deaths_per_mil": 0.2820172013571796,
+        "recovered_per_mil": 0.2820172013571796
       }
     ],
-    "highest_confirmed": 80,
+    "highest_confirmed": 94,
     "population": 3545883
   },
   {
@@ -23042,9 +24136,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 19,
         "confirmed_per_mil": 1.6735455259874314
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 24,
+        "confirmed_per_mil": 2.113952243352545
       }
     ],
-    "highest_confirmed": 19,
+    "highest_confirmed": 24,
     "population": 11353142
   },
   {
@@ -23104,9 +24203,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 24,
         "confirmed_per_mil": 2.503253708309613
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 26,
+        "confirmed_per_mil": 2.711858184002081
       }
     ],
-    "highest_confirmed": 24,
+    "highest_confirmed": 26,
     "population": 9587522
   },
   {
@@ -23524,9 +24628,18 @@
         "confirmed_per_mil": 76.20810488761967,
         "deaths_per_mil": 3.519379621808368,
         "recovered_per_mil": 1.0076856182100884
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 5741,
+        "deaths": 282,
+        "recovered": 67,
+        "confirmed_per_mil": 86.34512140513608,
+        "deaths_per_mil": 4.2413036467947,
+        "recovered_per_mil": 1.0076856182100884
       }
     ],
-    "highest_confirmed": 5067,
+    "highest_confirmed": 5741,
     "population": 66488991
   },
   {
@@ -23598,9 +24711,16 @@
         "deaths": 1,
         "confirmed_per_mil": 0.2735877516238593,
         "deaths_per_mil": 0.011895119635819969
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 30,
+        "deaths": 1,
+        "confirmed_per_mil": 0.3568535890745991,
+        "deaths_per_mil": 0.011895119635819969
       }
     ],
-    "highest_confirmed": 23,
+    "highest_confirmed": 30,
     "population": 84068091
   },
   {
@@ -23672,6 +24792,13 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 14,
+        "recovered": 1,
+        "confirmed_per_mil": 0.5584535527598395,
+        "recovered_per_mil": 0.03988953948284568
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 14,
         "recovered": 1,
         "confirmed_per_mil": 0.5584535527598395,
@@ -23769,6 +24896,15 @@
         "confirmed_per_mil": 5.451717376156573,
         "deaths_per_mil": 0.3407323360097858,
         "recovered_per_mil": 0.6814646720195716
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 16,
+        "deaths": 1,
+        "recovered": 2,
+        "confirmed_per_mil": 5.451717376156573,
+        "deaths_per_mil": 0.3407323360097858,
+        "recovered_per_mil": 0.6814646720195716
       }
     ],
     "highest_confirmed": 16,
@@ -23847,9 +24983,16 @@
         "deaths": 9,
         "confirmed_per_mil": 8.138997161846657,
         "deaths_per_mil": 0.10932981262182075
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1236,
+        "deaths": 30,
+        "confirmed_per_mil": 15.014627600063383,
+        "deaths_per_mil": 0.36443270873940253
       }
     ],
-    "highest_confirmed": 670,
+    "highest_confirmed": 1236,
     "population": 82319724
   },
   {
@@ -23918,9 +25061,16 @@
         "deaths": 1,
         "confirmed_per_mil": 1.8521559712891127,
         "deaths_per_mil": 0.08819790339471965
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 35,
+        "deaths": 1,
+        "confirmed_per_mil": 3.086926618815188,
+        "deaths_per_mil": 0.08819790339471965
       }
     ],
-    "highest_confirmed": 21,
+    "highest_confirmed": 35,
     "population": 11338138
   },
   {
@@ -23995,6 +25145,13 @@
         "deaths": 1,
         "confirmed_per_mil": 8.985833192127382,
         "deaths_per_mil": 1.2836904560181976
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 7,
+        "deaths": 1,
+        "confirmed_per_mil": 8.985833192127382,
+        "deaths_per_mil": 1.2836904560181976
       }
     ],
     "highest_confirmed": 7,
@@ -24057,9 +25214,15 @@
         "confirmed": 53,
         "deaths": 0,
         "confirmed_per_mil": 2.899898935786334
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 60,
+        "deaths": 0,
+        "confirmed_per_mil": 3.2829044556071705
       }
     ],
-    "highest_confirmed": 53,
+    "highest_confirmed": 60,
     "population": 18276499
   },
   {
@@ -24068,50 +25231,66 @@
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 0.009155450103488172
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 0.009155450103488172
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 1,
+        "recovered": 0,
         "confirmed_per_mil": 0.009155450103488172
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 5,
+        "recovered": 0,
         "confirmed_per_mil": 0.04577725051744086
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 5,
+        "recovered": 0,
         "confirmed_per_mil": 0.04577725051744086
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 6,
+        "recovered": 0,
         "confirmed_per_mil": 0.05493270062092904
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 6,
+        "recovered": 0,
         "confirmed_per_mil": 0.05493270062092904
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 9,
+        "recovered": 0,
         "confirmed_per_mil": 0.08239905093139355
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 9,
+        "recovered": 0,
         "confirmed_per_mil": 0.08239905093139355
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 11,
+        "recovered": 4,
+        "confirmed_per_mil": 0.1007099511383699,
+        "recovered_per_mil": 0.03662180041395269
       }
     ],
-    "highest_confirmed": 9,
+    "highest_confirmed": 11,
     "population": 109224559
   },
   {
@@ -24179,6 +25358,13 @@
         "deaths": 1,
         "confirmed_per_mil": 0.04784513524898716,
         "deaths_per_mil": 0.02392256762449358
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "deaths": 1,
+        "confirmed_per_mil": 0.04784513524898716,
+        "deaths_per_mil": 0.02392256762449358
       }
     ],
     "highest_confirmed": 2,
@@ -24229,6 +25415,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.1611042990843315
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.1611042990843315
       }
@@ -24283,9 +25474,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 7,
         "confirmed_per_mil": 0.13620529328793937
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 15,
+        "confirmed_per_mil": 0.2918684856170129
       }
     ],
-    "highest_confirmed": 7,
+    "highest_confirmed": 15,
     "population": 51393010
   },
   {
@@ -24335,6 +25531,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 10.385725858380242
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 10.385725858380242
       }
     ],
     "highest_confirmed": 1,
@@ -24382,9 +25583,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 110,
         "confirmed_per_mil": 31.890537758541665
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 135,
+        "confirmed_per_mil": 39.13838724911931
       }
     ],
-    "highest_confirmed": 110,
+    "highest_confirmed": 135,
     "population": 3449299
   },
   {
@@ -24438,9 +25644,16 @@
         "deaths": 1,
         "confirmed_per_mil": 0.638288408803435,
         "deaths_per_mil": 0.03359412677912816
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 24,
+        "deaths": 1,
+        "confirmed_per_mil": 0.8062590426990758,
+        "deaths_per_mil": 0.03359412677912816
       }
     ],
-    "highest_confirmed": 19,
+    "highest_confirmed": 24,
     "population": 29767108
   },
   {
@@ -24483,6 +25696,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 1.2253625541457078
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 1.2253625541457078
       }
@@ -24530,6 +25748,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 7,
+        "confirmed_per_mil": 72.34244848184204
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 7,
         "confirmed_per_mil": 72.34244848184204
       }
@@ -24588,9 +25811,16 @@
         "recovered": 1,
         "confirmed_per_mil": 35.25540019196205,
         "recovered_per_mil": 0.7194979631012665
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 50,
+        "recovered": 1,
+        "confirmed_per_mil": 35.97489815506332,
+        "recovered_per_mil": 0.7194979631012665
       }
     ],
-    "highest_confirmed": 49,
+    "highest_confirmed": 50,
     "population": 1389858
   },
   {
@@ -24599,42 +25829,57 @@
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 2,
+        "recovered": 0,
         "confirmed_per_mil": 0.06927559720327486
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 10,
+        "recovered": 0,
         "confirmed_per_mil": 0.3463779860163743
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 17,
+        "recovered": 0,
         "confirmed_per_mil": 0.5888425762278364
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 33,
+        "recovered": 0,
         "confirmed_per_mil": 1.1430473538540353
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 36,
+        "recovered": 0,
         "confirmed_per_mil": 1.2469607496589477
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 42,
+        "recovered": 0,
         "confirmed_per_mil": 1.4547875412687723
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 42,
+        "recovered": 0,
         "confirmed_per_mil": 1.4547875412687723
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 70,
+        "recovered": 0,
         "confirmed_per_mil": 2.4246459021146203
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 70,
+        "recovered": 15,
+        "confirmed_per_mil": 2.4246459021146203,
+        "recovered_per_mil": 0.5195669790245615
       }
     ],
     "highest_confirmed": 70,
@@ -24682,9 +25927,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.88013370991321
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 4,
+        "confirmed_per_mil": 3.52053483965284
       }
     ],
-    "highest_confirmed": 1,
+    "highest_confirmed": 4,
     "population": 1136191
   },
   {
@@ -24739,9 +25989,16 @@
         "deaths": 1,
         "confirmed_per_mil": 1.88743792098713,
         "deaths_per_mil": 0.4718594802467825
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 5,
+        "deaths": 1,
+        "confirmed_per_mil": 2.3592974012339125,
+        "deaths_per_mil": 0.4718594802467825
       }
     ],
-    "highest_confirmed": 4,
+    "highest_confirmed": 5,
     "population": 2119275
   },
   {
@@ -24800,9 +26057,16 @@
         "deaths": 1,
         "confirmed_per_mil": 0.9856325502714633,
         "deaths_per_mil": 0.05797838531008608
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 19,
+        "deaths": 1,
+        "confirmed_per_mil": 1.1015893208916356,
+        "deaths_per_mil": 0.05797838531008608
       }
     ],
-    "highest_confirmed": 17,
+    "highest_confirmed": 19,
     "population": 17247807
   },
   {
@@ -24845,6 +26109,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.4542028410841913
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.4542028410841913
       }
@@ -24894,9 +26163,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 17,
         "confirmed_per_mil": 1.3818959759107892
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 19,
+        "confirmed_per_mil": 1.5444719730767644
       }
     ],
-    "highest_confirmed": 17,
+    "highest_confirmed": 19,
     "population": 12301939
   },
   {
@@ -24932,6 +26206,10 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2
       }
     ],
@@ -24977,6 +26255,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 9.073586788857636
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 9.073586788857636
       }
@@ -25026,9 +26309,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 4,
         "confirmed_per_mil": 6.944552953084336
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 5,
+        "confirmed_per_mil": 8.68069119135542
       }
     ],
-    "highest_confirmed": 4,
+    "highest_confirmed": 5,
     "population": 575991
   },
   {
@@ -25066,6 +26354,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 1.0838346068389964
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 1.0838346068389964
       }
@@ -25110,6 +26403,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.6428970483953611
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.6428970483953611
       }
     ],
     "highest_confirmed": 3,
@@ -25150,6 +26448,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.5720427819355755
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.5720427819355755
       }
@@ -25194,6 +26497,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 6,
         "confirmed_per_mil": 4.583742687020521
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 6,
+        "confirmed_per_mil": 4.583742687020521
       }
     ],
     "highest_confirmed": 6,
@@ -25234,6 +26542,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 43,
+        "confirmed_per_mil": 1.3047937515551322
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 43,
         "confirmed_per_mil": 1.3047937515551322
       }
@@ -25435,9 +26748,18 @@
         "confirmed_per_mil": 211.24696238184896,
         "deaths_per_mil": 7.950778529206952,
         "recovered_per_mil": 0.11606975955046646
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 4216,
+        "deaths": 180,
+        "recovered": 2,
+        "confirmed_per_mil": 244.67505313238328,
+        "deaths_per_mil": 10.446278359541981,
+        "recovered_per_mil": 0.11606975955046646
       }
     ],
-    "highest_confirmed": 3640,
+    "highest_confirmed": 4216,
     "population": 17231017
   },
   {
@@ -25470,6 +26792,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.17413945505495493
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.17413945505495493
       }
@@ -25509,6 +26836,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.6225387670453708
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.6225387670453708
       }
     ],
     "highest_confirmed": 3,
@@ -25544,6 +26876,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.06663044635602754
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.06663044635602754
       }
@@ -25583,9 +26920,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 6,
         "confirmed_per_mil": 0.1065372158998698
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 12,
+        "confirmed_per_mil": 0.2130744317997396
       }
     ],
-    "highest_confirmed": 6,
+    "highest_confirmed": 12,
     "population": 56318348
   },
   {
@@ -25615,9 +26957,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 6,
         "confirmed_per_mil": 20.932106711880017
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 14,
+        "confirmed_per_mil": 48.84158232772004
       }
     ],
-    "highest_confirmed": 6,
+    "highest_confirmed": 14,
     "population": 286641
   },
   {
@@ -25647,9 +26994,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 14,
         "confirmed_per_mil": 22.495561143738602
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 21,
+        "confirmed_per_mil": 33.7433417156079
       }
     ],
-    "highest_confirmed": 14,
+    "highest_confirmed": 21,
     "population": 622345
   },
   {
@@ -25669,6 +27021,10 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 14
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 14
       }
     ],
@@ -25701,9 +27057,16 @@
         "deaths": 1,
         "confirmed_per_mil": 11.064543433470085,
         "deaths_per_mil": 0.7903245309621489
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 18,
+        "deaths": 1,
+        "confirmed_per_mil": 14.225841557318681,
+        "deaths_per_mil": 0.7903245309621489
       }
     ],
-    "highest_confirmed": 14,
+    "highest_confirmed": 18,
     "population": 1265303
   },
   {
@@ -25728,9 +27091,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.11526167107984396
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.17289250661976593
       }
     ],
-    "highest_confirmed": 2,
+    "highest_confirmed": 3,
     "population": 17351822
   },
   {
@@ -25753,6 +27121,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 1.0428398615108665
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 1.0428398615108665
       }
@@ -25785,6 +27158,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.4385768706838554
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.4385768706838554
       }
@@ -25824,6 +27202,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 4,
         "confirmed_per_mil": 10.372368011617052
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 4,
+        "confirmed_per_mil": 10.372368011617052
       }
     ],
     "highest_confirmed": 4,
@@ -25844,6 +27227,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.06460886985454153
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.06460886985454153
       }
@@ -25868,6 +27256,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.46723557269998617
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.46723557269998617
       }
     ],
     "highest_confirmed": 3,
@@ -25890,9 +27283,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 1.1318836921593285
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 2.263767384318657
       }
     ],
-    "highest_confirmed": 1,
+    "highest_confirmed": 2,
     "population": 883483
   },
   {
@@ -25912,6 +27310,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.30933353625613313
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.30933353625613313
       }
     ],
     "highest_confirmed": 2,
@@ -25927,6 +27330,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.11423189256962663
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.11423189256962663
       }
@@ -25946,6 +27354,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.1798047607985345
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.1798047607985345
       }
     ],
     "highest_confirmed": 2,
@@ -25961,6 +27374,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.06491449041378508
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.06491449041378508
       }
@@ -25980,6 +27398,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 5.51706889163925
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 5.51706889163925
       }
     ],
     "highest_confirmed": 3,
@@ -25997,9 +27420,14 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.04455742623473529
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.08911485246947058
       }
     ],
-    "highest_confirmed": 1,
+    "highest_confirmed": 2,
     "population": 22442948
   },
   {
@@ -26012,6 +27440,11 @@
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.11619373492676774
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.11619373492676774
       }
@@ -26031,6 +27464,11 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.20777036222269407
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.20777036222269407
       }
     ],
     "highest_confirmed": 3,
@@ -26042,6 +27480,10 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1
       }
     ],
     "highest_confirmed": 1
@@ -26052,6 +27494,10 @@
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1
       }
     ],
     "highest_confirmed": 1
@@ -26061,6 +27507,11 @@
     "time_series": [
       {
         "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": null
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": null
       }
@@ -26075,9 +27526,72 @@
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.023406519825240366
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.023406519825240366
       }
     ],
     "highest_confirmed": 1,
     "population": 42723139
+  },
+  {
+    "country_name": "Dominica",
+    "time_series": [
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 13.961605584642236
+      }
+    ],
+    "highest_confirmed": 1,
+    "population": 71625
+  },
+  {
+    "country_name": "Grenada",
+    "time_series": [
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 8.972311446874944
+      }
+    ],
+    "highest_confirmed": 1,
+    "population": 111454
+  },
+  {
+    "country_name": "Mozambique",
+    "time_series": [
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.0339029457659323
+      }
+    ],
+    "highest_confirmed": 1,
+    "population": 29495962
+  },
+  {
+    "country_name": "Syria",
+    "time_series": [
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1
+      }
+    ],
+    "highest_confirmed": 1
+  },
+  {
+    "country_name": "Timor-Leste",
+    "time_series": [
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.7886609483490171
+      }
+    ],
+    "highest_confirmed": 1,
+    "population": 1267972
   }
 ]

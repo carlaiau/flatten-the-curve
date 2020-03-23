@@ -26,7 +26,11 @@ const createFiles = (country_path, cum_path) => {
         .pipe(csv())
         .on('data', data => { population_data.push(data) })
         .on('end', () => {  
-          countries = merge_object(restructure_inputs(confirmed), restructure_inputs(deaths), restructure_inputs(recovered))
+          countries = merge_object(
+            restructure_inputs(confirmed), 
+            restructure_inputs(deaths), 
+            restructure_inputs(recovered)
+          )
           countries = add_population_data(countries, population_data)
           
           // Relabel country names
@@ -110,10 +114,12 @@ const merge_object = (confirmed, deaths, recovered) => {
     const country_name = country['Country/Region']
     _.forEach(country, (val, key) => {
       if(validKey(key)){
-        combined[country_name].time_series.forEach( (time) => {
-          if(key == time.date)
-            time.deaths = parseInt(val)
-        })
+        if(combined.hasOwnProperty(country_name)){
+          combined[country_name].time_series.forEach( (time) => {
+            if(key == time.date)
+              time.deaths = parseInt(val)
+          })
+        }
         
       }
     })

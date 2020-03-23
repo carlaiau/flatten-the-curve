@@ -37,7 +37,7 @@ export default class IndexPage extends React.Component{
           death_scale: 'linear',
           death_graph_countries: default_countries,
           max_count: 40,
-          update_time: '5:12pm 22 March NZT'
+          update_time: '1:21am 23 March UTC'
       }
     }
 
@@ -115,9 +115,9 @@ export default class IndexPage extends React.Component{
                 <p className="is-size-6" style={{marginBottom: '20px'}}>
                     For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                 </p>
-                <p className="is-size-7">Global data updated at <strong>{this.state.update_time}</strong></p>
+                <p className="is-size-6" style={{marginBottom: '20px'}}>Global data updated at <strong>{this.state.update_time}</strong></p>
                 
-                <p className="is-size-7">
+                <p className="is-size-7" >
                     Please use the dropdown in the header for country-specific comparisons and projections.     
                 </p>                            
                 <p className="is-size-7">

@@ -32,7 +32,7 @@ export default class CountryPage extends React.Component{
         grid_height: 0,
         max_count: 30,
         is_mobile: false,
-        update_time: '5:12pm 22 March NZT',
+        update_time: '1:21am 23 March UTC',
         nz_time: '12:40pm 23 March NZT',
         forecast_faq_open: false,
     }
