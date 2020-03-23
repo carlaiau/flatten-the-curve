@@ -116,8 +116,12 @@ body{
     background: #b33939;
 }
 .hero.is-info,
-.box.is-info{
+.box.is-info,
+.button.is-info{
     background: #227093;
+
+
+
 }
 .is-danger{
     background: #84817a !important;

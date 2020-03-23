@@ -56,7 +56,7 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
             <div className="columns">
                 <div className="column" style={{textAlign:'left'}}>
                     <button 
-                        className="button has-background-info has-text-white" style={{marginTop: '10px'}} 
+                        className="button is-info has-text-white" style={{marginTop: '10px'}} 
                         onClick={() => allFn(countries_avaliable)}
                     >
                         <strong>Choose All</strong>    

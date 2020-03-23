@@ -3,6 +3,7 @@ import Hero from '../components/hero'
 import Footer from '../components/footer'
 import CumulativeGraph from '../components/cumulative-graph'
 import GraphOptionsSideBar from '../components/graph-options-sidebar'
+import EnhancedTable from '../components/enhanced-table'
 import styled from '@emotion/styled'
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -50,7 +51,7 @@ export default class IndexPage extends React.Component{
     countryChecked = (e, graph_type) => {
         const checkedCountry = e.target.value
         if(this.state[graph_type].includes(checkedCountry)){
-            const newCountries =  this.state[graph_type].filter(c => c != checkedCountry)
+            const newCountries =  this.state[graph_type].filter(c => c !== checkedCountry)
             return this.setState({[graph_type]: newCountries})
         }
         else{
@@ -126,6 +127,131 @@ export default class IndexPage extends React.Component{
             </div>
         )
 
+
+        const StyledTable = styled('div')`
+            .MuiTableHead-root{
+                background: #fff;
+                .MuiTableCell-alignRight{
+                    text-align: right;
+                }
+            }
+            .MuiTablePagination-root{
+                background: #227093;
+                max-width: 500px;
+                border-radius: 6px;
+                color: #fff;
+                margin-top: 20px;
+            }
+            td.MuiTableCell-body{
+                text-align: right;
+            }
+            .MuiTableBody-root{
+                .MuiTableRow-root{
+                    &:last-of-type{
+                        td, th{
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+
+            .MuiSelect-icon{
+                color: #fff;
+            }
+            .MuiSvgIcon-root{
+                color: #fff;
+            }
+            .Mui-disabled{
+                .MuiSvgIcon-root{
+                    opacity: 0.5;
+                }
+            }
+
+            @media screen and (max-width: 1216px){
+                .MuiTableCell-root{
+                    padding: 10px;
+                }
+                .MuiTableHead-root{
+                    .MuiTableCell-root{
+                        padding: 5px;
+                    }
+                }
+            }
+            @media screen and (max-width: 920px){
+                .MuiTableCell-root{
+                    padding: 10px 0;
+                }
+                .MuiTableCell-root{
+                    &.population{
+                        display: none;
+                    }
+                }
+                .MuiTableRow-root{
+                    td{
+                        &:first-of-type{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 768px){
+                .MuiTableCell-root{
+                    &.recovered,
+                    &.recovered_delta{
+                        display: none;
+                    }
+                }
+                .MuiTableBody-root{
+                    .MuiTableRow-root{
+                        td{
+                            &:nth-last-child(2),
+                            &:nth-last-child(3){
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 375px){
+                .MuiTableHead-root{
+                    .MuiTableCell-root{
+                        padding: 5px;
+                        line-height: 1.3;
+                        font-size: 9px;
+                    }
+                    .MuiTableSortLabel-icon{
+                        font-size: 12px;
+                    }
+                }
+                .MuiTableBody-root{
+                    .MuiTableCell-root{
+                        font-size: 9px;
+                        padding: 5px 0;
+                        
+                    }
+                    th{
+                        &.MuiTableCell-root{
+                            padding-left: 5px;
+                        }
+                    }
+                    .button{
+                        font-size: 8px !important;
+                        padding: 2px;
+                        margin-left: 2px;
+                    }
+                }
+                .MuiTablePagination-root{
+                    width: 80%;
+                    margin-left: 20px;
+                    .MuiToolbar-root{
+                        .MuiTypography-body2{
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+
+        `
         
         return(<>
             <SEO title={' COVID-19: Showing why we must act early'}/>
@@ -210,47 +336,31 @@ export default class IndexPage extends React.Component{
                             <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
                         </div>
                     </div>
+                    <div className="columns">
+                        <div className="column is-narrow is-one-third">
+                            <div className="box has-background-success is-full">
+                                <h3 className="is-size-3 has-text-white title">World Overview</h3>
+                                <p className="is-size-5 subtitle has-text-white">Sort using any column. Data updated at <strong className="has-text-white">{this.state.update_time}</strong>.</p>
+                                <p className="is-size-7 has-text-white">
+                                    Populations must be larger than 1 million with 10 confirmed cases
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns">
+                        <StyledTable className="column is-full">
+                            <EnhancedTable tidy={this.state.numberFormat}/>
+                        </StyledTable>
+                    </div>
                 </IndexContainer>
             </div>
             <Footer/>
         </>
     )
-    }
+}
 
-  /*
 
-  <div className="columns">
-                        <div className="column is-narrow">
-                            <div className="box has-background-success is-full">
-                                <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
-                                <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="columns" style={{marginBottom: '30px'}}>
-                        
-                    
-  <div className="column">
-                            <div className="box">
-                                <GraphOptionsSideBar
-                                    field='death'
-                                    scale={this.state.death_scale} 
-                                    max_count={this.state.max_count}
-                                    scaleFn={e => {this.setState({death_scale: e.target.value})}}
-                                    checkCountries={this.state.death_graph_countries}
-                                    checkFn={e => this.countryChecked(e, 'death_graph_countries')}
-                                    clearFn={e => this.setState({death_graph_countries: []})}
-                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
-                                />
-                            </div>
-                        </div>
-                        <div className="column is-three-quarters">
-                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
-                        </div>
-                        </div>
-
-*/
-  /**
+    /**
    * Calculate & Update state of new dimensions
    */
   updateDimensions = () => {  

@@ -114,7 +114,7 @@ const Hero = ({selected_country, selectFn}) => {
                     href={`https://www.facebook.com/sharer/sharer.php?u=https://flattenthecurve.co.nz/${selected_country ? 
                       selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`} 
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                   >
                     <span className="icon facebook">
                       <FontAwesomeIcon icon={faFacebookSquare} size="lg"/>
@@ -124,7 +124,7 @@ const Hero = ({selected_country, selectFn}) => {
                     href={`https://twitter.com/intent/tweet?url=https://flattenthecurve.co.nz/${selected_country ? 
                       selected_country.toLowerCase().replace(/\s+/g, "-"): ''}`}
                     target="_blank" 
-                    rel="noopener"
+                    rel="noopener noreferrer"
                   >
                     <span className="icon twitter">
                       <FontAwesomeIcon icon={faTwitter} size="lg"/>

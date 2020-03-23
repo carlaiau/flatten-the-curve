@@ -2,8 +2,6 @@
 // This utility function returns the top countries after filtering depending on the field to sort, which country is active
 // And the minimum days that the country has needed to been infected since the active countires infection level.
 
-import { max } from "date-fns"
-
 const GetTopCountries = ({max_count, countries, active_country, field, sort}) => {
     countries.forEach( (country) => {
         let earliest = {}
