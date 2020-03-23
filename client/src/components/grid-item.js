@@ -93,11 +93,11 @@ export default class GridItem extends React.Component{
                         <div className="column tallies">
                             <p>
                                 <strong>1</strong> case per
-                                <strong>{tidy(( country.population / country.highest.confirmed ).toFixed(0))}</strong>
+                                <strong>{tidy(( country.population / country.highest_confirmed ).toFixed(0))}</strong>
                             </p>
                             <p>
                                 <strong>1</strong> death per 
-                                <strong>{tidy(( country.population / country.highest.deaths ).toFixed(0))}</strong>
+                                <strong>{tidy(( country.population / country.highest_deaths ).toFixed(0))}</strong>
                             </p>
                         </div>
                     </DeathToll>
@@ -121,7 +121,7 @@ export default class GridItem extends React.Component{
                             {tidy(country.earliest.confirmed)}
                         </td>
                         <td className={per != 'total' ? 'is-hidden': ''}>
-                            {tidy(country.highest.confirmed)}
+                            {tidy(country.highest_confirmed)}
                         </td>
 
                         <td className={per == 'total' ? 'is-hidden': ''}>
@@ -135,7 +135,7 @@ export default class GridItem extends React.Component{
                             {tidy(country.earliest.deaths)}
                         </td>
                         <td className={per != 'total' ? 'is-hidden': ''}>
-                            {tidy(country.highest.deaths)}
+                            {tidy(country.highest_deaths)}
                         </td>
                         
                         
@@ -145,7 +145,7 @@ export default class GridItem extends React.Component{
                         <tr>
                         <th>Recovered</th>
                         <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.earliest.recovered)}</td>
-                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.highest.recovered)}</td>
+                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.highest_recovered)}</td>
                         
                         <td className={per == 'total' ? 'is-hidden': ''}>{country.earliest.recovered_per_mil ? country.earliest.recovered_per_mil.toFixed(2): ''}</td>
                         <td className={per == 'total' ? 'is-hidden': ''}>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>

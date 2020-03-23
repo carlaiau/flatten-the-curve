@@ -97,6 +97,7 @@ const merge_object = (confirmed, deaths, recovered) => {
     
     
     highest_confirmed = 0
+    
     time_series = []
     _.forEach(country, (val, key) => {
       if(validKey(key)){
@@ -111,14 +112,20 @@ const merge_object = (confirmed, deaths, recovered) => {
   })
 
   deaths.forEach( (country) => {
+    highest_deaths = 0
     const country_name = country['Country/Region']
     _.forEach(country, (val, key) => {
       if(validKey(key)){
         if(combined.hasOwnProperty(country_name)){
           combined[country_name].time_series.forEach( (time) => {
-            if(key == time.date)
+            if(key == time.date){
               time.deaths = parseInt(val)
+              if(val > highest_deaths)
+                highest_deaths = parseInt(val)
+            }
           })
+          combined[country_name].highest_deaths = highest_deaths
+
         }
         
       }
@@ -126,13 +133,18 @@ const merge_object = (confirmed, deaths, recovered) => {
   })
 
   recovered.forEach( (country) => {
+    highest_recovered = 0
     const country_name = country['Country/Region']
     _.forEach(country, (val, key) => {
       if(validKey(key)){
         combined[country_name].time_series.forEach( (time) => {
-          if(key == time.date)
+          if(key == time.date){
             time.recovered = parseInt(val)
+            if(time.recovered > highest_recovered)
+              highest_recovered = parseInt(val)
+          }
         })
+        combined[country_name].highest_recovered = highest_recovered
       }
     })
   })
@@ -210,8 +222,8 @@ const getCumulatives = (countries) => {
   countries.forEach(country => {
     const confirmed = []
     const deaths = []
-    
     let count_of_days = 0
+
     country.time_series.forEach(day => {
       if(day.confirmed >= 100 && count_of_days <= max_days){
         confirmed.push({

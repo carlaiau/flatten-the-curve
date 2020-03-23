@@ -510,6 +510,8 @@
       }
     ],
     "highest_confirmed": 599,
+    "highest_deaths": 1,
+    "highest_recovered": 44,
     "population": 69428524
   },
   {
@@ -1040,6 +1042,8 @@
       }
     ],
     "highest_confirmed": 1086,
+    "highest_deaths": 40,
+    "highest_recovered": 235,
     "population": 126529100
   },
   {
@@ -1513,6 +1517,8 @@
       }
     ],
     "highest_confirmed": 455,
+    "highest_deaths": 2,
+    "highest_recovered": 144,
     "population": 5638676
   },
   {
@@ -1908,6 +1914,7 @@
       }
     ],
     "highest_confirmed": 2,
+    "highest_recovered": 1,
     "population": 28087871
   },
   {
@@ -2372,6 +2379,8 @@
       }
     ],
     "highest_confirmed": 1306,
+    "highest_deaths": 10,
+    "highest_recovered": 139,
     "population": 31528585
   },
   {
@@ -2832,6 +2841,8 @@
       }
     ],
     "highest_confirmed": 1465,
+    "highest_deaths": 21,
+    "highest_recovered": 10,
     "population": 37058856
   },
   {
@@ -3313,6 +3324,8 @@
       }
     ],
     "highest_confirmed": 1314,
+    "highest_deaths": 7,
+    "highest_recovered": 88,
     "population": 24992369
   },
   {
@@ -3696,6 +3709,7 @@
       }
     ],
     "highest_confirmed": 84,
+    "highest_recovered": 1,
     "population": 16249798
   },
   {
@@ -4083,6 +4097,7 @@
       }
     ],
     "highest_confirmed": 82,
+    "highest_recovered": 3,
     "population": 21670000
   },
   {
@@ -4535,6 +4550,8 @@
       }
     ],
     "highest_confirmed": 24873,
+    "highest_deaths": 94,
+    "highest_recovered": 266,
     "population": 82927922
   },
   {
@@ -4962,6 +4979,8 @@
       }
     ],
     "highest_confirmed": 626,
+    "highest_deaths": 1,
+    "highest_recovered": 10,
     "population": 5518050
   },
   {
@@ -5390,6 +5409,8 @@
       }
     ],
     "highest_confirmed": 153,
+    "highest_deaths": 2,
+    "highest_recovered": 38,
     "population": 9630959
   },
   {
@@ -5858,6 +5879,8 @@
       }
     ],
     "highest_confirmed": 380,
+    "highest_deaths": 25,
+    "highest_recovered": 17,
     "population": 106651922
   },
   {
@@ -6284,6 +6307,8 @@
       }
     ],
     "highest_confirmed": 396,
+    "highest_deaths": 7,
+    "highest_recovered": 27,
     "population": 1352617328
   },
   {
@@ -6716,6 +6741,8 @@
       }
     ],
     "highest_confirmed": 59138,
+    "highest_deaths": 5476,
+    "highest_recovered": 7024,
     "population": 60431283
   },
   {
@@ -7113,6 +7140,8 @@
       }
     ],
     "highest_confirmed": 1934,
+    "highest_deaths": 21,
+    "highest_recovered": 16,
     "population": 10183175
   },
   {
@@ -7534,6 +7563,8 @@
       }
     ],
     "highest_confirmed": 28768,
+    "highest_deaths": 1772,
+    "highest_recovered": 2575,
     "population": 46723749
   },
   {
@@ -7924,6 +7955,8 @@
       }
     ],
     "highest_confirmed": 3401,
+    "highest_deaths": 75,
+    "highest_recovered": 263,
     "population": 11422068
   },
   {
@@ -8236,6 +8269,8 @@
       }
     ],
     "highest_confirmed": 327,
+    "highest_deaths": 14,
+    "highest_recovered": 56,
     "population": 98423595
   },
   {
@@ -8492,6 +8527,8 @@
       }
     ],
     "highest_confirmed": 248,
+    "highest_deaths": 4,
+    "highest_recovered": 8,
     "population": 6848925
   },
   {
@@ -8728,6 +8765,8 @@
       }
     ],
     "highest_confirmed": 233,
+    "highest_deaths": 20,
+    "highest_recovered": 57,
     "population": 38433600
   },
   {
@@ -8926,6 +8965,7 @@
       }
     ],
     "highest_confirmed": 55,
+    "highest_recovered": 17,
     "population": 4829483
   },
   {
@@ -9137,6 +9177,8 @@
       }
     ],
     "highest_confirmed": 40,
+    "highest_deaths": 1,
+    "highest_recovered": 1,
     "population": 37172386
   },
   {
@@ -9364,6 +9406,8 @@
       }
     ],
     "highest_confirmed": 332,
+    "highest_deaths": 2,
+    "highest_recovered": 149,
     "population": 1569439
   },
   {
@@ -9554,6 +9598,7 @@
       }
     ],
     "highest_confirmed": 188,
+    "highest_recovered": 27,
     "population": 4137309
   },
   {
@@ -9772,6 +9817,8 @@
       }
     ],
     "highest_confirmed": 201,
+    "highest_deaths": 17,
+    "highest_recovered": 65,
     "population": 42228429
   },
   {
@@ -9982,6 +10029,8 @@
       }
     ],
     "highest_confirmed": 254,
+    "highest_deaths": 1,
+    "highest_recovered": 5,
     "population": 4089400
   },
   {
@@ -10216,6 +10265,8 @@
       }
     ],
     "highest_confirmed": 7245,
+    "highest_deaths": 98,
+    "highest_recovered": 131,
     "population": 8516543
   },
   {
@@ -10437,6 +10488,8 @@
       }
     ],
     "highest_confirmed": 3244,
+    "highest_deaths": 16,
+    "highest_recovered": 9,
     "population": 8847037
   },
   {
@@ -10688,6 +10741,8 @@
       }
     ],
     "highest_confirmed": 1071,
+    "highest_deaths": 1,
+    "highest_recovered": 37,
     "population": 8883800
   },
   {
@@ -10896,6 +10951,8 @@
       }
     ],
     "highest_confirmed": 776,
+    "highest_deaths": 5,
+    "highest_recovered": 13,
     "population": 212215030
   },
   {
@@ -11098,6 +11155,8 @@
       }
     ],
     "highest_confirmed": 1593,
+    "highest_deaths": 25,
+    "highest_recovered": 2,
     "population": 209469333
   },
   {
@@ -11268,6 +11327,7 @@
       }
     ],
     "highest_confirmed": 54,
+    "highest_recovered": 3,
     "population": 3731000
   },
   {
@@ -11478,6 +11538,8 @@
       }
     ],
     "highest_confirmed": 624,
+    "highest_deaths": 15,
+    "highest_recovered": 19,
     "population": 10727668
   },
   {
@@ -11678,6 +11740,8 @@
       }
     ],
     "highest_confirmed": 114,
+    "highest_deaths": 1,
+    "highest_recovered": 1,
     "population": 2082958
   },
   {
@@ -11890,6 +11954,8 @@
       }
     ],
     "highest_confirmed": 2383,
+    "highest_deaths": 7,
+    "highest_recovered": 1,
     "population": 5314336
   },
   {
@@ -12099,6 +12165,8 @@
       }
     ],
     "highest_confirmed": 433,
+    "highest_deaths": 3,
+    "highest_recovered": 64,
     "population": 19473936
   },
   {
@@ -12264,6 +12332,7 @@
       }
     ],
     "highest_confirmed": 326,
+    "highest_recovered": 2,
     "population": 1320884
   },
   {
@@ -12475,6 +12544,8 @@
       }
     ],
     "highest_confirmed": 160,
+    "highest_deaths": 20,
+    "highest_recovered": 4,
     "population": 33785
   },
   {
@@ -12640,6 +12711,7 @@
       }
     ],
     "highest_confirmed": 76,
+    "highest_recovered": 15,
     "population": 9485386
   },
   {
@@ -12832,6 +12904,8 @@
       }
     ],
     "highest_confirmed": 568,
+    "highest_deaths": 5,
+    "highest_recovered": 36,
     "population": 353574
   },
   {
@@ -13017,6 +13091,8 @@
       }
     ],
     "highest_confirmed": 131,
+    "highest_deaths": 1,
+    "highest_recovered": 1,
     "population": 2789533
   },
   {
@@ -13216,6 +13292,8 @@
       }
     ],
     "highest_confirmed": 251,
+    "highest_deaths": 2,
+    "highest_recovered": 4,
     "population": 126190788
   },
   {
@@ -13339,7 +13417,7 @@
       {
         "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 66,
-        "confirmed_per_mil": 13.509364446
+        "confirmed_per_mil": 13.509364445809025
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
@@ -13504,6 +13582,7 @@
       }
     ],
     "highest_confirmed": 30,
+    "highest_recovered": 2,
     "population": 195874740
   },
   {
@@ -13690,6 +13769,8 @@
       }
     ],
     "highest_confirmed": 906,
+    "highest_deaths": 4,
+    "highest_recovered": 5,
     "population": 4853506
   },
   {
@@ -13868,6 +13949,8 @@
       }
     ],
     "highest_confirmed": 798,
+    "highest_deaths": 8,
+    "highest_recovered": 6,
     "population": 607728
   },
   {
@@ -14014,6 +14097,7 @@
       }
     ],
     "highest_confirmed": 23,
+    "highest_recovered": 1,
     "population": 38682
   },
   {
@@ -14168,6 +14252,7 @@
       }
     ],
     "highest_confirmed": 494,
+    "highest_recovered": 33,
     "population": 2781677
   },
   {
@@ -14340,6 +14425,8 @@
       }
     ],
     "highest_confirmed": 789,
+    "highest_deaths": 14,
+    "highest_recovered": 3,
     "population": 17084357
   },
   {
@@ -14523,6 +14610,8 @@
       }
     ],
     "highest_confirmed": 65,
+    "highest_deaths": 1,
+    "highest_recovered": 11,
     "population": 9942334
   },
   {
@@ -14668,6 +14757,7 @@
       }
     ],
     "highest_confirmed": 194,
+    "highest_recovered": 2,
     "population": 2951776
   },
   {
@@ -14813,6 +14903,7 @@
       }
     ],
     "highest_confirmed": 202,
+    "highest_deaths": 3,
     "population": 10627165
   },
   {
@@ -14992,6 +15083,8 @@
       }
     ],
     "highest_confirmed": 514,
+    "highest_deaths": 48,
+    "highest_recovered": 29,
     "population": 267663435
   },
   {
@@ -15162,6 +15255,8 @@
       }
     ],
     "highest_confirmed": 1600,
+    "highest_deaths": 14,
+    "highest_recovered": 5,
     "population": 10281762
   },
   {
@@ -15327,6 +15422,8 @@
       }
     ],
     "highest_confirmed": 113,
+    "highest_deaths": 1,
+    "highest_recovered": 1,
     "population": 77006
   },
   {
@@ -15473,6 +15570,7 @@
       }
     ],
     "highest_confirmed": 139,
+    "highest_recovered": 1,
     "population": 1926542
   },
   {
@@ -15650,6 +15748,8 @@
       }
     ],
     "highest_confirmed": 115,
+    "highest_deaths": 4,
+    "highest_recovered": 3,
     "population": 36029138
   },
   {
@@ -15796,6 +15896,7 @@
       }
     ],
     "highest_confirmed": 511,
+    "highest_recovered": 16,
     "population": 33699947
   },
   {
@@ -15944,6 +16045,7 @@
       }
     ],
     "highest_confirmed": 67,
+    "highest_recovered": 5,
     "population": 15854360
   },
   {
@@ -16115,6 +16217,8 @@
       }
     ],
     "highest_confirmed": 225,
+    "highest_deaths": 4,
+    "highest_recovered": 3,
     "population": 44494502
   },
   {
@@ -16266,6 +16370,8 @@
       }
     ],
     "highest_confirmed": 632,
+    "highest_deaths": 1,
+    "highest_recovered": 8,
     "population": 18729160
   },
   {
@@ -16403,6 +16509,7 @@
       }
     ],
     "highest_confirmed": 112,
+    "highest_recovered": 1,
     "population": 9956011
   },
   {
@@ -16562,6 +16669,8 @@
       }
     ],
     "highest_confirmed": 73,
+    "highest_deaths": 3,
+    "highest_recovered": 1,
     "population": 44622516
   },
   {
@@ -16719,6 +16828,8 @@
       }
     ],
     "highest_confirmed": 131,
+    "highest_deaths": 6,
+    "highest_recovered": 16,
     "population": 9768785
   },
   {
@@ -16979,6 +17090,8 @@
       }
     ],
     "highest_confirmed": 634,
+    "highest_deaths": 7,
+    "highest_recovered": 13,
     "population": 37978548
   },
   {
@@ -17124,6 +17237,8 @@
       }
     ],
     "highest_confirmed": 75,
+    "highest_deaths": 3,
+    "highest_recovered": 1,
     "population": 11565204
   },
   {
@@ -17265,6 +17380,8 @@
       }
     ],
     "highest_confirmed": 126,
+    "highest_deaths": 1,
+    "highest_recovered": 2,
     "population": 3323929
   },
   {
@@ -17389,6 +17506,7 @@
       }
     ],
     "highest_confirmed": 414,
+    "highest_deaths": 2,
     "population": 2067372
   },
   {
@@ -17803,6 +17921,8 @@
       }
     ],
     "highest_confirmed": 231,
+    "highest_deaths": 2,
+    "highest_recovered": 3,
     "population": 49648685
   },
   {
@@ -17935,6 +18055,8 @@
       }
     ],
     "highest_confirmed": 134,
+    "highest_deaths": 2,
+    "highest_recovered": 2,
     "population": 4999441
   },
   {
@@ -18070,6 +18192,8 @@
       }
     ],
     "highest_confirmed": 363,
+    "highest_deaths": 5,
+    "highest_recovered": 1,
     "population": 31989256
   },
   {
@@ -18206,6 +18330,8 @@
       }
     ],
     "highest_confirmed": 222,
+    "highest_deaths": 2,
+    "highest_recovered": 1,
     "population": 6982084
   },
   {
@@ -18338,6 +18464,8 @@
       }
     ],
     "highest_confirmed": 185,
+    "highest_deaths": 1,
+    "highest_recovered": 7,
     "population": 5447011
   },
   {
@@ -18450,6 +18578,7 @@
       }
     ],
     "highest_confirmed": 16,
+    "highest_recovered": 1,
     "population": 7889094
   },
   {
@@ -18563,6 +18692,7 @@
       }
     ],
     "highest_confirmed": 90,
+    "highest_recovered": 2,
     "population": 483530
   },
   {
@@ -18673,6 +18803,7 @@
       }
     ],
     "highest_confirmed": 37,
+    "highest_deaths": 1,
     "population": 37264
   },
   {
@@ -18799,6 +18930,8 @@
       }
     ],
     "highest_confirmed": 187,
+    "highest_deaths": 3,
+    "highest_recovered": 3,
     "population": 7024216
   },
   {
@@ -19005,6 +19138,8 @@
       }
     ],
     "highest_confirmed": 27,
+    "highest_deaths": 2,
+    "highest_recovered": 3,
     "population": 161356039
   },
   {
@@ -19104,6 +19239,7 @@
       }
     ],
     "highest_confirmed": 22,
+    "highest_deaths": 1,
     "population": 6956071
   },
   {
@@ -19223,6 +19359,8 @@
       }
     ],
     "highest_confirmed": 89,
+    "highest_deaths": 2,
+    "highest_recovered": 2,
     "population": 2866376
   },
   {
@@ -19330,6 +19468,8 @@
       }
     ],
     "highest_confirmed": 95,
+    "highest_deaths": 1,
+    "highest_recovered": 3,
     "population": 1189265
   },
   {
@@ -19424,6 +19564,7 @@
       }
     ],
     "highest_confirmed": 88,
+    "highest_recovered": 2,
     "population": 428962
   },
   {
@@ -19919,6 +20060,8 @@
       }
     ],
     "highest_confirmed": 33272,
+    "highest_deaths": 417,
+    "highest_recovered": 17,
     "population": 327167434
   },
   {
@@ -20024,6 +20167,8 @@
       }
     ],
     "highest_confirmed": 75,
+    "highest_deaths": 4,
+    "highest_recovered": 5,
     "population": 19751535
   },
   {
@@ -20267,6 +20412,7 @@
       }
     ],
     "highest_confirmed": 245,
+    "highest_deaths": 3,
     "population": 4176873
   },
   {
@@ -20823,6 +20969,8 @@
       }
     ],
     "highest_confirmed": 81397,
+    "highest_deaths": 3265,
+    "highest_recovered": 72362,
     "population": 1392730000
   },
   {
@@ -21120,6 +21268,8 @@
       }
     ],
     "highest_confirmed": 21638,
+    "highest_deaths": 1685,
+    "highest_recovered": 7931,
     "population": 81800269
   },
   {
@@ -21631,6 +21781,8 @@
       }
     ],
     "highest_confirmed": 8897,
+    "highest_deaths": 104,
+    "highest_recovered": 2909,
     "population": 51635256
   },
   {
@@ -22128,6 +22280,8 @@
       }
     ],
     "highest_confirmed": 16176,
+    "highest_deaths": 674,
+    "highest_recovered": 2206,
     "population": 66987244
   },
   {
@@ -22404,7 +22558,9 @@
         "recovered": 325
       }
     ],
-    "highest_confirmed": 712
+    "highest_confirmed": 712,
+    "highest_deaths": 8,
+    "highest_recovered": 325
   },
   {
     "country_name": "Denmark",
@@ -22612,6 +22768,8 @@
       }
     ],
     "highest_confirmed": 1514,
+    "highest_deaths": 13,
+    "highest_recovered": 1,
     "population": 5797446
   },
   {
@@ -22750,7 +22908,9 @@
         "recovered": 6
       }
     ],
-    "highest_confirmed": 1120
+    "highest_confirmed": 1120,
+    "highest_deaths": 1,
+    "highest_recovered": 6
   },
   {
     "country_name": "Taiwan*",
@@ -23122,7 +23282,9 @@
         "recovered": 28
       }
     ],
-    "highest_confirmed": 169
+    "highest_confirmed": 169,
+    "highest_deaths": 2,
+    "highest_recovered": 28
   },
   {
     "country_name": "Vietnam",
@@ -23540,6 +23702,7 @@
       }
     ],
     "highest_confirmed": 113,
+    "highest_recovered": 17,
     "population": 95540395
   },
   {
@@ -23954,6 +24117,8 @@
       }
     ],
     "highest_confirmed": 367,
+    "highest_deaths": 1,
+    "highest_recovered": 16,
     "population": 144478050
   },
   {
@@ -24077,6 +24242,8 @@
       }
     ],
     "highest_confirmed": 94,
+    "highest_deaths": 1,
+    "highest_recovered": 1,
     "population": 3545883
   },
   {
@@ -24640,6 +24807,8 @@
       }
     ],
     "highest_confirmed": 5741,
+    "highest_deaths": 282,
+    "highest_recovered": 67,
     "population": 66488991
   },
   {
@@ -24721,6 +24890,7 @@
       }
     ],
     "highest_confirmed": 30,
+    "highest_deaths": 1,
     "population": 84068091
   },
   {
@@ -24806,6 +24976,7 @@
       }
     ],
     "highest_confirmed": 14,
+    "highest_recovered": 1,
     "population": 25069229
   },
   {
@@ -24908,6 +25079,8 @@
       }
     ],
     "highest_confirmed": 16,
+    "highest_deaths": 1,
+    "highest_recovered": 2,
     "population": 2934855
   },
   {
@@ -24993,6 +25166,7 @@
       }
     ],
     "highest_confirmed": 1236,
+    "highest_deaths": 30,
     "population": 82319724
   },
   {
@@ -25071,6 +25245,7 @@
       }
     ],
     "highest_confirmed": 35,
+    "highest_deaths": 1,
     "population": 11338138
   },
   {
@@ -25155,6 +25330,7 @@
       }
     ],
     "highest_confirmed": 7,
+    "highest_deaths": 1,
     "population": 779004
   },
   {
@@ -25223,6 +25399,7 @@
       }
     ],
     "highest_confirmed": 60,
+    "highest_deaths": 3,
     "population": 18276499
   },
   {
@@ -25291,6 +25468,7 @@
       }
     ],
     "highest_confirmed": 11,
+    "highest_recovered": 4,
     "population": 109224559
   },
   {
@@ -25368,6 +25546,7 @@
       }
     ],
     "highest_confirmed": 2,
+    "highest_deaths": 1,
     "population": 41801533
   },
   {
@@ -25654,6 +25833,7 @@
       }
     ],
     "highest_confirmed": 24,
+    "highest_deaths": 1,
     "population": 29767108
   },
   {
@@ -25821,6 +26001,7 @@
       }
     ],
     "highest_confirmed": 50,
+    "highest_recovered": 1,
     "population": 1389858
   },
   {
@@ -25883,6 +26064,7 @@
       }
     ],
     "highest_confirmed": 70,
+    "highest_recovered": 15,
     "population": 28870195
   },
   {
@@ -25999,6 +26181,7 @@
       }
     ],
     "highest_confirmed": 5,
+    "highest_deaths": 1,
     "population": 2119275
   },
   {
@@ -26067,6 +26250,7 @@
       }
     ],
     "highest_confirmed": 19,
+    "highest_deaths": 1,
     "population": 17247807
   },
   {
@@ -26760,6 +26944,8 @@
       }
     ],
     "highest_confirmed": 4216,
+    "highest_deaths": 180,
+    "highest_recovered": 2,
     "population": 17231017
   },
   {
@@ -27067,6 +27253,7 @@
       }
     ],
     "highest_confirmed": 18,
+    "highest_deaths": 1,
     "population": 1265303
   },
   {
