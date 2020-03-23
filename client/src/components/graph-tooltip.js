@@ -109,32 +109,6 @@ const SingularGraphTooltip = (tooltipProps)  => {
                     </TooltipBox>
                     : <></>
                 }
-
-                { 
-                    growth  & growth > value ?
-                    <TooltipBox className={`box has-background-dark`}>
-                        <p className="is-size-7">
-                            Below by
-                            <br/>
-                            <strong>
-                            {new Intl.NumberFormat().format(growth - value, 2)}
-                            </strong>
-                        </p>
-                    </TooltipBox>
-                    : <></>
-                }
-                { 
-                    growth  & growth < value ?
-                    <TooltipBox className={`box has-background-newt`}>
-                        <p className="is-size-7">
-                            Above by<br/>
-                            <strong>
-                            {new Intl.NumberFormat().format(value - growth, 2)}
-                            </strong>
-                        </p>
-                    </TooltipBox>
-                    : <></>
-                }
             </>
         )
 }

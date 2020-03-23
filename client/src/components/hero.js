@@ -16,7 +16,11 @@ const Hero = ({selected_country, selectFn}) => {
     {   path: '/new-zealand',     label: 'NZ'       },
     {   path: '/australia',       label: 'AU'       },
     {   path: '/united-kingdom',  label: 'UK'       },
-    {   path: '/united-states',   label: 'US'       }
+    {   path: '/united-states',   label: 'US'       },
+    {   path: '/italy',   label: 'Italy'       },
+    {   path: '/spain',   label: 'Spain'       },
+    {   path: '/singapore',   label: 'Singapore'       },
+    {   path: '/south-korea',   label: 'South Korea'       },
     
   ]
 
@@ -71,7 +75,7 @@ const Hero = ({selected_country, selectFn}) => {
                 <div className="navbar-end">
                   {
                     links.map( (link, i) => (
-                      <Link key={i} to={link.path} className="navbar-item" activeClassName="is-active">{link.label}</Link>
+                      <Link key={i} to={link.path} className="navbar-item is-size-7" activeClassName="is-active">{link.label}</Link>
                     ))
 
                   }

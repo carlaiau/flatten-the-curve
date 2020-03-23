@@ -1,6 +1,7 @@
 import React from 'react'
 import { parseJSON, formatDistance } from "date-fns"
 import GridItemDetail from './grid-item-detail'
+import { Link } from "gatsby"
 import styled from '@emotion/styled'
 
 export default class GridItem extends React.Component{
@@ -76,13 +77,19 @@ export default class GridItem extends React.Component{
         <div className='column is-one-third'>
             <div className="box has-background-success has-text-white country">
                 <div className="content" style={{position: 'relative'}}>
-                    <h2 className="is-size-3  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
+                    <Link to={country.country_name.toLowerCase().replace(/\s+/g, "-")} className="button is-white is-outlined is-size-7" style={{float: 'right'}}>
+                        Visit
+                    </Link>
+                    <h2 className="is-size-4  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
+                    
                     <p className="is-size-6 has-text-white">
                         {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago 
                         {' '} had similar {per === 'total' ? ' total': 'per million'} 
                         {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as
                         {' '} {active_country.country_name}
                     </p>
+
+                    
                     <DeathToll className="columns">
                         <div className="column is-narrow">
                             <p>
