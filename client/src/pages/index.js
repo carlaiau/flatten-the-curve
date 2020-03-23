@@ -183,9 +183,33 @@ export default class IndexPage extends React.Component{
                             <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} scale={this.state.num_scale} max_count={this.state.max_count} countries_to_graph={this.state.num_graph_countries}/>
                         </div>
                     </div>  
-                    
-                    
-
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success is-full">
+                                <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
+                                <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="columns" style={{marginBottom: '30px'}}>
+                        <div className="column">
+                            <div className="box">
+                                <GraphOptionsSideBar
+                                    field='death'
+                                    scale={this.state.death_scale} 
+                                    max_count={this.state.max_count}
+                                    scaleFn={e => {this.setState({death_scale: e.target.value})}}
+                                    checkCountries={this.state.death_graph_countries}
+                                    checkFn={e => this.countryChecked(e, 'death_graph_countries')}
+                                    clearFn={e => this.setState({death_graph_countries: []})}
+                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
+                                />
+                            </div>
+                        </div>
+                        <div className="column is-three-quarters">
+                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
+                        </div>
+                    </div>
                 </IndexContainer>
             </div>
             <Footer/>

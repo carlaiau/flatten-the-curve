@@ -72,7 +72,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
         </LineChart>
       )
     }
-    return <><p className="is-size-4">No Deaths to Graph!</p></>
+    return <p className="is-size-3"><strong>No Deaths!</strong></p>
 }
 
 export default CountryOverviewGraph
