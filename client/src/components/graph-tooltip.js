@@ -7,11 +7,14 @@ const SingularGraphTooltip = (tooltipProps)  => {
 
     if(! tooltipProps.payload || tooltipProps.payload.length == 0) return <></>
 
-    const {value, dataKey, payload } = tooltipProps.payload[0]
-
-
-    let growth = tooltipProps.payload.length == 2 && tooltipProps.payload[1].dataKey == 'growth' ? tooltipProps.payload[1].value: 
-        tooltipProps.payload.length == 2 && tooltipProps.payload[2].dataKey == 'growth' ? tooltipProps.payload[2].value: 0
+    const {value, dataKey, payload } = tooltipProps.payload[0]    
+    
+    let growth = 0
+    
+    tooltipProps.payload.forEach(p => {
+        if(p.dataKey == 'growth') growth = p.value
+    })
+    
     
 
     
