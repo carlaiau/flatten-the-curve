@@ -9,8 +9,9 @@ const SingularGraphTooltip = (tooltipProps)  => {
 
     const {value, dataKey, payload } = tooltipProps.payload[0]
 
-    const growth = tooltipProps.payload.length == 2 && tooltipProps.payload[1].dataKey == 'growth' ?
-        tooltipProps.payload[1].value: 0
+
+    let growth = tooltipProps.payload.length == 2 && tooltipProps.payload[1].dataKey == 'growth' ? tooltipProps.payload[1].value: 
+        tooltipProps.payload.length == 2 && tooltipProps.payload[2].dataKey == 'growth' ? tooltipProps.payload[2].value: 0
     
 
     
