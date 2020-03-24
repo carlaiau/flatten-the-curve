@@ -2,10 +2,32 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
-const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleFn, checkCountries = [], checkFn, clearFn, allFn }) => {
+const GraphOptionsSideBar = ({
+    max_count = 40, 
+    field = 'confirmed', 
+    checkCountries = [], 
+    scale, 
+    min_cases,
+    min_case_options,
+    growth,
+    growth_options,
+    
+    
+    scaleFn,    // Callback for linear / log
+
+    caseFn,
+    checkFn,    // Callback for country select or non
+    clearFn,    // Callback for clearing all countries
+    allFn,     // Callback for selecting all countries
+    growthFn    // Callback for changing Growth
+}) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
-    const countries_avaliable = (field == 'confirmed' ? cumulative_confirmed.filter(c => c.confirmed.length > 1) : cumulative_deaths.filter(c => c.deaths.length > 1)).slice(0,max_count)
+    const countries_avaliable = (
+        field == 'confirmed' ? 
+            cumulative_confirmed[min_cases].filter(c => c) : 
+            cumulative_deaths[min_cases].filter( c => c ) 
+        ).slice(0,max_count)
     
     const SideBar = styled('div')`
         .field{
@@ -27,7 +49,7 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
     `
     return (
         <SideBar>
-            <div className="field is-horizontal">
+            <div className="field">
                 <label className="label">Vertical Scale</label>
                 <div className="control">
                     <div className="select">
@@ -38,19 +60,39 @@ const GraphOptionsSideBar = ({max_count = 40, field = 'confirmed', scale, scaleF
                     </div>
                 </div>
             </div>
+            <div className="field ">
+                <label className="label">{field == 'confirmed'? 'Cases': 'Deaths'} to accumulate from</label>
+                <div className="control">
+                    <div className="select">
+                    <select value={min_cases} onChange={caseFn}>
+                        { min_case_options.map(option => <option value={option}>{option}</option>) }
+                    </select>
+                    </div>
+                </div>
+            </div>
+            <div className="field ">
+                <label className="label">Daily Growth Compare</label>
+                <div className="control">
+                    <div className="select">
+                    <select value={growth} onChange={growthFn}>
+                        { growth_options.map(option => <option value={option}>{((option - 1) * 100).toFixed(0)}%</option>) }
+                    </select>
+                    </div>
+                </div>
+            </div>
             <div className="field">
                 <label className="label">Countries</label>
                 <div className="check-container">
-                {
-                    countries_avaliable.map(c => (
+                    {countries_avaliable.map(c => (
                         <label className="checkbox" key={c.country_name}>
-                            <input type="checkbox" name={c.country_name} value={c.country_name} defaultChecked={checkCountries.includes(c.country_name)} onChange={checkFn}/>
+                            <input 
+                                type="checkbox" name={c.country_name} 
+                                value={c.country_name} defaultChecked={checkCountries.includes(c.country_name)} 
+                                onChange={checkFn}
+                            />
                                 {c.country_name}
                         </label>
-                    )
-                    
-                    )
-                }
+                    ))}
                 </div>
             </div>
             <div className="columns">

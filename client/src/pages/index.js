@@ -26,28 +26,62 @@ export default class IndexPage extends React.Component{
             'Australia',
             'United States',
             'United Kingdom',
-          ]
+        ]
 
         this.state = {
-          selected_country: '',
-          numberFormat: new Intl.NumberFormat(),
-          cum_width:  800,
-          cum_height: 182,
-          num_scale: 'linear',
-          num_graph_countries: default_countries,
-          death_scale: 'linear',
-          death_graph_countries: default_countries,
-          max_count: 40,
-          update_time: '1:21am 23 March UTC'
-      }
+            selected_country: '',
+            numberFormat: new Intl.NumberFormat(),
+            
+            cum_width:  800,
+            cum_height: 182,
+
+            
+            confirmed_scale: 'linear',
+            confirmed_graph_countries: default_countries,
+            confirmed_start: 100,
+            confirmed_growth: 1.33,
+            confirmed_options: [ 50, 100, 500, 1000],
+
+            death_scale: 'linear',
+            death_graph_countries: default_countries,
+            death_start: 10,
+            death_options: [ 10, 50, 100, 500],
+            death_growth: 1.33,
+
+            max_count: 40,
+            growth_options: [
+                1.05, 
+                1.1, 
+                1.15, 
+                1.2, 
+                1.25,
+                1.26,
+                1.27,
+                1.28,
+                1.29,
+                1.3,
+                1.31,
+                1.32,
+                1.33,
+                1.34,
+                1.35,
+                1.4,
+                1.45,
+                1.5
+            ],
+            update_time: '1:21am 23 March UTC'
+            
+        }
     }
 
 
+
+
     
     
 
 
-    // num_graph_countries
+    // confirmed_graph_countries
     countryChecked = (e, graph_type) => {
         const checkedCountry = e.target.value
         if(this.state[graph_type].includes(checkedCountry)){
@@ -97,6 +131,8 @@ export default class IndexPage extends React.Component{
                 }
             }
         `
+        
+        
         
 
         const ContentBlock = () => (
@@ -262,20 +298,6 @@ export default class IndexPage extends React.Component{
                         <div className="column is-two-thirds">
                             <ContentBlock/>
                         </div>
-                        { this.state.width < 480 ?
-                        <div className="column">
-                            <div className="box has-background-newt">
-                                <p className="is-size-6">
-                                    <strong className="has-text-white">
-                                        Please use a computer to get the best use out of this interface
-                                    </strong>
-                                </p>
-                                
-                            </div>
-                        </div>
-                        : 
-                        <></>
-                        }
                     </div>
                     <div className="columns">
                         <div className="column is-narrow">
@@ -294,19 +316,36 @@ export default class IndexPage extends React.Component{
                             
                             <div className="box">
                                 <GraphOptionsSideBar
-                                    scale={this.state.num_scale} 
+                                    scale={this.state.confirmed_scale} 
                                     max_count={this.state.max_count} 
-                                    scaleFn={e => {this.setState({num_scale: e.target.value})}}
-                                    checkCountries={this.state.num_graph_countries}
-                                    checkFn={e => this.countryChecked(e, 'num_graph_countries') }
-                                    clearFn={e => this.setState({num_graph_countries: []})}
-                                    allFn={ (countries) => this.setState({num_graph_countries: countries.map(c => c.country_name)})}
+                                    confirm_state={this.confirm_start}
+                                    checkCountries={this.state.confirmed_graph_countries}
+
+                                    min_cases={this.state.confirmed_start}
+                                    min_case_options={this.state.confirmed_options}
+
+                                    growth_options={this.state.growth_options}
+                                    growth={this.state.confirmed_growth}
+
+                                    caseFn={e => {this.setState({confirmed_start: e.target.value})}}
+                                    scaleFn={e => {this.setState({confirmed_scale: e.target.value})}}
+                                    checkFn={e => this.countryChecked(e, 'confirmed_graph_countries') }
+                                    clearFn={e => this.setState({confirmed_graph_countries: []})}
+                                    growthFn={e => this.setState({confirmed_growth: e.target.value}) }
+                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.country_name)})}
                                 />
                                 
                             </div>
                         </div>
                         <div className="column is-three-quarters">
-                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} scale={this.state.num_scale} max_count={this.state.max_count} countries_to_graph={this.state.num_graph_countries}/>
+                            <CumulativeGraph 
+                                width={this.state.cum_width} 
+                                height={this.state.cum_height} 
+                                scale={this.state.confirmed_scale} 
+                                max_count={this.state.max_count} 
+                                growth={this.state.confirmed_growth}
+                                case_start={this.state.confirmed_start}
+                                countries_to_graph={this.state.confirmed_graph_countries}/>
                         </div>
                     </div>  
                     <div className="columns">
@@ -321,19 +360,38 @@ export default class IndexPage extends React.Component{
                         <div className="column">
                             <div className="box">
                                 <GraphOptionsSideBar
-                                    field='death'
+                                    field='deaths'
                                     scale={this.state.death_scale} 
                                     max_count={this.state.max_count}
-                                    scaleFn={e => {this.setState({death_scale: e.target.value})}}
                                     checkCountries={this.state.death_graph_countries}
+
+                                    min_cases={this.state.death_start}
+                                    min_case_options={this.state.death_options}
+
+                                    growth_options={this.state.growth_options}
+                                    growth={this.state.death_growth}
+
+                                    caseFn={e =>    {this.setState({death_start: e.target.value})}}
+                                    scaleFn={e =>   {this.setState({death_scale: e.target.value})}}
+
                                     checkFn={e => this.countryChecked(e, 'death_graph_countries')}
                                     clearFn={e => this.setState({death_graph_countries: []})}
+                                    growthFn={e => this.setState({death_growth: e.target.value}) }
                                     allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
                                 />
                             </div>
                         </div>
                         <div className="column is-three-quarters">
-                            <CumulativeGraph width={this.state.cum_width} height={this.state.cum_height} field="deaths"  max_count={this.state.max_count}  scale={this.state.death_scale}  countries_to_graph={this.state.death_graph_countries}/>  
+                            <CumulativeGraph 
+                                width={this.state.cum_width} 
+                                height={this.state.cum_height} 
+                                field="deaths"  
+                                max_count={this.state.max_count}  
+                                case_start={this.state.death_start}
+                                scale={this.state.death_scale}  
+                                growth={this.state.death_growth}
+                                countries_to_graph={this.state.death_graph_countries}
+                            />  
                         </div>
                     </div>
                     <div className="columns">

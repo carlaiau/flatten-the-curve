@@ -216,41 +216,61 @@ const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && 
 const getCumulatives = (countries) => {
   const max_days = 30
   const output_countries = []
+
+  const confirmed_ranges = [50, 100, 500, 1000]
+  const death_ranges = [10, 50, 100, 500]
   // The structure needs to e 
   // We get an array of countries
   
   countries.forEach(country => {
+    
     const confirmed = []
     const deaths = []
-    let count_of_days = 0
+    
+    confirmed_ranges.forEach(range => {
+      let count_of_days = 0
+      const confirmed_for_range = []
 
-    country.time_series.forEach(day => {
-      if(day.confirmed >= 100 && count_of_days <= max_days){
-        confirmed.push({
-          num_day: count_of_days,
-          date: day.date,
-          confirmed: day.confirmed
-        })
-        count_of_days++
-      }
+      country.time_series.forEach(day => {
+        if(day.confirmed >= range && count_of_days <= max_days){
+          confirmed_for_range.push({
+            num_day: count_of_days,
+            date: day.date,
+            confirmed: day.confirmed
+          })
+          count_of_days++
+        }
+      })
+      confirmed.push({
+        range,
+        time_series: confirmed_for_range
+      })
     })
 
-    count_of_days = 0
-    country.time_series.forEach(day => {
-      if(day.hasOwnProperty('deaths') && day.deaths >= 10 && count_of_days <= max_days){
-        deaths.push({
-          num_day: count_of_days,
-          date: day.date,
-          deaths: day.deaths
-        })
-        count_of_days++
-      }
+    death_ranges.forEach(range => {
+      count_of_days = 0
+      deaths_for_range = []
+      country.time_series.forEach(day => {
+        if(day.hasOwnProperty('deaths') && day.deaths >= range && count_of_days <= max_days){
+          deaths_for_range.push({
+            num_day: count_of_days,
+            date: day.date,
+            deaths: day.deaths
+          })
+          count_of_days++
+        }
+      })
+      deaths.push({
+        range,
+        time_series: deaths_for_range
+      })
     })
 
     // Either array is populated. Then append country to cumulative output
     if(confirmed.length || deaths.length){ 
       const country_to_append = {
         highest_confirmed: country.highest_confirmed,
+        highest_deaths: country.highest_deaths,
         population: country.population,
         country_name: country.country_name,
       }

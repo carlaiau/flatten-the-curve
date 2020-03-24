@@ -3,19 +3,35 @@ import {GlobalStateContext} from "../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 import CumulativeGraphTooltip from "../components/cumulative-graph-tooltip"
 
-const CumulativeGraph = ({max_count = 40, height, width, countries_to_graph = [], field = 'confirmed', max_days = 30, daily_increase = 1.333, growth_label="33% Daily Growth", scale="log"}) => {
+const CumulativeGraph = ({
+    max_count = 40, 
+    height, // height of the graph itself
+    width, // Width of the graph itself
+    countries_to_graph = [], 
+    field = 'confirmed', 
+    max_days = 30, 
+    growth = 1.33, 
+    scale="log",
+    case_start
+
+}) => {
+
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     // Array of Objects 
     const ready_to_graph = [];
 
-    const all_possible_countries = (field == 'confirmed' ? cumulative_confirmed : cumulative_deaths).slice(0, max_count)
+    const all_possible_countries = (
+        field == 'confirmed' ? cumulative_confirmed[case_start].filter(c => c) : 
+        cumulative_deaths[case_start].filter(c => c) 
+    ).slice(0, max_count)
     
+
     all_possible_countries
-        .filter(c => countries_to_graph.includes(c.country_name) && c[field].length > 1)
+        .filter(c => countries_to_graph.includes(c.country_name))
         
         .forEach((c) => {
-        c[field].forEach(time => {
+            c.time_series.forEach(time => {
             if(ready_to_graph.length <= parseInt(time.num_day)){
                 ready_to_graph[time.num_day] = {
                     num_day: time.num_day,
@@ -57,10 +73,10 @@ const CumulativeGraph = ({max_count = 40, height, width, countries_to_graph = []
         for(let i = 0; i < max_days; i++){
             if(i == 0){
                 if(typeof ready_to_graph[i] != 'undefined')
-                    ready_to_graph[i][growth_label] = field == 'confirmed' ? 100: 10
+                    ready_to_graph[i].growth = case_start
             }
             else if(typeof ready_to_graph[i] != 'undefined')
-                ready_to_graph[i][growth_label] = (ready_to_graph[i - 1][growth_label] * daily_increase).toFixed(0)
+                ready_to_graph[i].growth = (ready_to_graph[i - 1].growth * growth).toFixed(0)
              
         }
     }
@@ -88,12 +104,13 @@ const CumulativeGraph = ({max_count = 40, height, width, countries_to_graph = []
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
-                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth_label).map( (key, i) => {
+                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != 'growth').map( (key, i) => {
                     return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
                 {
                     countries_to_graph.length > 0 ? (
-                        <Line type="monotone" stroke='#aaa' dataKey={growth_label} strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
+                        <Line type="monotone" stroke='#aaa' name={`${((growth - 1) * 100).toFixed(0)}% Daily Growth`} 
+                            dataKey="growth" strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
                     ): <></>
                 }
                 
