@@ -150,12 +150,7 @@ export default class GridItem extends React.Component{
                         <td className={per == 'total' ? 'is-hidden': ''}>{country.highest.deaths_per_mil ? country.highest.deaths_per_mil.toFixed(2): ''}</td>
                         </tr>
                         <tr>
-                        <th>Recovered</th>
-                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.earliest.recovered)}</td>
-                        <td className={per != 'total' ? 'is-hidden': ''}>{tidy(country.highest_recovered)}</td>
-                        
-                        <td className={per == 'total' ? 'is-hidden': ''}>{country.earliest.recovered_per_mil ? country.earliest.recovered_per_mil.toFixed(2): ''}</td>
-                        <td className={per == 'total' ? 'is-hidden': ''}>{country.highest.recovered_per_mil ? country.highest.recovered_per_mil.toFixed(2): ''}</td>
+                    
                         </tr>
                     </tbody>
 

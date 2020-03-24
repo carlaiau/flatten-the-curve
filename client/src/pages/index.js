@@ -40,12 +40,12 @@ export default class IndexPage extends React.Component{
             confirmed_graph_countries: default_countries,
             confirmed_start: 100,
             confirmed_growth: 1.33,
-            confirmed_options: [ 50, 100, 500, 1000],
+            confirmed_options: [50, 100, 200, 300, 400, 500, 750, 1000],
 
             death_scale: 'linear',
             death_graph_countries: default_countries,
             death_start: 10,
-            death_options: [ 10, 50, 100, 500],
+            death_options: [10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500],
             death_growth: 1.33,
 
             max_count: 40,

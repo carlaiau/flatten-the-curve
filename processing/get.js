@@ -192,8 +192,8 @@ const getCumulatives = (countries) => {
   const max_days = 30
   const output_countries = []
 
-  const confirmed_ranges = [50, 100, 500, 1000]
-  const death_ranges = [10, 50, 100, 500]
+  const confirmed_ranges = [50, 100, 200, 300, 400, 500, 750, 1000]
+  const death_ranges = [10, 20, 30, 40, 50, 75, 100, 200,300, 400, 500]
   // The structure needs to e 
   // We get an array of countries
   
