@@ -44,7 +44,7 @@ const CumulativeGraph = ({
         
     })
 
-
+    const daily_growth_label = () => `${((growth - 1) * 100).toFixed(0)}% Daily Growth`
     // This is to ensure that colors do not change as the number of countries gets added / removed
     let color_definitions = {}
     const colors= [
@@ -73,10 +73,10 @@ const CumulativeGraph = ({
         for(let i = 0; i < max_days; i++){
             if(i == 0){
                 if(typeof ready_to_graph[i] != 'undefined')
-                    ready_to_graph[i].growth = case_start
+                    ready_to_graph[i][daily_growth_label()] = case_start
             }
             else if(typeof ready_to_graph[i] != 'undefined')
-                ready_to_graph[i].growth = (ready_to_graph[i - 1].growth * growth).toFixed(0)
+                ready_to_graph[i][daily_growth_label()] = (ready_to_graph[i - 1][daily_growth_label()] * growth).toFixed(0)
              
         }
     }
@@ -104,13 +104,13 @@ const CumulativeGraph = ({
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
-                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != 'growth').map( (key, i) => {
+                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != daily_growth_label()).map( (key, i) => {
                     return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
                 {
                     countries_to_graph.length > 0 ? (
-                        <Line type="monotone" stroke='#aaa' name={`${((growth - 1) * 100).toFixed(0)}% Daily Growth`} 
-                            dataKey="growth" strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
+                        <Line type="monotone" stroke='#aaa' 
+                            dataKey={daily_growth_label()} strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
                     ): <></>
                 }
                 

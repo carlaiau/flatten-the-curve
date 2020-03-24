@@ -19,12 +19,10 @@ const GlobalContextProvider = ({ children }) => {
                     confirmed_per_mil
                     deaths
                     deaths_per_mil
-                    recovered
-                    recovered_per_mil
                 }
                 highest_confirmed
                 highest_deaths
-                highest_recovered
+
                 population
             }
         }

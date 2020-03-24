@@ -69,7 +69,7 @@ export default class IndexPage extends React.Component{
                 1.45,
                 1.5
             ],
-            update_time: '1:21am 23 March UTC'
+            update_time: '2:03am 24 March UTC'
             
         }
     }
@@ -237,16 +237,6 @@ export default class IndexPage extends React.Component{
                         display: none;
                     }
                 }
-                .MuiTableBody-root{
-                    .MuiTableRow-root{
-                        td{
-                            &:nth-last-child(2),
-                            &:nth-last-child(3){
-                                display: none;
-                            }
-                        }
-                    }
-                }
             }
             @media screen and (max-width: 375px){
                 .MuiTableHead-root{
@@ -306,7 +296,7 @@ export default class IndexPage extends React.Component{
                                     Cumulative number of cases
                                 </h3>
                                 <p className="is-size-5 subtitle has-text-white">
-                                    by number of days since 100th case
+                                    by number of days since {this.state.confirmed_start}th case
                                 </p>
                             </div>
                         </div>
@@ -352,7 +342,7 @@ export default class IndexPage extends React.Component{
                         <div className="column is-narrow">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
-                                <p className="is-size-5 subtitle has-text-white">by numbers of days since 10th death</p>
+                                <p className="is-size-5 subtitle has-text-white">by numbers of days since {this.state.death_start}th death</p>
                             </div>
                         </div>
                     </div>

@@ -48,9 +48,6 @@ const EnhancedTableHead = (props) => {
     { id: 'deaths', numeric: true, disablePadding: false, label: 'Deaths', class: 'deaths' },
     { id: 'deaths_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
     //{ id: 'deaths_per_mil', numeric: true, disablePadding: false, label: 'Per Mil', class: 'per_mil' },
-    
-    { id: 'recovered', numeric: true, disablePadding: false, label: 'Recovered', class: 'recovered' },
-    { id: 'recovered_change', numeric: true, disablePadding: false, label: '24H Change', class: 'recovered_delta' },
     {id: 'link'}
     //{ id: 'recovered_per_mil', numeric: true, disablePadding: false, label: 'Per Mil',class: 'per_mil' },
   ];
@@ -127,9 +124,7 @@ const EnhancedTable = ({tidy}) => {
       deaths: c.highest_deaths || 0,
       deaths_change,
       //deaths_per_mil: (c.highest_deaths / (c.population / 1000000)),
-      recovered: c.highest_recovered || 0,
-      recovered_change
-      //recovered_per_mil: (c.highest_recovered / (c.population / 1000000)),
+
     }
   })
 
@@ -187,8 +182,6 @@ const EnhancedTable = ({tidy}) => {
                       </TableCell>
                       <TableCell>
                           {tidy.format(row.deaths_change)}</TableCell>
-                      <TableCell><strong>{tidy.format(row.recovered,2)}</strong></TableCell>
-                      <TableCell>{tidy.format(row.recovered_change,2)}</TableCell>
                       { row.name != 'World' ?
                       <TableCell>
                         <Link className="button is-dark is-outlined is-size-7" to={'/' + row.name.toLowerCase().replace(/\s+/g, "-")}>

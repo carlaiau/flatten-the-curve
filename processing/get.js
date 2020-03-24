@@ -10,50 +10,44 @@ const createFiles = (country_path, cum_path) => {
   let recovered = []
   let population_data = []
 
-  request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Confirmed.csv')
+  request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
   .pipe(csv())
   .on('data', data => { confirmed.push(data) })
   .on('end', () => {    
-    request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Deaths.csv')
+    request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
     .pipe(csv())
     .on('data', data => { deaths.push(data) })
     .on('end', () => {    
-      request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_19-covid-Recovered.csv')
+      fs.createReadStream('data/population_world_bank.csv')
       .pipe(csv())
-      .on('data', data => { recovered.push(data) })
-      .on('end', () => {   
-        fs.createReadStream('data/population_world_bank.csv')
-        .pipe(csv())
-        .on('data', data => { population_data.push(data) })
-        .on('end', () => {  
-          countries = merge_object(
-            restructure_inputs(confirmed), 
-            restructure_inputs(deaths), 
-            restructure_inputs(recovered)
-          )
-          countries = add_population_data(countries, population_data)
-          
-          // Relabel country names
-          _.forEach(countries, (c) => {
-            c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
-          })
-          
-          country_array = _.map(countries, (country) => country)
-
-          const cumulative = getCumulatives(country_array)
-          
-          fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
-            if(err) return console.log(err);
-            console.log("Country file was saved!");
-          }); 
-          fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
-            if(err) return console.log(err);
-            console.log("Cumulative was saved!");
-          }); 
-          
+      .on('data', data => { population_data.push(data) })
+      .on('end', () => {  
+        countries = merge_object(
+          restructure_inputs(confirmed), 
+          restructure_inputs(deaths), 
+        )
+        countries = add_population_data(countries, population_data)
+        
+        // Relabel country names
+        _.forEach(countries, (c) => {
+          c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
         })
+        
+        country_array = _.map(countries, (country) => country)
+
+        const cumulative = getCumulatives(country_array)
+        
+        fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
+          if(err) return console.log(err);
+          console.log("Country file was saved!");
+        }); 
+        fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
+          if(err) return console.log(err);
+          console.log("Cumulative was saved!");
+        }); 
+        
       })
-    }); 
+    })
   });
 }
 
@@ -80,8 +74,6 @@ const add_population_data = (countries, population_data) => {
             time.confirmed_per_mil = time.confirmed / (data.population / 1000000)
           if(time.deaths)
             time.deaths_per_mil = time.deaths / (data.population / 1000000)
-          if(time.recovered)
-            time.recovered_per_mil = time.recovered / (data.population / 1000000)
         })      
       }
     })
@@ -128,23 +120,6 @@ const merge_object = (confirmed, deaths, recovered) => {
 
         }
         
-      }
-    })
-  })
-
-  recovered.forEach( (country) => {
-    highest_recovered = 0
-    const country_name = country['Country/Region']
-    _.forEach(country, (val, key) => {
-      if(validKey(key)){
-        combined[country_name].time_series.forEach( (time) => {
-          if(key == time.date){
-            time.recovered = parseInt(val)
-            if(time.recovered > highest_recovered)
-              highest_recovered = parseInt(val)
-          }
-        })
-        combined[country_name].highest_recovered = highest_recovered
       }
     })
   })
