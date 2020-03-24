@@ -2,18 +2,18 @@
 
 This is a work in progress GatsbyJS application for using time-series data from https://github.com/CSSEGISandData/COVID-19
 
-This site is aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if their in a country that currently has a low case load. 
+This site is aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if they're in a country that currently has a low case load. 
 
 The ability to compare your own countries current case level and see how another country's infection has spread from a similar level seems to "click" for a lot of people, and therefore motivate change. 
 
-The site has had over 1,000 visits in two days, and often has 10 - 30 people active at any given time, so hopefully we can create some impact.
+The site has had over 3,000 visits in five days, and often has 10 - 30 people active at any given time, so hopefully we can create some impact.
 
-I understand that the comparisons/projections are not the best way of looking at the outbreaks and could let to incorrect outcomes, so I am actively working on getting data reformulated into culmulative confirmed / death so they can be used on the log graphs that are commonly seen. These graphs will replace what is currently getting output on the index.
+I understand that the comparisons/projections are not the best way of looking at the outbreaks and could lead to incorrect outcomes, so I am actively working on getting data reformulated into culmulative confirmed / death so they can be used on the log graphs that are commonly seen.
 
 Because the site is statically generated we have zero infrastructure costs. This is just a conversion of our time into potentially saved lifes by avoiding healthcare system overload.
 
 ### Availability
-I am on leave from my day job until Monday so I can fully commit (no pun intended) to working towards something that can create more impact.
+I am still on temporary leave from my day job to commit to this project.
 
 ### What I'm Working On
 - ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
@@ -26,18 +26,24 @@ I am on leave from my day job until Monday so I can fully commit (no pun intende
   - ~~Culumlative number of cases, by number of days since 100th case~~
   - ~~Allow This component to be passed in array of countries so that user can choose to compare their country to any other countries.~~
 - ~~Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results~~
-- Incorporate fancy styling for home page tool tip, and link to countries from tool tip
-- Incorporate the cumulative graph on country pages where it is applicable.
+- ~~Incorporate fancy styling for home page tool tip, and link to countries from tool tip~~
+- ~~Ability for site to function offline~~
+- Incorporate table of regions on country page. 
+- 'connect' this table to a comparison graph.
+
+- Flip / Flop country overview graph to cumulative view.
+- Allow adding other countries to country overview cumulative graph if applicable.
+- Allow cumulative graphs to have dynamic constraints such as:
+  - **Confirmed:**: 50th, 100th, 500th, 1000th
+  - **Deaths**: 10th, 50th, 100th
 - Backend: Write logic to pull Taiwan and Hong Kong out of China
 
 
 ### Nice To Haves
 - Allow filtering of countries by meta data: *population, GDP, climate*
-- Ability for site to function offline
 - Context about each country, such as when restrictions were enforced
-- Perserve Regional Data for specific countries and enhance their dashboard accordingly
 
-# Get Involved
+# Get Involved / Support
 Open to all collaboration. I specifically need:
 - Help with content and communicating ideas concisely
 - UI/UX
@@ -48,43 +54,112 @@ If you want to play with the "stack" it is pretty simple  assuming that you have
 
 ## Processing the data
 The node data processing script may be useful for someone.
+
 ```
 cd processing
 npm install 
-node get.py
+sh run.sh
 ```
-This will create an countries.json array of countries in the format. 
+Countries that show multiple provinces in the John Hopkins data are merged together and country population data is appended from `/processing/data/population_world_bank.csv`
+
+This will create `countries.json` and `cumulative.json` files in `client/data` the formats are:
+
+### Countries.json
 ```
+[
 {
-    "country_name": "New Zealand",
+    "country_name": "Spain",
     "time_series": [
+      ...,
       {
-        "date": "3/15/20",
-        "confirmed": 8,
-        "confirmed_per_mil": 1.6374987207041243
+        "date": "2020-03-18T11:00:00.000Z",
+        "confirmed": 17963,
+        "deaths": 830,
+        "recovered": 1107,
+        "confirmed_per_mil": 384.45117064557473,
+        "deaths_per_mil": 17.763985505529533,
+        "recovered_per_mil": 23.692448138097824
       },
       {
-        "date": "3/16/20",
-        "confirmed": 8,
-        "confirmed_per_mil": 1.6374987207041243
+        "date": "2020-03-19T11:00:00.000Z",
+        "confirmed": 20410,
+        "deaths": 1043,
+        "recovered": 1588,
+        "confirmed_per_mil": 436.82282429862386,
+        "deaths_per_mil": 22.32269503887627,
+        "recovered_per_mil": 33.98699877443482
       },
       {
-        "date": "3/17/20",
-        "confirmed": 12,
-        "confirmed_per_mil": 2.4562480810561866
+        "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 25374,
+        "deaths": 1375,
+        "recovered": 2125,
+        "confirmed_per_mil": 543.0642990569957,
+        "deaths_per_mil": 29.428289241088084,
+        "recovered_per_mil": 45.48008337259067
       },
       {
-        "date": "3/18/20",
-        "confirmed": 20,
-        "confirmed_per_mil": 4.093746802
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 28768,
+        "deaths": 1772,
+        "recovered": 2575,
+        "confirmed_per_mil": 615.7040181000887,
+        "deaths_per_mil": 37.925038934696786,
+        "recovered_per_mil": 55.111159851492225
       }
     ],
-    "highest_confirmed": 20,
-    "population": 4885500
+    "highest_confirmed": 28768,
+    "highest_deaths": 1772,
+    "highest_recovered": 2575,
+    "population": 46723749
   },
+]
 ```
-Countries that show multiple provinces in the John Hopkins data are merged together, and country population data is merged from `/processing/data/population_world_bank.csv`
-
+### Cumulative.json
+```
+[
+  {
+    "highest_confirmed": 28768,
+    "population": 46723749,
+    "country_name": "Spain",
+    "confirmed": [
+      ...,
+      {
+        "num_day": 18,
+        "date": "2020-03-19T11:00:00.000Z",
+        "confirmed": 20410
+      },
+      {
+        "num_day": 19,
+        "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 25374
+      },
+      {
+        "num_day": 20,
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 28768
+      }
+    ],
+    "deaths": [
+      ...,
+      {
+        "num_day": 13,
+        "date": "2020-03-19T11:00:00.000Z",
+        "deaths": 1043
+      },
+      {
+        "num_day": 14,
+        "date": "2020-03-20T11:00:00.000Z",
+        "deaths": 1375
+      },
+      {
+        "num_day": 15,
+        "date": "2020-03-21T11:00:00.000Z",
+        "deaths": 1772
+      }
+   ]
+}
+```
 ## Client
 Built in gatsby, pretty hacky react.
 
@@ -94,6 +169,6 @@ cd client
 npm install
 npm run develop
 ``` 
-Gatsby will automatically load the countries data into GraphQL based on what file is sitting at `/client/data/output.json`
+Gatsby will automatically load the countries data into GraphQL based on the above two files
 
 
