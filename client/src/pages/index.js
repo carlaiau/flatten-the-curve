@@ -39,35 +39,112 @@ export default class IndexPage extends React.Component{
             confirmed_scale: 'linear',
             confirmed_graph_countries: default_countries,
             confirmed_start: 100,
-            confirmed_growth: 1.33,
+            confirmed_growth: {
+                label: "Doubles every 3 days",
+                value: 1.25992105
+            },
             confirmed_options: [50, 100, 200, 300, 400, 500, 750, 1000],
 
             death_scale: 'linear',
             death_graph_countries: default_countries,
             death_start: 10,
             death_options: [10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500],
-            death_growth: 1.33,
+            death_growth: {
+                label: "Doubles every 3 days",
+                value: 1.25992105
+            },
 
             max_count: 40,
             growth_options: [
-                1.05, 
-                1.1, 
-                1.15, 
-                1.2, 
-                1.25,
-                1.26,
-                1.27,
-                1.28,
-                1.29,
-                1.3,
-                1.31,
-                1.32,
-                1.33,
-                1.34,
-                1.35,
-                1.4,
-                1.45,
-                1.5
+                {
+                    label: "Doubles every day",
+                    value: 2.00
+                },
+                {
+                    label: "Doubles every 2 days",
+                    value: 1.414213562
+                },
+                {
+                    label: "Doubles every 3 days",
+                    value: 1.25992105
+                },
+                {
+                    label: "Doubles every 4 days",
+                    value: 1.189207115
+                },
+                {
+                    label: "Doubles every 5 days",
+                    value: 1.148698355
+                },
+                {
+                    label: "Doubles every 6 days",
+                    value: 1.122462048
+                },
+                {
+                    label: "Doubles every week",
+                    value: 1.104089514
+                },
+                {
+                    label: "Doubles every fortnight",
+                    value: 1.050756639
+                },
+                {
+                    label: "5% Daily Growth",
+                    value: 1.05
+                },
+                {
+                    label: "10% Daily Growth",
+                    value: 1.1
+                },
+
+                {
+                    label: "20% Daily Growth",
+                    value: 1.2
+                },
+                {
+                    label: "25% Daily Growth",
+                    value: 1.25
+                },
+                {
+                    label: "30% Daily Growth",
+                    value: 1.3
+                },
+                {
+                    label: "33% Daily Growth",
+                    value: 1.33
+                },
+                {
+                    label: "35% Daily Growth",
+                    value: 1.35
+                },
+                {
+                    label: "40% Daily Growth",
+                    value: 1.4
+                },
+                {
+                    label: "50% Daily Growth",
+                    value: 1.5
+                },
+                {
+                    label: "60% Daily Growth",
+                    value: 1.6
+                },
+                {
+                    label: "70% Daily Growth",
+                    value: 1.7
+                },
+                {
+                    label: "80% Daily Growth",
+                    value: 1.8
+                },
+                {
+                    label: "90% Daily Growth",
+                    value: 1.9
+                },
+                {
+                    label: "100% Daily Growth",
+                    value: 2.0
+                },
             ],
             update_time: '12:20am 25 March UTC',
             
@@ -321,7 +398,7 @@ export default class IndexPage extends React.Component{
                                     scaleFn={e => {this.setState({confirmed_scale: e.target.value})}}
                                     checkFn={e => this.countryChecked(e, 'confirmed_graph_countries') }
                                     clearFn={e => this.setState({confirmed_graph_countries: []})}
-                                    growthFn={e => this.setState({confirmed_growth: e.target.value}) }
+                                    growthFn={e => this.setState({confirmed_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
                                     allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.country_name)})}
                                 />
                                 
@@ -366,7 +443,7 @@ export default class IndexPage extends React.Component{
 
                                     checkFn={e => this.countryChecked(e, 'death_graph_countries')}
                                     clearFn={e => this.setState({death_graph_countries: []})}
-                                    growthFn={e => this.setState({death_growth: e.target.value}) }
+                                    growthFn={e => this.setState({death_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
                                     allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
                                 />
                             </div>

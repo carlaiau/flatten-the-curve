@@ -12,9 +12,7 @@ const GraphOptionsSideBar = ({
     growth,
     growth_options,
     
-    
     scaleFn,    // Callback for linear / log
-
     caseFn,
     checkFn,    // Callback for country select or non
     clearFn,    // Callback for clearing all countries
@@ -71,11 +69,11 @@ const GraphOptionsSideBar = ({
                 </div>
             </div>
             <div className="field ">
-                <label className="label">Daily Growth Compare</label>
+                <label className="label">{field == 'confirmed' ? 'Case' : 'Death'} {growth.label.includes('%') ? 'daily growth' :'doubling rate'}</label>
                 <div className="control">
                     <div className="select">
-                    <select value={growth} onChange={growthFn}>
-                        { growth_options.map(option => <option value={option}>{((option - 1) * 100).toFixed(0)}%</option>) }
+                    <select value={growth.value} onChange={growthFn}>
+                        { growth_options.map(option => <option value={option.value}>{option.label}</option>) }
                     </select>
                     </div>
                 </div>
