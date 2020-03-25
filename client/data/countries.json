@@ -15994,8 +15994,8 @@
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 102,
-        "confirmed_per_mil": 20.878108688977584
+        "confirmed": 66,
+        "confirmed_per_mil": 13.509364445809026
       },
       {
         "date": "2020-03-22T11:00:00.000Z",
@@ -16010,7 +16010,7 @@
       {
         "date": "2020-03-24T11:00:00.000Z",
         "confirmed": 205,
-        "confirmed_per_mil": 41.960904718043189028758571282366
+        "confirmed_per_mil": 41.960904718043189
       }
     ],
     "highest_confirmed": 205,
