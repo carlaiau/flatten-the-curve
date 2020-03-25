@@ -15350,9 +15350,14 @@
         "date": "2020-03-23T11:00:00.000Z",
         "confirmed": 155,
         "confirmed_per_mil": 31.726537714
+      },
+      {
+        "date": "2020-03-24T11:00:00.000Z",
+        "confirmed": 205,
+        "confirmed_per_mil": 41.960904718043189028758571282366
       }
     ],
-    "highest_confirmed": 155,
+    "highest_confirmed": 205,
     "population": 4885500
   },
   {
