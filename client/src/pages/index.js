@@ -69,7 +69,7 @@ export default class IndexPage extends React.Component{
                 1.45,
                 1.5
             ],
-            update_time: '2:03am 24 March UTC'
+            update_time: '12:20am 25 March UTC',
             
         }
     }
