@@ -14,9 +14,9 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
     })
 
     // Add growth to the countryOverView too!
-    const growth_label =  '33% cumulative daily growth'
+    const growth_label =   `${field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days`
     
-    const growth_rate = 1.333
+    const growth_rate = 1.25992105
     
     let found_for_growth = false
 

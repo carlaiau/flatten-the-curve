@@ -10,9 +10,13 @@ const SingularGraphTooltip = (tooltipProps)  => {
     const {value, dataKey, payload } = tooltipProps.payload[0]    
     
     let growth = 0
-    
+    let growth_label = ''
     tooltipProps.payload.forEach(p => {
-        if(p.dataKey == 'growth') growth = p.value
+        if(p.dataKey == 'growth'){
+            growth = p.value
+            growth_label = p.name
+        }
+        
     })
     
     
@@ -99,8 +103,7 @@ const SingularGraphTooltip = (tooltipProps)  => {
                     growth ?
                     <TooltipBox className={`box growth`}>
                         <p className="is-size-7">
-                            Cumulative<br/>
-                            Growth
+                            {growth_label}
                             <br/>
                             <strong>
                             {new Intl.NumberFormat().format(growth, 2)}
