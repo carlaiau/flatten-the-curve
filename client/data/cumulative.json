@@ -1,6 +1,6 @@
 [
   {
-    "highest_confirmed": 74,
+    "highest_confirmed": 84,
     "highest_deaths": 1,
     "population": 37172386,
     "country_name": "Afghanistan",
@@ -12,6 +12,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 74
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 84
           }
         ]
       },
@@ -92,7 +97,7 @@
     ]
   },
   {
-    "highest_confirmed": 123,
+    "highest_confirmed": 146,
     "highest_deaths": 5,
     "population": 2866376,
     "country_name": "Albania",
@@ -144,6 +149,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 123
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 146
           }
         ]
       },
@@ -159,6 +169,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 123
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 146
           }
         ]
       },
@@ -235,7 +250,7 @@
     ]
   },
   {
-    "highest_confirmed": 264,
+    "highest_confirmed": 302,
     "highest_deaths": 19,
     "population": 42228429,
     "country_name": "Algeria",
@@ -287,6 +302,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 264
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 302
           }
         ]
       },
@@ -312,6 +332,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 264
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 302
           }
         ]
       },
@@ -332,12 +357,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 264
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 302
           }
         ]
       },
       {
         "range": 300,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 302
+          }
+        ]
       },
       {
         "range": 400,
@@ -430,7 +466,7 @@
     ]
   },
   {
-    "highest_confirmed": 164,
+    "highest_confirmed": 188,
     "highest_deaths": 1,
     "population": 77006,
     "country_name": "Andorra",
@@ -467,6 +503,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 164
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 188
           }
         ]
       },
@@ -487,6 +528,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 164
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 188
           }
         ]
       },
@@ -785,6 +831,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 387
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 387
           }
         ]
       },
@@ -815,6 +866,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 387
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 387
           }
         ]
       },
@@ -835,6 +891,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 387
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 387
           }
         ]
       },
@@ -849,6 +910,11 @@
           {
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 387
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
             "confirmed": 387
           }
         ]
@@ -918,7 +984,7 @@
     ]
   },
   {
-    "highest_confirmed": 249,
+    "highest_confirmed": 265,
     "population": 2951776,
     "country_name": "Armenia",
     "confirmed": [
@@ -969,6 +1035,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 249
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 265
           }
         ]
       },
@@ -1004,6 +1075,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 249
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 265
           }
         ]
       },
@@ -1019,6 +1095,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 249
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 265
           }
         ]
       },
@@ -1091,7 +1172,7 @@
     ]
   },
   {
-    "highest_confirmed": 2044,
+    "highest_confirmed": 2364,
     "highest_deaths": 8,
     "population": 24992369,
     "country_name": "Australia",
@@ -1203,6 +1284,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1283,6 +1369,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1348,6 +1439,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1398,6 +1494,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1443,6 +1544,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1483,6 +1589,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1513,6 +1624,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       },
@@ -1538,6 +1654,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2044
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2364
           }
         ]
       }
@@ -1590,7 +1711,7 @@
     ]
   },
   {
-    "highest_confirmed": 5283,
+    "highest_confirmed": 5588,
     "highest_deaths": 28,
     "population": 8847037,
     "country_name": "Austria",
@@ -1692,6 +1813,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -1782,6 +1908,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -1857,6 +1988,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -1927,6 +2063,11 @@
             "num_day": 12,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -1992,6 +2133,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -2057,6 +2203,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -2112,6 +2263,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       },
@@ -2162,6 +2318,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5283
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 5588
           }
         ]
       }
@@ -2241,7 +2402,7 @@
     ]
   },
   {
-    "highest_confirmed": 87,
+    "highest_confirmed": 93,
     "highest_deaths": 1,
     "population": 9942334,
     "country_name": "Azerbaijan",
@@ -2268,6 +2429,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 87
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 93
           }
         ]
       },
@@ -2432,7 +2598,7 @@
     ]
   },
   {
-    "highest_confirmed": 392,
+    "highest_confirmed": 419,
     "highest_deaths": 3,
     "population": 1569439,
     "country_name": "Bahrain",
@@ -2544,6 +2710,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 392
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 419
           }
         ]
       },
@@ -2624,6 +2795,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 392
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 419
           }
         ]
       },
@@ -2684,6 +2860,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 392
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 419
           }
         ]
       },
@@ -2709,12 +2890,23 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 392
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 419
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 419
+          }
+        ]
       },
       {
         "range": 500,
@@ -2948,7 +3140,7 @@
     ]
   },
   {
-    "highest_confirmed": 81,
+    "highest_confirmed": 86,
     "population": 9485386,
     "country_name": "Belarus",
     "confirmed": [
@@ -2989,6 +3181,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 81
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 86
           }
         ]
       },
@@ -3069,7 +3266,7 @@
     ]
   },
   {
-    "highest_confirmed": 4269,
+    "highest_confirmed": 4937,
     "highest_deaths": 122,
     "population": 11422068,
     "country_name": "Belgium",
@@ -3176,6 +3373,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3276,6 +3478,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3366,6 +3573,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3441,6 +3653,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3506,6 +3723,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3571,6 +3793,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3626,6 +3853,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       },
@@ -3676,6 +3908,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 4269
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 4937
           }
         ]
       }
@@ -4060,7 +4297,7 @@
     ]
   },
   {
-    "highest_confirmed": 29,
+    "highest_confirmed": 32,
     "population": 11353142,
     "country_name": "Bolivia",
     "confirmed": [
@@ -4145,7 +4382,7 @@
     ]
   },
   {
-    "highest_confirmed": 166,
+    "highest_confirmed": 176,
     "highest_deaths": 3,
     "population": 3323929,
     "country_name": "Bosnia and Herzegovina",
@@ -4182,6 +4419,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 166
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 176
           }
         ]
       },
@@ -4202,6 +4444,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 166
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 176
           }
         ]
       },
@@ -4278,7 +4525,7 @@
     ]
   },
   {
-    "highest_confirmed": 2247,
+    "highest_confirmed": 2554,
     "highest_deaths": 46,
     "population": 209469333,
     "country_name": "Brazil",
@@ -4350,6 +4597,11 @@
             "num_day": 12,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4415,6 +4667,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4465,6 +4722,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4510,6 +4772,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4545,6 +4812,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4580,6 +4852,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4610,6 +4887,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       },
@@ -4635,6 +4917,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2247
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2554
           }
         ]
       }
@@ -4746,7 +5033,7 @@
     ]
   },
   {
-    "highest_confirmed": 104,
+    "highest_confirmed": 109,
     "population": 428962,
     "country_name": "Brunei",
     "confirmed": [
@@ -4802,6 +5089,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 104
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 109
           }
         ]
       },
@@ -4812,6 +5104,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 104
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 109
           }
         ]
       },
@@ -4888,7 +5185,7 @@
     ]
   },
   {
-    "highest_confirmed": 218,
+    "highest_confirmed": 242,
     "highest_deaths": 3,
     "population": 7024216,
     "country_name": "Bulgaria",
@@ -4945,6 +5242,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 218
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 242
           }
         ]
       },
@@ -4975,6 +5277,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 218
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 242
           }
         ]
       },
@@ -4990,6 +5297,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 218
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 242
           }
         ]
       },
@@ -5062,7 +5374,7 @@
     ]
   },
   {
-    "highest_confirmed": 114,
+    "highest_confirmed": 146,
     "highest_deaths": 4,
     "population": 19751535,
     "country_name": "Burkina Faso",
@@ -5089,6 +5401,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 114
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 146
           }
         ]
       },
@@ -5099,6 +5416,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 114
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 146
           }
         ]
       },
@@ -5175,7 +5497,7 @@
     ]
   },
   {
-    "highest_confirmed": 3,
+    "highest_confirmed": 4,
     "highest_deaths": 1,
     "population": 543767,
     "country_name": "Cabo Verde",
@@ -5261,7 +5583,7 @@
     ]
   },
   {
-    "highest_confirmed": 91,
+    "highest_confirmed": 96,
     "population": 16249798,
     "country_name": "Cambodia",
     "confirmed": [
@@ -5292,6 +5614,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 91
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 96
           }
         ]
       },
@@ -5372,7 +5699,7 @@
     ]
   },
   {
-    "highest_confirmed": 66,
+    "highest_confirmed": 75,
     "population": 25216237,
     "country_name": "Cameroon",
     "confirmed": [
@@ -5388,6 +5715,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 66
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 75
           }
         ]
       },
@@ -5468,7 +5800,7 @@
     ]
   },
   {
-    "highest_confirmed": 2790,
+    "highest_confirmed": 3251,
     "highest_deaths": 26,
     "population": 37058856,
     "country_name": "Canada",
@@ -5565,6 +5897,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5640,6 +5977,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5695,6 +6037,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5745,6 +6092,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5795,6 +6147,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5835,6 +6192,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5870,6 +6232,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       },
@@ -5895,6 +6262,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2790
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3251
           }
         ]
       }
@@ -6159,7 +6531,7 @@
     ]
   },
   {
-    "highest_confirmed": 922,
+    "highest_confirmed": 1142,
     "highest_deaths": 2,
     "population": 18729160,
     "country_name": "Chile",
@@ -6221,6 +6593,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6271,6 +6648,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6316,6 +6698,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6346,6 +6733,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6376,6 +6768,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6401,6 +6798,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
@@ -6411,12 +6813,23 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 922
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
           }
         ]
       },
       {
         "range": 1000,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1142
+          }
+        ]
       }
     ],
     "deaths": [
@@ -6467,7 +6880,7 @@
     ]
   },
   {
-    "highest_confirmed": 81591,
+    "highest_confirmed": 81661,
     "highest_deaths": 3281,
     "population": 1392730000,
     "country_name": "China",
@@ -9517,7 +9930,7 @@
     ]
   },
   {
-    "highest_confirmed": 378,
+    "highest_confirmed": 470,
     "highest_deaths": 3,
     "population": 49648685,
     "country_name": "Colombia",
@@ -9569,6 +9982,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 378
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 470
           }
         ]
       },
@@ -9604,6 +10022,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 378
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 470
           }
         ]
       },
@@ -9624,6 +10047,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 378
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 470
           }
         ]
       },
@@ -9634,12 +10062,23 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 378
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 470
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 470
+          }
+        ]
       },
       {
         "range": 500,
@@ -9787,7 +10226,7 @@
     ]
   },
   {
-    "highest_confirmed": 45,
+    "highest_confirmed": 48,
     "highest_deaths": 2,
     "population": 84068091,
     "country_name": "Congo (Kinshasa)",
@@ -9873,7 +10312,7 @@
     ]
   },
   {
-    "highest_confirmed": 177,
+    "highest_confirmed": 201,
     "highest_deaths": 2,
     "population": 4999441,
     "country_name": "Costa Rica",
@@ -9915,6 +10354,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 177
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 201
           }
         ]
       },
@@ -9940,12 +10384,23 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 177
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 201
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 201
+          }
+        ]
       },
       {
         "range": 300,
@@ -10016,7 +10471,7 @@
     ]
   },
   {
-    "highest_confirmed": 73,
+    "highest_confirmed": 80,
     "population": 25069229,
     "country_name": "Cote d'Ivoire",
     "confirmed": [
@@ -10027,6 +10482,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 73
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 80
           }
         ]
       },
@@ -10107,7 +10567,7 @@
     ]
   },
   {
-    "highest_confirmed": 382,
+    "highest_confirmed": 442,
     "highest_deaths": 1,
     "population": 4089400,
     "country_name": "Croatia",
@@ -10159,6 +10619,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 382
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 442
           }
         ]
       },
@@ -10194,6 +10659,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 382
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 442
           }
         ]
       },
@@ -10219,6 +10689,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 382
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 442
           }
         ]
       },
@@ -10234,12 +10709,23 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 382
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 442
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 442
+          }
+        ]
       },
       {
         "range": 500,
@@ -10303,8 +10789,8 @@
   },
   {
     "highest_confirmed": 712,
-    "highest_deaths": 8,
-    "country_name": "Cruise Ship",
+    "highest_deaths": 10,
+    "country_name": "Diamond Princess",
     "confirmed": [
       {
         "range": 50,
@@ -11278,7 +11764,13 @@
     "deaths": [
       {
         "range": 10,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 10
+          }
+        ]
       },
       {
         "range": 20,
@@ -11323,14 +11815,20 @@
     ]
   },
   {
-    "highest_confirmed": 48,
+    "highest_confirmed": 57,
     "highest_deaths": 1,
     "population": 11338138,
     "country_name": "Cuba",
     "confirmed": [
       {
         "range": 50,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 57
+          }
+        ]
       },
       {
         "range": 100,
@@ -11409,7 +11907,7 @@
     ]
   },
   {
-    "highest_confirmed": 124,
+    "highest_confirmed": 132,
     "highest_deaths": 3,
     "population": 1189265,
     "country_name": "Cyprus",
@@ -11446,6 +11944,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 124
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 132
           }
         ]
       },
@@ -11461,6 +11964,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 124
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 132
           }
         ]
       },
@@ -11537,7 +12045,7 @@
     ]
   },
   {
-    "highest_confirmed": 1394,
+    "highest_confirmed": 1654,
     "highest_deaths": 3,
     "country_name": "Czechia",
     "confirmed": [
@@ -11613,6 +12121,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11678,6 +12191,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11733,6 +12251,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11778,6 +12301,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11818,6 +12346,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11853,6 +12386,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11883,6 +12421,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       },
@@ -11903,6 +12446,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1394
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1654
           }
         ]
       }
@@ -11955,7 +12503,7 @@
     ]
   },
   {
-    "highest_confirmed": 1718,
+    "highest_confirmed": 1862,
     "highest_deaths": 32,
     "population": 5797446,
     "country_name": "Denmark",
@@ -12042,6 +12590,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12122,6 +12675,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12202,6 +12760,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12277,6 +12840,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12352,6 +12920,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12422,6 +12995,11 @@
             "num_day": 12,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12487,6 +13065,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       },
@@ -12532,6 +13115,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1718
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1862
           }
         ]
       }
@@ -12622,7 +13210,7 @@
     ]
   },
   {
-    "highest_confirmed": 3,
+    "highest_confirmed": 11,
     "population": 958920,
     "country_name": "Djibouti",
     "confirmed": [
@@ -12707,7 +13295,7 @@
     ]
   },
   {
-    "highest_confirmed": 312,
+    "highest_confirmed": 392,
     "highest_deaths": 6,
     "population": 10627165,
     "country_name": "Dominican Republic",
@@ -12739,6 +13327,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 312
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 392
           }
         ]
       },
@@ -12764,6 +13357,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 312
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 392
           }
         ]
       },
@@ -12784,6 +13382,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 312
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 392
           }
         ]
       },
@@ -12794,6 +13397,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 312
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 392
           }
         ]
       },
@@ -12862,7 +13470,7 @@
     ]
   },
   {
-    "highest_confirmed": 1082,
+    "highest_confirmed": 1173,
     "highest_deaths": 27,
     "population": 17084357,
     "country_name": "Ecuador",
@@ -12909,6 +13517,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -12949,6 +13562,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -12979,6 +13597,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -13009,6 +13632,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -13034,6 +13662,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -13059,6 +13692,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -13079,6 +13717,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       },
@@ -13089,6 +13732,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1082
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1173
           }
         ]
       }
@@ -13163,7 +13811,7 @@
     ]
   },
   {
-    "highest_confirmed": 402,
+    "highest_confirmed": 456,
     "highest_deaths": 20,
     "population": 98423595,
     "country_name": "Egypt",
@@ -13250,6 +13898,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 402
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 456
           }
         ]
       },
@@ -13310,6 +13963,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 402
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 456
           }
         ]
       },
@@ -13345,6 +14003,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 402
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 456
           }
         ]
       },
@@ -13365,6 +14028,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 402
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 456
           }
         ]
       },
@@ -13375,6 +14043,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 402
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 456
           }
         ]
       },
@@ -13466,7 +14139,7 @@
     ]
   },
   {
-    "highest_confirmed": 5,
+    "highest_confirmed": 9,
     "population": 6420744,
     "country_name": "El Salvador",
     "confirmed": [
@@ -13636,7 +14309,7 @@
     ]
   },
   {
-    "highest_confirmed": 1,
+    "highest_confirmed": 4,
     "population": null,
     "country_name": "Eritrea",
     "confirmed": [
@@ -13721,7 +14394,7 @@
     ]
   },
   {
-    "highest_confirmed": 369,
+    "highest_confirmed": 404,
     "population": 1320884,
     "country_name": "Estonia",
     "confirmed": [
@@ -13787,6 +14460,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 369
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 404
           }
         ]
       },
@@ -13847,6 +14525,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 369
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 404
           }
         ]
       },
@@ -13897,6 +14580,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 369
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 404
           }
         ]
       },
@@ -13922,12 +14610,23 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 369
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 404
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 404
+          }
+        ]
       },
       {
         "range": 500,
@@ -14160,7 +14859,7 @@
     ]
   },
   {
-    "highest_confirmed": 4,
+    "highest_confirmed": 5,
     "population": 883483,
     "country_name": "Fiji",
     "confirmed": [
@@ -14245,7 +14944,7 @@
     ]
   },
   {
-    "highest_confirmed": 792,
+    "highest_confirmed": 880,
     "highest_deaths": 1,
     "population": 5518050,
     "country_name": "Finland",
@@ -14322,6 +15021,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14387,6 +15091,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14447,6 +15156,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14492,6 +15206,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14527,6 +15246,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14552,6 +15276,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14562,6 +15291,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 792
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 880
           }
         ]
       },
@@ -14618,7 +15352,7 @@
     ]
   },
   {
-    "highest_confirmed": 22622,
+    "highest_confirmed": 25600,
     "highest_deaths": 1102,
     "population": 66987244,
     "country_name": "France",
@@ -14755,6 +15489,11 @@
             "num_day": 25,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 26,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -14885,6 +15624,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15000,6 +15744,11 @@
             "num_day": 21,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15105,6 +15854,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15205,6 +15959,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15305,6 +16064,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15400,6 +16164,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       },
@@ -15490,6 +16259,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 22622
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 25600
           }
         ]
       }
@@ -16299,7 +17073,7 @@
     ]
   },
   {
-    "highest_confirmed": 70,
+    "highest_confirmed": 75,
     "population": 3731000,
     "country_name": "Georgia",
     "confirmed": [
@@ -16320,6 +17094,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 70
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 75
           }
         ]
       },
@@ -16400,7 +17179,7 @@
     ]
   },
   {
-    "highest_confirmed": 32986,
+    "highest_confirmed": 37323,
     "highest_deaths": 157,
     "population": 82927922,
     "country_name": "Germany",
@@ -16532,6 +17311,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -16657,6 +17441,11 @@
             "num_day": 23,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 24,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -16767,6 +17556,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -16872,6 +17666,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -16977,6 +17776,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -17077,6 +17881,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -17172,6 +17981,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       },
@@ -17262,6 +18076,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 32986
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 37323
           }
         ]
       }
@@ -17526,7 +18345,7 @@
     ]
   },
   {
-    "highest_confirmed": 53,
+    "highest_confirmed": 93,
     "highest_deaths": 2,
     "population": 29767108,
     "country_name": "Ghana",
@@ -17538,6 +18357,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 93
           }
         ]
       },
@@ -17618,7 +18442,7 @@
     ]
   },
   {
-    "highest_confirmed": 743,
+    "highest_confirmed": 821,
     "highest_deaths": 20,
     "population": 10727668,
     "country_name": "Greece",
@@ -17710,6 +18534,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
@@ -17775,6 +18604,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
@@ -17835,6 +18669,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
@@ -17890,6 +18729,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
@@ -17930,6 +18774,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
@@ -17955,12 +18804,23 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 743
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
           }
         ]
       },
       {
         "range": 750,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 821
+          }
+        ]
       },
       {
         "range": 1000,
@@ -18042,7 +18902,7 @@
     ]
   },
   {
-    "highest_confirmed": 21,
+    "highest_confirmed": 24,
     "highest_deaths": 1,
     "population": 17247807,
     "country_name": "Guatemala",
@@ -18299,7 +19159,7 @@
     ]
   },
   {
-    "highest_confirmed": 7,
+    "highest_confirmed": 8,
     "population": 11123176,
     "country_name": "Haiti",
     "confirmed": [
@@ -18468,7 +19328,7 @@
     ]
   },
   {
-    "highest_confirmed": 30,
+    "highest_confirmed": 36,
     "population": 9587522,
     "country_name": "Honduras",
     "confirmed": [
@@ -18553,7 +19413,7 @@
     ]
   },
   {
-    "highest_confirmed": 187,
+    "highest_confirmed": 226,
     "highest_deaths": 9,
     "population": 9768785,
     "country_name": "Hungary",
@@ -18600,6 +19460,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 187
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 226
           }
         ]
       },
@@ -18625,12 +19490,23 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 187
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 226
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 226
+          }
+        ]
       },
       {
         "range": 300,
@@ -18701,7 +19577,7 @@
     ]
   },
   {
-    "highest_confirmed": 648,
+    "highest_confirmed": 737,
     "highest_deaths": 5,
     "population": 353574,
     "country_name": "Iceland",
@@ -18798,6 +19674,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -18868,6 +19749,11 @@
             "num_day": 12,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -18913,6 +19799,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -18948,6 +19839,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -18978,6 +19874,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -18998,6 +19899,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 648
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 737
           }
         ]
       },
@@ -19058,7 +19964,7 @@
     ]
   },
   {
-    "highest_confirmed": 536,
+    "highest_confirmed": 657,
     "highest_deaths": 10,
     "population": 1352617328,
     "country_name": "India",
@@ -19140,6 +20046,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19200,6 +20111,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19230,6 +20146,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19255,6 +20176,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19270,6 +20196,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19280,6 +20211,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 536
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 657
           }
         ]
       },
@@ -19351,7 +20287,7 @@
     ]
   },
   {
-    "highest_confirmed": 686,
+    "highest_confirmed": 790,
     "highest_deaths": 55,
     "population": 267663435,
     "country_name": "Indonesia",
@@ -19418,6 +20354,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
@@ -19473,6 +20414,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
@@ -19513,6 +20459,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
@@ -19548,6 +20499,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
@@ -19573,6 +20529,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
@@ -19593,12 +20554,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 686
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
           }
         ]
       },
       {
         "range": 750,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 790
+          }
+        ]
       },
       {
         "range": 1000,
@@ -19768,7 +20740,7 @@
     ]
   },
   {
-    "highest_confirmed": 24811,
+    "highest_confirmed": 27017,
     "highest_deaths": 1934,
     "population": 81800269,
     "country_name": "Iran",
@@ -19925,6 +20897,11 @@
             "num_day": 29,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 30,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20070,6 +21047,11 @@
             "num_day": 27,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 28,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20210,6 +21192,11 @@
             "num_day": 26,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 27,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20345,6 +21332,11 @@
             "num_day": 25,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 26,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20475,6 +21467,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20605,6 +21602,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20730,6 +21732,11 @@
             "num_day": 23,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 24,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       },
@@ -20850,6 +21857,11 @@
             "num_day": 22,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 24811
+          },
+          {
+            "num_day": 23,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 27017
           }
         ]
       }
@@ -22058,7 +23070,7 @@
     ]
   },
   {
-    "highest_confirmed": 316,
+    "highest_confirmed": 346,
     "highest_deaths": 27,
     "population": 38433600,
     "country_name": "Iraq",
@@ -22155,6 +23167,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 316
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 346
           }
         ]
       },
@@ -22220,6 +23237,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 316
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 346
           }
         ]
       },
@@ -22250,6 +23272,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 316
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 346
           }
         ]
       },
@@ -22260,6 +23287,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 316
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 346
           }
         ]
       },
@@ -22400,7 +23432,7 @@
     ]
   },
   {
-    "highest_confirmed": 1329,
+    "highest_confirmed": 1564,
     "highest_deaths": 7,
     "population": 4853506,
     "country_name": "Ireland",
@@ -22467,6 +23499,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22527,6 +23564,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22572,6 +23614,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22607,6 +23654,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22642,6 +23694,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22677,6 +23734,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22702,6 +23764,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       },
@@ -22717,6 +23784,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1329
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1564
           }
         ]
       }
@@ -22769,7 +23841,7 @@
     ]
   },
   {
-    "highest_confirmed": 1930,
+    "highest_confirmed": 2369,
     "highest_deaths": 3,
     "population": 8883800,
     "country_name": "Israel",
@@ -22790,77 +23862,82 @@
           {
             "num_day": 2,
             "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 83
+            "confirmed": 75
           },
           {
             "num_day": 3,
             "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 109
+            "confirmed": 79
           },
           {
             "num_day": 4,
             "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 131
+            "confirmed": 100
           },
           {
             "num_day": 5,
             "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 161
+            "confirmed": 126
           },
           {
             "num_day": 6,
             "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 193
+            "confirmed": 155
           },
           {
             "num_day": 7,
             "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 251
+            "confirmed": 213
           },
           {
             "num_day": 8,
             "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 255
+            "confirmed": 218
           },
           {
             "num_day": 9,
             "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 337
+            "confirmed": 250
           },
           {
             "num_day": 10,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 433
+            "confirmed": 304
           },
           {
             "num_day": 11,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "confirmed": 427
           },
           {
             "num_day": 12,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "confirmed": 529
           },
           {
             "num_day": 13,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 883
+            "confirmed": 712
           },
           {
             "num_day": 14,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 1071
+            "confirmed": 883
           },
           {
             "num_day": 15,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "confirmed": 1071
           },
           {
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "confirmed": 1238
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -22869,73 +23946,73 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 109
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 100
           },
           {
             "num_day": 1,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 131
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 126
           },
           {
             "num_day": 2,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 161
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 155
           },
           {
             "num_day": 3,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 193
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 213
           },
           {
             "num_day": 4,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 251
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 218
           },
           {
             "num_day": 5,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 255
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 250
           },
           {
             "num_day": 6,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 337
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 304
           },
           {
             "num_day": 7,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 433
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 427
           },
           {
             "num_day": 8,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 529
           },
           {
             "num_day": 9,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
           },
           {
             "num_day": 10,
-            "date": "2020-03-20T11:00:00.000Z",
+            "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 883
           },
           {
             "num_day": 11,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 12,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 13,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -22945,52 +24022,57 @@
           {
             "num_day": 0,
             "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 251
+            "confirmed": 213
           },
           {
             "num_day": 1,
             "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 255
+            "confirmed": 218
           },
           {
             "num_day": 2,
             "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 337
+            "confirmed": 250
           },
           {
             "num_day": 3,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 433
+            "confirmed": 304
           },
           {
             "num_day": 4,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "confirmed": 427
           },
           {
             "num_day": 5,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "confirmed": 529
           },
           {
             "num_day": 6,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 883
+            "confirmed": 712
           },
           {
             "num_day": 7,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 1071
+            "confirmed": 883
           },
           {
             "num_day": 8,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "confirmed": 1071
           },
           {
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "confirmed": 1238
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -22999,43 +24081,43 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 337
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 304
           },
           {
             "num_day": 1,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 433
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 427
           },
           {
             "num_day": 2,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 529
           },
           {
             "num_day": 3,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
           },
           {
             "num_day": 4,
-            "date": "2020-03-20T11:00:00.000Z",
+            "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 883
           },
           {
             "num_day": 5,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 6,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 7,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -23044,38 +24126,38 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 433
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 427
           },
           {
             "num_day": 1,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 529
           },
           {
             "num_day": 2,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
           },
           {
             "num_day": 3,
-            "date": "2020-03-20T11:00:00.000Z",
+            "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 883
           },
           {
             "num_day": 4,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 5,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 6,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -23084,33 +24166,33 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 677
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 529
           },
           {
             "num_day": 1,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 705
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
           },
           {
             "num_day": 2,
-            "date": "2020-03-20T11:00:00.000Z",
+            "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 883
           },
           {
             "num_day": 3,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 4,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 5,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -23119,23 +24201,23 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-20T11:00:00.000Z",
+            "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 883
           },
           {
             "num_day": 1,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 2,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 3,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       },
@@ -23144,18 +24226,18 @@
         "time_series": [
           {
             "num_day": 0,
-            "date": "2020-03-21T11:00:00.000Z",
+            "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 1071
           },
           {
             "num_day": 1,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 1442
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1238
           },
           {
             "num_day": 2,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 1930
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2369
           }
         ]
       }
@@ -23208,7 +24290,7 @@
     ]
   },
   {
-    "highest_confirmed": 69176,
+    "highest_confirmed": 74386,
     "highest_deaths": 6820,
     "population": 60431283,
     "country_name": "Italy",
@@ -23685,6 +24767,11 @@
             "num_day": 29,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 30,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       },
@@ -23835,6 +24922,11 @@
             "num_day": 28,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 29,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       },
@@ -23980,6 +25072,11 @@
             "num_day": 27,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 28,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       },
@@ -24120,6 +25217,11 @@
             "num_day": 26,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 27,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       },
@@ -24255,6 +25357,11 @@
             "num_day": 25,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 26,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       },
@@ -24385,6 +25492,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
           }
         ]
       }
@@ -25618,7 +26730,7 @@
     ]
   },
   {
-    "highest_confirmed": 21,
+    "highest_confirmed": 26,
     "highest_deaths": 1,
     "population": 2934855,
     "country_name": "Jamaica",
@@ -25704,7 +26816,7 @@
     ]
   },
   {
-    "highest_confirmed": 1193,
+    "highest_confirmed": 1307,
     "highest_deaths": 43,
     "population": 126529100,
     "country_name": "Japan",
@@ -26166,6 +27278,11 @@
             "num_day": 26,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 27,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       },
@@ -26276,6 +27393,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       },
@@ -26376,6 +27498,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       },
@@ -26466,6 +27593,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       },
@@ -26526,6 +27658,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       },
@@ -26551,6 +27688,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1193
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
           }
         ]
       }
@@ -26782,7 +27924,7 @@
     ]
   },
   {
-    "highest_confirmed": 154,
+    "highest_confirmed": 172,
     "population": 9956011,
     "country_name": "Jordan",
     "confirmed": [
@@ -26823,6 +27965,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 154
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 172
           }
         ]
       },
@@ -26843,6 +27990,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 154
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 172
           }
         ]
       },
@@ -26919,7 +28071,7 @@
     ]
   },
   {
-    "highest_confirmed": 72,
+    "highest_confirmed": 81,
     "highest_deaths": 3,
     "population": 18276499,
     "country_name": "Kazakhstan",
@@ -26946,6 +28098,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 72
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 81
           }
         ]
       },
@@ -27026,7 +28183,7 @@
     ]
   },
   {
-    "highest_confirmed": 25,
+    "highest_confirmed": 28,
     "population": 51393010,
     "country_name": "Kenya",
     "confirmed": [
@@ -27111,7 +28268,7 @@
     ]
   },
   {
-    "highest_confirmed": 9037,
+    "highest_confirmed": 9137,
     "highest_deaths": 120,
     "population": 51635256,
     "country_name": "South Korea",
@@ -28228,6 +29385,11 @@
             "num_day": 29,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9037
+          },
+          {
+            "num_day": 30,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
           }
         ]
       },
@@ -28373,6 +29535,11 @@
             "num_day": 27,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9037
+          },
+          {
+            "num_day": 28,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
           }
         ]
       }
@@ -29047,7 +30214,7 @@
     ]
   },
   {
-    "highest_confirmed": 191,
+    "highest_confirmed": 195,
     "population": 4137309,
     "country_name": "Kuwait",
     "confirmed": [
@@ -29168,6 +30335,11 @@
             "num_day": 22,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 191
+          },
+          {
+            "num_day": 23,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 195
           }
         ]
       },
@@ -29228,6 +30400,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 191
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 195
           }
         ]
       },
@@ -29304,7 +30481,7 @@
     ]
   },
   {
-    "highest_confirmed": 42,
+    "highest_confirmed": 44,
     "country_name": "Kyrgyzstan",
     "confirmed": [
       {
@@ -29388,7 +30565,7 @@
     ]
   },
   {
-    "highest_confirmed": 197,
+    "highest_confirmed": 221,
     "population": 1926542,
     "country_name": "Latvia",
     "confirmed": [
@@ -29429,6 +30606,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 197
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 221
           }
         ]
       },
@@ -29459,12 +30641,23 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 197
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 221
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 221
+          }
+        ]
       },
       {
         "range": 300,
@@ -29535,7 +30728,7 @@
     ]
   },
   {
-    "highest_confirmed": 318,
+    "highest_confirmed": 333,
     "highest_deaths": 4,
     "population": 6848925,
     "country_name": "Lebanon",
@@ -29612,6 +30805,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 318
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -29667,6 +30865,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 318
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -29687,6 +30890,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 318
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -29697,6 +30905,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 318
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -29866,6 +31079,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 51
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 51
           }
         ]
       },
@@ -29946,7 +31164,7 @@
     ]
   },
   {
-    "highest_confirmed": 209,
+    "highest_confirmed": 274,
     "highest_deaths": 2,
     "population": 2789533,
     "country_name": "Lithuania",
@@ -29973,6 +31191,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 209
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 274
           }
         ]
       },
@@ -29993,6 +31216,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 209
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 274
           }
         ]
       },
@@ -30003,6 +31231,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 209
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 274
           }
         ]
       },
@@ -30075,7 +31308,7 @@
     ]
   },
   {
-    "highest_confirmed": 1099,
+    "highest_confirmed": 1333,
     "highest_deaths": 8,
     "population": 607728,
     "country_name": "Luxembourg",
@@ -30137,6 +31370,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30182,6 +31420,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30222,6 +31465,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30257,6 +31505,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30287,6 +31540,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30312,6 +31570,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30332,6 +31595,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       },
@@ -30342,6 +31610,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1099
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1333
           }
         ]
       }
@@ -30394,7 +31667,7 @@
     ]
   },
   {
-    "highest_confirmed": 17,
+    "highest_confirmed": 19,
     "population": 26262368,
     "country_name": "Madagascar",
     "confirmed": [
@@ -30479,7 +31752,7 @@
     ]
   },
   {
-    "highest_confirmed": 1624,
+    "highest_confirmed": 1796,
     "highest_deaths": 16,
     "population": 31528585,
     "country_name": "Malaysia",
@@ -30591,6 +31864,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30676,6 +31954,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30736,6 +32019,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30791,6 +32079,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30846,6 +32139,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30896,6 +32194,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30936,6 +32239,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       },
@@ -30966,6 +32274,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1624
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1796
           }
         ]
       }
@@ -31119,7 +32432,7 @@
     ]
   },
   {
-    "highest_confirmed": 110,
+    "highest_confirmed": 129,
     "population": 483530,
     "country_name": "Malta",
     "confirmed": [
@@ -31155,6 +32468,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 110
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 129
           }
         ]
       },
@@ -31170,6 +32488,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 110
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 129
           }
         ]
       },
@@ -31331,7 +32654,7 @@
     ]
   },
   {
-    "highest_confirmed": 42,
+    "highest_confirmed": 48,
     "highest_deaths": 2,
     "population": 1265303,
     "country_name": "Mauritius",
@@ -31417,7 +32740,7 @@
     ]
   },
   {
-    "highest_confirmed": 367,
+    "highest_confirmed": 405,
     "highest_deaths": 4,
     "population": 126190788,
     "country_name": "Mexico",
@@ -31469,6 +32792,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 367
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 405
           }
         ]
       },
@@ -31504,6 +32832,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 367
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 405
           }
         ]
       },
@@ -31529,6 +32862,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 367
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 405
           }
         ]
       },
@@ -31544,12 +32882,23 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 367
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 405
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 405
+          }
+        ]
       },
       {
         "range": 500,
@@ -31612,7 +32961,7 @@
     ]
   },
   {
-    "highest_confirmed": 125,
+    "highest_confirmed": 149,
     "highest_deaths": 1,
     "population": 3545883,
     "country_name": "Moldova",
@@ -31644,6 +32993,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 125
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 149
           }
         ]
       },
@@ -31659,6 +33013,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 125
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 149
           }
         ]
       },
@@ -31735,7 +33094,7 @@
     ]
   },
   {
-    "highest_confirmed": 23,
+    "highest_confirmed": 31,
     "population": 38682,
     "country_name": "Monaco",
     "confirmed": [
@@ -31905,14 +33264,20 @@
     ]
   },
   {
-    "highest_confirmed": 47,
+    "highest_confirmed": 52,
     "highest_deaths": 1,
     "population": 622345,
     "country_name": "Montenegro",
     "confirmed": [
       {
         "range": 50,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 52
+          }
+        ]
       },
       {
         "range": 100,
@@ -31991,7 +33356,7 @@
     ]
   },
   {
-    "highest_confirmed": 170,
+    "highest_confirmed": 225,
     "highest_deaths": 5,
     "population": 36029138,
     "country_name": "Morocco",
@@ -32028,6 +33393,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 170
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 225
           }
         ]
       },
@@ -32048,12 +33418,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 170
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 225
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 225
+          }
+        ]
       },
       {
         "range": 300,
@@ -32209,7 +33590,7 @@
     ]
   },
   {
-    "highest_confirmed": 2,
+    "highest_confirmed": 3,
     "population": 28087871,
     "country_name": "Nepal",
     "confirmed": [
@@ -32294,7 +33675,7 @@
     ]
   },
   {
-    "highest_confirmed": 5580,
+    "highest_confirmed": 6438,
     "highest_deaths": 277,
     "population": 17231017,
     "country_name": "Netherlands",
@@ -32401,6 +33782,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32501,6 +33887,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32591,6 +33982,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32676,6 +34072,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32751,6 +34152,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32826,6 +34232,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32891,6 +34302,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       },
@@ -32946,6 +34362,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 5580
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 6438
           }
         ]
       }
@@ -33296,7 +34717,7 @@
     ]
   },
   {
-    "highest_confirmed": 155,
+    "highest_confirmed": 205,
     "population": 4885500,
     "country_name": "New Zealand",
     "confirmed": [
@@ -33322,6 +34743,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 155
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 205
           }
         ]
       },
@@ -33342,12 +34768,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 155
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 205
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 205
+          }
+        ]
       },
       {
         "range": 300,
@@ -33503,7 +34940,7 @@
     ]
   },
   {
-    "highest_confirmed": 3,
+    "highest_confirmed": 7,
     "population": 22442948,
     "country_name": "Niger",
     "confirmed": [
@@ -33588,14 +35025,20 @@
     ]
   },
   {
-    "highest_confirmed": 44,
+    "highest_confirmed": 51,
     "highest_deaths": 1,
     "population": 195874740,
     "country_name": "Nigeria",
     "confirmed": [
       {
         "range": 50,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 51
+          }
+        ]
       },
       {
         "range": 100,
@@ -33674,7 +35117,7 @@
     ]
   },
   {
-    "highest_confirmed": 148,
+    "highest_confirmed": 177,
     "highest_deaths": 2,
     "population": 2082958,
     "country_name": "North Macedonia",
@@ -33706,6 +35149,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 148
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 177
           }
         ]
       },
@@ -33726,6 +35174,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 148
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 177
           }
         ]
       },
@@ -33802,7 +35255,7 @@
     ]
   },
   {
-    "highest_confirmed": 2863,
+    "highest_confirmed": 3084,
     "highest_deaths": 12,
     "population": 5314336,
     "country_name": "Norway",
@@ -33914,6 +35367,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34014,6 +35472,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34099,6 +35562,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34179,6 +35647,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34259,6 +35732,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34334,6 +35812,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34399,6 +35882,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       },
@@ -34459,6 +35947,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2863
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 3084
           }
         ]
       }
@@ -34522,7 +36015,7 @@
     ]
   },
   {
-    "highest_confirmed": 84,
+    "highest_confirmed": 99,
     "population": 4829483,
     "country_name": "Oman",
     "confirmed": [
@@ -34548,6 +36041,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 84
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 99
           }
         ]
       },
@@ -34628,7 +36126,7 @@
     ]
   },
   {
-    "highest_confirmed": 972,
+    "highest_confirmed": 1063,
     "highest_deaths": 7,
     "population": 212215030,
     "country_name": "Pakistan",
@@ -34685,6 +36183,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34735,6 +36238,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34780,6 +36288,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34815,6 +36328,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34850,6 +36368,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34880,6 +36403,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
@@ -34900,12 +36428,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 972
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
           }
         ]
       },
       {
         "range": 1000,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1063
+          }
+        ]
       }
     ],
     "deaths": [
@@ -34956,7 +36495,7 @@
     ]
   },
   {
-    "highest_confirmed": 345,
+    "highest_confirmed": 443,
     "highest_deaths": 6,
     "population": 4176873,
     "country_name": "Panama",
@@ -35008,6 +36547,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 345
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 443
           }
         ]
       },
@@ -35043,6 +36587,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 345
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 443
           }
         ]
       },
@@ -35068,6 +36617,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 345
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 443
           }
         ]
       },
@@ -35088,12 +36642,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 345
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 443
           }
         ]
       },
       {
         "range": 400,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 443
+          }
+        ]
       },
       {
         "range": 500,
@@ -35241,7 +36806,7 @@
     ]
   },
   {
-    "highest_confirmed": 27,
+    "highest_confirmed": 37,
     "highest_deaths": 2,
     "population": 6956071,
     "country_name": "Paraguay",
@@ -35327,7 +36892,7 @@
     ]
   },
   {
-    "highest_confirmed": 416,
+    "highest_confirmed": 480,
     "highest_deaths": 7,
     "population": 31989256,
     "country_name": "Peru",
@@ -35379,6 +36944,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 416
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 480
           }
         ]
       },
@@ -35424,6 +36994,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 416
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 480
           }
         ]
       },
@@ -35459,6 +37034,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 416
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 480
           }
         ]
       },
@@ -35484,6 +37064,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 416
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 480
           }
         ]
       },
@@ -35494,6 +37079,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 416
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 480
           }
         ]
       },
@@ -35558,7 +37148,7 @@
     ]
   },
   {
-    "highest_confirmed": 552,
+    "highest_confirmed": 636,
     "highest_deaths": 35,
     "population": 106651922,
     "country_name": "Philippines",
@@ -35630,6 +37220,11 @@
             "num_day": 12,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35690,6 +37285,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35730,6 +37330,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35755,6 +37360,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35770,6 +37380,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35780,6 +37395,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 552
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 636
           }
         ]
       },
@@ -35918,7 +37538,7 @@
     ]
   },
   {
-    "highest_confirmed": 901,
+    "highest_confirmed": 1051,
     "highest_deaths": 10,
     "population": 37978548,
     "country_name": "Poland",
@@ -35985,6 +37605,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36045,6 +37670,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36090,6 +37720,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36125,6 +37760,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36155,6 +37795,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36180,6 +37825,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
@@ -36190,12 +37840,23 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 901
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
           }
         ]
       },
       {
         "range": 1000,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1051
+          }
+        ]
       }
     ],
     "deaths": [
@@ -36252,7 +37913,7 @@
     ]
   },
   {
-    "highest_confirmed": 2362,
+    "highest_confirmed": 2995,
     "highest_deaths": 33,
     "population": 10281762,
     "country_name": "Portugal",
@@ -36329,6 +37990,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36394,6 +38060,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36449,6 +38120,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36499,6 +38175,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36544,6 +38225,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36579,6 +38265,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36614,6 +38305,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       },
@@ -36644,6 +38340,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2362
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2995
           }
         ]
       }
@@ -36734,7 +38435,7 @@
     ]
   },
   {
-    "highest_confirmed": 526,
+    "highest_confirmed": 537,
     "population": 2781677,
     "country_name": "Qatar",
     "confirmed": [
@@ -36810,6 +38511,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -36885,6 +38591,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -36960,6 +38671,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -37025,6 +38741,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -37080,6 +38801,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -37095,6 +38821,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 526
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 537
           }
         ]
       },
@@ -37155,7 +38886,7 @@
     ]
   },
   {
-    "highest_confirmed": 794,
+    "highest_confirmed": 906,
     "highest_deaths": 11,
     "population": 19473936,
     "country_name": "Romania",
@@ -37222,6 +38953,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37282,6 +39018,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37322,6 +39063,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37352,6 +39098,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37372,6 +39123,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37387,6 +39143,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37397,6 +39158,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 794
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 906
           }
         ]
       },
@@ -37459,7 +39225,7 @@
     ]
   },
   {
-    "highest_confirmed": 495,
+    "highest_confirmed": 658,
     "highest_deaths": 1,
     "population": 144478050,
     "country_name": "Russia",
@@ -37521,6 +39287,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 495
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
           }
         ]
       },
@@ -37566,6 +39337,11 @@
             "num_day": 7,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 495
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
           }
         ]
       },
@@ -37596,6 +39372,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 495
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
           }
         ]
       },
@@ -37621,6 +39402,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 495
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
           }
         ]
       },
@@ -37636,12 +39422,23 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 495
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
           }
         ]
       },
       {
         "range": 500,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 658
+          }
+        ]
       },
       {
         "range": 750,
@@ -37700,7 +39497,7 @@
     ]
   },
   {
-    "highest_confirmed": 40,
+    "highest_confirmed": 41,
     "population": 12301939,
     "country_name": "Rwanda",
     "confirmed": [
@@ -37954,7 +39751,7 @@
     ]
   },
   {
-    "highest_confirmed": 187,
+    "highest_confirmed": 208,
     "highest_deaths": 21,
     "population": 33785,
     "country_name": "San Marino",
@@ -38036,6 +39833,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 187
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 208
           }
         ]
       },
@@ -38091,12 +39893,23 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 187
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 208
           }
         ]
       },
       {
         "range": 200,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 208
+          }
+        ]
       },
       {
         "range": 300,
@@ -38224,7 +40037,7 @@
     ]
   },
   {
-    "highest_confirmed": 767,
+    "highest_confirmed": 900,
     "highest_deaths": 1,
     "population": 33699947,
     "country_name": "Saudi Arabia",
@@ -38291,6 +40104,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38351,6 +40169,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38386,6 +40209,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38416,6 +40244,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38436,6 +40269,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38456,6 +40294,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38466,6 +40309,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 767
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 900
           }
         ]
       },
@@ -38522,7 +40370,7 @@
     ]
   },
   {
-    "highest_confirmed": 86,
+    "highest_confirmed": 99,
     "population": 15854360,
     "country_name": "Senegal",
     "confirmed": [
@@ -38543,6 +40391,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 86
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 99
           }
         ]
       },
@@ -38623,7 +40476,7 @@
     ]
   },
   {
-    "highest_confirmed": 303,
+    "highest_confirmed": 384,
     "highest_deaths": 3,
     "population": 6982084,
     "country_name": "Serbia",
@@ -38675,6 +40528,11 @@
             "num_day": 8,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 303
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 384
           }
         ]
       },
@@ -38710,6 +40568,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 303
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 384
           }
         ]
       },
@@ -38730,6 +40593,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 303
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 384
           }
         ]
       },
@@ -38740,6 +40608,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 303
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 384
           }
         ]
       },
@@ -38893,7 +40766,7 @@
     ]
   },
   {
-    "highest_confirmed": 558,
+    "highest_confirmed": 631,
     "highest_deaths": 2,
     "population": 5638676,
     "country_name": "Singapore",
@@ -39185,6 +41058,11 @@
             "num_day": 24,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 558
+          },
+          {
+            "num_day": 25,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 631
           }
         ]
       },
@@ -39250,6 +41128,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 558
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 631
           }
         ]
       },
@@ -39290,6 +41173,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 558
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 631
           }
         ]
       },
@@ -39315,6 +41203,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 558
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 631
           }
         ]
       },
@@ -39330,6 +41223,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 558
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 631
           }
         ]
       },
@@ -39390,7 +41288,7 @@
     ]
   },
   {
-    "highest_confirmed": 204,
+    "highest_confirmed": 216,
     "highest_deaths": 1,
     "population": 5447011,
     "country_name": "Slovakia",
@@ -39447,6 +41345,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 204
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 216
           }
         ]
       },
@@ -39487,6 +41390,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 204
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 216
           }
         ]
       },
@@ -39497,6 +41405,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 204
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 216
           }
         ]
       },
@@ -39569,7 +41482,7 @@
     ]
   },
   {
-    "highest_confirmed": 480,
+    "highest_confirmed": 528,
     "highest_deaths": 4,
     "population": 2067372,
     "country_name": "Slovenia",
@@ -39646,6 +41559,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 480
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
           }
         ]
       },
@@ -39711,6 +41629,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 480
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
           }
         ]
       },
@@ -39766,6 +41689,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 480
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
           }
         ]
       },
@@ -39796,6 +41724,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 480
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
           }
         ]
       },
@@ -39816,12 +41749,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 480
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
           }
         ]
       },
       {
         "range": 500,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 528
+          }
+        ]
       },
       {
         "range": 750,
@@ -39965,7 +41909,7 @@
     ]
   },
   {
-    "highest_confirmed": 554,
+    "highest_confirmed": 709,
     "population": 57779622,
     "country_name": "South Africa",
     "confirmed": [
@@ -40021,6 +41965,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40061,6 +42010,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40091,6 +42045,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40106,6 +42065,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40121,6 +42085,11 @@
             "num_day": 1,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40131,6 +42100,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 554
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 709
           }
         ]
       },
@@ -40191,7 +42165,7 @@
     ]
   },
   {
-    "highest_confirmed": 39885,
+    "highest_confirmed": 49515,
     "highest_deaths": 2808,
     "population": 46723749,
     "country_name": "Spain",
@@ -40318,6 +42292,11 @@
             "num_day": 23,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 24,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40438,6 +42417,11 @@
             "num_day": 22,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 23,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40548,6 +42532,11 @@
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40648,6 +42637,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40748,6 +42742,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40843,6 +42842,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -40928,6 +42932,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       },
@@ -41013,6 +43022,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 39885
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 49515
           }
         ]
       }
@@ -41797,6 +43811,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 102
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 102
           }
         ]
       },
@@ -41806,6 +43825,11 @@
           {
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 102
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
             "confirmed": 102
           }
         ]
@@ -41969,7 +43993,7 @@
     ]
   },
   {
-    "highest_confirmed": 7,
+    "highest_confirmed": 8,
     "population": 575991,
     "country_name": "Suriname",
     "confirmed": [
@@ -42054,7 +44078,7 @@
     ]
   },
   {
-    "highest_confirmed": 2286,
+    "highest_confirmed": 2526,
     "highest_deaths": 36,
     "population": 10183175,
     "country_name": "Sweden",
@@ -42161,6 +44185,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42261,6 +44290,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42351,6 +44385,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42431,6 +44470,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42506,6 +44550,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42581,6 +44630,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42646,6 +44700,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       },
@@ -42701,6 +44760,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 2286
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2526
           }
         ]
       }
@@ -42816,7 +44880,7 @@
     ]
   },
   {
-    "highest_confirmed": 9877,
+    "highest_confirmed": 10897,
     "highest_deaths": 122,
     "population": 8516543,
     "country_name": "Switzerland",
@@ -42933,6 +44997,11 @@
             "num_day": 21,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43038,6 +45107,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43138,6 +45212,11 @@
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43228,6 +45307,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43308,6 +45392,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43383,6 +45472,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43448,6 +45542,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       },
@@ -43513,6 +45612,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9877
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 10897
           }
         ]
       }
@@ -43787,7 +45891,7 @@
     ]
   },
   {
-    "highest_confirmed": 215,
+    "highest_confirmed": 235,
     "highest_deaths": 2,
     "country_name": "Taiwan*",
     "confirmed": [
@@ -43853,6 +45957,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 215
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 235
           }
         ]
       },
@@ -43893,6 +46002,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 215
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 235
           }
         ]
       },
@@ -43903,6 +46017,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 215
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 235
           }
         ]
       },
@@ -44060,7 +46179,7 @@
     ]
   },
   {
-    "highest_confirmed": 827,
+    "highest_confirmed": 934,
     "highest_deaths": 4,
     "population": 69428524,
     "country_name": "Thailand",
@@ -44157,6 +46276,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44212,6 +46336,11 @@
             "num_day": 9,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44252,6 +46381,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44282,6 +46416,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44307,6 +46446,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44327,6 +46471,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44337,6 +46486,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 827
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 934
           }
         ]
       },
@@ -44393,7 +46547,7 @@
     ]
   },
   {
-    "highest_confirmed": 20,
+    "highest_confirmed": 23,
     "population": 7889094,
     "country_name": "Togo",
     "confirmed": [
@@ -44478,7 +46632,7 @@
     ]
   },
   {
-    "highest_confirmed": 57,
+    "highest_confirmed": 60,
     "population": 1389858,
     "country_name": "Trinidad and Tobago",
     "confirmed": [
@@ -44499,6 +46653,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 57
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 60
           }
         ]
       },
@@ -44579,7 +46738,7 @@
     ]
   },
   {
-    "highest_confirmed": 114,
+    "highest_confirmed": 173,
     "highest_deaths": 4,
     "population": 11565204,
     "country_name": "Tunisia",
@@ -44611,6 +46770,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 114
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 173
           }
         ]
       },
@@ -44621,6 +46785,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 114
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 173
           }
         ]
       },
@@ -44697,7 +46866,7 @@
     ]
   },
   {
-    "highest_confirmed": 1872,
+    "highest_confirmed": 2433,
     "highest_deaths": 44,
     "population": 82319724,
     "country_name": "Turkey",
@@ -44739,6 +46908,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44774,6 +46948,11 @@
             "num_day": 5,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44804,6 +46983,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44834,6 +47018,11 @@
             "num_day": 4,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44859,6 +47048,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44884,6 +47078,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44904,6 +47103,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       },
@@ -44924,6 +47128,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 1872
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 2433
           }
         ]
       }
@@ -45030,7 +47239,7 @@
     ]
   },
   {
-    "highest_confirmed": 9,
+    "highest_confirmed": 14,
     "population": 42723139,
     "country_name": "Uganda",
     "confirmed": [
@@ -45115,7 +47324,7 @@
     ]
   },
   {
-    "highest_confirmed": 97,
+    "highest_confirmed": 145,
     "highest_deaths": 3,
     "population": 44622516,
     "country_name": "Ukraine",
@@ -45137,12 +47346,23 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 97
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 145
           }
         ]
       },
       {
         "range": 100,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 145
+          }
+        ]
       },
       {
         "range": 200,
@@ -45217,7 +47437,7 @@
     ]
   },
   {
-    "highest_confirmed": 248,
+    "highest_confirmed": 333,
     "highest_deaths": 2,
     "population": 9630959,
     "country_name": "United Arab Emirates",
@@ -45299,6 +47519,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 248
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -45339,6 +47564,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 248
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
@@ -45349,12 +47579,23 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 248
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
           }
         ]
       },
       {
         "range": 300,
-        "time_series": []
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 333
+          }
+        ]
       },
       {
         "range": 400,
@@ -45421,7 +47662,7 @@
     ]
   },
   {
-    "highest_confirmed": 8164,
+    "highest_confirmed": 9640,
     "highest_deaths": 423,
     "population": 66488991,
     "country_name": "United Kingdom",
@@ -45538,6 +47779,11 @@
             "num_day": 21,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -45643,6 +47889,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -45738,6 +47989,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -45823,6 +48079,11 @@
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -45898,6 +48159,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -45963,6 +48229,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -46028,6 +48299,11 @@
             "num_day": 11,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       },
@@ -46088,6 +48364,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 8164
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9640
           }
         ]
       }
@@ -46490,7 +48771,7 @@
     ]
   },
   {
-    "highest_confirmed": 162,
+    "highest_confirmed": 189,
     "population": 3449299,
     "country_name": "Uruguay",
     "confirmed": [
@@ -46531,6 +48812,11 @@
             "num_day": 6,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 162
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 189
           }
         ]
       },
@@ -46556,6 +48842,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 162
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 189
           }
         ]
       },
@@ -46632,7 +48923,7 @@
     ]
   },
   {
-    "highest_confirmed": 53740,
+    "highest_confirmed": 65778,
     "highest_deaths": 706,
     "population": 327167434,
     "country_name": "United States",
@@ -46789,6 +49080,11 @@
             "num_day": 29,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 30,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -46904,6 +49200,11 @@
             "num_day": 21,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47009,6 +49310,11 @@
             "num_day": 19,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47104,6 +49410,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47199,6 +49510,11 @@
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47289,6 +49605,11 @@
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47369,6 +49690,11 @@
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       },
@@ -47444,6 +49770,11 @@
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 53740
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 65778
           }
         ]
       }
@@ -48047,7 +50378,7 @@
     ]
   },
   {
-    "highest_confirmed": 50,
+    "highest_confirmed": 60,
     "population": 32955400,
     "country_name": "Uzbekistan",
     "confirmed": [
@@ -48058,6 +50389,11 @@
             "num_day": 0,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 50
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 60
           }
         ]
       },
@@ -48138,7 +50474,7 @@
     ]
   },
   {
-    "highest_confirmed": 84,
+    "highest_confirmed": 91,
     "population": 28870195,
     "country_name": "Venezuela",
     "confirmed": [
@@ -48164,6 +50500,11 @@
             "num_day": 3,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 84
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 91
           }
         ]
       },
@@ -48244,7 +50585,7 @@
     ]
   },
   {
-    "highest_confirmed": 134,
+    "highest_confirmed": 141,
     "population": 95540395,
     "country_name": "Vietnam",
     "confirmed": [
@@ -48305,6 +50646,11 @@
             "num_day": 10,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 134
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 141
           }
         ]
       },
@@ -48325,6 +50671,11 @@
             "num_day": 2,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 134
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 141
           }
         ]
       },
@@ -48401,7 +50752,7 @@
     ]
   },
   {
-    "highest_confirmed": 3,
+    "highest_confirmed": 12,
     "population": 17351822,
     "country_name": "Zambia",
     "confirmed": [
@@ -48572,7 +50923,7 @@
     ]
   },
   {
-    "highest_confirmed": 2,
+    "highest_confirmed": 7,
     "population": 71625,
     "country_name": "Dominica",
     "confirmed": [
@@ -48742,7 +51093,7 @@
     ]
   },
   {
-    "highest_confirmed": 3,
+    "highest_confirmed": 5,
     "population": 29495962,
     "country_name": "Mozambique",
     "confirmed": [
@@ -48827,7 +51178,7 @@
     ]
   },
   {
-    "highest_confirmed": 1,
+    "highest_confirmed": 5,
     "country_name": "Syria",
     "confirmed": [
       {
@@ -48996,7 +51347,7 @@
     ]
   },
   {
-    "highest_confirmed": 1,
+    "highest_confirmed": 2,
     "population": 383071,
     "country_name": "Belize",
     "confirmed": [
@@ -49081,7 +51432,7 @@
     ]
   },
   {
-    "highest_confirmed": 2,
+    "highest_confirmed": 3,
     "country_name": "Laos",
     "confirmed": [
       {
@@ -49168,6 +51519,360 @@
     "highest_confirmed": 1,
     "population": 6678567,
     "country_name": "Libya",
+    "confirmed": [
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      },
+      {
+        "range": 750,
+        "time_series": []
+      },
+      {
+        "range": 1000,
+        "time_series": []
+      }
+    ],
+    "deaths": [
+      {
+        "range": 10,
+        "time_series": []
+      },
+      {
+        "range": 20,
+        "time_series": []
+      },
+      {
+        "range": 30,
+        "time_series": []
+      },
+      {
+        "range": 40,
+        "time_series": []
+      },
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 75,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      }
+    ]
+  },
+  {
+    "highest_confirmed": 59,
+    "country_name": "The West Bank and Gaza",
+    "confirmed": [
+      {
+        "range": 50,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 52
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 59
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 59
+          }
+        ]
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      },
+      {
+        "range": 750,
+        "time_series": []
+      },
+      {
+        "range": 1000,
+        "time_series": []
+      }
+    ],
+    "deaths": [
+      {
+        "range": 10,
+        "time_series": []
+      },
+      {
+        "range": 20,
+        "time_series": []
+      },
+      {
+        "range": 30,
+        "time_series": []
+      },
+      {
+        "range": 40,
+        "time_series": []
+      },
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 75,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      }
+    ]
+  },
+  {
+    "highest_confirmed": 2,
+    "population": 1874309,
+    "country_name": "Guinea-Bissau",
+    "confirmed": [
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      },
+      {
+        "range": 750,
+        "time_series": []
+      },
+      {
+        "range": 1000,
+        "time_series": []
+      }
+    ],
+    "deaths": [
+      {
+        "range": 10,
+        "time_series": []
+      },
+      {
+        "range": 20,
+        "time_series": []
+      },
+      {
+        "range": 30,
+        "time_series": []
+      },
+      {
+        "range": 40,
+        "time_series": []
+      },
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 75,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      }
+    ]
+  },
+  {
+    "highest_confirmed": 2,
+    "population": 19077690,
+    "country_name": "Mali",
+    "confirmed": [
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      },
+      {
+        "range": 750,
+        "time_series": []
+      },
+      {
+        "range": 1000,
+        "time_series": []
+      }
+    ],
+    "deaths": [
+      {
+        "range": 10,
+        "time_series": []
+      },
+      {
+        "range": 20,
+        "time_series": []
+      },
+      {
+        "range": 30,
+        "time_series": []
+      },
+      {
+        "range": 40,
+        "time_series": []
+      },
+      {
+        "range": 50,
+        "time_series": []
+      },
+      {
+        "range": 75,
+        "time_series": []
+      },
+      {
+        "range": 100,
+        "time_series": []
+      },
+      {
+        "range": 200,
+        "time_series": []
+      },
+      {
+        "range": 300,
+        "time_series": []
+      },
+      {
+        "range": 400,
+        "time_series": []
+      },
+      {
+        "range": 500,
+        "time_series": []
+      }
+    ]
+  },
+  {
+    "highest_confirmed": 2,
+    "country_name": "Saint Kitts and Nevis",
     "confirmed": [
       {
         "range": 50,

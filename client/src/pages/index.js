@@ -29,6 +29,7 @@ export default class IndexPage extends React.Component{
         ]
 
         this.state = {
+            update_time: '12:05am 26 March UTC',
             selected_country: '',
             numberFormat: new Intl.NumberFormat(),
             
@@ -145,8 +146,8 @@ export default class IndexPage extends React.Component{
                     label: "100% Daily Growth",
                     value: 2.0
                 },
-            ],
-            update_time: '12:20am 25 March UTC',
+            ]
+            
             
         }
     }
