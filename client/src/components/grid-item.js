@@ -83,10 +83,10 @@ export default class GridItem extends React.Component{
                     <h2 className="is-size-4  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
                     
                     <p className="is-size-6 has-text-white">
-                        {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago 
+                        {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago,
                         {' '}{country.country_name}
-                        {' '} had {active_country.country_name}'s current {per === 'total' ? ' total': 'per million'} 
-                        {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'}.
+                        {' '} had a similar amount of {per === 'total' ? ' total': 'per million'} 
+                        {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as {active_country.country_name} has today.
                     </p>
 
                     

@@ -76,11 +76,11 @@ export default class CountryPage extends React.Component{
             Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
             Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
           </p>
-          { confirmed > 100 ||deaths > 10 ?
-          <p className="is-size-6">
-            The cumulative daily growth is based on compounding daily growth starting from the daily figure when {country_name} first exceeded{' '}
-            { confirmed > 100 ? <strong>100 confirmed cases</strong> : <></> }{' '}
-            { deaths > 10 ? <>and <strong>10 deaths</strong></> : <></> }
+          { (confirmed > 100 ||deaths > 10) && per == 'total' ?
+          <p className="is-size-6"style={{marginTop: '10px'}}>
+            The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when {country_name}'s daily figure first exceeded{' '}
+            { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
+            { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
           </p>
           : <></> }
           <div style={{marginTop: '10px', marginBottom: '10px'}}>
