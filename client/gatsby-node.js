@@ -26,13 +26,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const countries = result.data.allCountriesJson.nodes;
   
     countries.forEach(c => {
-      actions.createPage({
-        path: '/' + c.country_name.toLowerCase().replace(/\s+/g, "-"),
-        component: require.resolve('./src/templates/country-template.js'),
-        context: {
-          country: c.country_name,
-        },
-      });
+      if(c.country_name != "United States"){ // Custom Structure
+        actions.createPage({
+          path: '/' + c.country_name.toLowerCase().replace(/\s+/g, "-"),
+          component: require.resolve('./src/templates/country-template.js'),
+          context: {
+            country: c.country_name,
+          },
+        });
+      }
     });
 
   };

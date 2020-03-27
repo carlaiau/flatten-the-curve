@@ -7,7 +7,6 @@ const { parse } = require('date-fns')
 const createFiles = (country_path, cum_path) => {
   let confirmed = [];
   let deaths = []
-  let recovered = []
   let population_data = []
 
   request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
@@ -262,12 +261,89 @@ const getCumulatives = (countries) => {
 
 }
 
+const processUnitedStates = () => {
+    const state_codes = [
+      'AK',
+      'AL',
+      'AR',
+      'AS',
+      'AZ',
+      'CA',
+      'CO',
+      'CT',
+      'DC',
+      'DE',
+      'FL',
+      'GA',
+      'GU',
+      'HI',
+      'IA',
+      'ID',
+      'IL',
+      'IN',
+      'KS',
+      'KY',
+      'LA',
+      'MA',
+      'MD',
+      'ME',
+      'MI',
+      'MN',
+      'MO',
+      'MP',
+      'MS',
+      'MT',
+      'NC',
+      'ND',
+      'NE',
+      'NH',
+      'NJ',
+      'NM',
+      'NV',
+      'NY',
+      'OH',
+      'OK',
+      'OR',
+      'PA',
+      'PR',
+      'RI',
+      'SC',
+      'SD',
+      'TN',
+      'TX',
+      'UT',
+      'VA',
+      'VI',
+      'VT',
+      'WA',
+      'WI',
+      'WV',
+      'WY'
+    ]
+    fs.readFile('./data/covid-tracker.json', (err, data) => {
+      if (err) throw err;
+      let state_day = JSON.parse(data);
+      let states = []
+      
+      state_codes.forEach(state => {
+        states.push(state_day.filter(day => day.state == state))
+      })
+      states.forEach(state => { state.reverse() })
+      
+      states.forEach(state => {
+        state.forEach(day => {
+          day.date_clean = parse(day.date, 'yyyyMMdd', new Date() )
+        })
+      })
+      console.log("after", states[0][0])
 
-
-
-if(process.argv.length == 4 ){
-  createFiles(process.argv[2], process.argv[3])
+  });
 }
+
+
+
+if(process.argv.length == 4 ) createFiles(process.argv[2], process.argv[3])
 else{
   console.log("Whoops!Usage:\nnode get.js country.out cumulative.out")
+  processUnitedStates()
 }
