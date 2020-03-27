@@ -371,7 +371,7 @@ const getUnitedStates = (json_data) => {
       const highest_hospitalized = latest.hospitalized
       const highest_tests = latest.totalTestResults
       states.push({
-        country_name: state,
+        name: state,
         time_series: time_series.reverse().map(day => ({
           //
           // Set the date to "2018-09-01T16:01:36.386Z"

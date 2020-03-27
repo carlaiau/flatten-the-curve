@@ -1,6 +1,6 @@
 [
   {
-    "country_name": "AK",
+    "name": "AK",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -261,7 +261,7 @@
     "highest_tests": 1860
   },
   {
-    "country_name": "AL",
+    "name": "AL",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -430,7 +430,7 @@
     "highest_tests": 4099
   },
   {
-    "country_name": "AR",
+    "name": "AR",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -607,7 +607,7 @@
     "highest_tests": 1839
   },
   {
-    "country_name": "AS",
+    "name": "AS",
     "time_series": [
       {
         "date": "2020-03-16T00:00:00Z",
@@ -704,7 +704,7 @@
     "highest_tests": 0
   },
   {
-    "country_name": "AZ",
+    "name": "AZ",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -905,7 +905,7 @@
     "highest_tests": 924
   },
   {
-    "country_name": "CA",
+    "name": "CA",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -1098,7 +1098,7 @@
     "highest_tests": 20386
   },
   {
-    "country_name": "CO",
+    "name": "CO",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -1283,7 +1283,7 @@
     "highest_tests": 8064
   },
   {
-    "country_name": "CT",
+    "name": "CT",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -1452,7 +1452,7 @@
     "highest_tests": 6637
   },
   {
-    "country_name": "DC",
+    "name": "DC",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -1637,7 +1637,7 @@
     "highest_tests": 1857
   },
   {
-    "country_name": "DE",
+    "name": "DE",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -1814,7 +1814,7 @@
     "highest_tests": 166
   },
   {
-    "country_name": "FL",
+    "name": "FL",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -2007,7 +2007,7 @@
     "highest_tests": 26096
   },
   {
-    "country_name": "GA",
+    "name": "GA",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -2200,7 +2200,7 @@
     "highest_tests": 8926
   },
   {
-    "country_name": "GU",
+    "name": "GU",
     "time_series": [
       {
         "date": "2020-03-16T00:00:00Z",
@@ -2297,7 +2297,7 @@
     "highest_tests": 308
   },
   {
-    "country_name": "HI",
+    "name": "HI",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -2466,7 +2466,7 @@
     "highest_tests": 4452
   },
   {
-    "country_name": "IA",
+    "name": "IA",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -2643,7 +2643,7 @@
     "highest_tests": 2757
   },
   {
-    "country_name": "ID",
+    "name": "ID",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -2812,7 +2812,7 @@
     "highest_tests": 2188
   },
   {
-    "country_name": "IL",
+    "name": "IL",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -3005,7 +3005,7 @@
     "highest_tests": 16631
   },
   {
-    "country_name": "IN",
+    "name": "IN",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -3182,7 +3182,7 @@
     "highest_tests": 4651
   },
   {
-    "country_name": "KS",
+    "name": "KS",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -3359,7 +3359,7 @@
     "highest_tests": 3037
   },
   {
-    "country_name": "KY",
+    "name": "KY",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -3536,7 +3536,7 @@
     "highest_tests": 3300
   },
   {
-    "country_name": "LA",
+    "name": "LA",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -3705,7 +3705,7 @@
     "highest_tests": 18029
   },
   {
-    "country_name": "MA",
+    "name": "MA",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -3898,7 +3898,7 @@
     "highest_tests": 23621
   },
   {
-    "country_name": "MD",
+    "name": "MD",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -4083,7 +4083,7 @@
     "highest_tests": 674
   },
   {
-    "country_name": "ME",
+    "name": "ME",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -4252,7 +4252,7 @@
     "highest_tests": 3549
   },
   {
-    "country_name": "MI",
+    "name": "MI",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -4437,7 +4437,7 @@
     "highest_tests": 9406
   },
   {
-    "country_name": "MN",
+    "name": "MN",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -4614,7 +4614,7 @@
     "highest_tests": 12950
   },
   {
-    "country_name": "MO",
+    "name": "MO",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -4783,7 +4783,7 @@
     "highest_tests": 871
   },
   {
-    "country_name": "MP",
+    "name": "MP",
     "time_series": [
       {
         "date": "2020-03-16T00:00:00Z",
@@ -4880,7 +4880,7 @@
     "highest_tests": 0
   },
   {
-    "country_name": "MS",
+    "name": "MS",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -5049,7 +5049,7 @@
     "highest_tests": 2776
   },
   {
-    "country_name": "MT",
+    "name": "MT",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -5218,7 +5218,7 @@
     "highest_tests": 2199
   },
   {
-    "country_name": "NC",
+    "name": "NC",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -5411,7 +5411,7 @@
     "highest_tests": 12910
   },
   {
-    "country_name": "ND",
+    "name": "ND",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -5580,7 +5580,7 @@
     "highest_tests": 2091
   },
   {
-    "country_name": "NE",
+    "name": "NE",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -5765,7 +5765,7 @@
     "highest_tests": 1657
   },
   {
-    "country_name": "NH",
+    "name": "NH",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -5958,7 +5958,7 @@
     "highest_tests": 3138
   },
   {
-    "country_name": "NJ",
+    "name": "NJ",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -6143,7 +6143,7 @@
     "highest_tests": 20537
   },
   {
-    "country_name": "NM",
+    "name": "NM",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -6320,7 +6320,7 @@
     "highest_tests": 7793
   },
   {
-    "country_name": "NV",
+    "name": "NV",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -6505,7 +6505,7 @@
     "highest_tests": 5117
   },
   {
-    "country_name": "NY",
+    "name": "NY",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -6698,7 +6698,7 @@
     "highest_tests": 122104
   },
   {
-    "country_name": "OH",
+    "name": "OH",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -6883,7 +6883,7 @@
     "highest_tests": 17316
   },
   {
-    "country_name": "OK",
+    "name": "OK",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -7052,7 +7052,7 @@
     "highest_tests": 1206
   },
   {
-    "country_name": "OR",
+    "name": "OR",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -7245,7 +7245,7 @@
     "highest_tests": 7280
   },
   {
-    "country_name": "PA",
+    "name": "PA",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -7422,7 +7422,7 @@
     "highest_tests": 18128
   },
   {
-    "country_name": "PR",
+    "name": "PR",
     "time_series": [
       {
         "date": "2020-03-16T00:00:00Z",
@@ -7519,7 +7519,7 @@
     "highest_tests": 441
   },
   {
-    "country_name": "RI",
+    "name": "RI",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -7688,7 +7688,7 @@
     "highest_tests": 1504
   },
   {
-    "country_name": "SC",
+    "name": "SC",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -7881,7 +7881,7 @@
     "highest_tests": 2763
   },
   {
-    "country_name": "SD",
+    "name": "SD",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -8050,7 +8050,7 @@
     "highest_tests": 2019
   },
   {
-    "country_name": "TN",
+    "name": "TN",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -8235,7 +8235,7 @@
     "highest_tests": 14909
   },
   {
-    "country_name": "TX",
+    "name": "TX",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -8428,7 +8428,7 @@
     "highest_tests": 21424
   },
   {
-    "country_name": "UT",
+    "name": "UT",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",
@@ -8597,7 +8597,7 @@
     "highest_tests": 7710
   },
   {
-    "country_name": "VA",
+    "name": "VA",
     "time_series": [
       {
         "date": "2020-03-05T00:00:00Z",
@@ -8782,7 +8782,7 @@
     "highest_tests": 6189
   },
   {
-    "country_name": "VI",
+    "name": "VI",
     "time_series": [
       {
         "date": "2020-03-16T00:00:00Z",
@@ -8879,7 +8879,7 @@
     "highest_tests": 72
   },
   {
-    "country_name": "VT",
+    "name": "VT",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -9056,7 +9056,7 @@
     "highest_tests": 2008
   },
   {
-    "country_name": "WA",
+    "name": "WA",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -9249,7 +9249,7 @@
     "highest_tests": 34292
   },
   {
-    "country_name": "WI",
+    "name": "WI",
     "time_series": [
       {
         "date": "2020-03-04T00:00:00Z",
@@ -9442,7 +9442,7 @@
     "highest_tests": 12290
   },
   {
-    "country_name": "WV",
+    "name": "WV",
     "time_series": [
       {
         "date": "2020-03-06T00:00:00Z",
@@ -9619,7 +9619,7 @@
     "highest_tests": 1082
   },
   {
-    "country_name": "WY",
+    "name": "WY",
     "time_series": [
       {
         "date": "2020-03-07T00:00:00Z",

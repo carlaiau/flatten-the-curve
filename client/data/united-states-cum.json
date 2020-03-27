@@ -2,6 +2,7 @@
   {
     "highest_confirmed": 59,
     "highest_deaths": 1,
+    "name": "AK",
     "confirmed": [
       {
         "range": 50,
@@ -1420,6 +1421,7 @@
   {
     "highest_confirmed": 506,
     "highest_deaths": 1,
+    "name": "AL",
     "confirmed": [
       {
         "range": 50,
@@ -1610,6 +1612,7 @@
   {
     "highest_confirmed": 335,
     "highest_deaths": 3,
+    "name": "AR",
     "confirmed": [
       {
         "range": 50,
@@ -1783,6 +1786,7 @@
   {
     "highest_confirmed": 0,
     "highest_deaths": 0,
+    "name": "AS",
     "confirmed": [
       {
         "range": 50,
@@ -1867,6 +1871,7 @@
   {
     "highest_confirmed": 577,
     "highest_deaths": 8,
+    "name": "AZ",
     "confirmed": [
       {
         "range": 50,
@@ -2092,6 +2097,7 @@
   {
     "highest_confirmed": 3006,
     "highest_deaths": 65,
+    "name": "CA",
     "confirmed": [
       {
         "range": 50,
@@ -2819,6 +2825,7 @@
   {
     "highest_confirmed": 1086,
     "highest_deaths": 19,
+    "name": "CO",
     "confirmed": [
       {
         "range": 50,
@@ -3187,6 +3194,7 @@
   {
     "highest_confirmed": 1012,
     "highest_deaths": 21,
+    "name": "CT",
     "confirmed": [
       {
         "range": 50,
@@ -3481,6 +3489,7 @@
   {
     "highest_confirmed": 231,
     "highest_deaths": 3,
+    "name": "DC",
     "confirmed": [
       {
         "range": 50,
@@ -3628,6 +3637,7 @@
   {
     "highest_confirmed": 130,
     "highest_deaths": 1,
+    "name": "DE",
     "confirmed": [
       {
         "range": 50,
@@ -3749,6 +3759,7 @@
   {
     "highest_confirmed": 2355,
     "highest_deaths": 28,
+    "name": "FL",
     "confirmed": [
       {
         "range": 50,
@@ -4223,6 +4234,7 @@
   {
     "highest_confirmed": 1525,
     "highest_deaths": 48,
+    "name": "GA",
     "confirmed": [
       {
         "range": 50,
@@ -4704,6 +4716,7 @@
   {
     "highest_confirmed": 45,
     "highest_deaths": 1,
+    "name": "GU",
     "confirmed": [
       {
         "range": 50,
@@ -4788,6 +4801,7 @@
   {
     "highest_confirmed": 95,
     "highest_deaths": null,
+    "name": "HI",
     "confirmed": [
       {
         "range": 50,
@@ -4893,6 +4907,7 @@
   {
     "highest_confirmed": 179,
     "highest_deaths": 1,
+    "name": "IA",
     "confirmed": [
       {
         "range": 50,
@@ -5029,6 +5044,7 @@
   {
     "highest_confirmed": 123,
     "highest_deaths": 0,
+    "name": "ID",
     "confirmed": [
       {
         "range": 50,
@@ -5135,6 +5151,7 @@
   {
     "highest_confirmed": 2538,
     "highest_deaths": 26,
+    "name": "IL",
     "confirmed": [
       {
         "range": 50,
@@ -5579,6 +5596,7 @@
   {
     "highest_confirmed": 645,
     "highest_deaths": 17,
+    "name": "IN",
     "confirmed": [
       {
         "range": 50,
@@ -5810,6 +5828,7 @@
   {
     "highest_confirmed": 168,
     "highest_deaths": 3,
+    "name": "KS",
     "confirmed": [
       {
         "range": 50,
@@ -5936,6 +5955,7 @@
   {
     "highest_confirmed": 198,
     "highest_deaths": 4,
+    "name": "KY",
     "confirmed": [
       {
         "range": 50,
@@ -6072,6 +6092,7 @@
   {
     "highest_confirmed": 2305,
     "highest_deaths": 83,
+    "name": "LA",
     "confirmed": [
       {
         "range": 50,
@@ -6595,6 +6616,7 @@
   {
     "highest_confirmed": 2417,
     "highest_deaths": 25,
+    "name": "MA",
     "confirmed": [
       {
         "range": 50,
@@ -7054,6 +7076,7 @@
   {
     "highest_confirmed": 580,
     "highest_deaths": 4,
+    "name": "MD",
     "confirmed": [
       {
         "range": 50,
@@ -7289,6 +7312,7 @@
   {
     "highest_confirmed": 155,
     "highest_deaths": null,
+    "name": "ME",
     "confirmed": [
       {
         "range": 50,
@@ -7435,6 +7459,7 @@
   {
     "highest_confirmed": 2856,
     "highest_deaths": 60,
+    "name": "MI",
     "confirmed": [
       {
         "range": 50,
@@ -7892,6 +7917,7 @@
   {
     "highest_confirmed": 346,
     "highest_deaths": 2,
+    "name": "MN",
     "confirmed": [
       {
         "range": 50,
@@ -8095,6 +8121,7 @@
   {
     "highest_confirmed": 502,
     "highest_deaths": 8,
+    "name": "MO",
     "confirmed": [
       {
         "range": 50,
@@ -8265,6 +8292,7 @@
   {
     "highest_confirmed": 0,
     "highest_deaths": 0,
+    "name": "MP",
     "confirmed": [
       {
         "range": 50,
@@ -8349,6 +8377,7 @@
   {
     "highest_confirmed": 485,
     "highest_deaths": 6,
+    "name": "MS",
     "confirmed": [
       {
         "range": 50,
@@ -8553,6 +8582,7 @@
   {
     "highest_confirmed": 71,
     "highest_deaths": null,
+    "name": "MT",
     "confirmed": [
       {
         "range": 50,
@@ -8648,6 +8678,7 @@
   {
     "highest_confirmed": 636,
     "highest_deaths": 2,
+    "name": "NC",
     "confirmed": [
       {
         "range": 50,
@@ -8878,6 +8909,7 @@
   {
     "highest_confirmed": 52,
     "highest_deaths": 0,
+    "name": "ND",
     "confirmed": [
       {
         "range": 50,
@@ -8968,6 +9000,7 @@
   {
     "highest_confirmed": 73,
     "highest_deaths": 0,
+    "name": "NE",
     "confirmed": [
       {
         "range": 50,
@@ -9073,6 +9106,7 @@
   {
     "highest_confirmed": 137,
     "highest_deaths": 1,
+    "name": "NH",
     "confirmed": [
       {
         "range": 50,
@@ -9204,6 +9238,7 @@
   {
     "highest_confirmed": 6876,
     "highest_deaths": 81,
+    "name": "NJ",
     "confirmed": [
       {
         "range": 50,
@@ -9777,6 +9812,7 @@
   {
     "highest_confirmed": 112,
     "highest_deaths": 1,
+    "name": "NM",
     "confirmed": [
       {
         "range": 50,
@@ -9903,6 +9939,7 @@
   {
     "highest_confirmed": 420,
     "highest_deaths": 10,
+    "name": "NV",
     "confirmed": [
       {
         "range": 50,
@@ -10118,6 +10155,7 @@
   {
     "highest_confirmed": 37258,
     "highest_deaths": 385,
+    "name": "NY",
     "confirmed": [
       {
         "range": 50,
@@ -11044,6 +11082,7 @@
   {
     "highest_confirmed": 867,
     "highest_deaths": 15,
+    "name": "OH",
     "confirmed": [
       {
         "range": 50,
@@ -11336,6 +11375,7 @@
   {
     "highest_confirmed": 248,
     "highest_deaths": 7,
+    "name": "OK",
     "confirmed": [
       {
         "range": 50,
@@ -11473,6 +11513,7 @@
   {
     "highest_confirmed": 327,
     "highest_deaths": 11,
+    "name": "OR",
     "confirmed": [
       {
         "range": 50,
@@ -11667,6 +11708,7 @@
   {
     "highest_confirmed": 1687,
     "highest_deaths": 16,
+    "name": "PA",
     "confirmed": [
       {
         "range": 50,
@@ -12010,6 +12052,7 @@
   {
     "highest_confirmed": 64,
     "highest_deaths": 2,
+    "name": "PR",
     "confirmed": [
       {
         "range": 50,
@@ -12105,6 +12148,7 @@
   {
     "highest_confirmed": 165,
     "highest_deaths": null,
+    "name": "RI",
     "confirmed": [
       {
         "range": 50,
@@ -12246,6 +12290,7 @@
   {
     "highest_confirmed": 456,
     "highest_deaths": 9,
+    "name": "SC",
     "confirmed": [
       {
         "range": 50,
@@ -12450,6 +12495,7 @@
   {
     "highest_confirmed": 46,
     "highest_deaths": 1,
+    "name": "SD",
     "confirmed": [
       {
         "range": 50,
@@ -12534,6 +12580,7 @@
   {
     "highest_confirmed": 957,
     "highest_deaths": 3,
+    "name": "TN",
     "confirmed": [
       {
         "range": 50,
@@ -12845,6 +12892,7 @@
   {
     "highest_confirmed": 1396,
     "highest_deaths": 18,
+    "name": "TX",
     "confirmed": [
       {
         "range": 50,
@@ -13153,6 +13201,7 @@
   {
     "highest_confirmed": 402,
     "highest_deaths": 1,
+    "name": "UT",
     "confirmed": [
       {
         "range": 50,
@@ -13362,6 +13411,7 @@
   {
     "highest_confirmed": 460,
     "highest_deaths": 13,
+    "name": "VA",
     "confirmed": [
       {
         "range": 50,
@@ -13587,6 +13637,7 @@
   {
     "highest_confirmed": 17,
     "highest_deaths": 0,
+    "name": "VI",
     "confirmed": [
       {
         "range": 50,
@@ -13671,6 +13722,7 @@
   {
     "highest_confirmed": 158,
     "highest_deaths": 9,
+    "name": "VT",
     "confirmed": [
       {
         "range": 50,
@@ -13792,6 +13844,7 @@
   {
     "highest_confirmed": 2580,
     "highest_deaths": 132,
+    "name": "WA",
     "confirmed": [
       {
         "range": 50,
@@ -14871,6 +14924,7 @@
   {
     "highest_confirmed": 707,
     "highest_deaths": 8,
+    "name": "WI",
     "confirmed": [
       {
         "range": 50,
@@ -15146,6 +15200,7 @@
   {
     "highest_confirmed": 51,
     "highest_deaths": 0,
+    "name": "WV",
     "confirmed": [
       {
         "range": 50,
@@ -15236,6 +15291,7 @@
   {
     "highest_confirmed": 53,
     "highest_deaths": null,
+    "name": "WY",
     "confirmed": [
       {
         "range": 50,
