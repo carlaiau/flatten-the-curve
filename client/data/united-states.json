@@ -115,12 +115,12 @@
         "confirmed": 3173,
         "deaths": 60,
         "hospitalized": 0,
-        "tests": 25721,
+        "tests": 25724,
         "old_date": 20200315,
         "confirmed_per_mil": 9.698398037990541,
         "deaths_per_mil": 0.18339233604772534,
         "hospitalized_per_mil": 0,
-        "tests_per_mil": 78.61723792472571
+        "tests_per_mil": 78.62640754152811
       },
       {
         "date": "2020-03-16T00:00:00Z",
@@ -2714,7 +2714,7 @@
         "confirmed": 5,
         "deaths": null,
         "hospitalized": null,
-        "tests": 176,
+        "tests": 179,
         "old_date": 20200315
       },
       {
@@ -9928,12 +9928,12 @@
         "confirmed": 3173,
         "deaths": 60,
         "hospitalized": 0,
-        "tests": 25721,
+        "tests": 25724,
         "old_date": 20200315,
         "confirmed_per_mil": 9.698398037990541,
         "deaths_per_mil": 0.18339233604772534,
         "hospitalized_per_mil": 0,
-        "tests_per_mil": 78.61723792472571
+        "tests_per_mil": 78.62640754152811
       },
       {
         "date": "2020-03-16T00:00:00Z",

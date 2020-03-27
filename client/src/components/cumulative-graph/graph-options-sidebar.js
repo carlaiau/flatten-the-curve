@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
-import {GlobalStateContext} from "../context/GlobalContextProvider"
+import {GlobalStateContext} from "../../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
 const GraphOptionsSideBar = ({
     max_count = 40, 
     field = 'confirmed', 
-    checkCountries = [], 
+    checkedAreas = [], 
     scale, 
-    min_cases,
-    min_case_options,
+    accumulateFrom,
+    accumulateOptions,
     growth,
     growth_options,
     
@@ -23,8 +23,8 @@ const GraphOptionsSideBar = ({
     
     const countries_avaliable = (
         field == 'confirmed' ? 
-            cumulative_confirmed[min_cases].filter(c => c) : 
-            cumulative_deaths[min_cases].filter( c => c ) 
+            cumulative_confirmed[accumulateFrom].filter(c => c) : 
+            cumulative_deaths[accumulateFrom].filter( c => c ) 
         ).slice(0,max_count)
     
     const SideBar = styled('div')`
@@ -62,8 +62,8 @@ const GraphOptionsSideBar = ({
                 <label className="label">{field == 'confirmed'? 'Cases': 'Deaths'} to accumulate from</label>
                 <div className="control">
                     <div className="select">
-                    <select value={min_cases} onChange={caseFn}>
-                        { min_case_options.map(option => <option value={option}>{option}</option>) }
+                    <select value={accumulateFrom} onChange={caseFn}>
+                        { accumulateOptions.map(option => <option value={option}>{option}</option>) }
                     </select>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const GraphOptionsSideBar = ({
                         <label className="checkbox" key={c.name}>
                             <input 
                                 type="checkbox" name={c.name} 
-                                value={c.name} defaultChecked={checkCountries.includes(c.name)} 
+                                value={c.name} defaultChecked={checkedAreas.includes(c.name)} 
                                 onChange={checkFn}
                             />
                                 {c.name}
