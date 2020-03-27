@@ -16,6 +16,8 @@ Because the site is statically generated we have zero infrastructure costs. This
 I am still on temporary leave from my day job to commit to this project.
 
 ### What I'm Working On
+-- US Index Page: Table and State Level data obtained from http://covidtracking.com/
+-- Insure that the componentry for this is easily extendable to other countries with more granular data, such as **Canada** and **Australia** from the **JHU** dataset
 - ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
 - ~~Split site into multiple pages, with each country page (similar to current index) available at `c/new-zealand` or `c/australia`~~
 - ~~Show well performing comparisons to give people hope~~ (Can now sort by worst or best)
@@ -28,14 +30,14 @@ I am still on temporary leave from my day job to commit to this project.
 - ~~Create Index Page that showcases the top outbreaks in the world, using the above Graph component, and table of results~~
 - ~~Incorporate fancy styling for home page tool tip, and link to countries from tool tip~~
 - ~~Ability for site to function offline~~
-- Incorporate table of regions on country page. 
+- ~~Incorporate table of regions on country page (In current us-index branch).~~ 
 - 'connect' this table to a comparison graph.
 
 - Flip / Flop country overview graph to cumulative view.
 - Allow adding other countries to country overview cumulative graph if applicable.
-- Allow cumulative graphs to have dynamic constraints such as:
-  - **Confirmed:**: 50th, 100th, 500th, 1000th
-  - **Deaths**: 10th, 50th, 100th
+- ~~Allow cumulative graphs to have dynamic constraints such as:~~
+  - ~~**Confirmed:**: 50th, 100th, 500th, 1000th~~
+  - ~~**Deaths**: 10th, 50th, 100th~~
 - Backend: Write logic to pull Taiwan and Hong Kong out of China
 
 
