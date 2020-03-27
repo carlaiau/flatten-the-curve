@@ -2,9 +2,12 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
 const request = require('request')
-const { parse } = require('date-fns')
+const { parse, isEqual } = require('date-fns')
 
-const createFiles = (country_path, cum_path) => {
+
+
+
+const createFiles = (country_path, cum_path, us_path, us_cum_path) => {
   let confirmed = [];
   let deaths = []
   let population_data = []
@@ -25,6 +28,18 @@ const createFiles = (country_path, cum_path) => {
           restructure_inputs(confirmed), 
           restructure_inputs(deaths), 
         )
+
+
+        // Remove the empty time series data
+        _.forEach(countries, (data) => {
+          data.time_series = data.time_series.filter( (t) => t.confirmed != 0 )
+        })
+        // convert stupid date strings to actual dates 
+        _.forEach(countries, (data) => {
+          data.time_series.map( (t) => {
+            t.date = parse(t.date, 'MM/dd/yy', new Date() )
+          })
+        })
         countries = add_population_data(countries, population_data)
         
         // Relabel country names
@@ -34,23 +49,45 @@ const createFiles = (country_path, cum_path) => {
         
         
         country_array = _.map(countries, (country) => country)
-        country_array = country_array.filter(country => country.country_name != 'New Zealand') // Remove NZ
 
-        fs.readFile('data/new-zealand.json', (err, data) => {
-          if (err) throw err;
-          let new_zealand = JSON.parse(data);
-          country_array.push(new_zealand)
-          const cumulative = getCumulatives(country_array)
         
-          fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
-            if(err) return console.log(err);
-            console.log("Country file was saved!");
-          }); 
-          fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
-            if(err) return console.log(err);
-            console.log("Cumulative was saved!");
-          }); 
-      });
+        // Remove NZ and remove US and re-add below
+        country_array = country_array.filter(country => country.country_name != 'United States' && country.country_name != 'New Zealand')
+
+        // Get covid-tracker data
+        
+        request('https://covidtracking.com/api/states/daily', (err, _, body) => {    
+          if(err) return console.log(err);
+          const us_data = getUnitedStates(JSON.parse(body));
+          const us_cum = getCumulatives(us_data.states)
+          country_array.push(us_data.total_only)
+          
+          fs.readFile('data/new-zealand.json', (err, data) => {
+            if (err) throw err;
+            let new_zealand = JSON.parse(data);
+            country_array.push(new_zealand)
+            const cumulative = getCumulatives(country_array)
+          
+            fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
+              if(err) return console.log(err);
+              console.log("Country file was saved!");
+            }); 
+            fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
+              if(err) return console.log(err);
+              console.log("Cumulative was saved!");
+            }); 
+            fs.writeFile(us_path, JSON.stringify(us_data.states, null, 2), function(err) {
+              if(err) return console.log(err);
+              console.log("US State data was saved!");
+            }); 
+            fs.writeFile(us_cum_path, JSON.stringify(us_cum, null, 2), function(err) {
+              if(err) return console.log(err);
+              console.log("US Cum state data was saved!");
+            }); 
+        });
+        });
+
+        
 
         
         
@@ -59,23 +96,13 @@ const createFiles = (country_path, cum_path) => {
   });
 }
 
-const add_population_data = (countries, population_data) => {
-  
-  // Remove the empty time series data
-  _.forEach(countries, (data) => {
-    data.time_series = data.time_series.filter( (t) => t.confirmed != 0 )
-  })
 
-  // convert stupid date strings to actual dates 
-  _.forEach(countries, (data) => {
-    data.time_series.map( (t) => {
-      t.date = parse(t.date, 'MM/dd/yy', new Date() )
-    })
-  })
 
-  _.forEach(countries, (data, country_name) => {
+const add_population_data = (areas, population_data) => {
+
+  _.forEach(areas, data => {
     population_data.forEach( (pop_data) => {
-      if( pop_data['Country Name'].toLowerCase()  == country_name.toLowerCase() ){
+      if( pop_data['Country Name'].toLowerCase()  == data.name.toLowerCase() ){
         data.population = parseInt(pop_data['2018'])
         data.time_series.forEach( (time) => {
           if(time.confirmed)
@@ -86,14 +113,14 @@ const add_population_data = (countries, population_data) => {
       }
     })
   })
-  return countries
+  return areas
 }
 
-const merge_object = (confirmed, deaths, recovered) => {
+const merge_object = (confirmed, deaths) => {
   let combined = {}
   
   confirmed.forEach( (country) => {
-    let country_name = country['Country/Region'] 
+    let name = country['Country/Region'] 
     
     
     highest_confirmed = 0
@@ -108,23 +135,23 @@ const merge_object = (confirmed, deaths, recovered) => {
           highest_confirmed = parseInt(val)
       }
     })
-    combined[country_name] = { country_name, time_series, highest_confirmed }
+    combined[name] = { name, time_series, highest_confirmed }
   })
 
   deaths.forEach( (country) => {
     highest_deaths = 0
-    const country_name = country['Country/Region']
+    const name = country['Country/Region']
     _.forEach(country, (val, key) => {
       if(validKey(key)){
-        if(combined.hasOwnProperty(country_name)){
-          combined[country_name].time_series.forEach( (time) => {
+        if(combined.hasOwnProperty(name)){
+          combined[name].time_series.forEach( (time) => {
             if(key == time.date){
               time.deaths = parseInt(val)
               if(val > highest_deaths)
                 highest_deaths = parseInt(val)
             }
           })
-          combined[country_name].highest_deaths = highest_deaths
+          combined[name].highest_deaths = highest_deaths
 
         }
         
@@ -157,8 +184,8 @@ const restructure_inputs = (all_countries) => {
 
   countries = all_countries.filter( c => ! countries_multiple_column_names.includes(c) )
 
-  countries_multiple_column_names.forEach( country_name => {
-    countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == country_name)))
+  countries_multiple_column_names.forEach( name => {
+    countries.push(combine_regions(all_countries.filter( (result) => result['Country/Region'] == name)))
   })
   
   return countries.filter(remove_negatives)
@@ -181,9 +208,9 @@ const combine_regions = (initial_regions) => {
   return combined
 }
 
-const remove_negatives = (country) => {
+const remove_negatives = (area) => {
   let found_case = false
-  _.forEach(country, (val, key) => {
+  _.forEach(area, (val, key) => {
     if(validKey(key))
       if( parseInt(val) != 0) 
         found_case = true 
@@ -196,16 +223,16 @@ const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && 
 
 // Country Logic = Cumulative number of cases, by number of days since 100th case
 // Death Logic = cumulative number of deaths, by number of days since 10th deaths
-const getCumulatives = (countries) => {
+const getCumulatives = (areas) => {
   const max_days = 30
-  const output_countries = []
+  const output_areas = []
 
   const confirmed_ranges = [50, 100, 200, 300, 400, 500, 750, 1000]
   const death_ranges = [10, 20, 30, 40, 50, 75, 100, 200,300, 400, 500]
   // The structure needs to e 
   // We get an array of countries
   
-  countries.forEach(country => {
+  areas.forEach(area => {
     
     const confirmed = []
     const deaths = []
@@ -214,7 +241,7 @@ const getCumulatives = (countries) => {
       let count_of_days = 0
       const confirmed_for_range = []
 
-      country.time_series.forEach(day => {
+      area.time_series.forEach(day => {
         if(day.confirmed >= range && count_of_days <= max_days){
           confirmed_for_range.push({
             num_day: count_of_days,
@@ -233,7 +260,7 @@ const getCumulatives = (countries) => {
     death_ranges.forEach(range => {
       count_of_days = 0
       deaths_for_range = []
-      country.time_series.forEach(day => {
+      area.time_series.forEach(day => {
         if(day.hasOwnProperty('deaths') && day.deaths >= range && count_of_days <= max_days){
           deaths_for_range.push({
             num_day: count_of_days,
@@ -249,28 +276,29 @@ const getCumulatives = (countries) => {
       })
     })
 
-    // Either array is populated. Then append country to cumulative output
+    // Either array is populated. Then append area to cumulative output
     if(confirmed.length || deaths.length){ 
-      const country_to_append = {
-        highest_confirmed: country.highest_confirmed,
-        highest_deaths: country.highest_deaths,
-        population: country.population,
-        country_name: country.country_name,
+      const area_to_append = {
+        highest_confirmed: area.highest_confirmed,
+        highest_deaths: area.highest_deaths,
+        population: area.population,
+        name: area.name,
       }
 
-      if(confirmed.length) country_to_append.confirmed = confirmed
-      if(deaths.length) country_to_append.deaths = deaths
+      if(confirmed.length) area_to_append.confirmed = confirmed
+      if(deaths.length) area_to_append.deaths = deaths
       
-      output_countries.push(country_to_append)
+      output_areas.push(area_to_append)
     }
     
   })
 
-  return output_countries
+  return output_areas
 
 }
 
-const processUnitedStates = () => {
+
+const getUnitedStates = (json_data) => {
     const state_codes = [
       'AK',
       'AL',
@@ -329,30 +357,80 @@ const processUnitedStates = () => {
       'WV',
       'WY'
     ]
-    fs.readFile('./data/covid-tracker.json', (err, data) => {
-      if (err) throw err;
-      let state_day = JSON.parse(data);
-      let states = []
-      
-      state_codes.forEach(state => {
-        states.push(state_day.filter(day => day.state == state))
+    let states = []
+    state_codes.forEach(state => {
+      const time_series = json_data.filter(day => day.state == state)
+      const latest = time_series[0]
+      const highest_confirmed = latest.positive
+      const highest_deaths = latest.death
+      const highest_hospitalized = latest.hospitalized
+      const highest_tests = latest.totalTestResults
+      states.push({
+        country_name: state,
+        time_series: time_series.reverse().map(day => ({
+          date: parse(day.date, 'yyyyMMdd', new Date() ),
+          confirmed: day.positive,
+          //confirmed_per_mil,
+          deaths: day.death,
+          //deaths_per_mil
+          hospitalized: day.hospitalized,
+          tests: day.totalTestResults,
+          old_date: day.date
+        })),
+        highest_confirmed,
+        highest_deaths, 
+        highest_hospitalized,
+        highest_tests
       })
-      states.forEach(state => { state.reverse() })
-      
-      states.forEach(state => {
-        state.forEach(day => {
-          day.date_clean = parse(day.date, 'yyyyMMdd', new Date() )
-        })
-      })
-      console.log("after", states[0][0])
+    })
 
-  });
+    const total_time_series = {}
+
+    states.forEach(state => {
+      state.time_series.forEach(day => {
+        if(total_time_series.hasOwnProperty(day.old_date)){
+          total_time_series[day.old_date].confirmed += day.confirmed
+          total_time_series[day.old_date].deaths += day.deaths
+          total_time_series[day.old_date].hospitalized += day.hospitalized
+          total_time_series[day.old_date].tests += day.tests
+        }
+        else{
+          total_time_series[day.old_date] = day
+        }
+      })
+    })
+
+    const US_time_series = _.map(total_time_series, day => day)
+    const most_recent_day = US_time_series[US_time_series.length -1]
+    const total = {
+      name: "United States",
+      population: 327167434,
+      time_series: US_time_series,
+      highest_confirmed: most_recent_day.confirmed,
+      highest_deaths: most_recent_day.deaths,
+      highest_hospitalized: most_recent_day.hospitalized,
+      highest_tests: most_recent_day.tests
+    }
+
+    total.time_series.forEach(day => {
+      day.confirmed_per_mil = day.confirmed / (total.population / 1000000)
+      day.deaths_per_mil =    day.deaths / (total.population / 1000000)
+      day.hospitalized_per_mil = day.hospitalized / (total.population / 1000000)
+      day.tests_per_mil =    day.tests / (total.population / 1000000)
+    })
+
+    states.push(total)
+    
+    return {
+      states,
+      total_only: total
+    }
 }
 
 
 
-if(process.argv.length == 4 ) createFiles(process.argv[2], process.argv[3])
+if(process.argv.length == 6 ) createFiles(process.argv[2], process.argv[3], process.argv[4], process.argv[5])
 else{
   console.log("Whoops!Usage:\nnode get.js country.out cumulative.out")
-  processUnitedStates()
+  getUnitedStates()
 }

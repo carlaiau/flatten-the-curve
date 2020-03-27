@@ -1,0 +1,193 @@
+{
+  name: 'United States',
+  time_series: [
+    {
+      date: 2020-03-03T11:00:00.000Z,
+      confirmed: 118,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 866,
+      old_date: 20200304
+    },
+    {
+      date: 2020-03-04T11:00:00.000Z,
+      confirmed: 176,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 1129,
+      old_date: 20200305
+    },
+    {
+      date: 2020-03-05T11:00:00.000Z,
+      confirmed: 223,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 1794,
+      old_date: 20200306
+    },
+    {
+      date: 2020-03-06T11:00:00.000Z,
+      confirmed: 341,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 2150,
+      old_date: 20200307
+    },
+    {
+      date: 2020-03-07T11:00:00.000Z,
+      confirmed: 417,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 2752,
+      old_date: 20200308
+    },
+    {
+      date: 2020-03-08T11:00:00.000Z,
+      confirmed: 584,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 3951,
+      old_date: 20200309
+    },
+    {
+      date: 2020-03-09T11:00:00.000Z,
+      confirmed: 778,
+      deaths: 0,
+      hospitalized: 0,
+      tests: 4585,
+      old_date: 20200310
+    },
+    {
+      date: 2020-03-10T11:00:00.000Z,
+      confirmed: 1053,
+      deaths: 27,
+      hospitalized: 0,
+      tests: 7123,
+      old_date: 20200311
+    },
+    {
+      date: 2020-03-11T11:00:00.000Z,
+      confirmed: 1315,
+      deaths: 36,
+      hospitalized: 0,
+      tests: 9356,
+      old_date: 20200312
+    },
+    {
+      date: 2020-03-12T11:00:00.000Z,
+      confirmed: 1922,
+      deaths: 39,
+      hospitalized: 0,
+      tests: 15535,
+      old_date: 20200313
+    },
+    {
+      date: 2020-03-13T11:00:00.000Z,
+      confirmed: 2450,
+      deaths: 49,
+      hospitalized: 0,
+      tests: 19552,
+      old_date: 20200314
+    },
+    {
+      date: 2020-03-14T11:00:00.000Z,
+      confirmed: 3173,
+      deaths: 60,
+      hospitalized: 0,
+      tests: 25721,
+      old_date: 20200315
+    },
+    {
+      date: 2020-03-15T11:00:00.000Z,
+      confirmed: 4019,
+      deaths: 71,
+      hospitalized: 0,
+      tests: 40123,
+      old_date: 20200316
+    },
+    {
+      date: 2020-03-16T11:00:00.000Z,
+      confirmed: 5723,
+      deaths: 90,
+      hospitalized: 0,
+      tests: 53327,
+      old_date: 20200317
+    },
+    {
+      date: 2020-03-17T11:00:00.000Z,
+      confirmed: 7731,
+      deaths: 112,
+      hospitalized: 0,
+      tests: 73956,
+      old_date: 20200318
+    },
+    {
+      date: 2020-03-18T11:00:00.000Z,
+      confirmed: 11723,
+      deaths: 160,
+      hospitalized: 0,
+      tests: 100842,
+      old_date: 20200319
+    },
+    {
+      date: 2020-03-19T11:00:00.000Z,
+      confirmed: 17038,
+      deaths: 219,
+      hospitalized: 0,
+      tests: 135185,
+      old_date: 20200320
+    },
+    {
+      date: 2020-03-20T11:00:00.000Z,
+      confirmed: 23203,
+      deaths: 272,
+      hospitalized: 1964,
+      tests: 179112,
+      old_date: 20200321
+    },
+    {
+      date: 2020-03-21T11:00:00.000Z,
+      confirmed: 31888,
+      deaths: 398,
+      hospitalized: 2554,
+      tests: 225351,
+      old_date: 20200322
+    },
+    {
+      date: 2020-03-22T11:00:00.000Z,
+      confirmed: 42164,
+      deaths: 471,
+      hospitalized: 3325,
+      tests: 279485,
+      old_date: 20200323
+    },
+    {
+      date: 2020-03-23T11:00:00.000Z,
+      confirmed: 51970,
+      deaths: 675,
+      hospitalized: 4468,
+      tests: 344728,
+      old_date: 20200324
+    },
+    {
+      date: 2020-03-24T11:00:00.000Z,
+      confirmed: 63675,
+      deaths: 887,
+      hospitalized: 6136,
+      tests: 418810,
+      old_date: 20200325
+    },
+    {
+      date: 2020-03-25T11:00:00.000Z,
+      confirmed: 80735,
+      deaths: 1163,
+      hospitalized: 10131,
+      tests: 519338,
+      old_date: 20200326
+    }
+  ],
+  highest_confirmed: 80735,
+  highest_deaths: 1163,
+  highest_hospitalized: 10131,
+  highest_tests: 519338
+}
