@@ -29,7 +29,7 @@ export default class IndexPage extends React.Component{
         ]
 
         this.state = {
-            update_time: '12:05am 26 March UTC',
+            update_time: '1:11am 27 March UTC',
             selected_country: '',
             numberFormat: new Intl.NumberFormat(),
             
