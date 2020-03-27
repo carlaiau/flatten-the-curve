@@ -2769,6 +2769,7 @@
   },
   {
     "highest_confirmed": 9,
+    "population": 385640,
     "name": "Bahamas",
     "confirmed": [
       {
@@ -18487,6 +18488,7 @@
   {
     "highest_confirmed": 3,
     "highest_deaths": 1,
+    "population": 2280102,
     "name": "Gambia",
     "confirmed": [
       {
@@ -30725,6 +30727,7 @@
   {
     "highest_confirmed": 9241,
     "highest_deaths": 131,
+    "population": 51635256,
     "name": "South Korea",
     "confirmed": [
       {
@@ -54061,6 +54064,7 @@
   },
   {
     "highest_confirmed": 5,
+    "population": 16906283,
     "name": "Syria",
     "confirmed": [
       {
@@ -54315,6 +54319,7 @@
   },
   {
     "highest_confirmed": 6,
+    "population": 7061507,
     "name": "Laos",
     "confirmed": [
       {
@@ -55022,42 +55027,42 @@
           {
             "num_day": 14,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 15,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 16,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 17,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 18,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 19,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 21,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 22,
@@ -55142,42 +55147,42 @@
           {
             "num_day": 14,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 15,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 16,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 17,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 18,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 19,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 20,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 21,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 22,
@@ -55252,42 +55257,42 @@
           {
             "num_day": 12,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 13,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 14,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 15,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 16,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 17,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 18,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 19,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 20,
@@ -55357,42 +55362,42 @@
           {
             "num_day": 11,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 12,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 13,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 14,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 15,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 16,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 17,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 18,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 19,
@@ -55457,42 +55462,42 @@
           {
             "num_day": 10,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 11,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 12,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 13,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 14,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 15,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 16,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 17,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 18,
@@ -55552,42 +55557,42 @@
           {
             "num_day": 9,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 10,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 11,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 12,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 13,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 14,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 15,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 16,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 17,
@@ -55642,42 +55647,42 @@
           {
             "num_day": 8,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 9,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 10,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 11,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 12,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 13,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 14,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 15,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 16,
@@ -55727,42 +55732,42 @@
           {
             "num_day": 7,
             "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7731
+            "confirmed": 7730
           },
           {
             "num_day": 8,
             "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 11723
+            "confirmed": 11719
           },
           {
             "num_day": 9,
             "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 17038
+            "confirmed": 17033
           },
           {
             "num_day": 10,
             "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 23203
+            "confirmed": 23197
           },
           {
             "num_day": 11,
             "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 31888
+            "confirmed": 31879
           },
           {
             "num_day": 12,
             "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 42164
+            "confirmed": 42152
           },
           {
             "num_day": 13,
             "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 51970
+            "confirmed": 51954
           },
           {
             "num_day": 14,
             "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 63675
+            "confirmed": 63928
           },
           {
             "num_day": 15,
@@ -55849,7 +55854,7 @@
           {
             "num_day": 14,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 15,
@@ -55934,7 +55939,7 @@
           {
             "num_day": 14,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 15,
@@ -56014,7 +56019,7 @@
           {
             "num_day": 13,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 14,
@@ -56084,7 +56089,7 @@
           {
             "num_day": 11,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 12,
@@ -56149,7 +56154,7 @@
           {
             "num_day": 10,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 11,
@@ -56204,7 +56209,7 @@
           {
             "num_day": 8,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 9,
@@ -56254,7 +56259,7 @@
           {
             "num_day": 7,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 8,
@@ -56294,7 +56299,7 @@
           {
             "num_day": 5,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 6,
@@ -56324,7 +56329,7 @@
           {
             "num_day": 3,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 4,
@@ -56349,7 +56354,7 @@
           {
             "num_day": 2,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 3,
@@ -56369,7 +56374,7 @@
           {
             "num_day": 1,
             "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 887
+            "deaths": 900
           },
           {
             "num_day": 2,
