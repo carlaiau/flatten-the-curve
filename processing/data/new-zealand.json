@@ -1,152 +1,152 @@
 {
-    "name": "New Zealand",
-    "time_series": [
-      {
-        "date": "2020-02-27T11:00:00.000Z",
-        "confirmed": 1,
-        "confirmed_per_mil": 0.20468734008801553
-      },
-      {
-        "date": "2020-02-28T11:00:00.000Z",
-        "confirmed": 1,
-        "confirmed_per_mil": 0.20468734008801553
-      },
-      {
-        "date": "2020-02-29T11:00:00.000Z",
-        "confirmed": 1,
-        "confirmed_per_mil": 0.20468734008801553
-      },
-      {
-        "date": "2020-03-01T11:00:00.000Z",
-        "confirmed": 1,
-        "confirmed_per_mil": 0.20468734008801553
-      },
-      {
-        "date": "2020-03-02T11:00:00.000Z",
-        "confirmed": 1,
-        "confirmed_per_mil": 0.20468734008801553
-      },
-      {
-        "date": "2020-03-03T11:00:00.000Z",
-        "confirmed": 3,
-        "confirmed_per_mil": 0.6140620202640467
-      },
-      {
-        "date": "2020-03-04T11:00:00.000Z",
-        "confirmed": 3,
-        "confirmed_per_mil": 0.6140620202640467
-      },
-      {
-        "date": "2020-03-05T11:00:00.000Z",
-        "confirmed": 4,
-        "confirmed_per_mil": 0.8187493603520621
-      },
-      {
-        "date": "2020-03-06T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-07T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-08T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-09T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-10T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-11T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-12T11:00:00.000Z",
-        "confirmed": 5,
-        "confirmed_per_mil": 1.0234367004400777
-      },
-      {
-        "date": "2020-03-13T11:00:00.000Z",
-        "confirmed": 6,
-        "confirmed_per_mil": 1.2281240405280933
-      },
-      {
-        "date": "2020-03-14T11:00:00.000Z",
-        "confirmed": 8,
-        "confirmed_per_mil": 1.6374987207041243
-      },
-      {
-        "date": "2020-03-15T11:00:00.000Z",
-        "confirmed": 8,
-        "confirmed_per_mil": 1.6374987207041243
-      },
-      {
-        "date": "2020-03-16T11:00:00.000Z",
-        "confirmed": 12,
-        "confirmed_per_mil": 2.4562480810561866
-      },
-      {
-        "date": "2020-03-17T11:00:00.000Z",
-        "confirmed": 20,
-        "confirmed_per_mil": 4.093746801760311
-      },
-      {
-        "date": "2020-03-18T11:00:00.000Z",
-        "confirmed": 28,
-        "confirmed_per_mil": 5.731245522464435
-      },
-      {
-        "date": "2020-03-19T11:00:00.000Z",
-        "confirmed": 39,
-        "confirmed_per_mil": 7.9828062634326065
-      },
-      {
-        "date": "2020-03-20T11:00:00.000Z",
-        "confirmed": 52,
-        "confirmed_per_mil": 10.643741684576808
-      },
-      {
-        "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 66,
-        "confirmed_per_mil": 13.50936
-      },
-      {
-        "date": "2020-03-22T11:00:00.000Z",
-        "confirmed": 102,
-        "confirmed_per_mil": 20.878108688977584
-      },
-      {
-        "date": "2020-03-23T11:00:00.000Z",
-        "confirmed": 155,
-        "confirmed_per_mil": 31.726537713642408
-      },
-      {
-        "date": "2020-03-24T11:00:00.000Z",
-        "confirmed": 205,
-        "confirmed_per_mil": 41.96090471804319
-      },
-      {
-        "date": "2020-03-25T11:00:00.000Z",
-        "confirmed": 283,
-        "confirmed_per_mil": 57.926517245
-      },
-      {
-        "date": "2020-03-26T11:00:00.000Z",
-        "confirmed": 368,
-        "confirmed_per_mil": 75.324941152
-      }
-    ],
-    "highest_confirmed": 368,
-    "population": 4885500
-  }
+  "name": "New Zealand",
+  "time_series": [
+    {
+      "date": "2020-02-27T00:00:00.000Z",
+      "confirmed": 1,
+      "confirmed_per_mil": 0.20468734008801553
+    },
+    {
+      "date": "2020-02-28T00:00:00.000Z",
+      "confirmed": 1,
+      "confirmed_per_mil": 0.20468734008801553
+    },
+    {
+      "date": "2020-02-29T00:00:00.000Z",
+      "confirmed": 1,
+      "confirmed_per_mil": 0.20468734008801553
+    },
+    {
+      "date": "2020-03-01T00:00:00.000Z",
+      "confirmed": 1,
+      "confirmed_per_mil": 0.20468734008801553
+    },
+    {
+      "date": "2020-03-02T00:00:00.000Z",
+      "confirmed": 1,
+      "confirmed_per_mil": 0.20468734008801553
+    },
+    {
+      "date": "2020-03-03T00:00:00.000Z",
+      "confirmed": 3,
+      "confirmed_per_mil": 0.6140620202640467
+    },
+    {
+      "date": "2020-03-04T00:00:00.000Z",
+      "confirmed": 3,
+      "confirmed_per_mil": 0.6140620202640467
+    },
+    {
+      "date": "2020-03-05T00:00:00.000Z",
+      "confirmed": 4,
+      "confirmed_per_mil": 0.8187493603520621
+    },
+    {
+      "date": "2020-03-06T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-07T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-08T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-09T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-10T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-11T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-12T00:00:00.000Z",
+      "confirmed": 5,
+      "confirmed_per_mil": 1.0234367004400777
+    },
+    {
+      "date": "2020-03-13T00:00:00.000Z",
+      "confirmed": 6,
+      "confirmed_per_mil": 1.2281240405280933
+    },
+    {
+      "date": "2020-03-14T00:00:00.000Z",
+      "confirmed": 8,
+      "confirmed_per_mil": 1.6374987207041243
+    },
+    {
+      "date": "2020-03-15T00:00:00.000Z",
+      "confirmed": 8,
+      "confirmed_per_mil": 1.6374987207041243
+    },
+    {
+      "date": "2020-03-16T00:00:00.000Z",
+      "confirmed": 12,
+      "confirmed_per_mil": 2.4562480810561866
+    },
+    {
+      "date": "2020-03-17T00:00:00.000Z",
+      "confirmed": 20,
+      "confirmed_per_mil": 4.093746801760311
+    },
+    {
+      "date": "2020-03-18T00:00:00.000Z",
+      "confirmed": 28,
+      "confirmed_per_mil": 5.731245522464435
+    },
+    {
+      "date": "2020-03-19T00:00:00.000Z",
+      "confirmed": 39,
+      "confirmed_per_mil": 7.9828062634326065
+    },
+    {
+      "date": "2020-03-20T00:00:00.000Z",
+      "confirmed": 52,
+      "confirmed_per_mil": 10.643741684576808
+    },
+    {
+      "date": "2020-03-21T00:00:00.000Z",
+      "confirmed": 66,
+      "confirmed_per_mil": 13.50936
+    },
+    {
+      "date": "2020-03-22T00:00:00.000Z",
+      "confirmed": 102,
+      "confirmed_per_mil": 20.878108688977584
+    },
+    {
+      "date": "2020-03-23T00:00:00.000Z",
+      "confirmed": 155,
+      "confirmed_per_mil": 31.726537713642408
+    },
+    {
+      "date": "2020-03-24T00:00:00.000Z",
+      "confirmed": 205,
+      "confirmed_per_mil": 41.96090471804319
+    },
+    {
+      "date": "2020-03-25T00:00:00.000Z",
+      "confirmed": 283,
+      "confirmed_per_mil": 57.926517245
+    },
+    {
+      "date": "2020-03-26T00:00:00.000Z",
+      "confirmed": 368,
+      "confirmed_per_mil": 75.324941152
+    }
+  ],
+  "highest_confirmed": 368,
+  "population": 4885500
+}

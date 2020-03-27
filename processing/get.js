@@ -2,8 +2,8 @@ const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
 const request = require('request')
-const { parse, isEqual } = require('date-fns')
-
+const { parse, format } = require('date-fns')
+const { zonedTimeToUtc } = require('date-fns-tz')
 
 
 
@@ -37,7 +37,7 @@ const createFiles = (country_path, cum_path, us_path, us_cum_path) => {
         // convert stupid date strings to actual dates 
         _.forEach(countries, (data) => {
           data.time_series.map( (t) => {
-            t.date = parse(t.date, 'MM/dd/yy', new Date() )
+            t.date = format(parse(t.date, 'MM/dd/yy', new Date()),'yyyy-MM-dd') + 'T00:00:00.000Z'
           })
         })
         
@@ -373,7 +373,11 @@ const getUnitedStates = (json_data) => {
       states.push({
         country_name: state,
         time_series: time_series.reverse().map(day => ({
-          date: parse(day.date, 'yyyyMMdd', new Date() ),
+          //
+          // Set the date to "2018-09-01T16:01:36.386Z"
+          //const utcDate = zonedTimeToUtc('2018-09-01 18:01:36.386', 'Europe/Berlin')
+          
+          date: format(parse(day.date, 'yyyyMMdd', new Date() ), 'yyyy-MM-dd') + 'T00:00:00Z',
           confirmed: day.positive,
           //confirmed_per_mil,
           deaths: day.death,
