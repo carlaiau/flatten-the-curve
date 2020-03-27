@@ -33,18 +33,27 @@ const createFiles = (country_path, cum_path) => {
           c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
         })
         
-        country_array = _.map(countries, (country) => country)
-
-        const cumulative = getCumulatives(country_array)
         
-        fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
-          if(err) return console.log(err);
-          console.log("Country file was saved!");
-        }); 
-        fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
-          if(err) return console.log(err);
-          console.log("Cumulative was saved!");
-        }); 
+        country_array = _.map(countries, (country) => country)
+        country_array = country_array.filter(country => country.country_name != 'New Zealand') // Remove NZ
+
+        fs.readFile('data/new-zealand.json', (err, data) => {
+          if (err) throw err;
+          let new_zealand = JSON.parse(data);
+          country_array.push(new_zealand)
+          const cumulative = getCumulatives(country_array)
+        
+          fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
+            if(err) return console.log(err);
+            console.log("Country file was saved!");
+          }); 
+          fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
+            if(err) return console.log(err);
+            console.log("Cumulative was saved!");
+          }); 
+      });
+
+        
         
       })
     })
