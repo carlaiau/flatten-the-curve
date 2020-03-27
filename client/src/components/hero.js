@@ -91,8 +91,8 @@ const Hero = ({selected_country, selectFn}) => {
                       }}
                       >
                         <option value=''>World</option>
-                        {select_countries.map( ({country_name } ) => (
-                          <option key={country_name} value={country_name}>{country_name}</option>
+                        {select_countries.map( ({name } ) => (
+                          <option key={name} value={name}>{name}</option>
                         ))}
                       </select>
                     </div>

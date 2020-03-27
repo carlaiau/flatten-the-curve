@@ -4,6 +4,7 @@ import Footer from '../components/footer'
 import CumulativeGraph from '../components/cumulative-graph'
 import GraphOptionsSideBar from '../components/graph-options-sidebar'
 import EnhancedTable from '../components/enhanced-table'
+import UpdateTable from '../components/update-times'
 import styled from '@emotion/styled'
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -29,7 +30,6 @@ export default class IndexPage extends React.Component{
         ]
 
         this.state = {
-            update_time: '1:11am 27 March UTC',
             selected_country: '',
             numberFormat: new Intl.NumberFormat(),
             
@@ -230,7 +230,7 @@ export default class IndexPage extends React.Component{
                 <p className="is-size-6" style={{marginBottom: '20px'}}>
                     For actionable steps to slow the spread please visit <a href="https://flattenthecurve.com/" target="_blank" rel="noopener noreferrer">Flattenthecurve.com</a>. 
                 </p>
-                <p className="is-size-6" style={{marginBottom: '20px'}}>Global data updated at <strong>{this.state.update_time}</strong></p>
+                <UpdateTable/>
                 
                 <p className="is-size-7" >
                     Please use the dropdown in the header for country-specific comparisons and projections.     
@@ -400,7 +400,7 @@ export default class IndexPage extends React.Component{
                                     checkFn={e => this.countryChecked(e, 'confirmed_graph_countries') }
                                     clearFn={e => this.setState({confirmed_graph_countries: []})}
                                     growthFn={e => this.setState({confirmed_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.country_name)})}
+                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.name)})}
                                 />
                                 
                             </div>
@@ -445,7 +445,7 @@ export default class IndexPage extends React.Component{
                                     checkFn={e => this.countryChecked(e, 'death_graph_countries')}
                                     clearFn={e => this.setState({death_graph_countries: []})}
                                     growthFn={e => this.setState({death_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
+                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.name)}) }
                                 />
                             </div>
                         </div>
@@ -466,7 +466,9 @@ export default class IndexPage extends React.Component{
                         <div className="column is-narrow is-one-third">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">World Overview</h3>
-                                <p className="is-size-5 subtitle has-text-white">Sort using any column. Data updated at <strong className="has-text-white">{this.state.update_time}</strong>.</p>
+                                
+                                <UpdateTable color="white"/>
+                                
                                 <p className="is-size-7 has-text-white">
                                     Populations must be larger than 1 million with 10 confirmed cases
                                 </p>

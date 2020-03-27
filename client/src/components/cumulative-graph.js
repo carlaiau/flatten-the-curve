@@ -9,7 +9,7 @@ const CumulativeGraph = ({
     width, // Width of the graph itself
     countries_to_graph = [], 
     field = 'confirmed', 
-    max_days = 30, 
+    max_days = 36, 
     growth = {
         label: "Doubles every 3 days",
         value: 1.25992105
@@ -31,17 +31,17 @@ const CumulativeGraph = ({
     
 
     all_possible_countries
-        .filter(c => countries_to_graph.includes(c.country_name))
+        .filter(c => countries_to_graph.includes(c.name))
         
         .forEach((c) => {
             c.time_series.forEach(time => {
             if(ready_to_graph.length <= parseInt(time.num_day)){
                 ready_to_graph[time.num_day] = {
                     num_day: time.num_day,
-                    [c.country_name]: time[field]
+                    [c.name]: time[field]
                 }
             }
-            else ready_to_graph[time.num_day][c.country_name] = time[field]
+            else ready_to_graph[time.num_day][c.name] = time[field]
 
         })
         
@@ -63,7 +63,7 @@ const CumulativeGraph = ({
         "#6F1E51", "#EA2027", "#5758BB", "#006266", "#1B1464",
     ]
     all_possible_countries.forEach( (c, i) => {
-        color_definitions[c.country_name] = colors[i]
+        color_definitions[c.name] = colors[i]
     })
     
     
@@ -102,10 +102,12 @@ const CumulativeGraph = ({
     return (
 
         <>
-            <LineChart width={width} height={height} data={ready_to_graph}>
+            <LineChart width={width} height={height} data={ready_to_graph} margin={{bottom: 20}}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
-                <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}/>
+                <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}>
+                    <Label value={`Days since ${case_start}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
+                </XAxis>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth.label).map( (key, i) => {
                     return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
@@ -120,6 +122,14 @@ const CumulativeGraph = ({
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             
             </LineChart>
+
+            {Object.keys(ready_to_graph[0]).filter(key => key == 'China').length == 1 ?
+                <p className="is-size-7" style={{marginTop: '10px'}}>
+                    China's days have been capped to {max_days} days for presentation purposes. Without capping all other countries are bunched to the left on the X-axis.
+                </p>
+                :
+                <></>
+            }
         </>
     )
 }

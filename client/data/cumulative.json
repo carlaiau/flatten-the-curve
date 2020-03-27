@@ -3,7 +3,7 @@
     "highest_confirmed": 94,
     "highest_deaths": 4,
     "population": 37172386,
-    "country_name": "Afghanistan",
+    "name": "Afghanistan",
     "confirmed": [
       {
         "range": 50,
@@ -105,7 +105,7 @@
     "highest_confirmed": 174,
     "highest_deaths": 6,
     "population": 2866376,
-    "country_name": "Albania",
+    "name": "Albania",
     "confirmed": [
       {
         "range": 50,
@@ -268,7 +268,7 @@
     "highest_confirmed": 367,
     "highest_deaths": 25,
     "population": 42228429,
-    "country_name": "Algeria",
+    "name": "Algeria",
     "confirmed": [
       {
         "range": 50,
@@ -525,7 +525,7 @@
     "highest_confirmed": 224,
     "highest_deaths": 3,
     "population": 77006,
-    "country_name": "Andorra",
+    "name": "Andorra",
     "confirmed": [
       {
         "range": 50,
@@ -683,7 +683,7 @@
   {
     "highest_confirmed": 4,
     "population": 30809762,
-    "country_name": "Angola",
+    "name": "Angola",
     "confirmed": [
       {
         "range": 50,
@@ -768,7 +768,7 @@
   {
     "highest_confirmed": 7,
     "population": 96286,
-    "country_name": "Antigua and Barbuda",
+    "name": "Antigua and Barbuda",
     "confirmed": [
       {
         "range": 50,
@@ -854,7 +854,7 @@
     "highest_confirmed": 502,
     "highest_deaths": 9,
     "population": 44494502,
-    "country_name": "Argentina",
+    "name": "Argentina",
     "confirmed": [
       {
         "range": 50,
@@ -1091,7 +1091,7 @@
     "highest_confirmed": 290,
     "highest_deaths": 1,
     "population": 2951776,
-    "country_name": "Armenia",
+    "name": "Armenia",
     "confirmed": [
       {
         "range": 50,
@@ -1295,7 +1295,7 @@
     "highest_confirmed": 2810,
     "highest_deaths": 13,
     "population": 24992369,
-    "country_name": "Australia",
+    "name": "Australia",
     "confirmed": [
       {
         "range": 50,
@@ -1880,7 +1880,7 @@
     "highest_confirmed": 6909,
     "highest_deaths": 49,
     "population": 8847037,
-    "country_name": "Austria",
+    "name": "Austria",
     "confirmed": [
       {
         "range": 50,
@@ -2648,7 +2648,7 @@
     "highest_confirmed": 122,
     "highest_deaths": 3,
     "population": 9942334,
-    "country_name": "Azerbaijan",
+    "name": "Azerbaijan",
     "confirmed": [
       {
         "range": 50,
@@ -2769,7 +2769,8 @@
   },
   {
     "highest_confirmed": 9,
-    "country_name": "Bahamas",
+    "population": 385640,
+    "name": "Bahamas",
     "confirmed": [
       {
         "range": 50,
@@ -2855,7 +2856,7 @@
     "highest_confirmed": 458,
     "highest_deaths": 4,
     "population": 1569439,
-    "country_name": "Bahrain",
+    "name": "Bahrain",
     "confirmed": [
       {
         "range": 50,
@@ -3251,7 +3252,7 @@
     "highest_confirmed": 44,
     "highest_deaths": 5,
     "population": 161356039,
-    "country_name": "Bangladesh",
+    "name": "Bangladesh",
     "confirmed": [
       {
         "range": 50,
@@ -3336,7 +3337,7 @@
   {
     "highest_confirmed": 18,
     "population": 286641,
-    "country_name": "Barbados",
+    "name": "Barbados",
     "confirmed": [
       {
         "range": 50,
@@ -3421,7 +3422,7 @@
   {
     "highest_confirmed": 86,
     "population": 9485386,
-    "country_name": "Belarus",
+    "name": "Belarus",
     "confirmed": [
       {
         "range": 50,
@@ -3553,7 +3554,7 @@
     "highest_confirmed": 6235,
     "highest_deaths": 220,
     "population": 11422068,
-    "country_name": "Belgium",
+    "name": "Belgium",
     "confirmed": [
       {
         "range": 50,
@@ -4529,7 +4530,7 @@
   {
     "highest_confirmed": 6,
     "population": 11485048,
-    "country_name": "Benin",
+    "name": "Benin",
     "confirmed": [
       {
         "range": 50,
@@ -4614,7 +4615,7 @@
   {
     "highest_confirmed": 2,
     "population": 754394,
-    "country_name": "Bhutan",
+    "name": "Bhutan",
     "confirmed": [
       {
         "range": 50,
@@ -4699,7 +4700,7 @@
   {
     "highest_confirmed": 43,
     "population": 11353142,
-    "country_name": "Bolivia",
+    "name": "Bolivia",
     "confirmed": [
       {
         "range": 50,
@@ -4785,7 +4786,7 @@
     "highest_confirmed": 191,
     "highest_deaths": 3,
     "population": 3323929,
-    "country_name": "Bosnia and Herzegovina",
+    "name": "Bosnia and Herzegovina",
     "confirmed": [
       {
         "range": 50,
@@ -4938,7 +4939,7 @@
     "highest_confirmed": 2985,
     "highest_deaths": 77,
     "population": 209469333,
-    "country_name": "Brazil",
+    "name": "Brazil",
     "confirmed": [
       {
         "range": 50,
@@ -5542,7 +5543,7 @@
   {
     "highest_confirmed": 114,
     "population": 428962,
-    "country_name": "Brunei",
+    "name": "Brunei",
     "confirmed": [
       {
         "range": 50,
@@ -5705,7 +5706,7 @@
     "highest_confirmed": 264,
     "highest_deaths": 3,
     "population": 7024216,
-    "country_name": "Bulgaria",
+    "name": "Bulgaria",
     "confirmed": [
       {
         "range": 50,
@@ -5909,7 +5910,7 @@
     "highest_confirmed": 152,
     "highest_deaths": 7,
     "population": 19751535,
-    "country_name": "Burkina Faso",
+    "name": "Burkina Faso",
     "confirmed": [
       {
         "range": 50,
@@ -6042,7 +6043,7 @@
     "highest_confirmed": 4,
     "highest_deaths": 1,
     "population": 543767,
-    "country_name": "Cabo Verde",
+    "name": "Cabo Verde",
     "confirmed": [
       {
         "range": 50,
@@ -6127,7 +6128,7 @@
   {
     "highest_confirmed": 96,
     "population": 16249798,
-    "country_name": "Cambodia",
+    "name": "Cambodia",
     "confirmed": [
       {
         "range": 50,
@@ -6249,7 +6250,7 @@
     "highest_confirmed": 75,
     "highest_deaths": 1,
     "population": 25216237,
-    "country_name": "Cameroon",
+    "name": "Cameroon",
     "confirmed": [
       {
         "range": 50,
@@ -6356,7 +6357,7 @@
     "highest_confirmed": 4042,
     "highest_deaths": 38,
     "population": 37058856,
-    "country_name": "Canada",
+    "name": "Canada",
     "confirmed": [
       {
         "range": 50,
@@ -6987,7 +6988,7 @@
   {
     "highest_confirmed": 3,
     "population": 4666377,
-    "country_name": "Central African Republic",
+    "name": "Central African Republic",
     "confirmed": [
       {
         "range": 50,
@@ -7072,7 +7073,7 @@
   {
     "highest_confirmed": 3,
     "population": 15477751,
-    "country_name": "Chad",
+    "name": "Chad",
     "confirmed": [
       {
         "range": 50,
@@ -7158,7 +7159,7 @@
     "highest_confirmed": 1306,
     "highest_deaths": 4,
     "population": 18729160,
-    "country_name": "Chile",
+    "name": "Chile",
     "confirmed": [
       {
         "range": 50,
@@ -7547,7 +7548,7 @@
     "highest_confirmed": 81782,
     "highest_deaths": 3291,
     "population": 1392730000,
-    "country_name": "China",
+    "name": "China",
     "confirmed": [
       {
         "range": 50,
@@ -7706,6 +7707,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -7866,6 +7897,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -8026,6 +8087,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -8186,6 +8277,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -8346,6 +8467,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -8506,6 +8657,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "confirmed": 75550
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "confirmed": 77001
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "confirmed": 77022
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
           }
         ]
       },
@@ -8666,6 +8847,36 @@
             "num_day": 30,
             "date": "2020-02-22T11:00:00.000Z",
             "confirmed": 77022
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-23T11:00:00.000Z",
+            "confirmed": 77241
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-27T11:00:00.000Z",
+            "confirmed": 78928
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-28T11:00:00.000Z",
+            "confirmed": 79356
           }
         ]
       },
@@ -8826,6 +9037,36 @@
             "num_day": 30,
             "date": "2020-02-23T11:00:00.000Z",
             "confirmed": 77241
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-24T11:00:00.000Z",
+            "confirmed": 77754
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-25T11:00:00.000Z",
+            "confirmed": 78166
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-26T11:00:00.000Z",
+            "confirmed": 78600
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-27T11:00:00.000Z",
+            "confirmed": 78928
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-28T11:00:00.000Z",
+            "confirmed": 79356
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-29T11:00:00.000Z",
+            "confirmed": 79932
           }
         ]
       }
@@ -8988,6 +9229,36 @@
             "num_day": 30,
             "date": "2020-02-20T11:00:00.000Z",
             "deaths": 2238
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-21T11:00:00.000Z",
+            "deaths": 2443
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-22T11:00:00.000Z",
+            "deaths": 2445
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-23T11:00:00.000Z",
+            "deaths": 2595
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-24T11:00:00.000Z",
+            "deaths": 2665
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-25T11:00:00.000Z",
+            "deaths": 2717
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
           }
         ]
       },
@@ -9148,6 +9419,36 @@
             "num_day": 30,
             "date": "2020-02-22T11:00:00.000Z",
             "deaths": 2445
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-23T11:00:00.000Z",
+            "deaths": 2595
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-24T11:00:00.000Z",
+            "deaths": 2665
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-25T11:00:00.000Z",
+            "deaths": 2717
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
           }
         ]
       },
@@ -9308,6 +9609,36 @@
             "num_day": 30,
             "date": "2020-02-23T11:00:00.000Z",
             "deaths": 2595
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-24T11:00:00.000Z",
+            "deaths": 2665
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-25T11:00:00.000Z",
+            "deaths": 2717
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-29T11:00:00.000Z",
+            "deaths": 2872
           }
         ]
       },
@@ -9468,6 +9799,36 @@
             "num_day": 30,
             "date": "2020-02-23T11:00:00.000Z",
             "deaths": 2595
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-24T11:00:00.000Z",
+            "deaths": 2665
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-25T11:00:00.000Z",
+            "deaths": 2717
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
+          },
+          {
+            "num_day": 36,
+            "date": "2020-02-29T11:00:00.000Z",
+            "deaths": 2872
           }
         ]
       },
@@ -9628,6 +9989,36 @@
             "num_day": 30,
             "date": "2020-02-24T11:00:00.000Z",
             "deaths": 2665
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-25T11:00:00.000Z",
+            "deaths": 2717
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
+          },
+          {
+            "num_day": 35,
+            "date": "2020-02-29T11:00:00.000Z",
+            "deaths": 2872
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-01T11:00:00.000Z",
+            "deaths": 2914
           }
         ]
       },
@@ -9788,6 +10179,36 @@
             "num_day": 30,
             "date": "2020-02-25T11:00:00.000Z",
             "deaths": 2717
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-26T11:00:00.000Z",
+            "deaths": 2746
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
+          },
+          {
+            "num_day": 34,
+            "date": "2020-02-29T11:00:00.000Z",
+            "deaths": 2872
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-01T11:00:00.000Z",
+            "deaths": 2914
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-02T11:00:00.000Z",
+            "deaths": 2947
           }
         ]
       },
@@ -9948,6 +10369,36 @@
             "num_day": 30,
             "date": "2020-02-26T11:00:00.000Z",
             "deaths": 2746
+          },
+          {
+            "num_day": 31,
+            "date": "2020-02-27T11:00:00.000Z",
+            "deaths": 2790
+          },
+          {
+            "num_day": 32,
+            "date": "2020-02-28T11:00:00.000Z",
+            "deaths": 2837
+          },
+          {
+            "num_day": 33,
+            "date": "2020-02-29T11:00:00.000Z",
+            "deaths": 2872
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-01T11:00:00.000Z",
+            "deaths": 2914
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-02T11:00:00.000Z",
+            "deaths": 2947
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-03T11:00:00.000Z",
+            "deaths": 2983
           }
         ]
       },
@@ -10108,6 +10559,36 @@
             "num_day": 30,
             "date": "2020-02-29T11:00:00.000Z",
             "deaths": 2872
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-01T11:00:00.000Z",
+            "deaths": 2914
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-02T11:00:00.000Z",
+            "deaths": 2947
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-03T11:00:00.000Z",
+            "deaths": 2983
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-04T11:00:00.000Z",
+            "deaths": 3015
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-05T11:00:00.000Z",
+            "deaths": 3044
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-06T11:00:00.000Z",
+            "deaths": 3072
           }
         ]
       },
@@ -10268,6 +10749,36 @@
             "num_day": 30,
             "date": "2020-03-02T11:00:00.000Z",
             "deaths": 2947
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-03T11:00:00.000Z",
+            "deaths": 2983
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-04T11:00:00.000Z",
+            "deaths": 3015
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-05T11:00:00.000Z",
+            "deaths": 3044
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-06T11:00:00.000Z",
+            "deaths": 3072
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-07T11:00:00.000Z",
+            "deaths": 3100
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-08T11:00:00.000Z",
+            "deaths": 3123
           }
         ]
       },
@@ -10428,6 +10939,36 @@
             "num_day": 30,
             "date": "2020-03-03T11:00:00.000Z",
             "deaths": 2983
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-04T11:00:00.000Z",
+            "deaths": 3015
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-05T11:00:00.000Z",
+            "deaths": 3044
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-06T11:00:00.000Z",
+            "deaths": 3072
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-07T11:00:00.000Z",
+            "deaths": 3100
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-08T11:00:00.000Z",
+            "deaths": 3123
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-09T11:00:00.000Z",
+            "deaths": 3139
           }
         ]
       },
@@ -10588,6 +11129,36 @@
             "num_day": 30,
             "date": "2020-03-05T11:00:00.000Z",
             "deaths": 3044
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-06T11:00:00.000Z",
+            "deaths": 3072
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-07T11:00:00.000Z",
+            "deaths": 3100
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-08T11:00:00.000Z",
+            "deaths": 3123
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-09T11:00:00.000Z",
+            "deaths": 3139
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-10T11:00:00.000Z",
+            "deaths": 3161
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-11T11:00:00.000Z",
+            "deaths": 3172
           }
         ]
       }
@@ -10597,7 +11168,7 @@
     "highest_confirmed": 491,
     "highest_deaths": 6,
     "population": 49648685,
-    "country_name": "Colombia",
+    "name": "Colombia",
     "confirmed": [
       {
         "range": 50,
@@ -10832,7 +11403,7 @@
   {
     "highest_confirmed": 4,
     "population": 5244363,
-    "country_name": "Congo (Brazzaville)",
+    "name": "Congo (Brazzaville)",
     "confirmed": [
       {
         "range": 50,
@@ -10918,7 +11489,7 @@
     "highest_confirmed": 51,
     "highest_deaths": 3,
     "population": 84068091,
-    "country_name": "Congo (Kinshasa)",
+    "name": "Congo (Kinshasa)",
     "confirmed": [
       {
         "range": 50,
@@ -11010,7 +11581,7 @@
     "highest_confirmed": 231,
     "highest_deaths": 2,
     "population": 4999441,
-    "country_name": "Costa Rica",
+    "name": "Costa Rica",
     "confirmed": [
       {
         "range": 50,
@@ -11183,7 +11754,7 @@
   {
     "highest_confirmed": 96,
     "population": 25069229,
-    "country_name": "Cote d'Ivoire",
+    "name": "Cote d'Ivoire",
     "confirmed": [
       {
         "range": 50,
@@ -11285,7 +11856,7 @@
     "highest_confirmed": 495,
     "highest_deaths": 3,
     "population": 4089400,
-    "country_name": "Croatia",
+    "name": "Croatia",
     "confirmed": [
       {
         "range": 50,
@@ -11530,7 +12101,7 @@
   {
     "highest_confirmed": 712,
     "highest_deaths": 10,
-    "country_name": "Diamond Princess",
+    "name": "Diamond Princess",
     "confirmed": [
       {
         "range": 50,
@@ -11689,6 +12260,36 @@
             "num_day": 30,
             "date": "2020-03-07T11:00:00.000Z",
             "confirmed": 706
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 706
           }
         ]
       },
@@ -11849,6 +12450,36 @@
             "num_day": 30,
             "date": "2020-03-10T11:00:00.000Z",
             "confirmed": 706
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 706
           }
         ]
       },
@@ -12009,6 +12640,36 @@
             "num_day": 30,
             "date": "2020-03-14T11:00:00.000Z",
             "confirmed": 706
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 706
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
           }
         ]
       },
@@ -12169,6 +12830,36 @@
             "num_day": 30,
             "date": "2020-03-16T11:00:00.000Z",
             "confirmed": 706
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 712
           }
         ]
       },
@@ -12329,6 +13020,36 @@
             "num_day": 30,
             "date": "2020-03-17T11:00:00.000Z",
             "confirmed": 712
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 712
           }
         ]
       },
@@ -12489,6 +13210,36 @@
             "num_day": 30,
             "date": "2020-03-18T11:00:00.000Z",
             "confirmed": 712
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 712
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 712
           }
         ]
       },
@@ -12568,7 +13319,7 @@
     "highest_confirmed": 67,
     "highest_deaths": 2,
     "population": 11338138,
-    "country_name": "Cuba",
+    "name": "Cuba",
     "confirmed": [
       {
         "range": 50,
@@ -12665,7 +13416,7 @@
     "highest_confirmed": 146,
     "highest_deaths": 3,
     "population": 1189265,
-    "country_name": "Cyprus",
+    "name": "Cyprus",
     "confirmed": [
       {
         "range": 50,
@@ -12812,7 +13563,8 @@
   {
     "highest_confirmed": 1925,
     "highest_deaths": 9,
-    "country_name": "Czechia",
+    "population": 10625695,
+    "name": "Czech Republic",
     "confirmed": [
       {
         "range": 50,
@@ -13311,7 +14063,7 @@
     "highest_confirmed": 2023,
     "highest_deaths": 41,
     "population": 5797446,
-    "country_name": "Denmark",
+    "name": "Denmark",
     "confirmed": [
       {
         "range": 50,
@@ -14093,7 +14845,7 @@
   {
     "highest_confirmed": 11,
     "population": 958920,
-    "country_name": "Djibouti",
+    "name": "Djibouti",
     "confirmed": [
       {
         "range": 50,
@@ -14179,7 +14931,7 @@
     "highest_confirmed": 488,
     "highest_deaths": 10,
     "population": 10627165,
-    "country_name": "Dominican Republic",
+    "name": "Dominican Republic",
     "confirmed": [
       {
         "range": 50,
@@ -14391,7 +15143,7 @@
     "highest_confirmed": 1403,
     "highest_deaths": 34,
     "population": 17084357,
-    "country_name": "Ecuador",
+    "name": "Ecuador",
     "confirmed": [
       {
         "range": 50,
@@ -14798,7 +15550,7 @@
     "highest_confirmed": 495,
     "highest_deaths": 24,
     "population": 98423595,
-    "country_name": "Egypt",
+    "name": "Egypt",
     "confirmed": [
       {
         "range": 50,
@@ -15170,7 +15922,7 @@
   {
     "highest_confirmed": 13,
     "population": 6420744,
-    "country_name": "El Salvador",
+    "name": "El Salvador",
     "confirmed": [
       {
         "range": 50,
@@ -15255,7 +16007,7 @@
   {
     "highest_confirmed": 12,
     "population": 1308974,
-    "country_name": "Equatorial Guinea",
+    "name": "Equatorial Guinea",
     "confirmed": [
       {
         "range": 50,
@@ -15340,7 +16092,7 @@
   {
     "highest_confirmed": 6,
     "population": null,
-    "country_name": "Eritrea",
+    "name": "Eritrea",
     "confirmed": [
       {
         "range": 50,
@@ -15426,7 +16178,7 @@
     "highest_confirmed": 538,
     "highest_deaths": 1,
     "population": 1320884,
-    "country_name": "Estonia",
+    "name": "Estonia",
     "confirmed": [
       {
         "range": 50,
@@ -15752,7 +16504,7 @@
   {
     "highest_confirmed": 6,
     "population": 1136191,
-    "country_name": "Eswatini",
+    "name": "Eswatini",
     "confirmed": [
       {
         "range": 50,
@@ -15837,7 +16589,7 @@
   {
     "highest_confirmed": 12,
     "population": 109224559,
-    "country_name": "Ethiopia",
+    "name": "Ethiopia",
     "confirmed": [
       {
         "range": 50,
@@ -15922,7 +16674,7 @@
   {
     "highest_confirmed": 5,
     "population": 883483,
-    "country_name": "Fiji",
+    "name": "Fiji",
     "confirmed": [
       {
         "range": 50,
@@ -16008,7 +16760,7 @@
     "highest_confirmed": 958,
     "highest_deaths": 5,
     "population": 5518050,
-    "country_name": "Finland",
+    "name": "Finland",
     "confirmed": [
       {
         "range": 50,
@@ -16451,7 +17203,7 @@
     "highest_confirmed": 29551,
     "highest_deaths": 1698,
     "population": 66987244,
-    "country_name": "France",
+    "name": "France",
     "confirmed": [
       {
         "range": 50,
@@ -18151,7 +18903,7 @@
     "highest_confirmed": 7,
     "highest_deaths": 1,
     "population": 2119275,
-    "country_name": "Gabon",
+    "name": "Gabon",
     "confirmed": [
       {
         "range": 50,
@@ -18236,7 +18988,8 @@
   {
     "highest_confirmed": 3,
     "highest_deaths": 1,
-    "country_name": "Gambia",
+    "population": 2280102,
+    "name": "Gambia",
     "confirmed": [
       {
         "range": 50,
@@ -18321,7 +19074,7 @@
   {
     "highest_confirmed": 79,
     "population": 3731000,
-    "country_name": "Georgia",
+    "name": "Georgia",
     "confirmed": [
       {
         "range": 50,
@@ -18433,7 +19186,7 @@
     "highest_confirmed": 43938,
     "highest_deaths": 267,
     "population": 82927922,
-    "country_name": "Germany",
+    "name": "Germany",
     "confirmed": [
       {
         "range": 50,
@@ -19720,7 +20473,7 @@
     "highest_confirmed": 132,
     "highest_deaths": 4,
     "population": 29767108,
-    "country_name": "Ghana",
+    "name": "Ghana",
     "confirmed": [
       {
         "range": 50,
@@ -19828,7 +20581,7 @@
     "highest_confirmed": 892,
     "highest_deaths": 26,
     "population": 10727668,
-    "country_name": "Greece",
+    "name": "Greece",
     "confirmed": [
       {
         "range": 50,
@@ -20343,7 +21096,7 @@
     "highest_confirmed": 25,
     "highest_deaths": 1,
     "population": 17247807,
-    "country_name": "Guatemala",
+    "name": "Guatemala",
     "confirmed": [
       {
         "range": 50,
@@ -20428,7 +21181,7 @@
   {
     "highest_confirmed": 4,
     "population": 12414318,
-    "country_name": "Guinea",
+    "name": "Guinea",
     "confirmed": [
       {
         "range": 50,
@@ -20514,7 +21267,7 @@
     "highest_confirmed": 20,
     "highest_deaths": 1,
     "population": 779004,
-    "country_name": "Guyana",
+    "name": "Guyana",
     "confirmed": [
       {
         "range": 50,
@@ -20599,7 +21352,7 @@
   {
     "highest_confirmed": 8,
     "population": 11123176,
-    "country_name": "Haiti",
+    "name": "Haiti",
     "confirmed": [
       {
         "range": 50,
@@ -20683,7 +21436,7 @@
   },
   {
     "highest_confirmed": 4,
-    "country_name": "Holy See",
+    "name": "Holy See",
     "confirmed": [
       {
         "range": 50,
@@ -20769,7 +21522,7 @@
     "highest_confirmed": 52,
     "highest_deaths": 1,
     "population": 9587522,
-    "country_name": "Honduras",
+    "name": "Honduras",
     "confirmed": [
       {
         "range": 50,
@@ -20861,7 +21614,7 @@
     "highest_confirmed": 261,
     "highest_deaths": 10,
     "population": 9768785,
-    "country_name": "Hungary",
+    "name": "Hungary",
     "confirmed": [
       {
         "range": 50,
@@ -21051,7 +21804,7 @@
     "highest_confirmed": 802,
     "highest_deaths": 5,
     "population": 353574,
-    "country_name": "Iceland",
+    "name": "Iceland",
     "confirmed": [
       {
         "range": 50,
@@ -21474,7 +22227,7 @@
     "highest_confirmed": 727,
     "highest_deaths": 20,
     "population": 1352617328,
-    "country_name": "India",
+    "name": "India",
     "confirmed": [
       {
         "range": 50,
@@ -21843,7 +22596,7 @@
     "highest_confirmed": 893,
     "highest_deaths": 78,
     "population": 267663435,
-    "country_name": "Indonesia",
+    "name": "Indonesia",
     "confirmed": [
       {
         "range": 50,
@@ -22387,7 +23140,7 @@
     "highest_confirmed": 29406,
     "highest_deaths": 2234,
     "population": 81800269,
-    "country_name": "Iran",
+    "name": "Iran",
     "confirmed": [
       {
         "range": 50,
@@ -22546,6 +23299,11 @@
             "num_day": 30,
             "date": "2020-03-24T11:00:00.000Z",
             "confirmed": 27017
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 29406
           }
         ]
       },
@@ -23703,6 +24461,11 @@
             "num_day": 30,
             "date": "2020-03-24T11:00:00.000Z",
             "deaths": 2077
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 2234
           }
         ]
       },
@@ -24857,7 +25620,7 @@
     "highest_confirmed": 382,
     "highest_deaths": 36,
     "population": 38433600,
-    "country_name": "Iraq",
+    "name": "Iraq",
     "confirmed": [
       {
         "range": 50,
@@ -25265,7 +26028,7 @@
     "highest_confirmed": 1819,
     "highest_deaths": 19,
     "population": 4853506,
-    "country_name": "Ireland",
+    "name": "Ireland",
     "confirmed": [
       {
         "range": 50,
@@ -25720,7 +26483,7 @@
     "highest_confirmed": 2693,
     "highest_deaths": 8,
     "population": 8883800,
-    "country_name": "Israel",
+    "name": "Israel",
     "confirmed": [
       {
         "range": 50,
@@ -26209,7 +26972,7 @@
     "highest_confirmed": 80589,
     "highest_deaths": 8215,
     "population": 60431283,
-    "country_name": "Italy",
+    "name": "Italy",
     "confirmed": [
       {
         "range": 50,
@@ -26368,6 +27131,21 @@
             "num_day": 30,
             "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 63927
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 69176
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80589
           }
         ]
       },
@@ -26528,6 +27306,16 @@
             "num_day": 30,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 69176
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 74386
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80589
           }
         ]
       },
@@ -26688,6 +27476,11 @@
             "num_day": 30,
             "date": "2020-03-24T11:00:00.000Z",
             "confirmed": 74386
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80589
           }
         ]
       },
@@ -28784,7 +29577,7 @@
     "highest_confirmed": 26,
     "highest_deaths": 1,
     "population": 2934855,
-    "country_name": "Jamaica",
+    "name": "Jamaica",
     "confirmed": [
       {
         "range": 50,
@@ -28870,7 +29663,7 @@
     "highest_confirmed": 1387,
     "highest_deaths": 47,
     "population": 126529100,
-    "country_name": "Japan",
+    "name": "Japan",
     "confirmed": [
       {
         "range": 50,
@@ -29029,6 +29822,36 @@
             "num_day": 30,
             "date": "2020-03-16T11:00:00.000Z",
             "confirmed": 878
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 889
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 924
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 963
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 1007
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 1101
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 1128
           }
         ]
       },
@@ -29189,6 +30012,26 @@
             "num_day": 30,
             "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 1101
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 1128
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 1193
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 1307
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 1387
           }
         ]
       },
@@ -30047,7 +30890,7 @@
   {
     "highest_confirmed": 212,
     "population": 9956011,
-    "country_name": "Jordan",
+    "name": "Jordan",
     "confirmed": [
       {
         "range": 50,
@@ -30211,7 +31054,7 @@
     "highest_confirmed": 111,
     "highest_deaths": 3,
     "population": 18276499,
-    "country_name": "Kazakhstan",
+    "name": "Kazakhstan",
     "confirmed": [
       {
         "range": 50,
@@ -30334,7 +31177,7 @@
     "highest_confirmed": 31,
     "highest_deaths": 1,
     "population": 51393010,
-    "country_name": "Kenya",
+    "name": "Kenya",
     "confirmed": [
       {
         "range": 50,
@@ -30420,7 +31263,7 @@
     "highest_confirmed": 9241,
     "highest_deaths": 131,
     "population": 51635256,
-    "country_name": "South Korea",
+    "name": "South Korea",
     "confirmed": [
       {
         "range": 50,
@@ -30579,6 +31422,31 @@
             "num_day": 30,
             "date": "2020-03-20T11:00:00.000Z",
             "confirmed": 8799
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 8961
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 8961
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 9037
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -30739,6 +31607,31 @@
             "num_day": 30,
             "date": "2020-03-20T11:00:00.000Z",
             "confirmed": 8799
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 8961
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 8961
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 9037
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -30899,6 +31792,26 @@
             "num_day": 30,
             "date": "2020-03-21T11:00:00.000Z",
             "confirmed": 8961
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 8961
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 9037
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -31059,6 +31972,21 @@
             "num_day": 30,
             "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 8961
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 9037
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -31219,6 +32147,21 @@
             "num_day": 30,
             "date": "2020-03-22T11:00:00.000Z",
             "confirmed": 8961
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 9037
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -31379,6 +32322,16 @@
             "num_day": 30,
             "date": "2020-03-23T11:00:00.000Z",
             "confirmed": 9037
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 9137
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -31539,6 +32492,11 @@
             "num_day": 30,
             "date": "2020-03-24T11:00:00.000Z",
             "confirmed": 9137
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 9241
           }
         ]
       },
@@ -32440,7 +33398,7 @@
   {
     "highest_confirmed": 208,
     "population": 4137309,
-    "country_name": "Kuwait",
+    "name": "Kuwait",
     "confirmed": [
       {
         "range": 50,
@@ -32722,7 +33680,7 @@
   },
   {
     "highest_confirmed": 44,
-    "country_name": "Kyrgyzstan",
+    "name": "Kyrgyzstan",
     "confirmed": [
       {
         "range": 50,
@@ -32807,7 +33765,7 @@
   {
     "highest_confirmed": 244,
     "population": 1926542,
-    "country_name": "Latvia",
+    "name": "Latvia",
     "confirmed": [
       {
         "range": 50,
@@ -32986,7 +33944,7 @@
     "highest_confirmed": 368,
     "highest_deaths": 6,
     "population": 6848925,
-    "country_name": "Lebanon",
+    "name": "Lebanon",
     "confirmed": [
       {
         "range": 50,
@@ -33255,7 +34213,7 @@
   {
     "highest_confirmed": 3,
     "population": 4818977,
-    "country_name": "Liberia",
+    "name": "Liberia",
     "confirmed": [
       {
         "range": 50,
@@ -33340,7 +34298,7 @@
   {
     "highest_confirmed": 56,
     "population": 37910,
-    "country_name": "Liechtenstein",
+    "name": "Liechtenstein",
     "confirmed": [
       {
         "range": 50,
@@ -33447,7 +34405,7 @@
     "highest_confirmed": 299,
     "highest_deaths": 4,
     "population": 2789533,
-    "country_name": "Lithuania",
+    "name": "Lithuania",
     "confirmed": [
       {
         "range": 50,
@@ -33606,7 +34564,7 @@
     "highest_confirmed": 1453,
     "highest_deaths": 9,
     "population": 607728,
-    "country_name": "Luxembourg",
+    "name": "Luxembourg",
     "confirmed": [
       {
         "range": 50,
@@ -34004,7 +34962,7 @@
   {
     "highest_confirmed": 23,
     "population": 26262368,
-    "country_name": "Madagascar",
+    "name": "Madagascar",
     "confirmed": [
       {
         "range": 50,
@@ -34090,7 +35048,7 @@
     "highest_confirmed": 2031,
     "highest_deaths": 23,
     "population": 31528585,
-    "country_name": "Malaysia",
+    "name": "Malaysia",
     "confirmed": [
       {
         "range": 50,
@@ -34745,7 +35703,7 @@
   {
     "highest_confirmed": 13,
     "population": 515696,
-    "country_name": "Maldives",
+    "name": "Maldives",
     "confirmed": [
       {
         "range": 50,
@@ -34830,7 +35788,7 @@
   {
     "highest_confirmed": 134,
     "population": 483530,
-    "country_name": "Malta",
+    "name": "Malta",
     "confirmed": [
       {
         "range": 50,
@@ -34977,7 +35935,7 @@
   {
     "highest_confirmed": 3,
     "population": 4403319,
-    "country_name": "Mauritania",
+    "name": "Mauritania",
     "confirmed": [
       {
         "range": 50,
@@ -35063,7 +36021,7 @@
     "highest_confirmed": 81,
     "highest_deaths": 2,
     "population": 1265303,
-    "country_name": "Mauritius",
+    "name": "Mauritius",
     "confirmed": [
       {
         "range": 50,
@@ -35155,7 +36113,7 @@
     "highest_confirmed": 475,
     "highest_deaths": 6,
     "population": 126190788,
-    "country_name": "Mexico",
+    "name": "Mexico",
     "confirmed": [
       {
         "range": 50,
@@ -35401,7 +36359,7 @@
     "highest_confirmed": 177,
     "highest_deaths": 1,
     "population": 3545883,
-    "country_name": "Moldova",
+    "name": "Moldova",
     "confirmed": [
       {
         "range": 50,
@@ -35543,7 +36501,7 @@
   {
     "highest_confirmed": 33,
     "population": 38682,
-    "country_name": "Monaco",
+    "name": "Monaco",
     "confirmed": [
       {
         "range": 50,
@@ -35628,7 +36586,7 @@
   {
     "highest_confirmed": 11,
     "population": 3170208,
-    "country_name": "Mongolia",
+    "name": "Mongolia",
     "confirmed": [
       {
         "range": 50,
@@ -35714,7 +36672,7 @@
     "highest_confirmed": 69,
     "highest_deaths": 1,
     "population": 622345,
-    "country_name": "Montenegro",
+    "name": "Montenegro",
     "confirmed": [
       {
         "range": 50,
@@ -35811,7 +36769,7 @@
     "highest_confirmed": 275,
     "highest_deaths": 11,
     "population": 36029138,
-    "country_name": "Morocco",
+    "name": "Morocco",
     "confirmed": [
       {
         "range": 50,
@@ -35980,7 +36938,7 @@
   {
     "highest_confirmed": 8,
     "population": 2448255,
-    "country_name": "Namibia",
+    "name": "Namibia",
     "confirmed": [
       {
         "range": 50,
@@ -36065,7 +37023,7 @@
   {
     "highest_confirmed": 3,
     "population": 28087871,
-    "country_name": "Nepal",
+    "name": "Nepal",
     "confirmed": [
       {
         "range": 50,
@@ -36151,7 +37109,7 @@
     "highest_confirmed": 7468,
     "highest_deaths": 435,
     "population": 17231017,
-    "country_name": "Netherlands",
+    "name": "Netherlands",
     "confirmed": [
       {
         "range": 50,
@@ -37329,7 +38287,7 @@
   {
     "highest_confirmed": 2,
     "population": 6465513,
-    "country_name": "Nicaragua",
+    "name": "Nicaragua",
     "confirmed": [
       {
         "range": 50,
@@ -37415,7 +38373,7 @@
     "highest_confirmed": 10,
     "highest_deaths": 1,
     "population": 22442948,
-    "country_name": "Niger",
+    "name": "Niger",
     "confirmed": [
       {
         "range": 50,
@@ -37501,7 +38459,7 @@
     "highest_confirmed": 65,
     "highest_deaths": 1,
     "population": 195874740,
-    "country_name": "Nigeria",
+    "name": "Nigeria",
     "confirmed": [
       {
         "range": 50,
@@ -37598,7 +38556,7 @@
     "highest_confirmed": 201,
     "highest_deaths": 3,
     "population": 2082958,
-    "country_name": "North Macedonia",
+    "name": "North Macedonia",
     "confirmed": [
       {
         "range": 50,
@@ -37752,7 +38710,7 @@
     "highest_confirmed": 3369,
     "highest_deaths": 14,
     "population": 5314336,
-    "country_name": "Norway",
+    "name": "Norway",
     "confirmed": [
       {
         "range": 50,
@@ -38561,7 +39519,7 @@
   {
     "highest_confirmed": 109,
     "population": 4829483,
-    "country_name": "Oman",
+    "name": "Oman",
     "confirmed": [
       {
         "range": 50,
@@ -38684,7 +39642,7 @@
     "highest_confirmed": 1201,
     "highest_deaths": 9,
     "population": 212215030,
-    "country_name": "Pakistan",
+    "name": "Pakistan",
     "confirmed": [
       {
         "range": 50,
@@ -39093,7 +40051,7 @@
     "highest_confirmed": 558,
     "highest_deaths": 8,
     "population": 4176873,
-    "country_name": "Panama",
+    "name": "Panama",
     "confirmed": [
       {
         "range": 50,
@@ -39349,7 +40307,7 @@
   {
     "highest_confirmed": 1,
     "population": 8606316,
-    "country_name": "Papua New Guinea",
+    "name": "Papua New Guinea",
     "confirmed": [
       {
         "range": 50,
@@ -39435,7 +40393,7 @@
     "highest_confirmed": 41,
     "highest_deaths": 3,
     "population": 6956071,
-    "country_name": "Paraguay",
+    "name": "Paraguay",
     "confirmed": [
       {
         "range": 50,
@@ -39521,7 +40479,7 @@
     "highest_confirmed": 580,
     "highest_deaths": 9,
     "population": 31989256,
-    "country_name": "Peru",
+    "name": "Peru",
     "confirmed": [
       {
         "range": 50,
@@ -39808,7 +40766,7 @@
     "highest_confirmed": 707,
     "highest_deaths": 45,
     "population": 106651922,
-    "country_name": "Philippines",
+    "name": "Philippines",
     "confirmed": [
       {
         "range": 50,
@@ -40264,7 +41222,7 @@
     "highest_confirmed": 1221,
     "highest_deaths": 16,
     "population": 37978548,
-    "country_name": "Poland",
+    "name": "Poland",
     "confirmed": [
       {
         "range": 50,
@@ -40689,7 +41647,7 @@
     "highest_confirmed": 3544,
     "highest_deaths": 60,
     "population": 10281762,
-    "country_name": "Portugal",
+    "name": "Portugal",
     "confirmed": [
       {
         "range": 50,
@@ -41297,7 +42255,7 @@
   {
     "highest_confirmed": 549,
     "population": 2781677,
-    "country_name": "Qatar",
+    "name": "Qatar",
     "confirmed": [
       {
         "range": 50,
@@ -41779,7 +42737,7 @@
     "highest_confirmed": 1029,
     "highest_deaths": 23,
     "population": 19473936,
-    "country_name": "Romania",
+    "name": "Romania",
     "confirmed": [
       {
         "range": 50,
@@ -42175,7 +43133,7 @@
     "highest_confirmed": 840,
     "highest_deaths": 3,
     "population": 144478050,
-    "country_name": "Russia",
+    "name": "Russia",
     "confirmed": [
       {
         "range": 50,
@@ -42482,7 +43440,7 @@
   {
     "highest_confirmed": 50,
     "population": 12301939,
-    "country_name": "Rwanda",
+    "name": "Rwanda",
     "confirmed": [
       {
         "range": 50,
@@ -42572,7 +43530,7 @@
   },
   {
     "highest_confirmed": 3,
-    "country_name": "Saint Lucia",
+    "name": "Saint Lucia",
     "confirmed": [
       {
         "range": 50,
@@ -42657,7 +43615,7 @@
   {
     "highest_confirmed": 1,
     "population": 110210,
-    "country_name": "Saint Vincent and the Grenadines",
+    "name": "Saint Vincent and the Grenadines",
     "confirmed": [
       {
         "range": 50,
@@ -42743,7 +43701,7 @@
     "highest_confirmed": 208,
     "highest_deaths": 21,
     "population": 33785,
-    "country_name": "San Marino",
+    "name": "San Marino",
     "confirmed": [
       {
         "range": 50,
@@ -43064,7 +44022,7 @@
     "highest_confirmed": 1012,
     "highest_deaths": 3,
     "population": 33699947,
-    "country_name": "Saudi Arabia",
+    "name": "Saudi Arabia",
     "confirmed": [
       {
         "range": 50,
@@ -43437,7 +44395,7 @@
   {
     "highest_confirmed": 105,
     "population": 15854360,
-    "country_name": "Senegal",
+    "name": "Senegal",
     "confirmed": [
       {
         "range": 50,
@@ -43555,7 +44513,7 @@
     "highest_confirmed": 384,
     "highest_deaths": 4,
     "population": 6982084,
-    "country_name": "Serbia",
+    "name": "Serbia",
     "confirmed": [
       {
         "range": 50,
@@ -43779,7 +44737,7 @@
   {
     "highest_confirmed": 7,
     "population": 96762,
-    "country_name": "Seychelles",
+    "name": "Seychelles",
     "confirmed": [
       {
         "range": 50,
@@ -43865,7 +44823,7 @@
     "highest_confirmed": 683,
     "highest_deaths": 2,
     "population": 5638676,
-    "country_name": "Singapore",
+    "name": "Singapore",
     "confirmed": [
       {
         "range": 50,
@@ -44024,6 +44982,36 @@
             "num_day": 30,
             "date": "2020-03-12T11:00:00.000Z",
             "confirmed": 200
+          },
+          {
+            "num_day": 31,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 212
+          },
+          {
+            "num_day": 32,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 226
+          },
+          {
+            "num_day": 33,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 243
+          },
+          {
+            "num_day": 34,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 266
+          },
+          {
+            "num_day": 35,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 313
+          },
+          {
+            "num_day": 36,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 345
           }
         ]
       },
@@ -44412,7 +45400,7 @@
     "highest_confirmed": 226,
     "highest_deaths": 1,
     "population": 5447011,
-    "country_name": "Slovakia",
+    "name": "Slovakia",
     "confirmed": [
       {
         "range": 50,
@@ -44621,7 +45609,7 @@
     "highest_confirmed": 562,
     "highest_deaths": 6,
     "population": 2067372,
-    "country_name": "Slovenia",
+    "name": "Slovenia",
     "confirmed": [
       {
         "range": 50,
@@ -44992,7 +45980,7 @@
   {
     "highest_confirmed": 2,
     "population": 15008154,
-    "country_name": "Somalia",
+    "name": "Somalia",
     "confirmed": [
       {
         "range": 50,
@@ -45077,7 +46065,7 @@
   {
     "highest_confirmed": 927,
     "population": 57779622,
-    "country_name": "South Africa",
+    "name": "South Africa",
     "confirmed": [
       {
         "range": 50,
@@ -45370,7 +46358,7 @@
     "highest_confirmed": 57786,
     "highest_deaths": 4365,
     "population": 46723749,
-    "country_name": "Spain",
+    "name": "Spain",
     "confirmed": [
       {
         "range": 50,
@@ -47124,7 +48112,7 @@
   {
     "highest_confirmed": 106,
     "population": 21670000,
-    "country_name": "Sri Lanka",
+    "name": "Sri Lanka",
     "confirmed": [
       {
         "range": 50,
@@ -47272,7 +48260,7 @@
     "highest_confirmed": 3,
     "highest_deaths": 1,
     "population": 41801533,
-    "country_name": "Sudan",
+    "name": "Sudan",
     "confirmed": [
       {
         "range": 50,
@@ -47357,7 +48345,7 @@
   {
     "highest_confirmed": 8,
     "population": 575991,
-    "country_name": "Suriname",
+    "name": "Suriname",
     "confirmed": [
       {
         "range": 50,
@@ -47443,7 +48431,7 @@
     "highest_confirmed": 2840,
     "highest_deaths": 77,
     "population": 10183175,
-    "country_name": "Sweden",
+    "name": "Sweden",
     "confirmed": [
       {
         "range": 50,
@@ -48343,7 +49331,7 @@
     "highest_confirmed": 11811,
     "highest_deaths": 191,
     "population": 8516543,
-    "country_name": "Switzerland",
+    "name": "Switzerland",
     "confirmed": [
       {
         "range": 50,
@@ -49463,7 +50451,7 @@
   {
     "highest_confirmed": 252,
     "highest_deaths": 2,
-    "country_name": "Taiwan*",
+    "name": "Taiwan*",
     "confirmed": [
       {
         "range": 50,
@@ -49681,7 +50669,7 @@
   {
     "highest_confirmed": 13,
     "population": 56318348,
-    "country_name": "Tanzania",
+    "name": "Tanzania",
     "confirmed": [
       {
         "range": 50,
@@ -49767,7 +50755,7 @@
     "highest_confirmed": 1045,
     "highest_deaths": 4,
     "population": 69428524,
-    "country_name": "Thailand",
+    "name": "Thailand",
     "confirmed": [
       {
         "range": 50,
@@ -50175,7 +51163,7 @@
   {
     "highest_confirmed": 23,
     "population": 7889094,
-    "country_name": "Togo",
+    "name": "Togo",
     "confirmed": [
       {
         "range": 50,
@@ -50261,7 +51249,7 @@
     "highest_confirmed": 65,
     "highest_deaths": 1,
     "population": 1389858,
-    "country_name": "Trinidad and Tobago",
+    "name": "Trinidad and Tobago",
     "confirmed": [
       {
         "range": 50,
@@ -50373,7 +51361,7 @@
     "highest_confirmed": 197,
     "highest_deaths": 6,
     "population": 11565204,
-    "country_name": "Tunisia",
+    "name": "Tunisia",
     "confirmed": [
       {
         "range": 50,
@@ -50511,7 +51499,7 @@
     "highest_confirmed": 3629,
     "highest_deaths": 75,
     "population": 82319724,
-    "country_name": "Turkey",
+    "name": "Turkey",
     "confirmed": [
       {
         "range": 50,
@@ -50980,7 +51968,7 @@
   {
     "highest_confirmed": 14,
     "population": 42723139,
-    "country_name": "Uganda",
+    "name": "Uganda",
     "confirmed": [
       {
         "range": 50,
@@ -51066,7 +52054,7 @@
     "highest_confirmed": 196,
     "highest_deaths": 5,
     "population": 44622516,
-    "country_name": "Ukraine",
+    "name": "Ukraine",
     "confirmed": [
       {
         "range": 50,
@@ -51189,7 +52177,7 @@
     "highest_confirmed": 333,
     "highest_deaths": 2,
     "population": 9630959,
-    "country_name": "United Arab Emirates",
+    "name": "United Arab Emirates",
     "confirmed": [
       {
         "range": 50,
@@ -51434,7 +52422,7 @@
     "highest_confirmed": 11812,
     "highest_deaths": 580,
     "population": 66488991,
-    "country_name": "United Kingdom",
+    "name": "United Kingdom",
     "confirmed": [
       {
         "range": 50,
@@ -52688,7 +53676,7 @@
   {
     "highest_confirmed": 217,
     "population": 3449299,
-    "country_name": "Uruguay",
+    "name": "Uruguay",
     "confirmed": [
       {
         "range": 50,
@@ -52854,1609 +53842,9 @@
     ]
   },
   {
-    "highest_confirmed": 83836,
-    "highest_deaths": 1209,
-    "population": 327167434,
-    "country_name": "United States",
-    "confirmed": [
-      {
-        "range": 50,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-02-23T11:00:00.000Z",
-            "confirmed": 51
-          },
-          {
-            "num_day": 1,
-            "date": "2020-02-24T11:00:00.000Z",
-            "confirmed": 51
-          },
-          {
-            "num_day": 2,
-            "date": "2020-02-25T11:00:00.000Z",
-            "confirmed": 57
-          },
-          {
-            "num_day": 3,
-            "date": "2020-02-26T11:00:00.000Z",
-            "confirmed": 58
-          },
-          {
-            "num_day": 4,
-            "date": "2020-02-27T11:00:00.000Z",
-            "confirmed": 60
-          },
-          {
-            "num_day": 5,
-            "date": "2020-02-28T11:00:00.000Z",
-            "confirmed": 68
-          },
-          {
-            "num_day": 6,
-            "date": "2020-02-29T11:00:00.000Z",
-            "confirmed": 74
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-01T11:00:00.000Z",
-            "confirmed": 98
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-02T11:00:00.000Z",
-            "confirmed": 118
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-03T11:00:00.000Z",
-            "confirmed": 149
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-04T11:00:00.000Z",
-            "confirmed": 217
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-05T11:00:00.000Z",
-            "confirmed": 262
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-06T11:00:00.000Z",
-            "confirmed": 402
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 20,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 21,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 22,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 23,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 24,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 25,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 26,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 27,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 28,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 29,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 30,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          }
-        ]
-      },
-      {
-        "range": 100,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-02T11:00:00.000Z",
-            "confirmed": 118
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-03T11:00:00.000Z",
-            "confirmed": 149
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-04T11:00:00.000Z",
-            "confirmed": 217
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-05T11:00:00.000Z",
-            "confirmed": 262
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-06T11:00:00.000Z",
-            "confirmed": 402
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 20,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 21,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 22,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 23,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 200,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-04T11:00:00.000Z",
-            "confirmed": 217
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-05T11:00:00.000Z",
-            "confirmed": 262
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-06T11:00:00.000Z",
-            "confirmed": 402
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 20,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 21,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 300,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-06T11:00:00.000Z",
-            "confirmed": 402
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 400,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-06T11:00:00.000Z",
-            "confirmed": 402
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 500,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-07T11:00:00.000Z",
-            "confirmed": 518
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-08T11:00:00.000Z",
-            "confirmed": 583
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 750,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-09T11:00:00.000Z",
-            "confirmed": 959
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      },
-      {
-        "range": 1000,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-10T11:00:00.000Z",
-            "confirmed": 1281
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-11T11:00:00.000Z",
-            "confirmed": 1663
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-12T11:00:00.000Z",
-            "confirmed": 2179
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-13T11:00:00.000Z",
-            "confirmed": 2727
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-14T11:00:00.000Z",
-            "confirmed": 3499
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-15T11:00:00.000Z",
-            "confirmed": 4632
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-16T11:00:00.000Z",
-            "confirmed": 6421
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-17T11:00:00.000Z",
-            "confirmed": 7783
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-18T11:00:00.000Z",
-            "confirmed": 13677
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-19T11:00:00.000Z",
-            "confirmed": 19100
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-20T11:00:00.000Z",
-            "confirmed": 25489
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-21T11:00:00.000Z",
-            "confirmed": 33276
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-22T11:00:00.000Z",
-            "confirmed": 43847
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-23T11:00:00.000Z",
-            "confirmed": 53740
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-24T11:00:00.000Z",
-            "confirmed": 65778
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-25T11:00:00.000Z",
-            "confirmed": 83836
-          }
-        ]
-      }
-    ],
-    "deaths": [
-      {
-        "range": 10,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-03T11:00:00.000Z",
-            "deaths": 11
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-04T11:00:00.000Z",
-            "deaths": 12
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-05T11:00:00.000Z",
-            "deaths": 14
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-06T11:00:00.000Z",
-            "deaths": 17
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-07T11:00:00.000Z",
-            "deaths": 21
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-08T11:00:00.000Z",
-            "deaths": 22
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-09T11:00:00.000Z",
-            "deaths": 28
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-10T11:00:00.000Z",
-            "deaths": 36
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-11T11:00:00.000Z",
-            "deaths": 40
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-12T11:00:00.000Z",
-            "deaths": 47
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-13T11:00:00.000Z",
-            "deaths": 54
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-14T11:00:00.000Z",
-            "deaths": 63
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 19,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 20,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 21,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 22,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 20,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-07T11:00:00.000Z",
-            "deaths": 21
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-08T11:00:00.000Z",
-            "deaths": 22
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-09T11:00:00.000Z",
-            "deaths": 28
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-10T11:00:00.000Z",
-            "deaths": 36
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-11T11:00:00.000Z",
-            "deaths": 40
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-12T11:00:00.000Z",
-            "deaths": 47
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-13T11:00:00.000Z",
-            "deaths": 54
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-14T11:00:00.000Z",
-            "deaths": 63
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 16,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 17,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 18,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 30,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-10T11:00:00.000Z",
-            "deaths": 36
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-11T11:00:00.000Z",
-            "deaths": 40
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-12T11:00:00.000Z",
-            "deaths": 47
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-13T11:00:00.000Z",
-            "deaths": 54
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-14T11:00:00.000Z",
-            "deaths": 63
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 15,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 40,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-11T11:00:00.000Z",
-            "deaths": 40
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-12T11:00:00.000Z",
-            "deaths": 47
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-13T11:00:00.000Z",
-            "deaths": 54
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-14T11:00:00.000Z",
-            "deaths": 63
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 13,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 14,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 50,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-13T11:00:00.000Z",
-            "deaths": 54
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-14T11:00:00.000Z",
-            "deaths": 63
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 11,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 12,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 75,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-15T11:00:00.000Z",
-            "deaths": 85
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 10,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 100,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-16T11:00:00.000Z",
-            "deaths": 108
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-17T11:00:00.000Z",
-            "deaths": 118
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 8,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 9,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 200,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-18T11:00:00.000Z",
-            "deaths": 200
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-19T11:00:00.000Z",
-            "deaths": 244
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 6,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 7,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 300,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-20T11:00:00.000Z",
-            "deaths": 307
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 5,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 400,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-21T11:00:00.000Z",
-            "deaths": 417
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 4,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      },
-      {
-        "range": 500,
-        "time_series": [
-          {
-            "num_day": 0,
-            "date": "2020-03-22T11:00:00.000Z",
-            "deaths": 557
-          },
-          {
-            "num_day": 1,
-            "date": "2020-03-23T11:00:00.000Z",
-            "deaths": 706
-          },
-          {
-            "num_day": 2,
-            "date": "2020-03-24T11:00:00.000Z",
-            "deaths": 942
-          },
-          {
-            "num_day": 3,
-            "date": "2020-03-25T11:00:00.000Z",
-            "deaths": 1209
-          }
-        ]
-      }
-    ]
-  },
-  {
     "highest_confirmed": 75,
     "population": 32955400,
-    "country_name": "Uzbekistan",
+    "name": "Uzbekistan",
     "confirmed": [
       {
         "range": 50,
@@ -54557,7 +53945,7 @@
   {
     "highest_confirmed": 107,
     "population": 28870195,
-    "country_name": "Venezuela",
+    "name": "Venezuela",
     "confirmed": [
       {
         "range": 50,
@@ -54679,7 +54067,7 @@
   {
     "highest_confirmed": 153,
     "population": 95540395,
-    "country_name": "Vietnam",
+    "name": "Vietnam",
     "confirmed": [
       {
         "range": 50,
@@ -54856,7 +54244,7 @@
   {
     "highest_confirmed": 16,
     "population": 17351822,
-    "country_name": "Zambia",
+    "name": "Zambia",
     "confirmed": [
       {
         "range": 50,
@@ -54942,7 +54330,7 @@
     "highest_confirmed": 3,
     "highest_deaths": 1,
     "population": 14439018,
-    "country_name": "Zimbabwe",
+    "name": "Zimbabwe",
     "confirmed": [
       {
         "range": 50,
@@ -55027,7 +54415,7 @@
   {
     "highest_confirmed": 11,
     "population": 71625,
-    "country_name": "Dominica",
+    "name": "Dominica",
     "confirmed": [
       {
         "range": 50,
@@ -55112,7 +54500,7 @@
   {
     "highest_confirmed": 7,
     "population": 111454,
-    "country_name": "Grenada",
+    "name": "Grenada",
     "confirmed": [
       {
         "range": 50,
@@ -55197,7 +54585,7 @@
   {
     "highest_confirmed": 7,
     "population": 29495962,
-    "country_name": "Mozambique",
+    "name": "Mozambique",
     "confirmed": [
       {
         "range": 50,
@@ -55281,7 +54669,8 @@
   },
   {
     "highest_confirmed": 5,
-    "country_name": "Syria",
+    "population": 16906283,
+    "name": "Syria",
     "confirmed": [
       {
         "range": 50,
@@ -55366,7 +54755,7 @@
   {
     "highest_confirmed": 1,
     "population": 1267972,
-    "country_name": "Timor-Leste",
+    "name": "Timor-Leste",
     "confirmed": [
       {
         "range": 50,
@@ -55451,7 +54840,7 @@
   {
     "highest_confirmed": 2,
     "population": 383071,
-    "country_name": "Belize",
+    "name": "Belize",
     "confirmed": [
       {
         "range": 50,
@@ -55535,7 +54924,8 @@
   },
   {
     "highest_confirmed": 6,
-    "country_name": "Laos",
+    "population": 7061507,
+    "name": "Laos",
     "confirmed": [
       {
         "range": 50,
@@ -55620,7 +55010,7 @@
   {
     "highest_confirmed": 1,
     "population": 6678567,
-    "country_name": "Libya",
+    "name": "Libya",
     "confirmed": [
       {
         "range": 50,
@@ -55706,7 +55096,7 @@
     "highest_confirmed": 84,
     "highest_deaths": 1,
     "population": 4569087,
-    "country_name": "West Bank and Gaza",
+    "name": "West Bank and Gaza",
     "confirmed": [
       {
         "range": 50,
@@ -55817,7 +55207,7 @@
   {
     "highest_confirmed": 2,
     "population": 1874309,
-    "country_name": "Guinea-Bissau",
+    "name": "Guinea-Bissau",
     "confirmed": [
       {
         "range": 50,
@@ -55902,7 +55292,7 @@
   {
     "highest_confirmed": 4,
     "population": 19077690,
-    "country_name": "Mali",
+    "name": "Mali",
     "confirmed": [
       {
         "range": 50,
@@ -55986,7 +55376,7 @@
   },
   {
     "highest_confirmed": 2,
-    "country_name": "Saint Kitts and Nevis",
+    "name": "Saint Kitts and Nevis",
     "confirmed": [
       {
         "range": 50,
@@ -56072,7 +55462,7 @@
     "highest_confirmed": 71,
     "highest_deaths": 1,
     "population": 1845300,
-    "country_name": "Kosovo",
+    "name": "Kosovo",
     "confirmed": [
       {
         "range": 50,
@@ -56161,9 +55551,1449 @@
     ]
   },
   {
+    "highest_confirmed": 80735,
+    "highest_deaths": 1163,
+    "population": 327167434,
+    "name": "United States",
+    "confirmed": [
+      {
+        "range": 50,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-03T11:00:00.000Z",
+            "confirmed": 118
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-04T11:00:00.000Z",
+            "confirmed": 176
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-05T11:00:00.000Z",
+            "confirmed": 223
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-06T11:00:00.000Z",
+            "confirmed": 341
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-07T11:00:00.000Z",
+            "confirmed": 417
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 100,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-03T11:00:00.000Z",
+            "confirmed": 118
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-04T11:00:00.000Z",
+            "confirmed": 176
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-05T11:00:00.000Z",
+            "confirmed": 223
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-06T11:00:00.000Z",
+            "confirmed": 341
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-07T11:00:00.000Z",
+            "confirmed": 417
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 21,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 22,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 200,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-05T11:00:00.000Z",
+            "confirmed": 223
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-06T11:00:00.000Z",
+            "confirmed": 341
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-07T11:00:00.000Z",
+            "confirmed": 417
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 20,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 300,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-06T11:00:00.000Z",
+            "confirmed": 341
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-07T11:00:00.000Z",
+            "confirmed": 417
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 19,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 400,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-07T11:00:00.000Z",
+            "confirmed": 417
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 18,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 500,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-08T11:00:00.000Z",
+            "confirmed": 584
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 17,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 750,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-09T11:00:00.000Z",
+            "confirmed": 778
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 16,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      },
+      {
+        "range": 1000,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-10T11:00:00.000Z",
+            "confirmed": 1053
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-11T11:00:00.000Z",
+            "confirmed": 1315
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-12T11:00:00.000Z",
+            "confirmed": 1922
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-13T11:00:00.000Z",
+            "confirmed": 2450
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-14T11:00:00.000Z",
+            "confirmed": 3173
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-15T11:00:00.000Z",
+            "confirmed": 4019
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-16T11:00:00.000Z",
+            "confirmed": 5723
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-17T11:00:00.000Z",
+            "confirmed": 7730
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-18T11:00:00.000Z",
+            "confirmed": 11719
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-19T11:00:00.000Z",
+            "confirmed": 17033
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-20T11:00:00.000Z",
+            "confirmed": 23197
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-21T11:00:00.000Z",
+            "confirmed": 31879
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-22T11:00:00.000Z",
+            "confirmed": 42152
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-23T11:00:00.000Z",
+            "confirmed": 51954
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "confirmed": 63928
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-25T11:00:00.000Z",
+            "confirmed": 80735
+          }
+        ]
+      }
+    ],
+    "deaths": [
+      {
+        "range": 10,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-10T11:00:00.000Z",
+            "deaths": 27
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-11T11:00:00.000Z",
+            "deaths": 36
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-12T11:00:00.000Z",
+            "deaths": 39
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-13T11:00:00.000Z",
+            "deaths": 49
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-14T11:00:00.000Z",
+            "deaths": 60
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-15T11:00:00.000Z",
+            "deaths": 71
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 20,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-10T11:00:00.000Z",
+            "deaths": 27
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-11T11:00:00.000Z",
+            "deaths": 36
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-12T11:00:00.000Z",
+            "deaths": 39
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-13T11:00:00.000Z",
+            "deaths": 49
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-14T11:00:00.000Z",
+            "deaths": 60
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-15T11:00:00.000Z",
+            "deaths": 71
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 15,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 30,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-11T11:00:00.000Z",
+            "deaths": 36
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-12T11:00:00.000Z",
+            "deaths": 39
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-13T11:00:00.000Z",
+            "deaths": 49
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-14T11:00:00.000Z",
+            "deaths": 60
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-15T11:00:00.000Z",
+            "deaths": 71
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 13,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 14,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 40,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-13T11:00:00.000Z",
+            "deaths": 49
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-14T11:00:00.000Z",
+            "deaths": 60
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-15T11:00:00.000Z",
+            "deaths": 71
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 12,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 50,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-14T11:00:00.000Z",
+            "deaths": 60
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-15T11:00:00.000Z",
+            "deaths": 71
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 10,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 11,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 75,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-16T11:00:00.000Z",
+            "deaths": 90
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 9,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 100,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-17T11:00:00.000Z",
+            "deaths": 112
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-18T11:00:00.000Z",
+            "deaths": 160
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 7,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 8,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 200,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-19T11:00:00.000Z",
+            "deaths": 219
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-20T11:00:00.000Z",
+            "deaths": 272
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 5,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 6,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 300,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-21T11:00:00.000Z",
+            "deaths": 398
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 4,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 400,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-22T11:00:00.000Z",
+            "deaths": 471
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 3,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      },
+      {
+        "range": 500,
+        "time_series": [
+          {
+            "num_day": 0,
+            "date": "2020-03-23T11:00:00.000Z",
+            "deaths": 675
+          },
+          {
+            "num_day": 1,
+            "date": "2020-03-24T11:00:00.000Z",
+            "deaths": 900
+          },
+          {
+            "num_day": 2,
+            "date": "2020-03-25T11:00:00.000Z",
+            "deaths": 1163
+          }
+        ]
+      }
+    ]
+  },
+  {
     "highest_confirmed": 368,
     "population": 4885500,
-    "country_name": "New Zealand",
+    "name": "New Zealand",
     "confirmed": [
       {
         "range": 50,

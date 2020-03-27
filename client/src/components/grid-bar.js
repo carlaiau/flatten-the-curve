@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-const GridBar = ( {max_count, active_country_name, per, field, sort, length, fieldFn, perFn, sortFn} ) => (
+const GridBar = ( {max_count, active_name, per, field, sort, length, fieldFn, perFn, sortFn} ) => (
     <section className="section bar">
         <div className="container">
             <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
@@ -9,7 +9,7 @@ const GridBar = ( {max_count, active_country_name, per, field, sort, length, fie
                     <div className="title-with-inputs" style={{marginBottom: '10px'}}>
                         <p className="is-size-5">
                             Showing the {length >= max_count? 'top ': ''}{length} countr{length === 1? 'y': 'ies'} 
-                            {' '} that are now ranked higher than {active_country_name} by
+                            {' '} that are now ranked higher than {active_name} by
                         </p>
                         <div className="field is-grouped is-horizontal">
                             <div className="control">

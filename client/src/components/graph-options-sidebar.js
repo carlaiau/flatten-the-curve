@@ -82,13 +82,13 @@ const GraphOptionsSideBar = ({
                 <label className="label">Countries</label>
                 <div className="check-container">
                     {countries_avaliable.map(c => (
-                        <label className="checkbox" key={c.country_name}>
+                        <label className="checkbox" key={c.name}>
                             <input 
-                                type="checkbox" name={c.country_name} 
-                                value={c.country_name} defaultChecked={checkCountries.includes(c.country_name)} 
+                                type="checkbox" name={c.name} 
+                                value={c.name} defaultChecked={checkCountries.includes(c.name)} 
                                 onChange={checkFn}
                             />
-                                {c.country_name}
+                                {c.name}
                         </label>
                     ))}
                 </div>

@@ -8,13 +8,19 @@ const Footer = () => (
                 Data Sources
               </p>
               <p className="is-size-7">
-                All COVID-19 data is sourced from the 
+                Global COVID-19 data is sourced from the 
                 {' '}<a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">
                   Johns Hopkins University Center for Systems Science and Engineering
                 </a>.
               </p>
               <p className="is-size-7">
-                Same-day New Zealand data is uploaded based on 
+                United States total and state level COVID-19 data is sourced from the
+                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
+                  COVID Tracking Project
+                </a>.
+              </p>
+              <p className="is-size-7">
+                New Zealand data is sourced from  
                 {' '}<a href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus" target="_blank" rel="noopener noreferrer">
                   Ministry of Health 
                 </a> annoucements.
@@ -25,9 +31,6 @@ const Footer = () => (
               <p className="is-size-7" style={{marginTop: '10px'}}>
                 Currently in development by <a href="https://carlaiau.com/">Carl Aiau</a>.
                 Code available at  <a href="https://github.com/carlaiau/flatten-the-curve" target="_blank" rel="noopener noreferrer">Github</a>. Please Don't hesitate to contribute to the repo or give me any feedback.
-              </p>
-              <p className="is-size-7">
-                 Things I'm working on next; world count table, cumulative graphs on country pages, cumulative graphs for comparing between regions within a country.
               </p>
               
             </div>

@@ -12,7 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       query {
         allCountriesJson( filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
             nodes {
-              country_name
+              name
               highest_confirmed
             }
           }
@@ -26,13 +26,15 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const countries = result.data.allCountriesJson.nodes;
   
     countries.forEach(c => {
-      actions.createPage({
-        path: '/' + c.country_name.toLowerCase().replace(/\s+/g, "-"),
-        component: require.resolve('./src/templates/country-template.js'),
-        context: {
-          country: c.country_name,
-        },
-      });
+      //if(c.name != "United States"){ // Custom Structure
+        actions.createPage({
+          path: '/' + c.name.toLowerCase().replace(/\s+/g, "-"),
+          component: require.resolve('./src/templates/country-template.js'),
+          context: {
+            country: c.name,
+          },
+        });
+      //}
     });
 
   };

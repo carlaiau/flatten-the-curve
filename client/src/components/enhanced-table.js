@@ -116,7 +116,7 @@ const EnhancedTable = ({tidy}) => {
     
 
     return {
-      name: c.country_name,
+      name: c.name,
       population: c.population,
       confirmed: c.highest_confirmed,
       confirmed_change,

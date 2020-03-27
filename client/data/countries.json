@@ -1,6 +1,6 @@
 [
   {
-    "country_name": "Afghanistan",
+    "name": "Afghanistan",
     "time_series": [
       {
         "date": "2020-02-23T11:00:00.000Z",
@@ -205,7 +205,7 @@
     "population": 37172386
   },
   {
-    "country_name": "Albania",
+    "name": "Albania",
     "time_series": [
       {
         "date": "2020-03-08T11:00:00.000Z",
@@ -337,7 +337,7 @@
     "population": 2866376
   },
   {
-    "country_name": "Algeria",
+    "name": "Algeria",
     "time_series": [
       {
         "date": "2020-02-24T11:00:00.000Z",
@@ -546,7 +546,7 @@
     "population": 42228429
   },
   {
-    "country_name": "Andorra",
+    "name": "Andorra",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -709,7 +709,7 @@
     "population": 77006
   },
   {
-    "country_name": "Angola",
+    "name": "Angola",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -751,7 +751,7 @@
     "population": 30809762
   },
   {
-    "country_name": "Antigua and Barbuda",
+    "name": "Antigua and Barbuda",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -828,7 +828,7 @@
     "population": 96286
   },
   {
-    "country_name": "Argentina",
+    "name": "Argentina",
     "time_series": [
       {
         "date": "2020-03-02T11:00:00.000Z",
@@ -999,7 +999,7 @@
     "population": 44494502
   },
   {
-    "country_name": "Armenia",
+    "name": "Armenia",
     "time_series": [
       {
         "date": "2020-02-29T11:00:00.000Z",
@@ -1164,7 +1164,7 @@
     "population": 2951776
   },
   {
-    "country_name": "Australia",
+    "name": "Australia",
     "time_series": [
       {
         "date": "2020-01-25T11:00:00.000Z",
@@ -1564,7 +1564,7 @@
     "population": 24992369
   },
   {
-    "country_name": "Austria",
+    "name": "Austria",
     "time_series": [
       {
         "date": "2020-02-24T11:00:00.000Z",
@@ -1773,7 +1773,7 @@
     "population": 8847037
   },
   {
-    "country_name": "Azerbaijan",
+    "name": "Azerbaijan",
     "time_series": [
       {
         "date": "2020-02-29T11:00:00.000Z",
@@ -1951,57 +1951,69 @@
     "population": 9942334
   },
   {
-    "country_name": "Bahamas",
+    "name": "Bahamas",
     "time_series": [
       {
         "date": "2020-03-15T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 2.593092002904263
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 2.593092002904263
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 2.593092002904263
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
-        "confirmed": 3
+        "confirmed": 3,
+        "confirmed_per_mil": 7.77927600871279
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
-        "confirmed": 3
+        "confirmed": 3,
+        "confirmed_per_mil": 7.77927600871279
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
-        "confirmed": 4
+        "confirmed": 4,
+        "confirmed_per_mil": 10.372368011617052
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 4
+        "confirmed": 4,
+        "confirmed_per_mil": 10.372368011617052
       },
       {
         "date": "2020-03-22T11:00:00.000Z",
-        "confirmed": 4
+        "confirmed": 4,
+        "confirmed_per_mil": 10.372368011617052
       },
       {
         "date": "2020-03-23T11:00:00.000Z",
-        "confirmed": 5
+        "confirmed": 5,
+        "confirmed_per_mil": 12.965460014521316
       },
       {
         "date": "2020-03-24T11:00:00.000Z",
-        "confirmed": 5
+        "confirmed": 5,
+        "confirmed_per_mil": 12.965460014521316
       },
       {
         "date": "2020-03-25T11:00:00.000Z",
-        "confirmed": 9
+        "confirmed": 9,
+        "confirmed_per_mil": 23.337828026138368
       }
     ],
-    "highest_confirmed": 9
+    "highest_confirmed": 9,
+    "population": 385640
   },
   {
-    "country_name": "Bahrain",
+    "name": "Bahrain",
     "time_series": [
       {
         "date": "2020-02-23T11:00:00.000Z",
@@ -2212,7 +2224,7 @@
     "population": 1569439
   },
   {
-    "country_name": "Bangladesh",
+    "name": "Bangladesh",
     "time_series": [
       {
         "date": "2020-03-07T11:00:00.000Z",
@@ -2343,7 +2355,7 @@
     "population": 161356039
   },
   {
-    "country_name": "Barbados",
+    "name": "Barbados",
     "time_series": [
       {
         "date": "2020-03-16T11:00:00.000Z",
@@ -2400,7 +2412,7 @@
     "population": 286641
   },
   {
-    "country_name": "Belarus",
+    "name": "Belarus",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
@@ -2547,7 +2559,7 @@
     "population": 9485386
   },
   {
-    "country_name": "Belgium",
+    "name": "Belgium",
     "time_series": [
       {
         "date": "2020-02-03T11:00:00.000Z",
@@ -2883,7 +2895,7 @@
     "population": 11422068
   },
   {
-    "country_name": "Benin",
+    "name": "Benin",
     "time_series": [
       {
         "date": "2020-03-15T11:00:00.000Z",
@@ -2945,7 +2957,7 @@
     "population": 11485048
   },
   {
-    "country_name": "Bhutan",
+    "name": "Bhutan",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -3057,7 +3069,7 @@
     "population": 754394
   },
   {
-    "country_name": "Bolivia",
+    "name": "Bolivia",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -3144,7 +3156,7 @@
     "population": 11353142
   },
   {
-    "country_name": "Bosnia and Herzegovina",
+    "name": "Bosnia and Herzegovina",
     "time_series": [
       {
         "date": "2020-03-04T11:00:00.000Z",
@@ -3290,7 +3302,7 @@
     "population": 3323929
   },
   {
-    "country_name": "Brazil",
+    "name": "Brazil",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -3488,7 +3500,7 @@
     "population": 209469333
   },
   {
-    "country_name": "Brunei",
+    "name": "Brunei",
     "time_series": [
       {
         "date": "2020-03-08T11:00:00.000Z",
@@ -3585,7 +3597,7 @@
     "population": 428962
   },
   {
-    "country_name": "Bulgaria",
+    "name": "Bulgaria",
     "time_series": [
       {
         "date": "2020-03-07T11:00:00.000Z",
@@ -3723,7 +3735,7 @@
     "population": 7024216
   },
   {
-    "country_name": "Burkina Faso",
+    "name": "Burkina Faso",
     "time_series": [
       {
         "date": "2020-03-09T11:00:00.000Z",
@@ -3842,7 +3854,7 @@
     "population": 19751535
   },
   {
-    "country_name": "Cabo Verde",
+    "name": "Cabo Verde",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -3895,7 +3907,7 @@
     "population": 543767
   },
   {
-    "country_name": "Cambodia",
+    "name": "Cambodia",
     "time_series": [
       {
         "date": "2020-01-26T11:00:00.000Z",
@@ -4202,7 +4214,7 @@
     "population": 16249798
   },
   {
-    "country_name": "Cameroon",
+    "name": "Cameroon",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -4338,7 +4350,7 @@
     "population": 25216237
   },
   {
-    "country_name": "Canada",
+    "name": "Canada",
     "time_series": [
       {
         "date": "2020-01-25T11:00:00.000Z",
@@ -4730,7 +4742,7 @@
     "population": 37058856
   },
   {
-    "country_name": "Central African Republic",
+    "name": "Central African Republic",
     "time_series": [
       {
         "date": "2020-03-14T11:00:00.000Z",
@@ -4797,7 +4809,7 @@
     "population": 4666377
   },
   {
-    "country_name": "Chad",
+    "name": "Chad",
     "time_series": [
       {
         "date": "2020-03-18T11:00:00.000Z",
@@ -4844,7 +4856,7 @@
     "population": 15477751
   },
   {
-    "country_name": "Chile",
+    "name": "Chile",
     "time_series": [
       {
         "date": "2020-03-02T11:00:00.000Z",
@@ -5001,7 +5013,7 @@
     "population": 18729160
   },
   {
-    "country_name": "China",
+    "name": "China",
     "time_series": [
       {
         "date": "2020-01-21T11:00:00.000Z",
@@ -5464,7 +5476,7 @@
     "population": 1392730000
   },
   {
-    "country_name": "Colombia",
+    "name": "Colombia",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -5603,7 +5615,7 @@
     "population": 49648685
   },
   {
-    "country_name": "Congo (Brazzaville)",
+    "name": "Congo (Brazzaville)",
     "time_series": [
       {
         "date": "2020-03-14T11:00:00.000Z",
@@ -5670,7 +5682,7 @@
     "population": 5244363
   },
   {
-    "country_name": "Congo (Kinshasa)",
+    "name": "Congo (Kinshasa)",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -5780,7 +5792,7 @@
     "population": 84068091
   },
   {
-    "country_name": "Costa Rica",
+    "name": "Costa Rica",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -5922,7 +5934,7 @@
     "population": 4999441
   },
   {
-    "country_name": "Cote d'Ivoire",
+    "name": "Cote d'Ivoire",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -6009,7 +6021,7 @@
     "population": 25069229
   },
   {
-    "country_name": "Croatia",
+    "name": "Croatia",
     "time_series": [
       {
         "date": "2020-02-24T11:00:00.000Z",
@@ -6211,7 +6223,7 @@
     "population": 4089400
   },
   {
-    "country_name": "Diamond Princess",
+    "name": "Diamond Princess",
     "time_series": [
       {
         "date": "2020-02-06T11:00:00.000Z",
@@ -6463,7 +6475,7 @@
     "highest_deaths": 10
   },
   {
-    "country_name": "Cuba",
+    "name": "Cuba",
     "time_series": [
       {
         "date": "2020-03-11T11:00:00.000Z",
@@ -6570,7 +6582,7 @@
     "population": 11338138
   },
   {
-    "country_name": "Cyprus",
+    "name": "Cyprus",
     "time_series": [
       {
         "date": "2020-03-08T11:00:00.000Z",
@@ -6691,144 +6703,176 @@
     "population": 1189265
   },
   {
-    "country_name": "Czechia",
+    "name": "Czech Republic",
     "time_series": [
       {
         "date": "2020-02-29T11:00:00.000Z",
         "confirmed": 3,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.28233447318034255
       },
       {
         "date": "2020-03-01T11:00:00.000Z",
         "confirmed": 3,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.28233447318034255
       },
       {
         "date": "2020-03-02T11:00:00.000Z",
         "confirmed": 5,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4705574553005709
       },
       {
         "date": "2020-03-03T11:00:00.000Z",
         "confirmed": 8,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.7528919284809135
       },
       {
         "date": "2020-03-04T11:00:00.000Z",
         "confirmed": 12,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 1.1293378927213702
       },
       {
         "date": "2020-03-05T11:00:00.000Z",
         "confirmed": 18,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 1.6940068390820553
       },
       {
         "date": "2020-03-06T11:00:00.000Z",
         "confirmed": 19,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 1.7881183301421695
       },
       {
         "date": "2020-03-07T11:00:00.000Z",
         "confirmed": 31,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 2.9174562228635397
       },
       {
         "date": "2020-03-08T11:00:00.000Z",
         "confirmed": 31,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 2.9174562228635397
       },
       {
         "date": "2020-03-09T11:00:00.000Z",
         "confirmed": 41,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 3.8585711334646815
       },
       {
         "date": "2020-03-10T11:00:00.000Z",
         "confirmed": 91,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 8.56414568647039
       },
       {
         "date": "2020-03-11T11:00:00.000Z",
         "confirmed": 94,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 8.846480159650733
       },
       {
         "date": "2020-03-12T11:00:00.000Z",
         "confirmed": 141,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 13.269720239476099
       },
       {
         "date": "2020-03-13T11:00:00.000Z",
         "confirmed": 189,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 17.78707181036158
       },
       {
         "date": "2020-03-14T11:00:00.000Z",
         "confirmed": 253,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 23.81020723820889
       },
       {
         "date": "2020-03-15T11:00:00.000Z",
         "confirmed": 298,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 28.045224335914025
       },
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 396,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 37.26815045980521
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 464,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 43.66773185189298
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 694,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 65.31337479571924
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 833,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 78.39487205307512
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 995,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 93.64093360481361
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1120,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 105.40486998732788,
+        "deaths_per_mil": 0.09411149106011418
       },
       {
         "date": "2020-03-22T11:00:00.000Z",
         "confirmed": 1236,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 116.32180295030113,
+        "deaths_per_mil": 0.09411149106011418
       },
       {
         "date": "2020-03-23T11:00:00.000Z",
         "confirmed": 1394,
-        "deaths": 3
+        "deaths": 3,
+        "confirmed_per_mil": 131.19141853779917,
+        "deaths_per_mil": 0.28233447318034255
       },
       {
         "date": "2020-03-24T11:00:00.000Z",
         "confirmed": 1654,
-        "deaths": 6
+        "deaths": 6,
+        "confirmed_per_mil": 155.66040621342887,
+        "deaths_per_mil": 0.5646689463606851
       },
       {
         "date": "2020-03-25T11:00:00.000Z",
         "confirmed": 1925,
-        "deaths": 9
+        "deaths": 9,
+        "confirmed_per_mil": 181.1646202907198,
+        "deaths_per_mil": 0.8470034195410276
       }
     ],
     "highest_confirmed": 1925,
-    "highest_deaths": 9
+    "highest_deaths": 9,
+    "population": 10625695
   },
   {
-    "country_name": "Denmark",
+    "name": "Denmark",
     "time_series": [
       {
         "date": "2020-02-26T11:00:00.000Z",
@@ -7023,7 +7067,7 @@
     "population": 5797446
   },
   {
-    "country_name": "Djibouti",
+    "name": "Djibouti",
     "time_series": [
       {
         "date": "2020-03-17T11:00:00.000Z",
@@ -7075,7 +7119,7 @@
     "population": 958920
   },
   {
-    "country_name": "Dominican Republic",
+    "name": "Dominican Republic",
     "time_series": [
       {
         "date": "2020-02-29T11:00:00.000Z",
@@ -7249,7 +7293,7 @@
     "population": 10627165
   },
   {
-    "country_name": "Ecuador",
+    "name": "Ecuador",
     "time_series": [
       {
         "date": "2020-02-29T11:00:00.000Z",
@@ -7426,7 +7470,7 @@
     "population": 17084357
   },
   {
-    "country_name": "Egypt",
+    "name": "Egypt",
     "time_series": [
       {
         "date": "2020-02-13T11:00:00.000Z",
@@ -7705,7 +7749,7 @@
     "population": 98423595
   },
   {
-    "country_name": "El Salvador",
+    "name": "El Salvador",
     "time_series": [
       {
         "date": "2020-03-18T11:00:00.000Z",
@@ -7752,7 +7796,7 @@
     "population": 6420744
   },
   {
-    "country_name": "Equatorial Guinea",
+    "name": "Equatorial Guinea",
     "time_series": [
       {
         "date": "2020-03-14T11:00:00.000Z",
@@ -7819,7 +7863,7 @@
     "population": 1308974
   },
   {
-    "country_name": "Eritrea",
+    "name": "Eritrea",
     "time_series": [
       {
         "date": "2020-03-20T11:00:00.000Z",
@@ -7856,7 +7900,7 @@
     "population": null
   },
   {
-    "country_name": "Estonia",
+    "name": "Estonia",
     "time_series": [
       {
         "date": "2020-02-26T11:00:00.000Z",
@@ -8040,7 +8084,7 @@
     "population": 1320884
   },
   {
-    "country_name": "Eswatini",
+    "name": "Eswatini",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -8112,7 +8156,7 @@
     "population": 1136191
   },
   {
-    "country_name": "Ethiopia",
+    "name": "Ethiopia",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -8189,7 +8233,7 @@
     "population": 109224559
   },
   {
-    "country_name": "Fiji",
+    "name": "Fiji",
     "time_series": [
       {
         "date": "2020-03-18T11:00:00.000Z",
@@ -8236,7 +8280,7 @@
     "population": 883483
   },
   {
-    "country_name": "Finland",
+    "name": "Finland",
     "time_series": [
       {
         "date": "2020-01-28T11:00:00.000Z",
@@ -8598,7 +8642,7 @@
     "population": 5518050
   },
   {
-    "country_name": "France",
+    "name": "France",
     "time_series": [
       {
         "date": "2020-01-23T11:00:00.000Z",
@@ -9025,7 +9069,7 @@
     "population": 66987244
   },
   {
-    "country_name": "Gabon",
+    "name": "Gabon",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -9118,64 +9162,79 @@
     "population": 2119275
   },
   {
-    "country_name": "Gambia",
+    "name": "Gambia",
     "time_series": [
       {
         "date": "2020-03-16T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-17T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-18T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-19T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-20T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-21T11:00:00.000Z",
         "confirmed": 1,
-        "deaths": 0
+        "deaths": 0,
+        "confirmed_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-22T11:00:00.000Z",
         "confirmed": 2,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 0.8771537413677108,
+        "deaths_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-23T11:00:00.000Z",
         "confirmed": 3,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 1.3157306120515662,
+        "deaths_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-24T11:00:00.000Z",
         "confirmed": 3,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 1.3157306120515662,
+        "deaths_per_mil": 0.4385768706838554
       },
       {
         "date": "2020-03-25T11:00:00.000Z",
         "confirmed": 3,
-        "deaths": 1
+        "deaths": 1,
+        "confirmed_per_mil": 1.3157306120515662,
+        "deaths_per_mil": 0.4385768706838554
       }
     ],
     "highest_confirmed": 3,
-    "highest_deaths": 1
+    "highest_deaths": 1,
+    "population": 2280102
   },
   {
-    "country_name": "Georgia",
+    "name": "Georgia",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -9332,7 +9391,7 @@
     "population": 3731000
   },
   {
-    "country_name": "Germany",
+    "name": "Germany",
     "time_series": [
       {
         "date": "2020-01-26T11:00:00.000Z",
@@ -9718,7 +9777,7 @@
     "population": 82927922
   },
   {
-    "country_name": "Ghana",
+    "name": "Ghana",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -9810,7 +9869,7 @@
     "population": 29767108
   },
   {
-    "country_name": "Greece",
+    "name": "Greece",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -10014,7 +10073,7 @@
     "population": 10727668
   },
   {
-    "country_name": "Guatemala",
+    "name": "Guatemala",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -10111,7 +10170,7 @@
     "population": 17247807
   },
   {
-    "country_name": "Guinea",
+    "name": "Guinea",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -10188,7 +10247,7 @@
     "population": 12414318
   },
   {
-    "country_name": "Guyana",
+    "name": "Guyana",
     "time_series": [
       {
         "date": "2020-03-11T11:00:00.000Z",
@@ -10301,7 +10360,7 @@
     "population": 779004
   },
   {
-    "country_name": "Haiti",
+    "name": "Haiti",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -10343,7 +10402,7 @@
     "population": 11123176
   },
   {
-    "country_name": "Holy See",
+    "name": "Holy See",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -10433,7 +10492,7 @@
     "highest_confirmed": 4
   },
   {
-    "country_name": "Honduras",
+    "name": "Honduras",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -10538,7 +10597,7 @@
     "population": 9587522
   },
   {
-    "country_name": "Hungary",
+    "name": "Hungary",
     "time_series": [
       {
         "date": "2020-03-03T11:00:00.000Z",
@@ -10696,7 +10755,7 @@
     "population": 9768785
   },
   {
-    "country_name": "Iceland",
+    "name": "Iceland",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
@@ -10882,7 +10941,7 @@
     "population": 353574
   },
   {
-    "country_name": "India",
+    "name": "India",
     "time_series": [
       {
         "date": "2020-01-29T11:00:00.000Z",
@@ -11248,7 +11307,7 @@
     "population": 1352617328
   },
   {
-    "country_name": "Indonesia",
+    "name": "Indonesia",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -11422,7 +11481,7 @@
     "population": 267663435
   },
   {
-    "country_name": "Iran",
+    "name": "Iran",
     "time_series": [
       {
         "date": "2020-02-18T11:00:00.000Z",
@@ -11689,7 +11748,7 @@
     "population": 81800269
   },
   {
-    "country_name": "Iraq",
+    "name": "Iraq",
     "time_series": [
       {
         "date": "2020-02-23T11:00:00.000Z",
@@ -11912,7 +11971,7 @@
     "population": 38433600
   },
   {
-    "country_name": "Ireland",
+    "name": "Ireland",
     "time_series": [
       {
         "date": "2020-02-28T11:00:00.000Z",
@@ -12098,7 +12157,7 @@
     "population": 4853506
   },
   {
-    "country_name": "Israel",
+    "name": "Israel",
     "time_series": [
       {
         "date": "2020-02-20T11:00:00.000Z",
@@ -12322,7 +12381,7 @@
     "population": 8883800
   },
   {
-    "country_name": "Italy",
+    "name": "Italy",
     "time_series": [
       {
         "date": "2020-01-30T11:00:00.000Z",
@@ -12701,7 +12760,7 @@
     "population": 60431283
   },
   {
-    "country_name": "Jamaica",
+    "name": "Jamaica",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -12813,7 +12872,7 @@
     "population": 2934855
   },
   {
-    "country_name": "Japan",
+    "name": "Japan",
     "time_series": [
       {
         "date": "2020-01-21T11:00:00.000Z",
@@ -13254,7 +13313,7 @@
     "population": 126529100
   },
   {
-    "country_name": "Jordan",
+    "name": "Jordan",
     "time_series": [
       {
         "date": "2020-03-02T11:00:00.000Z",
@@ -13381,7 +13440,7 @@
     "population": 9956011
   },
   {
-    "country_name": "Kazakhstan",
+    "name": "Kazakhstan",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -13475,7 +13534,7 @@
     "population": 18276499
   },
   {
-    "country_name": "Kenya",
+    "name": "Kenya",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -13568,7 +13627,7 @@
     "population": 51393010
   },
   {
-    "country_name": "South Korea",
+    "name": "South Korea",
     "time_series": [
       {
         "date": "2020-01-21T11:00:00.000Z",
@@ -14002,7 +14061,7 @@
     "population": 51635256
   },
   {
-    "country_name": "Kuwait",
+    "name": "Kuwait",
     "time_series": [
       {
         "date": "2020-02-23T11:00:00.000Z",
@@ -14169,7 +14228,7 @@
     "population": 4137309
   },
   {
-    "country_name": "Kyrgyzstan",
+    "name": "Kyrgyzstan",
     "time_series": [
       {
         "date": "2020-03-17T11:00:00.000Z",
@@ -14211,7 +14270,7 @@
     "highest_confirmed": 44
   },
   {
-    "country_name": "Latvia",
+    "name": "Latvia",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -14343,7 +14402,7 @@
     "population": 1926542
   },
   {
-    "country_name": "Lebanon",
+    "name": "Lebanon",
     "time_series": [
       {
         "date": "2020-02-20T11:00:00.000Z",
@@ -14578,7 +14637,7 @@
     "population": 6848925
   },
   {
-    "country_name": "Liberia",
+    "name": "Liberia",
     "time_series": [
       {
         "date": "2020-03-15T11:00:00.000Z",
@@ -14640,7 +14699,7 @@
     "population": 4818977
   },
   {
-    "country_name": "Liechtenstein",
+    "name": "Liechtenstein",
     "time_series": [
       {
         "date": "2020-03-03T11:00:00.000Z",
@@ -14762,7 +14821,7 @@
     "population": 37910
   },
   {
-    "country_name": "Lithuania",
+    "name": "Lithuania",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
@@ -14944,7 +15003,7 @@
     "population": 2789533
   },
   {
-    "country_name": "Luxembourg",
+    "name": "Luxembourg",
     "time_series": [
       {
         "date": "2020-02-28T11:00:00.000Z",
@@ -15127,7 +15186,7 @@
     "population": 607728
   },
   {
-    "country_name": "Madagascar",
+    "name": "Madagascar",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -15169,7 +15228,7 @@
     "population": 26262368
   },
   {
-    "country_name": "Malaysia",
+    "name": "Malaysia",
     "time_series": [
       {
         "date": "2020-01-24T11:00:00.000Z",
@@ -15559,7 +15618,7 @@
     "population": 31528585
   },
   {
-    "country_name": "Maldives",
+    "name": "Maldives",
     "time_series": [
       {
         "date": "2020-03-07T11:00:00.000Z",
@@ -15661,7 +15720,7 @@
     "population": 515696
   },
   {
-    "country_name": "Malta",
+    "name": "Malta",
     "time_series": [
       {
         "date": "2020-03-06T11:00:00.000Z",
@@ -15768,7 +15827,7 @@
     "population": 483530
   },
   {
-    "country_name": "Mauritania",
+    "name": "Mauritania",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -15840,7 +15899,7 @@
     "population": 4403319
   },
   {
-    "country_name": "Mauritius",
+    "name": "Mauritius",
     "time_series": [
       {
         "date": "2020-03-17T11:00:00.000Z",
@@ -15908,7 +15967,7 @@
     "population": 1265303
   },
   {
-    "country_name": "Mexico",
+    "name": "Mexico",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
@@ -16092,7 +16151,7 @@
     "population": 126190788
   },
   {
-    "country_name": "Moldova",
+    "name": "Moldova",
     "time_series": [
       {
         "date": "2020-03-07T11:00:00.000Z",
@@ -16223,7 +16282,7 @@
     "population": 3545883
   },
   {
-    "country_name": "Monaco",
+    "name": "Monaco",
     "time_series": [
       {
         "date": "2020-02-28T11:00:00.000Z",
@@ -16365,7 +16424,7 @@
     "population": 38682
   },
   {
-    "country_name": "Mongolia",
+    "name": "Mongolia",
     "time_series": [
       {
         "date": "2020-03-09T11:00:00.000Z",
@@ -16457,7 +16516,7 @@
     "population": 3170208
   },
   {
-    "country_name": "Montenegro",
+    "name": "Montenegro",
     "time_series": [
       {
         "date": "2020-03-16T11:00:00.000Z",
@@ -16529,7 +16588,7 @@
     "population": 622345
   },
   {
-    "country_name": "Morocco",
+    "name": "Morocco",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -16704,7 +16763,7 @@
     "population": 36029138
   },
   {
-    "country_name": "Namibia",
+    "name": "Namibia",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -16776,7 +16835,7 @@
     "population": 2448255
   },
   {
-    "country_name": "Nepal",
+    "name": "Nepal",
     "time_series": [
       {
         "date": "2020-01-24T11:00:00.000Z",
@@ -17093,7 +17152,7 @@
     "population": 28087871
   },
   {
-    "country_name": "Netherlands",
+    "name": "Netherlands",
     "time_series": [
       {
         "date": "2020-02-26T11:00:00.000Z",
@@ -17296,7 +17355,7 @@
     "population": 17231017
   },
   {
-    "country_name": "Nicaragua",
+    "name": "Nicaragua",
     "time_series": [
       {
         "date": "2020-03-18T11:00:00.000Z",
@@ -17343,7 +17402,7 @@
     "population": 6465513
   },
   {
-    "country_name": "Niger",
+    "name": "Niger",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -17395,7 +17454,7 @@
     "population": 22442948
   },
   {
-    "country_name": "Nigeria",
+    "name": "Nigeria",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
@@ -17575,7 +17634,7 @@
     "population": 195874740
   },
   {
-    "country_name": "North Macedonia",
+    "name": "North Macedonia",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -17768,7 +17827,7 @@
     "population": 2082958
   },
   {
-    "country_name": "Norway",
+    "name": "Norway",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -17969,7 +18028,7 @@
     "population": 5314336
   },
   {
-    "country_name": "Oman",
+    "name": "Oman",
     "time_series": [
       {
         "date": "2020-02-23T11:00:00.000Z",
@@ -18136,7 +18195,7 @@
     "population": 4829483
   },
   {
-    "country_name": "Pakistan",
+    "name": "Pakistan",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -18332,7 +18391,7 @@
     "population": 212215030
   },
   {
-    "country_name": "Panama",
+    "name": "Panama",
     "time_series": [
       {
         "date": "2020-03-09T11:00:00.000Z",
@@ -18458,7 +18517,7 @@
     "population": 4176873
   },
   {
-    "country_name": "Papua New Guinea",
+    "name": "Papua New Guinea",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -18500,7 +18559,7 @@
     "population": 8606316
   },
   {
-    "country_name": "Paraguay",
+    "name": "Paraguay",
     "time_series": [
       {
         "date": "2020-03-07T11:00:00.000Z",
@@ -18628,7 +18687,7 @@
     "population": 6956071
   },
   {
-    "country_name": "Peru",
+    "name": "Peru",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -18769,7 +18828,7 @@
     "population": 31989256
   },
   {
-    "country_name": "Philippines",
+    "name": "Philippines",
     "time_series": [
       {
         "date": "2020-01-29T11:00:00.000Z",
@@ -19173,7 +19232,7 @@
     "population": 106651922
   },
   {
-    "country_name": "Poland",
+    "name": "Poland",
     "time_series": [
       {
         "date": "2020-03-03T11:00:00.000Z",
@@ -19334,7 +19393,7 @@
     "population": 37978548
   },
   {
-    "country_name": "Portugal",
+    "name": "Portugal",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -19502,7 +19561,7 @@
     "population": 10281762
   },
   {
-    "country_name": "Qatar",
+    "name": "Qatar",
     "time_series": [
       {
         "date": "2020-02-28T11:00:00.000Z",
@@ -19644,7 +19703,7 @@
     "population": 2781677
   },
   {
-    "country_name": "Romania",
+    "name": "Romania",
     "time_series": [
       {
         "date": "2020-02-25T11:00:00.000Z",
@@ -19837,7 +19896,7 @@
     "population": 19473936
   },
   {
-    "country_name": "Russia",
+    "name": "Russia",
     "time_series": [
       {
         "date": "2020-01-30T11:00:00.000Z",
@@ -20189,7 +20248,7 @@
     "population": 144478050
   },
   {
-    "country_name": "Rwanda",
+    "name": "Rwanda",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -20261,7 +20320,7 @@
     "population": 12301939
   },
   {
-    "country_name": "Saint Lucia",
+    "name": "Saint Lucia",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -20319,7 +20378,7 @@
     "highest_confirmed": 3
   },
   {
-    "country_name": "Saint Vincent and the Grenadines",
+    "name": "Saint Vincent and the Grenadines",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -20391,7 +20450,7 @@
     "population": 110210
   },
   {
-    "country_name": "San Marino",
+    "name": "San Marino",
     "time_series": [
       {
         "date": "2020-02-26T11:00:00.000Z",
@@ -20597,7 +20656,7 @@
     "population": 33785
   },
   {
-    "country_name": "Saudi Arabia",
+    "name": "Saudi Arabia",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -20758,7 +20817,7 @@
     "population": 33699947
   },
   {
-    "country_name": "Senegal",
+    "name": "Senegal",
     "time_series": [
       {
         "date": "2020-03-01T11:00:00.000Z",
@@ -20890,7 +20949,7 @@
     "population": 15854360
   },
   {
-    "country_name": "Serbia",
+    "name": "Serbia",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -21031,7 +21090,7 @@
     "population": 6982084
   },
   {
-    "country_name": "Seychelles",
+    "name": "Seychelles",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -21103,7 +21162,7 @@
     "population": 96762
   },
   {
-    "country_name": "Singapore",
+    "name": "Singapore",
     "time_series": [
       {
         "date": "2020-01-22T11:00:00.000Z",
@@ -21501,7 +21560,7 @@
     "population": 5638676
   },
   {
-    "country_name": "Slovakia",
+    "name": "Slovakia",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -21639,7 +21698,7 @@
     "population": 5447011
   },
   {
-    "country_name": "Slovenia",
+    "name": "Slovenia",
     "time_series": [
       {
         "date": "2020-03-04T11:00:00.000Z",
@@ -21792,7 +21851,7 @@
     "population": 2067372
   },
   {
-    "country_name": "Somalia",
+    "name": "Somalia",
     "time_series": [
       {
         "date": "2020-03-15T11:00:00.000Z",
@@ -21854,7 +21913,7 @@
     "population": 15008154
   },
   {
-    "country_name": "South Africa",
+    "name": "South Africa",
     "time_series": [
       {
         "date": "2020-03-04T11:00:00.000Z",
@@ -21971,7 +22030,7 @@
     "population": 57779622
   },
   {
-    "country_name": "Spain",
+    "name": "Spain",
     "time_series": [
       {
         "date": "2020-01-31T11:00:00.000Z",
@@ -22333,7 +22392,7 @@
     "population": 46723749
   },
   {
-    "country_name": "Sri Lanka",
+    "name": "Sri Lanka",
     "time_series": [
       {
         "date": "2020-01-26T11:00:00.000Z",
@@ -22640,7 +22699,7 @@
     "population": 21670000
   },
   {
-    "country_name": "Sudan",
+    "name": "Sudan",
     "time_series": [
       {
         "date": "2020-03-12T11:00:00.000Z",
@@ -22746,7 +22805,7 @@
     "population": 41801533
   },
   {
-    "country_name": "Suriname",
+    "name": "Suriname",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -22818,7 +22877,7 @@
     "population": 575991
   },
   {
-    "country_name": "Sweden",
+    "name": "Sweden",
     "time_series": [
       {
         "date": "2020-01-30T11:00:00.000Z",
@@ -23178,7 +23237,7 @@
     "population": 10183175
   },
   {
-    "country_name": "Switzerland",
+    "name": "Switzerland",
     "time_series": [
       {
         "date": "2020-02-24T11:00:00.000Z",
@@ -23394,7 +23453,7 @@
     "population": 8516543
   },
   {
-    "country_name": "Taiwan*",
+    "name": "Taiwan*",
     "time_series": [
       {
         "date": "2020-01-21T11:00:00.000Z",
@@ -23726,7 +23785,7 @@
     "highest_deaths": 2
   },
   {
-    "country_name": "Tanzania",
+    "name": "Tanzania",
     "time_series": [
       {
         "date": "2020-03-15T11:00:00.000Z",
@@ -23788,7 +23847,7 @@
     "population": 56318348
   },
   {
-    "country_name": "Thailand",
+    "name": "Thailand",
     "time_series": [
       {
         "date": "2020-01-21T11:00:00.000Z",
@@ -24212,7 +24271,7 @@
     "population": 69428524
   },
   {
-    "country_name": "Togo",
+    "name": "Togo",
     "time_series": [
       {
         "date": "2020-03-05T11:00:00.000Z",
@@ -24324,7 +24383,7 @@
     "population": 7889094
   },
   {
-    "country_name": "Trinidad and Tobago",
+    "name": "Trinidad and Tobago",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -24412,7 +24471,7 @@
     "population": 1389858
   },
   {
-    "country_name": "Tunisia",
+    "name": "Tunisia",
     "time_series": [
       {
         "date": "2020-03-03T11:00:00.000Z",
@@ -24566,7 +24625,7 @@
     "population": 11565204
   },
   {
-    "country_name": "Turkey",
+    "name": "Turkey",
     "time_series": [
       {
         "date": "2020-03-10T11:00:00.000Z",
@@ -24680,7 +24739,7 @@
     "population": 82319724
   },
   {
-    "country_name": "Uganda",
+    "name": "Uganda",
     "time_series": [
       {
         "date": "2020-03-20T11:00:00.000Z",
@@ -24717,7 +24776,7 @@
     "population": 42723139
   },
   {
-    "country_name": "Ukraine",
+    "name": "Ukraine",
     "time_series": [
       {
         "date": "2020-03-02T11:00:00.000Z",
@@ -24883,7 +24942,7 @@
     "population": 44622516
   },
   {
-    "country_name": "United Arab Emirates",
+    "name": "United Arab Emirates",
     "time_series": [
       {
         "date": "2020-01-28T11:00:00.000Z",
@@ -25246,7 +25305,7 @@
     "population": 9630959
   },
   {
-    "country_name": "United Kingdom",
+    "name": "United Kingdom",
     "time_series": [
       {
         "date": "2020-01-30T11:00:00.000Z",
@@ -25612,7 +25671,7 @@
     "population": 66488991
   },
   {
-    "country_name": "Uruguay",
+    "name": "Uruguay",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -25684,432 +25743,7 @@
     "population": 3449299
   },
   {
-    "country_name": "United States",
-    "time_series": [
-      {
-        "date": "2020-01-21T11:00:00.000Z",
-        "confirmed": 1,
-        "deaths": 0,
-        "confirmed_per_mil": 0.0030565389341287554
-      },
-      {
-        "date": "2020-01-22T11:00:00.000Z",
-        "confirmed": 1,
-        "deaths": 0,
-        "confirmed_per_mil": 0.0030565389341287554
-      },
-      {
-        "date": "2020-01-23T11:00:00.000Z",
-        "confirmed": 2,
-        "deaths": 0,
-        "confirmed_per_mil": 0.006113077868257511
-      },
-      {
-        "date": "2020-01-24T11:00:00.000Z",
-        "confirmed": 2,
-        "deaths": 0,
-        "confirmed_per_mil": 0.006113077868257511
-      },
-      {
-        "date": "2020-01-25T11:00:00.000Z",
-        "confirmed": 5,
-        "deaths": 0,
-        "confirmed_per_mil": 0.015282694670643778
-      },
-      {
-        "date": "2020-01-26T11:00:00.000Z",
-        "confirmed": 5,
-        "deaths": 0,
-        "confirmed_per_mil": 0.015282694670643778
-      },
-      {
-        "date": "2020-01-27T11:00:00.000Z",
-        "confirmed": 5,
-        "deaths": 0,
-        "confirmed_per_mil": 0.015282694670643778
-      },
-      {
-        "date": "2020-01-28T11:00:00.000Z",
-        "confirmed": 5,
-        "deaths": 0,
-        "confirmed_per_mil": 0.015282694670643778
-      },
-      {
-        "date": "2020-01-29T11:00:00.000Z",
-        "confirmed": 5,
-        "deaths": 0,
-        "confirmed_per_mil": 0.015282694670643778
-      },
-      {
-        "date": "2020-01-30T11:00:00.000Z",
-        "confirmed": 7,
-        "deaths": 0,
-        "confirmed_per_mil": 0.02139577253890129
-      },
-      {
-        "date": "2020-01-31T11:00:00.000Z",
-        "confirmed": 8,
-        "deaths": 0,
-        "confirmed_per_mil": 0.024452311473030043
-      },
-      {
-        "date": "2020-02-01T11:00:00.000Z",
-        "confirmed": 8,
-        "deaths": 0,
-        "confirmed_per_mil": 0.024452311473030043
-      },
-      {
-        "date": "2020-02-02T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-03T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-04T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-05T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-06T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-07T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-08T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-09T11:00:00.000Z",
-        "confirmed": 11,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-02-10T11:00:00.000Z",
-        "confirmed": 12,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03667846720954507
-      },
-      {
-        "date": "2020-02-11T11:00:00.000Z",
-        "confirmed": 12,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03667846720954507
-      },
-      {
-        "date": "2020-02-12T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-13T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-14T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-15T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-16T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-17T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-18T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-19T11:00:00.000Z",
-        "confirmed": 13,
-        "deaths": 0,
-        "confirmed_per_mil": 0.03973500614367382
-      },
-      {
-        "date": "2020-02-20T11:00:00.000Z",
-        "confirmed": 15,
-        "deaths": 0,
-        "confirmed_per_mil": 0.045848084011931335
-      },
-      {
-        "date": "2020-02-21T11:00:00.000Z",
-        "confirmed": 15,
-        "deaths": 0,
-        "confirmed_per_mil": 0.045848084011931335
-      },
-      {
-        "date": "2020-02-22T11:00:00.000Z",
-        "confirmed": 15,
-        "deaths": 0,
-        "confirmed_per_mil": 0.045848084011931335
-      },
-      {
-        "date": "2020-02-23T11:00:00.000Z",
-        "confirmed": 51,
-        "deaths": 0,
-        "confirmed_per_mil": 0.15588348564056653
-      },
-      {
-        "date": "2020-02-24T11:00:00.000Z",
-        "confirmed": 51,
-        "deaths": 0,
-        "confirmed_per_mil": 0.15588348564056653
-      },
-      {
-        "date": "2020-02-25T11:00:00.000Z",
-        "confirmed": 57,
-        "deaths": 0,
-        "confirmed_per_mil": 0.17422271924533905
-      },
-      {
-        "date": "2020-02-26T11:00:00.000Z",
-        "confirmed": 58,
-        "deaths": 0,
-        "confirmed_per_mil": 0.17727925817946782
-      },
-      {
-        "date": "2020-02-27T11:00:00.000Z",
-        "confirmed": 60,
-        "deaths": 0,
-        "confirmed_per_mil": 0.18339233604772534
-      },
-      {
-        "date": "2020-02-28T11:00:00.000Z",
-        "confirmed": 68,
-        "deaths": 1,
-        "confirmed_per_mil": 0.20784464752075538,
-        "deaths_per_mil": 0.0030565389341287554
-      },
-      {
-        "date": "2020-02-29T11:00:00.000Z",
-        "confirmed": 74,
-        "deaths": 1,
-        "confirmed_per_mil": 0.2261838811255279,
-        "deaths_per_mil": 0.0030565389341287554
-      },
-      {
-        "date": "2020-03-01T11:00:00.000Z",
-        "confirmed": 98,
-        "deaths": 6,
-        "confirmed_per_mil": 0.29954081554461803,
-        "deaths_per_mil": 0.018339233604772534
-      },
-      {
-        "date": "2020-03-02T11:00:00.000Z",
-        "confirmed": 118,
-        "deaths": 7,
-        "confirmed_per_mil": 0.36067159422719314,
-        "deaths_per_mil": 0.02139577253890129
-      },
-      {
-        "date": "2020-03-03T11:00:00.000Z",
-        "confirmed": 149,
-        "deaths": 11,
-        "confirmed_per_mil": 0.45542430118518457,
-        "deaths_per_mil": 0.03362192827541631
-      },
-      {
-        "date": "2020-03-04T11:00:00.000Z",
-        "confirmed": 217,
-        "deaths": 12,
-        "confirmed_per_mil": 0.6632689487059399,
-        "deaths_per_mil": 0.03667846720954507
-      },
-      {
-        "date": "2020-03-05T11:00:00.000Z",
-        "confirmed": 262,
-        "deaths": 14,
-        "confirmed_per_mil": 0.8008132007417339,
-        "deaths_per_mil": 0.04279154507780258
-      },
-      {
-        "date": "2020-03-06T11:00:00.000Z",
-        "confirmed": 402,
-        "deaths": 17,
-        "confirmed_per_mil": 1.2287286515197597,
-        "deaths_per_mil": 0.051961161880188844
-      },
-      {
-        "date": "2020-03-07T11:00:00.000Z",
-        "confirmed": 518,
-        "deaths": 21,
-        "confirmed_per_mil": 1.5832871678786953,
-        "deaths_per_mil": 0.06418731761670386
-      },
-      {
-        "date": "2020-03-08T11:00:00.000Z",
-        "confirmed": 583,
-        "deaths": 22,
-        "confirmed_per_mil": 1.7819621985970644,
-        "deaths_per_mil": 0.06724385655083262
-      },
-      {
-        "date": "2020-03-09T11:00:00.000Z",
-        "confirmed": 959,
-        "deaths": 28,
-        "confirmed_per_mil": 2.9312208378294766,
-        "deaths_per_mil": 0.08558309015560515
-      },
-      {
-        "date": "2020-03-10T11:00:00.000Z",
-        "confirmed": 1281,
-        "deaths": 36,
-        "confirmed_per_mil": 3.915426374618936,
-        "deaths_per_mil": 0.11003540162863519
-      },
-      {
-        "date": "2020-03-11T11:00:00.000Z",
-        "confirmed": 1663,
-        "deaths": 40,
-        "confirmed_per_mil": 5.0830242474561205,
-        "deaths_per_mil": 0.12226155736515022
-      },
-      {
-        "date": "2020-03-12T11:00:00.000Z",
-        "confirmed": 2179,
-        "deaths": 47,
-        "confirmed_per_mil": 6.660198337466558,
-        "deaths_per_mil": 0.1436573299040515
-      },
-      {
-        "date": "2020-03-13T11:00:00.000Z",
-        "confirmed": 2727,
-        "deaths": 54,
-        "confirmed_per_mil": 8.335181673369116,
-        "deaths_per_mil": 0.1650531024429528
-      },
-      {
-        "date": "2020-03-14T11:00:00.000Z",
-        "confirmed": 3499,
-        "deaths": 63,
-        "confirmed_per_mil": 10.694829730516515,
-        "deaths_per_mil": 0.1925619528501116
-      },
-      {
-        "date": "2020-03-15T11:00:00.000Z",
-        "confirmed": 4632,
-        "deaths": 85,
-        "confirmed_per_mil": 14.157888342884396,
-        "deaths_per_mil": 0.2598058094009442
-      },
-      {
-        "date": "2020-03-16T11:00:00.000Z",
-        "confirmed": 6421,
-        "deaths": 108,
-        "confirmed_per_mil": 19.62603649604074,
-        "deaths_per_mil": 0.3301062048859056
-      },
-      {
-        "date": "2020-03-17T11:00:00.000Z",
-        "confirmed": 7783,
-        "deaths": 118,
-        "confirmed_per_mil": 23.789042524324103,
-        "deaths_per_mil": 0.36067159422719314
-      },
-      {
-        "date": "2020-03-18T11:00:00.000Z",
-        "confirmed": 13677,
-        "deaths": 200,
-        "confirmed_per_mil": 41.80428300207899,
-        "deaths_per_mil": 0.611307786825751
-      },
-      {
-        "date": "2020-03-19T11:00:00.000Z",
-        "confirmed": 19100,
-        "deaths": 244,
-        "confirmed_per_mil": 58.379893641859226,
-        "deaths_per_mil": 0.7457954999274163
-      },
-      {
-        "date": "2020-03-20T11:00:00.000Z",
-        "confirmed": 25489,
-        "deaths": 307,
-        "confirmed_per_mil": 77.90812089200784,
-        "deaths_per_mil": 0.9383574527775279
-      },
-      {
-        "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 33276,
-        "deaths": 417,
-        "confirmed_per_mil": 101.70938957206847,
-        "deaths_per_mil": 1.274576735531691
-      },
-      {
-        "date": "2020-03-22T11:00:00.000Z",
-        "confirmed": 43847,
-        "deaths": 557,
-        "confirmed_per_mil": 134.02006264474355,
-        "deaths_per_mil": 1.7024921863097169
-      },
-      {
-        "date": "2020-03-23T11:00:00.000Z",
-        "confirmed": 53740,
-        "deaths": 706,
-        "confirmed_per_mil": 164.2584023200793,
-        "deaths_per_mil": 2.1579164874949015
-      },
-      {
-        "date": "2020-03-24T11:00:00.000Z",
-        "confirmed": 65778,
-        "deaths": 942,
-        "confirmed_per_mil": 201.05301800912127,
-        "deaths_per_mil": 2.8792596759492874
-      },
-      {
-        "date": "2020-03-25T11:00:00.000Z",
-        "confirmed": 83836,
-        "deaths": 1209,
-        "confirmed_per_mil": 256.24799808161833,
-        "deaths_per_mil": 3.6953555713616653
-      }
-    ],
-    "highest_confirmed": 83836,
-    "highest_deaths": 1209,
-    "population": 327167434
-  },
-  {
-    "country_name": "Uzbekistan",
+    "name": "Uzbekistan",
     "time_series": [
       {
         "date": "2020-03-14T11:00:00.000Z",
@@ -26176,7 +25810,7 @@
     "population": 32955400
   },
   {
-    "country_name": "Venezuela",
+    "name": "Venezuela",
     "time_series": [
       {
         "date": "2020-03-13T11:00:00.000Z",
@@ -26248,7 +25882,7 @@
     "population": 28870195
   },
   {
-    "country_name": "Vietnam",
+    "name": "Vietnam",
     "time_series": [
       {
         "date": "2020-01-22T11:00:00.000Z",
@@ -26575,7 +26209,7 @@
     "population": 95540395
   },
   {
-    "country_name": "Zambia",
+    "name": "Zambia",
     "time_series": [
       {
         "date": "2020-03-17T11:00:00.000Z",
@@ -26627,7 +26261,7 @@
     "population": 17351822
   },
   {
-    "country_name": "Zimbabwe",
+    "name": "Zimbabwe",
     "time_series": [
       {
         "date": "2020-03-19T11:00:00.000Z",
@@ -26681,7 +26315,7 @@
     "population": 14439018
   },
   {
-    "country_name": "Dominica",
+    "name": "Dominica",
     "time_series": [
       {
         "date": "2020-03-21T11:00:00.000Z",
@@ -26713,7 +26347,7 @@
     "population": 71625
   },
   {
-    "country_name": "Grenada",
+    "name": "Grenada",
     "time_series": [
       {
         "date": "2020-03-21T11:00:00.000Z",
@@ -26745,7 +26379,7 @@
     "population": 111454
   },
   {
-    "country_name": "Mozambique",
+    "name": "Mozambique",
     "time_series": [
       {
         "date": "2020-03-21T11:00:00.000Z",
@@ -26777,33 +26411,39 @@
     "population": 29495962
   },
   {
-    "country_name": "Syria",
+    "name": "Syria",
     "time_series": [
       {
         "date": "2020-03-21T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 0.059149607279139954
       },
       {
         "date": "2020-03-22T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 0.059149607279139954
       },
       {
         "date": "2020-03-23T11:00:00.000Z",
-        "confirmed": 1
+        "confirmed": 1,
+        "confirmed_per_mil": 0.059149607279139954
       },
       {
         "date": "2020-03-24T11:00:00.000Z",
-        "confirmed": 5
+        "confirmed": 5,
+        "confirmed_per_mil": 0.2957480363956998
       },
       {
         "date": "2020-03-25T11:00:00.000Z",
-        "confirmed": 5
+        "confirmed": 5,
+        "confirmed_per_mil": 0.2957480363956998
       }
     ],
-    "highest_confirmed": 5
+    "highest_confirmed": 5,
+    "population": 16906283
   },
   {
-    "country_name": "Timor-Leste",
+    "name": "Timor-Leste",
     "time_series": [
       {
         "date": "2020-03-21T11:00:00.000Z",
@@ -26835,7 +26475,7 @@
     "population": 1267972
   },
   {
-    "country_name": "Belize",
+    "name": "Belize",
     "time_series": [
       {
         "date": "2020-03-22T11:00:00.000Z",
@@ -26862,25 +26502,29 @@
     "population": 383071
   },
   {
-    "country_name": "Laos",
+    "name": "Laos",
     "time_series": [
       {
         "date": "2020-03-23T11:00:00.000Z",
-        "confirmed": 2
+        "confirmed": 2,
+        "confirmed_per_mil": 0.28322566273742983
       },
       {
         "date": "2020-03-24T11:00:00.000Z",
-        "confirmed": 3
+        "confirmed": 3,
+        "confirmed_per_mil": 0.42483849410614477
       },
       {
         "date": "2020-03-25T11:00:00.000Z",
-        "confirmed": 6
+        "confirmed": 6,
+        "confirmed_per_mil": 0.8496769882122895
       }
     ],
-    "highest_confirmed": 6
+    "highest_confirmed": 6,
+    "population": 7061507
   },
   {
-    "country_name": "Libya",
+    "name": "Libya",
     "time_series": [
       {
         "date": "2020-03-23T11:00:00.000Z",
@@ -26902,7 +26546,7 @@
     "population": 6678567
   },
   {
-    "country_name": "West Bank and Gaza",
+    "name": "West Bank and Gaza",
     "time_series": [
       {
         "date": "2020-03-04T11:00:00.000Z",
@@ -27043,7 +26687,7 @@
     "population": 4569087
   },
   {
-    "country_name": "Guinea-Bissau",
+    "name": "Guinea-Bissau",
     "time_series": [
       {
         "date": "2020-03-24T11:00:00.000Z",
@@ -27060,7 +26704,7 @@
     "population": 1874309
   },
   {
-    "country_name": "Mali",
+    "name": "Mali",
     "time_series": [
       {
         "date": "2020-03-24T11:00:00.000Z",
@@ -27077,7 +26721,7 @@
     "population": 19077690
   },
   {
-    "country_name": "Saint Kitts and Nevis",
+    "name": "Saint Kitts and Nevis",
     "time_series": [
       {
         "date": "2020-03-24T11:00:00.000Z",
@@ -27091,7 +26735,7 @@
     "highest_confirmed": 2
   },
   {
-    "country_name": "Kosovo",
+    "name": "Kosovo",
     "time_series": [
       {
         "date": "2020-03-25T11:00:00.000Z",
@@ -27106,7 +26750,293 @@
     "population": 1845300
   },
   {
-    "country_name": "New Zealand",
+    "name": "United States",
+    "population": 327167434,
+    "time_series": [
+      {
+        "date": "2020-03-03T11:00:00.000Z",
+        "confirmed": 118,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 866,
+        "old_date": 20200304,
+        "confirmed_per_mil": 0.36067159422719314,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 2.6469627169555023
+      },
+      {
+        "date": "2020-03-04T11:00:00.000Z",
+        "confirmed": 176,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 1129,
+        "old_date": 20200305,
+        "confirmed_per_mil": 0.537950852406661,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 3.450832456631365
+      },
+      {
+        "date": "2020-03-05T11:00:00.000Z",
+        "confirmed": 223,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 1794,
+        "old_date": 20200306,
+        "confirmed_per_mil": 0.6816081823107125,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 5.4834308478269875
+      },
+      {
+        "date": "2020-03-06T11:00:00.000Z",
+        "confirmed": 341,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 2150,
+        "old_date": 20200307,
+        "confirmed_per_mil": 1.0422797765379057,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 6.571558708376824
+      },
+      {
+        "date": "2020-03-07T11:00:00.000Z",
+        "confirmed": 417,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 2752,
+        "old_date": 20200308,
+        "confirmed_per_mil": 1.274576735531691,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 8.411595146722336
+      },
+      {
+        "date": "2020-03-08T11:00:00.000Z",
+        "confirmed": 584,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 3951,
+        "old_date": 20200309,
+        "confirmed_per_mil": 1.7850187375311932,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 12.076385328742713
+      },
+      {
+        "date": "2020-03-09T11:00:00.000Z",
+        "confirmed": 778,
+        "deaths": 0,
+        "hospitalized": 0,
+        "tests": 4585,
+        "old_date": 20200310,
+        "confirmed_per_mil": 2.3779872907521717,
+        "deaths_per_mil": 0,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 14.014231012980344
+      },
+      {
+        "date": "2020-03-10T11:00:00.000Z",
+        "confirmed": 1053,
+        "deaths": 27,
+        "hospitalized": 0,
+        "tests": 7123,
+        "old_date": 20200311,
+        "confirmed_per_mil": 3.2185354976375797,
+        "deaths_per_mil": 0.0825265512214764,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 21.771726827799124
+      },
+      {
+        "date": "2020-03-11T11:00:00.000Z",
+        "confirmed": 1315,
+        "deaths": 36,
+        "hospitalized": 0,
+        "tests": 9356,
+        "old_date": 20200312,
+        "confirmed_per_mil": 4.019348698379313,
+        "deaths_per_mil": 0.11003540162863519,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 28.596978267708636
+      },
+      {
+        "date": "2020-03-12T11:00:00.000Z",
+        "confirmed": 1922,
+        "deaths": 39,
+        "hospitalized": 0,
+        "tests": 15535,
+        "old_date": 20200313,
+        "confirmed_per_mil": 5.874667831395468,
+        "deaths_per_mil": 0.11920501843102146,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 47.483332341690215
+      },
+      {
+        "date": "2020-03-13T11:00:00.000Z",
+        "confirmed": 2450,
+        "deaths": 49,
+        "hospitalized": 0,
+        "tests": 19552,
+        "old_date": 20200314,
+        "confirmed_per_mil": 7.488520388615451,
+        "deaths_per_mil": 0.14977040777230902,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 59.761449240085426
+      },
+      {
+        "date": "2020-03-14T11:00:00.000Z",
+        "confirmed": 3173,
+        "deaths": 60,
+        "hospitalized": 0,
+        "tests": 25721,
+        "old_date": 20200315,
+        "confirmed_per_mil": 9.698398037990541,
+        "deaths_per_mil": 0.18339233604772534,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 78.61723792472571
+      },
+      {
+        "date": "2020-03-15T11:00:00.000Z",
+        "confirmed": 4019,
+        "deaths": 71,
+        "hospitalized": 0,
+        "tests": 40123,
+        "old_date": 20200316,
+        "confirmed_per_mil": 12.284229976263468,
+        "deaths_per_mil": 0.21701426432314164,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 122.63751165404805
+      },
+      {
+        "date": "2020-03-16T11:00:00.000Z",
+        "confirmed": 5723,
+        "deaths": 90,
+        "hospitalized": 0,
+        "tests": 53327,
+        "old_date": 20200317,
+        "confirmed_per_mil": 17.49257232001887,
+        "deaths_per_mil": 0.27508850407158797,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 162.99605174028414
+      },
+      {
+        "date": "2020-03-17T11:00:00.000Z",
+        "confirmed": 7730,
+        "deaths": 112,
+        "hospitalized": 0,
+        "tests": 73955,
+        "old_date": 20200318,
+        "confirmed_per_mil": 23.62704596081528,
+        "deaths_per_mil": 0.3423323606224206,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 226.04633687349212
+      },
+      {
+        "date": "2020-03-18T11:00:00.000Z",
+        "confirmed": 11719,
+        "deaths": 160,
+        "hospitalized": 0,
+        "tests": 100838,
+        "old_date": 20200319,
+        "confirmed_per_mil": 35.81957976905488,
+        "deaths_per_mil": 0.4890462294606009,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 308.2152730396754
+      },
+      {
+        "date": "2020-03-19T11:00:00.000Z",
+        "confirmed": 17033,
+        "deaths": 219,
+        "hospitalized": 0,
+        "tests": 135180,
+        "old_date": 20200320,
+        "confirmed_per_mil": 52.062027665015094,
+        "deaths_per_mil": 0.6693820265741974,
+        "hospitalized_per_mil": 0,
+        "tests_per_mil": 413.18293311552515
+      },
+      {
+        "date": "2020-03-20T11:00:00.000Z",
+        "confirmed": 23197,
+        "deaths": 272,
+        "hospitalized": 1964,
+        "tests": 179106,
+        "old_date": 20200321,
+        "confirmed_per_mil": 70.90253365498474,
+        "deaths_per_mil": 0.8313785900830215,
+        "hospitalized_per_mil": 6.003042466628876,
+        "tests_per_mil": 547.4444623360649
+      },
+      {
+        "date": "2020-03-21T11:00:00.000Z",
+        "confirmed": 31879,
+        "deaths": 398,
+        "hospitalized": 2554,
+        "tests": 225342,
+        "old_date": 20200322,
+        "confirmed_per_mil": 97.4394046810906,
+        "deaths_per_mil": 1.2165024957832447,
+        "hospitalized_per_mil": 7.806400437764841,
+        "tests_per_mil": 688.7665964944421
+      },
+      {
+        "date": "2020-03-22T11:00:00.000Z",
+        "confirmed": 42152,
+        "deaths": 471,
+        "hospitalized": 3325,
+        "tests": 279473,
+        "old_date": 20200323,
+        "confirmed_per_mil": 128.8392291513953,
+        "deaths_per_mil": 1.4396298379746437,
+        "hospitalized_per_mil": 10.162991955978113,
+        "tests_per_mil": 854.2201055377657
+      },
+      {
+        "date": "2020-03-23T11:00:00.000Z",
+        "confirmed": 51954,
+        "deaths": 675,
+        "hospitalized": 4468,
+        "tests": 344712,
+        "old_date": 20200324,
+        "confirmed_per_mil": 158.79942378372536,
+        "deaths_per_mil": 2.06316378053691,
+        "hospitalized_per_mil": 13.65661595768728,
+        "tests_per_mil": 1053.6256490613916
+      },
+      {
+        "date": "2020-03-24T11:00:00.000Z",
+        "confirmed": 63928,
+        "deaths": 900,
+        "hospitalized": 6136,
+        "tests": 421532,
+        "old_date": 20200325,
+        "confirmed_per_mil": 195.39842098098308,
+        "deaths_per_mil": 2.75088504071588,
+        "hospitalized_per_mil": 18.754922899814044,
+        "tests_per_mil": 1288.4289699811625
+      },
+      {
+        "date": "2020-03-25T11:00:00.000Z",
+        "confirmed": 80735,
+        "deaths": 1163,
+        "hospitalized": 10131,
+        "tests": 519338,
+        "old_date": 20200326,
+        "confirmed_per_mil": 246.76967084688508,
+        "deaths_per_mil": 3.5547547803917428,
+        "hospitalized_per_mil": 30.96579594165842,
+        "tests_per_mil": 1587.3768169725597
+      }
+    ],
+    "highest_confirmed": 80735,
+    "highest_deaths": 1163,
+    "highest_hospitalized": 10131,
+    "highest_tests": 519338
+  },
+  {
+    "name": "New Zealand",
     "time_series": [
       {
         "date": "2020-02-27T11:00:00.000Z",
