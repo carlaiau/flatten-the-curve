@@ -52,7 +52,7 @@ export default class CountryPage extends React.Component{
 
     
     const active_country = SetupCountry({
-      country: countries.filter( (c) => c.country_name ===  this.state.selected_country )[0],
+      country: countries.filter( (c) => c.name ===  this.state.selected_country )[0],
       field: full_field_name
     })
     
@@ -66,11 +66,11 @@ export default class CountryPage extends React.Component{
 
 
     const ContentBlock = () => {
-      const {country_name, highest} = active_country
+      const {name, highest} = active_country
       const {confirmed, deaths} = highest
       return (
       <div className="box">
-          <h3 className="is-size-4 title">{country_name} must act now</h3>
+          <h3 className="is-size-4 title">{name} must act now</h3>
           
           <p className="is-size-6">
             Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
@@ -78,7 +78,7 @@ export default class CountryPage extends React.Component{
           </p>
           { (confirmed > 100 ||deaths > 10) && per == 'total' ?
           <p className="is-size-6"style={{marginTop: '10px'}}>
-            The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when {country_name}'s daily figure first exceeded{' '}
+            The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when {name}'s daily figure first exceeded{' '}
             { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
             { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
           </p>
@@ -88,7 +88,7 @@ export default class CountryPage extends React.Component{
               Global data updated at <strong>{this.state.update_time}</strong>
             </p>
             
-            {country_name == 'New Zealand' ?
+            {name == 'New Zealand' ?
             <p className="is-size-6">
               New Zealand data updated at 
               <strong>{this.state.nz_time}</strong>
@@ -98,8 +98,8 @@ export default class CountryPage extends React.Component{
           { this.state.forecast_faq_open ? 
             < div style={{margin: '20px 10px'}}>
               <p className="is-size-7">
-                The forecasts below show a future projection of COVID-19 in {country_name}. 
-                This is based on the historical growth data of each country that is currently ahead of {country_name} in the outbreak.
+                The forecasts below show a future projection of COVID-19 in {name}. 
+                This is based on the historical growth data of each country that is currently ahead of {name} in the outbreak.
               </p>
               <p className="is-size-7">
                 Viewing this can offer unique insights into the range of possible outcomes. The forecast is not based on epidemiological models, just on historical data experienced by other countries.
@@ -132,7 +132,7 @@ export default class CountryPage extends React.Component{
             <div className="columns info">
               <div className="column is-two-thirds"> 
                 <h2 className="is-size-3 title">
-                  {active_country.country_name}
+                  {active_country.name}
                 </h2>
                 <p className="is-size-4 subtitle">
                   {
@@ -184,7 +184,7 @@ export default class CountryPage extends React.Component{
           </div>                
         </section>
           <GridBar 
-            active_country_name={active_country.country_name}
+            active_name={active_country.name}
             max_count={this.state.is_mobile ? this.state.max_count : 100}
             per={this.state.per}
             field={this.state.field}

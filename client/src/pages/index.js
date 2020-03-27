@@ -400,7 +400,7 @@ export default class IndexPage extends React.Component{
                                     checkFn={e => this.countryChecked(e, 'confirmed_graph_countries') }
                                     clearFn={e => this.setState({confirmed_graph_countries: []})}
                                     growthFn={e => this.setState({confirmed_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.country_name)})}
+                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.name)})}
                                 />
                                 
                             </div>
@@ -445,7 +445,7 @@ export default class IndexPage extends React.Component{
                                     checkFn={e => this.countryChecked(e, 'death_graph_countries')}
                                     clearFn={e => this.setState({death_graph_countries: []})}
                                     growthFn={e => this.setState({death_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.country_name)}) }
+                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.name)}) }
                                 />
                             </div>
                         </div>

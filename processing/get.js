@@ -40,19 +40,24 @@ const createFiles = (country_path, cum_path, us_path, us_cum_path) => {
             t.date = parse(t.date, 'MM/dd/yy', new Date() )
           })
         })
-        countries = add_population_data(countries, population_data)
+        
         
         // Relabel country names
         _.forEach(countries, (c) => {
-          c.country_name = c.country_name == 'US' ? 'United States' : c.country_name == 'Korea, South' ? 'South Korea' : c.country_name
+            c.name = 
+              c.name == 'US'            ? 'United States' : 
+              c.name == 'Korea, South'  ? 'South Korea' : 
+              c.name == 'Czechia'       ? 'Czech Republic' :
+              c.name
         })
         
+        countries = add_population_data(countries, population_data)
+
         
         country_array = _.map(countries, (country) => country)
 
-        
         // Remove NZ and remove US and re-add below
-        country_array = country_array.filter(country => country.country_name != 'United States' && country.country_name != 'New Zealand')
+        country_array = country_array.filter(country => country.name != 'United States' && country.name != 'New Zealand')
 
         // Get covid-tracker data
         

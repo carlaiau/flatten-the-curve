@@ -133,31 +133,31 @@ const GridItemDetail = ({ active, compare, width, height, details_open, closeFn,
             <div className="columns">
                 <div className="column is-one-third">
                     <h3 className="is-size-3 title has-text-white">
-                        {active.country_name}
+                        {active.name}
                     </h3>
                     <p className="is-size-5  subtitle">
-                        Forecast based on historical data from {compare.country_name}
+                        Forecast based on historical data from {compare.name}
                     </p>
                     <p className="is-size-6">
-                        Calculated using the daily growth of confirmed cases and deaths on a per million basis in {compare.country_name} {}
-                        since {compare.country_name} reached a similar case count to {active.country_name}.
+                        Calculated using the daily growth of confirmed cases and deaths on a per million basis in {compare.name} {}
+                        since {compare.name} reached a similar case count to {active.name}.
                     </p>
                     <p className="is-size-6">
                         <strong>{days_of_forecast - 1}</strong> future days 
                         <br/>
                         <strong>{max_historical}</strong> historical days
                         <br/>
-                        based on <strong>{time_series.length -1}</strong> days of {compare.country_name} data
+                        based on <strong>{time_series.length -1}</strong> days of {compare.name} data
                     </p>
                     { details_open ? 
                         <>
                             <p className="is-size-7">
-                                If {active.country_name} currently has 0 deaths, we use the {compare.country_name} number of deaths to confirmed case ratio to 
-                                estimate when {active.country_name} will encounter the first death. 
-                                Once forecasted death has occured the projected deaths grow based on the {compare.country_name} observed death rate.
+                                If {active.name} currently has 0 deaths, we use the {compare.name} number of deaths to confirmed case ratio to 
+                                estimate when {active.name} will encounter the first death. 
+                                Once forecasted death has occured the projected deaths grow based on the {compare.name} observed death rate.
                             </p>
                             <p className="is-size-7" style={{marginBottom: '10px'}}>
-                                This forecast is not meant to reflect the futre of {active.country_name}, merely an indication of what is possible.
+                                This forecast is not meant to reflect the futre of {active.name}, merely an indication of what is possible.
                                 If there are flaws with this naive approach please reach out to us so we can ensure it is done correctly.
                             </p>
                             
@@ -166,7 +166,7 @@ const GridItemDetail = ({ active, compare, width, height, details_open, closeFn,
                     <button className="button is-white is-outlined is-size-7" onClick={detailsFn}>{details_open ? 'Close' :'Expand Method' }</button>
                 </div>
                 <div className='column is-one-third'>
-                    <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{active.country_name} Forecast</h3>
+                    <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{active.name} Forecast</h3>
                     <p className="is-size-6 subtitle" style={{textAlign: 'center'}}>Confirmed Cases</p>
                     <div style={{
                         background: '#fff',
@@ -203,7 +203,7 @@ const GridItemDetail = ({ active, compare, width, height, details_open, closeFn,
                 </div>
             
                 <div className='column is-one-third historical'>
-                    <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{compare.country_name} Historical</h3>
+                    <h3 className="is-size-4 title has-text-white" style={{textAlign: 'center'}}>{compare.name} Historical</h3>
                     <p className="is-size-6 subtitle" style={{textAlign: 'center'}}>Confirmed per million</p>
                     
                     <div style={{

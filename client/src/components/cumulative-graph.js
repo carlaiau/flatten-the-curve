@@ -31,17 +31,17 @@ const CumulativeGraph = ({
     
 
     all_possible_countries
-        .filter(c => countries_to_graph.includes(c.country_name))
+        .filter(c => countries_to_graph.includes(c.name))
         
         .forEach((c) => {
             c.time_series.forEach(time => {
             if(ready_to_graph.length <= parseInt(time.num_day)){
                 ready_to_graph[time.num_day] = {
                     num_day: time.num_day,
-                    [c.country_name]: time[field]
+                    [c.name]: time[field]
                 }
             }
-            else ready_to_graph[time.num_day][c.country_name] = time[field]
+            else ready_to_graph[time.num_day][c.name] = time[field]
 
         })
         
@@ -63,7 +63,7 @@ const CumulativeGraph = ({
         "#6F1E51", "#EA2027", "#5758BB", "#006266", "#1B1464",
     ]
     all_possible_countries.forEach( (c, i) => {
-        color_definitions[c.country_name] = colors[i]
+        color_definitions[c.name] = colors[i]
     })
     
     

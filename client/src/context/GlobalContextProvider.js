@@ -11,7 +11,7 @@ const GlobalContextProvider = ({ children }) => {
     const globalData = useStaticQuery(graphql`query {
         countries: allCountriesJson(sort: {order: DESC, fields: highest_confirmed}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
             nodes {
-                country_name
+                name
                 id
                 time_series {
                     date
@@ -26,15 +26,15 @@ const GlobalContextProvider = ({ children }) => {
                 population
             }
         }
-        select_countries: allCountriesJson(sort: {order: ASC, fields: country_name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
+        select_countries: allCountriesJson(sort: {order: ASC, fields: name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
             nodes {
-                country_name
+                name
                 highest_confirmed
             }
         }
         cumulative: allCumulativeJson(sort: {order: DESC, fields: highest_confirmed}, filter: {population: {gte: 100000}}) {
           nodes {
-            country_name
+            name
             highest_confirmed
             population
             confirmed {
@@ -65,7 +65,7 @@ const GlobalContextProvider = ({ children }) => {
     const mapFn = (node, field, index) => {
       if(node[field][index].time_series.length){
         return {
-          country_name : node.country_name,
+          name : node.name,
           time_series: node[field][index].time_series,
         }
       }

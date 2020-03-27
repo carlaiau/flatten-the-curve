@@ -77,16 +77,16 @@ export default class GridItem extends React.Component{
         <div className='column is-one-third'>
             <div className="box has-background-success has-text-white country">
                 <div className="content" style={{position: 'relative'}}>
-                    <Link to={country.country_name.toLowerCase().replace(/\s+/g, "-")} className="button is-white is-outlined is-size-7" style={{float: 'right'}}>
+                    <Link to={country.name.toLowerCase().replace(/\s+/g, "-")} className="button is-white is-outlined is-size-7" style={{float: 'right'}}>
                         Visit
                     </Link>
-                    <h2 className="is-size-4  has-text-white" style={{marginTop: 0}}>{country.country_name}</h2>
+                    <h2 className="is-size-4  has-text-white" style={{marginTop: 0}}>{country.name}</h2>
                     
                     <p className="is-size-6 has-text-white">
                         {formatDistance(parseJSON(country.earliest.date), new Date() ) } ago,
-                        {' '}{country.country_name}
+                        {' '}{country.name}
                         {' '} had a similar amount of {per === 'total' ? ' total': 'per million'} 
-                        {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as {active_country.country_name} has today.
+                        {' '}{field === 'deaths' ? 'deaths': 'confirmed cases'} as {active_country.name} has today.
                     </p>
 
                     
