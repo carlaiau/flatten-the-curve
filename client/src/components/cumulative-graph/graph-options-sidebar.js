@@ -3,7 +3,8 @@ import {GlobalStateContext} from "../../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
 const GraphOptionsSideBar = ({
-    max_count = 40, 
+    max_area_count = 40, 
+    show_all_areas = false,
     field = 'confirmed', 
     checkedAreas = [], 
     scale, 
@@ -17,15 +18,18 @@ const GraphOptionsSideBar = ({
     checkFn,    // Callback for country select or non
     clearFn,    // Callback for clearing all countries
     allFn,     // Callback for selecting all countries
-    growthFn    // Callback for changing Growth
+    growthFn,    // Callback for changing Growth
+    maxCountFn
 }) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
+    const limit = show_all_areas ? 1000 : max_area_count
     const countries_avaliable = (
         field == 'confirmed' ? 
             cumulative_confirmed[accumulateFrom].filter(c => c) : 
             cumulative_deaths[accumulateFrom].filter( c => c ) 
-        ).slice(0,max_count)
+        )
+        .slice(0, limit)
     
     const SideBar = styled('div')`
         .field{
@@ -79,7 +83,8 @@ const GraphOptionsSideBar = ({
                 </div>
             </div>
             <div className="field">
-                <label className="label">Countries</label>
+                <label className="label">{show_all_areas ? 'All' : `Top ${max_area_count}`} Countries</label>
+
                 <div className="check-container">
                     {countries_avaliable.map(c => (
                         <label className="checkbox" key={c.name}>
@@ -96,13 +101,18 @@ const GraphOptionsSideBar = ({
             <div className="columns">
                 <div className="column" style={{textAlign:'left'}}>
                     <button 
+                        className="button is-info has-text-white" style={{marginTop: '10px', marginRight: '10px'}} 
+                        onClick={maxCountFn}
+                    >
+                        <strong>{show_all_areas ? `List top ${max_area_count}` : 'List All'}</strong>    
+                    </button>
+                    <button 
                         className="button is-info has-text-white" style={{marginTop: '10px'}} 
                         onClick={() => allFn(countries_avaliable)}
                     >
                         <strong>Choose All</strong>    
                     </button>
-                </div>
-                <div className="column" style={{textAlign:'right'}}>
+                
                     <button className="button has-background-newt has-text-white" style={{marginTop: '10px'}} onClick={clearFn}>
                     <strong>Clear All</strong>    
                     </button>

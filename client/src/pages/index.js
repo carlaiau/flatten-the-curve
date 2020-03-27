@@ -215,6 +215,7 @@ export default class IndexPage extends React.Component{
                         accumulateFrom={100}
                         accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
                         
+                        
                     />  
                     <div className="columns">
                         <div className="column is-narrow">
@@ -240,7 +241,8 @@ export default class IndexPage extends React.Component{
                             'United Kingdom',
                         ]}
                         accumulateFrom={10}
-                        accumulateOptions={[10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500]}        
+                        accumulateOptions={[10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500]}   
+                          
                     /> 
                     <div className="columns">
                         <div className="column is-narrow is-one-third">

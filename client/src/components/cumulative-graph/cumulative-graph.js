@@ -4,7 +4,8 @@ import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 import CumulativeGraphTooltip from "./cumulative-graph-tooltip"
 
 const CumulativeGraph = ({
-    max_count = 40, 
+    max_area_count = 40, 
+    show_all_areas = false,
     height, 
     width, 
     areas_to_graph = [], 
@@ -23,12 +24,12 @@ const CumulativeGraph = ({
     
     // Array of Objects 
     const ready_to_graph = [];
-
+    const limit = show_all_areas ? 1000 : max_area_count
     const all_possible_countries = (
         field == 'confirmed' ? cumulative_confirmed[accumulateFrom].filter(c => c) : 
         cumulative_deaths[accumulateFrom].filter(c => c) 
-    ).slice(0, max_count)
-    
+    )
+    .slice(0,  limit )
 
     all_possible_countries
         .filter(c => areas_to_graph.includes(c.name))
@@ -44,7 +45,6 @@ const CumulativeGraph = ({
             else ready_to_graph[time.num_day][c.name] = time[field]
 
         })
-        
     })
 
     // This is to ensure that colors do not change as the number of countries gets added / removed
