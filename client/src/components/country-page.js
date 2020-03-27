@@ -32,8 +32,6 @@ export default class CountryPage extends React.Component{
         grid_height: 0,
         max_count: 30,
         is_mobile: false,
-        update_time: '1:11am 27 March UTC',
-        nz_time: '2:11pm 27 March NZT',
         forecast_faq_open: false,
     }
   }
@@ -43,7 +41,7 @@ export default class CountryPage extends React.Component{
   }
   
   render(){
-    const {countries} = this.props.stateHook
+    const {countries, update_times} = this.props.stateHook
     const {selected_country, field, sort, per, max_count} = this.state
 
     let full_field_name = field === 'confirmed' ? 
@@ -85,13 +83,18 @@ export default class CountryPage extends React.Component{
           : <></> }
           <div style={{marginTop: '10px', marginBottom: '10px'}}>
             <p className="is-size-6">
-              Global data updated at <strong>{this.state.update_time}</strong>
+              Global data updated at <strong>{update_times.global}</strong>
             </p>
             
             {name == 'New Zealand' ?
             <p className="is-size-6">
-              New Zealand data updated at 
-              <strong>{this.state.nz_time}</strong>
+              {name} data updated at <strong>{update_times.nz}</strong>
+            </p>
+            : <></> }
+
+            {name == 'United States' ?
+            <p className="is-size-6">
+              {name} data updated at <strong>{update_times.us}</strong>
             </p>
             : <></> }
           </div>
