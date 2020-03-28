@@ -1,14 +1,14 @@
 import React from 'react'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
-import CumulativeGraph from '../components/cumulative-graph'
-import GraphOptionsSideBar from '../components/graph-options-sidebar'
+
 import EnhancedTable from '../components/enhanced-table'
 import UpdateTable from '../components/update-times'
 import styled from '@emotion/styled'
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
 import SEO from '../components/seo'
+import CumulativeGraphContainer from '../components/cumulative-graph/cumulative-graph-container'
 
 
 
@@ -17,202 +17,20 @@ export default class IndexPage extends React.Component{
     constructor(props){
         super(props);
 
-        const default_countries = [
-            'Singapore',
-            'China',
-            'Italy',
-            'Spain',
-            'Iran',
-            'South Korea',
-            'Australia',
-            'United States',
-            'United Kingdom',
-        ]
+        
 
         this.state = {
             selected_country: '',
             numberFormat: new Intl.NumberFormat(),
-            
             cum_width:  800,
-            cum_height: 182,
-
-            
-            confirmed_scale: 'linear',
-            confirmed_graph_countries: default_countries,
-            confirmed_start: 100,
-            confirmed_growth: {
-                label: "Doubles every 3 days",
-                value: 1.25992105
-            },
-            confirmed_options: [50, 100, 200, 300, 400, 500, 750, 1000],
-
-            death_scale: 'linear',
-            death_graph_countries: default_countries,
-            death_start: 10,
-            death_options: [10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500],
-            death_growth: {
-                label: "Doubles every 3 days",
-                value: 1.25992105
-            },
-
-            max_count: 40,
-            growth_options: [
-                {
-                    label: "Doubles every day",
-                    value: 2.00
-                },
-                {
-                    label: "Doubles every 2 days",
-                    value: 1.414213562
-                },
-                {
-                    label: "Doubles every 3 days",
-                    value: 1.25992105
-                },
-                {
-                    label: "Doubles every 4 days",
-                    value: 1.189207115
-                },
-                {
-                    label: "Doubles every 5 days",
-                    value: 1.148698355
-                },
-                {
-                    label: "Doubles every 6 days",
-                    value: 1.122462048
-                },
-                {
-                    label: "Doubles every week",
-                    value: 1.104089514
-                },
-                {
-                    label: "Doubles every fortnight",
-                    value: 1.050756639
-                },
-                {
-                    label: "5% Daily Growth",
-                    value: 1.05
-                },
-                {
-                    label: "10% Daily Growth",
-                    value: 1.1
-                },
-
-                {
-                    label: "20% Daily Growth",
-                    value: 1.2
-                },
-                {
-                    label: "25% Daily Growth",
-                    value: 1.25
-                },
-                {
-                    label: "30% Daily Growth",
-                    value: 1.3
-                },
-                {
-                    label: "33% Daily Growth",
-                    value: 1.33
-                },
-                {
-                    label: "35% Daily Growth",
-                    value: 1.35
-                },
-                {
-                    label: "40% Daily Growth",
-                    value: 1.4
-                },
-                {
-                    label: "50% Daily Growth",
-                    value: 1.5
-                },
-                {
-                    label: "60% Daily Growth",
-                    value: 1.6
-                },
-                {
-                    label: "70% Daily Growth",
-                    value: 1.7
-                },
-                {
-                    label: "80% Daily Growth",
-                    value: 1.8
-                },
-                {
-                    label: "90% Daily Growth",
-                    value: 1.9
-                },
-                {
-                    label: "100% Daily Growth",
-                    value: 2.0
-                },
-            ]
-            
+            cum_height: 182
             
         }
     }
 
-
-
-
-    
-    
-
-
-    // confirmed_graph_countries
-    countryChecked = (e, graph_type) => {
-        const checkedCountry = e.target.value
-        if(this.state[graph_type].includes(checkedCountry)){
-            const newCountries =  this.state[graph_type].filter(c => c !== checkedCountry)
-            return this.setState({[graph_type]: newCountries})
-        }
-        else{
-            let newCountries = this.state[graph_type]
-            newCountries.push(checkedCountry)
-            return this.setState({[graph_type]: newCountries})
-        }
-    }
 
     render(){
-        const IndexContainer = styled('div')`
-            
-            .box{
-                @media screen and (max-width: 480px){
-                    margin-left: 10px;  
-                    margin-right: 10px;
-                }
-            }
-            .recharts-legend-item{
-                @media screen and (max-width: 480px){
-                    svg{
-                        height: 7px;
-                        width: 7px;
-                    }
-                    span{
-                        font-size: 10px;
-                    }
-                }
-            }
-            .recharts-layer.recharts-cartesian-axis{
-                @media screen and (max-width: 480px){
-                    
-                    text{
-                        tspan{
-                            font-size: 10px;
-                        }
-                    }
-                }
-            }
-            .recharts-legend-wrapper{
-                @media screen and (max-width: 480px){
-                    display: none;
-                }
-            }
-        `
         
-        
-        
-
         const ContentBlock = () => (
             <div className="box">
                 <h2 className="is-size-3"><strong>We must act now!</strong></h2>
@@ -361,7 +179,7 @@ export default class IndexPage extends React.Component{
             <SEO title={' COVID-19: Showing why we must act early'}/>
             <Hero selected_country=''/>
             <div className="section">
-                <IndexContainer className="container">
+                <div className="container">
                     <div className="columns">
                         <div className="column is-two-thirds">
                             <ContentBlock/>
@@ -374,101 +192,63 @@ export default class IndexPage extends React.Component{
                                     Cumulative number of cases
                                 </h3>
                                 <p className="is-size-5 subtitle has-text-white">
-                                    by number of days since {this.state.confirmed_start}th case
+                                    by number of days since nth case
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div className="columns">
-                        <div className="column is-quarter">
-                            
-                            <div className="box">
-                                <GraphOptionsSideBar
-                                    scale={this.state.confirmed_scale} 
-                                    max_count={this.state.max_count} 
-                                    confirm_state={this.confirm_start}
-                                    checkCountries={this.state.confirmed_graph_countries}
-
-                                    min_cases={this.state.confirmed_start}
-                                    min_case_options={this.state.confirmed_options}
-
-                                    growth_options={this.state.growth_options}
-                                    growth={this.state.confirmed_growth}
-
-                                    caseFn={e => {this.setState({confirmed_start: e.target.value})}}
-                                    scaleFn={e => {this.setState({confirmed_scale: e.target.value})}}
-                                    checkFn={e => this.countryChecked(e, 'confirmed_graph_countries') }
-                                    clearFn={e => this.setState({confirmed_graph_countries: []})}
-                                    growthFn={e => this.setState({confirmed_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({confirmed_graph_countries: countries.map(c => c.name)})}
-                                />
-                                
-                            </div>
-                        </div>
-                        <div className="column is-three-quarters">
-                            <CumulativeGraph 
-                                width={this.state.cum_width} 
-                                height={this.state.cum_height} 
-                                scale={this.state.confirmed_scale} 
-                                max_count={this.state.max_count} 
-                                growth={this.state.confirmed_growth}
-                                case_start={this.state.confirmed_start}
-                                countries_to_graph={this.state.confirmed_graph_countries}/>
-                        </div>
-                    </div>  
+                    <CumulativeGraphContainer 
+                        width={this.state.cum_width} 
+                        height={this.state.cum_height} 
+                        field="confirmed"
+                        checkedAreas={[
+                            'Singapore',
+                            'China',
+                            'Italy',
+                            'Spain',
+                            'Iran',
+                            'South Korea',
+                            'Australia',
+                            'United States',
+                            'United Kingdom',
+                        ]}
+                        accumulateFrom={100}
+                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                        
+                        
+                    />  
                     <div className="columns">
                         <div className="column is-narrow">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">Cumulative number of deaths</h3>
-                                <p className="is-size-5 subtitle has-text-white">by numbers of days since {this.state.death_start}th death</p>
+                                <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
                             </div>
                         </div>
                     </div>
-                    <div className="columns" style={{marginBottom: '30px'}}>
-                        <div className="column">
-                            <div className="box">
-                                <GraphOptionsSideBar
-                                    field='deaths'
-                                    scale={this.state.death_scale} 
-                                    max_count={this.state.max_count}
-                                    checkCountries={this.state.death_graph_countries}
-
-                                    min_cases={this.state.death_start}
-                                    min_case_options={this.state.death_options}
-
-                                    growth_options={this.state.growth_options}
-                                    growth={this.state.death_growth}
-
-                                    caseFn={e =>    {this.setState({death_start: e.target.value})}}
-                                    scaleFn={e =>   {this.setState({death_scale: e.target.value})}}
-
-                                    checkFn={e => this.countryChecked(e, 'death_graph_countries')}
-                                    clearFn={e => this.setState({death_graph_countries: []})}
-                                    growthFn={e => this.setState({death_growth: this.state.growth_options.find(val => e.target.value == val.value)}) }
-                                    allFn={ (countries) => this.setState({death_graph_countries: countries.map(c => c.name)}) }
-                                />
-                            </div>
-                        </div>
-                        <div className="column is-three-quarters">
-                            <CumulativeGraph 
-                                width={this.state.cum_width} 
-                                height={this.state.cum_height} 
-                                field="deaths"  
-                                max_count={this.state.max_count}  
-                                case_start={this.state.death_start}
-                                scale={this.state.death_scale}  
-                                growth={this.state.death_growth}
-                                countries_to_graph={this.state.death_graph_countries}
-                            />  
-                        </div>
-                    </div>
+                    <CumulativeGraphContainer 
+                        width={this.state.cum_width} 
+                        height={this.state.cum_height} 
+                        field="deaths"
+                        checkedAreas={[
+                            'Singapore',
+                            'China',
+                            'Italy',
+                            'Spain',
+                            'Iran',
+                            'South Korea',
+                            'Australia',
+                            'United States',
+                            'United Kingdom',
+                        ]}
+                        accumulateFrom={10}
+                        accumulateOptions={[10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500]}   
+                          
+                    /> 
                     <div className="columns">
                         <div className="column is-narrow is-one-third">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">World Overview</h3>
-                                
                                 <UpdateTable color="white"/>
-                                
                                 <p className="is-size-7 has-text-white">
                                     Populations must be larger than 1 million with 10 confirmed cases
                                 </p>
@@ -480,7 +260,7 @@ export default class IndexPage extends React.Component{
                             <EnhancedTable tidy={this.state.numberFormat}/>
                         </StyledTable>
                     </div>
-                </IndexContainer>
+                </div>
             </div>
             <Footer/>
         </>

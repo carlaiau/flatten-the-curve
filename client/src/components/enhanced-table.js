@@ -2,14 +2,19 @@ import React, { useContext } from 'react'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
+import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
+
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
-import TableRow from '@material-ui/core/TableRow';
-import TableSortLabel from '@material-ui/core/TableSortLabel';
-import { Link } from "gatsby"
 
+import TableSortLabel from '@material-ui/core/TableSortLabel';
+
+import EnhancedTableRowIndex from './enhanced-table-row-index'
+import EnhancedTableRowAdvancedCountry from './enhanced-table-row-advanced-country'
+
+import SetupIndexTable from '../utils/setup-index-table'
 
 const descendingComparator = (a, b, orderBy) => {
   if (b[orderBy] < a[orderBy]) return -1;
@@ -37,22 +42,7 @@ const stableSort = (array, comparator) => {
 
 
 const EnhancedTableHead = (props) => {
-  const { order, orderBy, onRequestSort } = props;
-
-  const headCells = [
-    { id: 'name', numeric: false, disablePadding: false, label: 'Country', class: 'country' },
-    { id: 'population', numeric: true, disablePadding: false, label: 'Population', class: 'population' },
-    { id: 'confirmed', numeric: true, disablePadding: false, label: 'Confirmed', class: 'confirmed' },
-    { id: 'confirmed_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
-    //{ id: 'confirmed_per_mil', numeric: true, disablePadding: false, label: 'Per Mil', class: 'per_mil' },
-    { id: 'deaths', numeric: true, disablePadding: false, label: 'Deaths', class: 'deaths' },
-    { id: 'deaths_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
-    //{ id: 'deaths_per_mil', numeric: true, disablePadding: false, label: 'Per Mil', class: 'per_mil' },
-    {id: 'link'}
-    //{ id: 'recovered_per_mil', numeric: true, disablePadding: false, label: 'Per Mil',class: 'per_mil' },
-  ];
-
-
+  const { order, orderBy, onRequestSort, headCells } = props;
 
   const createSortHandler = property => event => {
     onRequestSort(event, property);
@@ -84,53 +74,17 @@ const EnhancedTableHead = (props) => {
 
 
 
-const EnhancedTable = ({tidy}) => {
+const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home'}) => {
   const {countries} = useContext(GlobalStateContext)
 
-  const world = {
-      name: 'World',
-      population: 0,
-      confirmed: 0,
-      confirmed_change: 0,
-      deaths: 0,
-      deaths_change: 0,
-      recovered: 0,
-      recovered_change: 0
+
+  if(pageTemplate == 'home'){
+    const indexSetup = SetupIndexTable(countries)  
+    rows = indexSetup.rows
+    headCells = indexSetup.headCells
   }
-  const rows = countries.map(c => {
-    const yesterday = c.time_series && c.time_series.length > 2 ? c.time_series[c.time_series.length -2]: false
-    
-    const confirmed_change = yesterday ? c.highest_confirmed - yesterday.confirmed : 0
-    const deaths_change = yesterday ? c.highest_deaths != 0 ? c.highest_deaths - yesterday.deaths: 0 : 0
-    const recovered_change = yesterday ? c.highest_recovered - yesterday.recovered : 0
-    
-    world.confirmed += c.highest_confirmed    
-    world.deaths += c.highest_deaths || 0
-    world.recovered += c.highest_recovered || 0
-
-    world.confirmed_change += confirmed_change 
-    world.deaths_change += deaths_change
-    world.recovered_change += recovered_change
-
-    world.population += c.population
-    
-
-    return {
-      name: c.name,
-      population: c.population,
-      confirmed: c.highest_confirmed,
-      confirmed_change,
-      //confirmed_per_mil: (c.highest_confirmed / (c.population / 1000000)),
-      deaths: c.highest_deaths || 0,
-      deaths_change,
-      //deaths_per_mil: (c.highest_deaths / (c.population / 1000000)),
-
-    }
-  })
-
-  rows.push(world)
-
   
+
   const [order, setOrder] = React.useState('desc');
   const [orderBy, setOrderBy] = React.useState('confirmed');
   const [page, setPage] = React.useState(0);
@@ -152,45 +106,20 @@ const EnhancedTable = ({tidy}) => {
                 setOrderBy(property);
               }}
               rowCount={rows.length}
+              headCells={headCells}
             />
             <TableBody>
               {stableSort(rows, getComparator(order, orderBy))
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
-                  const labelId = `enhanced-table-checkbox-${index}`;
-
-                  return (
-                    <TableRow key={row.name}>
-                      <TableCell component="th" id={labelId} scope="row">
-                        {row.name}
-                      </TableCell>
-                      <TableCell>
-                        {tidy.format(row.population,2) }
-                      </TableCell>
-                      <TableCell>
-                        <strong>
-                          {tidy.format(row.confirmed, 2)}
-                        </strong>
-                      </TableCell>
-                      <TableCell>
-                        {tidy.format(row.confirmed_change,2) }
-                      </TableCell>
-                      <TableCell>
-                        <strong>
-                          {tidy.format(row.deaths,2)}
-                        </strong>
-                      </TableCell>
-                      <TableCell>
-                          {tidy.format(row.deaths_change)}</TableCell>
-                      { row.name != 'World' ?
-                      <TableCell>
-                        <Link className="button is-dark is-outlined is-size-7" to={'/' + row.name.toLowerCase().replace(/\s+/g, "-")}>
-                          Details
-                        </Link>
-                      </TableCell>
-                      : <></> }
-                    </TableRow>
-                  );
+                  if(pageTemplate == 'home'){
+                    console.log("WHYYYYY")
+                    return <EnhancedTableRowIndex row={row} index={index} tidy={tidy} key={index}/>
+                  }
+                  if(pageTemplate == 'advanced-country'){
+                    console.log("This should ne fring")
+                    return <EnhancedTableRowAdvancedCountry row={row} index={index} tidy={tidy} key={index}/>
+                  }
                 })}
 
             </TableBody>

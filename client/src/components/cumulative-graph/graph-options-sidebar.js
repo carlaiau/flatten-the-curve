@@ -1,14 +1,17 @@
 import React, { useContext } from 'react'
-import {GlobalStateContext} from "../context/GlobalContextProvider"
+import {GlobalStateContext} from "../../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
 const GraphOptionsSideBar = ({
-    max_count = 40, 
+    type_of_area = 'country',
+    areas = {},
+    max_area_count = 40, 
+    show_all_areas = false,
     field = 'confirmed', 
-    checkCountries = [], 
+    checkedAreas = [], 
     scale, 
-    min_cases,
-    min_case_options,
+    accumulateFrom,
+    accumulateOptions,
     growth,
     growth_options,
     
@@ -17,16 +20,35 @@ const GraphOptionsSideBar = ({
     checkFn,    // Callback for country select or non
     clearFn,    // Callback for clearing all countries
     allFn,     // Callback for selecting all countries
-    growthFn    // Callback for changing Growth
+    growthFn,    // Callback for changing Growth
+    maxCountFn
 }) => {
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
-    const countries_avaliable = (
-        field == 'confirmed' ? 
-            cumulative_confirmed[min_cases].filter(c => c) : 
-            cumulative_deaths[min_cases].filter( c => c ) 
-        ).slice(0,max_count)
+    const limit = show_all_areas ? 1000 : max_area_count
     
+    let areas_avaliable = []
+    if(type_of_area == 'country'){
+        areas_avaliable = (
+            field == 'confirmed' ? 
+                cumulative_confirmed[accumulateFrom].filter(c => c) : 
+                cumulative_deaths[accumulateFrom].filter( c => c ) 
+            )
+            .slice(0, limit)
+    }
+    else if(type_of_area == 'state'){
+        areas_avaliable = (
+            field == 'confirmed' ? 
+                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
+                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK') 
+            )
+            .slice(0, limit)
+    }
+    else{
+        areas_avaliable = {}
+    }
+
+
     const SideBar = styled('div')`
         .field{
             width: 100%;
@@ -62,8 +84,8 @@ const GraphOptionsSideBar = ({
                 <label className="label">{field == 'confirmed'? 'Cases': 'Deaths'} to accumulate from</label>
                 <div className="control">
                     <div className="select">
-                    <select value={min_cases} onChange={caseFn}>
-                        { min_case_options.map(option => <option value={option}>{option}</option>) }
+                    <select value={accumulateFrom} onChange={caseFn}>
+                        { accumulateOptions.map(option => <option value={option}>{option}</option>) }
                     </select>
                     </div>
                 </div>
@@ -79,13 +101,14 @@ const GraphOptionsSideBar = ({
                 </div>
             </div>
             <div className="field">
-                <label className="label">Countries</label>
+                <label className="label">{show_all_areas ? 'All' : `Top ${max_area_count}`} Countries</label>
+
                 <div className="check-container">
-                    {countries_avaliable.map(c => (
+                    {areas_avaliable.map(c => (
                         <label className="checkbox" key={c.name}>
                             <input 
                                 type="checkbox" name={c.name} 
-                                value={c.name} defaultChecked={checkCountries.includes(c.name)} 
+                                value={c.name} defaultChecked={checkedAreas.includes(c.name)} 
                                 onChange={checkFn}
                             />
                                 {c.name}
@@ -96,13 +119,18 @@ const GraphOptionsSideBar = ({
             <div className="columns">
                 <div className="column" style={{textAlign:'left'}}>
                     <button 
+                        className="button is-info has-text-white" style={{marginTop: '10px', marginRight: '10px'}} 
+                        onClick={maxCountFn}
+                    >
+                        <strong>{show_all_areas ? `List top ${max_area_count}` : 'List All'}</strong>    
+                    </button>
+                    <button 
                         className="button is-info has-text-white" style={{marginTop: '10px'}} 
-                        onClick={() => allFn(countries_avaliable)}
+                        onClick={() => allFn(areas_avaliable)}
                     >
                         <strong>Choose All</strong>    
                     </button>
-                </div>
-                <div className="column" style={{textAlign:'right'}}>
+                
                     <button className="button has-background-newt has-text-white" style={{marginTop: '10px'}} onClick={clearFn}>
                     <strong>Clear All</strong>    
                     </button>

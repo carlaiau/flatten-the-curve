@@ -1,13 +1,16 @@
 import React, { useContext } from 'react'
-import {GlobalStateContext} from "../context/GlobalContextProvider"
+import {GlobalStateContext} from "../../context/GlobalContextProvider"
 import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
-import CumulativeGraphTooltip from "../components/cumulative-graph-tooltip"
+import CumulativeGraphTooltip from "./cumulative-graph-tooltip"
 
 const CumulativeGraph = ({
-    max_count = 40, 
-    height, // height of the graph itself
-    width, // Width of the graph itself
-    countries_to_graph = [], 
+    type_of_area = 'country',
+    areas = [],
+    max_area_count = 40, 
+    show_all_areas = false,
+    height, 
+    width, 
+    areas_to_graph = [], 
     field = 'confirmed', 
     max_days = 36, 
     growth = {
@@ -15,7 +18,7 @@ const CumulativeGraph = ({
         value: 1.25992105
     }, 
     scale="log",
-    case_start
+    accumulateFrom
 
 }) => {
 
@@ -23,15 +26,27 @@ const CumulativeGraph = ({
     
     // Array of Objects 
     const ready_to_graph = [];
+    const limit = show_all_areas ? 1000 : max_area_count
 
-    const all_possible_countries = (
-        field == 'confirmed' ? cumulative_confirmed[case_start].filter(c => c) : 
-        cumulative_deaths[case_start].filter(c => c) 
-    ).slice(0, max_count)
+    let all_possible_areas = []
+    if(type_of_area == 'country'){
+        all_possible_areas = (
+            field == 'confirmed' ? cumulative_confirmed[accumulateFrom].filter(c => c) : 
+            cumulative_deaths[accumulateFrom].filter(c => c) 
+        ).slice(0,  limit )
+            
+    }
+    else if(type_of_area == 'state'){
+        all_possible_areas = (
+            field == 'confirmed' ? 
+                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
+                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK')
+            )
+            .slice(0, limit)
+    }
     
-
-    all_possible_countries
-        .filter(c => countries_to_graph.includes(c.name))
+    all_possible_areas
+        .filter(c => areas_to_graph.includes(c.name))
         
         .forEach((c) => {
             c.time_series.forEach(time => {
@@ -44,7 +59,6 @@ const CumulativeGraph = ({
             else ready_to_graph[time.num_day][c.name] = time[field]
 
         })
-        
     })
 
     // This is to ensure that colors do not change as the number of countries gets added / removed
@@ -62,7 +76,7 @@ const CumulativeGraph = ({
         "#833471", "#EE5A24", "#9980FA", "#009432", "#0652DD", 
         "#6F1E51", "#EA2027", "#5758BB", "#006266", "#1B1464",
     ]
-    all_possible_countries.forEach( (c, i) => {
+    all_possible_areas.forEach( (c, i) => {
         color_definitions[c.name] = colors[i]
     })
     
@@ -71,11 +85,11 @@ const CumulativeGraph = ({
     
 
     // Make one big array of objects 
-    if(countries_to_graph.length > 0){
+    if(areas_to_graph.length > 0){
         for(let i = 0; i < max_days; i++){
             if(i == 0){
                 if(typeof ready_to_graph[i] != 'undefined')
-                    ready_to_graph[i][growth.label] = case_start
+                    ready_to_graph[i][growth.label] = accumulateFrom
             }
             else if(typeof ready_to_graph[i] != 'undefined')
                 ready_to_graph[i][growth.label] = (ready_to_graph[i - 1][growth.label] * growth.value).toFixed(0)
@@ -90,7 +104,7 @@ const CumulativeGraph = ({
     }
 
 
-    if(countries_to_graph.length == 0) return (
+    if(areas_to_graph.length == 0) return (
         <>
             <LineChart width={width} height={height}  margin={{right: 20}}>
                 <Tooltip/>
@@ -106,13 +120,13 @@ const CumulativeGraph = ({
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}>
-                    <Label value={`Days since ${case_start}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
+                    <Label value={`Days since ${accumulateFrom}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
                 </XAxis>
                 {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth.label).map( (key, i) => {
                     return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
                 })}
                 {
-                    countries_to_graph.length > 0 ? (
+                    areas_to_graph.length > 0 ? (
                         <Line type="monotone" stroke='#aaa' 
                             dataKey={growth.label} strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
                     ): <></>
