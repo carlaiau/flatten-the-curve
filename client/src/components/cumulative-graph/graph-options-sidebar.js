@@ -3,6 +3,8 @@ import {GlobalStateContext} from "../../context/GlobalContextProvider"
 import styled from '@emotion/styled'
 
 const GraphOptionsSideBar = ({
+    type_of_area = 'country',
+    areas = {},
     max_area_count = 40, 
     show_all_areas = false,
     field = 'confirmed', 
@@ -24,13 +26,29 @@ const GraphOptionsSideBar = ({
     const {cumulative_confirmed, cumulative_deaths} = useContext(GlobalStateContext)
     
     const limit = show_all_areas ? 1000 : max_area_count
-    const countries_avaliable = (
-        field == 'confirmed' ? 
-            cumulative_confirmed[accumulateFrom].filter(c => c) : 
-            cumulative_deaths[accumulateFrom].filter( c => c ) 
-        )
-        .slice(0, limit)
     
+    let areas_avaliable = []
+    if(type_of_area == 'country'){
+        areas_avaliable = (
+            field == 'confirmed' ? 
+                cumulative_confirmed[accumulateFrom].filter(c => c) : 
+                cumulative_deaths[accumulateFrom].filter( c => c ) 
+            )
+            .slice(0, limit)
+    }
+    else if(type_of_area == 'state'){
+        areas_avaliable = (
+            field == 'confirmed' ? 
+                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
+                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK') 
+            )
+            .slice(0, limit)
+    }
+    else{
+        areas_avaliable = {}
+    }
+
+
     const SideBar = styled('div')`
         .field{
             width: 100%;
@@ -86,7 +104,7 @@ const GraphOptionsSideBar = ({
                 <label className="label">{show_all_areas ? 'All' : `Top ${max_area_count}`} Countries</label>
 
                 <div className="check-container">
-                    {countries_avaliable.map(c => (
+                    {areas_avaliable.map(c => (
                         <label className="checkbox" key={c.name}>
                             <input 
                                 type="checkbox" name={c.name} 
@@ -108,7 +126,7 @@ const GraphOptionsSideBar = ({
                     </button>
                     <button 
                         className="button is-info has-text-white" style={{marginTop: '10px'}} 
-                        onClick={() => allFn(countries_avaliable)}
+                        onClick={() => allFn(areas_avaliable)}
                     >
                         <strong>Choose All</strong>    
                     </button>

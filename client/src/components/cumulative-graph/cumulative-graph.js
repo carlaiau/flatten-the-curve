@@ -4,6 +4,8 @@ import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
 import CumulativeGraphTooltip from "./cumulative-graph-tooltip"
 
 const CumulativeGraph = ({
+    type_of_area = 'country',
+    areas = [],
     max_area_count = 40, 
     show_all_areas = false,
     height, 
@@ -25,13 +27,25 @@ const CumulativeGraph = ({
     // Array of Objects 
     const ready_to_graph = [];
     const limit = show_all_areas ? 1000 : max_area_count
-    const all_possible_countries = (
-        field == 'confirmed' ? cumulative_confirmed[accumulateFrom].filter(c => c) : 
-        cumulative_deaths[accumulateFrom].filter(c => c) 
-    )
-    .slice(0,  limit )
 
-    all_possible_countries
+    let all_possible_areas = []
+    if(type_of_area == 'country'){
+        all_possible_areas = (
+            field == 'confirmed' ? cumulative_confirmed[accumulateFrom].filter(c => c) : 
+            cumulative_deaths[accumulateFrom].filter(c => c) 
+        ).slice(0,  limit )
+            
+    }
+    else if(type_of_area == 'state'){
+        all_possible_areas = (
+            field == 'confirmed' ? 
+                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
+                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK')
+            )
+            .slice(0, limit)
+    }
+    
+    all_possible_areas
         .filter(c => areas_to_graph.includes(c.name))
         
         .forEach((c) => {
@@ -62,7 +76,7 @@ const CumulativeGraph = ({
         "#833471", "#EE5A24", "#9980FA", "#009432", "#0652DD", 
         "#6F1E51", "#EA2027", "#5758BB", "#006266", "#1B1464",
     ]
-    all_possible_countries.forEach( (c, i) => {
+    all_possible_areas.forEach( (c, i) => {
         color_definitions[c.name] = colors[i]
     })
     

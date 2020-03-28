@@ -33,7 +33,7 @@ const SetupAdvancedCountryTable  = (areas) => {
     
 
     const headCells = [
-        { id: 'name', numeric: false, disablePadding: false, label: 'Country', class: 'country' },
+        { id: 'name', numeric: false, disablePadding: false, label: 'State', class: 'country' },
         { id: 'confirmed', numeric: true, disablePadding: false, label: 'Confirmed', class: 'confirmed' },
         { id: 'confirmed_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
         { id: 'deaths', numeric: true, disablePadding: false, label: 'Deaths', class: 'deaths' },

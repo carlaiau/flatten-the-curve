@@ -27028,12 +27028,24 @@
         "deaths_per_mil": 3.5547547803917428,
         "hospitalized_per_mil": 30.96579594165842,
         "tests_per_mil": 1587.3768169725597
+      },
+      {
+        "date": "2020-03-27T00:00:00Z",
+        "confirmed": 99447,
+        "deaths": 1530,
+        "hospitalized": 12035,
+        "tests": 626667,
+        "old_date": 20200327,
+        "confirmed_per_mil": 303.9636273823023,
+        "deaths_per_mil": 4.676504569216996,
+        "hospitalized_per_mil": 36.78544607223957,
+        "tests_per_mil": 1915.432084233665
       }
     ],
-    "highest_confirmed": 80735,
-    "highest_deaths": 1163,
-    "highest_hospitalized": 10131,
-    "highest_tests": 519338
+    "highest_confirmed": 99447,
+    "highest_deaths": 1530,
+    "highest_hospitalized": 12035,
+    "highest_tests": 626667
   },
   {
     "name": "New Zealand",

@@ -9,7 +9,8 @@ export default class CumulativeGraphContainer extends React.Component{
         super(props);
 
         this.state = {
-
+            type_of_area: props.type_of_area || "country",
+            areas: props.areas || [],
             checkedAreas: props.checkedAreas,
             accumulateFrom: props.accumulateFrom,
             accumulateOptions: props.accumulateOptions,
@@ -178,6 +179,9 @@ export default class CumulativeGraphContainer extends React.Component{
                     <div className="box">
                         <GraphOptionsSideBar
                             field={this.props.field}
+                            type_of_area={this.state.type_of_area}
+                            areas={this.state.areas}
+                            
                             checkedAreas={this.state.checkedAreas}
                             max_area_count={this.state.max_area_count} 
                             
@@ -205,6 +209,9 @@ export default class CumulativeGraphContainer extends React.Component{
                         field={this.props.field}
                         width={this.props.width} 
                         height={this.props.height} 
+                        
+                        type_of_area={this.state.type_of_area}
+                        areas={this.state.areas}
                         scale={this.state.scale} 
                         accumulateFrom={this.state.accumulateFrom}
                         max_area_count={this.state.max_area_count} 
