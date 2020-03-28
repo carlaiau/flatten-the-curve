@@ -39,7 +39,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
     
     if(filteredData.length){
       return (
-        <LineChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10 }}>
+        <LineChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10, left: 10 }}>
           <XAxis 
             dataKey="index"
             name="Days"
