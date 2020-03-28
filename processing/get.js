@@ -402,10 +402,6 @@ const getUnitedStates = (json_data) => {
       states.push({
         name: state,
         time_series: time_series.reverse().map(day => ({
-          //
-          // Set the date to "2018-09-01T16:01:36.386Z"
-          //const utcDate = zonedTimeToUtc('2018-09-01 18:01:36.386', 'Europe/Berlin')
-          
           date: format(parse(day.date, 'yyyyMMdd', new Date() ), 'yyyy-MM-dd') + 'T00:00:00Z',
           confirmed: day.positive,
           //confirmed_per_mil,
@@ -422,6 +418,9 @@ const getUnitedStates = (json_data) => {
       })
     })
 
+    
+
+
     const total_time_series = {}
 
     states.forEach(state => {
@@ -433,7 +432,7 @@ const getUnitedStates = (json_data) => {
           total_time_series[day.old_date].tests += day.tests
         }
         else{
-          total_time_series[day.old_date] = day
+          total_time_series[day.old_date] = Object.assign({}, day)
         }
       })
     })
@@ -441,7 +440,7 @@ const getUnitedStates = (json_data) => {
     const US_time_series = _.map(total_time_series, day => day)
     const most_recent_day = US_time_series[US_time_series.length -1]
     const total = {
-      name: "United States",
+      name: "All",
       population: 327167434,
       time_series: US_time_series,
       highest_confirmed: most_recent_day.confirmed,
@@ -459,6 +458,8 @@ const getUnitedStates = (json_data) => {
 
     states.push(total)
     
+
+    console.log(states[0])
     return {
       states,
       total_only: total

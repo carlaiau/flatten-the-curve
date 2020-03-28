@@ -39,8 +39,8 @@ const CumulativeGraph = ({
     else if(type_of_area == 'state'){
         all_possible_areas = (
             field == 'confirmed' ? 
-                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
-                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK')
+                areas.confirmed[accumulateFrom].filter(c => c) : 
+                areas.deaths[accumulateFrom].filter( c => c )
             )
             .slice(0, limit)
     }

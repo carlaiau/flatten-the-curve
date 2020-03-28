@@ -39,8 +39,8 @@ const GraphOptionsSideBar = ({
     else if(type_of_area == 'state'){
         areas_avaliable = (
             field == 'confirmed' ? 
-                areas.confirmed[accumulateFrom].filter(c => c).filter(c => c.name != 'AK') : 
-                areas.deaths[accumulateFrom].filter( c => c ).filter(c => c.name != 'AK') 
+                areas.confirmed[accumulateFrom].filter(c => c) : 
+                areas.deaths[accumulateFrom].filter( c => c ) 
             )
             .slice(0, limit)
     }
