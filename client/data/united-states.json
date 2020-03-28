@@ -258,12 +258,12 @@
         "date": "2020-03-27T00:00:00Z",
         "confirmed": 99447,
         "deaths": 1530,
-        "hospitalized": 12035,
+        "hospitalized": 13717,
         "tests": 626667,
         "old_date": 20200327,
         "confirmed_per_mil": 303.9636273823023,
         "deaths_per_mil": 4.676504569216996,
-        "hospitalized_per_mil": 36.78544607223957,
+        "hospitalized_per_mil": 41.92654455944414,
         "tests_per_mil": 1915.432084233665
       }
     ],
@@ -6995,14 +6995,14 @@
         "date": "2020-03-27T00:00:00Z",
         "confirmed": 44635,
         "deaths": 519,
-        "hospitalized": 6844,
+        "hospitalized": 8526,
         "tests": 145753,
         "old_date": 20200327
       }
     ],
     "highest_confirmed": 44635,
     "highest_deaths": 519,
-    "highest_hospitalized": 6844,
+    "highest_hospitalized": 8526,
     "highest_tests": 145753
   },
   {
@@ -10523,18 +10523,18 @@
         "date": "2020-03-27T00:00:00Z",
         "confirmed": 99447,
         "deaths": 1530,
-        "hospitalized": 12035,
+        "hospitalized": 13717,
         "tests": 626667,
         "old_date": 20200327,
         "confirmed_per_mil": 303.9636273823023,
         "deaths_per_mil": 4.676504569216996,
-        "hospitalized_per_mil": 36.78544607223957,
+        "hospitalized_per_mil": 41.92654455944414,
         "tests_per_mil": 1915.432084233665
       }
     ],
     "highest_confirmed": 99447,
     "highest_deaths": 1530,
-    "highest_hospitalized": 12035,
+    "highest_hospitalized": 13717,
     "highest_tests": 626667
   }
 ]

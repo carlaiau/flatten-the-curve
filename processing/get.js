@@ -1,104 +1,135 @@
 const csv = require('csv-parser')
 const fs = require('fs')
 const _ = require('lodash')
+const Q = require('q')
 const request = require('request')
 const { parse, format } = require('date-fns')
-const { zonedTimeToUtc } = require('date-fns-tz')
 
 
-
-const createFiles = (country_path, cum_path, us_path, us_cum_path) => {
+const createFiles = (output_folder) => {
   let confirmed = [];
   let deaths = []
   let population_data = []
+  
+  let us_data = {}
+  let us_cum = {}
+  let nz_data = {}
 
-  request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
-  .pipe(csv())
-  .on('data', data => { confirmed.push(data) })
-  .on('end', () => {    
-    request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
-    .pipe(csv())
-    .on('data', data => { deaths.push(data) })
-    .on('end', () => {    
+  let country_array = []
+  let cumulative = {}
+  
+  Q.all([
+    new Promise( (resolve) => {
+      request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv')
+      .pipe(csv())
+      .on('data', data => { confirmed.push(data) })
+      .on('end', () => {  
+        console.log("Q 1")
+        resolve()
+      })
+    }),
+    new Promise( (resolve) => {
+      request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
+      .pipe(csv())
+      .on('data', data => { deaths.push(data) })
+      .on('end', () => {    
+        console.log("Q 2")
+        resolve()
+      })
+    }),
+    new Promise( (resolve) => {
       fs.createReadStream('data/population_world_bank.csv')
       .pipe(csv())
       .on('data', data => { population_data.push(data) })
       .on('end', () => {  
-        countries = merge_object(
-          restructure_inputs(confirmed), 
-          restructure_inputs(deaths), 
-        )
-
-
-        // Remove the empty time series data
-        _.forEach(countries, (data) => {
-          data.time_series = data.time_series.filter( (t) => t.confirmed != 0 )
-        })
-        // convert stupid date strings to actual dates 
-        _.forEach(countries, (data) => {
-          data.time_series.map( (t) => {
-            t.date = format(parse(t.date, 'MM/dd/yy', new Date()),'yyyy-MM-dd') + 'T00:00:00.000Z'
-          })
-        })
-        
-        
-        // Relabel country names
-        _.forEach(countries, (c) => {
-            c.name = 
-              c.name == 'US'            ? 'United States' : 
-              c.name == 'Korea, South'  ? 'South Korea' : 
-              c.name == 'Czechia'       ? 'Czech Republic' :
-              c.name
-        })
-        
-        countries = add_population_data(countries, population_data)
-
-        
-        country_array = _.map(countries, (country) => country)
-
-        // Remove NZ and remove US and re-add below
-        country_array = country_array.filter(country => country.name != 'United States' && country.name != 'New Zealand')
-
-        // Get covid-tracker data
-        
-        request('https://covidtracking.com/api/states/daily', (err, _, body) => {    
-          if(err) return console.log(err);
-          const us_data = getUnitedStates(JSON.parse(body));
-          const us_cum = getCumulatives(us_data.states)
-          country_array.push(us_data.total_only)
-          
-          fs.readFile('data/new-zealand.json', (err, data) => {
-            if (err) throw err;
-            let new_zealand = JSON.parse(data);
-            country_array.push(new_zealand)
-            const cumulative = getCumulatives(country_array)
-          
-            fs.writeFile(country_path, JSON.stringify(country_array , null, 2), function(err) {
-              if(err) return console.log(err);
-              console.log("Country file was saved!");
-            }); 
-            fs.writeFile(cum_path, JSON.stringify(cumulative, null, 2), function(err) {
-              if(err) return console.log(err);
-              console.log("Cumulative was saved!");
-            }); 
-            fs.writeFile(us_path, JSON.stringify(us_data.states, null, 2), function(err) {
-              if(err) return console.log(err);
-              console.log("US State data was saved!");
-            }); 
-            fs.writeFile(us_cum_path, JSON.stringify(us_cum, null, 2), function(err) {
-              if(err) return console.log(err);
-              console.log("US Cum state data was saved!");
-            }); 
-        });
-        });
-
-        
-
-        
-        
+        console.log("Q 3")
+        resolve()  
+      })
+    }),
+    new Promise( (resolve, reject) => {
+      request('https://covidtracking.com/api/states/daily', (err, _, body) => {    
+        if (err) reject(err);
+        us_data = getUnitedStates(JSON.parse(body));
+        us_cum = getCumulatives(us_data.states)
+        console.log("Q US")
+        resolve()
+      })
+    }),
+    new Promise( (resolve, reject) => {
+      fs.readFile('data/new-zealand.json', (err, data) => {
+        if (err) reject(err);
+        nz_data = JSON.parse(data);
+        console.log("Q NZ")
+        resolve()
       })
     })
-  });
+  ])
+  .then(() => {
+    countries = merge_object( restructure_inputs(confirmed), restructure_inputs(deaths) )
+    
+    // Remove the empty time series data
+    _.forEach(countries, c => {
+      c.time_series = c.time_series.filter( (t) => t.confirmed != 0 )
+    })
+    
+    // convert stupid date strings to actual dates 
+    _.forEach(countries, c => {
+      c.time_series.map( t => {
+        t.date = format(parse(t.date, 'MM/dd/yy', new Date()),'yyyy-MM-dd') + 'T00:00:00.000Z'
+      })
+    })
+    
+    // Relabel country names
+    _.forEach(countries, c => {
+      c.name = 
+        c.name == 'US'            ? 'United States' : 
+        c.name == 'Korea, South'  ? 'South Korea' : 
+        c.name == 'Czechia'       ? 'Czech Republic' :
+        c.name
+    })
+
+    countries = add_population_data(countries, population_data)
+
+    country_array = _.map(countries, (country) => country)
+
+    // Remove NZ and remove US and re-add below
+    country_array = country_array.filter(country => country.name != 'United States' && country.name != 'New Zealand')
+
+    country_array.push(us_data.total_only)
+    country_array.push(nz_data)
+    cumulative = getCumulatives(country_array)
+  })
+  
+  .then(() => {
+    fs.writeFile(output_folder + '/countries.json', JSON.stringify(country_array , null, 2), function(err) {
+      if(err) return console.log(err);
+      console.log("Country file was saved!");
+    }); 
+    fs.writeFile(output_folder + '/cumulative.json', JSON.stringify(cumulative, null, 2), function(err) {
+      if(err) return console.log(err);
+      console.log("Cumulative was saved!");
+    }); 
+    fs.writeFile(output_folder + '/united-states.json', JSON.stringify(us_data.states, null, 2), function(err) {
+      if(err) return console.log(err);
+      console.log("US State data was saved!");
+    }); 
+    fs.writeFile(output_folder + '/united-states-cum.json', JSON.stringify(us_cum, null, 2), function(err) {
+      if(err) return console.log(err);
+      console.log("US Cum state data was saved!");
+    }); 
+  })
+  
+  .catch( (err) => {
+    console.log(err)
+  })
+  .done()
+    
+        
+        
+    
+        
+        
+        
 }
 
 
@@ -438,8 +469,8 @@ const getUnitedStates = (json_data) => {
 
 
 
-if(process.argv.length == 6 ) createFiles(process.argv[2], process.argv[3], process.argv[4], process.argv[5])
+if(process.argv.length == 3 ) createFiles(process.argv[2])
 else{
-  console.log("Whoops!Usage:\nnode get.js country.out cumulative.out")
+  console.log("Whoops!Usage:\nnode get.js path_to_output_folder")
   getUnitedStates()
 }
