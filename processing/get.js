@@ -24,7 +24,6 @@ const createFiles = (output_folder) => {
       .pipe(csv())
       .on('data', data => { confirmed.push(data) })
       .on('end', () => {  
-
         resolve()
       })
     }),
@@ -49,7 +48,6 @@ const createFiles = (output_folder) => {
         if (err) reject(err);
         us_data = getUnitedStates(JSON.parse(body));
         us_cum = getCumulatives(us_data.states)
-        console.log("Q US")
         resolve()
       })
     }),
@@ -57,7 +55,6 @@ const createFiles = (output_folder) => {
       fs.readFile('data/new-zealand.json', (err, data) => {
         if (err) reject(err);
         nz_data = JSON.parse(data);
-        console.log("Q NZ")
         resolve()
       })
     })
@@ -458,8 +455,6 @@ const getUnitedStates = (json_data) => {
 
     states.push(total)
     
-
-    console.log(states[0])
     return {
       states,
       total_only: total

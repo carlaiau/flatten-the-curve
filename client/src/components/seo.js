@@ -49,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         },
         { 
           property:`og:image`,
-          content: logo
+          content: 'https://flattenthecurve.co.nz' + logo
         },
         {
           property: `og:type`,
@@ -61,15 +61,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: '@carlaiau',
         },
         {
           name: `twitter:title`,
           content: title,
-        },
-        {
-          name: 'twitter:image',
-          content: logo
         },
         {
           name: `twitter:description`,
