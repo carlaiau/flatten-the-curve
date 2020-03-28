@@ -231,7 +231,7 @@ export default class AdvancedCountryPage extends React.Component{
 
 
         return (<>
-            <SEO title="COVID19: United States Update"/>
+            <SEO title="United States COVID-19 Update: State level cumulative graphs and comparisons"/>
             <Hero selected_country="United States"/>
             <section className="section">
                 <div className="container">
@@ -311,7 +311,6 @@ export default class AdvancedCountryPage extends React.Component{
                             field="confirmed"
                             type_of_area="state"
                             checkedAreas={[
-                                'All',
                                 'NY',
                                 'NJ',
                                 'CA',
@@ -340,7 +339,6 @@ export default class AdvancedCountryPage extends React.Component{
                             field="deaths"
                             type_of_area="state"
                             checkedAreas={[
-                                'All',
                                 'NY',
                                 'NJ',
                                 'CA',

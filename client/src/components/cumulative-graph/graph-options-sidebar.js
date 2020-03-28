@@ -101,7 +101,14 @@ const GraphOptionsSideBar = ({
                 </div>
             </div>
             <div className="field">
-                <label className="label">{show_all_areas ? 'All' : `Top ${max_area_count}`} Countries</label>
+                <label className="label">
+                    {type_of_area == 'contry' ? 
+                
+                        show_all_areas ? 'All' : `Top ${max_area_count}`  + 'Countries'
+                        :
+                        'States'
+                    }
+                </label>
 
                 <div className="check-container">
                     {areas_avaliable.map(c => (
@@ -118,12 +125,15 @@ const GraphOptionsSideBar = ({
             </div>
             <div className="columns">
                 <div className="column" style={{textAlign:'left'}}>
-                    <button 
-                        className="button is-info has-text-white" style={{marginTop: '10px', marginRight: '10px'}} 
-                        onClick={maxCountFn}
-                    >
-                        <strong>{show_all_areas ? `List top ${max_area_count}` : 'List All'}</strong>    
-                    </button>
+                    {type_of_area == 'country' ? 
+                        <button 
+                            className="button is-info has-text-white" style={{marginTop: '10px', marginRight: '10px'}} 
+                            onClick={maxCountFn}
+                        >
+                            <strong>{show_all_areas ? `List top ${max_area_count}` : 'List All'}</strong>    
+                        </button>
+                    : <></>
+                    }
                     <button 
                         className="button is-info has-text-white" style={{marginTop: '10px'}} 
                         onClick={() => allFn(areas_avaliable)}
