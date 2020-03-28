@@ -102,9 +102,9 @@ const GraphOptionsSideBar = ({
             </div>
             <div className="field">
                 <label className="label">
-                    {type_of_area == 'contry' ? 
+                    {type_of_area == 'country' ? 
                 
-                        show_all_areas ? 'All' : `Top ${max_area_count}`  + 'Countries'
+                        show_all_areas ? 'All' : `Top ${max_area_count}`  + ' Countries'
                         :
                         'States'
                     }
