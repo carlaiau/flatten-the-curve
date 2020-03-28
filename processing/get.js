@@ -60,14 +60,18 @@ const createFiles = (output_folder) => {
     })
   ])
   .then(() => {
-    countries = merge_object( restructure_inputs(confirmed), restructure_inputs(deaths) )
+    countries = merge_object( 
+      restructure_inputs(confirmed), 
+      restructure_inputs(deaths),
+      'Country/Region'
+    )
     
     // Remove the empty time series data
     _.forEach(countries, c => {
       c.time_series = c.time_series.filter( (t) => t.confirmed != 0 )
     })
     
-    // convert stupid date strings to actual dates 
+    // convert date strings to actual dates 
     _.forEach(countries, c => {
       c.time_series.map( t => {
         t.date = format(parse(t.date, 'MM/dd/yy', new Date()),'yyyy-MM-dd') + 'T00:00:00.000Z'
@@ -88,7 +92,20 @@ const createFiles = (output_folder) => {
     country_array = _.map(countries, (country) => country)
 
     // Remove NZ and remove US and re-add below
-    country_array = country_array.filter(country => country.name != 'United States' && country.name != 'New Zealand')
+    country_array = country_array.filter(
+      country => country.name != 'United States' && 
+      country.name != 'New Zealand' &&
+      country.name != 'Canada' &&
+      country.name != 'Australia' &&
+      country.name != 'China'
+    )
+
+    restructure_region({
+      confirmed: confirmed.filter( r => r['Country/Region'] == 'Canada'),
+      deaths: deaths.filter(r => ['Country/Region'] == 'Canada')
+    })
+
+
 
     country_array.push(us_data.total_only)
     country_array.push(nz_data)
@@ -127,7 +144,13 @@ const createFiles = (output_folder) => {
         
 }
 
+// Used to structure the countries by state
+const restructure_region = (region) => {
+  console.log(region)
+  states = []
 
+  
+}
 
 const add_population_data = (areas, population_data) => {
 
@@ -147,11 +170,11 @@ const add_population_data = (areas, population_data) => {
   return areas
 }
 
-const merge_object = (confirmed, deaths) => {
+const merge_object = (confirmed, deaths, field_to_use) => {
   let combined = {}
   
   confirmed.forEach( (country) => {
-    let name = country['Country/Region'] 
+    let name = country[field_to_use] 
     
     
     highest_confirmed = 0
@@ -171,7 +194,7 @@ const merge_object = (confirmed, deaths) => {
 
   deaths.forEach( (country) => {
     highest_deaths = 0
-    const name = country['Country/Region']
+    const name = country[field_to_use]
     _.forEach(country, (val, key) => {
       if(validKey(key)){
         if(combined.hasOwnProperty(name)){
