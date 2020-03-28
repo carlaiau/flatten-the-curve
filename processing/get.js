@@ -24,7 +24,7 @@ const createFiles = (output_folder) => {
       .pipe(csv())
       .on('data', data => { confirmed.push(data) })
       .on('end', () => {  
-        console.log("Q 1")
+
         resolve()
       })
     }),
@@ -33,7 +33,6 @@ const createFiles = (output_folder) => {
       .pipe(csv())
       .on('data', data => { deaths.push(data) })
       .on('end', () => {    
-        console.log("Q 2")
         resolve()
       })
     }),
@@ -42,7 +41,6 @@ const createFiles = (output_folder) => {
       .pipe(csv())
       .on('data', data => { population_data.push(data) })
       .on('end', () => {  
-        console.log("Q 3")
         resolve()  
       })
     }),

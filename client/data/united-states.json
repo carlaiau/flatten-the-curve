@@ -256,21 +256,33 @@
       },
       {
         "date": "2020-03-27T00:00:00Z",
-        "confirmed": 99447,
+        "confirmed": 99413,
         "deaths": 1530,
         "hospitalized": 13717,
-        "tests": 626667,
+        "tests": 626633,
         "old_date": 20200327,
-        "confirmed_per_mil": 303.9636273823023,
+        "confirmed_per_mil": 303.859705058542,
         "deaths_per_mil": 4.676504569216996,
         "hospitalized_per_mil": 41.92654455944414,
-        "tests_per_mil": 1915.432084233665
+        "tests_per_mil": 1915.3281619099043
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 118234,
+        "deaths": 1965,
+        "hospitalized": 16729,
+        "tests": 735704,
+        "old_date": 20200328,
+        "confirmed_per_mil": 361.3868243377793,
+        "deaths_per_mil": 6.006099005563004,
+        "hospitalized_per_mil": 51.13283982903995,
+        "tests_per_mil": 2248.707919994262
       }
     ],
-    "highest_confirmed": 69,
-    "highest_deaths": 1,
-    "highest_hospitalized": 3,
-    "highest_tests": 2388
+    "highest_confirmed": 85,
+    "highest_deaths": 2,
+    "highest_hospitalized": 5,
+    "highest_tests": 2921
   },
   {
     "name": "AL",
@@ -442,12 +454,20 @@
         "hospitalized": null,
         "tests": 4771,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 696,
+        "deaths": 3,
+        "hospitalized": null,
+        "tests": 4880,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 587,
+    "highest_confirmed": 696,
     "highest_deaths": 3,
     "highest_hospitalized": null,
-    "highest_tests": 4771
+    "highest_tests": 4880
   },
   {
     "name": "AR",
@@ -627,12 +647,20 @@
         "hospitalized": 48,
         "tests": 1926,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 404,
+        "deaths": 5,
+        "hospitalized": 48,
+        "tests": 3342,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 381,
-    "highest_deaths": 3,
+    "highest_confirmed": 404,
+    "highest_deaths": 5,
     "highest_hospitalized": 48,
-    "highest_tests": 1926
+    "highest_tests": 3342
   },
   {
     "name": "AS",
@@ -732,6 +760,14 @@
         "hospitalized": null,
         "tests": 0,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 0,
+        "deaths": 0,
+        "hospitalized": null,
+        "tests": 0,
+        "old_date": 20200328
       }
     ],
     "highest_confirmed": 0,
@@ -941,12 +977,20 @@
         "hospitalized": null,
         "tests": 8191,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 873,
+        "deaths": 15,
+        "hospitalized": null,
+        "tests": 8328,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 736,
-    "highest_deaths": 13,
+    "highest_confirmed": 873,
+    "highest_deaths": 15,
     "highest_hospitalized": null,
-    "highest_tests": 8191
+    "highest_tests": 8328
   },
   {
     "name": "CA",
@@ -1142,12 +1186,20 @@
         "hospitalized": 746,
         "tests": 21259,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 4643,
+        "deaths": 101,
+        "hospitalized": 1034,
+        "tests": 25192,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 3879,
-    "highest_deaths": 78,
-    "highest_hospitalized": 746,
-    "highest_tests": 21259
+    "highest_confirmed": 4643,
+    "highest_deaths": 101,
+    "highest_hospitalized": 1034,
+    "highest_tests": 25192
   },
   {
     "name": "CO",
@@ -1335,12 +1387,20 @@
         "hospitalized": 184,
         "tests": 10122,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 1734,
+        "deaths": 31,
+        "hospitalized": 239,
+        "tests": 11676,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 1430,
-    "highest_deaths": 24,
-    "highest_hospitalized": 184,
-    "highest_tests": 10122
+    "highest_confirmed": 1734,
+    "highest_deaths": 31,
+    "highest_hospitalized": 239,
+    "highest_tests": 11676
   },
   {
     "name": "CT",
@@ -1512,6 +1572,14 @@
         "hospitalized": 173,
         "tests": 8400,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 1291,
+        "deaths": 27,
+        "hospitalized": 173,
+        "tests": 8400,
+        "old_date": 20200328
       }
     ],
     "highest_confirmed": 1291,
@@ -1705,12 +1773,20 @@
         "hospitalized": null,
         "tests": 2164,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 304,
+        "deaths": 4,
+        "hospitalized": null,
+        "tests": 2515,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 267,
-    "highest_deaths": 3,
+    "highest_confirmed": 304,
+    "highest_deaths": 4,
     "highest_hospitalized": null,
-    "highest_tests": 2164
+    "highest_tests": 2515
   },
   {
     "name": "DE",
@@ -1890,12 +1966,20 @@
         "hospitalized": 15,
         "tests": 199,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 214,
+        "deaths": 3,
+        "hospitalized": 31,
+        "tests": 250,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 163,
-    "highest_deaths": 2,
-    "highest_hospitalized": 15,
-    "highest_tests": 199
+    "highest_confirmed": 214,
+    "highest_deaths": 3,
+    "highest_hospitalized": 31,
+    "highest_tests": 250
   },
   {
     "name": "FL",
@@ -2091,12 +2175,20 @@
         "hospitalized": 456,
         "tests": 30951,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 3763,
+        "deaths": 54,
+        "hospitalized": 526,
+        "tests": 39129,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 2765,
-    "highest_deaths": 34,
-    "highest_hospitalized": 456,
-    "highest_tests": 30951
+    "highest_confirmed": 3763,
+    "highest_deaths": 54,
+    "highest_hospitalized": 526,
+    "highest_tests": 39129
   },
   {
     "name": "GA",
@@ -2292,12 +2384,20 @@
         "hospitalized": 566,
         "tests": 9865,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 2366,
+        "deaths": 69,
+        "hospitalized": 617,
+        "tests": 11051,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 2001,
-    "highest_deaths": 64,
-    "highest_hospitalized": 566,
-    "highest_tests": 9865
+    "highest_confirmed": 2366,
+    "highest_deaths": 69,
+    "highest_hospitalized": 617,
+    "highest_tests": 11051
   },
   {
     "name": "GU",
@@ -2397,12 +2497,20 @@
         "hospitalized": 11,
         "tests": 350,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 55,
+        "deaths": 1,
+        "hospitalized": 15,
+        "tests": 354,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 51,
+    "highest_confirmed": 55,
     "highest_deaths": 1,
-    "highest_hospitalized": 11,
-    "highest_tests": 350
+    "highest_hospitalized": 15,
+    "highest_tests": 354
   },
   {
     "name": "HI",
@@ -2574,12 +2682,20 @@
         "hospitalized": 7,
         "tests": 4463,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 120,
+        "deaths": 0,
+        "hospitalized": 8,
+        "tests": 4477,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 106,
-    "highest_deaths": null,
-    "highest_hospitalized": 7,
-    "highest_tests": 4463
+    "highest_confirmed": 120,
+    "highest_deaths": 0,
+    "highest_hospitalized": 8,
+    "highest_tests": 4477
   },
   {
     "name": "IA",
@@ -2759,12 +2875,20 @@
         "hospitalized": 50,
         "tests": 3975,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 298,
+        "deaths": 3,
+        "hospitalized": 61,
+        "tests": 4673,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 235,
+    "highest_confirmed": 298,
     "highest_deaths": 3,
-    "highest_hospitalized": 50,
-    "highest_tests": 3975
+    "highest_hospitalized": 61,
+    "highest_tests": 4673
   },
   {
     "name": "ID",
@@ -2936,12 +3060,20 @@
         "hospitalized": null,
         "tests": 2857,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 230,
+        "deaths": 4,
+        "hospitalized": 25,
+        "tests": 3572,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 189,
-    "highest_deaths": 3,
-    "highest_hospitalized": null,
-    "highest_tests": 2857
+    "highest_confirmed": 230,
+    "highest_deaths": 4,
+    "highest_hospitalized": 25,
+    "highest_tests": 3572
   },
   {
     "name": "IL",
@@ -3132,17 +3264,25 @@
       },
       {
         "date": "2020-03-27T00:00:00Z",
-        "confirmed": 3060,
+        "confirmed": 3026,
         "deaths": 34,
         "hospitalized": null,
-        "tests": 21576,
+        "tests": 21542,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 3491,
+        "deaths": 47,
+        "hospitalized": null,
+        "tests": 25491,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 3060,
-    "highest_deaths": 34,
+    "highest_confirmed": 3491,
+    "highest_deaths": 47,
     "highest_hospitalized": null,
-    "highest_tests": 21576
+    "highest_tests": 25491
   },
   {
     "name": "IN",
@@ -3322,12 +3462,20 @@
         "hospitalized": null,
         "tests": 6936,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 1232,
+        "deaths": 31,
+        "hospitalized": null,
+        "tests": 8407,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 981,
-    "highest_deaths": 24,
+    "highest_confirmed": 1232,
+    "highest_deaths": 31,
     "highest_hospitalized": null,
-    "highest_tests": 6936
+    "highest_tests": 8407
   },
   {
     "name": "KS",
@@ -3507,12 +3655,20 @@
         "hospitalized": 27,
         "tests": 3431,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 261,
+        "deaths": 5,
+        "hospitalized": 27,
+        "tests": 3932,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 202,
-    "highest_deaths": 4,
+    "highest_confirmed": 261,
+    "highest_deaths": 5,
     "highest_hospitalized": 27,
-    "highest_tests": 3431
+    "highest_tests": 3932
   },
   {
     "name": "KY",
@@ -3692,12 +3848,20 @@
         "hospitalized": null,
         "tests": 4016,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 302,
+        "deaths": 8,
+        "hospitalized": null,
+        "tests": 5123,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 248,
-    "highest_deaths": 6,
+    "highest_confirmed": 302,
+    "highest_deaths": 8,
     "highest_hospitalized": null,
-    "highest_tests": 4016
+    "highest_tests": 5123
   },
   {
     "name": "LA",
@@ -3869,12 +4033,20 @@
         "hospitalized": 773,
         "tests": 21359,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 3315,
+        "deaths": 137,
+        "hospitalized": 927,
+        "tests": 25161,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 2746,
-    "highest_deaths": 119,
-    "highest_hospitalized": 773,
-    "highest_tests": 21359
+    "highest_confirmed": 3315,
+    "highest_deaths": 137,
+    "highest_hospitalized": 927,
+    "highest_tests": 25161
   },
   {
     "name": "MA",
@@ -4070,12 +4242,20 @@
         "hospitalized": 219,
         "tests": 29371,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 4257,
+        "deaths": 44,
+        "hospitalized": 350,
+        "tests": 35049,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 3240,
-    "highest_deaths": 35,
-    "highest_hospitalized": 219,
-    "highest_tests": 29371
+    "highest_confirmed": 4257,
+    "highest_deaths": 44,
+    "highest_hospitalized": 350,
+    "highest_tests": 35049
   },
   {
     "name": "MD",
@@ -4263,12 +4443,20 @@
         "hospitalized": 173,
         "tests": 868,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 992,
+        "deaths": 5,
+        "hospitalized": 226,
+        "tests": 12508,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 774,
+    "highest_confirmed": 992,
     "highest_deaths": 5,
-    "highest_hospitalized": 173,
-    "highest_tests": 868
+    "highest_hospitalized": 226,
+    "highest_tests": 12508
   },
   {
     "name": "ME",
@@ -4440,12 +4628,20 @@
         "hospitalized": null,
         "tests": 3562,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 211,
+        "deaths": 1,
+        "hospitalized": null,
+        "tests": 3605,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 168,
+    "highest_confirmed": 211,
     "highest_deaths": 1,
     "highest_hospitalized": null,
-    "highest_tests": 3562
+    "highest_tests": 3605
   },
   {
     "name": "MI",
@@ -4633,12 +4829,20 @@
         "hospitalized": null,
         "tests": 10207,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 3657,
+        "deaths": 92,
+        "hospitalized": null,
+        "tests": 12766,
+        "old_date": 20200328
       }
     ],
     "highest_confirmed": 3657,
     "highest_deaths": 92,
     "highest_hospitalized": null,
-    "highest_tests": 10207
+    "highest_tests": 12766
   },
   {
     "name": "MN",
@@ -4818,12 +5022,20 @@
         "hospitalized": 51,
         "tests": 14003,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 441,
+        "deaths": 5,
+        "hospitalized": 57,
+        "tests": 16129,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 398,
-    "highest_deaths": 4,
-    "highest_hospitalized": 51,
-    "highest_tests": 14003
+    "highest_confirmed": 441,
+    "highest_deaths": 5,
+    "highest_hospitalized": 57,
+    "highest_tests": 16129
   },
   {
     "name": "MO",
@@ -4995,12 +5207,20 @@
         "hospitalized": null,
         "tests": 1038,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 838,
+        "deaths": 10,
+        "hospitalized": null,
+        "tests": 10920,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 669,
-    "highest_deaths": 8,
+    "highest_confirmed": 838,
+    "highest_deaths": 10,
     "highest_hospitalized": null,
-    "highest_tests": 1038
+    "highest_tests": 10920
   },
   {
     "name": "MP",
@@ -5100,12 +5320,20 @@
         "hospitalized": null,
         "tests": 0,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 2,
+        "deaths": null,
+        "hospitalized": null,
+        "tests": 2,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 0,
-    "highest_deaths": 0,
+    "highest_confirmed": 2,
+    "highest_deaths": null,
     "highest_hospitalized": null,
-    "highest_tests": 0
+    "highest_tests": 2
   },
   {
     "name": "MS",
@@ -5277,12 +5505,20 @@
         "hospitalized": 185,
         "tests": 3139,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 663,
+        "deaths": 13,
+        "hospitalized": 219,
+        "tests": 3223,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 579,
-    "highest_deaths": 8,
-    "highest_hospitalized": 185,
-    "highest_tests": 3139
+    "highest_confirmed": 663,
+    "highest_deaths": 13,
+    "highest_hospitalized": 219,
+    "highest_tests": 3223
   },
   {
     "name": "MT",
@@ -5454,12 +5690,20 @@
         "hospitalized": 7,
         "tests": 2698,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 129,
+        "deaths": 1,
+        "hospitalized": 7,
+        "tests": 3385,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 108,
-    "highest_deaths": null,
+    "highest_confirmed": 129,
+    "highest_deaths": 1,
     "highest_hospitalized": 7,
-    "highest_tests": 2698
+    "highest_tests": 3385
   },
   {
     "name": "NC",
@@ -5655,12 +5899,20 @@
         "hospitalized": 77,
         "tests": 15136,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 935,
+        "deaths": 4,
+        "hospitalized": 87,
+        "tests": 17527,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 763,
-    "highest_deaths": 3,
-    "highest_hospitalized": 77,
-    "highest_tests": 15136
+    "highest_confirmed": 935,
+    "highest_deaths": 4,
+    "highest_hospitalized": 87,
+    "highest_tests": 17527
   },
   {
     "name": "ND",
@@ -5832,12 +6084,20 @@
         "hospitalized": 13,
         "tests": 2492,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 83,
+        "deaths": 1,
+        "hospitalized": 16,
+        "tests": 2892,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 65,
-    "highest_deaths": 0,
-    "highest_hospitalized": 13,
-    "highest_tests": 2492
+    "highest_confirmed": 83,
+    "highest_deaths": 1,
+    "highest_hospitalized": 16,
+    "highest_tests": 2892
   },
   {
     "name": "NE",
@@ -6025,12 +6285,20 @@
         "hospitalized": null,
         "tests": 1846,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 96,
+        "deaths": 2,
+        "hospitalized": null,
+        "tests": 2000,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 85,
-    "highest_deaths": 0,
+    "highest_confirmed": 96,
+    "highest_deaths": 2,
     "highest_hospitalized": null,
-    "highest_tests": 1846
+    "highest_tests": 2000
   },
   {
     "name": "NH",
@@ -6226,12 +6494,20 @@
         "hospitalized": 25,
         "tests": 3553,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 187,
+        "deaths": 2,
+        "hospitalized": 30,
+        "tests": 3843,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 158,
-    "highest_deaths": 1,
-    "highest_hospitalized": 25,
-    "highest_tests": 3553
+    "highest_confirmed": 187,
+    "highest_deaths": 2,
+    "highest_hospitalized": 30,
+    "highest_tests": 3843
   },
   {
     "name": "NJ",
@@ -6419,12 +6695,20 @@
         "hospitalized": null,
         "tests": 25372,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 11124,
+        "deaths": 140,
+        "hospitalized": null,
+        "tests": 30510,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 8825,
-    "highest_deaths": 108,
+    "highest_confirmed": 11124,
+    "highest_deaths": 140,
     "highest_hospitalized": null,
-    "highest_tests": 25372
+    "highest_tests": 30510
   },
   {
     "name": "NM",
@@ -6604,12 +6888,20 @@
         "hospitalized": null,
         "tests": 8513,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 191,
+        "deaths": 1,
+        "hospitalized": 17,
+        "tests": 9387,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 136,
+    "highest_confirmed": 191,
     "highest_deaths": 1,
-    "highest_hospitalized": null,
-    "highest_tests": 8513
+    "highest_hospitalized": 17,
+    "highest_tests": 9387
   },
   {
     "name": "NV",
@@ -6797,12 +7089,20 @@
         "hospitalized": null,
         "tests": 6696,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 621,
+        "deaths": 10,
+        "hospitalized": null,
+        "tests": 8522,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 535,
+    "highest_confirmed": 621,
     "highest_deaths": 10,
     "highest_hospitalized": null,
-    "highest_tests": 6696
+    "highest_tests": 8522
   },
   {
     "name": "NY",
@@ -6998,12 +7298,20 @@
         "hospitalized": 8526,
         "tests": 145753,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 52318,
+        "deaths": 728,
+        "hospitalized": 10054,
+        "tests": 155934,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 44635,
-    "highest_deaths": 519,
-    "highest_hospitalized": 8526,
-    "highest_tests": 145753
+    "highest_confirmed": 52318,
+    "highest_deaths": 728,
+    "highest_hospitalized": 10054,
+    "highest_tests": 155934
   },
   {
     "name": "OH",
@@ -7191,12 +7499,20 @@
         "hospitalized": 276,
         "tests": 20149,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 1406,
+        "deaths": 25,
+        "hospitalized": 344,
+        "tests": 20418,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 1137,
-    "highest_deaths": 19,
-    "highest_hospitalized": 276,
-    "highest_tests": 20149
+    "highest_confirmed": 1406,
+    "highest_deaths": 25,
+    "highest_hospitalized": 344,
+    "highest_tests": 20418
   },
   {
     "name": "OK",
@@ -7368,12 +7684,20 @@
         "hospitalized": 105,
         "tests": 1406,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 377,
+        "deaths": 15,
+        "hospitalized": 126,
+        "tests": 1557,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 322,
-    "highest_deaths": 8,
-    "highest_hospitalized": 105,
-    "highest_tests": 1406
+    "highest_confirmed": 377,
+    "highest_deaths": 15,
+    "highest_hospitalized": 126,
+    "highest_tests": 1557
   },
   {
     "name": "OR",
@@ -7569,12 +7893,20 @@
         "hospitalized": 102,
         "tests": 8924,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 479,
+        "deaths": 13,
+        "hospitalized": 117,
+        "tests": 10172,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 414,
-    "highest_deaths": 12,
-    "highest_hospitalized": 102,
-    "highest_tests": 8924
+    "highest_confirmed": 479,
+    "highest_deaths": 13,
+    "highest_hospitalized": 117,
+    "highest_tests": 10172
   },
   {
     "name": "PA",
@@ -7754,12 +8086,20 @@
         "hospitalized": 551,
         "tests": 23234,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 2751,
+        "deaths": 34,
+        "hospitalized": 682,
+        "tests": 28005,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 2218,
-    "highest_deaths": 22,
-    "highest_hospitalized": 551,
-    "highest_tests": 23234
+    "highest_confirmed": 2751,
+    "highest_deaths": 34,
+    "highest_hospitalized": 682,
+    "highest_tests": 28005
   },
   {
     "name": "PR",
@@ -7859,12 +8199,20 @@
         "hospitalized": null,
         "tests": 598,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 100,
+        "deaths": 3,
+        "hospitalized": null,
+        "tests": 839,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 79,
+    "highest_confirmed": 100,
     "highest_deaths": 3,
     "highest_hospitalized": null,
-    "highest_tests": 598
+    "highest_tests": 839
   },
   {
     "name": "RI",
@@ -8036,12 +8384,20 @@
         "hospitalized": 23,
         "tests": 1531,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 203,
+        "deaths": null,
+        "hospitalized": 28,
+        "tests": 2509,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 165,
+    "highest_confirmed": 203,
     "highest_deaths": null,
-    "highest_hospitalized": 23,
-    "highest_tests": 1531
+    "highest_hospitalized": 28,
+    "highest_tests": 2509
   },
   {
     "name": "SC",
@@ -8237,12 +8593,20 @@
         "hospitalized": 109,
         "tests": 2763,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 539,
+        "deaths": 13,
+        "hospitalized": 129,
+        "tests": 2947,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 456,
-    "highest_deaths": 9,
-    "highest_hospitalized": 109,
-    "highest_tests": 2763
+    "highest_confirmed": 539,
+    "highest_deaths": 13,
+    "highest_hospitalized": 129,
+    "highest_tests": 2947
   },
   {
     "name": "SD",
@@ -8414,12 +8778,20 @@
         "hospitalized": null,
         "tests": 2445,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 68,
+        "deaths": 1,
+        "hospitalized": null,
+        "tests": 2660,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 58,
+    "highest_confirmed": 68,
     "highest_deaths": 1,
     "highest_hospitalized": null,
-    "highest_tests": 2445
+    "highest_tests": 2660
   },
   {
     "name": "TN",
@@ -8607,12 +8979,20 @@
         "hospitalized": 103,
         "tests": 16091,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 1373,
+        "deaths": 6,
+        "hospitalized": 118,
+        "tests": 18338,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 1203,
+    "highest_confirmed": 1373,
     "highest_deaths": 6,
-    "highest_hospitalized": 103,
-    "highest_tests": 16091
+    "highest_hospitalized": 118,
+    "highest_tests": 18338
   },
   {
     "name": "TX",
@@ -8808,12 +9188,20 @@
         "hospitalized": null,
         "tests": 23666,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 2052,
+        "deaths": 27,
+        "hospitalized": null,
+        "tests": 25260,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 1731,
-    "highest_deaths": 23,
+    "highest_confirmed": 2052,
+    "highest_deaths": 27,
     "highest_hospitalized": null,
-    "highest_tests": 23666
+    "highest_tests": 25260
   },
   {
     "name": "UT",
@@ -8985,12 +9373,20 @@
         "hospitalized": null,
         "tests": 9244,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 602,
+        "deaths": 2,
+        "hospitalized": null,
+        "tests": 11312,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 480,
+    "highest_confirmed": 602,
     "highest_deaths": 2,
     "highest_hospitalized": null,
-    "highest_tests": 9244
+    "highest_tests": 11312
   },
   {
     "name": "VA",
@@ -9178,12 +9574,20 @@
         "hospitalized": 83,
         "tests": 7337,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 739,
+        "deaths": 17,
+        "hospitalized": 99,
+        "tests": 9166,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 604,
-    "highest_deaths": 14,
-    "highest_hospitalized": 83,
-    "highest_tests": 7337
+    "highest_confirmed": 739,
+    "highest_deaths": 17,
+    "highest_hospitalized": 99,
+    "highest_tests": 9166
   },
   {
     "name": "VI",
@@ -9283,12 +9687,20 @@
         "hospitalized": null,
         "tests": 74,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 22,
+        "deaths": 0,
+        "hospitalized": null,
+        "tests": 128,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 19,
+    "highest_confirmed": 22,
     "highest_deaths": 0,
     "highest_hospitalized": null,
-    "highest_tests": 74
+    "highest_tests": 128
   },
   {
     "name": "VT",
@@ -9468,12 +9880,20 @@
         "hospitalized": 18,
         "tests": 2261,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 211,
+        "deaths": 12,
+        "hospitalized": 18,
+        "tests": 2374,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 184,
-    "highest_deaths": 10,
+    "highest_confirmed": 211,
+    "highest_deaths": 12,
     "highest_hospitalized": 18,
-    "highest_tests": 2261
+    "highest_tests": 2374
   },
   {
     "name": "WA",
@@ -9669,12 +10089,20 @@
         "hospitalized": null,
         "tests": 46380,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 3723,
+        "deaths": 175,
+        "hospitalized": 254,
+        "tests": 52738,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 3207,
-    "highest_deaths": 147,
-    "highest_hospitalized": null,
-    "highest_tests": 46380
+    "highest_confirmed": 3723,
+    "highest_deaths": 175,
+    "highest_hospitalized": 254,
+    "highest_tests": 52738
   },
   {
     "name": "WI",
@@ -9870,12 +10298,20 @@
         "hospitalized": null,
         "tests": 13982,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 989,
+        "deaths": 13,
+        "hospitalized": null,
+        "tests": 16221,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 842,
+    "highest_confirmed": 989,
     "highest_deaths": 13,
     "highest_hospitalized": null,
-    "highest_tests": 13982
+    "highest_tests": 16221
   },
   {
     "name": "WV",
@@ -10055,12 +10491,20 @@
         "hospitalized": 1,
         "tests": 1855,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 96,
+        "deaths": 0,
+        "hospitalized": 1,
+        "tests": 2427,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 76,
+    "highest_confirmed": 96,
     "highest_deaths": 0,
     "highest_hospitalized": 1,
-    "highest_tests": 1855
+    "highest_tests": 2427
   },
   {
     "name": "WY",
@@ -10232,12 +10676,20 @@
         "hospitalized": 11,
         "tests": 1281,
         "old_date": 20200327
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 82,
+        "deaths": 0,
+        "hospitalized": 14,
+        "tests": 1557,
+        "old_date": 20200328
       }
     ],
-    "highest_confirmed": 70,
+    "highest_confirmed": 82,
     "highest_deaths": 0,
-    "highest_hospitalized": 11,
-    "highest_tests": 1281
+    "highest_hospitalized": 14,
+    "highest_tests": 1557
   },
   {
     "name": "United States",
@@ -10521,20 +10973,32 @@
       },
       {
         "date": "2020-03-27T00:00:00Z",
-        "confirmed": 99447,
+        "confirmed": 99413,
         "deaths": 1530,
         "hospitalized": 13717,
-        "tests": 626667,
+        "tests": 626633,
         "old_date": 20200327,
-        "confirmed_per_mil": 303.9636273823023,
+        "confirmed_per_mil": 303.859705058542,
         "deaths_per_mil": 4.676504569216996,
         "hospitalized_per_mil": 41.92654455944414,
-        "tests_per_mil": 1915.432084233665
+        "tests_per_mil": 1915.3281619099043
+      },
+      {
+        "date": "2020-03-28T00:00:00Z",
+        "confirmed": 118234,
+        "deaths": 1965,
+        "hospitalized": 16729,
+        "tests": 735704,
+        "old_date": 20200328,
+        "confirmed_per_mil": 361.3868243377793,
+        "deaths_per_mil": 6.006099005563004,
+        "hospitalized_per_mil": 51.13283982903995,
+        "tests_per_mil": 2248.707919994262
       }
     ],
-    "highest_confirmed": 99447,
-    "highest_deaths": 1530,
-    "highest_hospitalized": 13717,
-    "highest_tests": 626667
+    "highest_confirmed": 118234,
+    "highest_deaths": 1965,
+    "highest_hospitalized": 16729,
+    "highest_tests": 735704
   }
 ]
