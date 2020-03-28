@@ -440,7 +440,7 @@ const getUnitedStates = (json_data) => {
     const US_time_series = _.map(total_time_series, day => day)
     const most_recent_day = US_time_series[US_time_series.length -1]
     const total = {
-      name: "All",
+      name: "United States",
       population: 327167434,
       time_series: US_time_series,
       highest_confirmed: most_recent_day.confirmed,
