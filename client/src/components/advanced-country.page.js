@@ -202,7 +202,7 @@ export default class AdvancedCountryPage extends React.Component{
             </p>
             { (confirmed > 100 ||deaths > 10) && per == 'total' ?
             <p className="is-size-6"style={{marginTop: '10px'}}>
-              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when {name}'s daily figure first exceeded{' '}
+              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when the United States daily figure first exceeded{' '}
               { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
               { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
             </p>
@@ -217,12 +217,14 @@ export default class AdvancedCountryPage extends React.Component{
             </div>
             <div>
                 <p className="is-size-7">
-                United States total and state level COVID-19 data is sourced from the
+                The United States total and state level COVID-19 data is sourced from the
                 {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
                   COVID Tracking Project
                 </a>.
-                This page is in active development. We have a bug with AK data, which is presently not shown.
-              </p> 
+                </p>
+                <p className="is-size-7">
+                    This page is in active development. We have a bug with AK data, which is presently not shown.
+                </p> 
             </div>
             
         </div>
@@ -357,8 +359,9 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="column is-narrow is-one-third">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">United States Overview</h3>
-                                <UpdateTable color="white"/>
                                 <p className="is-size-5 subtitle has-text-white">There is inconsistent reporting of hospitalizations and tests between states.</p>
+                                <UpdateTable color="white"/>
+                                
                                 <p className="is-size-7 has-text-white">
                                     Page under active development. AK is currently not been shown due to data issues.
                                 </p>
