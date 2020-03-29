@@ -6,13 +6,22 @@ import AdvancedCountryPage from "../components/advanced-country.page"
 const UnitedStatesPage = ({data}) => {
     const {countries, update_times} = useContext(GlobalStateContext)
 
-    data.cum.nodes.map(s => {
+    
+    
+    const all = data.all.nodes[0].data.map(s => {
         if(s.name == 'United States')
             s.name = "All"
         return s
     })
-    const confirmed = data.cum.nodes.filter(c => c.confirmed)
-    const deaths = data.cum.nodes.filter(c => c.deaths)
+ 
+
+    const cum = data.cum.nodes[0].cum.map(s => {
+        if(s.name == 'United States')
+            s.name = "All"
+        return s
+    })
+    const confirmed = cum.filter(c => c.confirmed)
+    const deaths = cum.filter(c => c.deaths)
 
     
 
@@ -26,7 +35,7 @@ const UnitedStatesPage = ({data}) => {
         return false
       }
 
-    const cum = {
+    const cum_object = {
         confirmed: {
             50:  confirmed.map((node) => mapFn( node, 'confirmed', 0)),
             100: confirmed.map((node) => mapFn( node, 'confirmed', 1)),
@@ -56,13 +65,8 @@ const UnitedStatesPage = ({data}) => {
 
 
     return <AdvancedCountryPage countries={countries} 
-        all={data.all.nodes.map(s => {
-            if(s.name == 'United States')
-                s.name = "All"
-            return s
-        })} 
-        
-        cum={cum}
+        all={all} 
+        cum={cum_object}
         update_times={update_times}
     />
 }
@@ -71,47 +75,51 @@ export default UnitedStatesPage
 
 export const query = graphql`
 query MyQuery {
-    all: allUnitedStatesJson {
-        nodes {
-            name
-            highest_tests
-            highest_hospitalized
-            highest_deaths
-            highest_confirmed
-            population
-            time_series {
-                confirmed
-                confirmed_per_mil
-                date
-                deaths
-                deaths_per_mil
-                hospitalized
-                hospitalized_per_mil
-                tests
-                tests_per_mil
+    all: allAdvancedJson(filter: {slug: {eq: "united-states"}}){
+        nodes{
+            data {
+                name
+                highest_tests
+                highest_hospitalized
+                highest_deaths
+                highest_confirmed
+                population
+                time_series {
+                    confirmed
+                    confirmed_per_mil
+                    date
+                    deaths
+                    deaths_per_mil
+                    hospitalized
+                    hospitalized_per_mil
+                    tests
+                    tests_per_mil
+                }
             }
         }
     }
-    cum: allUnitedStatesCumJson {
-        nodes {
-            name
-            highest_deaths
-            highest_confirmed
-            population
-            confirmed {
-                range
-                time_series {
-                    confirmed
-                    date
-                    num_day
+    cum: allAdvancedJson(filter: {slug: {eq: "united-states"}}){
+        nodes{
+            cum {
+                name
+                highest_deaths
+                highest_confirmed
+                population
+                confirmed {
+                    range
+                    time_series {
+                        confirmed
+                        date
+                        num_day
+                    }
                 }
-            }
-            deaths {
-                range
-                time_series {
-                    date
-                    deaths
-                    num_day
+                deaths {
+                    range
+                    time_series {
+                        date
+                        deaths
+                        num_day
+                    }
                 }
             }
         }

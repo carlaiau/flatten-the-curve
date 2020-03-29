@@ -93,26 +93,71 @@ const createFiles = (output_folder) => {
 
     // Remove NZ and remove US and re-add below
     country_array = country_array.filter(
-      country => country.name != 'United States' && 
-      country.name != 'New Zealand' &&
-      country.name != 'Canada' &&
-      country.name != 'Australia' &&
-      country.name != 'China'
+      country => country.name != 'United States' && country.name != 'New Zealand'
     )
 
-    restructure_region({
-      confirmed: confirmed.filter( r => r['Country/Region'] == 'Canada'),
-      deaths: deaths.filter(r => ['Country/Region'] == 'Canada')
-    })
+    
+    const canada = getCountry(
+      confirmed, 
+      deaths, 
+      population_data, 
+      r => (
+        r['Country/Region'] == 'Canada' && 
+        r['Province/State'] != 'Recovered' && 
+        r['Province/State'] != 'Diamond Princess' &&
+        r['Province/State'] != 'Grand Princess'
+      ), 
+      'canada'
+    )
 
+    const australia = getCountry(
+      confirmed,
+      deaths,
+      population_data,
+      r => r['Country/Region'] == 'Australia',
+      'australia'
+    )
 
-
+    const china = getCountry(
+      confirmed,
+      deaths,
+      population_data,
+      r => r['Country/Region'] == 'China',
+      'china'
+    )
+    
     country_array.push(us_data.total_only)
     country_array.push(nz_data)
     cumulative = getCumulatives(country_array)
-  })
-  
-  .then(() => {
+
+      
+    const advanced_countries = [
+      {
+        name: 'United States',
+        slug: 'united-states',
+        data: us_data.states,
+        cum:  us_cum
+      },
+      {
+        name: 'Canada',
+        slug: 'canada',
+        data: canada.data,
+        cum:  canada.cum
+      },
+      {
+        name: 'Australia',
+        slug: 'australia',
+        data: australia.data,
+        cum:  australia.cum
+      },
+      {
+        name: 'China',
+        slug: 'china',
+        data: china.data,
+        cum:  china.cum
+      }
+    ]
+    
     fs.writeFile(output_folder + '/countries.json', JSON.stringify(country_array , null, 2), function(err) {
       if(err) return console.log(err);
       console.log("Country file was saved!");
@@ -121,13 +166,9 @@ const createFiles = (output_folder) => {
       if(err) return console.log(err);
       console.log("Cumulative was saved!");
     }); 
-    fs.writeFile(output_folder + '/united-states.json', JSON.stringify(us_data.states, null, 2), function(err) {
+    fs.writeFile(output_folder + '/advanced.json', JSON.stringify(advanced_countries, null, 2), function(err) {
       if(err) return console.log(err);
-      console.log("US State data was saved!");
-    }); 
-    fs.writeFile(output_folder + '/united-states-cum.json', JSON.stringify(us_cum, null, 2), function(err) {
-      if(err) return console.log(err);
-      console.log("US Cum state data was saved!");
+      console.log("Advanced JSON saved!");
     }); 
   })
   
@@ -144,13 +185,72 @@ const createFiles = (output_folder) => {
         
 }
 
-// Used to structure the countries by state
-const restructure_region = (region) => {
-  console.log(region)
-  states = []
+/*
+ * Used for extracting state level data from JHU
+ * Accepts the raw confirmed and death and population data arrays
+ * as well as a filterFn for removing specific regions that aren't applicable.
+ */
+const getCountry = (confirmed, deaths, population_data, filterFn, country_name) => {
+  const country_data = restructure_region(
+    confirmed.filter(filterFn),
+    deaths.filter(filterFn),
+    parseInt(population_data.filter(data => data['Country Name'].toLowerCase() == country_name)[0][2018])
+  )
+  const country_cum = getCumulatives(country_data)
 
+  return {data: country_data, cum: country_cum}
+}
+
+
+
+// Used to structure the countries by state
+const restructure_region = (confirmed, deaths, population) => {
+
+  const provinces = merge_object(confirmed, deaths, 'Province/State')
+  province_array = _.map(provinces, p => p)
+  
+  const total_time_series = {}
+  
+  province_array.forEach(p => {
+    p.time_series.forEach(day => {
+      day.old_date = day.date
+      day.date = format(parse(day.date, 'MM/dd/yy', new Date()),'yyyy-MM-dd') + 'T00:00:00.000Z'
+      if(total_time_series.hasOwnProperty(day.old_date)){
+        total_time_series[day.old_date].confirmed += day.confirmed
+        total_time_series[day.old_date].deaths += day.deaths
+      }
+      else{
+        total_time_series[day.old_date] = Object.assign({}, day)
+      }
+    })
+  })
+
+  const time_series_array = _.map(total_time_series, day => day)
+  const most_recent_day = time_series_array[time_series_array.length -1]
+  const total = {
+    name: "All",
+    population: population,
+    time_series: time_series_array,
+    highest_confirmed: most_recent_day.confirmed,
+    highest_deaths: most_recent_day.deaths,
+  }
+
+  total.time_series.forEach(day => {
+    day.confirmed_per_mil = day.confirmed / (population / 1000000)
+    day.deaths_per_mil =    day.deaths / (population / 1000000)
+  })
+
+  province_array.push(total)
+
+  // Remove the empty time series data
+  province_array.forEach( p => {
+    p.time_series = p.time_series.filter( t => t.confirmed != 0 )
+  })
+  
+  return province_array
   
 }
+
 
 const add_population_data = (areas, population_data) => {
 
@@ -173,14 +273,14 @@ const add_population_data = (areas, population_data) => {
 const merge_object = (confirmed, deaths, field_to_use) => {
   let combined = {}
   
-  confirmed.forEach( (country) => {
-    let name = country[field_to_use] 
+  confirmed.forEach( area => {
+    let name = area[field_to_use] 
     
     
     highest_confirmed = 0
     
     time_series = []
-    _.forEach(country, (val, key) => {
+    _.forEach(area, (val, key) => {
       if(validKey(key)){
         time_series.push( { 
           date: key, confirmed: parseInt(val)
@@ -192,10 +292,10 @@ const merge_object = (confirmed, deaths, field_to_use) => {
     combined[name] = { name, time_series, highest_confirmed }
   })
 
-  deaths.forEach( (country) => {
+  deaths.forEach( area => {
     highest_deaths = 0
-    const name = country[field_to_use]
-    _.forEach(country, (val, key) => {
+    const name = area[field_to_use]
+    _.forEach(area, (val, key) => {
       if(validKey(key)){
         if(combined.hasOwnProperty(name)){
           combined[name].time_series.forEach( (time) => {
