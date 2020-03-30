@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from '../components/hero'
 import Footer from '../components/footer'
-
+import { Link } from "gatsby"
 import EnhancedTable from '../components/enhanced-table'
 import UpdateTable from '../components/update-times'
 import styled from '@emotion/styled'
@@ -183,6 +183,26 @@ export default class IndexPage extends React.Component{
                     <div className="columns">
                         <div className="column is-two-thirds">
                             <ContentBlock/>
+                        </div>
+                        <div className="column is-one-third">
+                            <div className="box has-background-dark has-text-white updates">
+                                <h2 className="is-size-3">
+                                    <strong className="has-text-white">Updates</strong>
+                                </h2>
+                                <p>
+                                    <Link to='/united-states'>United States</Link>,{' '}
+                                    <Link to='/canada'>Canada</Link>,{' '} 
+                                    <Link to='/australia'>Australia</Link> and {' '}
+                                    <Link to='/china'>China</Link> pages now provide state level breakdowns and cumulative graphs.
+                                </p>
+                                <p>United States data includes hospitalizations and tests.</p>
+                                <p>
+                                    We are presently working on providing DHB level data for {' '}
+                                    <Link to='/new-zealand'>New Zealand</Link>.
+                                </p>
+                                <p>Please contact <a href="https://carlaiau.com/#section-4">us</a> with any feedback or requests.</p>
+                            </div>
+
                         </div>
                     </div>
                     <div className="columns">

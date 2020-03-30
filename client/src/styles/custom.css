@@ -198,3 +198,8 @@ body{
         display: none;
     }
 }
+
+
+.updates a{
+    color: #218c74;
+}

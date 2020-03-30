@@ -12,7 +12,7 @@ const CumulativeGraph = ({
     width, 
     areas_to_graph = [], 
     field = 'confirmed', 
-    max_days = 36, 
+    max_days = 40, 
     growth = {
         label: "Doubles every 3 days",
         value: 1.25992105
