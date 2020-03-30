@@ -27,7 +27,7 @@ export default class CountryPage extends React.Component{
         sort: 'worst',
         overview_width: 0,
         overview_height: 0,
-        overview_scale: 'linear',
+        overview_scale: 'log',
         grid_width: 0,
         grid_height: 0,
         max_count: 30,
@@ -175,8 +175,8 @@ export default class CountryPage extends React.Component{
                   <div className="control">
                     <div className="select">
                       <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>
-                        <option value="linear">Linear Scale</option>
-                        <option value="log">Log Scale</option>
+                        <option value="linear">Linear</option>
+                        <option value="log">Log</option>
                       </select>
                     </div>
                   </div>

@@ -24,9 +24,9 @@ export default class AdvancedCountryPage extends React.Component{
             cum: props.cum,
             field: 'confirmed',
             per: 'total',
-            scale: 'linear',
             overview_width: 0,
             overview_height: 0,
+            overview_scale: 'log',
             country: props.all.filter(state => state.name == 'All')[0],
             selectedStates: ['All'],
             numberFormat: new Intl.NumberFormat(),
@@ -199,7 +199,8 @@ export default class AdvancedCountryPage extends React.Component{
             </p>
             { (confirmed > 100 ||deaths > 10) && per == 'total' ?
             <p className="is-size-6"style={{marginTop: '10px'}}>
-              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when the United States daily figure first exceeded{' '}
+              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> 
+              comparison is based on compounding daily growth starting from when the {this.props.country_name} daily figure first exceeded{' '}
               { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
               { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
             </p>
@@ -278,8 +279,8 @@ export default class AdvancedCountryPage extends React.Component{
                                 <div className="control">
                                     <div className="select">
                                     <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>
-                                        <option value="linear">Linear Scale</option>
-                                        <option value="log">Log Scale</option>
+                                        <option value="linear">Linear</option>
+                                        <option value="log">Log</option>
                                     </select>
                                     </div>
                                 </div>
