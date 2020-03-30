@@ -52,7 +52,7 @@ export default class AdvancedCountryPage extends React.Component{
           })
         
 
-        const {rows, headCells} = SetupAdvancedCountryTable(this.props.all)
+        const {rows, headCells} = SetupAdvancedCountryTable(this.props.country_name, this.props.all)
 
 
 
@@ -191,7 +191,7 @@ export default class AdvancedCountryPage extends React.Component{
         const {confirmed, deaths} = highest
         return (
         <div className="box">
-            <h3 className="is-size-4 title">United States must act now</h3>
+            <h3 className="is-size-4 title">{this.props.country_name} must act now</h3>
             
             <p className="is-size-6">
               Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
@@ -208,11 +208,15 @@ export default class AdvancedCountryPage extends React.Component{
               <p className="is-size-6">
                 Global data updated at <strong>{update_times.global}</strong>
               </p>
-              <p className="is-size-6">
-                United States data updated at <strong>{update_times.us}</strong>
-              </p>
+              {this.props.country_name == 'United States' ? 
+                <p className="is-size-6">
+                    {this.props.country_name} data updated at <strong>{update_times.us}</strong>
+                </p>
+                : <></>}
             </div>
+            {this.props.country_name == 'United States' ?
             <div>
+                 
                 <p className="is-size-7">
                 The United States total and state level COVID-19 data is sourced from the
                 {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
@@ -220,6 +224,7 @@ export default class AdvancedCountryPage extends React.Component{
                 </a>. This page is in active development.
                 </p>
             </div>
+            : <></>}
             
         </div>
         )
@@ -227,13 +232,13 @@ export default class AdvancedCountryPage extends React.Component{
 
 
         return (<>
-            <SEO title="United States COVID-19 Update: State level cumulative graphs and comparisons"/>
-            <Hero selected_country="United States"/>
+            <SEO title={`${this.props.country_name} COVID-19 Update: State level cumulative graphs and comparisons`}/>
+            <Hero selected_country={this.props.country_name}/>
             <section className="section">
                 <div className="container">
                     <div className="columns info">
                         <div className="column is-two-thirds"> 
-                            <h2 className="is-size-3 title">United States</h2>
+                            <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <p className="is-size-4 subtitle">
                             {
                                 // Notice use of country wide constant variable, not dynamically based on highest. due to sorting
@@ -292,7 +297,7 @@ export default class AdvancedCountryPage extends React.Component{
                             <div className="column is-narrow">
                                 <div className="box has-background-success">
                                     <h3 className="is-size-3 has-text-white title">
-                                        Cumulative number of cases by State
+                                        Cumulative number of cases by state
                                     </h3>
                                     <p className="is-size-5 subtitle has-text-white">
                                         by number of days since nth case
@@ -306,14 +311,7 @@ export default class AdvancedCountryPage extends React.Component{
                             areas={this.state.cum}
                             field="confirmed"
                             type_of_area="state"
-                            checkedAreas={[
-                                'NY',
-                                'NJ',
-                                'CA',
-                                'MI',
-                                'MA',
-                                'WA',
-                            ]}
+                            checkedAreas={this.props.checkedAreas}
                             accumulateFrom={100}
                             accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
                             max_area_count={this.state.max_area_count}
@@ -323,7 +321,7 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="columns">
                             <div className="column is-narrow">
                                 <div className="box has-background-success is-full">
-                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by State</h3>
+                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by state</h3>
                                     <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
                                 </div>
                             </div>
@@ -334,14 +332,7 @@ export default class AdvancedCountryPage extends React.Component{
                             areas={this.state.cum}
                             field="deaths"
                             type_of_area="state"
-                            checkedAreas={[
-                                'NY',
-                                'NJ',
-                                'CA',
-                                'MI',
-                                'MA',
-                                'WA',
-                            ]}
+                            checkedAreas={this.props.checkedAreas}
                             accumulateFrom={10}
                             accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
                         /> 
@@ -352,12 +343,14 @@ export default class AdvancedCountryPage extends React.Component{
                     <div className="columns">
                         <div className="column is-narrow is-one-third">
                             <div className="box has-background-success is-full">
-                                <h3 className="is-size-3 has-text-white title">United States Overview</h3>
+                                <h3 className="is-size-3 has-text-white title">{this.props.country_name} Overview</h3>
+                                {this.props.country_name == 'United States' ? 
                                 <p className="is-size-5 subtitle has-text-white">
                                 Data is sourced from the
                 {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" style={{color: '#fff', fontWeight: 700}}>
                   COVID Tracking Project
                 </a>. This page is in active development</p>
+                                :<></>}    
                                 <UpdateTable color="white"/>
                                 
                             </div>
@@ -368,7 +361,13 @@ export default class AdvancedCountryPage extends React.Component{
             <section className="section">
 
                 <StyledTable className="container">
-                    <EnhancedTable rows={rows} headCells={headCells} pageTemplate="advanced-country" tidy={this.state.numberFormat}/>
+                    <EnhancedTable 
+                        rows={rows} 
+                        headCells={headCells} 
+                        pageTemplate="advanced-country" 
+                        tidy={this.state.numberFormat}
+                        country_name={this.props.country_name}
+                    />
                 </StyledTable>
             </section>
             <Footer/>

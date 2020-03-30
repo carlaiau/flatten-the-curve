@@ -57,13 +57,15 @@ const CanadaPage = ({data}) => {
         all={all} 
         cum={cum_object}
         update_times={update_times}
+        country_name={"Canada"}
+        checkedAreas={['Ontario', 'Saskatchewan', 'Quebec', 'British Columbia']}
     />
 }
 
 export default CanadaPage
 
 export const query = graphql`
-query MyQuery {
+query{
     all: allAdvancedJson(filter: {slug: {eq: "canada"}}){
         nodes{
             data {
@@ -79,10 +81,6 @@ query MyQuery {
                     date
                     deaths
                     deaths_per_mil
-                    hospitalized
-                    hospitalized_per_mil
-                    tests
-                    tests_per_mil
                 }
             }
         }

@@ -16,7 +16,7 @@ export default class CumulativeGraphContainer extends React.Component{
             accumulateOptions: props.accumulateOptions,
             show_all_areas: false,
             max_area_count: props.max_area_count || 30,
-            scale: 'linear',
+            scale: 'log',
             
             growth: {
                 label: "Doubles every 3 days",
@@ -136,7 +136,6 @@ export default class CumulativeGraphContainer extends React.Component{
 
 
     render(){
-
         const GraphContainer = styled('div')`
             align-items: center;
             .box{

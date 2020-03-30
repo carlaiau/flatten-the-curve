@@ -26,7 +26,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const countries = result.data.allCountriesJson.nodes;
   
     countries.forEach(c => {
-      if(c.name != "United States" && c.name != "Canada"){ // Custom Structure
+      if(c.name != "United States" && c.name != "Canada" && c.name != 'Australia' && c.name != "China"){ // Custom Structure
         actions.createPage({
           path: '/' + c.name.toLowerCase().replace(/\s+/g, "-"),
           component: require.resolve('./src/templates/country-template.js'),
