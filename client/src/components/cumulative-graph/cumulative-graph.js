@@ -116,7 +116,7 @@ const CumulativeGraph = ({
     return (
         ready_to_graph.length ?
         <>
-            <LineChart width={width} height={height} data={ready_to_graph} margin={{bottom: 20}}>
+            <LineChart width={width} height={height} data={ready_to_graph} margin={{bottom: 20, left: 10}}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}>
