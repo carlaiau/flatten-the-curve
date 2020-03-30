@@ -13,14 +13,17 @@ const Hero = ({selected_country, selectFn}) => {
   const {select_countries} = useContext(GlobalStateContext)
   const links = [
     {   path: '/',                label: 'World'    },
-    {   path: '/new-zealand',     label: 'NZ'       },
-    {   path: '/australia',       label: 'AU'       },
-    {   path: '/united-kingdom',  label: 'UK'       },
-    {   path: '/united-states',   label: 'US'       },
-    {   path: '/italy',   label: 'Italy'       },
-    {   path: '/spain',   label: 'Spain'       },
-    {   path: '/singapore',   label: 'Singapore'       },
-    {   path: '/south-korea',   label: 'South Korea'       },
+    {   path: '/new-zealand',     label: 'NZL'       },
+    {   path: '/australia',       label: 'AUS'       },
+    {   path: '/united-kingdom',  label: 'GBR'       },
+    {   path: '/united-states',   label: 'USA'       },
+    {   path: '/canada',          label: 'USA'       },
+    {   path: '/italy',           label: 'ITA'       },
+    {   path: '/spain',           label: 'ESP'       },
+    {   path: '/germany',         label: 'DEU'       },
+    {   path: '/france',          label: 'FRA'       },
+    {   path: '/china',           label: 'CHN'       },
+    {   path: '/south-korea',     label: 'KOR' },
     
   ]
 

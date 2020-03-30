@@ -3,27 +3,16 @@ import {graphql} from 'gatsby'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 import AdvancedCountryPage from "../components/advanced-country.page"
 
-const UnitedStatesPage = ({data}) => {
+const CanadaPage = ({data}) => {
     const {countries, update_times} = useContext(GlobalStateContext)
 
-    
-    
-    const all = data.all.nodes[0].data.map(s => {
-        if(s.name == 'United States')
-            s.name = "All"
-        return s
-    })
+    const all = data.all.nodes[0].data
  
+    const cum = data.cum.nodes[0].cum
 
-    const cum = data.cum.nodes[0].cum.map(s => {
-        if(s.name == 'United States')
-            s.name = "All"
-        return s
-    })
     const confirmed = cum.filter(c => c.confirmed)
     const deaths = cum.filter(c => c.deaths)
 
-    
 
     const mapFn = (node, field, index) => {
         if(node[field][index].time_series.length){
@@ -68,23 +57,16 @@ const UnitedStatesPage = ({data}) => {
         all={all} 
         cum={cum_object}
         update_times={update_times}
-        checkedAreas={[
-            'NY',
-            'NJ',
-            'CA',
-            'MI',
-            'MA',
-            'WA',
-        ]}
-        country_name="United States"
+        country_name={"Canada"}
+        checkedAreas={['Ontario', 'Saskatchewan', 'Quebec', 'British Columbia']}
     />
 }
 
-export default UnitedStatesPage
+export default CanadaPage
 
 export const query = graphql`
-query MyQuery {
-    all: allAdvancedJson(filter: {slug: {eq: "united-states"}}){
+query{
+    all: allAdvancedJson(filter: {slug: {eq: "canada"}}){
         nodes{
             data {
                 name
@@ -99,15 +81,11 @@ query MyQuery {
                     date
                     deaths
                     deaths_per_mil
-                    hospitalized
-                    hospitalized_per_mil
-                    tests
-                    tests_per_mil
                 }
             }
         }
     }
-    cum: allAdvancedJson(filter: {slug: {eq: "united-states"}}){
+    cum: allAdvancedJson(filter: {slug: {eq: "canada"}}){
         nodes{
             cum {
                 name

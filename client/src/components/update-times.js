@@ -16,13 +16,13 @@ const UpdateTimes = ({color}) => {
     `
     return (
         <Times>
-            <p className="is-size-6">
+            <p className="is-size-7">
               Global data updated at <strong>{update_times.global}</strong>
             </p>
-            <p className="is-size-6">
+            <p className="is-size-7">
               United States data updated at <strong>{update_times.us}</strong>
             </p>
-            <p className="is-size-6">
+            <p className="is-size-7">
               New Zealand data updated at <strong>{update_times.nz}</strong>
             </p>
         </Times>

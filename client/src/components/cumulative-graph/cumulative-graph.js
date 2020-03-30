@@ -12,7 +12,7 @@ const CumulativeGraph = ({
     width, 
     areas_to_graph = [], 
     field = 'confirmed', 
-    max_days = 36, 
+    max_days = 40, 
     growth = {
         label: "Doubles every 3 days",
         value: 1.25992105
@@ -114,7 +114,7 @@ const CumulativeGraph = ({
     )
 
     return (
-
+        ready_to_graph.length ?
         <>
             <LineChart width={width} height={height} data={ready_to_graph} margin={{bottom: 20}}>
                 
@@ -122,9 +122,21 @@ const CumulativeGraph = ({
                 <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}>
                     <Label value={`Days since ${accumulateFrom}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
                 </XAxis>
-                {Object.keys(ready_to_graph[0]).filter(key => key != 'num_day' && key != growth.label).map( (key, i) => {
-                    return <Line type="monotone" stroke={color_definitions[key]} key={key} dataKey={key} dot={false} strokeWidth={3} isAnimationActive={false}/>
-                })}
+                {Object.keys(ready_to_graph[0])
+                    .filter(key => key != 'num_day' && key != growth.label)
+                    .map( (key, i) => {
+                        return <Line 
+                            type="monotone" 
+                            stroke={color_definitions[key]} 
+                            key={key} 
+                            dataKey={key} 
+                            dot={false} 
+                            strokeWidth={3} 
+                            isAnimationActive={false}
+                            />
+                    })
+                }
+
                 {
                     areas_to_graph.length > 0 ? (
                         <Line type="monotone" stroke='#aaa' 
@@ -145,6 +157,8 @@ const CumulativeGraph = ({
                 <></>
             }
         </>
+        :
+        <></>
     )
 }
 

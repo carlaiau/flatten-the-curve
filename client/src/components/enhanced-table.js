@@ -74,7 +74,7 @@ const EnhancedTableHead = (props) => {
 
 
 
-const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home'}) => {
+const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home', country_name}) => {
   const {countries} = useContext(GlobalStateContext)
 
 
@@ -113,12 +113,10 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                 .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                 .map((row, index) => {
                   if(pageTemplate == 'home'){
-                    console.log("WHYYYYY")
                     return <EnhancedTableRowIndex row={row} index={index} tidy={tidy} key={index}/>
                   }
                   if(pageTemplate == 'advanced-country'){
-                    console.log("This should ne fring")
-                    return <EnhancedTableRowAdvancedCountry row={row} index={index} tidy={tidy} key={index}/>
+                    return <EnhancedTableRowAdvancedCountry country_name={country_name} row={row} index={index} tidy={tidy} key={index}/>
                   }
                 })}
 
