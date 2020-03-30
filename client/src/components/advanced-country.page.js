@@ -114,13 +114,6 @@ export default class AdvancedCountryPage extends React.Component{
                         display: none;
                     }
                 }
-                .MuiTableRow-root{
-                    td{
-                        &:first-of-type{
-                            display: none;
-                        }
-                    }
-                }
             }
             @media screen and (max-width: 768px){
                 .MuiTableCell-root{
@@ -159,7 +152,7 @@ export default class AdvancedCountryPage extends React.Component{
                     }
                 }
                 .MuiTablePagination-root{
-                    width: 80%;
+                    width: 90%;
                     margin-left: 20px;
                     .MuiToolbar-root{
                         .MuiTypography-body2{
@@ -292,7 +285,7 @@ export default class AdvancedCountryPage extends React.Component{
                 </div>                
         </section>
             
-            <section className="cum">
+            <section className="section cum">
                 <div className="container">
                 <div className="columns">
                             <div className="column is-narrow">
