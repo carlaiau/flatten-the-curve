@@ -37,4 +37,40 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     });
 
+
+    const advanced_country_pages = [
+      {
+        slug: 'australia',
+        name: 'Australia',
+        checkedAreas: ['New South Wales', 'Victoria', 'Queensland']
+      },
+      {
+        slug: 'china',
+        name: 'China',
+        checkedAreas: ['Hubei', 'Hong Kong', 'Guangdong', 'British Henan']
+      },
+      {
+        slug: 'canada',
+        name: 'Canada',
+        checkedAreas: ['Ontario', 'Saskatchewan', 'Quebec', 'British Columbia'],
+        area_label: "province or territory"
+      },
+      {
+        slug: 'united-states',
+        name: 'United States',
+        checkedAreas: ['NY', 'NJ', 'CA', 'MI', 'MA', 'WA']
+      }
+    ]
+
+    advanced_country_pages.forEach( p => {
+      actions.createPage({
+        path: '/' + p.slug,
+        component: require.resolve('./src/templates/advanced-country-template.js'),
+        context: p // Each countries object gets passed in as context object
+      });
+    })
+
+    
+
+
   };

@@ -20,6 +20,7 @@ export default class AdvancedCountryPage extends React.Component{
         super(props);
         this.state = {
             countries: props.countries,
+            numberFormat: new Intl.NumberFormat(),
             all: props.all,
             cum: props.cum,
             field: 'confirmed',
@@ -32,10 +33,13 @@ export default class AdvancedCountryPage extends React.Component{
             numberFormat: new Intl.NumberFormat(),
             cum_width:  800,
             cum_height: 182,
-            max_area_count: 60
+            max_area_count: 60,
+            area_label: props.area_label || 'state'
         }   
     }
-
+    tidyFormat = (numberString) => {
+        return this.state.numberFormat.format(numberString)
+    }
 
     render(){
         const {field, per, country} = this.state
@@ -192,7 +196,7 @@ export default class AdvancedCountryPage extends React.Component{
             </p>
             { (confirmed > 100 ||deaths > 10) && per == 'total' ?
             <p className="is-size-6"style={{marginTop: '10px'}}>
-              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> 
+              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong>{' '}
               comparison is based on compounding daily growth starting from when the {this.props.country_name} daily figure first exceeded{' '}
               { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
               { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
@@ -226,7 +230,7 @@ export default class AdvancedCountryPage extends React.Component{
 
 
         return (<>
-            <SEO title={`${this.props.country_name} COVID-19 Update: State level cumulative graphs and comparisons`}/>
+            <SEO title={`${this.props.country_name} COVID-19 Update: ${this.state.area_label} level cumulative graphs and comparisons`}/>
             <Hero selected_country={this.props.country_name}/>
             <section className="section">
                 <div className="container">
@@ -234,11 +238,9 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="column is-two-thirds"> 
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <p className="is-size-4 subtitle">
-                            {
-                                // Notice use of country wide constant variable, not dynamically based on highest. due to sorting
-                            country.highest_confirmed ? country.highest_confirmed + ' Cases' : ''}
+                            { country.highest_confirmed ? this.tidyFormat(country.highest_confirmed) + ' Cases' : ''}
                             <span style={{float: 'right'}}>
-                                {country.highest_deaths ? country.highest_deaths + ' Deaths' : ''}
+                                {country.highest_deaths ? this.tidyFormat(country.highest_deaths) + ' Deaths' : ''}
                             </span>
                             </p>  
                             <CountryOverviewGraph 
@@ -291,7 +293,7 @@ export default class AdvancedCountryPage extends React.Component{
                             <div className="column is-narrow">
                                 <div className="box has-background-success">
                                     <h3 className="is-size-3 has-text-white title">
-                                        Cumulative number of cases by state
+                                        Cumulative number of cases by {this.state.area_label}
                                     </h3>
                                     <p className="is-size-5 subtitle has-text-white">
                                         by number of days since nth case
@@ -315,7 +317,7 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="columns">
                             <div className="column is-narrow">
                                 <div className="box has-background-success is-full">
-                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by state</h3>
+                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
                                     <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
                                 </div>
                             </div>

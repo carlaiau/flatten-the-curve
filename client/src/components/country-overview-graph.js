@@ -19,13 +19,16 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
     const growth_rate = 1.25992105
     
     let found_for_growth = false
-
+    let exceeds_mil = false
     if( (full_field_name == 'confirmed' && active_country.highest_confirmed >= 100) || (full_field_name == 'deaths' && active_country.highest_deaths >= 10) ){  
       filteredData.forEach( (t, i) => {
-        if(found_for_growth){
+        if(found_for_growth && ! exceeds_mil){
           t.growth = (filteredData[i - 1].growth * growth_rate).toFixed(0)
+          if(t.growth > 1000000){
+            exceeds_mil = true
+          }
         }
-        else{
+        else if(!exceeds_mil){
           if(t[field] >= ( field == 'confirmed' ? 100 : field == 'deaths' ? 10 : Infinity)){
             found_for_growth = true
             t.growth = t[field]
