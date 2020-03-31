@@ -102,7 +102,7 @@ const GlobalContextProvider = ({ children }) => {
         update_times:{
           global: "1:00am 31 March UTC",
           us: "4:00pm 30 March ET",
-          nz: "1:00pm 31 March NZT",
+          nz: "1:35pm 31 March NZT",
         }
     });
   
