@@ -24,7 +24,7 @@ export default class AdvancedCountryPage extends React.Component{
             field: 'confirmed',
             per: 'total',
             overview_scale: 'log',
-            country: props.all.filter(state => state.name == 'All')[0],
+            country: props.countries.filter(c => c.name == props.country_name)[0],
             selectedStates: ['All'],
             numberFormat: new Intl.NumberFormat(),
             max_area_count: 60,
