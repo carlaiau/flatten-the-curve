@@ -119,7 +119,7 @@ const CumulativeGraph = ({
             <LineChart width={width} height={height} data={ready_to_graph} margin={{bottom: 20, left: 10}}>
                 
                 <YAxis width={55} type="number" scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
-                <XAxis dataKey="num_day" name="Days" type="number" interval="number" tickCount={0}>
+                <XAxis dataKey="num_day" name="Days" type="number" tickCount={0}>
                     <Label value={`Days since ${accumulateFrom}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
                 </XAxis>
                 {Object.keys(ready_to_graph[0])

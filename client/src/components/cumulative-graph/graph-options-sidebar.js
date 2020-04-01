@@ -85,7 +85,7 @@ const GraphOptionsSideBar = ({
                 <div className="control">
                     <div className="select">
                     <select value={accumulateFrom} onChange={caseFn}>
-                        { accumulateOptions.map(option => <option value={option}>{option}</option>) }
+                        { accumulateOptions.map((option, i) => <option key={i} value={option}>{option}</option>) }
                     </select>
                     </div>
                 </div>
@@ -95,7 +95,7 @@ const GraphOptionsSideBar = ({
                 <div className="control">
                     <div className="select">
                     <select value={growth.value} onChange={growthFn}>
-                        { growth_options.map(option => <option value={option.value}>{option.label}</option>) }
+                        { growth_options.map( (option, i) => <option key={i} value={option.value}>{option.label}</option>) }
                     </select>
                     </div>
                 </div>
