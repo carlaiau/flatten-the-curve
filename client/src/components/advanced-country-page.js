@@ -205,8 +205,7 @@ export default class AdvancedCountryPage extends React.Component{
                         
                         
                     />  
-                    {
-                    this.props.hide_deaths ? 
+                    { this.props.hide_deaths ? <></> :
                         <>
                             <div className="columns">
                                 <div className="column is-narrow">
@@ -227,8 +226,8 @@ export default class AdvancedCountryPage extends React.Component{
                                 accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
                             /> 
                         </>
-                    : <></> }
-                    </div>
+                    }
+                </div>
             </section>
             <section className="section">
                 <div className="container">
