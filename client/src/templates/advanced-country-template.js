@@ -95,6 +95,8 @@ query($slug: String!){
                     date
                     deaths
                     deaths_per_mil
+                    tests
+                    hospitalized
                 }
             }
         }
