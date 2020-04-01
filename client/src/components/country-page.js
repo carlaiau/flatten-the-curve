@@ -1,12 +1,10 @@
 import React from "react"
-
 import Hero from "../components/hero"
 import SEO from "../components/seo"
-import CountryOverviewGraph from "../components/country-overview-graph"
-import GridBar from "../components/grid-bar"
-import GridItem from "../components/grid-item"
-import Footer from "../components/footer"
-import GetTopCountries from '../utils/get-top-countries'
+import CountryOverviewGraph from "./country-overview-graph"
+import CountryGrid from "./country-grid/country-grid"
+
+import Layout from "./layout"
 import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
@@ -24,15 +22,7 @@ export default class CountryPage extends React.Component{
         numberFormat: new Intl.NumberFormat(),
         field: 'confirmed',
         per: 'total',
-        sort: 'worst',
-        overview_width: 0,
-        overview_height: 0,
         overview_scale: 'log',
-        grid_width: 0,
-        grid_height: 0,
-        max_count: 30,
-        is_mobile: false,
-        forecast_faq_open: false,
     }
   }
   
@@ -42,7 +32,7 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries, update_times} = this.props.stateHook
-    const {selected_country, field, sort, per, max_count} = this.state
+    const {selected_country, field, per} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -52,14 +42,6 @@ export default class CountryPage extends React.Component{
     const active_country = SetupCountry({
       country: countries.filter( (c) => c.name ===  this.state.selected_country )[0],
       field: full_field_name
-    })
-    
-    const topCountries = GetTopCountries({ 
-      max_count: this.state.is_mobile ? this.state.max_count : 100,
-      countries, 
-      active_country, 
-      field: full_field_name, 
-      sort, 
     })
 
 
@@ -98,38 +80,12 @@ export default class CountryPage extends React.Component{
             </p>
             : <></> }
           </div>
-          { this.state.forecast_faq_open ? 
-            < div style={{margin: '20px 10px'}}>
-              <p className="is-size-7">
-                The forecasts below show a future projection of COVID-19 in {name}. 
-                This is based on the historical growth data of each country that is currently ahead of {name} in the outbreak.
-              </p>
-              <p className="is-size-7">
-                Viewing this can offer unique insights into the range of possible outcomes. The forecast is not based on epidemiological models, just on historical data experienced by other countries.
-              </p>
-              <p className="is-size-7">
-                  The forecast does not take into account the relative doubling time of each country.
-              </p>
-              <p className="is-size-7">
-                  Forecasting accuracy depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
-              </p>
-            </div>
-            : <></> }
-          <button className="button is-dark is-outlined is-size-7" onClick={e => this.setState({forecast_faq_open: ! this.state.forecast_faq_open})}>
-            {this.state.forecast_faq_open ? 'Close': 'Forecast info'}
-          </button>
-          
       </div>
       )
   }
     
-    return (
-
-
-      
-      <React.Fragment>
+    return (<>
         <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
-        <Hero selected_country={selected_country}/>
         <section className="section">
           <div className="container">
             <div className="columns info">
@@ -150,8 +106,8 @@ export default class CountryPage extends React.Component{
                   scale={this.state.overview_scale}
                   field={field}
                   full_field_name={full_field_name}
-                  width={this.state.overview_width}
-                  height={this.state.overview_height}
+                  width={this.props.overview_width}
+                  height={this.props.overview_height}
                 />
               </div>
               <div className="column is-one-third">
@@ -186,110 +142,16 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
-          <GridBar 
-            active_name={active_country.name}
-            max_count={this.state.is_mobile ? this.state.max_count : 100}
-            per={this.state.per}
-            field={this.state.field}
-            sort={this.state.sort}
-            length={topCountries.length}
-            fieldFn={e => this.setState({field: e.target.value})}
-            perFn={e => this.setState({per: e.target.value})}
-            sortFn={e => this.setState({sort: e.target.value})}
-          />
-        <section className="section">
-          <div className="container">
-            <div className="columns" style={{flexWrap: 'wrap'}}>
-              { topCountries.map( (country, i) => (
-                <GridItem 
-                  country={country} 
-                  key={i}
-                  active_country={active_country} 
-                  openModalFn={ () => this.setState({ modal_open: true, active_country, comparable_country: country } ) }
-                  per={per}
-                  field={field}
-                  tidy={this.tidyFormat}
-                  width={this.state.grid_width}
-                  height={this.state.grid_height}
-                />
-              ))}              
-            </div>
-          </div>
-        </section>
-        <Footer />
-      </React.Fragment>
-    )
-  }
-
-  /**
-   * Calculate & Update state of new dimensions
-   */
-  updateDimensions = () => {  
-
-    let overview_width =  860
-    let overview_height = 500
-    
-    let grid_width = 391
-    let grid_height = 200
-
-    let is_mobile = false
-    
-    if(window.innerWidth < 1408){ // FullHD
-      overview_width =  740
-      overview_height = 550
-      grid_width = 350
-      grid_height = 180
-      is_mobile = false
-    }
-    if(window.innerWidth < 1216){ // Desktop
-      overview_width =  600
-      overview_height = 400
-      grid_width = 285
-      grid_height = 160
-      is_mobile = false
-    }
-    if(window.innerWidth < 1024){
-      overview_width =  450
-      overview_height = 400
-      grid_width = 200
-      grid_height = 120
-      is_mobile = false
-    }
-
-    if(window.innerWidth < 769){
-      overview_width =  650
-      overview_height = 450
-      grid_width = 600
-      grid_height = 300
-      is_mobile = true   
-    }
-    if(window.innerWidth < 480){
-      overview_width = 300
-      overview_height = 300
-      grid_width = 280
-      grid_height = 150  
-       
-    }
-
-    //window.innerHeight
-    
-    this.setState({ overview_width, overview_height, grid_width, grid_height, is_mobile });
-  
-  }
-
-  /**
-   * Add event listener
-   */
-  componentDidMount = () => {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions);
-  }
-
-  /**
-   * Remove event listener
-   */
-  componentWillUnmount = () => {
-    window.removeEventListener("resize", this.updateDimensions);
+        <CountryGrid 
+          active_country={active_country}
+          countries={countries}
+          grid_width={this.props.grid_width}
+          grid_height={this.props.grid_height}
+          is_mobile={this.props.is_mobile}
+          tidy={this.tidyFormat}
+        />
+      
+    </>)
   }
   
 }

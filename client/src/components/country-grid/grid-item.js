@@ -77,7 +77,7 @@ export default class GridItem extends React.Component{
         <div className='column is-one-third'>
             <div className="box has-background-success has-text-white country">
                 <div className="content" style={{position: 'relative'}}>
-                    <Link to={country.name.toLowerCase().replace(/\s+/g, "-")} className="button is-white is-outlined is-size-7" style={{float: 'right'}}>
+                    <Link to={"/" + country.name.toLowerCase().replace(/\s+/g, "-")} className="button is-white is-outlined is-size-7" style={{float: 'right'}}>
                         Visit
                     </Link>
                     <h2 className="is-size-4  has-text-white" style={{marginTop: 0}}>{country.name}</h2>

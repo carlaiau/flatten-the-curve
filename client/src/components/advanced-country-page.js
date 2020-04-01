@@ -1,15 +1,13 @@
 import React from 'react'
-import styled from '@emotion/styled'
-import Hero from "../components/hero"
-import SEO from "../components/seo"
-import CountryOverviewGraph from "../components/country-overview-graph"
-import CumulativeGraphContainer from "../components/cumulative-graph/cumulative-graph-container"
-import Footer from "../components/footer"
+import SEO from "./seo"
+import CountryOverviewGraph from "./country-overview-graph"
+import CumulativeGraphContainer from "./cumulative-graph/cumulative-graph-container"
+import CountryGrid from "./country-grid/country-grid"
+import UpdateTable from './update-times'
+import EnhancedTable from './enhanced-table/enhanced-table'
+
 import SetupCountry from '../utils/setup-country'
 import SetupAdvancedCountryTable from '../utils/setup-advanced-country-table'
-import UpdateTable from '../components/update-times'
-
-import EnhancedTable from '../components/enhanced-table'
 
 import 'bulma/css/bulma.css'
 import '../styles/custom.css'
@@ -25,14 +23,10 @@ export default class AdvancedCountryPage extends React.Component{
             cum: props.cum,
             field: 'confirmed',
             per: 'total',
-            overview_width: 0,
-            overview_height: 0,
             overview_scale: 'log',
             country: props.all.filter(state => state.name == 'All')[0],
             selectedStates: ['All'],
             numberFormat: new Intl.NumberFormat(),
-            cum_width:  800,
-            cum_height: 182,
             max_area_count: 60,
             area_label: props.area_label || 'state'
         }   
@@ -44,6 +38,7 @@ export default class AdvancedCountryPage extends React.Component{
     render(){
         const {field, per, country} = this.state
         const update_times = this.props.update_times
+        
 
         let full_field_name = field === 'confirmed' ? 
         per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -53,120 +48,16 @@ export default class AdvancedCountryPage extends React.Component{
         const active_country = SetupCountry({
             country: country,
             field: full_field_name
-          })
+        })
+
+        active_country.name =  this.props.country_name
         
 
         const {rows, headCells} = SetupAdvancedCountryTable(this.props.country_name, this.props.all)
 
 
 
-        const StyledTable = styled('div')`
-            .MuiTableHead-root{
-                background: #fff;
-                .MuiTableCell-alignRight{
-                    text-align: right;
-                }
-            }
-            .MuiTablePagination-root{
-                background: #227093;
-                max-width: 500px;
-                border-radius: 6px;
-                color: #fff;
-                margin-top: 20px;
-            }
-            td.MuiTableCell-body{
-                text-align: right;
-            }
-            .MuiTableBody-root{
-                .MuiTableRow-root{
-                    &:last-of-type{
-                        td, th{
-                            border-bottom: none;
-                        }
-                    }
-                }
-            }
-
-            .MuiSelect-icon{
-                color: #fff;
-            }
-            .MuiSvgIcon-root{
-                color: #fff;
-            }
-            .Mui-disabled{
-                .MuiSvgIcon-root{
-                    opacity: 0.5;
-                }
-            }
-
-            @media screen and (max-width: 1216px){
-                .MuiTableCell-root{
-                    padding: 10px;
-                }
-                .MuiTableHead-root{
-                    .MuiTableCell-root{
-                        padding: 5px;
-                    }
-                }
-            }
-            @media screen and (max-width: 920px){
-                .MuiTableCell-root{
-                    padding: 10px 0;
-                }
-                .MuiTableCell-root{
-                    &.population{
-                        display: none;
-                    }
-                }
-            }
-            @media screen and (max-width: 768px){
-                .MuiTableCell-root{
-                    &.recovered,
-                    &.recovered_delta{
-                        display: none;
-                    }
-                }
-            }
-            @media screen and (max-width: 375px){
-                .MuiTableHead-root{
-                    .MuiTableCell-root{
-                        padding: 5px;
-                        line-height: 1.3;
-                        font-size: 9px;
-                    }
-                    .MuiTableSortLabel-icon{
-                        font-size: 12px;
-                    }
-                }
-                .MuiTableBody-root{
-                    .MuiTableCell-root{
-                        font-size: 9px;
-                        padding: 5px 0;
-                        
-                    }
-                    th{
-                        &.MuiTableCell-root{
-                            padding-left: 5px;
-                        }
-                    }
-                    .button{
-                        font-size: 8px !important;
-                        padding: 2px;
-                        margin-left: 2px;
-                    }
-                }
-                .MuiTablePagination-root{
-                    width: 90%;
-                    margin-left: 20px;
-                    .MuiToolbar-root{
-                        .MuiTypography-body2{
-                            font-size: 9px;
-                        }
-                    }
-                }
-            }
-
-        `
+        
         
         /*
         This will replace content block when in place
@@ -224,6 +115,7 @@ export default class AdvancedCountryPage extends React.Component{
             </div>
             : <></>}
             
+            
         </div>
         )
     }
@@ -231,7 +123,6 @@ export default class AdvancedCountryPage extends React.Component{
 
         return (<>
             <SEO title={`${this.props.country_name} COVID-19 Update: ${this.state.area_label} level cumulative graphs and comparisons`}/>
-            <Hero selected_country={this.props.country_name}/>
             <section className="section">
                 <div className="container">
                     <div className="columns info">
@@ -248,8 +139,8 @@ export default class AdvancedCountryPage extends React.Component{
                                 scale={this.state.overview_scale}   
                                 field={field}   
                                 full_field_name={full_field_name}
-                                width={this.state.overview_width}     
-                                height={this.state.overview_height}
+                                width={this.props.overview_width}     
+                                height={this.props.overview_height}
                                 max_area_count={this.state.max_area_count}
                             />
                         </div>
@@ -289,49 +180,53 @@ export default class AdvancedCountryPage extends React.Component{
             
             <section className="section cum">
                 <div className="container">
-                <div className="columns">
-                            <div className="column is-narrow">
-                                <div className="box has-background-success">
-                                    <h3 className="is-size-3 has-text-white title">
-                                        Cumulative number of cases by {this.state.area_label}
-                                    </h3>
-                                    <p className="is-size-5 subtitle has-text-white">
-                                        by number of days since nth case
-                                    </p>
-                                </div>
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success">
+                                <h3 className="is-size-3 has-text-white title">
+                                    Cumulative number of cases by {this.state.area_label}
+                                </h3>
+                                <p className="is-size-5 subtitle has-text-white">
+                                    by number of days since nth case
+                                </p>
                             </div>
                         </div>
-                        <CumulativeGraphContainer 
-                            width={this.state.cum_width} 
-                            height={this.state.cum_height} 
-                            areas={this.state.cum}
-                            field="confirmed"
-                            type_of_area="state"
-                            checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={100}
-                            accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
-                            max_area_count={this.state.max_area_count}
-                            
-                            
-                        />  
-                        <div className="columns">
-                            <div className="column is-narrow">
-                                <div className="box has-background-success is-full">
-                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
-                                    <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
+                    </div>
+                    <CumulativeGraphContainer 
+                        width={this.props.cum_width} 
+                        height={this.props.cum_height} 
+                        areas={this.state.cum}
+                        field="confirmed"
+                        type_of_area="state"
+                        checkedAreas={this.props.checkedAreas}
+                        accumulateFrom={100}
+                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                        max_area_count={this.state.max_area_count}
+                        
+                        
+                    />  
+                    { this.props.hide_deaths ? <></> :
+                        <>
+                            <div className="columns">
+                                <div className="column is-narrow">
+                                    <div className="box has-background-success is-full">
+                                        <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
+                                        <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <CumulativeGraphContainer 
-                            width={this.state.cum_width} 
-                            height={this.state.cum_height} 
-                            areas={this.state.cum}
-                            field="deaths"
-                            type_of_area="state"
-                            checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={10}
-                            accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
-                        /> 
+                            <CumulativeGraphContainer 
+                                width={this.props.cum_width} 
+                                height={this.props.cum_height} 
+                                areas={this.state.cum}
+                                field="deaths"
+                                type_of_area="state"
+                                checkedAreas={this.props.checkedAreas}
+                                accumulateFrom={10}
+                                accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
+                            /> 
+                        </>
+                    }
                 </div>
             </section>
             <section className="section">
@@ -355,90 +250,27 @@ export default class AdvancedCountryPage extends React.Component{
                 </div>
             </section>
             <section className="section">
-
-                <StyledTable className="container">
-                    <EnhancedTable 
-                        rows={rows} 
-                        headCells={headCells} 
-                        pageTemplate="advanced-country" 
-                        tidy={this.state.numberFormat}
-                        country_name={this.props.country_name}
-                    />
-                </StyledTable>
+                <EnhancedTable 
+                    rows={rows} 
+                    headCells={headCells} 
+                    pageTemplate="advanced-country" 
+                    tidy={this.state.numberFormat}
+                    country_name={this.props.country_name}
+                />
             </section>
-            <Footer/>
+            {(this.props.show_grid ?
+                <CountryGrid 
+                    active_country={active_country}
+                    countries={this.props.countries}
+                    grid_width={this.props.grid_width}
+                    grid_height={this.props.grid_height}
+                    is_mobile={this.props.is_mobile}
+                    tidy={this.tidyFormat}
+                />
+                :
+                <></>)
+
+            }
         </>)
     }
-
-
-    /**
-   * Calculate & Update state of new dimensions
-   */
-  updateDimensions = () => {  
-
-    let overview_width =  860
-    let overview_height = 500
-    let cum_width =  1000
-    let cum_height = 500
-    let is_mobile = false
-    
-    if(window.innerWidth < 1408){ // FullHD
-      overview_width =  740
-      overview_height = 550
-      cum_width = 860
-        cum_height = 430
-      is_mobile = false
-    }
-    if(window.innerWidth < 1216){ // Desktop
-      overview_width =  600
-      overview_height = 400
-      cum_width = 720
-        cum_height = 360
-      is_mobile = false
-    }
-    if(window.innerWidth < 1024){
-      overview_width =  450
-      overview_height = 400
-      cum_width = 565
-        cum_height = 300
-      is_mobile = false
-    }
-
-    if(window.innerWidth < 769){
-      overview_width =  650
-      overview_height = 450
-      cum_width = 740
-        cum_height = 450
-      is_mobile = true   
-    }
-    if(window.innerWidth < 480){
-      overview_width = 300
-      overview_height = 300
-      cum_width = 350
-        cum_height = 300
-       
-    }
-
-
-
-    //window.innerHeight
-    
-    this.setState({ overview_width, overview_height,cum_height, cum_width, is_mobile });
-  
-  }
-
-  /**
-   * Add event listener
-   */
-  componentDidMount = () => {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions);
-  }
-
-  /**
-   * Remove event listener
-   */
-  componentWillUnmount = () => {
-    window.removeEventListener("resize", this.updateDimensions);
-  }
 }

@@ -1,13 +1,16 @@
 
 import React, { useContext } from 'react'
 import CountryPage from '../components/country-page'
+import Layout from "../components/layout"
 import {GlobalStateContext} from "../context/GlobalContextProvider"
 
 
-const CountryTemplate = ({pathContext}) => {
+const CountryTemplate = ({pageContext}) => {
   const stateHook = useContext(GlobalStateContext)
   return (
-    <CountryPage selected_country={pathContext.country} stateHook={stateHook}/>
+    <Layout selected_country={pageContext.country}>
+      <CountryPage selected_country={pageContext.country} stateHook={stateHook}/>
+    </Layout>
   )
 }
 

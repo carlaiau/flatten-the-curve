@@ -1,5 +1,3 @@
-import React from 'react'
-
 const SetupIndexTable  = (countries) => {
 
     const world = {
