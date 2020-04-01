@@ -1,12 +1,10 @@
 import React from "react"
-
 import Hero from "../components/hero"
 import SEO from "../components/seo"
 import CountryOverviewGraph from "../components/country-overview-graph"
-import GridBar from "../components/grid-bar"
-import GridItem from "../components/grid-item"
+import CountryGrid from "../components/country-grid/country-grid"
+
 import Footer from "../components/footer"
-import GetTopCountries from '../utils/get-top-countries'
 import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
@@ -24,13 +22,11 @@ export default class CountryPage extends React.Component{
         numberFormat: new Intl.NumberFormat(),
         field: 'confirmed',
         per: 'total',
-        sort: 'worst',
         overview_width: 0,
         overview_height: 0,
         overview_scale: 'log',
         grid_width: 0,
         grid_height: 0,
-        max_count: 30,
         is_mobile: false,
         forecast_faq_open: false,
     }
@@ -42,7 +38,7 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries, update_times} = this.props.stateHook
-    const {selected_country, field, sort, per, max_count} = this.state
+    const {selected_country, field, per} = this.state
 
     let full_field_name = field === 'confirmed' ? 
       per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -52,14 +48,6 @@ export default class CountryPage extends React.Component{
     const active_country = SetupCountry({
       country: countries.filter( (c) => c.name ===  this.state.selected_country )[0],
       field: full_field_name
-    })
-    
-    const topCountries = GetTopCountries({ 
-      max_count: this.state.is_mobile ? this.state.max_count : 100,
-      countries, 
-      active_country, 
-      field: full_field_name, 
-      sort, 
     })
 
 
@@ -186,36 +174,15 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
-          <GridBar 
-            active_name={active_country.name}
-            max_count={this.state.is_mobile ? this.state.max_count : 100}
-            per={this.state.per}
-            field={this.state.field}
-            sort={this.state.sort}
-            length={topCountries.length}
-            fieldFn={e => this.setState({field: e.target.value})}
-            perFn={e => this.setState({per: e.target.value})}
-            sortFn={e => this.setState({sort: e.target.value})}
-          />
-        <section className="section">
-          <div className="container">
-            <div className="columns" style={{flexWrap: 'wrap'}}>
-              { topCountries.map( (country, i) => (
-                <GridItem 
-                  country={country} 
-                  key={i}
-                  active_country={active_country} 
-                  openModalFn={ () => this.setState({ modal_open: true, active_country, comparable_country: country } ) }
-                  per={per}
-                  field={field}
-                  tidy={this.tidyFormat}
-                  width={this.state.grid_width}
-                  height={this.state.grid_height}
-                />
-              ))}              
-            </div>
-          </div>
-        </section>
+        <CountryGrid 
+          active_country={active_country}
+          countries={countries}
+          grid_width={this.state.grid_width}
+          grid_height={this.state.grid_height}
+          tidy={this.tidyFormat}
+          is_mobile={this.state.is_mobile}
+        />
+          
         <Footer />
       </React.Fragment>
     )

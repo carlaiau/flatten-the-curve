@@ -1,6 +1,6 @@
 import React from "react"
 import styled from '@emotion/styled'
-import SingularGraphTooltip from './graph-tooltip'
+import SingularGraphTooltip from '../graph-tooltip'
 import { parseJSON, format, add } from "date-fns"
 import {LineChart, Line, YAxis, Tooltip, Legend, ReferenceLine} from 'recharts'
 
