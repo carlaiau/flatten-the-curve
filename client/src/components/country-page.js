@@ -1,10 +1,10 @@
 import React from "react"
 import Hero from "../components/hero"
 import SEO from "../components/seo"
-import CountryOverviewGraph from "../components/country-overview-graph"
-import CountryGrid from "../components/country-grid/country-grid"
+import CountryOverviewGraph from "./country-overview-graph"
+import CountryGrid from "./country-grid/country-grid"
 
-import Footer from "../components/footer"
+import Layout from "./layout"
 import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
@@ -22,12 +22,7 @@ export default class CountryPage extends React.Component{
         numberFormat: new Intl.NumberFormat(),
         field: 'confirmed',
         per: 'total',
-        overview_width: 0,
-        overview_height: 0,
         overview_scale: 'log',
-        grid_width: 0,
-        grid_height: 0,
-        is_mobile: false,
         forecast_faq_open: false,
     }
   }
@@ -111,13 +106,8 @@ export default class CountryPage extends React.Component{
       )
   }
     
-    return (
-
-
-      
-      <React.Fragment>
+    return (<>
         <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
-        <Hero selected_country={selected_country}/>
         <section className="section">
           <div className="container">
             <div className="columns info">
@@ -138,8 +128,8 @@ export default class CountryPage extends React.Component{
                   scale={this.state.overview_scale}
                   field={field}
                   full_field_name={full_field_name}
-                  width={this.state.overview_width}
-                  height={this.state.overview_height}
+                  width={this.props.overview_width}
+                  height={this.props.overview_height}
                 />
               </div>
               <div className="column is-one-third">
@@ -177,86 +167,14 @@ export default class CountryPage extends React.Component{
         <CountryGrid 
           active_country={active_country}
           countries={countries}
-          grid_width={this.state.grid_width}
-          grid_height={this.state.grid_height}
+          grid_width={this.props.grid_width}
+          grid_height={this.props.grid_height}
+          is_mobile={this.props.is_mobile}
           tidy={this.tidyFormat}
-          is_mobile={this.state.is_mobile}
-        />
           
-        <Footer />
-      </React.Fragment>
-    )
-  }
-
-  /**
-   * Calculate & Update state of new dimensions
-   */
-  updateDimensions = () => {  
-
-    let overview_width =  860
-    let overview_height = 500
-    
-    let grid_width = 391
-    let grid_height = 200
-
-    let is_mobile = false
-    
-    if(window.innerWidth < 1408){ // FullHD
-      overview_width =  740
-      overview_height = 550
-      grid_width = 350
-      grid_height = 180
-      is_mobile = false
-    }
-    if(window.innerWidth < 1216){ // Desktop
-      overview_width =  600
-      overview_height = 400
-      grid_width = 285
-      grid_height = 160
-      is_mobile = false
-    }
-    if(window.innerWidth < 1024){
-      overview_width =  450
-      overview_height = 400
-      grid_width = 200
-      grid_height = 120
-      is_mobile = false
-    }
-
-    if(window.innerWidth < 769){
-      overview_width =  650
-      overview_height = 450
-      grid_width = 600
-      grid_height = 300
-      is_mobile = true   
-    }
-    if(window.innerWidth < 480){
-      overview_width = 300
-      overview_height = 300
-      grid_width = 280
-      grid_height = 150  
-       
-    }
-
-    //window.innerHeight
-    
-    this.setState({ overview_width, overview_height, grid_width, grid_height, is_mobile });
-  
-  }
-
-  /**
-   * Add event listener
-   */
-  componentDidMount = () => {
-    this.updateDimensions();
-    window.addEventListener("resize", this.updateDimensions);
-  }
-
-  /**
-   * Remove event listener
-   */
-  componentWillUnmount = () => {
-    window.removeEventListener("resize", this.updateDimensions);
+        />
+      
+    </>)
   }
   
 }

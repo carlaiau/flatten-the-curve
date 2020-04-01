@@ -1,7 +1,8 @@
 import React, {useContext} from "react"
 import {graphql} from 'gatsby'
 import {GlobalStateContext} from "../context/GlobalContextProvider"
-import AdvancedCountryPage from "../components/advanced-country.page"
+import AdvancedCountryPage from "../components/advanced-country-page"
+import Layout from "../components/layout"
 
 const AdvancedCountryTemplate = ({data, pageContext}) => {
     const {countries, update_times} = useContext(GlobalStateContext)
@@ -66,14 +67,18 @@ const AdvancedCountryTemplate = ({data, pageContext}) => {
 
 
 
-    return <AdvancedCountryPage countries={countries} 
-        all={all} 
-        cum={cum_object}
-        update_times={update_times}
-        country_name={pageContext.name}
-        checkedAreas={pageContext.checkedAreas}
-        area_label={pageContext.area_label || false}
-    />
+    return (
+        <Layout selected_country={pageContext.name}>
+            <AdvancedCountryPage countries={countries} 
+                all={all} 
+                cum={cum_object}
+                update_times={update_times}
+                country_name={pageContext.name}
+                checkedAreas={pageContext.checkedAreas}
+                area_label={pageContext.area_label || false}
+            />
+        </Layout>
+    )
 }
 
 export default AdvancedCountryTemplate

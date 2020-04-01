@@ -19,26 +19,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     `);
   
-    if (result.errors) {
+    if (result.errors)
       reporter.panic('error loading docs', result.errors);
-    }
-  
+    
     const countries = result.data.allCountriesJson.nodes;
-  
-    countries.forEach(c => {
-      if(c.name != "United States" && c.name != "Canada" && c.name != 'Australia' && c.name != "China"){ // Custom Structure
-        actions.createPage({
-          path: '/' + c.name.toLowerCase().replace(/\s+/g, "-"),
-          component: require.resolve('./src/templates/country-template.js'),
-          context: {
-            country: c.name,
-          },
-        });
-      }
-    });
-
-
-    const advanced_country_pages = [
+    
+    const advanced_countries = [
       {
         slug: 'australia',
         name: 'Australia',
@@ -62,13 +48,30 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }
     ]
 
-    advanced_country_pages.forEach( p => {
+    // Create basic page for each country not in the advanced countries array
+    countries.filter(c => {
+      return ! advanced_countries.map(adv_c => adv_c.name).includes(c.name)
+    })
+    .forEach(c => {
+      actions.createPage({
+        path: '/' + c.name.toLowerCase().replace(/\s+/g, "-"),
+        component: require.resolve('./src/templates/country-template.js'),
+        context: {
+          country: c.name,
+        },
+      });
+    });
+
+    advanced_countries.forEach( p => {
       actions.createPage({
         path: '/' + p.slug,
         component: require.resolve('./src/templates/advanced-country-template.js'),
         context: p // Each countries object gets passed in as context object
       });
     })
+
+    // Create Index Page
+    actions.createPage({path: '/', component: require.resolve('./src/templates/index-template.js') });
 
     
 

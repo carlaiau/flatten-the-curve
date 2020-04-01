@@ -1,20 +1,21 @@
 import React, { useContext } from 'react'
-import {GlobalStateContext} from "../context/GlobalContextProvider"
+import {GlobalStateContext} from "../../context/GlobalContextProvider"
+import styled from '@emotion/styled'
+
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableRow from '@material-ui/core/TableRow';
 import TableCell from '@material-ui/core/TableCell';
-
 import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TablePagination from '@material-ui/core/TablePagination';
-
 import TableSortLabel from '@material-ui/core/TableSortLabel';
 
 import EnhancedTableRowIndex from './enhanced-table-row-index'
 import EnhancedTableRowAdvancedCountry from './enhanced-table-row-advanced-country'
 
-import SetupIndexTable from '../utils/setup-index-table'
+import SetupIndexTable from '../../utils/setup-index-table'
+
 
 const descendingComparator = (a, b, orderBy) => {
   if (b[orderBy] < a[orderBy]) return -1;
@@ -90,8 +91,107 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
 
+
+  const StyledTable = styled('div')`
+      .MuiTableHead-root{
+          background: #fff;
+          .MuiTableCell-alignRight{
+              text-align: right;
+          }
+      }
+      .MuiTablePagination-root{
+          background: #227093;
+          max-width: 500px;
+          border-radius: 6px;
+          color: #fff;
+          margin-top: 20px;
+      }
+      td.MuiTableCell-body{
+          text-align: right;
+      }
+      .MuiTableBody-root{
+          .MuiTableRow-root{
+              &:last-of-type{
+                  td, th{
+                      border-bottom: none;
+                  }
+              }
+          }
+      }
+
+      .MuiSelect-icon{
+          color: #fff;
+      }
+      .MuiSvgIcon-root{
+          color: #fff;
+      }
+      .Mui-disabled{
+          .MuiSvgIcon-root{
+              opacity: 0.5;
+          }
+      }
+
+      @media screen and (max-width: 1216px){
+          .MuiTableCell-root{
+              padding: 10px;
+          }
+          .MuiTableHead-root{
+              .MuiTableCell-root{
+                  padding: 5px;
+              }
+          }
+      }
+      @media screen and (max-width: 920px){
+          .MuiTableCell-root{
+              padding: 10px 0;
+          }
+          .MuiTableCell-root{
+              &.population{
+                  display: none;
+              }
+          }
+      }
+      @media screen and (max-width: 375px){
+          .MuiTableHead-root{
+              .MuiTableCell-root{
+                  padding: 5px;
+                  line-height: 1.3;
+                  font-size: 9px;
+              }
+              .MuiTableSortLabel-icon{
+                  font-size: 12px;
+              }
+          }
+          .MuiTableBody-root{
+              .MuiTableCell-root{
+                  font-size: 9px;
+                  padding: 5px 0;
+                  
+              }
+              th{
+                  &.MuiTableCell-root{
+                      padding-left: 5px;
+                  }
+              }
+              .button{
+                  font-size: 8px !important;
+                  padding: 2px;
+                  margin-left: 2px;
+              }
+          }
+          .MuiTablePagination-root{
+              width: 90%;
+              margin-left: 20px;
+              .MuiToolbar-root{
+                  .MuiTypography-body2{
+                      font-size: 9px;
+                  }
+              }
+          }
+      }
+  `
   return (
-    <div>
+    <StyledTable className="container">
         <TableContainer>
           <Table
             aria-labelledby="tableTitle"
@@ -141,7 +241,7 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
             />
           
         </div>
-    </div>
+    </StyledTable>
   )
 }
 
