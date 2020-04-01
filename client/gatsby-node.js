@@ -28,7 +28,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       {
         slug: 'australia',
         name: 'Australia',
-        checkedAreas: ['New South Wales', 'Victoria', 'Queensland']
+        checkedAreas: ['New South Wales', 'Victoria', 'Queensland'],
+        show_grid: true,
+        hide_deaths: true
       },
       {
         slug: 'china',
@@ -39,7 +41,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         slug: 'canada',
         name: 'Canada',
         checkedAreas: ['Ontario', 'Saskatchewan', 'Quebec', 'British Columbia'],
-        area_label: "province or territory"
+        area_label: "province or territory",
+        show_grid: true
+        
       },
       {
         slug: 'united-states',

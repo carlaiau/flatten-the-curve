@@ -23,7 +23,6 @@ export default class CountryPage extends React.Component{
         field: 'confirmed',
         per: 'total',
         overview_scale: 'log',
-        forecast_faq_open: false,
     }
   }
   
@@ -81,27 +80,6 @@ export default class CountryPage extends React.Component{
             </p>
             : <></> }
           </div>
-          { this.state.forecast_faq_open ? 
-            < div style={{margin: '20px 10px'}}>
-              <p className="is-size-7">
-                The forecasts below show a future projection of COVID-19 in {name}. 
-                This is based on the historical growth data of each country that is currently ahead of {name} in the outbreak.
-              </p>
-              <p className="is-size-7">
-                Viewing this can offer unique insights into the range of possible outcomes. The forecast is not based on epidemiological models, just on historical data experienced by other countries.
-              </p>
-              <p className="is-size-7">
-                  The forecast does not take into account the relative doubling time of each country.
-              </p>
-              <p className="is-size-7">
-                  Forecasting accuracy depends on a multitude of factors such as the number and speed of tests done, the quality of the case tracking, the testing of tracked cases, and the support given to those who need to go into isolation.
-              </p>
-            </div>
-            : <></> }
-          <button className="button is-dark is-outlined is-size-7" onClick={e => this.setState({forecast_faq_open: ! this.state.forecast_faq_open})}>
-            {this.state.forecast_faq_open ? 'Close': 'Forecast info'}
-          </button>
-          
       </div>
       )
   }
@@ -171,7 +149,6 @@ export default class CountryPage extends React.Component{
           grid_height={this.props.grid_height}
           is_mobile={this.props.is_mobile}
           tidy={this.tidyFormat}
-          
         />
       
     </>)

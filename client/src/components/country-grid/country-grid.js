@@ -12,7 +12,8 @@ export default class CountryGrid extends React.Component{
             max_count: 30,
             field: this.props.field || 'confirmed',
             per: this.props.per || 'total',
-            sort: this.props.sort || 'worst'
+            sort: this.props.sort || 'worst',
+            forecast_faq_open: false
         }
     }
 
@@ -44,9 +45,11 @@ export default class CountryGrid extends React.Component{
                 field={field}
                 sort={sort}
                 length={topCountries.length}
+                forecast_faq_open={this.state.forecast_faq_open}
                 fieldFn={e => this.setState({field: e.target.value})}
                 perFn={e => this.setState({per: e.target.value})}
                 sortFn={e => this.setState({sort: e.target.value})}
+                forecastFn={e => this.setState({forecast_faq_open: ! this.state.forecast_faq_open})}
             />
             <section className="section">
                 <div className="container">

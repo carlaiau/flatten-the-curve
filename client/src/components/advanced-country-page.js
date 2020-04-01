@@ -2,6 +2,7 @@ import React from 'react'
 import SEO from "./seo"
 import CountryOverviewGraph from "./country-overview-graph"
 import CumulativeGraphContainer from "./cumulative-graph/cumulative-graph-container"
+import CountryGrid from "./country-grid/country-grid"
 import UpdateTable from './update-times'
 import EnhancedTable from './enhanced-table/enhanced-table'
 
@@ -22,7 +23,6 @@ export default class AdvancedCountryPage extends React.Component{
             cum: props.cum,
             field: 'confirmed',
             per: 'total',
-            
             overview_scale: 'log',
             country: props.all.filter(state => state.name == 'All')[0],
             selectedStates: ['All'],
@@ -38,6 +38,7 @@ export default class AdvancedCountryPage extends React.Component{
     render(){
         const {field, per, country} = this.state
         const update_times = this.props.update_times
+        
 
         let full_field_name = field === 'confirmed' ? 
         per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
@@ -47,7 +48,9 @@ export default class AdvancedCountryPage extends React.Component{
         const active_country = SetupCountry({
             country: country,
             field: full_field_name
-          })
+        })
+
+        active_country.name =  this.props.country_name
         
 
         const {rows, headCells} = SetupAdvancedCountryTable(this.props.country_name, this.props.all)
@@ -111,6 +114,7 @@ export default class AdvancedCountryPage extends React.Component{
                 </p>
             </div>
             : <></>}
+            
             
         </div>
         )
@@ -176,50 +180,55 @@ export default class AdvancedCountryPage extends React.Component{
             
             <section className="section cum">
                 <div className="container">
-                <div className="columns">
-                            <div className="column is-narrow">
-                                <div className="box has-background-success">
-                                    <h3 className="is-size-3 has-text-white title">
-                                        Cumulative number of cases by {this.state.area_label}
-                                    </h3>
-                                    <p className="is-size-5 subtitle has-text-white">
-                                        by number of days since nth case
-                                    </p>
-                                </div>
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success">
+                                <h3 className="is-size-3 has-text-white title">
+                                    Cumulative number of cases by {this.state.area_label}
+                                </h3>
+                                <p className="is-size-5 subtitle has-text-white">
+                                    by number of days since nth case
+                                </p>
                             </div>
                         </div>
-                        <CumulativeGraphContainer 
-                            width={this.props.cum_width} 
-                            height={this.props.cum_height} 
-                            areas={this.state.cum}
-                            field="confirmed"
-                            type_of_area="state"
-                            checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={100}
-                            accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
-                            max_area_count={this.state.max_area_count}
-                            
-                            
-                        />  
-                        <div className="columns">
-                            <div className="column is-narrow">
-                                <div className="box has-background-success is-full">
-                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
-                                    <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
+                    </div>
+                    <CumulativeGraphContainer 
+                        width={this.props.cum_width} 
+                        height={this.props.cum_height} 
+                        areas={this.state.cum}
+                        field="confirmed"
+                        type_of_area="state"
+                        checkedAreas={this.props.checkedAreas}
+                        accumulateFrom={100}
+                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                        max_area_count={this.state.max_area_count}
+                        
+                        
+                    />  
+                    {
+                    this.props.hide_deaths ? 
+                        <>
+                            <div className="columns">
+                                <div className="column is-narrow">
+                                    <div className="box has-background-success is-full">
+                                        <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
+                                        <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <CumulativeGraphContainer 
-                            width={this.props.cum_width} 
-                            height={this.props.cum_height} 
-                            areas={this.state.cum}
-                            field="deaths"
-                            type_of_area="state"
-                            checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={10}
-                            accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
-                        /> 
-                </div>
+                            <CumulativeGraphContainer 
+                                width={this.props.cum_width} 
+                                height={this.props.cum_height} 
+                                areas={this.state.cum}
+                                field="deaths"
+                                type_of_area="state"
+                                checkedAreas={this.props.checkedAreas}
+                                accumulateFrom={10}
+                                accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
+                            /> 
+                        </>
+                    : <></> }
+                    </div>
             </section>
             <section className="section">
                 <div className="container">
@@ -250,6 +259,19 @@ export default class AdvancedCountryPage extends React.Component{
                     country_name={this.props.country_name}
                 />
             </section>
+            {(this.props.show_grid ?
+                <CountryGrid 
+                    active_country={active_country}
+                    countries={this.props.countries}
+                    grid_width={this.props.grid_width}
+                    grid_height={this.props.grid_height}
+                    is_mobile={this.props.is_mobile}
+                    tidy={this.tidyFormat}
+                />
+                :
+                <></>)
+
+            }
         </>)
     }
 }

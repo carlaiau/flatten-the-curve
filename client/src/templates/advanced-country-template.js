@@ -69,13 +69,16 @@ const AdvancedCountryTemplate = ({data, pageContext}) => {
 
     return (
         <Layout selected_country={pageContext.name}>
-            <AdvancedCountryPage countries={countries} 
+            <AdvancedCountryPage 
+                countries={countries} 
                 all={all} 
                 cum={cum_object}
                 update_times={update_times}
                 country_name={pageContext.name}
                 checkedAreas={pageContext.checkedAreas}
                 area_label={pageContext.area_label || false}
+                show_grid={pageContext.show_grid || false}
+                hide_deaths={pageContext.hide_deaths || false}
             />
         </Layout>
     )
