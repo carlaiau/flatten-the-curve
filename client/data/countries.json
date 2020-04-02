@@ -32733,84 +32733,84 @@
       {
         "date": "2020-03-04T00:00:00Z",
         "confirmed": 118,
-        "deaths": 0,
+        "deaths": 10,
         "hospitalized": 0,
         "tests": 866,
         "old_date": 20200304,
         "confirmed_per_mil": 0.36067159422719314,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.030565389341287556,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 2.6469627169555023
       },
       {
         "date": "2020-03-05T00:00:00Z",
         "confirmed": 176,
-        "deaths": 0,
+        "deaths": 11,
         "hospitalized": 0,
         "tests": 1129,
         "old_date": 20200305,
         "confirmed_per_mil": 0.537950852406661,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.03362192827541631,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 3.450832456631365
       },
       {
         "date": "2020-03-06T00:00:00Z",
         "confirmed": 223,
-        "deaths": 0,
+        "deaths": 14,
         "hospitalized": 0,
         "tests": 1794,
         "old_date": 20200306,
         "confirmed_per_mil": 0.6816081823107125,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.04279154507780258,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 5.4834308478269875
       },
       {
         "date": "2020-03-07T00:00:00Z",
         "confirmed": 341,
-        "deaths": 0,
+        "deaths": 16,
         "hospitalized": 0,
         "tests": 2150,
         "old_date": 20200307,
         "confirmed_per_mil": 1.0422797765379057,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.048904622946060086,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 6.571558708376824
       },
       {
         "date": "2020-03-08T00:00:00Z",
         "confirmed": 417,
-        "deaths": 0,
+        "deaths": 18,
         "hospitalized": 0,
         "tests": 2752,
         "old_date": 20200308,
         "confirmed_per_mil": 1.274576735531691,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.055017700814317595,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 8.411595146722336
       },
       {
         "date": "2020-03-09T00:00:00Z",
         "confirmed": 584,
-        "deaths": 0,
+        "deaths": 22,
         "hospitalized": 0,
         "tests": 3951,
         "old_date": 20200309,
         "confirmed_per_mil": 1.7850187375311932,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.06724385655083262,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 12.076385328742713
       },
       {
         "date": "2020-03-10T00:00:00Z",
         "confirmed": 778,
-        "deaths": 0,
+        "deaths": 24,
         "hospitalized": 0,
         "tests": 4585,
         "old_date": 20200310,
         "confirmed_per_mil": 2.3779872907521717,
-        "deaths_per_mil": 0,
+        "deaths_per_mil": 0.07335693441909014,
         "hospitalized_per_mil": 0,
         "tests_per_mil": 14.014231012980344
       },
@@ -32888,15 +32888,15 @@
       },
       {
         "date": "2020-03-17T00:00:00Z",
-        "confirmed": 5591,
+        "confirmed": 5722,
         "deaths": 90,
         "hospitalized": 0,
-        "tests": 53195,
+        "tests": 53326,
         "old_date": 20200317,
-        "confirmed_per_mil": 17.089109180713873,
+        "confirmed_per_mil": 17.489515781084737,
         "deaths_per_mil": 0.27508850407158797,
         "hospitalized_per_mil": 0,
-        "tests_per_mil": 162.59258860097916
+        "tests_per_mil": 162.99299520135003
       },
       {
         "date": "2020-03-18T00:00:00Z",
@@ -33065,12 +33065,24 @@
         "deaths_per_mil": 11.449794847246318,
         "hospitalized_per_mil": 81.48732798387262,
         "tests_per_mil": 3206.220702271975
+      },
+      {
+        "date": "2020-04-01T00:00:00Z",
+        "confirmed": 210770,
+        "deaths": 4700,
+        "hospitalized": 31142,
+        "tests": 1149960,
+        "old_date": 20200401,
+        "confirmed_per_mil": 644.2267111463178,
+        "deaths_per_mil": 14.365732990405151,
+        "hospitalized_per_mil": 95.1867354866377,
+        "tests_per_mil": 3514.8975126907035
       }
     ],
-    "highest_confirmed": 184770,
-    "highest_deaths": 3746,
-    "highest_hospitalized": 26660,
-    "highest_tests": 1048971
+    "highest_confirmed": 210770,
+    "highest_deaths": 4700,
+    "highest_hospitalized": 31142,
+    "highest_tests": 1149960
   },
   {
     "name": "New Zealand",
@@ -33252,9 +33264,16 @@
         "confirmed_per_mil": 144.918636782,
         "deaths": 1,
         "deaths_per_mil": 0.20468734
+      },
+      {
+        "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 797,
+        "confirmed_per_mil": 163.13581005,
+        "deaths": 1,
+        "deaths_per_mil": 0.20468734
       }
     ],
-    "highest_confirmed": 708,
+    "highest_confirmed": 797,
     "highest_deaths": 1,
     "population": 4885500
   }
