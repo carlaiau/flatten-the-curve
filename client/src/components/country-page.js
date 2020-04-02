@@ -3,6 +3,7 @@ import Hero from "../components/hero"
 import SEO from "../components/seo"
 import CountryOverviewGraph from "./country-overview-graph"
 import CountryGrid from "./country-grid/country-grid"
+import NZRegionalTable from "./nz-regional-table"
 
 import Layout from "./layout"
 import SetupCountry from '../utils/setup-country'
@@ -142,6 +143,7 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
+        { active_country.name == 'New Zealand' ? <NZRegionalTable/> : <></>}
         <CountryGrid 
           active_country={active_country}
           countries={countries}
