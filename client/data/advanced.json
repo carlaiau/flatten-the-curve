@@ -41194,10 +41194,16 @@
             "confirmed": 690,
             "deaths": 8,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 754,
+            "deaths": 9,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 690,
-        "highest_deaths": 8
+        "highest_confirmed": 754,
+        "highest_deaths": 9
       },
       {
         "name": "British Columbia",
@@ -41585,6 +41591,12 @@
             "confirmed": 1013,
             "deaths": 24,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1013,
+            "deaths": 24,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 1013,
@@ -41706,9 +41718,15 @@
             "confirmed": 103,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 127,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 103,
+        "highest_confirmed": 127,
         "highest_deaths": 1
       },
       {
@@ -41839,9 +41857,15 @@
             "confirmed": 70,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 81,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 70,
+        "highest_confirmed": 81,
         "highest_deaths": 0
       },
       {
@@ -41948,9 +41972,15 @@
             "confirmed": 152,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 175,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 152,
+        "highest_confirmed": 175,
         "highest_deaths": 1
       },
       {
@@ -42051,9 +42081,15 @@
             "confirmed": 147,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 173,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 147,
+        "highest_confirmed": 173,
         "highest_deaths": 0
       },
       {
@@ -42454,10 +42490,16 @@
             "confirmed": 1966,
             "deaths": 33,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 2392,
+            "deaths": 37,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 1966,
-        "highest_deaths": 33
+        "highest_confirmed": 2392,
+        "highest_deaths": 37
       },
       {
         "name": "Prince Edward Island",
@@ -42563,6 +42605,12 @@
             "confirmed": 21,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 21,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 21,
@@ -42768,10 +42816,16 @@
             "confirmed": 4162,
             "deaths": 31,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 4611,
+            "deaths": 33,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 4162,
-        "highest_deaths": 31
+        "highest_confirmed": 4611,
+        "highest_deaths": 33
       },
       {
         "name": "Saskatchewan",
@@ -42889,10 +42943,16 @@
             "confirmed": 184,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 193,
+            "deaths": 3,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 184,
-        "highest_deaths": 2
+        "highest_confirmed": 193,
+        "highest_deaths": 3
       },
       {
         "name": "Northwest Territories",
@@ -42932,9 +42992,15 @@
             "confirmed": 1,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 2,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 1,
+        "highest_confirmed": 2,
         "highest_deaths": 0
       },
       {
@@ -42975,6 +43041,12 @@
             "confirmed": 5,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 5,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 5,
@@ -43511,16 +43583,24 @@
             "old_date": "3/31/20",
             "confirmed_per_mil": 229.74265584453013,
             "deaths_per_mil": 2.698410334091263
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 9547,
+            "deaths": 108,
+            "old_date": "4/1/20",
+            "confirmed_per_mil": 257.6172345956929,
+            "deaths_per_mil": 2.914283160818564
           }
         ],
-        "highest_confirmed": 8514,
-        "highest_deaths": 100
+        "highest_confirmed": 9547,
+        "highest_deaths": 108
       }
     ],
     "cum": [
       {
-        "highest_confirmed": 690,
-        "highest_deaths": 8,
+        "highest_confirmed": 754,
+        "highest_deaths": 9,
         "name": "Alberta",
         "confirmed": [
           {
@@ -43605,6 +43685,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
@@ -43675,6 +43760,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
@@ -43730,6 +43820,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
@@ -43780,6 +43875,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
@@ -43815,6 +43915,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
@@ -43845,12 +43950,23 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 690
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
               }
             ]
           },
           {
             "range": 750,
-            "time_series": []
+            "time_series": [
+              {
+                "num_day": 0,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 754
+              }
+            ]
           },
           {
             "range": 1000,
@@ -44006,6 +44122,11 @@
                 "num_day": 18,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 19,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44091,6 +44212,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44161,6 +44287,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44220,6 +44351,11 @@
               {
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
+                "confirmed": 1013
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
                 "confirmed": 1013
               }
             ]
@@ -44281,6 +44417,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44326,6 +44467,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44351,6 +44497,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1013
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 1013
               }
             ]
           },
@@ -44360,6 +44511,11 @@
               {
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
+                "confirmed": 1013
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
                 "confirmed": 1013
               }
             ]
@@ -44423,6 +44579,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 24
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 24
               }
             ]
           },
@@ -44432,6 +44593,11 @@
               {
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
+                "deaths": 24
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
                 "deaths": 24
               }
             ]
@@ -44475,7 +44641,7 @@
         ]
       },
       {
-        "highest_confirmed": 103,
+        "highest_confirmed": 127,
         "highest_deaths": 1,
         "name": "Manitoba",
         "confirmed": [
@@ -44501,6 +44667,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 103
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 127
               }
             ]
           },
@@ -44511,6 +44682,11 @@
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 103
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 127
               }
             ]
           },
@@ -44587,7 +44763,7 @@
         ]
       },
       {
-        "highest_confirmed": 70,
+        "highest_confirmed": 81,
         "highest_deaths": 0,
         "name": "New Brunswick",
         "confirmed": [
@@ -44613,6 +44789,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 70
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 81
               }
             ]
           },
@@ -44693,7 +44874,7 @@
         ]
       },
       {
-        "highest_confirmed": 152,
+        "highest_confirmed": 175,
         "highest_deaths": 1,
         "name": "Newfoundland and Labrador",
         "confirmed": [
@@ -44729,6 +44910,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 152
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 175
               }
             ]
           },
@@ -44759,6 +44945,11 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 152
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 175
               }
             ]
           },
@@ -44835,7 +45026,7 @@
         ]
       },
       {
-        "highest_confirmed": 147,
+        "highest_confirmed": 173,
         "highest_deaths": 0,
         "name": "Nova Scotia",
         "confirmed": [
@@ -44881,6 +45072,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 147
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 173
               }
             ]
           },
@@ -44906,6 +45102,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 147
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 173
               }
             ]
           },
@@ -44982,8 +45183,8 @@
         ]
       },
       {
-        "highest_confirmed": 1966,
-        "highest_deaths": 33,
+        "highest_confirmed": 2392,
+        "highest_deaths": 37,
         "name": "Ontario",
         "confirmed": [
           {
@@ -45083,6 +45284,11 @@
                 "num_day": 18,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 19,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45173,6 +45379,11 @@
                 "num_day": 16,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 17,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45248,6 +45459,11 @@
                 "num_day": 13,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 14,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45313,6 +45529,11 @@
                 "num_day": 11,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 12,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45368,6 +45589,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45418,6 +45644,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45453,6 +45684,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           },
@@ -45478,6 +45714,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 1966
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2392
               }
             ]
           }
@@ -45515,6 +45756,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 33
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 37
               }
             ]
           },
@@ -45535,6 +45781,11 @@
                 "num_day": 2,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 33
+              },
+              {
+                "num_day": 3,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 37
               }
             ]
           },
@@ -45550,6 +45801,11 @@
                 "num_day": 1,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 33
+              },
+              {
+                "num_day": 2,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 37
               }
             ]
           },
@@ -45673,8 +45929,8 @@
         ]
       },
       {
-        "highest_confirmed": 4162,
-        "highest_deaths": 31,
+        "highest_confirmed": 4611,
+        "highest_deaths": 33,
         "name": "Quebec",
         "confirmed": [
           {
@@ -45759,6 +46015,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -45829,6 +46090,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -45884,6 +46150,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -45934,6 +46205,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -45984,6 +46260,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -46034,6 +46315,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -46079,6 +46365,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           },
@@ -46124,6 +46415,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4162
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4611
               }
             ]
           }
@@ -46156,6 +46452,11 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 31
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 33
               }
             ]
           },
@@ -46181,6 +46482,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 31
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 33
               }
             ]
           },
@@ -46191,6 +46497,11 @@
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 31
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 33
               }
             ]
           },
@@ -46229,8 +46540,8 @@
         ]
       },
       {
-        "highest_confirmed": 184,
-        "highest_deaths": 2,
+        "highest_confirmed": 193,
+        "highest_deaths": 3,
         "name": "Saskatchewan",
         "confirmed": [
           {
@@ -46285,6 +46596,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 184
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 193
               }
             ]
           },
@@ -46310,6 +46626,11 @@
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 184
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 193
               }
             ]
           },
@@ -46386,7 +46707,7 @@
         ]
       },
       {
-        "highest_confirmed": 1,
+        "highest_confirmed": 2,
         "highest_deaths": 0,
         "name": "Northwest Territories",
         "confirmed": [
@@ -46556,8 +46877,8 @@
         ]
       },
       {
-        "highest_confirmed": 8514,
-        "highest_deaths": 100,
+        "highest_confirmed": 9547,
+        "highest_deaths": 108,
         "population": 37058856,
         "name": "All",
         "confirmed": [
@@ -46688,6 +47009,11 @@
                 "num_day": 24,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 25,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -46798,6 +47124,11 @@
                 "num_day": 20,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 21,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -46888,6 +47219,11 @@
                 "num_day": 16,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 17,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -46973,6 +47309,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -47058,6 +47399,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -47133,6 +47479,11 @@
                 "num_day": 13,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 14,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -47203,6 +47554,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           },
@@ -47263,6 +47619,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 8514
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 9547
               }
             ]
           }
@@ -47330,6 +47691,11 @@
                 "num_day": 11,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 12,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47385,6 +47751,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47420,6 +47791,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47450,6 +47826,11 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47480,6 +47861,11 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47495,6 +47881,11 @@
                 "num_day": 1,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 2,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47505,6 +47896,11 @@
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 100
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 108
               }
             ]
           },
@@ -47648,9 +48044,15 @@
             "confirmed": 80,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 84,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 80,
+        "highest_confirmed": 84,
         "highest_deaths": 1
       },
       {
@@ -48051,10 +48453,16 @@
             "confirmed": 2032,
             "deaths": 8,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 2182,
+            "deaths": 9,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 2032,
-        "highest_deaths": 8
+        "highest_confirmed": 2182,
+        "highest_deaths": 9
       },
       {
         "name": "Northern Territory",
@@ -48202,9 +48610,15 @@
             "confirmed": 17,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 19,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 17,
+        "highest_confirmed": 19,
         "highest_deaths": 0
       },
       {
@@ -48587,9 +49001,15 @@
             "confirmed": 743,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 781,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 743,
+        "highest_confirmed": 781,
         "highest_deaths": 2
       },
       {
@@ -48954,9 +49374,15 @@
             "confirmed": 337,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 367,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 337,
+        "highest_confirmed": 367,
         "highest_deaths": 0
       },
       {
@@ -49141,10 +49567,16 @@
             "confirmed": 69,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 69,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 69,
-        "highest_deaths": 1
+        "highest_deaths": 2
       },
       {
         "name": "Victoria",
@@ -49544,9 +49976,15 @@
             "confirmed": 917,
             "deaths": 4,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 968,
+            "deaths": 4,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 917,
+        "highest_confirmed": 968,
         "highest_deaths": 4
       },
       {
@@ -49743,9 +50181,15 @@
             "confirmed": 364,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 392,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 364,
+        "highest_confirmed": 392,
         "highest_deaths": 2
       },
       {
@@ -50279,15 +50723,23 @@
             "old_date": "3/31/20",
             "confirmed_per_mil": 182.41568056233484,
             "deaths_per_mil": 0.7202198399039322
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 4862,
+            "deaths": 20,
+            "old_date": "4/1/20",
+            "confirmed_per_mil": 194.5393812007177,
+            "deaths_per_mil": 0.8002442665599248
           }
         ],
-        "highest_confirmed": 4559,
-        "highest_deaths": 18
+        "highest_confirmed": 4862,
+        "highest_deaths": 20
       }
     ],
     "cum": [
       {
-        "highest_confirmed": 80,
+        "highest_confirmed": 84,
         "highest_deaths": 1,
         "name": "Australian Capital Territory",
         "confirmed": [
@@ -50323,6 +50775,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 80
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 84
               }
             ]
           },
@@ -50403,8 +50860,8 @@
         ]
       },
       {
-        "highest_confirmed": 2032,
-        "highest_deaths": 8,
+        "highest_confirmed": 2182,
+        "highest_deaths": 9,
         "name": "New South Wales",
         "confirmed": [
           {
@@ -50519,6 +50976,11 @@
                 "num_day": 21,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 22,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50614,6 +51076,11 @@
                 "num_day": 17,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 18,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50694,6 +51161,11 @@
                 "num_day": 14,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 15,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50764,6 +51236,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50824,6 +51301,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50879,6 +51361,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50924,6 +51411,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           },
@@ -50964,6 +51456,11 @@
                 "num_day": 6,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 2032
+              },
+              {
+                "num_day": 7,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 2182
               }
             ]
           }
@@ -51016,7 +51513,7 @@
         ]
       },
       {
-        "highest_confirmed": 17,
+        "highest_confirmed": 19,
         "highest_deaths": 0,
         "name": "Northern Territory",
         "confirmed": [
@@ -51101,7 +51598,7 @@
         ]
       },
       {
-        "highest_confirmed": 743,
+        "highest_confirmed": 781,
         "highest_deaths": 2,
         "name": "Queensland",
         "confirmed": [
@@ -51192,6 +51689,11 @@
                 "num_day": 16,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 17,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
@@ -51262,6 +51764,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
@@ -51322,6 +51829,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
@@ -51372,6 +51884,11 @@
                 "num_day": 8,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 9,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
@@ -51412,6 +51929,11 @@
                 "num_day": 6,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 7,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
@@ -51442,12 +51964,23 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 743
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
               }
             ]
           },
           {
             "range": 750,
-            "time_series": []
+            "time_series": [
+              {
+                "num_day": 0,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 781
+              }
+            ]
           },
           {
             "range": 1000,
@@ -51502,7 +52035,7 @@
         ]
       },
       {
-        "highest_confirmed": 337,
+        "highest_confirmed": 367,
         "highest_deaths": 0,
         "name": "South Australia",
         "confirmed": [
@@ -51568,6 +52101,11 @@
                 "num_day": 11,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 337
+              },
+              {
+                "num_day": 12,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 367
               }
             ]
           },
@@ -51623,6 +52161,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 337
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 367
               }
             ]
           },
@@ -51658,6 +52201,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 337
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 367
               }
             ]
           },
@@ -51673,6 +52221,11 @@
                 "num_day": 1,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 337
+              },
+              {
+                "num_day": 2,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 367
               }
             ]
           },
@@ -51742,7 +52295,7 @@
       },
       {
         "highest_confirmed": 69,
-        "highest_deaths": 1,
+        "highest_deaths": 2,
         "name": "Tasmania",
         "confirmed": [
           {
@@ -51766,6 +52319,11 @@
               {
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00.000Z",
+                "confirmed": 69
+              },
+              {
+                "num_day": 4,
+                "date": "2020-04-01T00:00:00.000Z",
                 "confirmed": 69
               }
             ]
@@ -51847,7 +52405,7 @@
         ]
       },
       {
-        "highest_confirmed": 917,
+        "highest_confirmed": 968,
         "highest_deaths": 4,
         "name": "Victoria",
         "confirmed": [
@@ -51938,6 +52496,11 @@
                 "num_day": 16,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 17,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52013,6 +52576,11 @@
                 "num_day": 13,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 14,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52073,6 +52641,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52128,6 +52701,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52173,6 +52751,11 @@
                 "num_day": 7,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 8,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52208,6 +52791,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52228,6 +52816,11 @@
                 "num_day": 2,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 917
+              },
+              {
+                "num_day": 3,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 968
               }
             ]
           },
@@ -52284,7 +52877,7 @@
         ]
       },
       {
-        "highest_confirmed": 364,
+        "highest_confirmed": 392,
         "highest_deaths": 2,
         "name": "Western Australia",
         "confirmed": [
@@ -52355,6 +52948,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 364
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 392
               }
             ]
           },
@@ -52410,6 +53008,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 364
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 392
               }
             ]
           },
@@ -52445,6 +53048,11 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 364
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 392
               }
             ]
           },
@@ -52465,6 +53073,11 @@
                 "num_day": 2,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 364
+              },
+              {
+                "num_day": 3,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 392
               }
             ]
           },
@@ -52533,8 +53146,8 @@
         ]
       },
       {
-        "highest_confirmed": 4559,
-        "highest_deaths": 18,
+        "highest_confirmed": 4862,
+        "highest_deaths": 20,
         "population": 24992369,
         "name": "All",
         "confirmed": [
@@ -52680,6 +53293,11 @@
                 "num_day": 27,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 28,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -52795,6 +53413,11 @@
                 "num_day": 21,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 22,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -52895,6 +53518,11 @@
                 "num_day": 18,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 19,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -52980,6 +53608,11 @@
                 "num_day": 15,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 16,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -53060,6 +53693,11 @@
                 "num_day": 14,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 15,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -53135,6 +53773,11 @@
                 "num_day": 13,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 14,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -53200,6 +53843,11 @@
                 "num_day": 11,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 12,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           },
@@ -53260,6 +53908,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 4559
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 4862
               }
             ]
           }
@@ -53297,12 +53950,23 @@
                 "num_day": 5,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 18
+              },
+              {
+                "num_day": 6,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 20
               }
             ]
           },
           {
             "range": 20,
-            "time_series": []
+            "time_series": [
+              {
+                "num_day": 0,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 20
+              }
+            ]
           },
           {
             "range": 30,
@@ -53770,6 +54434,12 @@
             "confirmed": 990,
             "deaths": 6,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 990,
+            "deaths": 6,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 990,
@@ -54197,6 +54867,12 @@
             "confirmed": 580,
             "deaths": 8,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 580,
+            "deaths": 8,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 580,
@@ -54624,6 +55300,12 @@
             "confirmed": 579,
             "deaths": 6,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 579,
+            "deaths": 6,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 579,
@@ -55051,9 +55733,15 @@
             "confirmed": 343,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 345,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 343,
+        "highest_confirmed": 345,
         "highest_deaths": 1
       },
       {
@@ -55472,6 +56160,12 @@
             "confirmed": 138,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 138,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 138,
@@ -55899,9 +56593,15 @@
             "confirmed": 1494,
             "deaths": 8,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1501,
+            "deaths": 8,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 1494,
+        "highest_confirmed": 1501,
         "highest_deaths": 8
       },
       {
@@ -56326,6 +57026,12 @@
             "confirmed": 254,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 254,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 254,
@@ -56753,6 +57459,12 @@
             "confirmed": 146,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 146,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 147,
@@ -57180,6 +57892,12 @@
             "confirmed": 168,
             "deaths": 6,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 168,
+            "deaths": 6,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 168,
@@ -57607,9 +58325,15 @@
             "confirmed": 321,
             "deaths": 6,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 323,
+            "deaths": 6,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 321,
+        "highest_confirmed": 323,
         "highest_deaths": 6
       },
       {
@@ -58028,6 +58752,12 @@
             "confirmed": 484,
             "deaths": 13,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 484,
+            "deaths": 13,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 484,
@@ -58455,6 +59185,12 @@
             "confirmed": 1276,
             "deaths": 22,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1276,
+            "deaths": 22,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 1276,
@@ -58876,9 +59612,15 @@
             "confirmed": 714,
             "deaths": 4,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 765,
+            "deaths": 4,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 714,
+        "highest_confirmed": 765,
         "highest_deaths": 4
       },
       {
@@ -59303,10 +60045,16 @@
             "confirmed": 67801,
             "deaths": 3187,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 67802,
+            "deaths": 3193,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 67801,
-        "highest_deaths": 3187
+        "highest_confirmed": 67802,
+        "highest_deaths": 3193
       },
       {
         "name": "Hunan",
@@ -59730,6 +60478,12 @@
             "confirmed": 1018,
             "deaths": 4,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1018,
+            "deaths": 4,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 1018,
@@ -60145,9 +60899,15 @@
             "confirmed": 107,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 111,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 107,
+        "highest_confirmed": 111,
         "highest_deaths": 1
       },
       {
@@ -60572,6 +61332,12 @@
             "confirmed": 646,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 646,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 646,
@@ -60999,6 +61765,12 @@
             "confirmed": 937,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 937,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 937,
@@ -61420,6 +62192,12 @@
             "confirmed": 98,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 98,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 98,
@@ -61847,9 +62625,15 @@
             "confirmed": 139,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 140,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 139,
+        "highest_confirmed": 140,
         "highest_deaths": 2
       },
       {
@@ -62274,6 +63058,12 @@
             "confirmed": 41,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 41,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 41,
@@ -62701,6 +63491,12 @@
             "confirmed": 75,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 75,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 75,
@@ -63110,6 +63906,12 @@
             "confirmed": 18,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 18,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 18,
@@ -63531,9 +64333,15 @@
             "confirmed": 253,
             "deaths": 3,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 255,
+            "deaths": 3,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 253,
+        "highest_confirmed": 255,
         "highest_deaths": 3
       },
       {
@@ -63958,6 +64766,12 @@
             "confirmed": 774,
             "deaths": 7,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 774,
+            "deaths": 7,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 774,
@@ -64385,10 +65199,16 @@
             "confirmed": 509,
             "deaths": 5,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 516,
+            "deaths": 6,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 509,
-        "highest_deaths": 5
+        "highest_confirmed": 516,
+        "highest_deaths": 6
       },
       {
         "name": "Shanxi",
@@ -64812,9 +65632,15 @@
             "confirmed": 136,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 137,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 136,
+        "highest_confirmed": 137,
         "highest_deaths": 0
       },
       {
@@ -65239,9 +66065,15 @@
             "confirmed": 550,
             "deaths": 3,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 552,
+            "deaths": 3,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 550,
+        "highest_confirmed": 552,
         "highest_deaths": 3
       },
       {
@@ -65666,9 +66498,15 @@
             "confirmed": 174,
             "deaths": 3,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 176,
+            "deaths": 3,
+            "old_date": "4/1/20"
           }
         ],
-        "highest_confirmed": 174,
+        "highest_confirmed": 176,
         "highest_deaths": 3
       },
       {
@@ -66045,6 +66883,12 @@
             "confirmed": 1,
             "deaths": 0,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1,
+            "deaths": 0,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 1,
@@ -66466,6 +67310,12 @@
             "confirmed": 76,
             "deaths": 3,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 76,
+            "deaths": 3,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 76,
@@ -66893,6 +67743,12 @@
             "confirmed": 182,
             "deaths": 2,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 182,
+            "deaths": 2,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 182,
@@ -67320,6 +68176,12 @@
             "confirmed": 1257,
             "deaths": 1,
             "old_date": "3/31/20"
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 1257,
+            "deaths": 1,
+            "old_date": "4/1/20"
           }
         ],
         "highest_confirmed": 1257,
@@ -67888,10 +68750,18 @@
             "old_date": "3/31/20",
             "confirmed_per_mil": 59.077495279056244,
             "deaths_per_mil": 2.375909185556425
+          },
+          {
+            "date": "2020-04-01T00:00:00.000Z",
+            "confirmed": 82361,
+            "deaths": 3316,
+            "old_date": "4/1/20",
+            "confirmed_per_mil": 59.13637244835682,
+            "deaths_per_mil": 2.3809352853747674
           }
         ],
-        "highest_confirmed": 82279,
-        "highest_deaths": 3309
+        "highest_confirmed": 82361,
+        "highest_deaths": 3316
       }
     ],
     "cum": [
@@ -70449,6 +71319,11 @@
                 "num_day": 35,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 580
+              },
+              {
+                "num_day": 36,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 580
               }
             ]
           },
@@ -70508,6 +71383,11 @@
               {
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
+                "confirmed": 580
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
                 "confirmed": 580
               }
             ]
@@ -71890,7 +72770,7 @@
         ]
       },
       {
-        "highest_confirmed": 343,
+        "highest_confirmed": 345,
         "highest_deaths": 1,
         "name": "Fujian",
         "confirmed": [
@@ -72581,6 +73461,11 @@
                 "num_day": 10,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 343
+              },
+              {
+                "num_day": 11,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 345
               }
             ]
           },
@@ -73000,6 +73885,11 @@
                 "num_day": 26,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 138
+              },
+              {
+                "num_day": 27,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 138
               }
             ]
           },
@@ -73076,7 +73966,7 @@
         ]
       },
       {
-        "highest_confirmed": 1494,
+        "highest_confirmed": 1501,
         "highest_deaths": 8,
         "name": "Guangdong",
         "confirmed": [
@@ -76506,7 +77396,7 @@
         ]
       },
       {
-        "highest_confirmed": 321,
+        "highest_confirmed": 323,
         "highest_deaths": 6,
         "name": "Hebei",
         "confirmed": [
@@ -80804,6 +81694,11 @@
                 "num_day": 33,
                 "date": "2020-03-31T00:00:00.000Z",
                 "deaths": 22
+              },
+              {
+                "num_day": 34,
+                "date": "2020-04-01T00:00:00.000Z",
+                "deaths": 22
               }
             ]
           },
@@ -80846,7 +81741,7 @@
         ]
       },
       {
-        "highest_confirmed": 714,
+        "highest_confirmed": 765,
         "highest_deaths": 4,
         "name": "Hong Kong",
         "confirmed": [
@@ -81212,6 +82107,11 @@
                 "num_day": 29,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 714
+              },
+              {
+                "num_day": 30,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
               }
             ]
           },
@@ -81282,6 +82182,11 @@
                 "num_day": 12,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 714
+              },
+              {
+                "num_day": 13,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
               }
             ]
           },
@@ -81337,6 +82242,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 714
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
               }
             ]
           },
@@ -81377,6 +82287,11 @@
                 "num_day": 6,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 714
+              },
+              {
+                "num_day": 7,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
               }
             ]
           },
@@ -81407,12 +82322,23 @@
                 "num_day": 4,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 714
+              },
+              {
+                "num_day": 5,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
               }
             ]
           },
           {
             "range": 750,
-            "time_series": []
+            "time_series": [
+              {
+                "num_day": 0,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 765
+              }
+            ]
           },
           {
             "range": 1000,
@@ -81467,8 +82393,8 @@
         ]
       },
       {
-        "highest_confirmed": 67801,
-        "highest_deaths": 3187,
+        "highest_confirmed": 67802,
+        "highest_deaths": 3193,
         "name": "Hubei",
         "confirmed": [
           {
@@ -87199,7 +88125,7 @@
         ]
       },
       {
-        "highest_confirmed": 107,
+        "highest_confirmed": 111,
         "highest_deaths": 1,
         "name": "Inner Mongolia",
         "confirmed": [
@@ -87420,6 +88346,11 @@
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 107
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 111
               }
             ]
           },
@@ -90635,7 +91566,7 @@
         ]
       },
       {
-        "highest_confirmed": 139,
+        "highest_confirmed": 140,
         "highest_deaths": 2,
         "name": "Liaoning",
         "confirmed": [
@@ -91593,7 +92524,7 @@
         ]
       },
       {
-        "highest_confirmed": 253,
+        "highest_confirmed": 255,
         "highest_deaths": 3,
         "name": "Shaanxi",
         "confirmed": [
@@ -93757,6 +94688,11 @@
                 "num_day": 38,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 774
+              },
+              {
+                "num_day": 39,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 774
               }
             ]
           },
@@ -93813,8 +94749,8 @@
         ]
       },
       {
-        "highest_confirmed": 509,
-        "highest_deaths": 5,
+        "highest_confirmed": 516,
+        "highest_deaths": 6,
         "name": "Shanghai",
         "confirmed": [
           {
@@ -94709,6 +95645,11 @@
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 509
+              },
+              {
+                "num_day": 10,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 516
               }
             ]
           },
@@ -94719,6 +95660,11 @@
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00.000Z",
                 "confirmed": 509
+              },
+              {
+                "num_day": 1,
+                "date": "2020-04-01T00:00:00.000Z",
+                "confirmed": 516
               }
             ]
           },
@@ -94779,7 +95725,7 @@
         ]
       },
       {
-        "highest_confirmed": 136,
+        "highest_confirmed": 137,
         "highest_deaths": 0,
         "name": "Shanxi",
         "confirmed": [
@@ -95276,7 +96222,7 @@
         ]
       },
       {
-        "highest_confirmed": 550,
+        "highest_confirmed": 552,
         "highest_deaths": 3,
         "name": "Sichuan",
         "confirmed": [
@@ -96597,7 +97543,7 @@
         ]
       },
       {
-        "highest_confirmed": 174,
+        "highest_confirmed": 176,
         "highest_deaths": 3,
         "name": "Tianjin",
         "confirmed": [
@@ -99700,8 +100646,8 @@
         ]
       },
       {
-        "highest_confirmed": 82279,
-        "highest_deaths": 3309,
+        "highest_confirmed": 82361,
+        "highest_deaths": 3316,
         "population": 1392730000,
         "name": "All",
         "confirmed": [
