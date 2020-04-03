@@ -15,6 +15,7 @@ import EnhancedTableRowIndex from './enhanced-table-row-index'
 import EnhancedTableRowAdvancedCountry from './enhanced-table-row-advanced-country'
 
 import SetupIndexTable from '../../utils/setup-index-table'
+import EnhancedTableRowNZ from './enhanced-table-row-nz';
 
 
 const descendingComparator = (a, b, orderBy) => {
@@ -75,7 +76,7 @@ const EnhancedTableHead = (props) => {
 
 
 
-const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home', country_name}) => {
+const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home', country_name, selected, selectFn}) => {
   const {countries} = useContext(GlobalStateContext)
 
 
@@ -119,6 +120,10 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           }
       }
 
+      .is-selected{
+          background: #333;
+      }
+
       .MuiSelect-icon{
           color: #fff;
       }
@@ -129,6 +134,14 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           .MuiSvgIcon-root{
               opacity: 0.5;
           }
+      }
+      .has-background-success{
+        td,th{
+          color: #fff;
+          strong{
+            color: #fff;
+          }
+        }
       }
 
       @media screen and (max-width: 1216px){
@@ -217,6 +230,9 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                   }
                   if(pageTemplate == 'advanced-country'){
                     return <EnhancedTableRowAdvancedCountry country_name={country_name} row={row} index={index} tidy={tidy} key={index}/>
+                  }
+                  if(pageTemplate == 'nz'){
+                    return <EnhancedTableRowNZ row={row} index={index} tidy={tidy} key={index} selected={selected} selectFn={selectFn}/>
                   }
                 })}
 
