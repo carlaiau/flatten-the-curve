@@ -79,7 +79,7 @@ export default class CountryPage extends React.Component{
               <p className="is-size-6" style={{marginTop: '10px'}}>
                 While we're in lockdown please visit <a href="https://www.alonetogether.co.nz/" 
                   target="_blank" 
-                  rel="noopener noreferrer">Alone Together</a> to see what activities you can do.
+                  rel="noopener noreferrer">Alone Together</a> for ideas to help you take care of yourself and others
                 
               </p>
               

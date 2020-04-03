@@ -1,23 +1,29 @@
 # Flatten the Curve
 
-This is a work in progress GatsbyJS application for using time-series data from https://github.com/CSSEGISandData/COVID-19
+This is a work in progress GatsbyJS application for using time-series data from 
+- https://github.com/CSSEGISandData/COVID-19
+- https://covidtracking.com/api
+- https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details
 
-This site is aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if they're in a country that currently has a low case load. 
+This site was initially aimed at motivating non technical or non scientific users to start taking the COVID-19 threat seriously, especially if they're in a country that currently has a low case load. 
 
 The ability to compare your own countries current case level and see how another country's infection has spread from a similar level seems to "click" for a lot of people, and therefore motivate change. 
 
-The site has had over 3,000 visits in five days, and often has 10 - 30 people active at any given time, so hopefully we can create some impact.
+Since the inital launch the site has had over 10,000 visits. I am now seeing that 40% of the traffic is repeat meaning the initial goals of the project may switch into providing data hungry people better ways of viewing data, and a comprehensive area where we collate multiple segmented datasets into one.
 
-I understand that the comparisons/projections are not the best way of looking at the outbreaks and could lead to incorrect outcomes, so I am actively working on getting data reformulated into culmulative confirmed / death so they can be used on the log graphs that are commonly seen.
+~~I understand that the comparisons/projections are not the best way of looking at the outbreaks and could lead to incorrect outcomes, so I am actively working on getting data reformulated into culmulative confirmed / death so they can be used on the log graphs that are commonly seen.~~
 
-Because the site is statically generated we have zero infrastructure costs. This is just a conversion of our time into potentially saved lifes by avoiding healthcare system overload.
+Because the site is statically generated we have **zero** infrastructure costs, and netlify provide all COVID related projects with free hosting too! This is just a conversion of our time into potentially saved lifes by avoiding healthcare system overload.
 
 ### Availability
-I am still on temporary leave from my day job to commit to this project.
+I am working full time on this 2 days a week
 
 ### What I'm Working On
--- US Index Page: Table and State Level data obtained from http://covidtracking.com/
--- Insure that the componentry for this is easily extendable to other countries with more granular data, such as **Canada** and **Australia** from the **JHU** dataset
+- Advanced-countries: Obtain Italy, Spain, French data
+- Advanced-countries: Implement Regional Overview graph and table seen on New Zealand page to other advacned country pages
+- Advanced-countries: Implement the date slider. Allowing a user to transition to a historical period in time and see how everything was going
+- ~~US Index Page: Table and State Level data obtained from http://covidtracking.com/~~
+- ~~Insure that the componentry for this is easily extendable to other countries with more granular data, such as **Canada** and **Australia** from the **JHU** dataset~~
 - ~~Turn huge `index.js` file into components, so state changes of specific components don't effect global scope and trigger a full app re-render.~~
 - ~~Split site into multiple pages, with each country page (similar to current index) available at `c/new-zealand` or `c/australia`~~
 - ~~Show well performing comparisons to give people hope~~ (Can now sort by worst or best)
