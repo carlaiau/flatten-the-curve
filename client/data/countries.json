@@ -240,10 +240,17 @@
         "deaths": 4,
         "confirmed_per_mil": 6.375700499828017,
         "deaths_per_mil": 0.10760675949076821
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 273,
+        "deaths": 6,
+        "confirmed_per_mil": 7.344161335244931,
+        "deaths_per_mil": 0.16141013923615233
       }
     ],
-    "highest_confirmed": 237,
-    "highest_deaths": 4,
+    "highest_confirmed": 273,
+    "highest_deaths": 6,
     "population": 37172386
   },
   {
@@ -414,10 +421,17 @@
         "deaths": 15,
         "confirmed_per_mil": 90.35799909014031,
         "deaths_per_mil": 5.233088750394226
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 277,
+        "deaths": 16,
+        "confirmed_per_mil": 96.63770559061338,
+        "deaths_per_mil": 5.581961333753841
       }
     ],
-    "highest_confirmed": 259,
-    "highest_deaths": 15,
+    "highest_confirmed": 277,
+    "highest_deaths": 16,
     "population": 2866376
   },
   {
@@ -665,10 +679,17 @@
         "deaths": 58,
         "confirmed_per_mil": 20.05757779906991,
         "deaths_per_mil": 1.3734823050130518
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 986,
+        "deaths": 86,
+        "confirmed_per_mil": 23.34919918522188,
+        "deaths_per_mil": 2.036542728122801
       }
     ],
-    "highest_confirmed": 847,
-    "highest_deaths": 58,
+    "highest_confirmed": 986,
+    "highest_deaths": 86,
     "population": 42228429
   },
   {
@@ -870,10 +891,17 @@
         "deaths": 14,
         "confirmed_per_mil": 5064.540425421395,
         "deaths_per_mil": 181.80401527153728
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 428,
+        "deaths": 15,
+        "confirmed_per_mil": 5558.00846687271,
+        "deaths_per_mil": 194.79001636236137
       }
     ],
-    "highest_confirmed": 390,
-    "highest_deaths": 14,
+    "highest_confirmed": 428,
+    "highest_deaths": 15,
     "population": 77006
   },
   {
@@ -956,6 +984,13 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 8,
+        "deaths": 2,
+        "confirmed_per_mil": 0.2596579616551403,
+        "deaths_per_mil": 0.06491449041378508
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 8,
         "deaths": 2,
         "confirmed_per_mil": 0.2596579616551403,
@@ -1068,9 +1103,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 7,
         "confirmed_per_mil": 72.7000810086617
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9,
+        "confirmed_per_mil": 93.47153272542218
       }
     ],
-    "highest_confirmed": 7,
+    "highest_confirmed": 9,
     "population": 96286
   },
   {
@@ -1280,10 +1320,17 @@
         "deaths": 28,
         "confirmed_per_mil": 23.688319963666522,
         "deaths_per_mil": 0.6292912324313688
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1133,
+        "deaths": 36,
+        "confirmed_per_mil": 25.463820226597885,
+        "deaths_per_mil": 0.8090887274117599
       }
     ],
-    "highest_confirmed": 1054,
-    "highest_deaths": 28,
+    "highest_confirmed": 1133,
+    "highest_deaths": 36,
     "population": 44494502
   },
   {
@@ -1487,10 +1534,17 @@
         "deaths": 4,
         "confirmed_per_mil": 193.44286287306352,
         "deaths_per_mil": 1.3551163773944905
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 663,
+        "deaths": 7,
+        "confirmed_per_mil": 224.61053955313682,
+        "deaths_per_mil": 2.3714536604403587
       }
     ],
-    "highest_confirmed": 571,
-    "highest_deaths": 4,
+    "highest_confirmed": 663,
+    "highest_deaths": 7,
     "population": 2951776
   },
   {
@@ -1929,10 +1983,17 @@
         "deaths": 20,
         "confirmed_per_mil": 194.5393812007177,
         "deaths_per_mil": 0.8002442665599248
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 5116,
+        "deaths": 24,
+        "confirmed_per_mil": 204.70248338602875,
+        "deaths_per_mil": 0.9602931198719097
       }
     ],
-    "highest_confirmed": 4862,
-    "highest_deaths": 20,
+    "highest_confirmed": 5116,
+    "highest_deaths": 24,
     "population": 24992369
   },
   {
@@ -2180,10 +2241,17 @@
         "deaths": 146,
         "confirmed_per_mil": 1210.6878268961686,
         "deaths_per_mil": 16.502700282591785
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 11129,
+        "deaths": 158,
+        "confirmed_per_mil": 1257.9352838696163,
+        "deaths_per_mil": 17.859086607188374
       }
     ],
-    "highest_confirmed": 10711,
-    "highest_deaths": 146,
+    "highest_confirmed": 11129,
+    "highest_deaths": 158,
     "population": 8847037
   },
   {
@@ -2400,9 +2468,16 @@
         "deaths": 5,
         "confirmed_per_mil": 36.108221671088494,
         "deaths_per_mil": 0.502900023274213
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 400,
+        "deaths": 5,
+        "confirmed_per_mil": 40.23200186193704,
+        "deaths_per_mil": 0.502900023274213
       }
     ],
-    "highest_confirmed": 359,
+    "highest_confirmed": 400,
     "highest_deaths": 5,
     "population": 9942334
   },
@@ -2511,9 +2586,16 @@
         "deaths": 1,
         "confirmed_per_mil": 54.45493206098953,
         "deaths_per_mil": 2.593092002904263
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 24,
+        "deaths": 1,
+        "confirmed_per_mil": 62.23420806970232,
+        "deaths_per_mil": 2.593092002904263
       }
     ],
-    "highest_confirmed": 21,
+    "highest_confirmed": 24,
     "highest_deaths": 1,
     "population": 385640
   },
@@ -2764,9 +2846,16 @@
         "deaths": 4,
         "confirmed_per_mil": 362.54993026170496,
         "deaths_per_mil": 2.5486814078151494
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 643,
+        "deaths": 4,
+        "confirmed_per_mil": 409.70053630628524,
+        "deaths_per_mil": 2.5486814078151494
       }
     ],
-    "highest_confirmed": 569,
+    "highest_confirmed": 643,
     "highest_deaths": 4,
     "population": 1569439
   },
@@ -2937,9 +3026,16 @@
         "deaths": 6,
         "confirmed_per_mil": 0.3346636440424767,
         "deaths_per_mil": 0.037184849338052973
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 56,
+        "deaths": 6,
+        "confirmed_per_mil": 0.34705859382182774,
+        "deaths_per_mil": 0.037184849338052973
       }
     ],
-    "highest_confirmed": 54,
+    "highest_confirmed": 56,
     "highest_deaths": 6,
     "population": 161356039
   },
@@ -3025,9 +3121,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 34,
         "confirmed_per_mil": 118.6152713673201
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 46,
+        "confirmed_per_mil": 160.47948479108015
       }
     ],
-    "highest_confirmed": 34,
+    "highest_confirmed": 46,
     "population": 286641
   },
   {
@@ -3238,10 +3339,17 @@
         "deaths": 2,
         "confirmed_per_mil": 17.18432966249344,
         "deaths_per_mil": 0.21085067070544097
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 304,
+        "deaths": 4,
+        "confirmed_per_mil": 32.04930194722703,
+        "deaths_per_mil": 0.42170134141088195
       }
     ],
-    "highest_confirmed": 163,
-    "highest_deaths": 2,
+    "highest_confirmed": 304,
+    "highest_deaths": 4,
     "population": 9485386
   },
   {
@@ -3616,10 +3724,17 @@
         "deaths": 828,
         "confirmed_per_mil": 1222.545689624681,
         "deaths_per_mil": 72.4912511464649
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 15348,
+        "deaths": 1011,
+        "confirmed_per_mil": 1343.7146408163567,
+        "deaths_per_mil": 88.51286824767635
       }
     ],
-    "highest_confirmed": 13964,
-    "highest_deaths": 828,
+    "highest_confirmed": 15348,
+    "highest_deaths": 1011,
     "population": 11422068
   },
   {
@@ -3707,6 +3822,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 13,
+        "confirmed_per_mil": 1.131906457857207
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 13,
         "confirmed_per_mil": 1.131906457857207
       }
@@ -3851,9 +3971,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 4,
         "confirmed_per_mil": 5.30226910606394
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 5,
+        "confirmed_per_mil": 6.627836382579925
       }
     ],
-    "highest_confirmed": 4,
+    "highest_confirmed": 5,
     "population": 754394
   },
   {
@@ -3994,10 +4119,17 @@
         "deaths": 7,
         "confirmed_per_mil": 10.129354499397612,
         "deaths_per_mil": 0.6165694043111589
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 123,
+        "deaths": 8,
+        "confirmed_per_mil": 10.834005247181793,
+        "deaths_per_mil": 0.7046507477841817
       }
     ],
-    "highest_confirmed": 115,
-    "highest_deaths": 7,
+    "highest_confirmed": 123,
+    "highest_deaths": 8,
     "population": 11353142
   },
   {
@@ -4182,10 +4314,17 @@
         "deaths": 13,
         "confirmed_per_mil": 138.089592166379,
         "deaths_per_mil": 3.9110342007906906
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 533,
+        "deaths": 16,
+        "confirmed_per_mil": 160.3524022324183,
+        "deaths_per_mil": 4.813580554819311
       }
     ],
-    "highest_confirmed": 459,
-    "highest_deaths": 13,
+    "highest_confirmed": 533,
+    "highest_deaths": 16,
     "population": 3323929
   },
   {
@@ -4422,10 +4561,17 @@
         "deaths": 240,
         "confirmed_per_mil": 32.634848748957445,
         "deaths_per_mil": 1.1457524429124906
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 8044,
+        "deaths": 324,
+        "confirmed_per_mil": 38.40180271161698,
+        "deaths_per_mil": 1.5467657979318623
       }
     ],
-    "highest_confirmed": 6836,
-    "highest_deaths": 240,
+    "highest_confirmed": 8044,
+    "highest_deaths": 324,
     "population": 209469333
   },
   {
@@ -4579,9 +4725,16 @@
         "deaths": 1,
         "confirmed_per_mil": 305.38835607816077,
         "deaths_per_mil": 2.331208825024128
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 133,
+        "deaths": 1,
+        "confirmed_per_mil": 310.05077372820904,
+        "deaths_per_mil": 2.331208825024128
       }
     ],
-    "highest_confirmed": 131,
+    "highest_confirmed": 133,
     "highest_deaths": 1,
     "population": 428962
   },
@@ -4759,9 +4912,16 @@
         "deaths": 10,
         "confirmed_per_mil": 60.077879154057904,
         "deaths_per_mil": 1.423646425451609
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 457,
+        "deaths": 10,
+        "confirmed_per_mil": 65.06064164313854,
+        "deaths_per_mil": 1.423646425451609
       }
     ],
-    "highest_confirmed": 422,
+    "highest_confirmed": 457,
     "highest_deaths": 10,
     "population": 7024216
   },
@@ -4920,9 +5080,16 @@
         "deaths": 16,
         "confirmed_per_mil": 14.277371353669475,
         "deaths_per_mil": 0.8100636229032325
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 288,
+        "deaths": 16,
+        "confirmed_per_mil": 14.581145212258185,
+        "deaths_per_mil": 0.8100636229032325
       }
     ],
-    "highest_confirmed": 282,
+    "highest_confirmed": 288,
     "highest_deaths": 16,
     "population": 19751535
   },
@@ -5011,6 +5178,13 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 6,
+        "deaths": 1,
+        "confirmed_per_mil": 11.0341377832785,
+        "deaths_per_mil": 1.83902296387975
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 6,
         "deaths": 1,
         "confirmed_per_mil": 11.0341377832785,
@@ -5353,9 +5527,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 109,
         "confirmed_per_mil": 6.7077756905039685
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 110,
+        "confirmed_per_mil": 6.769314917022354
       }
     ],
-    "highest_confirmed": 109,
+    "highest_confirmed": 110,
     "population": 16249798
   },
   {
@@ -5530,10 +5709,17 @@
         "deaths": 6,
         "confirmed_per_mil": 9.240078129024564,
         "deaths_per_mil": 0.2379419260693021
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 306,
+        "deaths": 7,
+        "confirmed_per_mil": 12.135038229534407,
+        "deaths_per_mil": 0.2775989137475191
       }
     ],
-    "highest_confirmed": 233,
-    "highest_deaths": 6,
+    "highest_confirmed": 306,
+    "highest_deaths": 7,
     "population": 25216237
   },
   {
@@ -5964,10 +6150,17 @@
         "deaths": 109,
         "confirmed_per_mil": 257.96802793912474,
         "deaths_per_mil": 2.9412672641594764
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 11284,
+        "deaths": 139,
+        "confirmed_per_mil": 304.4886220988581,
+        "deaths_per_mil": 3.7507903643868556
       }
     ],
-    "highest_confirmed": 9560,
-    "highest_deaths": 109,
+    "highest_confirmed": 11284,
+    "highest_deaths": 139,
     "population": 37058856
   },
   {
@@ -6062,6 +6255,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 0.6428970483953611
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.6428970483953611
       }
     ],
     "highest_confirmed": 3,
@@ -6139,9 +6337,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 7,
         "confirmed_per_mil": 0.4522620889817907
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 8,
+        "confirmed_per_mil": 0.5168709588363323
       }
     ],
-    "highest_confirmed": 7,
+    "highest_confirmed": 8,
     "population": 15477751
   },
   {
@@ -6337,10 +6540,17 @@
         "deaths": 16,
         "confirmed_per_mil": 161.83320554685847,
         "deaths_per_mil": 0.8542828402341589
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3404,
+        "deaths": 18,
+        "confirmed_per_mil": 181.7486742598173,
+        "deaths_per_mil": 0.9610681952634288
       }
     ],
-    "highest_confirmed": 3031,
-    "highest_deaths": 16,
+    "highest_confirmed": 3404,
+    "highest_deaths": 18,
     "population": 18729160
   },
   {
@@ -6842,10 +7052,17 @@
         "deaths": 3316,
         "confirmed_per_mil": 59.13637244835682,
         "deaths_per_mil": 2.3809352853747674
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 82432,
+        "deaths": 3322,
+        "confirmed_per_mil": 59.18735146080001,
+        "deaths_per_mil": 2.3852433709333467
       }
     ],
-    "highest_confirmed": 82361,
-    "highest_deaths": 3316,
+    "highest_confirmed": 82432,
+    "highest_deaths": 3322,
     "population": 1392730000
   },
   {
@@ -7023,10 +7240,17 @@
         "deaths": 17,
         "confirmed_per_mil": 21.450719188232277,
         "deaths_per_mil": 0.34240584619713493
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1161,
+        "deaths": 19,
+        "confirmed_per_mil": 23.384305143227863,
+        "deaths_per_mil": 0.3826888869262096
       }
     ],
-    "highest_confirmed": 1065,
-    "highest_deaths": 17,
+    "highest_confirmed": 1161,
+    "highest_deaths": 19,
     "population": 49648685
   },
   {
@@ -7035,95 +7259,121 @@
       {
         "date": "2020-03-15T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.19068092731185848
       },
       {
         "date": "2020-03-16T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.19068092731185848
       },
       {
         "date": "2020-03-17T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.19068092731185848
       },
       {
         "date": "2020-03-18T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.19068092731185848
       },
       {
         "date": "2020-03-19T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.5720427819355755
       },
       {
         "date": "2020-03-20T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.5720427819355755
       },
       {
         "date": "2020-03-21T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.5720427819355755
       },
       {
         "date": "2020-03-22T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.5720427819355755
       },
       {
         "date": "2020-03-23T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-24T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-25T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-26T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-27T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-28T00:00:00.000Z",
         "confirmed": 4,
+        "deaths": 0,
         "confirmed_per_mil": 0.7627237092474339
       },
       {
         "date": "2020-03-29T00:00:00.000Z",
         "confirmed": 19,
+        "deaths": 0,
         "confirmed_per_mil": 3.622937618925311
       },
       {
         "date": "2020-03-30T00:00:00.000Z",
         "confirmed": 19,
+        "deaths": 0,
         "confirmed_per_mil": 3.622937618925311
       },
       {
         "date": "2020-03-31T00:00:00.000Z",
         "confirmed": 19,
+        "deaths": 0,
         "confirmed_per_mil": 3.622937618925311
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 19,
+        "deaths": 0,
         "confirmed_per_mil": 3.622937618925311
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 22,
+        "deaths": 2,
+        "confirmed_per_mil": 4.194980400860886,
+        "deaths_per_mil": 0.38136185462371697
       }
     ],
-    "highest_confirmed": 19,
+    "highest_confirmed": 22,
+    "highest_deaths": 2,
     "population": 5244363
   },
   {
@@ -7272,10 +7522,17 @@
         "deaths": 9,
         "confirmed_per_mil": 1.2965680403043767,
         "deaths_per_mil": 0.10705607672237973
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 134,
+        "deaths": 13,
+        "confirmed_per_mil": 1.5939460311998759,
+        "deaths_per_mil": 0.15463655526565961
       }
     ],
-    "highest_confirmed": 109,
-    "highest_deaths": 9,
+    "highest_confirmed": 134,
+    "highest_deaths": 13,
     "population": 84068091
   },
   {
@@ -7456,9 +7713,16 @@
         "deaths": 2,
         "confirmed_per_mil": 75.00838593754781,
         "deaths_per_mil": 0.400044725000255
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 396,
+        "deaths": 2,
+        "confirmed_per_mil": 79.2088555500505,
+        "deaths_per_mil": 0.400044725000255
       }
     ],
-    "highest_confirmed": 375,
+    "highest_confirmed": 396,
     "highest_deaths": 2,
     "population": 4999441
   },
@@ -7600,9 +7864,16 @@
         "deaths": 1,
         "confirmed_per_mil": 7.57901250174068,
         "deaths_per_mil": 0.03988953948284568
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 194,
+        "deaths": 1,
+        "confirmed_per_mil": 7.738570659672063,
+        "deaths_per_mil": 0.03988953948284568
       }
     ],
-    "highest_confirmed": 190,
+    "highest_confirmed": 194,
     "highest_deaths": 1,
     "population": 25069229
   },
@@ -7844,10 +8115,17 @@
         "deaths": 6,
         "confirmed_per_mil": 235.4868684892649,
         "deaths_per_mil": 1.467207903359906
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1011,
+        "deaths": 7,
+        "confirmed_per_mil": 247.22453171614416,
+        "deaths_per_mil": 1.7117425539198903
       }
     ],
-    "highest_confirmed": 963,
-    "highest_deaths": 6,
+    "highest_confirmed": 1011,
+    "highest_deaths": 7,
     "population": 4089400
   },
   {
@@ -8127,6 +8405,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 712,
         "deaths": 11
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 712,
+        "deaths": 11
       }
     ],
     "highest_confirmed": 712,
@@ -8275,9 +8558,16 @@
         "deaths": 6,
         "confirmed_per_mil": 18.697955519680566,
         "deaths_per_mil": 0.5291874203683179
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 233,
+        "deaths": 6,
+        "confirmed_per_mil": 20.55011149096968,
+        "deaths_per_mil": 0.5291874203683179
       }
     ],
-    "highest_confirmed": 212,
+    "highest_confirmed": 233,
     "highest_deaths": 6,
     "population": 11338138
   },
@@ -8438,10 +8728,17 @@
         "deaths": 9,
         "confirmed_per_mil": 269.0737556389871,
         "deaths_per_mil": 7.567699377346512
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 356,
+        "deaths": 10,
+        "confirmed_per_mil": 299.34455314837317,
+        "deaths_per_mil": 8.408554863718347
       }
     ],
-    "highest_confirmed": 320,
-    "highest_deaths": 9,
+    "highest_confirmed": 356,
+    "highest_deaths": 10,
     "population": 1189265
   },
   {
@@ -8649,10 +8946,17 @@
         "deaths": 39,
         "confirmed_per_mil": 330.14311063888056,
         "deaths_per_mil": 3.670348151344453
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3858,
+        "deaths": 44,
+        "confirmed_per_mil": 363.08213250992054,
+        "deaths_per_mil": 4.140905606645024
       }
     ],
-    "highest_confirmed": 3508,
-    "highest_deaths": 39,
+    "highest_confirmed": 3858,
+    "highest_deaths": 44,
     "population": 10625695
   },
   {
@@ -8886,10 +9190,17 @@
         "deaths": 104,
         "confirmed_per_mil": 567.4912711562988,
         "deaths_per_mil": 17.93893379946963
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3573,
+        "deaths": 123,
+        "confirmed_per_mil": 616.3058698606249,
+        "deaths_per_mil": 21.216239012834272
       }
     ],
-    "highest_confirmed": 3290,
-    "highest_deaths": 104,
+    "highest_confirmed": 3573,
+    "highest_deaths": 123,
     "population": 5797446
   },
   {
@@ -8969,9 +9280,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 33,
         "confirmed_per_mil": 34.41371542985859
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 40,
+        "confirmed_per_mil": 41.713594460434656
       }
     ],
-    "highest_confirmed": 33,
+    "highest_confirmed": 40,
     "population": 958920
   },
   {
@@ -9184,10 +9500,17 @@
         "deaths": 57,
         "confirmed_per_mil": 120.82243947468586,
         "deaths_per_mil": 5.363612967334186
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1380,
+        "deaths": 60,
+        "confirmed_per_mil": 129.85589289335397,
+        "deaths_per_mil": 5.645908386667564
       }
     ],
-    "highest_confirmed": 1284,
-    "highest_deaths": 57,
+    "highest_confirmed": 1380,
+    "highest_deaths": 60,
     "population": 10627165
   },
   {
@@ -9403,10 +9726,17 @@
         "deaths": 93,
         "confirmed_per_mil": 160.84889820553386,
         "deaths_per_mil": 5.443576249313919
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3163,
+        "deaths": 120,
+        "confirmed_per_mil": 185.14012555462287,
+        "deaths_per_mil": 7.023969353953444
       }
     ],
-    "highest_confirmed": 2748,
-    "highest_deaths": 93,
+    "highest_confirmed": 3163,
+    "highest_deaths": 120,
     "population": 17084357
   },
   {
@@ -9724,10 +10054,17 @@
         "deaths": 52,
         "confirmed_per_mil": 7.914768811279449,
         "deaths_per_mil": 0.5283285984422739
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 865,
+        "deaths": 58,
+        "confirmed_per_mil": 8.788543031780133,
+        "deaths_per_mil": 0.5892895905702286
       }
     ],
-    "highest_confirmed": 779,
-    "highest_deaths": 52,
+    "highest_confirmed": 865,
+    "highest_deaths": 58,
     "population": 98423595
   },
   {
@@ -9818,10 +10155,17 @@
         "deaths": 1,
         "confirmed_per_mil": 4.9838461087998525,
         "deaths_per_mil": 0.1557451908999954
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 41,
+        "deaths": 2,
+        "confirmed_per_mil": 6.385552826899811,
+        "deaths_per_mil": 0.3114903817999908
       }
     ],
-    "highest_confirmed": 32,
-    "highest_deaths": 1,
+    "highest_confirmed": 41,
+    "highest_deaths": 2,
     "population": 6420744
   },
   {
@@ -9916,6 +10260,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 15,
         "confirmed_per_mil": 11.459356717551303
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 15,
+        "confirmed_per_mil": 11.459356717551303
       }
     ],
     "highest_confirmed": 15,
@@ -9983,9 +10332,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 15,
         "confirmed_per_mil": null
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 22,
+        "confirmed_per_mil": null
       }
     ],
-    "highest_confirmed": 15,
+    "highest_confirmed": 22,
     "population": null
   },
   {
@@ -10208,10 +10562,17 @@
         "deaths": 5,
         "confirmed_per_mil": 589.7565569724518,
         "deaths_per_mil": 3.7853437546370463
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 858,
+        "deaths": 11,
+        "confirmed_per_mil": 649.5649882957172,
+        "deaths_per_mil": 8.327756260201502
       }
     ],
-    "highest_confirmed": 779,
-    "highest_deaths": 5,
+    "highest_confirmed": 858,
+    "highest_deaths": 11,
     "population": 1320884
   },
   {
@@ -10309,6 +10670,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 9,
+        "confirmed_per_mil": 7.92120338921889
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 9,
         "confirmed_per_mil": 7.92120338921889
       }
@@ -10418,6 +10784,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 29,
         "confirmed_per_mil": 0.265508053001157
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 29,
+        "confirmed_per_mil": 0.265508053001157
       }
     ],
     "highest_confirmed": 29,
@@ -10495,9 +10866,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 5,
         "confirmed_per_mil": 5.659418460796642
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 7,
+        "confirmed_per_mil": 7.923185845115299
       }
     ],
-    "highest_confirmed": 5,
+    "highest_confirmed": 7,
     "population": 883483
   },
   {
@@ -10898,10 +11274,17 @@
         "deaths": 17,
         "confirmed_per_mil": 262.04909342974423,
         "deaths_per_mil": 3.0807984704741713
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1518,
+        "deaths": 19,
+        "confirmed_per_mil": 275.09718106939954,
+        "deaths_per_mil": 3.4432453493534854
       }
     ],
-    "highest_confirmed": 1446,
-    "highest_deaths": 17,
+    "highest_confirmed": 1518,
+    "highest_deaths": 19,
     "population": 5518050
   },
   {
@@ -11367,10 +11750,17 @@
         "deaths": 4043,
         "confirmed_per_mil": 862.0895046824138,
         "deaths_per_mil": 60.35477441048328
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 59929,
+        "deaths": 5398,
+        "confirmed_per_mil": 894.6330140108465,
+        "deaths_per_mil": 80.5825061260917
       }
     ],
-    "highest_confirmed": 57749,
-    "highest_deaths": 4043,
+    "highest_confirmed": 59929,
+    "highest_deaths": 5398,
     "population": 66987244
   },
   {
@@ -11502,9 +11892,16 @@
         "deaths": 1,
         "confirmed_per_mil": 8.493470644442086,
         "deaths_per_mil": 0.4718594802467825
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 21,
+        "deaths": 1,
+        "confirmed_per_mil": 9.909049085182433,
+        "deaths_per_mil": 0.4718594802467825
       }
     ],
-    "highest_confirmed": 18,
+    "highest_confirmed": 21,
     "highest_deaths": 1,
     "population": 2119275
   },
@@ -11612,6 +12009,13 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 4,
+        "deaths": 1,
+        "confirmed_per_mil": 1.7543074827354217,
+        "deaths_per_mil": 0.4385768706838554
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 4,
         "deaths": 1,
         "confirmed_per_mil": 1.7543074827354217,
@@ -11804,9 +12208,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 117,
         "confirmed_per_mil": 31.358885017421603
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 134,
+        "confirmed_per_mil": 35.915304207987134
       }
     ],
-    "highest_confirmed": 117,
+    "highest_confirmed": 134,
     "population": 3731000
   },
   {
@@ -12231,10 +12640,17 @@
         "deaths": 920,
         "confirmed_per_mil": 939.0323321980744,
         "deaths_per_mil": 11.093971461144294
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 84794,
+        "deaths": 1107,
+        "confirmed_per_mil": 1022.5024087785536,
+        "deaths_per_mil": 13.348941747268189
       }
     ],
-    "highest_confirmed": 77872,
-    "highest_deaths": 920,
+    "highest_confirmed": 84794,
+    "highest_deaths": 1107,
     "population": 82927922
   },
   {
@@ -12365,9 +12781,16 @@
         "deaths": 5,
         "confirmed_per_mil": 6.550854721929991,
         "deaths_per_mil": 0.1679706338956408
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 204,
+        "deaths": 5,
+        "confirmed_per_mil": 6.853201862942144,
+        "deaths_per_mil": 0.1679706338956408
       }
     ],
-    "highest_confirmed": 195,
+    "highest_confirmed": 204,
     "highest_deaths": 5,
     "population": 29767108
   },
@@ -12611,10 +13034,17 @@
         "deaths": 50,
         "confirmed_per_mil": 131.90191941063054,
         "deaths_per_mil": 4.660845208856203
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1544,
+        "deaths": 53,
+        "confirmed_per_mil": 143.92690004947954,
+        "deaths_per_mil": 4.9404959213875745
       }
     ],
-    "highest_confirmed": 1415,
-    "highest_deaths": 50,
+    "highest_confirmed": 1544,
+    "highest_deaths": 53,
     "population": 10727668
   },
   {
@@ -12750,9 +13180,16 @@
         "deaths": 1,
         "confirmed_per_mil": 2.261157027093357,
         "deaths_per_mil": 0.05797838531008608
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 47,
+        "deaths": 1,
+        "confirmed_per_mil": 2.724984109574046,
+        "deaths_per_mil": 0.05797838531008608
       }
     ],
-    "highest_confirmed": 39,
+    "highest_confirmed": 47,
     "highest_deaths": 1,
     "population": 17247807
   },
@@ -12858,9 +13295,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 30,
         "confirmed_per_mil": 2.4165644862649724
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 52,
+        "confirmed_per_mil": 4.188711776192619
       }
     ],
-    "highest_confirmed": 30,
+    "highest_confirmed": 52,
     "population": 12414318
   },
   {
@@ -13012,10 +13454,17 @@
         "deaths": 2,
         "confirmed_per_mil": 24.390118664345753,
         "deaths_per_mil": 2.5673809120363953
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 19,
+        "deaths": 4,
+        "confirmed_per_mil": 24.390118664345753,
+        "deaths_per_mil": 5.134761824072791
       }
     ],
     "highest_confirmed": 20,
-    "highest_deaths": 2,
+    "highest_deaths": 4,
     "population": 779004
   },
   {
@@ -13083,6 +13532,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 16,
+        "confirmed_per_mil": 1.438438086388276
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 16,
         "confirmed_per_mil": 1.438438086388276
       }
@@ -13200,9 +13654,13 @@
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 6
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 7
       }
     ],
-    "highest_confirmed": 6
+    "highest_confirmed": 7
   },
   {
     "name": "Honduras",
@@ -13345,10 +13803,17 @@
         "deaths": 10,
         "confirmed_per_mil": 17.93998490955223,
         "deaths_per_mil": 1.043022378462339
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 219,
+        "deaths": 14,
+        "confirmed_per_mil": 22.84219008832522,
+        "deaths_per_mil": 1.4602313298472744
       }
     ],
-    "highest_confirmed": 172,
-    "highest_deaths": 10,
+    "highest_confirmed": 219,
+    "highest_deaths": 14,
     "population": 9587522
   },
   {
@@ -13545,10 +14010,17 @@
         "deaths": 20,
         "confirmed_per_mil": 53.74260975136622,
         "deaths_per_mil": 2.0473375143377606
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 585,
+        "deaths": 21,
+        "confirmed_per_mil": 59.8846222943795,
+        "deaths_per_mil": 2.149704390054649
       }
     ],
-    "highest_confirmed": 525,
-    "highest_deaths": 20,
+    "highest_confirmed": 585,
+    "highest_deaths": 21,
     "population": 9768785
   },
   {
@@ -13773,9 +14245,16 @@
         "deaths": 2,
         "confirmed_per_mil": 3450.4799561053696,
         "deaths_per_mil": 5.656524518205524
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1319,
+        "deaths": 4,
+        "confirmed_per_mil": 3730.477919756543,
+        "deaths_per_mil": 11.313049036411048
       }
     ],
-    "highest_confirmed": 1220,
+    "highest_confirmed": 1319,
     "highest_deaths": 5,
     "population": 353574
   },
@@ -14181,10 +14660,17 @@
         "deaths": 58,
         "confirmed_per_mil": 1.4771361852611131,
         "deaths_per_mil": 0.04287982920177406
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2543,
+        "deaths": 72,
+        "confirmed_per_mil": 1.8800587182777833,
+        "deaths_per_mil": 0.053230132802202276
       }
     ],
-    "highest_confirmed": 1998,
-    "highest_deaths": 58,
+    "highest_confirmed": 2543,
+    "highest_deaths": 72,
     "population": 1352617328
   },
   {
@@ -14397,10 +14883,17 @@
         "deaths": 157,
         "confirmed_per_mil": 6.265330936965671,
         "deaths_per_mil": 0.5865575176527194
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1790,
+        "deaths": 170,
+        "confirmed_per_mil": 6.687502908269858,
+        "deaths_per_mil": 0.6351259745284222
       }
     ],
-    "highest_confirmed": 1677,
-    "highest_deaths": 157,
+    "highest_confirmed": 1790,
+    "highest_deaths": 170,
     "population": 267663435
   },
   {
@@ -14706,10 +15199,17 @@
         "deaths": 3036,
         "confirmed_per_mil": 581.8196025736786,
         "deaths_per_mil": 37.11479237311555
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 50468,
+        "deaths": 3160,
+        "confirmed_per_mil": 616.966186260341,
+        "deaths_per_mil": 38.630679808644636
       }
     ],
-    "highest_confirmed": 47593,
-    "highest_deaths": 3036,
+    "highest_confirmed": 50468,
+    "highest_deaths": 3160,
     "population": 81800269
   },
   {
@@ -14971,10 +15471,17 @@
         "deaths": 52,
         "confirmed_per_mil": 18.941759293951126,
         "deaths_per_mil": 1.3529828067107947
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 772,
+        "deaths": 54,
+        "confirmed_per_mil": 20.086590899629492,
+        "deaths_per_mil": 1.4050206069689022
       }
     ],
-    "highest_confirmed": 728,
-    "highest_deaths": 52,
+    "highest_confirmed": 772,
+    "highest_deaths": 54,
     "population": 38433600
   },
   {
@@ -15199,10 +15706,17 @@
         "deaths": 85,
         "confirmed_per_mil": 710.2082494592569,
         "deaths_per_mil": 17.51311320105507
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3849,
+        "deaths": 98,
+        "confirmed_per_mil": 793.0349730689526,
+        "deaths_per_mil": 20.191589337687024
       }
     ],
-    "highest_confirmed": 3447,
-    "highest_deaths": 85,
+    "highest_confirmed": 3849,
+    "highest_deaths": 98,
     "population": 4853506
   },
   {
@@ -15465,10 +15979,17 @@
         "deaths": 26,
         "confirmed_per_mil": 685.7425876314189,
         "deaths_per_mil": 2.9266755217361937
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 6857,
+        "deaths": 36,
+        "confirmed_per_mil": 771.8543866363492,
+        "deaths_per_mil": 4.052319953173192
       }
     ],
-    "highest_confirmed": 6092,
-    "highest_deaths": 26,
+    "highest_confirmed": 6857,
+    "highest_deaths": 36,
     "population": 8883800
   },
   {
@@ -15886,10 +16407,17 @@
         "deaths": 13155,
         "confirmed_per_mil": 1829.7476821731552,
         "deaths_per_mil": 217.6852674135679
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 115242,
+        "deaths": 13915,
+        "confirmed_per_mil": 1906.9924429703074,
+        "deaths_per_mil": 230.26153523829703
       }
     ],
-    "highest_confirmed": 110574,
-    "highest_deaths": 13155,
+    "highest_confirmed": 115242,
+    "highest_deaths": 13915,
     "population": 60431283
   },
   {
@@ -16040,9 +16568,16 @@
         "deaths": 3,
         "confirmed_per_mil": 14.992222784430576,
         "deaths_per_mil": 1.0221970080293574
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 47,
+        "deaths": 3,
+        "confirmed_per_mil": 16.014419792459933,
+        "deaths_per_mil": 1.0221970080293574
       }
     ],
-    "highest_confirmed": 44,
+    "highest_confirmed": 47,
     "highest_deaths": 3,
     "population": 2934855
   },
@@ -16523,10 +17058,17 @@
         "deaths": 57,
         "confirmed_per_mil": 17.21343153472205,
         "deaths_per_mil": 0.45048925504093523
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2495,
+        "deaths": 62,
+        "confirmed_per_mil": 19.718784058370762,
+        "deaths_per_mil": 0.4900058563603155
       }
     ],
-    "highest_confirmed": 2178,
-    "highest_deaths": 57,
+    "highest_confirmed": 2495,
+    "highest_deaths": 62,
     "population": 126529100
   },
   {
@@ -16717,9 +17259,16 @@
         "deaths": 5,
         "confirmed_per_mil": 27.922829735724477,
         "deaths_per_mil": 0.5022091679087136
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 299,
+        "deaths": 5,
+        "confirmed_per_mil": 30.032108240941074,
+        "deaths_per_mil": 0.5022091679087136
       }
     ],
-    "highest_confirmed": 278,
+    "highest_confirmed": 299,
     "highest_deaths": 5,
     "population": 9956011
   },
@@ -16853,9 +17402,16 @@
         "deaths": 3,
         "confirmed_per_mil": 20.791728218845414,
         "deaths_per_mil": 0.16414522278035854
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 435,
+        "deaths": 3,
+        "confirmed_per_mil": 23.801057303151985,
+        "deaths_per_mil": 0.16414522278035854
       }
     ],
-    "highest_confirmed": 380,
+    "highest_confirmed": 435,
     "highest_deaths": 3,
     "population": 18276499
   },
@@ -16988,10 +17544,17 @@
         "deaths": 1,
         "confirmed_per_mil": 1.5760898223318698,
         "deaths_per_mil": 0.019457899041134194
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 110,
+        "deaths": 3,
+        "confirmed_per_mil": 2.1403688945247614,
+        "deaths_per_mil": 0.05837369712340258
       }
     ],
-    "highest_confirmed": 81,
-    "highest_deaths": 1,
+    "highest_confirmed": 110,
+    "highest_deaths": 3,
     "population": 51393010
   },
   {
@@ -17464,10 +18027,17 @@
         "deaths": 165,
         "confirmed_per_mil": 191.47769888078022,
         "deaths_per_mil": 3.1954910807452954
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9976,
+        "deaths": 169,
+        "confirmed_per_mil": 193.20132740312164,
+        "deaths_per_mil": 3.272957531187606
       }
     ],
-    "highest_confirmed": 9887,
-    "highest_deaths": 165,
+    "highest_confirmed": 9976,
+    "highest_deaths": 169,
     "population": 51635256
   },
   {
@@ -17662,9 +18232,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 317,
         "confirmed_per_mil": 76.61985121246684
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 342,
+        "confirmed_per_mil": 82.6624262292229
       }
     ],
-    "highest_confirmed": 317,
+    "highest_confirmed": 342,
     "population": 4137309
   },
   {
@@ -17729,9 +18304,13 @@
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 111
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 116
       }
     ],
-    "highest_confirmed": 111
+    "highest_confirmed": 116
   },
   {
     "name": "Latvia",
@@ -17890,9 +18469,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 446,
         "confirmed_per_mil": 231.50286887075393
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 458,
+        "confirmed_per_mil": 237.73164561167107
       }
     ],
-    "highest_confirmed": 446,
+    "highest_confirmed": 458,
     "population": 1926542
   },
   {
@@ -18166,10 +18750,17 @@
         "deaths": 14,
         "confirmed_per_mil": 69.93798296813003,
         "deaths_per_mil": 2.0441164124296876
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 494,
+        "deaths": 16,
+        "confirmed_per_mil": 72.12810769573326,
+        "deaths_per_mil": 2.336133042776786
       }
     ],
-    "highest_confirmed": 479,
-    "highest_deaths": 14,
+    "highest_confirmed": 494,
+    "highest_deaths": 16,
     "population": 6848925
   },
   {
@@ -18257,6 +18848,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 6,
+        "confirmed_per_mil": 1.2450775340907416
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 6,
         "confirmed_per_mil": 1.2450775340907416
       }
@@ -18411,9 +19007,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 68,
         "confirmed_per_mil": 1793.7219730941704
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 75,
+        "confirmed_per_mil": 1978.369823265629
       }
     ],
-    "highest_confirmed": 68,
+    "highest_confirmed": 75,
     "population": 37910
   },
   {
@@ -18634,10 +19235,17 @@
         "deaths": 8,
         "confirmed_per_mil": 208.27859000054846,
         "deaths_per_mil": 2.8678635456185675
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 649,
+        "deaths": 9,
+        "confirmed_per_mil": 232.65543013830631,
+        "deaths_per_mil": 3.2263464888208886
       }
     ],
-    "highest_confirmed": 581,
-    "highest_deaths": 8,
+    "highest_confirmed": 649,
+    "highest_deaths": 9,
     "population": 2789533
   },
   {
@@ -18859,10 +19467,17 @@
         "deaths": 29,
         "confirmed_per_mil": 3815.8518284495694,
         "deaths_per_mil": 47.71871626780401
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2487,
+        "deaths": 30,
+        "confirmed_per_mil": 4092.291288207882,
+        "deaths_per_mil": 49.364189242555874
       }
     ],
-    "highest_confirmed": 2319,
-    "highest_deaths": 29,
+    "highest_confirmed": 2487,
+    "highest_deaths": 30,
     "population": 607728
   },
   {
@@ -18932,9 +19547,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 57,
         "confirmed_per_mil": 2.170405958822906
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 59,
+        "confirmed_per_mil": 2.246560553869324
       }
     ],
-    "highest_confirmed": 57,
+    "highest_confirmed": 59,
     "population": 26262368
   },
   {
@@ -19363,10 +19983,17 @@
         "deaths": 45,
         "confirmed_per_mil": 92.23376183866165,
         "deaths_per_mil": 1.4272762320288082
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3116,
+        "deaths": 50,
+        "confirmed_per_mil": 98.8309497555948,
+        "deaths_per_mil": 1.5858624800320091
       }
     ],
-    "highest_confirmed": 2908,
-    "highest_deaths": 45,
+    "highest_confirmed": 3116,
+    "highest_deaths": 50,
     "population": 31528585
   },
   {
@@ -19494,6 +20121,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 19,
+        "confirmed_per_mil": 36.84341162235115
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 19,
         "confirmed_per_mil": 36.84341162235115
       }
@@ -19633,9 +20265,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 188,
         "confirmed_per_mil": 388.80731288648064
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 196,
+        "confirmed_per_mil": 405.3523049242032
       }
     ],
-    "highest_confirmed": 188,
+    "highest_confirmed": 196,
     "population": 483530
   },
   {
@@ -19757,6 +20394,13 @@
         "deaths": 1,
         "confirmed_per_mil": 1.362608523252574,
         "deaths_per_mil": 0.22710142054209564
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 6,
+        "deaths": 1,
+        "confirmed_per_mil": 1.362608523252574,
+        "deaths_per_mil": 0.22710142054209564
       }
     ],
     "highest_confirmed": 6,
@@ -19867,10 +20511,17 @@
         "deaths": 6,
         "confirmed_per_mil": 127.24224948490598,
         "deaths_per_mil": 4.741947185772894
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 169,
+        "deaths": 7,
+        "confirmed_per_mil": 133.56484573260317,
+        "deaths_per_mil": 5.532271716735043
       }
     ],
-    "highest_confirmed": 161,
-    "highest_deaths": 6,
+    "highest_confirmed": 169,
+    "highest_deaths": 7,
     "population": 1265303
   },
   {
@@ -20093,10 +20744,17 @@
         "deaths": 29,
         "confirmed_per_mil": 9.628278095862274,
         "deaths_per_mil": 0.22981075290535471
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1378,
+        "deaths": 37,
+        "confirmed_per_mil": 10.919973017364786,
+        "deaths_per_mil": 0.2932068226723491
       }
     ],
-    "highest_confirmed": 1215,
-    "highest_deaths": 29,
+    "highest_confirmed": 1378,
+    "highest_deaths": 37,
     "population": 126190788
   },
   {
@@ -20266,10 +20924,17 @@
         "deaths": 5,
         "confirmed_per_mil": 119.29327617408697,
         "deaths_per_mil": 1.410086006785898
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 505,
+        "deaths": 6,
+        "confirmed_per_mil": 142.4186866853757,
+        "deaths_per_mil": 1.6921032081430776
       }
     ],
-    "highest_confirmed": 423,
-    "highest_deaths": 5,
+    "highest_confirmed": 505,
+    "highest_deaths": 6,
     "population": 3545883
   },
   {
@@ -20476,9 +21141,16 @@
         "deaths": 1,
         "confirmed_per_mil": 1421.8499560519103,
         "deaths_per_mil": 25.851817382762007
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 60,
+        "deaths": 1,
+        "confirmed_per_mil": 1551.1090429657204,
+        "deaths_per_mil": 25.851817382762007
       }
     ],
-    "highest_confirmed": 55,
+    "highest_confirmed": 60,
     "highest_deaths": 1,
     "population": 38682
   },
@@ -20599,6 +21271,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 14,
         "confirmed_per_mil": 4.416114021540542
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 14,
+        "confirmed_per_mil": 4.416114021540542
       }
     ],
     "highest_confirmed": 14,
@@ -20712,9 +21389,16 @@
         "deaths": 2,
         "confirmed_per_mil": 197.6395729057034,
         "deaths_per_mil": 3.213651591962657
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 144,
+        "deaths": 2,
+        "confirmed_per_mil": 231.38291462131133,
+        "deaths_per_mil": 3.213651591962657
       }
     ],
-    "highest_confirmed": 123,
+    "highest_confirmed": 144,
     "highest_deaths": 2,
     "population": 622345
   },
@@ -20929,10 +21613,17 @@
         "deaths": 39,
         "confirmed_per_mil": 18.151974660065417,
         "deaths_per_mil": 1.0824572044993137
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 708,
+        "deaths": 44,
+        "confirmed_per_mil": 19.650761558602927,
+        "deaths_per_mil": 1.221233769178713
       }
     ],
-    "highest_confirmed": 654,
-    "highest_deaths": 39,
+    "highest_confirmed": 708,
+    "highest_deaths": 44,
     "population": 36029138
   },
   {
@@ -21030,6 +21721,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 14,
+        "confirmed_per_mil": 5.718358586013303
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 14,
         "confirmed_per_mil": 5.718358586013303
       }
@@ -21379,9 +22075,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 5,
         "confirmed_per_mil": 0.17801277996470433
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 6,
+        "confirmed_per_mil": 0.2136153359576452
       }
     ],
-    "highest_confirmed": 5,
+    "highest_confirmed": 6,
     "population": 28087871
   },
   {
@@ -21623,10 +22324,17 @@
         "deaths": 1175,
         "confirmed_per_mil": 794.8457134015943,
         "deaths_per_mil": 68.19098373589904
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 14788,
+        "deaths": 1341,
+        "confirmed_per_mil": 858.2198021161489,
+        "deaths_per_mil": 77.82477377858775
       }
     ],
-    "highest_confirmed": 13696,
-    "highest_deaths": 1175,
+    "highest_confirmed": 14788,
+    "highest_deaths": 1341,
     "population": 17231017
   },
   {
@@ -21717,6 +22425,13 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 5,
+        "deaths": 1,
+        "confirmed_per_mil": 0.7733338406403328,
+        "deaths_per_mil": 0.15466676812806657
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 5,
         "deaths": 1,
         "confirmed_per_mil": 0.7733338406403328,
@@ -21815,9 +22530,16 @@
         "deaths": 5,
         "confirmed_per_mil": 3.2972495413704115,
         "deaths_per_mil": 0.22278713117367646
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 98,
+        "deaths": 5,
+        "confirmed_per_mil": 4.366627771004058,
+        "deaths_per_mil": 0.22278713117367646
       }
     ],
-    "highest_confirmed": 74,
+    "highest_confirmed": 98,
     "highest_deaths": 5,
     "population": 22442948
   },
@@ -22037,9 +22759,16 @@
         "deaths": 2,
         "confirmed_per_mil": 0.8883228128343654,
         "deaths_per_mil": 0.010210607044073167
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 184,
+        "deaths": 2,
+        "confirmed_per_mil": 0.9393758480547313,
+        "deaths_per_mil": 0.010210607044073167
       }
     ],
-    "highest_confirmed": 174,
+    "highest_confirmed": 184,
     "highest_deaths": 2,
     "population": 195874740
   },
@@ -22272,9 +23001,16 @@
         "deaths": 11,
         "confirmed_per_mil": 169.95061830339353,
         "deaths_per_mil": 5.280951416207143
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 384,
+        "deaths": 11,
+        "confirmed_per_mil": 184.35321307486757,
+        "deaths_per_mil": 5.280951416207143
       }
     ],
-    "highest_confirmed": 354,
+    "highest_confirmed": 384,
     "highest_deaths": 11,
     "population": 2082958
   },
@@ -22515,10 +23251,17 @@
         "deaths": 44,
         "confirmed_per_mil": 915.0719864156124,
         "deaths_per_mil": 8.279491548897171
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 5147,
+        "deaths": 50,
+        "confirmed_per_mil": 968.5123409584942,
+        "deaths_per_mil": 9.408513123746786
       }
     ],
-    "highest_confirmed": 4863,
-    "highest_deaths": 44,
+    "highest_confirmed": 5147,
+    "highest_deaths": 50,
     "population": 5314336
   },
   {
@@ -22753,9 +23496,16 @@
         "deaths": 1,
         "confirmed_per_mil": 43.482915252005235,
         "deaths_per_mil": 0.20706150120002495
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 231,
+        "deaths": 1,
+        "confirmed_per_mil": 47.831206777205765,
+        "deaths_per_mil": 0.20706150120002495
       }
     ],
-    "highest_confirmed": 210,
+    "highest_confirmed": 231,
     "highest_deaths": 1,
     "population": 4829483
   },
@@ -22991,10 +23741,17 @@
         "deaths": 27,
         "confirmed_per_mil": 9.980442949775988,
         "deaths_per_mil": 0.12722944270252676
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2421,
+        "deaths": 34,
+        "confirmed_per_mil": 11.408240028993234,
+        "deaths_per_mil": 0.1602148537735522
       }
     ],
-    "highest_confirmed": 2118,
-    "highest_deaths": 27,
+    "highest_confirmed": 2421,
+    "highest_deaths": 34,
     "population": 212215030
   },
   {
@@ -23159,10 +23916,17 @@
         "deaths": 30,
         "confirmed_per_mil": 282.74740457753927,
         "deaths_per_mil": 7.182406551503961
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1317,
+        "deaths": 32,
+        "confirmed_per_mil": 315.30764761102387,
+        "deaths_per_mil": 7.661233654937558
       }
     ],
-    "highest_confirmed": 1181,
-    "highest_deaths": 30,
+    "highest_confirmed": 1317,
+    "highest_deaths": 32,
     "population": 4176873
   },
   {
@@ -23230,6 +23994,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.11619373492676774
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.11619373492676774
       }
@@ -23401,9 +24170,16 @@
         "deaths": 3,
         "confirmed_per_mil": 9.919392714651705,
         "deaths_per_mil": 0.4312779441152915
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 77,
+        "deaths": 3,
+        "confirmed_per_mil": 11.069467232292483,
+        "deaths_per_mil": 0.4312779441152915
       }
     ],
-    "highest_confirmed": 69,
+    "highest_confirmed": 77,
     "highest_deaths": 3,
     "population": 6956071
   },
@@ -23584,10 +24360,17 @@
         "deaths": 38,
         "confirmed_per_mil": 41.35763582622865,
         "deaths_per_mil": 1.1878988370345342
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1414,
+        "deaths": 55,
+        "confirmed_per_mil": 44.202340935969254,
+        "deaths_per_mil": 1.7193272641289312
       }
     ],
-    "highest_confirmed": 1323,
-    "highest_deaths": 38,
+    "highest_confirmed": 1414,
+    "highest_deaths": 55,
     "population": 31989256
   },
   {
@@ -24030,10 +24813,17 @@
         "deaths": 96,
         "confirmed_per_mil": 21.668620280467145,
         "deaths_per_mil": 0.9001244253244681
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2633,
+        "deaths": 107,
+        "confirmed_per_mil": 24.687787623742963,
+        "deaths_per_mil": 1.0032636823928969
       }
     ],
-    "highest_confirmed": 2311,
-    "highest_deaths": 96,
+    "highest_confirmed": 2633,
+    "highest_deaths": 107,
     "population": 106651922
   },
   {
@@ -24233,10 +25023,17 @@
         "deaths": 43,
         "confirmed_per_mil": 67.24848985801141,
         "deaths_per_mil": 1.1322181142891508
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2946,
+        "deaths": 57,
+        "confirmed_per_mil": 77.57010615571716,
+        "deaths_per_mil": 1.5008472677786415
       }
     ],
-    "highest_confirmed": 2554,
-    "highest_deaths": 43,
+    "highest_confirmed": 2946,
+    "highest_deaths": 57,
     "population": 37978548
   },
   {
@@ -24443,10 +25240,17 @@
         "deaths": 187,
         "confirmed_per_mil": 802.4889119199607,
         "deaths_per_mil": 18.18754411938343
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9034,
+        "deaths": 209,
+        "confirmed_per_mil": 878.64317419524,
+        "deaths_per_mil": 20.327255192252068
       }
     ],
-    "highest_confirmed": 8251,
-    "highest_deaths": 187,
+    "highest_confirmed": 9034,
+    "highest_deaths": 209,
     "population": 10281762
   },
   {
@@ -24654,10 +25458,17 @@
         "deaths": 2,
         "confirmed_per_mil": 300.1786332489358,
         "deaths_per_mil": 0.7189907383208043
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 949,
+        "deaths": 3,
+        "confirmed_per_mil": 341.16110533322166,
+        "deaths_per_mil": 1.0784861074812064
       }
     ],
-    "highest_confirmed": 835,
-    "highest_deaths": 2,
+    "highest_confirmed": 949,
+    "highest_deaths": 3,
     "population": 2781677
   },
   {
@@ -24889,10 +25700,17 @@
         "deaths": 92,
         "confirmed_per_mil": 126.3226910060709,
         "deaths_per_mil": 4.724263240877448
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2738,
+        "deaths": 115,
+        "confirmed_per_mil": 140.5981821035049,
+        "deaths_per_mil": 5.90532905109681
       }
     ],
-    "highest_confirmed": 2460,
-    "highest_deaths": 92,
+    "highest_confirmed": 2738,
+    "highest_deaths": 115,
     "population": 19473936
   },
   {
@@ -25283,10 +26101,17 @@
         "deaths": 24,
         "confirmed_per_mil": 19.220912796096016,
         "deaths_per_mil": 0.1661151988139375
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3548,
+        "deaths": 30,
+        "confirmed_per_mil": 24.557363557993757,
+        "deaths_per_mil": 0.20764399851742185
       }
     ],
-    "highest_confirmed": 2777,
-    "highest_deaths": 24,
+    "highest_confirmed": 3548,
+    "highest_deaths": 30,
     "population": 144478050
   },
   {
@@ -25386,9 +26211,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 82,
         "confirmed_per_mil": 6.665615883804984
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 84,
+        "confirmed_per_mil": 6.828191880970959
       }
     ],
-    "highest_confirmed": 82,
+    "highest_confirmed": 84,
     "population": 12301939
   },
   {
@@ -25468,6 +26298,10 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 13
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 13
       }
     ],
@@ -25570,9 +26404,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 9.073586788857636
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 18.14717357771527
       }
     ],
-    "highest_confirmed": 1,
+    "highest_confirmed": 2,
     "population": 110210
   },
   {
@@ -25817,10 +26656,17 @@
         "deaths": 26,
         "confirmed_per_mil": 6985.348527453011,
         "deaths_per_mil": 769.5722953973657
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 245,
+        "deaths": 30,
+        "confirmed_per_mil": 7251.738937398253,
+        "deaths_per_mil": 887.9680331508065
       }
     ],
-    "highest_confirmed": 236,
-    "highest_deaths": 26,
+    "highest_confirmed": 245,
+    "highest_deaths": 30,
     "population": 33785
   },
   {
@@ -26020,10 +26866,17 @@
         "deaths": 16,
         "confirmed_per_mil": 51.03865593616512,
         "deaths_per_mil": 0.47477819475502436
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1885,
+        "deaths": 21,
+        "confirmed_per_mil": 55.93480606957631,
+        "deaths_per_mil": 0.6231463806159695
       }
     ],
-    "highest_confirmed": 1720,
-    "highest_deaths": 16,
+    "highest_confirmed": 1885,
+    "highest_deaths": 21,
     "population": 33699947
   },
   {
@@ -26215,9 +27068,16 @@
         "deaths": 1,
         "confirmed_per_mil": 11.984085134940798,
         "deaths_per_mil": 0.0630741322891621
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 195,
+        "deaths": 1,
+        "confirmed_per_mil": 12.29945579638661,
+        "deaths_per_mil": 0.0630741322891621
       }
     ],
-    "highest_confirmed": 190,
+    "highest_confirmed": 195,
     "highest_deaths": 1,
     "population": 15854360
   },
@@ -26398,10 +27258,17 @@
         "deaths": 28,
         "confirmed_per_mil": 151.81713654547838,
         "deaths_per_mil": 4.010263984220184
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1171,
+        "deaths": 31,
+        "confirmed_per_mil": 167.71496876863696,
+        "deaths_per_mil": 4.439935125386632
       }
     ],
-    "highest_confirmed": 1060,
-    "highest_deaths": 28,
+    "highest_confirmed": 1171,
+    "highest_deaths": 31,
     "population": 6982084
   },
   {
@@ -26499,6 +27366,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 103.34635497406006
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 10,
         "confirmed_per_mil": 103.34635497406006
       }
@@ -26940,10 +27812,17 @@
         "deaths": 3,
         "confirmed_per_mil": 177.34659696708943,
         "deaths_per_mil": 0.5320397909012683
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1049,
+        "deaths": 4,
+        "confirmed_per_mil": 186.03658021847681,
+        "deaths_per_mil": 0.7093863878683577
       }
     ],
-    "highest_confirmed": 1000,
-    "highest_deaths": 3,
+    "highest_confirmed": 1049,
+    "highest_deaths": 4,
     "population": 5638676
   },
   {
@@ -27115,9 +27994,16 @@
         "deaths": 1,
         "confirmed_per_mil": 73.43477000505415,
         "deaths_per_mil": 0.18358692501263538
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 426,
+        "deaths": 1,
+        "confirmed_per_mil": 78.20803005538266,
+        "deaths_per_mil": 0.18358692501263538
       }
     ],
-    "highest_confirmed": 400,
+    "highest_confirmed": 426,
     "highest_deaths": 1,
     "population": 5447011
   },
@@ -27310,10 +28196,17 @@
         "deaths": 15,
         "confirmed_per_mil": 406.7966481117089,
         "deaths_per_mil": 7.255588254073286
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 897,
+        "deaths": 17,
+        "confirmed_per_mil": 433.88417759358254,
+        "deaths_per_mil": 8.223000021283058
       }
     ],
-    "highest_confirmed": 841,
-    "highest_deaths": 15,
+    "highest_confirmed": 897,
+    "highest_deaths": 17,
     "population": 2067372
   },
   {
@@ -27401,6 +28294,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 5,
+        "confirmed_per_mil": 0.33315223178013764
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 5,
         "confirmed_per_mil": 0.33315223178013764
       }
@@ -27584,9 +28482,16 @@
         "deaths": 5,
         "confirmed_per_mil": 23.883853030398846,
         "deaths_per_mil": 0.08653569938550307
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1462,
+        "deaths": 5,
+        "confirmed_per_mil": 25.303038500321097,
+        "deaths_per_mil": 0.08653569938550307
       }
     ],
-    "highest_confirmed": 1380,
+    "highest_confirmed": 1462,
     "highest_deaths": 5,
     "population": 57779622
   },
@@ -27988,10 +28893,17 @@
         "deaths": 9387,
         "confirmed_per_mil": 2228.3742685117154,
         "deaths_per_mil": 200.90425534988643
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 112065,
+        "deaths": 10348,
+        "confirmed_per_mil": 2398.459079129117,
+        "deaths_per_mil": 221.47195423038508
       }
     ],
-    "highest_confirmed": 104118,
-    "highest_deaths": 9387,
+    "highest_confirmed": 112065,
+    "highest_deaths": 10348,
     "population": 46723749
   },
   {
@@ -28397,10 +29309,17 @@
         "deaths": 3,
         "confirmed_per_mil": 6.737425011536686,
         "deaths_per_mil": 0.13844023996308258
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 151,
+        "deaths": 4,
+        "confirmed_per_mil": 6.96815874480849,
+        "deaths_per_mil": 0.18458698661744347
       }
     ],
-    "highest_confirmed": 146,
-    "highest_deaths": 3,
+    "highest_confirmed": 151,
+    "highest_deaths": 4,
     "population": 21670000
   },
   {
@@ -28545,9 +29464,16 @@
         "deaths": 2,
         "confirmed_per_mil": 0.16745797337145507,
         "deaths_per_mil": 0.04784513524898716
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 8,
+        "deaths": 2,
+        "confirmed_per_mil": 0.19138054099594864,
+        "deaths_per_mil": 0.04784513524898716
       }
     ],
-    "highest_confirmed": 7,
+    "highest_confirmed": 8,
     "highest_deaths": 2,
     "population": 41801533
   },
@@ -28646,6 +29572,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 17.36138238271084
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 10,
         "confirmed_per_mil": 17.36138238271084
       }
@@ -29049,10 +29980,17 @@
         "deaths": 239,
         "confirmed_per_mil": 485.80133406329554,
         "deaths_per_mil": 23.470086687108882
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 5568,
+        "deaths": 308,
+        "confirmed_per_mil": 546.7842789699675,
+        "deaths_per_mil": 30.245969454516885
       }
     ],
-    "highest_confirmed": 4947,
-    "highest_deaths": 239,
+    "highest_confirmed": 5568,
+    "highest_deaths": 308,
     "population": 10183175
   },
   {
@@ -29307,10 +30245,17 @@
         "deaths": 488,
         "confirmed_per_mil": 2086.2925250304024,
         "deaths_per_mil": 57.30024494680529
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 18827,
+        "deaths": 536,
+        "confirmed_per_mil": 2210.638753306359,
+        "deaths_per_mil": 62.936334613704176
       }
     ],
-    "highest_confirmed": 17768,
-    "highest_deaths": 488,
+    "highest_confirmed": 18827,
+    "highest_deaths": 536,
     "population": 8516543
   },
   {
@@ -29670,9 +30615,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 329,
         "deaths": 5
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 339,
+        "deaths": 5
       }
     ],
-    "highest_confirmed": 329,
+    "highest_confirmed": 339,
     "highest_deaths": 5
   },
   {
@@ -29777,6 +30727,13 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 20,
+        "deaths": 1,
+        "confirmed_per_mil": 0.35512405299956595,
+        "deaths_per_mil": 0.0177562026499783
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 20,
         "deaths": 1,
         "confirmed_per_mil": 0.35512405299956595,
@@ -30247,10 +31204,17 @@
         "deaths": 12,
         "confirmed_per_mil": 25.50824787806234,
         "deaths_per_mil": 0.17283962424435237
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1875,
+        "deaths": 15,
+        "confirmed_per_mil": 27.00619128818006,
+        "deaths_per_mil": 0.21604953030544047
       }
     ],
-    "highest_confirmed": 1771,
-    "highest_deaths": 12,
+    "highest_confirmed": 1875,
+    "highest_deaths": 15,
     "population": 69428524
   },
   {
@@ -30423,9 +31387,16 @@
         "deaths": 2,
         "confirmed_per_mil": 4.563261636887582,
         "deaths_per_mil": 0.2535145353826434
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 39,
+        "deaths": 2,
+        "confirmed_per_mil": 4.943533439961547,
+        "deaths_per_mil": 0.2535145353826434
       }
     ],
-    "highest_confirmed": 36,
+    "highest_confirmed": 39,
     "highest_deaths": 2,
     "population": 7889094
   },
@@ -30553,9 +31524,16 @@
         "deaths": 5,
         "confirmed_per_mil": 64.75481667911399,
         "deaths_per_mil": 3.597489815506332
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 94,
+        "deaths": 5,
+        "confirmed_per_mil": 67.63280853151905,
+        "deaths_per_mil": 3.597489815506332
       }
     ],
-    "highest_confirmed": 90,
+    "highest_confirmed": 94,
     "highest_deaths": 5,
     "population": 1389858
   },
@@ -30749,10 +31727,17 @@
         "deaths": 12,
         "confirmed_per_mil": 36.5752303201915,
         "deaths_per_mil": 1.0375951863884114
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 455,
+        "deaths": 14,
+        "confirmed_per_mil": 39.342150817227264,
+        "deaths_per_mil": 1.2105277174531466
       }
     ],
-    "highest_confirmed": 423,
-    "highest_deaths": 12,
+    "highest_confirmed": 455,
+    "highest_deaths": 14,
     "population": 11565204
   },
   {
@@ -30905,10 +31890,17 @@
         "deaths": 277,
         "confirmed_per_mil": 190.46468134416972,
         "deaths_per_mil": 3.364928677360483
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 18135,
+        "deaths": 356,
+        "confirmed_per_mil": 220.2995724329688,
+        "deaths_per_mil": 4.324601477040909
       }
     ],
-    "highest_confirmed": 15679,
-    "highest_deaths": 277,
+    "highest_confirmed": 18135,
+    "highest_deaths": 356,
     "population": 82319724
   },
   {
@@ -30973,9 +31965,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 44,
         "confirmed_per_mil": 1.029886872310576
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 45,
+        "confirmed_per_mil": 1.0532933921358165
       }
     ],
-    "highest_confirmed": 44,
+    "highest_confirmed": 45,
     "population": 42723139
   },
   {
@@ -31180,10 +32177,17 @@
         "deaths": 20,
         "confirmed_per_mil": 17.793707553379555,
         "deaths_per_mil": 0.44820422048815
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 897,
+        "deaths": 22,
+        "confirmed_per_mil": 20.10195928889353,
+        "deaths_per_mil": 0.493024642536965
       }
     ],
-    "highest_confirmed": 794,
-    "highest_deaths": 20,
+    "highest_confirmed": 897,
+    "highest_deaths": 22,
     "population": 44622516
   },
   {
@@ -31585,9 +32589,16 @@
         "deaths": 8,
         "confirmed_per_mil": 84.51910136882526,
         "deaths_per_mil": 0.8306545589073735
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1024,
+        "deaths": 8,
+        "confirmed_per_mil": 106.32378354014381,
+        "deaths_per_mil": 0.8306545589073735
       }
     ],
-    "highest_confirmed": 814,
+    "highest_confirmed": 1024,
     "highest_deaths": 8,
     "population": 9630959
   },
@@ -31993,10 +33004,17 @@
         "deaths": 2357,
         "confirmed_per_mil": 449.1721042961834,
         "deaths_per_mil": 35.44947764359968
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 34173,
+        "deaths": 2926,
+        "confirmed_per_mil": 513.9647855387067,
+        "deaths_per_mil": 44.00728535645849
       }
     ],
-    "highest_confirmed": 29865,
-    "highest_deaths": 2357,
+    "highest_confirmed": 34173,
+    "highest_deaths": 2926,
     "population": 66488991
   },
   {
@@ -32119,10 +33137,17 @@
         "deaths": 2,
         "confirmed_per_mil": 97.99092511260984,
         "deaths_per_mil": 0.5798279592462121
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 350,
+        "deaths": 4,
+        "confirmed_per_mil": 101.46989286808711,
+        "deaths_per_mil": 1.1596559184924242
       }
     ],
-    "highest_confirmed": 338,
-    "highest_deaths": 2,
+    "highest_confirmed": 350,
+    "highest_deaths": 4,
     "population": 3449299
   },
   {
@@ -32241,9 +33266,16 @@
         "deaths": 2,
         "confirmed_per_mil": 5.492271372825091,
         "deaths_per_mil": 0.060688081467680566
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 205,
+        "deaths": 2,
+        "confirmed_per_mil": 6.220528350437258,
+        "deaths_per_mil": 0.060688081467680566
       }
     ],
-    "highest_confirmed": 181,
+    "highest_confirmed": 205,
     "highest_deaths": 2,
     "population": 32955400
   },
@@ -32369,10 +33401,17 @@
         "deaths": 3,
         "confirmed_per_mil": 4.953205200034153,
         "deaths_per_mil": 0.1039133958049123
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 146,
+        "deaths": 5,
+        "confirmed_per_mil": 5.057118595839065,
+        "deaths_per_mil": 0.17318899300818716
       }
     ],
-    "highest_confirmed": 143,
-    "highest_deaths": 3,
+    "highest_confirmed": 146,
+    "highest_deaths": 5,
     "population": 28870195
   },
   {
@@ -32727,9 +33766,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 218,
         "confirmed_per_mil": 2.281757365562493
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 233,
+        "confirmed_per_mil": 2.4387590191562425
       }
     ],
-    "highest_confirmed": 218,
+    "highest_confirmed": 233,
     "population": 95540395
   },
   {
@@ -32738,80 +33782,103 @@
       {
         "date": "2020-03-18T00:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
         "confirmed_per_mil": 0.11526167107984396
       },
       {
         "date": "2020-03-19T00:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
         "confirmed_per_mil": 0.11526167107984396
       },
       {
         "date": "2020-03-20T00:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
         "confirmed_per_mil": 0.11526167107984396
       },
       {
         "date": "2020-03-21T00:00:00.000Z",
         "confirmed": 2,
+        "deaths": 0,
         "confirmed_per_mil": 0.11526167107984396
       },
       {
         "date": "2020-03-22T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.17289250661976593
       },
       {
         "date": "2020-03-23T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.17289250661976593
       },
       {
         "date": "2020-03-24T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.17289250661976593
       },
       {
         "date": "2020-03-25T00:00:00.000Z",
         "confirmed": 12,
+        "deaths": 0,
         "confirmed_per_mil": 0.6915700264790637
       },
       {
         "date": "2020-03-26T00:00:00.000Z",
         "confirmed": 16,
+        "deaths": 0,
         "confirmed_per_mil": 0.9220933686387517
       },
       {
         "date": "2020-03-27T00:00:00.000Z",
         "confirmed": 22,
+        "deaths": 0,
         "confirmed_per_mil": 1.2678783818782835
       },
       {
         "date": "2020-03-28T00:00:00.000Z",
         "confirmed": 28,
+        "deaths": 0,
         "confirmed_per_mil": 1.6136633951178154
       },
       {
         "date": "2020-03-29T00:00:00.000Z",
         "confirmed": 29,
+        "deaths": 0,
         "confirmed_per_mil": 1.6712942306577374
       },
       {
         "date": "2020-03-30T00:00:00.000Z",
         "confirmed": 35,
+        "deaths": 0,
         "confirmed_per_mil": 2.0170792438972693
       },
       {
         "date": "2020-03-31T00:00:00.000Z",
         "confirmed": 35,
+        "deaths": 0,
         "confirmed_per_mil": 2.0170792438972693
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 36,
+        "deaths": 0,
         "confirmed_per_mil": 2.074710079437191
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 39,
+        "deaths": 1,
+        "confirmed_per_mil": 2.2476025860569573,
+        "deaths_per_mil": 0.05763083553992198
       }
     ],
-    "highest_confirmed": 36,
+    "highest_confirmed": 39,
+    "highest_deaths": 1,
     "population": 17351822
   },
   {
@@ -32904,9 +33971,16 @@
         "deaths": 1,
         "confirmed_per_mil": 0.5540542992605175,
         "deaths_per_mil": 0.06925678740756469
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9,
+        "deaths": 1,
+        "confirmed_per_mil": 0.6233110866680822,
+        "deaths_per_mil": 0.06925678740756469
       }
     ],
-    "highest_confirmed": 8,
+    "highest_confirmed": 9,
     "highest_deaths": 1,
     "population": 14439018
   },
@@ -32965,6 +34039,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 12,
+        "confirmed_per_mil": 167.53926701570683
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 12,
         "confirmed_per_mil": 167.53926701570683
       }
@@ -33029,9 +34108,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 9,
         "confirmed_per_mil": 80.7508030218745
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 89.72311446874944
       }
     ],
-    "highest_confirmed": 9,
+    "highest_confirmed": 10,
     "population": 111454
   },
   {
@@ -33089,6 +34173,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 0.339029457659323
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 10,
         "confirmed_per_mil": 0.339029457659323
       }
@@ -33168,9 +34257,16 @@
         "deaths": 2,
         "confirmed_per_mil": 0.5914960727913996,
         "deaths_per_mil": 0.11829921455827991
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 16,
+        "deaths": 2,
+        "confirmed_per_mil": 0.9463937164662393,
+        "deaths_per_mil": 0.11829921455827991
       }
     ],
-    "highest_confirmed": 10,
+    "highest_confirmed": 16,
     "highest_deaths": 2,
     "population": 16906283
   },
@@ -33231,6 +34327,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 1,
         "confirmed_per_mil": 0.7886609483490171
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 1,
+        "confirmed_per_mil": 0.7886609483490171
       }
     ],
     "highest_confirmed": 1,
@@ -33288,6 +34389,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 3,
         "confirmed_per_mil": 7.831446389833738
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 7.831446389833738
       }
     ],
     "highest_confirmed": 3,
@@ -33340,6 +34446,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 10,
         "confirmed_per_mil": 1.4161283136871492
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 10,
+        "confirmed_per_mil": 1.4161283136871492
       }
     ],
     "highest_confirmed": 10,
@@ -33351,50 +34462,67 @@
       {
         "date": "2020-03-24T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.1497327196088622
       },
       {
         "date": "2020-03-25T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.1497327196088622
       },
       {
         "date": "2020-03-26T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.1497327196088622
       },
       {
         "date": "2020-03-27T00:00:00.000Z",
         "confirmed": 1,
+        "deaths": 0,
         "confirmed_per_mil": 0.1497327196088622
       },
       {
         "date": "2020-03-28T00:00:00.000Z",
         "confirmed": 3,
+        "deaths": 0,
         "confirmed_per_mil": 0.4491981588265866
       },
       {
         "date": "2020-03-29T00:00:00.000Z",
         "confirmed": 8,
+        "deaths": 0,
         "confirmed_per_mil": 1.1978617568708976
       },
       {
         "date": "2020-03-30T00:00:00.000Z",
         "confirmed": 8,
+        "deaths": 0,
         "confirmed_per_mil": 1.1978617568708976
       },
       {
         "date": "2020-03-31T00:00:00.000Z",
         "confirmed": 10,
+        "deaths": 0,
         "confirmed_per_mil": 1.497327196088622
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 10,
+        "deaths": 0,
         "confirmed_per_mil": 1.497327196088622
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 11,
+        "deaths": 1,
+        "confirmed_per_mil": 1.6470599156974841,
+        "deaths_per_mil": 0.1497327196088622
       }
     ],
-    "highest_confirmed": 10,
+    "highest_confirmed": 11,
+    "highest_deaths": 1,
     "population": 6678567
   },
   {
@@ -33574,9 +34702,16 @@
         "deaths": 1,
         "confirmed_per_mil": 29.3275221067141,
         "deaths_per_mil": 0.21886210527398584
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 161,
+        "deaths": 1,
+        "confirmed_per_mil": 35.236798949111716,
+        "deaths_per_mil": 0.21886210527398584
       }
     ],
-    "highest_confirmed": 134,
+    "highest_confirmed": 161,
     "highest_deaths": 1,
     "population": 4569087
   },
@@ -33620,6 +34755,11 @@
       },
       {
         "date": "2020-04-01T00:00:00.000Z",
+        "confirmed": 9,
+        "confirmed_per_mil": 4.801769612161069
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
         "confirmed": 9,
         "confirmed_per_mil": 4.801769612161069
       }
@@ -33681,9 +34821,16 @@
         "deaths": 3,
         "confirmed_per_mil": 1.6249346750052023,
         "deaths_per_mil": 0.15725174274243894
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 36,
+        "deaths": 3,
+        "confirmed_per_mil": 1.8870209129092672,
+        "deaths_per_mil": 0.15725174274243894
       }
     ],
-    "highest_confirmed": 31,
+    "highest_confirmed": 36,
     "highest_deaths": 3,
     "population": 19077690
   },
@@ -33721,9 +34868,13 @@
       {
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 8
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9
       }
     ],
-    "highest_confirmed": 8
+    "highest_confirmed": 9
   },
   {
     "name": "Kosovo",
@@ -33776,6 +34927,13 @@
         "deaths": 1,
         "confirmed_per_mil": 67.73966292743728,
         "deaths_per_mil": 0.5419173034194982
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 125,
+        "deaths": 1,
+        "confirmed_per_mil": 67.73966292743728,
+        "deaths_per_mil": 0.5419173034194982
       }
     ],
     "highest_confirmed": 125,
@@ -33814,9 +34972,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 15,
         "deaths": 1
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 20,
+        "deaths": 1
       }
     ],
-    "highest_confirmed": 15,
+    "highest_confirmed": 20,
     "highest_deaths": 1
   },
   {
@@ -33846,6 +35009,11 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 9,
         "deaths": 2
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 9,
+        "deaths": 2
       }
     ],
     "highest_confirmed": 9,
@@ -33873,6 +35041,13 @@
         "deaths": 1,
         "confirmed_per_mil": 1.774523695658539,
         "deaths_per_mil": 0.44363092391463477
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 4,
+        "deaths": 1,
+        "confirmed_per_mil": 1.774523695658539,
+        "deaths_per_mil": 0.44363092391463477
       }
     ],
     "highest_confirmed": 4,
@@ -33891,9 +35066,14 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.17896486364935485
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.2684472954740323
       }
     ],
-    "highest_confirmed": 2,
+    "highest_confirmed": 3,
     "population": 11175378
   },
   {
@@ -33908,10 +35088,27 @@
         "date": "2020-04-01T00:00:00.000Z",
         "confirmed": 2,
         "confirmed_per_mil": 0.2614326456696166
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 2,
+        "confirmed_per_mil": 0.2614326456696166
       }
     ],
     "highest_confirmed": 2,
     "population": 7650154
+  },
+  {
+    "name": "Malawi",
+    "time_series": [
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 3,
+        "confirmed_per_mil": 0.1653501578956216
+      }
+    ],
+    "highest_confirmed": 3,
+    "population": 18143315
   },
   {
     "name": "United States",
@@ -34003,15 +35200,15 @@
       },
       {
         "date": "2020-03-11T00:00:00Z",
-        "confirmed": 1053,
+        "confirmed": 1054,
         "deaths": 27,
         "hospitalized": 0,
-        "tests": 7123,
+        "tests": 7124,
         "old_date": 20200311,
-        "confirmed_per_mil": 3.2185354976375797,
+        "confirmed_per_mil": 3.221592036571708,
         "deaths_per_mil": 0.0825265512214764,
         "hospitalized_per_mil": 0,
-        "tests_per_mil": 21.771726827799124
+        "tests_per_mil": 21.774783366733253
       },
       {
         "date": "2020-03-12T00:00:00Z",
@@ -34102,12 +35299,12 @@
         "confirmed": 11719,
         "deaths": 160,
         "hospitalized": 0,
-        "tests": 100838,
+        "tests": 100870,
         "old_date": 20200319,
         "confirmed_per_mil": 35.81957976905488,
         "deaths_per_mil": 0.4890462294606009,
         "hospitalized_per_mil": 0,
-        "tests_per_mil": 308.2152730396754
+        "tests_per_mil": 308.3130822855676
       },
       {
         "date": "2020-03-20T00:00:00Z",
@@ -34264,12 +35461,24 @@
         "deaths_per_mil": 14.365732990405151,
         "hospitalized_per_mil": 95.1867354866377,
         "tests_per_mil": 3514.8975126907035
+      },
+      {
+        "date": "2020-04-02T00:00:00Z",
+        "confirmed": 239009,
+        "deaths": 5784,
+        "hospitalized": 32630,
+        "tests": 1267658,
+        "old_date": 20200402,
+        "confirmed_per_mil": 730.5403141071797,
+        "deaths_per_mil": 17.679021195000722,
+        "hospitalized_per_mil": 99.73486542062129,
+        "tests_per_mil": 3874.64603215979
       }
     ],
-    "highest_confirmed": 210770,
-    "highest_deaths": 4700,
-    "highest_hospitalized": 31142,
-    "highest_tests": 1149960
+    "highest_confirmed": 239009,
+    "highest_deaths": 5784,
+    "highest_hospitalized": 32630,
+    "highest_tests": 1267658
   },
   {
     "name": "New Zealand",
@@ -34458,9 +35667,16 @@
         "confirmed_per_mil": 163.13581005,
         "deaths": 1,
         "deaths_per_mil": 0.20468734
+      },
+      {
+        "date": "2020-04-02T00:00:00.000Z",
+        "confirmed": 868,
+        "confirmed_per_mil": 177.259236516,
+        "deaths": 1,
+        "deaths_per_mil": 0.20468734
       }
     ],
-    "highest_confirmed": 797,
+    "highest_confirmed": 868,
     "highest_deaths": 1,
     "population": 4885500
   }
