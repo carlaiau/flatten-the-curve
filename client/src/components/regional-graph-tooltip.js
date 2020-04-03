@@ -1,5 +1,5 @@
 import React from 'react'
-const NZRegionalGraphToolTip = (tooltipProps)  => {
+const RegionalGraphToolTip = (tooltipProps)  => {
 
     if(! tooltipProps.hasOwnProperty('payload')) return <></>
 
@@ -26,4 +26,4 @@ const NZRegionalGraphToolTip = (tooltipProps)  => {
             </>
         )
 }
-export default NZRegionalGraphToolTip 
+export default RegionalGraphToolTip 

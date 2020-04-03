@@ -3,7 +3,7 @@ import React from "react"
 import SEO from "../components/seo"
 import CountryOverviewGraph from "./country-overview-graph"
 import CountryGrid from "./country-grid/country-grid"
-import NZRegionalView from "./nz-regional-view"
+import RegionalView from "./regional-view"
 import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
@@ -147,11 +147,12 @@ export default class CountryPage extends React.Component{
           </div>                
         </section>
         { active_country.name == 'New Zealand' ? 
-          <NZRegionalView
+        
+          <RegionalView
             width={this.props.overview_width}
             height={this.props.overview_height}
-          /> : <></>
-        }
+          />
+        : <></> }
         <CountryGrid 
           active_country={active_country}
           countries={countries}

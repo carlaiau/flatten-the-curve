@@ -2,11 +2,11 @@ import React from "react"
 import  { graphql, useStaticQuery } from 'gatsby'
 
 import EnhancedTable from './enhanced-table/enhanced-table'
-import NZRegionalGraph from './nz-regional-graph'
-
+import RegionalAreaGraph from './regional-area-graph'
+import RegionalBarGraph from './regional-bar-graph'
 import SetupNZTable from '../utils/setup-nz-table'
 
-const NZRegionalView = ({width, height}) => {
+const RegionalView = ({width, height}) => {
     const nzData = useStaticQuery(graphql`query {
         newZealand: allNzAdvancedJson {
             nodes {
@@ -75,32 +75,27 @@ const NZRegionalView = ({width, height}) => {
         <div className="container">
           <div className="columns">
             <div className="column is-one-third">
-                <div className="box has-background-success">
-                    <h3 className="is-size-3 has-text-white title">
-                        Current Cases by DHB
-                    </h3>
-                    <p className="is-size-5 subtitle has-text-white">
-                      Total includes confirmed and probable.
-                    </p>
-                    <p className="is-size-7 has-text-white">
-                      Using Ministry of Health Current Case data found 
-                      {' '}<a
-                        href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details"
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                      >
-                        <strong className="has-text-white">
-                          here
-                        </strong>
-                      </a>. This data sometimes does not contain every single case, and therefore there can be disrepancies in the below data
-                      and what is announced at the daily press conference.
+              <div className="box has-background-success">
+                  <h3 className="is-size-3 has-text-white title">
+                      Current Cases by DHB
+                  </h3>
+                  <p className="is-size-5 subtitle has-text-white">
+                    Total includes confirmed and probable.
+                  </p>
+                  <p className="is-size-7 has-text-white">
+                    Using Ministry of Health Current Case data found 
+                    {' '}<a
+                      href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details"
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
+                      <strong className="has-text-white">
+                        here
+                      </strong>
+                    </a>. The dates for all graphing is based on when they cases are reported not when they're announced.
 
-                    </p>
-                </div>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column is-one-third">
+                  </p>
+              </div>
               <EnhancedTable 
                 rows={rows} 
                 headCells={headCells} 
@@ -111,18 +106,27 @@ const NZRegionalView = ({width, height}) => {
               />
             </div>
             <div className="column is-two-thirds">
-              <NZRegionalGraph
-                active_dhb={regions.filter(r => r.name == activeRegion)[0]}
+              <p className="title is-size-4 has-text-centered">
+                Cases versus time {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+              </p>
+              <RegionalAreaGraph
+                active_region={regions.filter(r => r.name == activeRegion)[0]}
+                width={width}
+                height={height}
+              />
+              <p className="title is-size-4 has-text-centered" style={{marginTop: '30px'}}>
+                Cases versus age group {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+              </p>
+              <RegionalBarGraph
+                active_region={regions.filter(r => r.name == activeRegion)[0]}
                 width={width}
                 height={height}
               />
             </div>
           </div>
-          
-          
         </div>
       </section>
     )
 }
 
-export default NZRegionalView
+export default RegionalView

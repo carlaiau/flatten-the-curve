@@ -1,13 +1,13 @@
 import React from 'react' 
 import { parseJSON, format } from "date-fns"
 import {AreaChart, Area, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
-import NZRegionalGraphTooltip from './nz-regional-graph-tooltip'
+import RegionalGraphTooltip from './regional-graph-tooltip'
 
 
-const NZRegionalGraph = ({active_dhb, width, height, scale}) => {
+const RegionalAreaGraph = ({active_region, width, height, scale}) => {
     
     
-    const filteredData = active_dhb.time_series.filter(t => parseInt(t.total) > 0)
+    const filteredData = active_region.time_series.filter(t => parseInt(t.total) > 0)
     
     console.log(filteredData)
     filteredData.forEach((t,i) => {
@@ -43,7 +43,7 @@ const NZRegionalGraph = ({active_dhb, width, height, scale}) => {
         
         <Area type="monotone" dataKey="total" name="Total" stroke="#ff793f" fillOpacity={1} fill="url(#total)" dot={false} strokeWidth={1}/>
         <Area type="monotone" dataKey="confirmed" name="Confirmed" stroke="#ff5252" fillOpacity={1} fill="url(#confirmed)" dot={false} strokeWidth={1}/>
-        <Tooltip content={NZRegionalGraphTooltip}/>
+        <Tooltip content={RegionalGraphTooltip}/>
         <Legend verticalAlign="top" iconType="square"/>
         
       </AreaChart>
@@ -51,4 +51,4 @@ const NZRegionalGraph = ({active_dhb, width, height, scale}) => {
     
 }
 
-export default NZRegionalGraph
+export default RegionalAreaGraph
