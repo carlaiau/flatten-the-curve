@@ -70,8 +70,10 @@ const RegionalView = ({width, height}) => {
     const {rows, headCells} = SetupNZTable(regions)
 
     const [activeRegion, setActiveRegion] = React.useState('All');
+    const [scale, setScale] = React.useState('linear');
+    const [type, setType] = React.useState('value');
     return (
-      <section className="section">
+      <section className="section" style={{marginBottom: '50px'}}>
         <div className="container">
           <div className="columns">
             <div className="column is-one-third">
@@ -106,21 +108,50 @@ const RegionalView = ({width, height}) => {
               />
             </div>
             <div className="column is-two-thirds">
-              <p className="title is-size-4 has-text-centered">
-                Cases versus time {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
-              </p>
+              <div className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between'}}>
+                <div className="control">
+                  <p className="title is-size-4 has-text-centered">
+                    Cases versus time {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                  </p>
+                </div>
+                <div className="control">
+                  <div className="select">
+                    <select value={scale} onChange={e => setScale(e.target.value)}>
+                      <option value="linear">Linear</option>
+                      <option value="log">Log</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
               <RegionalAreaGraph
                 active_region={regions.filter(r => r.name == activeRegion)[0]}
                 width={width}
                 height={height}
+                scale={scale}
               />
-              <p className="title is-size-4 has-text-centered" style={{marginTop: '30px'}}>
-                Cases versus age group {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
-              </p>
+
+              <div className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between', marginTop: '50px'}}>
+                <div className="control">
+                  <p className="title is-size-4" >
+                    Cases versus age group {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                  </p>
+                </div>
+                <div className="control">
+                  <div className="select">
+                    <select value={type} onChange={e => setType(e.target.value)}>
+                      <option value="value">Value</option>
+                      <option value="percent">Percentage</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
               <RegionalBarGraph
                 active_region={regions.filter(r => r.name == activeRegion)[0]}
                 width={width}
                 height={height}
+                type={type}
               />
             </div>
           </div>

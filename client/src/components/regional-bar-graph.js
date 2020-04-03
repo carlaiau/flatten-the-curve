@@ -3,7 +3,7 @@ import {BarChart, Bar, XAxis, YAxis, Tooltip, Legend, Label, CartesianGrid} from
 
 
 
-const RegionalBarGraph = ({active_region, width, height, scale}) => {
+const RegionalBarGraph = ({active_region, width, height, type}) => {
     
     const ages = active_region.highest.ages
     
@@ -46,6 +46,11 @@ const RegionalBarGraph = ({active_region, width, height, scale}) => {
         ... data
     ]
 
+    if(type == 'percent'){
+        output_data.forEach(d => {
+            d.percent = (d.value / active_region.highest.total).toFixed(2)
+        })
+    }
     
     
     return (
@@ -61,9 +66,9 @@ const RegionalBarGraph = ({active_region, width, height, scale}) => {
             <XAxis dataKey="name" name="Age Group">
                 <Label value="Age Group" position="bottom"/>
             </XAxis>
-            <YAxis/>
+            <YAxis  interval="preserveEnd" tickCount={9}/>
             <Tooltip />
-            <Bar dataKey="value" fillOpacity={1} fill="url(#bars)" name="Total Cases"/>
+            <Bar dataKey={type == 'percent' ? "percent" : "value" } fillOpacity={1} fill="url(#bars)" name="Total Cases"/>
       </BarChart>
 
     )
