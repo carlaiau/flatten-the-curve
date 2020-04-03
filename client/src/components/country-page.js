@@ -68,9 +68,14 @@ export default class CountryPage extends React.Component{
             </p>
             
             {name == 'New Zealand' ?
-            <p className="is-size-6">
-              {name} data updated at <strong>{update_times.nz}</strong>
-            </p>
+            <>
+              <p className="is-size-6">
+                {name} data updated at <strong>{update_times.nz}</strong>
+              </p>
+              <p className="is-size-6">
+                Regional data updated at <strong>{update_times.nz_regional}</strong>
+              </p>
+            </>
             : <></> }
 
             {name == 'United States' ?
@@ -141,7 +146,12 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
-        { active_country.name == 'New Zealand' ? <NZRegionalView/> : <></>}
+        { active_country.name == 'New Zealand' ? 
+          <NZRegionalView
+            width={this.props.overview_width}
+            height={this.props.overview_height}
+          /> : <></>
+        }
         <CountryGrid 
           active_country={active_country}
           countries={countries}

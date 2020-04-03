@@ -141,6 +141,20 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           strong{
             color: #fff;
           }
+          .button{
+            opacity: 0;
+          }
+        }
+      }
+      .regional-selectable{
+        &:hover{
+          cursor: pointer;
+          .button{
+            transition: 0.5s;
+            background-color: #363636;
+            border-color: #363636;
+            color: #fff;
+          }
         }
       }
 

@@ -2,9 +2,11 @@ import React from "react"
 import  { graphql, useStaticQuery } from 'gatsby'
 
 import EnhancedTable from './enhanced-table/enhanced-table'
+import NZRegionalGraph from './nz-regional-graph'
+
 import SetupNZTable from '../utils/setup-nz-table'
 
-const NZRegionalView = () => {
+const NZRegionalView = ({width, height}) => {
     const nzData = useStaticQuery(graphql`query {
         newZealand: allNzAdvancedJson {
             nodes {
@@ -72,13 +74,13 @@ const NZRegionalView = () => {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column is-narrow">
+            <div className="column is-one-third">
                 <div className="box has-background-success">
                     <h3 className="is-size-3 has-text-white title">
-                        Current Case Details
+                        Current Cases by DHB
                     </h3>
                     <p className="is-size-5 subtitle has-text-white">
-                      Total includes confirmed and probable cases.
+                      Total includes confirmed and probable.
                     </p>
                     <p className="is-size-7 has-text-white">
                       Using Ministry of Health Current Case data found 
@@ -90,7 +92,8 @@ const NZRegionalView = () => {
                         <strong className="has-text-white">
                           here
                         </strong>
-                      </a>
+                      </a>. This data sometimes does not contain every single case, and therefore there can be disrepancies in the below data
+                      and what is announced at the daily press conference.
 
                     </p>
                 </div>
@@ -108,8 +111,11 @@ const NZRegionalView = () => {
               />
             </div>
             <div className="column is-two-thirds">
-              
-
+              <NZRegionalGraph
+                active_dhb={regions.filter(r => r.name == activeRegion)[0]}
+                width={width}
+                height={height}
+              />
             </div>
           </div>
           
