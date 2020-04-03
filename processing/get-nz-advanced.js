@@ -17,6 +17,7 @@ const getCases = (html) => {
         const rows = $(this).children('tr')
         // Prevent duplication when MoH adds same table twice, this will obviously break if
         // confirmed count == probable count
+        console.log(rows.length)
         if(! row_counts_encountered.includes(rows.length)){
             $(rows).each(function(){
 
@@ -51,6 +52,7 @@ const getCases = (html) => {
         }
 
     })
+    console.log(cases.length)
     return cases
 }
 
@@ -71,7 +73,9 @@ const createStructuredCases = (cases_by_district) => {
         d.cases.forEach(c => {
             if( d.structured_cases.hasOwnProperty(c.dateForSort)){
                 day = d.structured_cases[c.dateForSort]
-                day.confirmed += 1
+                day.total += 1
+                day.confirmed += c.type == 'confirmed' ? 1 : 0
+                day.probable += c.type != 'confirmed' ? 1 : 0
                 if(day.genders.hasOwnProperty(c.gender))
                     day.genders[c.gender] += 1
                 else
@@ -86,7 +90,9 @@ const createStructuredCases = (cases_by_district) => {
                 d.structured_cases[c.dateForSort] = {
                     dateObject: c.dateObject,
                     dateForSort: c.dateForSort,
-                    confirmed: 1,
+                    total: 1,
+                    confirmed: c.type == 'confirmed' ? 1 : 0,
+                    probable: c.type != 'confirmed' ? 1 : 0,
                     genders: {
                         [c.gender == "" ? 'Undefined' : c.gender]: 1
                     },
@@ -102,6 +108,7 @@ const createStructuredCases = (cases_by_district) => {
 
 const createTimeSeries = (cases_by_district) => {
     // Now go through structured_cases and make time_series
+
     cases_by_district.forEach(d => {
 
         d.time_series = []
@@ -116,6 +123,9 @@ const createTimeSeries = (cases_by_district) => {
                 // Merge the day with previous
                 const new_day = {
                     dateObject: day.dateObject,
+                    dateForSort: format(parseISO(day.dateObject),'yyyyMMdd'),
+                    total: day.total + previous.total,
+                    probable: day.probable + previous.probable,
                     confirmed: day.confirmed + previous.confirmed,
                     genders: {},
                     ages: {}
@@ -148,6 +158,7 @@ const createTimeSeries = (cases_by_district) => {
                     for(let days_to_add = 1; days_to_add < since_last; days_to_add++){
                         additional_day = Object.assign({}, previous)
                         additional_day.dateObject = format(addDays(decrementable_date_object, days_to_add),'yyyy-MM-dd') + 'T00:00:00.000Z'
+                        additional_day.dateForSort = format(addDays(decrementable_date_object, days_to_add),'yyyyMMdd')
 
                         d.time_series.push(additional_day)
                     }
@@ -164,6 +175,99 @@ const createTimeSeries = (cases_by_district) => {
 
 
     })
+
+    // First get the unique set of dateObjects
+
+    
+
+    
+    let dates = []
+
+    cases_by_district.forEach(d => {
+        _.forEach(d.time_series, (day) => {
+            if(! dates.includes(day.dateForSort))
+                dates.push(day.dateForSort)
+        })
+    })
+
+    dates = dates.sort()
+
+    // Suffix the end of the time_seres with repeats of the last found 
+    // so that they all have the same length at the end
+    cases_by_district.forEach(d => {
+        last_global_date = dates[dates.length - 1]
+        last_district_date = d.time_series[d.time_series.length - 1].dateForSort
+        if(last_global_date != last_district_date){
+            starting_date_object = parse(last_district_date, "yyyyMMdd", new Date())
+            let days_to_add = differenceInCalendarDays(
+                parse(last_global_date, 'yyyyMMdd', new Date()),
+                starting_date_object
+            )
+            while(days_to_add > 0){
+                additional_day = Object.assign({}, d.time_series[d.time_series.length - 1])
+                additional_day.dateObject = format(addDays(starting_date_object, days_to_add),'yyyy-MM-dd') + 'T00:00:00.000Z'
+                additional_day.dateForSort = format(addDays(starting_date_object, days_to_add),'yyyyMMdd')
+                d.time_series.push(additional_day)
+                days_to_add--
+            }
+            
+        }
+
+    })
+
+
+
+    const total_time_series = []
+
+    let total_counter = 0
+    dates.forEach(date => {
+        const time_series_obj = {
+            dateObject: null,
+            dateForSort: date,
+            confirmed: 0,
+            total: 0,
+            probable: 0,
+            ages: {},
+            genders: {}
+        }
+        cases_by_district.forEach(d => {
+            d.time_series.filter(d => d.dateForSort == date).forEach(d => {
+                time_series_obj.dateObject = d.dateObject
+                time_series_obj.total += d.total
+                time_series_obj.confirmed += d.confirmed
+                time_series_obj.probable += d.probable
+            
+                _.forEach(d.ages, (val, key) => {
+                    if(time_series_obj.ages.hasOwnProperty(key))
+                        time_series_obj.ages[key] += val
+                    else 
+                        time_series_obj.ages[key] = val
+                })
+
+                _.forEach(d.genders, (val, key) => {
+                    if(time_series_obj.genders.hasOwnProperty(key))
+                        time_series_obj.genders[key] += val
+                    else 
+                        time_series_obj.genders[key] = val
+                })
+            })
+        })
+
+        // After all districts
+        total_time_series.push(time_series_obj)
+    })
+    
+    const total_obj = {
+        name: "All",
+        time_series: total_time_series,
+        highest: total_time_series[total_time_series.length -1]
+    }
+    console.log(total_obj.highest.total)
+
+    console.log("Was incremeneted: ", total_counter)
+    
+    cases_by_district.push(total_obj)
+    
 }
 
 
@@ -190,10 +294,11 @@ module.exports = {
                         cases.filter(c => c.district == name ), 'dateForSort')
                 })
             })
-    
+            
+            /* All these functions mutate because I am naughty */
             createStructuredCases(cases_by_district)
-    
             createTimeSeries(cases_by_district)
+            
                     
             const nz_output = cases_by_district.map(d => ({
                 name: d.name,
