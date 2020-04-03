@@ -203,3 +203,7 @@ body{
 .updates a{
     color: #218c74;
 }
+
+.has-text-white strong{
+    color: #fff;
+}

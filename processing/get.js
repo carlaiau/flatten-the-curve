@@ -4,7 +4,7 @@ const _ = require('lodash')
 const Q = require('q')
 const request = require('request')
 const { parse, format } = require('date-fns')
-
+const NZAdvanced = require('./get-nz-advanced')
 
 const createFiles = (output_folder) => {
   let confirmed = [];
@@ -158,6 +158,10 @@ const createFiles = (output_folder) => {
       }
     ]
     
+    // Creates a file
+
+    NZAdvanced.get(output_folder)
+    
     fs.writeFile(output_folder + '/countries.json', JSON.stringify(country_array , null, 2), function(err) {
       if(err) return console.log(err);
       console.log("Country file was saved!");
@@ -169,7 +173,10 @@ const createFiles = (output_folder) => {
     fs.writeFile(output_folder + '/advanced.json', JSON.stringify(advanced_countries, null, 2), function(err) {
       if(err) return console.log(err);
       console.log("Advanced JSON saved!");
-    }); 
+    });
+    
+    
+    
   })
   
   .catch( (err) => {

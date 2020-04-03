@@ -2257,10 +2257,10 @@
           },
           {
             "date": "2020-03-31T00:00:00Z",
-            "confirmed": 406,
+            "confirmed": 319,
             "deaths": 10,
             "hospitalized": 64,
-            "tests": 4102,
+            "tests": 4015,
             "old_date": 20200331
           },
           {
@@ -3498,7 +3498,7 @@
             "confirmed": 11,
             "deaths": 0,
             "hospitalized": 0,
-            "tests": 468,
+            "tests": 470,
             "old_date": 20200319
           },
           {
@@ -4486,7 +4486,7 @@
             "confirmed": 124,
             "deaths": 4,
             "hospitalized": 0,
-            "tests": 1866,
+            "tests": 1886,
             "old_date": 20200324
           },
           {
@@ -13023,12 +13023,12 @@
             "confirmed": 11719,
             "deaths": 160,
             "hospitalized": 0,
-            "tests": 100870,
+            "tests": 100872,
             "old_date": 20200319,
             "confirmed_per_mil": 35.81957976905488,
             "deaths_per_mil": 0.4890462294606009,
             "hospitalized_per_mil": 0,
-            "tests_per_mil": 308.3130822855676
+            "tests_per_mil": 308.3191953634358
           },
           {
             "date": "2020-03-20T00:00:00Z",
@@ -13083,12 +13083,12 @@
             "confirmed": 51954,
             "deaths": 675,
             "hospitalized": 4468,
-            "tests": 344712,
+            "tests": 344732,
             "old_date": 20200324,
             "confirmed_per_mil": 158.79942378372536,
             "deaths_per_mil": 2.06316378053691,
             "hospitalized_per_mil": 13.65661595768728,
-            "tests_per_mil": 1053.6256490613916
+            "tests_per_mil": 1053.6867798400742
           },
           {
             "date": "2020-03-25T00:00:00Z",
@@ -13164,15 +13164,15 @@
           },
           {
             "date": "2020-03-31T00:00:00Z",
-            "confirmed": 184770,
+            "confirmed": 184683,
             "deaths": 3746,
             "hospitalized": 26660,
-            "tests": 1048971,
+            "tests": 1048884,
             "old_date": 20200331,
-            "confirmed_per_mil": 564.7566988589701,
+            "confirmed_per_mil": 564.4907799717009,
             "deaths_per_mil": 11.449794847246318,
             "hospitalized_per_mil": 81.48732798387262,
-            "tests_per_mil": 3206.220702271975
+            "tests_per_mil": 3205.9547833847055
           },
           {
             "date": "2020-04-01T00:00:00Z",
@@ -17980,7 +17980,7 @@
               {
                 "num_day": 9,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 406
+                "confirmed": 319
               },
               {
                 "num_day": 10,
@@ -18030,7 +18030,7 @@
               {
                 "num_day": 6,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 406
+                "confirmed": 319
               },
               {
                 "num_day": 7,
@@ -18065,7 +18065,7 @@
               {
                 "num_day": 3,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 406
+                "confirmed": 319
               },
               {
                 "num_day": 4,
@@ -18085,7 +18085,7 @@
               {
                 "num_day": 0,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 406
+                "confirmed": 319
               },
               {
                 "num_day": 1,
@@ -18101,13 +18101,7 @@
           },
           {
             "range": 400,
-            "time_series": [
-              {
-                "num_day": 0,
-                "date": "2020-03-31T00:00:00Z",
-                "confirmed": 406
-              }
-            ]
+            "time_series": []
           },
           {
             "range": 500,
@@ -42084,7 +42078,7 @@
               {
                 "num_day": 27,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 28,
@@ -42239,7 +42233,7 @@
               {
                 "num_day": 27,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 28,
@@ -42384,7 +42378,7 @@
               {
                 "num_day": 25,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 26,
@@ -42524,7 +42518,7 @@
               {
                 "num_day": 24,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 25,
@@ -42659,7 +42653,7 @@
               {
                 "num_day": 23,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 24,
@@ -42789,7 +42783,7 @@
               {
                 "num_day": 22,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 23,
@@ -42914,7 +42908,7 @@
               {
                 "num_day": 21,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 22,
@@ -43034,7 +43028,7 @@
               {
                 "num_day": 20,
                 "date": "2020-03-31T00:00:00Z",
-                "confirmed": 184770
+                "confirmed": 184683
               },
               {
                 "num_day": 21,

@@ -1,10 +1,9 @@
 import React from "react"
-import Hero from "../components/hero"
+
 import SEO from "../components/seo"
 import CountryOverviewGraph from "./country-overview-graph"
 import CountryGrid from "./country-grid/country-grid"
-
-import Layout from "./layout"
+import RegionalView from "./regional-view"
 import SetupCountry from '../utils/setup-country'
 
 import 'bulma/css/bulma.css'
@@ -69,9 +68,24 @@ export default class CountryPage extends React.Component{
             </p>
             
             {name == 'New Zealand' ?
-            <p className="is-size-6">
-              {name} data updated at <strong>{update_times.nz}</strong>
-            </p>
+            <>
+              <p className="is-size-6">
+                {name} data updated at <strong>{update_times.nz}</strong>
+              </p>
+              <p className="is-size-6">
+                Regional data updated at <strong>{update_times.nz_regional}</strong>
+              </p>
+
+              <p className="is-size-6" style={{marginTop: '10px'}}>
+                While we're in lockdown please visit <a href="https://www.alonetogether.co.nz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer">Alone Together</a> to see what activities you can do.
+                
+              </p>
+              
+              
+
+            </>
             : <></> }
 
             {name == 'United States' ?
@@ -142,6 +156,13 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
+        { active_country.name == 'New Zealand' ? 
+        
+          <RegionalView
+            width={this.props.overview_width}
+            height={this.props.overview_height}
+          />
+        : <></> }
         <CountryGrid 
           active_country={active_country}
           countries={countries}
