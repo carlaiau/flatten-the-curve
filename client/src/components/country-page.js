@@ -75,6 +75,16 @@ export default class CountryPage extends React.Component{
               <p className="is-size-6">
                 Regional data updated at <strong>{update_times.nz_regional}</strong>
               </p>
+
+              <p className="is-size-6" style={{marginTop: '10px'}}>
+                While we're in lockdown please visit <a href="https://www.alonetogether.co.nz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer">Alone Together</a> to see what activities you can do.
+                
+              </p>
+              
+              
+
             </>
             : <></> }
 

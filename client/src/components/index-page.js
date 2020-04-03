@@ -55,8 +55,11 @@ export default class IndexPage extends React.Component{
         const UpdateBlock = () => (
             <div className="box has-background-dark has-text-white updates">
                 <h2 className="is-size-3">
-                    <strong className="has-text-white">Updates: April 2</strong>
+                    <strong className="has-text-white">Updates</strong>
                 </h2>
+                <p style={{marginTop: '10px'}}><strong>April 3</strong></p>
+                <p>Regional data and demographics for <Link to='/new-zealand'>New Zealand</Link>.</p>
+                <p><strong>April 2</strong></p>
                 <p>
                     <Link to='/united-states'>United States</Link>,{' '}
                     <Link to='/canada'>Canada</Link>,{' '} 
@@ -64,11 +67,13 @@ export default class IndexPage extends React.Component{
                     <Link to='/china'>China</Link> pages now provide state level breakdowns and cumulative graphs.
                 </p>
                 <p>United States data includes hospitalizations and tests.</p>
-                <p style={{marginTop: '15px'}}>
-                    We are presently working on providing regional level data for {' '}
+
+                <p style={{marginTop: '10px'}}><strong>Coming Soon</strong></p>
+                <p>
+                    Regional level data for {' '}
                     <Link to='/italy'>Italy</Link>, {' '}
-                    <Link to='/spain'>Spain</Link>, and { }
-                    <Link to='/new-zealand'>New Zealand</Link>. Please contact <a href="https://carlaiau.com/#section-4">us</a> with any feedback or requests.</p>
+                    <Link to='/spain'>Spain</Link>, and <Link to='/france'>France</Link>.
+                    Please contact <a href="https://carlaiau.com/#section-4">us</a> with any feedback or requests.</p>
             </div>
         )
 
