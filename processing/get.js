@@ -530,12 +530,12 @@ const getUnitedStates = (json_data) => {
         name: state,
         time_series: time_series.reverse().map(day => ({
           date: format(parse(day.date, 'yyyyMMdd', new Date() ), 'yyyy-MM-dd') + 'T00:00:00Z',
-          confirmed: day.positive,
+          confirmed: day.positive || 0,
           //confirmed_per_mil,
-          deaths: day.death,
+          deaths: day.death || 0,
           //deaths_per_mil
-          hospitalized: day.hospitalized,
-          tests: day.totalTestResults,
+          hospitalized: day.hospitalized || 0,
+          tests: day.totalTestResults || 0,
           old_date: day.date
         })),
         highest_confirmed,
@@ -566,6 +566,7 @@ const getUnitedStates = (json_data) => {
 
     const US_time_series = _.map(total_time_series, day => day)
     const most_recent_day = US_time_series[US_time_series.length -1]
+    
     const total = {
       name: "United States",
       population: 327167434,
