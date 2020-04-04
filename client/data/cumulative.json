@@ -90835,7 +90835,7 @@
     ]
   },
   {
-    "highest_confirmed": 271915,
+    "highest_confirmed": 271988,
     "highest_deaths": 6962,
     "population": 327167434,
     "name": "United States",
@@ -90986,17 +90986,17 @@
           {
             "num_day": 28,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 29,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 30,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91146,17 +91146,17 @@
           {
             "num_day": 28,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 29,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 30,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91296,17 +91296,17 @@
           {
             "num_day": 26,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 27,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 28,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91441,17 +91441,17 @@
           {
             "num_day": 25,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 26,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 27,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91581,17 +91581,17 @@
           {
             "num_day": 24,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 25,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 26,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91716,17 +91716,17 @@
           {
             "num_day": 23,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 24,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 25,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91846,17 +91846,17 @@
           {
             "num_day": 22,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 23,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 24,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       },
@@ -91971,17 +91971,17 @@
           {
             "num_day": 21,
             "date": "2020-04-01T00:00:00Z",
-            "confirmed": 210770
+            "confirmed": 210816
           },
           {
             "num_day": 22,
             "date": "2020-04-02T00:00:00Z",
-            "confirmed": 239009
+            "confirmed": 239099
           },
           {
             "num_day": 23,
             "date": "2020-04-03T00:00:00Z",
-            "confirmed": 271915
+            "confirmed": 271988
           }
         ]
       }

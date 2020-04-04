@@ -95,7 +95,7 @@ const RegionalView = ({width, height}) => {
                       Current Cases by DHB
                   </h3>
                   <p className="is-size-6 has-text-white">
-                    We use the Ministry of Health Current Case data found 
+                    We use the Ministry of Health current case data found 
                     {' '}<a
                       href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details"
                       target="_blank" 
@@ -105,7 +105,7 @@ const RegionalView = ({width, height}) => {
                         here
                       </strong>
                     </a>. 
-                      The dates for all graphing is based on when they cases are reported not when they're announced.
+                      The dates for all graphing is based on when the cases are reported not when they're announced.
 
                   </p>
               </div>
