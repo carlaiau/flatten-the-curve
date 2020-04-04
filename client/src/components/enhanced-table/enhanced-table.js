@@ -172,11 +172,6 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           .MuiTableCell-root{
               padding: 10px 0;
           }
-          .MuiTableCell-root{
-              &.population{
-                  display: none;
-              }
-          }
       }
       @media screen and (max-width: 375px){
           .MuiTableHead-root{
