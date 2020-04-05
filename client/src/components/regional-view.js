@@ -105,7 +105,7 @@ const RegionalView = ({width, height}) => {
                         here
                       </strong>
                     </a>. 
-                      The dates for all graphing is based on when the cases are reported not when they're announced.
+                      The dates for all graphing is based on when the cases are reported not when they are announced.
 
                   </p>
               </div>
