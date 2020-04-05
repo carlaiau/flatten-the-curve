@@ -106,7 +106,9 @@ const RegionalView = ({width, height}) => {
                       </strong>
                     </a>. 
                       The dates for all graphing is based on when the cases are reported not when they are announced.
-
+                    </p>
+                    <p className="is-size-6 has-text-white">
+                      Currently working on a fix for including the changes from the previous day in the 24 hour change.
                   </p>
               </div>
               <EnhancedTable 
