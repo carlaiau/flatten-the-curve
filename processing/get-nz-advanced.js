@@ -176,11 +176,11 @@ const createTimeSeries = (cases_by_district) => {
 
     })
 
+    
+    
+    
+    
     // First get the unique set of dateObjects
-
-    
-
-    
     let dates = []
 
     cases_by_district.forEach(d => {
@@ -189,7 +189,6 @@ const createTimeSeries = (cases_by_district) => {
                 dates.push(day.dateForSort)
         })
     })
-
     dates = dates.sort()
 
     // Suffix the end of the time_seres with repeats of the last found 
@@ -215,6 +214,33 @@ const createTimeSeries = (cases_by_district) => {
 
     })
 
+    // If the last day is equal to today's date, then move these last cases back to the previous day
+    // This is to prevent the 24H delta listing the cases that have been reported on the same day as 
+    // the conference.
+    const todays_date = format(new Date(), 'yyyyMMdd')
+    cases_by_district.forEach(d =>{
+        if(d.time_series[d.time_series.length - 1].dateForSort == todays_date){
+            const today = d.time_series[d.time_series.length - 1]
+            const yesterday = d.time_series[d.time_series.length - 2]
+            
+            yesterday.total = today.total
+            yesterday.probable = today.probable
+            yesterday.confirmed = today.confirmed
+
+            _.forEach(today.ages, (val, key) => {
+                yesterday.ages[key] = val
+            })
+            _.forEach(today.genders, (val, key) => {
+                yesterday.genders[key] = val
+            })
+            d.time_series = d.time_series.slice(0, d.time_series.length - 1)
+        }
+    })
+    
+    // Subsequently slice off the last date from the total too 
+    if(todays_date == dates[dates.length -1]){
+        dates = dates.slice(0, dates.length -1)
+    } 
 
 
     const total_time_series = []
