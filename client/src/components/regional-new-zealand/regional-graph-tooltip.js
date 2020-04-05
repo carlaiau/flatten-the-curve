@@ -7,6 +7,7 @@ const RegionalGraphToolTip = (tooltipProps)  => {
     
     const { payload } = tooltipProps.payload[0] 
     let date = payload.dateString
+    const tidy = new Intl.NumberFormat()
         
         return (
             <>
@@ -16,7 +17,7 @@ const RegionalGraphToolTip = (tooltipProps)  => {
                         <br/>
                         { tooltipProps.payload.map((tool,i) => (
                             <>
-                                <strong>{tool.value}{' '}{tool.name}</strong>
+                                <strong>{tidy.format(tool.value)}{' '}<span style={{float: 'right', paddingLeft: '5px'}}>{tool.name}</span></strong>
                                 {i == 0 ? <br/> : <></>}
                             </>
                         ))

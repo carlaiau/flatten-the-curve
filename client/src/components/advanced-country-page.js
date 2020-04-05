@@ -5,7 +5,7 @@ import CumulativeGraphContainer from "./cumulative-graph/cumulative-graph-contai
 import CountryGrid from "./country-grid/country-grid"
 import UpdateTable from './update-times'
 import EnhancedTable from './enhanced-table/enhanced-table'
-
+import RegionalView from './regional-advanced/regional-view'
 import SetupCountry from '../utils/setup-country'
 import SetupAdvancedCountryTable from '../utils/setup-advanced-country-table'
 
@@ -53,10 +53,11 @@ export default class AdvancedCountryPage extends React.Component{
         active_country.name =  this.props.country_name
         
 
-        const {rows, headCells} = SetupAdvancedCountryTable(this.props.country_name, this.props.all)
+        const mainTable = SetupAdvancedCountryTable(this.props.country_name, this.props.all, true)
 
+        const summaryTable = SetupAdvancedCountryTable(this.props.country_name, this.props.all, false)
 
-
+        
         
         
         /*
@@ -177,100 +178,118 @@ export default class AdvancedCountryPage extends React.Component{
                     </div>
                 </div>                
         </section>
-            
-            <section className="section cum">
-                <div className="container">
-                    <div className="columns">
-                        <div className="column is-narrow">
-                            <div className="box has-background-success">
-                                <h3 className="is-size-3 has-text-white title">
-                                    Cumulative number of cases by {this.state.area_label}
-                                </h3>
-                                <p className="is-size-5 subtitle has-text-white">
-                                    by number of days since nth case
-                                </p>
-                            </div>
+        {
+            this.props.country_name == 'United States' || 
+            this.props.country_name == 'Canada' ||
+            this.props.country_name == 'Australia' ||
+            this.props.country_name == 'China' 
+            ?
+            <RegionalView 
+                rows={summaryTable.rows}
+                headCells={summaryTable.headCells}
+                country_name={this.props.country_name}
+                all={this.state.all}
+                width={this.props.overview_width} 
+                height={this.props.overview_height}
+                area_label={this.props.country_name == 'Canada' ? 'province or territory' : 'state'}
+            />
+
+        : <></> }
+        <section className="section cum">
+            <div className="container">
+                <div className="columns">
+                    <div className="column is-narrow">
+                        <div className="box has-background-success">
+                            <h3 className="is-size-3 has-text-white title">
+                                Cumulative number of cases by {this.state.area_label}
+                            </h3>
+                            <p className="is-size-5 subtitle has-text-white">
+                                by number of days since nth case
+                            </p>
                         </div>
                     </div>
-                    <CumulativeGraphContainer 
-                        width={this.props.cum_width} 
-                        height={this.props.cum_height} 
-                        areas={this.state.cum}
-                        field="confirmed"
-                        type_of_area="state"
-                        checkedAreas={this.props.checkedAreas}
-                        accumulateFrom={100}
-                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
-                        max_area_count={this.state.max_area_count}
-                        
-                        
-                    />  
-                    { this.props.hide_deaths ? <></> :
-                        <>
-                            <div className="columns">
-                                <div className="column is-narrow">
-                                    <div className="box has-background-success is-full">
-                                        <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
-                                        <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
-                                    </div>
+                </div>
+                <CumulativeGraphContainer 
+                    width={this.props.cum_width} 
+                    height={this.props.cum_height} 
+                    areas={this.state.cum}
+                    field="confirmed"
+                    type_of_area="state"
+                    checkedAreas={this.props.checkedAreas}
+                    accumulateFrom={100}
+                    accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                    max_area_count={this.state.max_area_count}
+                    
+                    
+                />  
+                { this.props.hide_deaths ? <></> :
+                    <>
+                        <div className="columns">
+                            <div className="column is-narrow">
+                                <div className="box has-background-success is-full">
+                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
+                                    <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
                                 </div>
                             </div>
-                            <CumulativeGraphContainer 
-                                width={this.props.cum_width} 
-                                height={this.props.cum_height} 
-                                areas={this.state.cum}
-                                field="deaths"
-                                type_of_area="state"
-                                checkedAreas={this.props.checkedAreas}
-                                accumulateFrom={10}
-                                accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
-                            /> 
-                        </>
-                    }
-                </div>
-            </section>
-            <section className="section">
-                <div className="container">
-                    <div className="columns">
-                        <div className="column is-narrow is-one-third">
-                            <div className="box has-background-success is-full">
-                                <h3 className="is-size-3 has-text-white title">{this.props.country_name} Overview</h3>
-                                {this.props.country_name == 'United States' ? 
-                                <p className="is-size-5 subtitle has-text-white">
-                                Data is sourced from the
-                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" style={{color: '#fff', fontWeight: 700}}>
-                  COVID Tracking Project
-                </a>. This page is in active development</p>
-                                :<></>}    
-                                <UpdateTable color="white"/>
-                                
-                            </div>
+                        </div>
+                        <CumulativeGraphContainer 
+                            width={this.props.cum_width} 
+                            height={this.props.cum_height} 
+                            areas={this.state.cum}
+                            field="deaths"
+                            type_of_area="state"
+                            checkedAreas={this.props.checkedAreas}
+                            accumulateFrom={10}
+                            accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
+                        /> 
+                    </>
+                }
+            </div>
+        </section>
+        <section className="section">
+            <div className="container">
+                <div className="columns">
+                    <div className="column is-narrow is-one-third">
+                        <div className="box has-background-success is-full">
+                            <h3 className="is-size-3 has-text-white title">{this.props.country_name} Overview</h3>
+                            {this.props.country_name == 'United States' ? 
+                            <p className="is-size-5 subtitle has-text-white">
+                            Data is sourced from the
+            {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" style={{color: '#fff', fontWeight: 700}}>
+                COVID Tracking Project
+            </a>. This page is in active development</p>
+                            :<></>}    
+                            <UpdateTable color="white"/>
+                            
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className="section">
-                <EnhancedTable 
-                    rows={rows} 
-                    headCells={headCells} 
-                    pageTemplate="advanced-country" 
-                    tidy={this.state.numberFormat}
-                    country_name={this.props.country_name}
-                />
-            </section>
-            {(this.props.show_grid ?
-                <CountryGrid 
-                    active_country={active_country}
-                    countries={this.props.countries}
-                    grid_width={this.props.grid_width}
-                    grid_height={this.props.grid_height}
-                    is_mobile={this.props.is_mobile}
-                    tidy={this.tidyFormat}
-                />
-                :
-                <></>)
+            </div>
+        </section>
+        <section className="section">
+            <EnhancedTable 
+                rows={mainTable.rows} 
+                headCells={mainTable.headCells} 
+                pageTemplate="advanced-country" 
+                tidy={this.state.numberFormat}
+                country_name={this.props.country_name}
+                is_main={true}
 
-            }
-        </>)
+            />
+        </section>
+        {(this.props.show_grid ?
+            <CountryGrid 
+                active_country={active_country}
+                countries={this.props.countries}
+                grid_width={this.props.grid_width}
+                grid_height={this.props.grid_height}
+                is_mobile={this.props.is_mobile}
+                tidy={this.tidyFormat}
+            />
+            :
+            <></>)
+
+        }
+    </>)
     }
 }

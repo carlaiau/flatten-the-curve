@@ -25,12 +25,11 @@ const SetupIndexTable  = (countries) => {
     world.deaths_change += deaths_change
     world.recovered_change += recovered_change
 
-    world.population += c.population
+    
     
 
     return {
         name: c.name,
-        population: c.population,
         confirmed: c.highest_confirmed,
         confirmed_change,
         //confirmed_per_mil: (c.highest_confirmed / (c.population / 1000000)),
@@ -45,7 +44,6 @@ const SetupIndexTable  = (countries) => {
 
     const headCells = [
         { id: 'name', numeric: false, disablePadding: false, label: 'Country', class: 'country' },
-        { id: 'population', numeric: true, disablePadding: false, label: 'Population', class: 'population' },
         { id: 'confirmed', numeric: true, disablePadding: false, label: 'Confirmed', class: 'confirmed' },
         { id: 'confirmed_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
         { id: 'deaths', numeric: true, disablePadding: false, label: 'Deaths', class: 'deaths' },

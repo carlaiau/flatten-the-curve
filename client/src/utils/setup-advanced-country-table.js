@@ -1,4 +1,4 @@
-const SetupAdvancedCountryTable  = (country_name, areas) => {
+const SetupAdvancedCountryTable  = (country_name, areas , is_main = false) => {
 
 
     const rows = areas.map(c => {
@@ -17,7 +17,7 @@ const SetupAdvancedCountryTable  = (country_name, areas) => {
             }
 
 
-        if(country_name == 'United States'){
+        if(country_name == 'United States' && is_main){
             const hospitalized_change = yesterday && c.highest_hospitalized && yesterday.hospitalized ? c.highest_hospitalized - yesterday.hospitalized : 0
             const tests_change = yesterday && c.highest_tests ? c.highest_tests - yesterday.tests : 0
             obj.hospitalized = c.highest_hospitalized
@@ -41,14 +41,13 @@ const SetupAdvancedCountryTable  = (country_name, areas) => {
         { id: 'deaths_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
     ]
 
-    if(country_name == 'United States'){
+    if(country_name == 'United States' && is_main){
         headCells.push(
             { id: 'hospitalized', numeric: true, disablePadding: false, label: 'Hospitalized', class: 'hospitalized' },
             { id: 'hospitalized_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
             { id: 'tests', numeric: true, disablePadding: false, label: 'Tests', class: 'tests' },
             { id: 'tests_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' }
         )
-
     }
 
     return { rows, headCells }

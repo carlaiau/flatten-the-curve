@@ -25,7 +25,6 @@ const SetupNZTable  = (areas) => {
         { id: 'name', numeric: false, disablePadding: false, label: 'DHB', class: 'country' },
         { id: 'confirmed', numeric: true, disablePadding: false, label: 'Total', class: 'total' },
         { id: 'total_change', numeric: true, disablePadding: false, label: '24H Change', class: 'delta' },
-        { id: 'button', numeric: true, disablePadding: false, label: '', class: 'delta' },
     ]
 
     return { rows, headCells }

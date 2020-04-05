@@ -57,17 +57,20 @@ export default class IndexPage extends React.Component{
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
-                <p style={{marginTop: '10px'}}><strong>April 3</strong></p>
+                <p style={{marginTop: '10px'}}><strong>April 4</strong></p>
+                <p>State level graphs for <Link to='/united-states'>United States</Link>,{' '}
+                    <Link to='/canada'>Canada</Link>,{' '} 
+                    <Link to='/australia'>Australia</Link> and {' '}
+                    <Link to='/china'>China</Link>.</p>
+                <p><strong>April 3</strong></p>
                 <p>Regional data and demographics for <Link to='/new-zealand'>New Zealand</Link>.</p>
                 <p><strong>April 2</strong></p>
-                <p>
+                <p>State level cumulative graphs for
                     <Link to='/united-states'>United States</Link>,{' '}
                     <Link to='/canada'>Canada</Link>,{' '} 
                     <Link to='/australia'>Australia</Link> and {' '}
-                    <Link to='/china'>China</Link> pages now provide state level breakdowns and cumulative graphs.
+                    <Link to='/china'>China</Link>.
                 </p>
-                <p>United States data includes hospitalizations and tests.</p>
-
                 <p style={{marginTop: '10px'}}><strong>Coming Soon</strong></p>
                 <p>
                     Regional level data for {' '}
@@ -154,6 +157,9 @@ export default class IndexPage extends React.Component{
                         <div className="column is-narrow is-one-third">
                             <div className="box has-background-success is-full">
                                 <h3 className="is-size-3 has-text-white title">World Overview</h3>
+                                <p className="is-size-6 has-text-white subtitle">
+                                    Clicking on any country will navigate you to that country summary.
+                                </p>
                                 <UpdateTable color="white"/>
                                 <p className="is-size-7 has-text-white">
                                     Populations must be larger than 1 million with 10 confirmed cases

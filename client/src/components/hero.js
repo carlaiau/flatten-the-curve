@@ -17,6 +17,7 @@ const Hero = ({selected_country, selectFn}) => {
     {   path: '/australia',       label: 'AUS'       },
     {   path: '/united-kingdom',  label: 'GBR'       },
     {   path: '/united-states',   label: 'USA'       },
+    {   path: '/sweden',   label: 'SWE'       },
     {   path: '/canada',          label: 'CAN'       },
     {   path: '/italy',           label: 'ITA'       },
     {   path: '/spain',           label: 'ESP'       },

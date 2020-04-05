@@ -2,7 +2,7 @@
 import React from 'react'
 
 const GridBar = ( {max_count, active_name, per, field, sort, length, forecast_faq_open, fieldFn, perFn, sortFn, forecastFn} ) => (
-    <section className="section bar">
+    <section className="section bar" style={{clear: 'both'}}>
         <div className="container">
             <div className="columns" style={{flexWrap: 'wrap', alignItems: 'center'}}>
                 <div className="column">

@@ -13,7 +13,7 @@ import TableSortLabel from '@material-ui/core/TableSortLabel';
 
 import EnhancedTableRowIndex from './enhanced-table-row-index'
 import EnhancedTableRowAdvancedCountry from './enhanced-table-row-advanced-country'
-
+import EnhancedTableRowSelectableSummary from './enhanced-table-row-selectable-summary'
 import SetupIndexTable from '../../utils/setup-index-table'
 import EnhancedTableRowNZ from './enhanced-table-row-nz';
 
@@ -76,7 +76,7 @@ const EnhancedTableHead = (props) => {
 
 
 
-const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home', country_name, selected, selectFn}) => {
+const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(), pageTemplate = 'home', country_name, selected, selectFn, is_main = false}) => {
   const {countries} = useContext(GlobalStateContext)
 
 
@@ -94,6 +94,12 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
 
 
   const StyledTable = styled('div')`
+    &.summary{ // Used for the small tables
+      .MuiTableCell-head, .MuiTableCell-body{
+        padding: 1em 0.75em;
+        font-size: 0.75em;
+      }
+    }
       .MuiTableHead-root{
           background: #fff;
           .MuiTableCell-alignRight{
@@ -105,7 +111,18 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           max-width: 500px;
           border-radius: 6px;
           color: #fff;
-          margin-top: 20px;
+          margin-bottom: 20px;
+          float: right;
+          @media screen and (max-width: 768px){
+            .MuiTablePagination-toolbar{
+              min-height: 30px;
+              .MuiButtonBase-root{
+                padding-top: 0;
+                padding-bottom: 0;
+              }
+            }
+            
+          }
       }
       td.MuiTableCell-body{
           text-align: right;
@@ -187,7 +204,7 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           .MuiTableBody-root{
               .MuiTableCell-root{
                   font-size: 9px;
-                  padding: 5px 0;
+                  padding: 5px;
                   
               }
               th{
@@ -211,9 +228,12 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
               }
           }
       }
+      a{
+        color: inherit;
+      }
   `
   return (
-    <StyledTable className="container">
+    <StyledTable className={`container ${ !is_main && pageTemplate != 'home' ? ' summary': ''}`}>
         <TableContainer>
           <Table
             aria-labelledby="tableTitle"
@@ -237,8 +257,11 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                   if(pageTemplate == 'home'){
                     return <EnhancedTableRowIndex row={row} index={index} tidy={tidy} key={index}/>
                   }
-                  if(pageTemplate == 'advanced-country'){
+                  if(pageTemplate == 'advanced-country' && is_main){
                     return <EnhancedTableRowAdvancedCountry country_name={country_name} row={row} index={index} tidy={tidy} key={index}/>
+                  }
+                  if(pageTemplate == 'advanced-country' && ! is_main){
+                    return <EnhancedTableRowSelectableSummary row={row} index={index} tidy={tidy} key={index} selected={selected} selectFn={selectFn}/>
                   }
                   if(pageTemplate == 'nz'){
                     return <EnhancedTableRowNZ row={row} index={index} tidy={tidy} key={index} selected={selected} selectFn={selectFn}/>
@@ -249,6 +272,7 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
           </Table>
         </TableContainer>
         <div className="columns" style={{justifyContent: 'flex-end', marginTop: '10px'}}>
+          <div className="column">
             <TablePagination
               rowsPerPageOptions={[10, 20, 50]}
               component="div"
@@ -264,6 +288,7 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                 setPage(0)
               }}
             />
+          </div>
           
         </div>
     </StyledTable>

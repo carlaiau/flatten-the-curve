@@ -51,7 +51,7 @@ const CountryOverviewGraph = ({active_country, field, full_field_name, width, he
               <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
           
-          <YAxis width={55} scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
+          <YAxis width={55} scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={12}/>
           {
             full_field_name == 'confirmed' ? 
               <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" dot={false} strokeWidth={3}/> :

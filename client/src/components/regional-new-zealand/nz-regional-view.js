@@ -2,12 +2,12 @@ import React from "react"
 import  { graphql, useStaticQuery } from 'gatsby'
 import styled from '@emotion/styled'
 
-import EnhancedTable from './enhanced-table/enhanced-table'
+import EnhancedTable from '../enhanced-table/enhanced-table'
 import RegionalAreaGraph from './regional-area-graph'
 import RegionalBarGraph from './regional-bar-graph'
-import SetupNZTable from '../utils/setup-nz-table'
+import SetupNZTable from '../../utils/setup-nz-table'
 
-const RegionalView = ({width, height}) => {
+const NZRegionalView = ({width, height}) => {
     const nzData = useStaticQuery(graphql`query {
         newZealand: allNzAdvancedJson {
             nodes {
@@ -104,12 +104,13 @@ const RegionalView = ({width, height}) => {
                       <strong className="has-text-white">
                         here
                       </strong>
-                    </a>. 
-                      The dates for all graphing is based on when the cases are reported not when they are announced.
+                    </a>. Click on a row to see the data for that region.</p>
+
+                      
+                    <p className="has-text-white is-size-7" style={{marginTop: '10px'}}>
+                      These comparisons are based on the case report date not when they are announced.
+                      If a case have been reported for the same day as the 1pm national update they are included in the previous days results.
                     </p>
-                    <p className="is-size-6 has-text-white">
-                      Currently working on a fix for including the changes from the previous day in the 24 hour change.
-                  </p>
               </div>
               <EnhancedTable 
                 rows={rows} 
@@ -173,4 +174,4 @@ const RegionalView = ({width, height}) => {
     )
 }
 
-export default RegionalView
+export default NZRegionalView

@@ -1,5 +1,5 @@
 import React from 'react' 
-import {BarChart, Bar, XAxis, YAxis, Tooltip, Legend, Label, CartesianGrid} from 'recharts'
+import {BarChart, Bar, XAxis, YAxis, Tooltip, Label} from 'recharts'
 
 
 
