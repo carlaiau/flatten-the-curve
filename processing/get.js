@@ -128,7 +128,7 @@ const createFiles = (output_folder) => {
     
     country_array.push(us_data.total_only)
     country_array.push(nz_data)
-    cumulative = getCumulatives(country_array)
+    
 
       
     const advanced_countries = [
@@ -158,10 +158,29 @@ const createFiles = (output_folder) => {
       }
     ]
     
-    // Creates a file
+  
+    country_array= country_array.filter(c => c.population > 1000000)
 
+    country_array.forEach(c=>{
+      if(c.name == 'Timor-Leste') c.name = 'East Timor'
+      if(c.name == 'Guinea-Bissau') c.name = 'Guinea Bissau'
+      if(c.name == 'Taiwan*') c.name = 'Taiwan'
+      if(c.name == "Cote d'Ivoire") c.name ="Ivory Coast"
+      if(c.name == "Congo (Brazzaville)") c.name = "Congo Brazzaville"
+      if(c.name == "Congo (Kinshasa)") c.name = "Congo Kinshasa"
+      
+      if(! c.name.match(/^[_a-zA-Z]/g)) console.log(c.name)
+
+      if(!c.highest_confirmed) console.log("no highest", c.name)
+
+      if(!c.population) console.log("no pop", c.population)
+    })
+
+    // Creates a file
     NZAdvanced.get(output_folder)
-    
+
+    cumulative = getCumulatives(country_array)
+
     fs.writeFile(output_folder + '/countries.json', JSON.stringify(country_array , null, 2), function(err) {
       if(err) return console.log(err);
       console.log("Country file was saved!");
