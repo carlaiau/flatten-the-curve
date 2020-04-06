@@ -6,7 +6,7 @@ import CumulativeGraphTooltip from "./cumulative-graph-tooltip"
 const CumulativeGraph = ({
     type_of_area = 'country',
     areas = [],
-    max_area_count = 40, 
+    max_area_count = 45, 
     show_all_areas = false,
     height, 
     width, 
