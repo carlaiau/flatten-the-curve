@@ -159,21 +159,12 @@ const createFiles = (output_folder) => {
     ]
     
   
-    country_array= country_array.filter(c => c.population > 1000000)
+    country_array= country_array.filter(c => c.population > 1000000 && c.highest_confirmed > 10)
 
-    country_array.forEach(c=>{
+    country_array.forEach( c=> {
       if(c.name == 'Timor-Leste') c.name = 'East Timor'
-      if(c.name == 'Guinea-Bissau') c.name = 'Guinea Bissau'
       if(c.name == 'Taiwan*') c.name = 'Taiwan'
       if(c.name == "Cote d'Ivoire") c.name ="Ivory Coast"
-      if(c.name == "Congo (Brazzaville)") c.name = "Congo Brazzaville"
-      if(c.name == "Congo (Kinshasa)") c.name = "Congo Kinshasa"
-      
-      if(! c.name.match(/^[_a-zA-Z]/g)) console.log(c.name)
-
-      if(!c.highest_confirmed) console.log("no highest", c.name)
-
-      if(!c.population) console.log("no pop", c.population)
     })
 
     // Creates a file

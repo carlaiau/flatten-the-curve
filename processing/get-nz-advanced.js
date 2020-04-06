@@ -81,10 +81,12 @@ const createStructuredCases = (cases_by_district) => {
                 else
                     day.genders[c.gender == "" ? 'Undefined' : c.gender] = 1
 
-                if(day.ages.hasOwnProperty(c.age))
-                    day.ages[c.age] += 1
-                else 
-                    day.ages[c.age] = 1
+                if(c.age != ""){
+                    if(day.ages.hasOwnProperty(c.age))
+                        day.ages[c.age] += 1
+                    else 
+                        day.ages[c.age] = 1
+                }
             }
             else{
                 d.structured_cases[c.dateForSort] = {
@@ -96,7 +98,9 @@ const createStructuredCases = (cases_by_district) => {
                     genders: {
                         [c.gender == "" ? 'Undefined' : c.gender]: 1
                     },
-                    ages: {
+                }
+                if(c.age != ""){
+                    d.structured_cases[c.dateForSort].ages = {
                         [c.age]: 1
                     }
                 }

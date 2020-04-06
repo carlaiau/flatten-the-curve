@@ -12861,14 +12861,14 @@
             "confirmed": 42,
             "deaths": 1,
             "hospitalized": 0,
-            "tests": 266,
+            "tests": 248,
             "old_date": 20200405
           }
         ],
         "highest_confirmed": 42,
         "highest_deaths": 1,
         "highest_hospitalized": null,
-        "highest_tests": 266
+        "highest_tests": 248
       },
       {
         "name": "VT",
@@ -14572,18 +14572,18 @@
             "confirmed": 332308,
             "deaths": 9498,
             "hospitalized": 41372,
-            "tests": 1762050,
+            "tests": 1762032,
             "old_date": 20200405,
             "confirmed_per_mil": 1015.7123401224585,
             "deaths_per_mil": 29.03100679635492,
             "hospitalized_per_mil": 126.45512878277488,
-            "tests_per_mil": 5385.774428881574
+            "tests_per_mil": 5385.719411180759
           }
         ],
         "highest_confirmed": 332308,
         "highest_deaths": 9498,
         "highest_hospitalized": 41372,
-        "highest_tests": 1762050
+        "highest_tests": 1762032
       }
     ],
     "cum": [
