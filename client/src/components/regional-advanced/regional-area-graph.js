@@ -15,6 +15,7 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
     let has_confirmed = false
     let has_hospitalized = false
     let has_deaths = false
+    let has_recovered = false
 
     filteredData.forEach((t,i) => {
       t.dateString = format(parseJSON(t.date), 'MMM dd') 
@@ -25,9 +26,15 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
 
       if(t.confirmed > 0) has_confirmed = true
       else t.confirmed = null
+
+      if(t.hospitalized > 0) has_hospitalized = true
+      else t.hospitalized = null
       
       if(t.deaths > 0) has_deaths = true
       else t.deaths = null
+
+      if(t.recovered > 0) has_recovered = true
+      else t.recovered = null
 
     })
     
@@ -35,41 +42,31 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
     
     return (
       <AreaChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10, left: 10 }}>
-        <defs>
-          <linearGradient id="tests" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#218c74" stopOpacity={1}/>
-                <stop offset="100%" stopColor="#218c74" stopOpacity={0.25}/>
-            </linearGradient>
-          
-          <linearGradient id="confirmed" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ff793f" stopOpacity={1}/>
-            <stop offset="100%" stopColor="#ff793f" stopOpacity={0.25}/>
-          </linearGradient>
 
-          <linearGradient id="deaths" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#ff5252" stopOpacity={1}/>
-            <stop offset="100%" stopColor="#ff5252" stopOpacity={0.25}/>
-          </linearGradient>
-        </defs>
-        
-        
         <XAxis 
           dataKey="index"
           name="Days"
           type="number"
+          interval="preserveEnd"
           >
             <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
           </XAxis>
         
         <YAxis width={75} scale={scale} domain={['auto', 'auto']} />
         { has_tests ? 
-          <Area type="monotone" dataKey="tests" name="Tests" stroke="#218c74" fillOpacity={1} fill="url(#tests)" dot={false} strokeWidth={1}/>
+          <Area type="monotone" dataKey="tests" name="Tests" stroke="#218c74" fillOpacity={1} fill="#218c74" dot={false} strokeWidth={1}/>
         : <></> }
         { has_confirmed ? 
-          <Area type="monotone" dataKey="confirmed" name="Confirmed" stroke="#ff793f" fillOpacity={1} fill="url(#confirmed)" dot={false} strokeWidth={1}/>
+          <Area type="monotone" dataKey="confirmed" name="Confirmed" stroke="#227093" fillOpacity={1} fill="#227093" dot={false} strokeWidth={1}/>
+        : <></> }
+        { has_hospitalized ? 
+          <Area type="monotone" dataKey="hospitalized" name="Hospitalized" stroke="#ff793f" fillOpacity={1} fill="#ff793f" dot={false} strokeWidth={1}/>
+        : <></> }
+        { has_recovered ? 
+          <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={0.9} fill="#2ecc71" dot={false} strokeWidth={1}/>
         : <></> }
         { has_deaths ? 
-          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={1} fill="url(#deaths)" dot={false} strokeWidth={1}/>
+          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
         : <></> }
        
         

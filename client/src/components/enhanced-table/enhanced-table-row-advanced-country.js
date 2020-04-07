@@ -35,6 +35,14 @@ const EnhancedTableRowAdvancedCountry = ({row, index, tidy, country_name}) => (
             </TableCell>
             <TableCell>
                 <strong>
+                    {tidy.format(row.recovered,2)}
+                </strong>
+            </TableCell>
+            <TableCell>
+                {tidy.format(row.recovered_change)}
+            </TableCell>
+            <TableCell>
+                <strong>
                     {tidy.format(row.tests,2)}
                 </strong>
             </TableCell>

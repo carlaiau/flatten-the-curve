@@ -536,6 +536,7 @@ const getUnitedStates = (json_data) => {
       const highest_deaths = latest.death
       const highest_hospitalized = latest.hospitalized
       const highest_tests = latest.totalTestResults
+      const highest_recovered = latest.recovered
       states.push({
         name: state,
         time_series: time_series.reverse().map(day => ({
@@ -546,12 +547,14 @@ const getUnitedStates = (json_data) => {
           //deaths_per_mil
           hospitalized: day.hospitalized || 0,
           tests: day.totalTestResults || 0,
-          old_date: day.date
+          old_date: day.date,
+          recovered: day.recovered || 0
         })),
         highest_confirmed,
         highest_deaths, 
         highest_hospitalized,
-        highest_tests
+        highest_tests,
+        highest_recovered
       })
     })
 
@@ -567,6 +570,7 @@ const getUnitedStates = (json_data) => {
           total_time_series[day.old_date].deaths += day.deaths
           total_time_series[day.old_date].hospitalized += day.hospitalized
           total_time_series[day.old_date].tests += day.tests
+          total_time_series[day.old_date].recovered += day.recovered
         }
         else{
           total_time_series[day.old_date] = Object.assign({}, day)
@@ -584,7 +588,8 @@ const getUnitedStates = (json_data) => {
       highest_confirmed: most_recent_day.confirmed,
       highest_deaths: most_recent_day.deaths,
       highest_hospitalized: most_recent_day.hospitalized,
-      highest_tests: most_recent_day.tests
+      highest_tests: most_recent_day.tests,
+      highest_recovered: most_recent_day.recovered
     }
 
     total.time_series.forEach(day => {
@@ -592,6 +597,7 @@ const getUnitedStates = (json_data) => {
       day.deaths_per_mil =    day.deaths / (total.population / 1000000)
       day.hospitalized_per_mil = day.hospitalized / (total.population / 1000000)
       day.tests_per_mil =    day.tests / (total.population / 1000000)
+      day.recovered_per_mil = day.recovered / (total.population / 1000000)
     })
 
     states.push(total)

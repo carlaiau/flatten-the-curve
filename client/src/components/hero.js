@@ -88,7 +88,7 @@ const Hero = ({selected_country, selectFn}) => {
               <div className="country-selector is-narrow navbar-item">
                 <div className="field">
                   <div className="control">
-                    <div className="select">
+                    <div className="select" style={{color: "#363636"}}>
                       <select value={selected_country} onChange={e => {
                           if(e.target.value) navigate(`/${e.target.value.toLowerCase().replace(/\s+/g, "-")}`)
                           else navigate('/')

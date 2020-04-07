@@ -96,6 +96,7 @@ query($slug: String!){
                 highest_hospitalized
                 highest_deaths
                 highest_confirmed
+                highest_recovered
                 population
                 time_series {
                     confirmed
@@ -105,6 +106,7 @@ query($slug: String!){
                     deaths_per_mil
                     tests
                     hospitalized
+                    recovered
                 }
             }
         }
