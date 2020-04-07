@@ -135,7 +135,7 @@ const GraphOptionsSideBar = ({
                     : <></>
                     }
                     <button 
-                        className="button is-info has-text-white" style={{marginTop: '10px'}} 
+                        className="button is-info has-text-white" style={{marginTop: '10px', marginRight: '10px'}} 
                         onClick={() => allFn(areas_avaliable)}
                     >
                         <strong>Choose All</strong>    

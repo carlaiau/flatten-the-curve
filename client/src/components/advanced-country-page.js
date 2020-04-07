@@ -1,6 +1,5 @@
 import React from 'react'
 import SEO from "./seo"
-import CountryOverviewGraph from "./country-overview-graph"
 import CumulativeGraphContainer from "./cumulative-graph/cumulative-graph-container"
 import CountryGrid from "./country-grid/country-grid"
 import UpdateTable from './update-times'
@@ -57,123 +56,42 @@ export default class AdvancedCountryPage extends React.Component{
 
         const summaryTable = SetupAdvancedCountryTable(this.props.country_name, this.props.all, false)
 
-        
-        
-        
-        /*
-        This will replace content block when in place
-        <label className="label">States</label>
-        <div className="check-container">
-            {this.state.all.map(s => (
-                <label className="checkbox" key={s.name}>
-                    <input 
-                        type="checkbox" name={s.name} 
-                        value={s.name} 
-                    />{s.name}
-                </label>
-            ))}
-        </div>
-        */          
-       
-       const ContentBlock = () => {
-        const {name, highest} = active_country
-        const {confirmed, deaths} = highest
-        return (
-        <div className="box">
-            <h3 className="is-size-4 title">{this.props.country_name} must act now</h3>
-            
-            <p className="is-size-6">
-              Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
-              Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
-            </p>
-            { (confirmed > 100 ||deaths > 10) && per == 'total' ?
-            <p className="is-size-6"style={{marginTop: '10px'}}>
-              The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong>{' '}
-              comparison is based on compounding daily growth starting from when the {this.props.country_name} daily figure first exceeded{' '}
-              { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
-              { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
-            </p>
-            : <></> }
-            <div style={{marginTop: '10px', marginBottom: '10px'}}>
-              <p className="is-size-6">
-                Global data updated at <strong>{update_times.global}</strong>
-              </p>
-              {this.props.country_name == 'United States' ? 
-                <p className="is-size-6">
-                    {this.props.country_name} data updated at <strong>{update_times.us}</strong>
-                </p>
-                : <></>}
-            </div>
-            {this.props.country_name == 'United States' ?
-            <div>
-                 
-                <p className="is-size-7">
-                The United States total and state level COVID-19 data is sourced from the
-                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
-                  COVID Tracking Project
-                </a>. This page is in active development.
-                </p>
-            </div>
-            : <></>}
-            
-            
-        </div>
-        )
-    }
-
-
         return (<>
             <SEO title={`${this.props.country_name} COVID-19 Update: ${this.state.area_label} level cumulative graphs and comparisons`}/>
-            <section className="section">
+            <section className="section" style={{paddingBottom: 0}}>
                 <div className="container">
-                    <div className="columns info">
-                        <div className="column is-two-thirds"> 
+                    <div className="columns info" style={{alignItems: 'flex-end'}}>
+                        <div className="column is-half"> 
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
-                            <p className="is-size-4 subtitle">
-                            { country.highest_confirmed ? this.tidyFormat(country.highest_confirmed) + ' Cases' : ''}
-                            <span style={{float: 'right'}}>
-                                {country.highest_deaths ? this.tidyFormat(country.highest_deaths) + ' Deaths' : ''}
-                            </span>
-                            </p>  
-                            <CountryOverviewGraph 
-                                active_country={active_country}
-                                scale={this.state.overview_scale}   
-                                field={field}   
-                                full_field_name={full_field_name}
-                                width={this.props.overview_width}     
-                                height={this.props.overview_height}
-                                max_area_count={this.state.max_area_count}
-                            />
+                            <table className="subtitle">
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_confirmed)}</th>
+                                    <td className="is-size-4">Cases</td>
+                                </tr>
+                                {country.highest_deaths ?
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_deaths)}</th>
+                                    <td className="is-size-4">Deaths</td>
+                                </tr>
+                                :<></> }
+                            </table>
                         </div>
-                        <div className="column is-one-third">
-                            <div className="field is-grouped is-horizontal">
-                                <div className="control">
-                                    <div className="select">
-                                    <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
-                                        <option value="confirmed">Confirmed</option>
-                                        <option value="deaths">Deaths</option>
-                                    </select>
-                                    </div>
-                                </div>
-                                <div className="control">
-                                    <div className="select">
-                                    <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
-                                        <option value="total">Total</option>
-                                        <option value="per_million">Per Mil</option>
-                                    </select>
-                                    </div>
-                                </div>
-                                <div className="control">
-                                    <div className="select">
-                                    <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>
-                                        <option value="linear">Linear</option>
-                                        <option value="log">Log</option>
-                                    </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <ContentBlock/>
-                        
+                        <div className="column is-half text-right-align-desktop"> 
+                            <p className="is-size-7">
+                                Global data updated at <strong>{update_times.global}</strong>
+                            </p>
+                            {this.props.country_name == 'United States' ? 
+                                <p className="is-size-7">
+                                    {this.props.country_name} data updated at <strong>{update_times.us}</strong>
+                                </p>
+                            : <></>}
+                            {this.props.country_name == 'United States' ?
+                                <p className="is-size-7">
+                                The United States data is sourced from the
+                                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
+                                COVID Tracking Project</a>.
+                                </p>
+                            : <></>}
                         </div>
                     </div>
                 </div>                
@@ -187,7 +105,6 @@ export default class AdvancedCountryPage extends React.Component{
             <RegionalView 
                 rows={summaryTable.rows}
                 headCells={summaryTable.headCells}
-                country_name={this.props.country_name}
                 all={this.state.all}
                 width={this.props.overview_width} 
                 height={this.props.overview_height}
@@ -200,10 +117,10 @@ export default class AdvancedCountryPage extends React.Component{
                 <div className="columns">
                     <div className="column is-narrow">
                         <div className="box has-background-success">
-                            <h3 className="is-size-3 has-text-white title">
+                            <h3 className="is-size-4 has-text-white title">
                                 Cumulative number of cases by {this.state.area_label}
                             </h3>
-                            <p className="is-size-5 subtitle has-text-white">
+                            <p className="is-size-6 subtitle has-text-white">
                                 by number of days since nth case
                             </p>
                         </div>
@@ -227,8 +144,8 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="columns">
                             <div className="column is-narrow">
                                 <div className="box has-background-success is-full">
-                                    <h3 className="is-size-3 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
-                                    <p className="is-size-5 subtitle has-text-white">by numbers of days since nth death</p>
+                                    <h3 className="is-size-4 has-text-white title">Cumulative number of deaths by {this.state.area_label}</h3>
+                                    <p className="is-size-6 subtitle has-text-white">by numbers of days since nth death</p>
                                 </div>
                             </div>
                         </div>
@@ -249,17 +166,12 @@ export default class AdvancedCountryPage extends React.Component{
         <section className="section">
             <div className="container">
                 <div className="columns">
-                    <div className="column is-narrow is-one-third">
+                    <div className="column is-narrow">
                         <div className="box has-background-success is-full">
-                            <h3 className="is-size-3 has-text-white title">{this.props.country_name} Overview</h3>
-                            {this.props.country_name == 'United States' ? 
-                            <p className="is-size-5 subtitle has-text-white">
-                            Data is sourced from the
-            {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" style={{color: '#fff', fontWeight: 700}}>
-                COVID Tracking Project
-            </a>. This page is in active development</p>
-                            :<></>}    
-                            <UpdateTable color="white"/>
+                            <h3 className="is-size-4 has-text-white title">{this.props.country_name} Overview</h3>
+                            <p className="is-size-6 subtitle has-text-white">
+                                Columns are sortable, please remember to horizontally scroll on mobile devices.
+                            </p>
                             
                         </div>
                     </div>

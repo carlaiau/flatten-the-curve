@@ -91,10 +91,10 @@ const NZRegionalView = ({width, height}) => {
           <div className="columns">
             <div className="column is-one-third-desktop is-full-tablet">
               <div className="box has-background-success">
-                  <h3 className="is-size-3 has-text-white title">
+                  <h3 className="is-size-4 title has-text-white title">
                       Current Cases by DHB
                   </h3>
-                  <p className="is-size-6 has-text-white">
+                  <p className="is-size-6 subtitle has-text-white">
                     We use the Ministry of Health current case data found 
                     {' '}<a
                       href="https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases/covid-19-current-cases-details"
@@ -122,12 +122,8 @@ const NZRegionalView = ({width, height}) => {
               />
             </div>
             <div className="column is-two-thirds-desktop is-full-tablet">
-              <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between'}}>
-                <div className="control">
-                  <p className="title is-size-4 has-text-centered">
-                    Cases versus days {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
-                  </p>
-                </div>
+              <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'flex-end'}}>
+                
                 <div className="control">
                   <div className="select">
                     <select value={scale} onChange={e => setScale(e.target.value)}>
@@ -148,7 +144,7 @@ const NZRegionalView = ({width, height}) => {
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between', marginTop: '50px'}}>
                 <div className="control">
                   <p className="title is-size-4" >
-                    Cases versus age group {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                    Age groups {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
                   </p>
                 </div>
                 <div className="control">
