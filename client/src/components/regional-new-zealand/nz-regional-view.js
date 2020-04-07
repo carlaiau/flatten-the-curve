@@ -125,7 +125,7 @@ const NZRegionalView = ({width, height}) => {
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between'}}>
                 <div className="control">
                   <p className="title is-size-4 has-text-centered">
-                    Cases versus time {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                    Cases versus days {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
                   </p>
                 </div>
                 <div className="control">
