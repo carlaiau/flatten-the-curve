@@ -163,32 +163,36 @@ export default class AdvancedCountryPage extends React.Component{
                 }
             </div>
         </section>
-        <section className="section">
-            <div className="container">
-                <div className="columns">
-                    <div className="column is-narrow">
-                        <div className="box has-background-success is-full">
-                            <h3 className="is-size-4 has-text-white title">{this.props.country_name} Overview</h3>
-                            <p className="is-size-6 subtitle has-text-white">
-                                Columns are sortable, please remember to horizontally scroll on mobile devices.
-                            </p>
-                            
+        { this.props.country_name == 'United States' ?
+            <>
+            <section className="section">
+                <div className="container">
+                    <div className="columns">
+                        <div className="column is-narrow">
+                            <div className="box has-background-success is-full">
+                                <h3 className="is-size-4 has-text-white title">{this.props.country_name} Overview</h3>
+                                <p className="is-size-6 subtitle has-text-white">
+                                    Columns are sortable, please remember to horizontally scroll on mobile devices.
+                                </p>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section className="section">
-            <EnhancedTable 
-                rows={mainTable.rows} 
-                headCells={mainTable.headCells} 
-                pageTemplate="advanced-country" 
-                tidy={this.state.numberFormat}
-                country_name={this.props.country_name}
-                is_main={true}
+            </section>
+            <section className="section">
+                <EnhancedTable 
+                    rows={mainTable.rows} 
+                    headCells={mainTable.headCells} 
+                    pageTemplate="advanced-country" 
+                    tidy={this.state.numberFormat}
+                    country_name={this.props.country_name}
+                    is_main={true}
 
-            />
-        </section>
+                />
+            </section>
+            </>
+        : <></> }
         {(this.props.show_grid ?
             <CountryGrid 
                 active_country={active_country}
@@ -200,8 +204,8 @@ export default class AdvancedCountryPage extends React.Component{
             />
             :
             <></>)
-
         }
+        
     </>)
     }
 }

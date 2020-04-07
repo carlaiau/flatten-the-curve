@@ -26,7 +26,7 @@ const RegionalView = ({rows, headCells, all, width, height, area_label = "State"
           <div className="columns" style={{flexWrap: 'wrap'}}>
             <div className="column is-one-third-desktop is-full-tablet">
               <div className="box has-background-success">
-                <h3 className="is-size-4 has-text-white title">Graph By {area_label}</h3>
+                <h3 className="is-size-4 has-text-white title">View by {area_label}</h3>
                 <p className="is-size-6 subtitle has-text-white">
                     Please select a column to filter data, Columns are sortable.
                 </p>

@@ -92,7 +92,7 @@ const NZRegionalView = ({width, height}) => {
             <div className="column is-one-third-desktop is-full-tablet">
               <div className="box has-background-success">
                   <h3 className="is-size-4 title has-text-white title">
-                      Current Cases by DHB
+                      View by DHB
                   </h3>
                   <p className="is-size-6 subtitle has-text-white">
                     We use the Ministry of Health current case data found 

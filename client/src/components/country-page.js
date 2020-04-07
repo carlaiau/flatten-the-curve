@@ -87,12 +87,6 @@ export default class CountryPage extends React.Component{
 
             </>
             : <></> }
-
-            {name == 'United States' ?
-            <p className="is-size-6">
-              {name} data updated at <strong>{update_times.us}</strong>
-            </p>
-            : <></> }
           </div>
       </div>
       )
@@ -100,6 +94,43 @@ export default class CountryPage extends React.Component{
     
     return (<>
         <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
+
+        { active_country.name == 'New Zealand' ? 
+          <>
+          <section className="section" style={{paddingBottom: 0}}>
+            <div className="container">
+                <div className="columns info" style={{alignItems: 'flex-end'}}>
+                    <div className="column is-half"> 
+                        <h2 className="is-size-2 title">{selected_country}</h2>
+                        <table className="subtitle">
+                            <tr>
+                                <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_confirmed)}</th>
+                                <td className="is-size-4">Cases</td>
+                            </tr>
+                            <tr>
+                                <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_deaths)}</th>
+                                <td className="is-size-4">{ active_country.highest_deaths == 1 ? 'Death' : 'Deaths'}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div className="column is-half text-right-align-desktop"> 
+                        <p className="is-size-7">
+                            Global data updated at <strong>{update_times.global}</strong>
+                        </p>
+                        {selected_country== 'New Zealand' ? 
+                            <p className="is-size-7">
+                                {selected_country} data updated at <strong>{update_times.nz_regional}</strong>
+                            </p>
+                        : <></>}
+                    </div>
+                </div>
+            </div>                
+          </section>
+          <NZView width={this.props.overview_width} height={this.props.overview_height}/>
+          </>
+        :
+
+
         <section className="section">
           <div className="container">
             <div className="columns info">
@@ -156,10 +187,7 @@ export default class CountryPage extends React.Component{
             </div>
           </div>                
         </section>
-        { active_country.name == 'New Zealand' ? 
-        
-          <NZView width={this.props.overview_width} height={this.props.overview_height}/>
-        : <></> }
+        }
         <CountryGrid 
           active_country={active_country}
           countries={countries}
