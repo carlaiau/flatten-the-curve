@@ -220,10 +220,17 @@
       "confirmed_per_mil": 237.437314502,
       "deaths": 1,
       "deaths_per_mil": 0.20468734
+    },
+    {
+      "date": "2020-04-07T00:00:00.000Z",
+      "confirmed": 1210,
+      "confirmed_per_mil": 247.671681506,
+      "deaths": 1,
+      "deaths_per_mil": 0.20468734
     }
 
   ],
-  "highest_confirmed": 1160,
+  "highest_confirmed": 1210,
   "highest_deaths": 1,
   "population": 4885500
 }

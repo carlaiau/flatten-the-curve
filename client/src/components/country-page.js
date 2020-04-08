@@ -118,9 +118,14 @@ export default class CountryPage extends React.Component{
                             Global data updated at <strong>{update_times.global}</strong>
                         </p>
                         {selected_country== 'New Zealand' ? 
+                        <>
                             <p className="is-size-7">
-                                {selected_country} data updated at <strong>{update_times.nz_regional}</strong>
+                                Nationwide data updated at <strong>{update_times.nz}</strong>
                             </p>
+                            <p className="is-size-7">
+                                DHB data updated at <strong>{update_times.nz_regional}</strong>
+                            </p>
+                        </>
                         : <></>}
                     </div>
                 </div>

@@ -100,9 +100,9 @@ const GlobalContextProvider = ({ children }) => {
           500:  deaths.map((node) => mapFn( node, 'deaths', 10)),
         },
         update_times:{
-          global: "12:50am 7 April UTC",
-          us: "4:00pm 6 April ET",
-          nz: "1:05pm 7 April NZT",
+          global: "1:30am 8 April UTC",
+          us: "4:00pm 7 April ET",
+          nz: "1:30pm 8 April NZT",
           nz_regional: "1:10pm 7 April NZT",
         }
     });
