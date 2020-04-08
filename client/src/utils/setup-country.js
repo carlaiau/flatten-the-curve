@@ -1,6 +1,6 @@
 import { isValid, format ,parseJSON } from "date-fns"
 
-const SetupCountry = ({country, field}) => {
+const SetupCountry = ({country, field = 'confirmed'}) => {
     country.time_series.forEach( (time, i) => {
             if(country.highest && time[field] > country.highest[field])
                 country.highest = time        

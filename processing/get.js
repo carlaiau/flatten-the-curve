@@ -9,6 +9,7 @@ const NZAdvanced = require('./get-nz-advanced')
 const createFiles = (output_folder) => {
   let confirmed = [];
   let deaths = []
+  let recovered = []
   let population_data = []
   
   let us_data = {}
@@ -31,6 +32,14 @@ const createFiles = (output_folder) => {
       request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv')
       .pipe(csv())
       .on('data', data => { deaths.push(data) })
+      .on('end', () => {    
+        resolve()
+      })
+    }),
+    new Promise( (resolve) => {
+      request('https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv')
+      .pipe(csv())
+      .on('data', data => { recovered.push(data) })
       .on('end', () => {    
         resolve()
       })
@@ -63,6 +72,7 @@ const createFiles = (output_folder) => {
     countries = merge_object( 
       restructure_inputs(confirmed), 
       restructure_inputs(deaths),
+      restructure_inputs(recovered),
       'Country/Region'
     )
     
@@ -97,10 +107,7 @@ const createFiles = (output_folder) => {
     )
 
     
-    const canada = getCountry(
-      confirmed, 
-      deaths, 
-      population_data, 
+    const canada = getCountry( confirmed, deaths, recovered, population_data,
       r => (
         r['Country/Region'] == 'Canada' && 
         r['Province/State'] != 'Recovered' && 
@@ -110,18 +117,12 @@ const createFiles = (output_folder) => {
       'canada'
     )
 
-    const australia = getCountry(
-      confirmed,
-      deaths,
-      population_data,
+    const australia = getCountry( confirmed, deaths, recovered, population_data,
       r => r['Country/Region'] == 'Australia',
       'australia'
     )
 
-    const china = getCountry(
-      confirmed,
-      deaths,
-      population_data,
+    const china = getCountry( confirmed, deaths, recovered, population_data,
       r => r['Country/Region'] == 'China',
       'china'
     )
@@ -207,10 +208,11 @@ const createFiles = (output_folder) => {
  * Accepts the raw confirmed and death and population data arrays
  * as well as a filterFn for removing specific regions that aren't applicable.
  */
-const getCountry = (confirmed, deaths, population_data, filterFn, country_name) => {
+const getCountry = (confirmed, deaths, recovered, population_data, filterFn, country_name) => {
   const country_data = restructure_region(
     confirmed.filter(filterFn),
     deaths.filter(filterFn),
+    recovered.filter(filterFn),
     parseInt(population_data.filter(data => data['Country Name'].toLowerCase() == country_name)[0][2018])
   )
   const country_cum = getCumulatives(country_data)
@@ -221,9 +223,9 @@ const getCountry = (confirmed, deaths, population_data, filterFn, country_name) 
 
 
 // Used to structure the countries by state
-const restructure_region = (confirmed, deaths, population) => {
+const restructure_region = (confirmed, deaths, recovered, population) => {
 
-  const provinces = merge_object(confirmed, deaths, 'Province/State')
+  const provinces = merge_object(confirmed, deaths, recovered, 'Province/State')
   province_array = _.map(provinces, p => p)
   
   const total_time_series = {}
@@ -244,12 +246,14 @@ const restructure_region = (confirmed, deaths, population) => {
 
   const time_series_array = _.map(total_time_series, day => day)
   const most_recent_day = time_series_array[time_series_array.length -1]
+  
   const total = {
     name: "All",
     population: population,
     time_series: time_series_array,
     highest_confirmed: most_recent_day.confirmed,
     highest_deaths: most_recent_day.deaths,
+    highest_recovered: most_recent_day.recovered,
   }
 
   total.time_series.forEach(day => {
@@ -287,22 +291,19 @@ const add_population_data = (areas, population_data) => {
   return areas
 }
 
-const merge_object = (confirmed, deaths, field_to_use) => {
+const merge_object = (confirmed, deaths, recovered, field_to_use) => {
   let combined = {}
   
   confirmed.forEach( area => {
     let name = area[field_to_use] 
-    
-    
-    highest_confirmed = 0
-    
+    highest = 0
     time_series = []
     _.forEach(area, (val, key) => {
       if(validKey(key)){
         time_series.push( { 
           date: key, confirmed: parseInt(val)
         } )
-        if(val > highest_confirmed)
+        if(val > highest)
           highest_confirmed = parseInt(val)
       }
     })
@@ -310,7 +311,7 @@ const merge_object = (confirmed, deaths, field_to_use) => {
   })
 
   deaths.forEach( area => {
-    highest_deaths = 0
+    highest = 0
     const name = area[field_to_use]
     _.forEach(area, (val, key) => {
       if(validKey(key)){
@@ -318,11 +319,32 @@ const merge_object = (confirmed, deaths, field_to_use) => {
           combined[name].time_series.forEach( (time) => {
             if(key == time.date){
               time.deaths = parseInt(val)
-              if(val > highest_deaths)
-                highest_deaths = parseInt(val)
+              if(val > highest)
+                highest = parseInt(val)
             }
           })
-          combined[name].highest_deaths = highest_deaths
+          combined[name].highest_deaths = highest
+
+        }
+        
+      }
+    })
+  })
+
+  recovered.forEach( area => {
+    let highest = 0
+    const name = area[field_to_use]
+    _.forEach(area, (val, key) => {
+      if(validKey(key)){
+        if(combined.hasOwnProperty(name)){
+          combined[name].time_series.forEach( (time) => {
+            if(key == time.date){
+              time.recovered = parseInt(val)
+              if(val > highest)
+                highest = parseInt(val)
+            }
+          })
+          combined[name].highest_recovered = highest
 
         }
         

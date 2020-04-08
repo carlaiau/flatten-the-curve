@@ -19,9 +19,11 @@ const GlobalContextProvider = ({ children }) => {
                     confirmed_per_mil
                     deaths
                     deaths_per_mil
+                    recovered
                 }
                 highest_confirmed
                 highest_deaths
+                highest_recovered
 
                 population
             }
@@ -29,7 +31,6 @@ const GlobalContextProvider = ({ children }) => {
         select_countries: allCountriesJson(sort: {order: ASC, fields: name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
             nodes {
                 name
-                highest_confirmed
             }
         }
         cumulative: allCumulativeJson(sort: {order: DESC, fields: highest_confirmed}, filter: {population: {gte: 100000}}) {

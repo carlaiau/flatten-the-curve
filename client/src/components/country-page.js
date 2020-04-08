@@ -19,8 +19,6 @@ export default class CountryPage extends React.Component{
       this.state = {
         selected_country: props.selected_country,
         numberFormat: new Intl.NumberFormat(),
-        field: 'confirmed',
-        per: 'total',
         overview_scale: 'log',
     }
   }
@@ -39,8 +37,7 @@ export default class CountryPage extends React.Component{
 
     
     const active_country = SetupCountry({
-      country: countries.filter( (c) => c.name ===  this.state.selected_country )[0],
-      field: full_field_name
+      country: countries.filter( (c) => c.name ===  this.state.selected_country )[0]
     })
 
 
@@ -154,30 +151,12 @@ export default class CountryPage extends React.Component{
                 <CountryOverviewGraph 
                   active_country={active_country}
                   scale={this.state.overview_scale}
-                  field={field}
-                  full_field_name={full_field_name}
                   width={this.props.overview_width}
                   height={this.props.overview_height}
                 />
               </div>
               <div className="column is-one-third">
                 <div className="field is-grouped is-horizontal">
-                  <div className="control">
-                    <div className="select">
-                      <select value={this.state.field} onChange={e => this.setState({field: e.target.value})}>
-                        <option value="confirmed">Confirmed</option>
-                        <option value="deaths">Deaths</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="control">
-                    <div className="select">
-                      <select value={this.state.per} onChange={e => this.setState({per: e.target.value})}>
-                        <option value="total">Total</option>
-                        <option value="per_million">Per Mil</option>
-                      </select>
-                    </div>
-                  </div>
                   <div className="control">
                     <div className="select">
                       <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>

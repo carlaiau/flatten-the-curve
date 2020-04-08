@@ -35,6 +35,18 @@ const EnhancedTableRowIndex = ({row, index, tidy}) => {
                 {tidy.format(row.deaths_change)}
             </Link>        
         </TableCell>
+        <TableCell>
+            <Link to={linkUrl}>
+                <strong>
+                {tidy.format(row.recovered,2)}
+                </strong>
+            </Link>
+        </TableCell>
+        <TableCell>
+            <Link to={linkUrl}>
+                {tidy.format(row.recovered_change)}
+            </Link>        
+        </TableCell>
                 
         { row.name != 'World' ?
         <TableCell>
