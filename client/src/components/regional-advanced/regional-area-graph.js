@@ -47,7 +47,8 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
           dataKey="index"
           name="Days"
           type="number"
-          interval="preserveEnd"
+          tickCount={8}
+          domain = {[0, active_region.time_series[active_region.time_series.length - 1].day]}
           >
             <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
           </XAxis>

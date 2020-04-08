@@ -759,7 +759,7 @@
             "date": "2020-03-22T00:00:00Z",
             "confirmed": 165,
             "deaths": 0,
-            "hospitalized": 13,
+            "hospitalized": 0,
             "tests": 876,
             "old_date": 20200322,
             "recovered": 0
@@ -768,7 +768,7 @@
             "date": "2020-03-23T00:00:00Z",
             "confirmed": 174,
             "deaths": 0,
-            "hospitalized": 13,
+            "hospitalized": 0,
             "tests": 1080,
             "old_date": 20200323,
             "recovered": 0
@@ -777,7 +777,7 @@
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 218,
             "deaths": 0,
-            "hospitalized": 22,
+            "hospitalized": 0,
             "tests": 1165,
             "old_date": 20200324,
             "recovered": 0
@@ -786,7 +786,7 @@
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 280,
             "deaths": 2,
-            "hospitalized": 22,
+            "hospitalized": 0,
             "tests": 1717,
             "old_date": 20200325,
             "recovered": 11
@@ -795,7 +795,7 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 335,
             "deaths": 3,
-            "hospitalized": 41,
+            "hospitalized": 0,
             "tests": 1839,
             "old_date": 20200326,
             "recovered": 13
@@ -804,7 +804,7 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 381,
             "deaths": 3,
-            "hospitalized": 48,
+            "hospitalized": 0,
             "tests": 1926,
             "old_date": 20200327,
             "recovered": 19
@@ -813,7 +813,7 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 404,
             "deaths": 5,
-            "hospitalized": 48,
+            "hospitalized": 0,
             "tests": 3342,
             "old_date": 20200328,
             "recovered": 24
@@ -822,7 +822,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 426,
             "deaths": 6,
-            "hospitalized": 48,
+            "hospitalized": 0,
             "tests": 3453,
             "old_date": 20200329,
             "recovered": 28
@@ -831,7 +831,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 473,
             "deaths": 7,
-            "hospitalized": 62,
+            "hospitalized": 0,
             "tests": 5735,
             "old_date": 20200330,
             "recovered": 29
@@ -840,7 +840,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 523,
             "deaths": 8,
-            "hospitalized": 64,
+            "hospitalized": 0,
             "tests": 6482,
             "old_date": 20200331,
             "recovered": 35
@@ -858,7 +858,7 @@
             "date": "2020-04-02T00:00:00Z",
             "confirmed": 643,
             "deaths": 12,
-            "hospitalized": 0,
+            "hospitalized": 100,
             "tests": 8523,
             "old_date": 20200402,
             "recovered": 47
@@ -867,7 +867,7 @@
             "date": "2020-04-03T00:00:00Z",
             "confirmed": 704,
             "deaths": 12,
-            "hospitalized": 0,
+            "hospitalized": 105,
             "tests": 9699,
             "old_date": 20200403,
             "recovered": 60
@@ -876,7 +876,7 @@
             "date": "2020-04-04T00:00:00Z",
             "confirmed": 743,
             "deaths": 14,
-            "hospitalized": 0,
+            "hospitalized": 106,
             "tests": 10370,
             "old_date": 20200404,
             "recovered": 79
@@ -894,7 +894,7 @@
             "date": "2020-04-06T00:00:00Z",
             "confirmed": 875,
             "deaths": 16,
-            "hospitalized": 130,
+            "hospitalized": 137,
             "tests": 12845,
             "old_date": 20200406,
             "recovered": 102
@@ -903,7 +903,7 @@
             "date": "2020-04-07T00:00:00Z",
             "confirmed": 946,
             "deaths": 16,
-            "hospitalized": 130,
+            "hospitalized": 148,
             "tests": 13638,
             "old_date": 20200407,
             "recovered": 142
@@ -911,7 +911,7 @@
         ],
         "highest_confirmed": 946,
         "highest_deaths": 16,
-        "highest_hospitalized": 130,
+        "highest_hospitalized": 148,
         "highest_tests": 13638,
         "highest_recovered": 142
       },
@@ -1319,7 +1319,7 @@
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 357,
             "deaths": 5,
-            "hospitalized": 8,
+            "hospitalized": 0,
             "tests": 670,
             "old_date": 20200324,
             "recovered": 0
@@ -1328,7 +1328,7 @@
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 450,
             "deaths": 6,
-            "hospitalized": 8,
+            "hospitalized": 0,
             "tests": 773,
             "old_date": 20200325,
             "recovered": 0
@@ -1337,7 +1337,7 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 577,
             "deaths": 8,
-            "hospitalized": 66,
+            "hospitalized": 0,
             "tests": 924,
             "old_date": 20200326,
             "recovered": 0
@@ -1364,7 +1364,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 919,
             "deaths": 17,
-            "hospitalized": 78,
+            "hospitalized": 0,
             "tests": 13872,
             "old_date": 20200329,
             "recovered": 0
@@ -1373,7 +1373,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 1157,
             "deaths": 20,
-            "hospitalized": 78,
+            "hospitalized": 0,
             "tests": 16759,
             "old_date": 20200330,
             "recovered": 0
@@ -1382,7 +1382,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 1289,
             "deaths": 24,
-            "hospitalized": 78,
+            "hospitalized": 0,
             "tests": 19371,
             "old_date": 20200331,
             "recovered": 0
@@ -1391,7 +1391,7 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 1413,
             "deaths": 29,
-            "hospitalized": 149,
+            "hospitalized": 0,
             "tests": 21058,
             "old_date": 20200401,
             "recovered": 0
@@ -1400,7 +1400,7 @@
             "date": "2020-04-02T00:00:00Z",
             "confirmed": 1598,
             "deaths": 32,
-            "hospitalized": 228,
+            "hospitalized": 0,
             "tests": 22709,
             "old_date": 20200402,
             "recovered": 0
@@ -1409,7 +1409,7 @@
             "date": "2020-04-03T00:00:00Z",
             "confirmed": 1769,
             "deaths": 41,
-            "hospitalized": 249,
+            "hospitalized": 0,
             "tests": 24673,
             "old_date": 20200403,
             "recovered": 0
@@ -1418,7 +1418,7 @@
             "date": "2020-04-04T00:00:00Z",
             "confirmed": 2019,
             "deaths": 52,
-            "hospitalized": 297,
+            "hospitalized": 0,
             "tests": 27160,
             "old_date": 20200404,
             "recovered": 0
@@ -1427,7 +1427,7 @@
             "date": "2020-04-05T00:00:00Z",
             "confirmed": 2269,
             "deaths": 64,
-            "hospitalized": 310,
+            "hospitalized": 0,
             "tests": 27410,
             "old_date": 20200405,
             "recovered": 0
@@ -1436,7 +1436,7 @@
             "date": "2020-04-06T00:00:00Z",
             "confirmed": 2456,
             "deaths": 65,
-            "hospitalized": 325,
+            "hospitalized": 0,
             "tests": 32534,
             "old_date": 20200406,
             "recovered": 0
@@ -1671,7 +1671,7 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 3879,
             "deaths": 78,
-            "hospitalized": 746,
+            "hospitalized": 0,
             "tests": 21259,
             "old_date": 20200327,
             "recovered": 0
@@ -1680,7 +1680,7 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 4643,
             "deaths": 101,
-            "hospitalized": 1034,
+            "hospitalized": 0,
             "tests": 25192,
             "old_date": 20200328,
             "recovered": 0
@@ -1689,7 +1689,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 5708,
             "deaths": 123,
-            "hospitalized": 1034,
+            "hospitalized": 0,
             "tests": 26257,
             "old_date": 20200329,
             "recovered": 0
@@ -1698,7 +1698,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 6447,
             "deaths": 133,
-            "hospitalized": 1432,
+            "hospitalized": 0,
             "tests": 26996,
             "old_date": 20200330,
             "recovered": 0
@@ -1707,7 +1707,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 7482,
             "deaths": 153,
-            "hospitalized": 1617,
+            "hospitalized": 0,
             "tests": 29254,
             "old_date": 20200331,
             "recovered": 0
@@ -1716,7 +1716,7 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 8155,
             "deaths": 171,
-            "hospitalized": 1855,
+            "hospitalized": 0,
             "tests": 29927,
             "old_date": 20200401,
             "recovered": 0
@@ -2240,7 +2240,7 @@
             "date": "2020-03-22T00:00:00Z",
             "confirmed": 223,
             "deaths": 5,
-            "hospitalized": 43,
+            "hospitalized": 0,
             "tests": 3100,
             "old_date": 20200322,
             "recovered": 0
@@ -2249,7 +2249,7 @@
             "date": "2020-03-23T00:00:00Z",
             "confirmed": 415,
             "deaths": 10,
-            "hospitalized": 54,
+            "hospitalized": 0,
             "tests": 4500,
             "old_date": 20200323,
             "recovered": 0
@@ -2258,7 +2258,7 @@
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 618,
             "deaths": 12,
-            "hospitalized": 71,
+            "hospitalized": 0,
             "tests": 5300,
             "old_date": 20200324,
             "recovered": 0
@@ -2267,7 +2267,7 @@
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 875,
             "deaths": 19,
-            "hospitalized": 113,
+            "hospitalized": 0,
             "tests": 5898,
             "old_date": 20200325,
             "recovered": 0
@@ -2276,7 +2276,7 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 1012,
             "deaths": 21,
-            "hospitalized": 125,
+            "hospitalized": 0,
             "tests": 6637,
             "old_date": 20200326,
             "recovered": 0
@@ -2285,7 +2285,7 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 1291,
             "deaths": 27,
-            "hospitalized": 173,
+            "hospitalized": 0,
             "tests": 8400,
             "old_date": 20200327,
             "recovered": 0
@@ -2294,7 +2294,7 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 1291,
             "deaths": 27,
-            "hospitalized": 173,
+            "hospitalized": 0,
             "tests": 8400,
             "old_date": 20200328,
             "recovered": 0
@@ -2303,7 +2303,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 1993,
             "deaths": 34,
-            "hospitalized": 404,
+            "hospitalized": 0,
             "tests": 11900,
             "old_date": 20200329,
             "recovered": 0
@@ -2312,7 +2312,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 2571,
             "deaths": 36,
-            "hospitalized": 517,
+            "hospitalized": 0,
             "tests": 14600,
             "old_date": 20200330,
             "recovered": 0
@@ -2321,7 +2321,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 3128,
             "deaths": 69,
-            "hospitalized": 608,
+            "hospitalized": 0,
             "tests": 16157,
             "old_date": 20200331,
             "recovered": 0
@@ -2330,7 +2330,7 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 3557,
             "deaths": 85,
-            "hospitalized": 766,
+            "hospitalized": 0,
             "tests": 16600,
             "old_date": 20200401,
             "recovered": 0
@@ -2890,7 +2890,7 @@
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 115,
             "deaths": 0,
-            "hospitalized": 11,
+            "hospitalized": 0,
             "tests": 151,
             "old_date": 20200325,
             "recovered": 0
@@ -2899,7 +2899,7 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 130,
             "deaths": 1,
-            "hospitalized": 13,
+            "hospitalized": 0,
             "tests": 166,
             "old_date": 20200326,
             "recovered": 4
@@ -2908,7 +2908,7 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 163,
             "deaths": 2,
-            "hospitalized": 15,
+            "hospitalized": 0,
             "tests": 199,
             "old_date": 20200327,
             "recovered": 9
@@ -2917,7 +2917,7 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 214,
             "deaths": 3,
-            "hospitalized": 31,
+            "hospitalized": 0,
             "tests": 250,
             "old_date": 20200328,
             "recovered": 9
@@ -2926,7 +2926,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 232,
             "deaths": 6,
-            "hospitalized": 33,
+            "hospitalized": 0,
             "tests": 268,
             "old_date": 20200329,
             "recovered": 9
@@ -2935,7 +2935,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 264,
             "deaths": 6,
-            "hospitalized": 45,
+            "hospitalized": 0,
             "tests": 2480,
             "old_date": 20200330,
             "recovered": 9
@@ -2944,7 +2944,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 319,
             "deaths": 10,
-            "hospitalized": 64,
+            "hospitalized": 0,
             "tests": 4015,
             "old_date": 20200331,
             "recovered": 22
@@ -2953,7 +2953,7 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 368,
             "deaths": 11,
-            "hospitalized": 57,
+            "hospitalized": 0,
             "tests": 4383,
             "old_date": 20200401,
             "recovered": 49
@@ -3649,7 +3649,7 @@
             "confirmed": 7314,
             "deaths": 229,
             "hospitalized": 1332,
-            "tests": 40012,
+            "tests": 31274,
             "old_date": 20200406,
             "recovered": 0
           },
@@ -4045,7 +4045,7 @@
           {
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 77,
-            "deaths": 1,
+            "deaths": 0,
             "hospitalized": 4,
             "tests": 3666,
             "old_date": 20200324,
@@ -4054,7 +4054,7 @@
           {
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 90,
-            "deaths": 1,
+            "deaths": 0,
             "hospitalized": 6,
             "tests": 4447,
             "old_date": 20200325,
@@ -6195,7 +6195,7 @@
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 1388,
             "deaths": 46,
-            "hospitalized": 271,
+            "hospitalized": 0,
             "tests": 8603,
             "old_date": 20200324,
             "recovered": 0
@@ -6204,7 +6204,7 @@
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 1795,
             "deaths": 65,
-            "hospitalized": 491,
+            "hospitalized": 0,
             "tests": 11451,
             "old_date": 20200325,
             "recovered": 0
@@ -6213,7 +6213,7 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 2305,
             "deaths": 83,
-            "hospitalized": 676,
+            "hospitalized": 0,
             "tests": 18029,
             "old_date": 20200326,
             "recovered": 0
@@ -6222,7 +6222,7 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 2746,
             "deaths": 119,
-            "hospitalized": 773,
+            "hospitalized": 0,
             "tests": 21359,
             "old_date": 20200327,
             "recovered": 0
@@ -6231,7 +6231,7 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 3315,
             "deaths": 137,
-            "hospitalized": 927,
+            "hospitalized": 0,
             "tests": 25161,
             "old_date": 20200328,
             "recovered": 0
@@ -6240,7 +6240,7 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 3540,
             "deaths": 151,
-            "hospitalized": 1127,
+            "hospitalized": 0,
             "tests": 27871,
             "old_date": 20200329,
             "recovered": 0
@@ -6249,7 +6249,7 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 4025,
             "deaths": 185,
-            "hospitalized": 1185,
+            "hospitalized": 0,
             "tests": 34033,
             "old_date": 20200330,
             "recovered": 0
@@ -6258,7 +6258,7 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 5237,
             "deaths": 239,
-            "hospitalized": 1355,
+            "hospitalized": 0,
             "tests": 38967,
             "old_date": 20200331,
             "recovered": 0
@@ -6267,7 +6267,7 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 6424,
             "deaths": 273,
-            "hospitalized": 1498,
+            "hospitalized": 0,
             "tests": 45776,
             "old_date": 20200401,
             "recovered": 0
@@ -6276,7 +6276,7 @@
             "date": "2020-04-02T00:00:00Z",
             "confirmed": 9150,
             "deaths": 310,
-            "hospitalized": 1639,
+            "hospitalized": 0,
             "tests": 51086,
             "old_date": 20200402,
             "recovered": 0
@@ -6285,7 +6285,7 @@
             "date": "2020-04-03T00:00:00Z",
             "confirmed": 10297,
             "deaths": 370,
-            "hospitalized": 1707,
+            "hospitalized": 0,
             "tests": 53645,
             "old_date": 20200403,
             "recovered": 0
@@ -12959,7 +12959,7 @@
             "confirmed": 452,
             "deaths": 18,
             "hospitalized": 0,
-            "tests": 2517,
+            "tests": 3057,
             "old_date": 20200404,
             "recovered": 0
           },
@@ -17212,13 +17212,13 @@
             "date": "2020-03-22T00:00:00Z",
             "confirmed": 31879,
             "deaths": 398,
-            "hospitalized": 2554,
+            "hospitalized": 2498,
             "tests": 225342,
             "old_date": 20200322,
             "recovered": 0,
             "confirmed_per_mil": 97.4394046810906,
             "deaths_per_mil": 1.2165024957832447,
-            "hospitalized_per_mil": 7.806400437764841,
+            "hospitalized_per_mil": 7.635234257453631,
             "tests_per_mil": 688.7665964944421,
             "recovered_per_mil": 0
           },
@@ -17226,41 +17226,41 @@
             "date": "2020-03-23T00:00:00Z",
             "confirmed": 42152,
             "deaths": 471,
-            "hospitalized": 3325,
+            "hospitalized": 3258,
             "tests": 279473,
             "old_date": 20200323,
             "recovered": 0,
             "confirmed_per_mil": 128.8392291513953,
             "deaths_per_mil": 1.4396298379746437,
-            "hospitalized_per_mil": 10.162991955978113,
+            "hospitalized_per_mil": 9.958203847391486,
             "tests_per_mil": 854.2201055377657,
             "recovered_per_mil": 0
           },
           {
             "date": "2020-03-24T00:00:00Z",
             "confirmed": 51954,
-            "deaths": 675,
-            "hospitalized": 4468,
+            "deaths": 674,
+            "hospitalized": 4096,
             "tests": 344732,
             "old_date": 20200324,
             "recovered": 0,
             "confirmed_per_mil": 158.79942378372536,
-            "deaths_per_mil": 2.06316378053691,
-            "hospitalized_per_mil": 13.65661595768728,
+            "deaths_per_mil": 2.0601072416027812,
+            "hospitalized_per_mil": 12.519583474191382,
             "tests_per_mil": 1053.6867798400742,
             "recovered_per_mil": 0
           },
           {
             "date": "2020-03-25T00:00:00Z",
             "confirmed": 63928,
-            "deaths": 900,
-            "hospitalized": 6136,
+            "deaths": 899,
+            "hospitalized": 5491,
             "tests": 421532,
             "old_date": 20200325,
             "recovered": 147,
             "confirmed_per_mil": 195.39842098098308,
-            "deaths_per_mil": 2.75088504071588,
-            "hospitalized_per_mil": 18.754922899814044,
+            "deaths_per_mil": 2.747828501781751,
+            "hospitalized_per_mil": 16.783455287300995,
             "tests_per_mil": 1288.4289699811625,
             "recovered_per_mil": 0.4493112233169271
           },
@@ -17268,13 +17268,13 @@
             "date": "2020-03-26T00:00:00Z",
             "confirmed": 80735,
             "deaths": 1163,
-            "hospitalized": 10131,
+            "hospitalized": 9210,
             "tests": 519338,
             "old_date": 20200326,
             "recovered": 97,
             "confirmed_per_mil": 246.76967084688508,
             "deaths_per_mil": 3.5547547803917428,
-            "hospitalized_per_mil": 30.96579594165842,
+            "hospitalized_per_mil": 28.15072358332584,
             "tests_per_mil": 1587.3768169725597,
             "recovered_per_mil": 0.29648427661048926
           },
@@ -17282,13 +17282,13 @@
             "date": "2020-03-27T00:00:00Z",
             "confirmed": 99413,
             "deaths": 1530,
-            "hospitalized": 13407,
+            "hospitalized": 11652,
             "tests": 626633,
             "old_date": 20200327,
             "recovered": 2422,
             "confirmed_per_mil": 303.859705058542,
             "deaths_per_mil": 4.676504569216996,
-            "hospitalized_per_mil": 40.979017489864226,
+            "hospitalized_per_mil": 35.614791660468256,
             "tests_per_mil": 1915.3281619099043,
             "recovered_per_mil": 7.402937298459846
           },
@@ -17296,13 +17296,13 @@
             "date": "2020-03-28T00:00:00Z",
             "confirmed": 118234,
             "deaths": 1965,
-            "hospitalized": 16363,
+            "hospitalized": 14150,
             "tests": 735704,
             "old_date": 20200328,
             "recovered": 3148,
             "confirmed_per_mil": 361.3868243377793,
             "deaths_per_mil": 6.006099005563004,
-            "hospitalized_per_mil": 50.01414657914883,
+            "hospitalized_per_mil": 43.25002591792189,
             "tests_per_mil": 2248.707919994262,
             "recovered_per_mil": 9.621984564637323
           },
@@ -17310,13 +17310,13 @@
             "date": "2020-03-29T00:00:00Z",
             "confirmed": 139061,
             "deaths": 2428,
-            "hospitalized": 19401,
+            "hospitalized": 16677,
             "tests": 831351,
             "old_date": 20200329,
             "recovered": 4061,
             "confirmed_per_mil": 425.04536071887884,
             "deaths_per_mil": 7.421276532064618,
-            "hospitalized_per_mil": 59.29991186103199,
+            "hospitalized_per_mil": 50.973899804465255,
             "tests_per_mil": 2541.056699426875,
             "recovered_per_mil": 12.412604611496876
           },
@@ -17324,13 +17324,13 @@
             "date": "2020-03-30T00:00:00Z",
             "confirmed": 160530,
             "deaths": 2939,
-            "hospitalized": 22303,
+            "hospitalized": 18984,
             "tests": 944854,
             "old_date": 20200330,
             "recovered": 4560,
             "confirmed_per_mil": 490.6661950956891,
             "deaths_per_mil": 8.983167927404413,
-            "hospitalized_per_mil": 68.16998784787363,
+            "hospitalized_per_mil": 58.02533512550029,
             "tests_per_mil": 2887.983038067291,
             "recovered_per_mil": 13.937817539627124
           },
@@ -17338,13 +17338,13 @@
             "date": "2020-03-31T00:00:00Z",
             "confirmed": 184683,
             "deaths": 3746,
-            "hospitalized": 26660,
+            "hospitalized": 22874,
             "tests": 1048884,
             "old_date": 20200331,
             "recovered": 5666,
             "confirmed_per_mil": 564.4907799717009,
             "deaths_per_mil": 11.449794847246318,
-            "hospitalized_per_mil": 81.48732798387262,
+            "hospitalized_per_mil": 69.91527157926116,
             "tests_per_mil": 3205.9547833847055,
             "recovered_per_mil": 17.31834960077353
           },
@@ -17352,13 +17352,13 @@
             "date": "2020-04-01T00:00:00Z",
             "confirmed": 210816,
             "deaths": 4700,
-            "hospitalized": 31142,
+            "hospitalized": 26817,
             "tests": 1150006,
             "old_date": 20200401,
             "recovered": 7084,
             "confirmed_per_mil": 644.3673119372877,
             "deaths_per_mil": 14.365732990405151,
-            "hospitalized_per_mil": 95.1867354866377,
+            "hospitalized_per_mil": 81.96720459653083,
             "tests_per_mil": 3515.0381134816735,
             "recovered_per_mil": 21.652521809368103
           },
@@ -17366,13 +17366,13 @@
             "date": "2020-04-02T00:00:00Z",
             "confirmed": 239099,
             "deaths": 5784,
-            "hospitalized": 32649,
+            "hospitalized": 30882,
             "tests": 1267748,
             "old_date": 20200402,
             "recovered": 8586,
             "confirmed_per_mil": 730.8154026112513,
             "deaths_per_mil": 17.679021195000722,
-            "hospitalized_per_mil": 99.79293966036974,
+            "hospitalized_per_mil": 94.39203536376422,
             "tests_per_mil": 3874.9211206638615,
             "recovered_per_mil": 26.243443288429493
           },
@@ -17380,13 +17380,13 @@
             "date": "2020-04-03T00:00:00Z",
             "confirmed": 271988,
             "deaths": 6962,
-            "hospitalized": 35991,
+            "hospitalized": 34140,
             "tests": 1396862,
             "old_date": 20200403,
             "recovered": 10422,
             "confirmed_per_mil": 831.3419116158119,
             "deaths_per_mil": 21.279624059404394,
-            "hospitalized_per_mil": 110.00789277822804,
+            "hospitalized_per_mil": 104.35023921115571,
             "tests_per_mil": 4269.563088604961,
             "recovered_per_mil": 31.85524877148989
           },
@@ -17394,27 +17394,27 @@
             "date": "2020-04-04T00:00:00Z",
             "confirmed": 305755,
             "deaths": 8314,
-            "hospitalized": 38402,
-            "tests": 1623807,
+            "hospitalized": 38211,
+            "tests": 1624347,
             "old_date": 20200404,
             "recovered": 12784,
             "confirmed_per_mil": 934.5520618045376,
             "deaths_per_mil": 25.412064698346473,
-            "hospitalized_per_mil": 117.37720814841246,
-            "tests_per_mil": 4963.229317010812,
+            "hospitalized_per_mil": 116.79340921199388,
+            "tests_per_mil": 4964.879848035242,
             "recovered_per_mil": 39.07479373390201
           },
           {
             "date": "2020-04-05T00:00:00Z",
             "confirmed": 332308,
             "deaths": 9498,
-            "hospitalized": 41372,
+            "hospitalized": 41062,
             "tests": 1762032,
             "old_date": 20200405,
             "recovered": 14486,
             "confirmed_per_mil": 1015.7123401224585,
             "deaths_per_mil": 29.03100679635492,
-            "hospitalized_per_mil": 126.45512878277488,
+            "hospitalized_per_mil": 125.50760171319496,
             "tests_per_mil": 5385.719411180759,
             "recovered_per_mil": 44.27702299978915
           },
@@ -17422,34 +17422,34 @@
             "date": "2020-04-06T00:00:00Z",
             "confirmed": 361331,
             "deaths": 10680,
-            "hospitalized": 45168,
-            "tests": 1917095,
+            "hospitalized": 44850,
+            "tests": 1908357,
             "old_date": 20200406,
             "recovered": 16006,
             "confirmed_per_mil": 1104.4222696076774,
             "deaths_per_mil": 32.643835816495105,
-            "hospitalized_per_mil": 138.0577505767276,
-            "tests_per_mil": 5859.675507923566,
+            "hospitalized_per_mil": 137.08577119567468,
+            "tests_per_mil": 5832.96747071715,
             "recovered_per_mil": 48.92296217966486
           },
           {
             "date": "2020-04-07T00:00:00Z",
             "confirmed": 392594,
             "deaths": 12621,
-            "hospitalized": 45562,
+            "hospitalized": 45580,
             "tests": 2054462,
             "old_date": 20200407,
             "recovered": 17809,
             "confirmed_per_mil": 1199.9788463053446,
             "deaths_per_mil": 38.576577887639026,
-            "hospitalized_per_mil": 139.26202691677435,
+            "hospitalized_per_mil": 139.31704461758866,
             "tests_per_mil": 6279.543091688031,
             "recovered_per_mil": 54.433901877899004
           }
         ],
         "highest_confirmed": 392594,
         "highest_deaths": 12621,
-        "highest_hospitalized": 45562,
+        "highest_hospitalized": 45580,
         "highest_tests": 2054462,
         "highest_recovered": 17809
       }
@@ -61809,12 +61809,12 @@
               {
                 "num_day": 20,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 21,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 22,
@@ -61964,12 +61964,12 @@
               {
                 "num_day": 15,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 16,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 17,
@@ -62104,12 +62104,12 @@
               {
                 "num_day": 12,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 13,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 14,
@@ -62234,12 +62234,12 @@
               {
                 "num_day": 10,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 11,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 12,
@@ -62359,12 +62359,12 @@
               {
                 "num_day": 9,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 10,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 11,
@@ -62474,12 +62474,12 @@
               {
                 "num_day": 7,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 8,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 9,
@@ -62584,12 +62584,12 @@
               {
                 "num_day": 6,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 7,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 8,
@@ -62684,12 +62684,12 @@
               {
                 "num_day": 4,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 5,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 6,
@@ -62774,12 +62774,12 @@
               {
                 "num_day": 2,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 3,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 4,
@@ -62859,12 +62859,12 @@
               {
                 "num_day": 1,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 2,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 3,
@@ -62939,12 +62939,12 @@
               {
                 "num_day": 0,
                 "date": "2020-03-24T00:00:00Z",
-                "deaths": 675
+                "deaths": 674
               },
               {
                 "num_day": 1,
                 "date": "2020-03-25T00:00:00Z",
-                "deaths": 900
+                "deaths": 899
               },
               {
                 "num_day": 2,
