@@ -38,7 +38,6 @@ const CountryOverviewGraph = ({active_country, width, height, scale}) => {
       else t.recovered = null
 
     })
-    console.log(filteredData)
     
     if(filteredData.length){
       return (

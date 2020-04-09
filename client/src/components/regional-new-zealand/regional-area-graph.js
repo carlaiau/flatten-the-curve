@@ -9,7 +9,6 @@ const RegionalAreaGraph = ({active_region, width, height, scale}) => {
     
     const filteredData = active_region.time_series.filter(t => parseInt(t.total) > 0)
     
-    console.log(filteredData)
     filteredData.forEach((t,i) => {
       t.dateString = format(parseJSON(t.dateObject), 'MMM dd') 
       t.index = i
