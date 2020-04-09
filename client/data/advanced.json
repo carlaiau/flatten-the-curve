@@ -3973,7 +3973,7 @@
             "date": "2020-04-06T00:00:00Z",
             "confirmed": 113,
             "deaths": 4,
-            "hospitalized": 31,
+            "hospitalized": 0,
             "tests": 618,
             "old_date": 20200406,
             "recovered": 25
@@ -6511,7 +6511,7 @@
             "confirmed": 17030,
             "deaths": 652,
             "hospitalized": 0,
-            "tests": 75401,
+            "tests": 81406,
             "old_date": 20200408,
             "recovered": 0
           }
@@ -6519,7 +6519,7 @@
         "highest_confirmed": 17030,
         "highest_deaths": 652,
         "highest_hospitalized": null,
-        "highest_tests": 75401,
+        "highest_tests": 81406,
         "highest_recovered": null
       },
       {
@@ -17926,13 +17926,13 @@
             "date": "2020-04-06T00:00:00Z",
             "confirmed": 361331,
             "deaths": 10680,
-            "hospitalized": 44850,
+            "hospitalized": 44819,
             "tests": 1908357,
             "old_date": 20200406,
             "recovered": 16006,
             "confirmed_per_mil": 1104.4222696076774,
             "deaths_per_mil": 32.643835816495105,
-            "hospitalized_per_mil": 137.08577119567468,
+            "hospitalized_per_mil": 136.9910184887167,
             "tests_per_mil": 5832.96747071715,
             "recovered_per_mil": 48.92296217966486
           },
@@ -17955,20 +17955,20 @@
             "confirmed": 423164,
             "deaths": 14495,
             "hospitalized": 47159,
-            "tests": 2189766,
+            "tests": 2195771,
             "old_date": 20200408,
             "recovered": 19248,
             "confirmed_per_mil": 1293.4172415216606,
             "deaths_per_mil": 44.30453185019631,
             "hospitalized_per_mil": 144.14331959457797,
-            "tests_per_mil": 6693.105035631388,
+            "tests_per_mil": 6711.459551930831,
             "recovered_per_mil": 58.832261404110284
           }
         ],
         "highest_confirmed": 423164,
         "highest_deaths": 14495,
         "highest_hospitalized": 47159,
-        "highest_tests": 2189766,
+        "highest_tests": 2195771,
         "highest_recovered": 19248
       }
     ],
