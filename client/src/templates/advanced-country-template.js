@@ -40,27 +40,18 @@ const AdvancedCountryTemplate = ({data, pageContext}) => {
 
     const cum_object = {
         confirmed: {
-            50:  confirmed.map((node) => mapFn( node, 'confirmed', 0)),
-            100: confirmed.map((node) => mapFn( node, 'confirmed', 1)),
-            200: confirmed.map((node) => mapFn( node, 'confirmed', 2)),
-            300: confirmed.map((node) => mapFn( node, 'confirmed', 3)),
-            400: confirmed.map((node) => mapFn( node, 'confirmed', 4)),
-            500:  confirmed.map((node) => mapFn( node, 'confirmed', 5)),
-            750:  confirmed.map((node) => mapFn( node, 'confirmed', 6)),
-            1000: confirmed.map((node) => mapFn( node, 'confirmed', 7)),
+            100: confirmed.map((node) => mapFn( node, 'confirmed', 0)),
+            250: confirmed.map((node) => mapFn( node, 'confirmed', 1)),
+            500:  confirmed.map((node) => mapFn( node, 'confirmed', 2)),
+            1000: confirmed.map((node) => mapFn( node, 'confirmed', 3)),
+            5000: confirmed.map((node) => mapFn( node, 'confirmed', 4)),
         },
         deaths: {
             10:   deaths.map((node) => mapFn( node, 'deaths', 0)),
-            20:   deaths.map((node) => mapFn( node, 'deaths', 1)),
-            30:   deaths.map((node) => mapFn( node, 'deaths', 2)),
-            40:   deaths.map((node) => mapFn( node, 'deaths', 3)),
-            50:   deaths.map((node) => mapFn( node, 'deaths', 4)),
-            75:   deaths.map((node) => mapFn( node, 'deaths', 5)),
-            100:  deaths.map((node) => mapFn( node, 'deaths', 6)),
-            200:  deaths.map((node) => mapFn( node, 'deaths', 7)),
-            300:  deaths.map((node) => mapFn( node, 'deaths', 8)),
-            400:  deaths.map((node) => mapFn( node, 'deaths', 9)),
-            500:  deaths.map((node) => mapFn( node, 'deaths', 10)),
+            50:   deaths.map((node) => mapFn( node, 'deaths', 1)),
+            100:  deaths.map((node) => mapFn( node, 'deaths', 2)),
+            250:  deaths.map((node) => mapFn( node, 'deaths', 3)),
+            500:  deaths.map((node) => mapFn( node, 'deaths', 4)),
         }
     }
 

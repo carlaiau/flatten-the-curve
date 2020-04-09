@@ -121,8 +121,8 @@ export default class IndexPage extends React.Component{
                             'United States',
                             'United Kingdom',
                         ]}
-                        accumulateFrom={100}
-                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                        accumulateFrom={500}
+                        accumulateOptions={[100, 250, 500, 1000, 5000]}
                         
                         
                     />  
@@ -149,8 +149,8 @@ export default class IndexPage extends React.Component{
                             'United States',
                             'United Kingdom',
                         ]}
-                        accumulateFrom={10}
-                        accumulateOptions={[10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500]}   
+                        accumulateFrom={50}
+                        accumulateOptions={[10, 50, 100, 250, 500]}      
                           
                     /> 
                     <div className="columns">

@@ -132,7 +132,8 @@ export default class AdvancedCountryPage extends React.Component{
                             {this.props.country_name == 'United States' ?
                                 <p className="is-size-7">
                                 The United States data is sourced from the
-                                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
+                                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" 
+                                    style={{fontWeight: 'bold', color: "#363636"}}>
                                 COVID Tracking Project</a>.
                                 </p>
                             : <></>}
@@ -178,7 +179,7 @@ export default class AdvancedCountryPage extends React.Component{
                     type_of_area="state"
                     checkedAreas={this.props.checkedAreas}
                     accumulateFrom={100}
-                    accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                    accumulateOptions={[100, 250, 500, 1000, 5000]}
                     max_area_count={this.state.max_area_count}
                     
                     
@@ -201,7 +202,7 @@ export default class AdvancedCountryPage extends React.Component{
                             type_of_area="state"
                             checkedAreas={this.props.checkedAreas}
                             accumulateFrom={10}
-                            accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
+                            accumulateOptions={[10, 50, 100, 250, 500]}   
                         /> 
                     </>
                 }
