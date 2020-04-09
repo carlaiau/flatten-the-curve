@@ -1,81 +1,92 @@
 import React from 'react' 
-import SingularGraphTooltip from './graph-tooltip'
 import { parseJSON, format } from "date-fns"
-import {LineChart, Line, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
+import {AreaChart, Area, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
+import RegionalGraphTooltip from './regional-graph-tooltip'
 
-
-const CountryOverviewGraph = ({active_country, field, full_field_name, width, height, scale}) => {
+const CountryOverviewGraph = ({active_country, width, height, scale}) => {
     
     
-    const filteredData = active_country.time_series.filter(t => parseInt(t[field]) > 0)
-      
+    const filteredData = active_country.time_series.filter(t => parseInt(t.confirmed) > 0)
+    const latestDay = filteredData[filteredData.length - 1]
     filteredData.forEach(t => {
       t.dateString = format(parseJSON(t.date), 'MMM dd') 
     })
 
-    // Add growth to the countryOverView too!
-    const growth_label =   `${field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days`
-    
-    const growth_rate = 1.25992105
-    
-    let found_for_growth = false
-    let exceeds_mil = false
-    if( (full_field_name == 'confirmed' && active_country.highest_confirmed >= 100) || (full_field_name == 'deaths' && active_country.highest_deaths >= 10) ){  
-      filteredData.forEach( (t, i) => {
-        if(found_for_growth && ! exceeds_mil){
-          t.growth = (filteredData[i - 1].growth * growth_rate).toFixed(0)
-          if(t.growth > 1000000){
-            exceeds_mil = true
-          }
-        }
-        else if(!exceeds_mil){
-          if(t[field] >= ( field == 'confirmed' ? 100 : field == 'deaths' ? 10 : Infinity)){
-            found_for_growth = true
-            t.growth = t[field]
-          }
-          else{
-            t.growth = null
-          }
-        }
-      })
-    }
+    let has_tests = false
+    let has_confirmed = false
+    let has_hospitalized = false
+    let has_deaths = false
+    let has_recovered = false
+
+    filteredData.forEach((t,i) => {
+      t.dateString = format(parseJSON(t.date), 'MMM dd') 
+      t.index = i
+      
+      if(t.tests > 0) has_tests = true
+      else t.tests = null
+
+      if(t.confirmed > 0) has_confirmed = true
+      else t.confirmed = null
+
+      if(t.hospitalized > 0) has_hospitalized = true
+      else t.hospitalized = null
+      
+      if(t.deaths > 0) has_deaths = true
+      else t.deaths = null
+
+      if(t.recovered > 0) has_recovered = true
+      else t.recovered = null
+
+    })
     
     if(filteredData.length){
       return (
-        <LineChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10, left: 10 }}>
+        <AreaChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10, left: 10 }}>
           <XAxis 
             dataKey="index"
             name="Days"
             type="number"
+            tickCount={8}
+            domain = {[0, latestDay.day]}
             >
               <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
             </XAxis>
           
           <YAxis width={55} scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={12}/>
-          {
-            full_field_name == 'confirmed' ? 
-              <Line type="monotone" dataKey="confirmed" name="Total confirmed cases" stroke="#ff793f" dot={false} strokeWidth={3}/> :
-            full_field_name == 'deaths' ? 
-              <Line type="monotone" dataKey="deaths" name="Total deaths" stroke="#ff5252"dot={false} strokeWidth={3}/> 
-              :
-            full_field_name == 'confirmed_per_mil' ? 
-              <Line type="monotone" dataKey="confirmed_per_mil" name="Confirmed cases per million" stroke="#ff793f" formatter={value => value.toFixed(2)}dot={false} strokeWidth={3}/> 
-              :
-              <Line type="monotone" dataKey="deaths_per_mil" name="Deaths per million"stroke="#ff5252" formatter={value => value.toFixed(2)}dot={false} strokeWidth={3}/>
-          }
-          {
-            found_for_growth ?
-              <Line type="monotone" stroke='#aaa' name={growth_label} dataKey='growth' strokeOpacity={0.5} dot={false} strokeWidth={3} isAnimationActive={true}/>
-            : 
-              <></>
-          }  
-          <Tooltip content={SingularGraphTooltip}/>
-          <Legend verticalAlign="top" iconType="square"/>
+      
+          { has_tests ? 
+            <Area type="monotone" dataKey="tests" name="Tests" stroke="#218c74" fillOpacity={1} fill="#218c74" dot={false} strokeWidth={1}/>
+          : <></> }
+          { has_confirmed ? 
+            <Area type="monotone" dataKey="confirmed" name="Confirmed" stroke="#227093" fillOpacity={1} fill="#227093" dot={false} strokeWidth={1}/>
+          : <></> }
+          { has_hospitalized ? 
+            <Area type="monotone" dataKey="hospitalized" name="Hospitalized" stroke="#ff793f" fillOpacity={1} fill="#ff793f" dot={false} strokeWidth={1}/>
+          : <></> }
+          { has_deaths && has_recovered && latestDay.deaths < latestDay.recovered ?
+          <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={0.9} fill="#2ecc71" dot={false} strokeWidth={1}/>
+            : <></> }
+          { has_deaths && has_recovered && latestDay.deaths < latestDay.recovered ?
+            <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
+          : <></> }
+          { has_deaths && has_recovered && latestDay.deaths > latestDay.recovered ?
+            <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
+          : <></> }
+          { has_deaths && has_recovered && latestDay.deaths > latestDay.recovered ?
+            <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={0.9} fill="#2ecc71" dot={false} strokeWidth={1}/>
+          : <></> }
           
-        </LineChart>
+          { has_recovered && ! has_deaths ? 
+            <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={1} fill="#2ecc71" dot={false} strokeWidth={1}/>
+          : <></> }
+          { ! has_recovered && has_deaths ? 
+            <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={1} fill="#ff5252" dot={false} strokeWidth={1}/>
+          : <></> }
+          <Legend verticalAlign="top" iconType="square"/>
+          <Tooltip content={RegionalGraphTooltip}/>
+        </AreaChart>
       )
     }
-    return <p className="is-size-3"><strong>No Deaths!</strong></p>
 }
 
 export default CountryOverviewGraph

@@ -19,9 +19,12 @@ const GlobalContextProvider = ({ children }) => {
                     confirmed_per_mil
                     deaths
                     deaths_per_mil
+                    recovered
+                    tests
                 }
                 highest_confirmed
                 highest_deaths
+                highest_recovered
 
                 population
             }
@@ -29,7 +32,6 @@ const GlobalContextProvider = ({ children }) => {
         select_countries: allCountriesJson(sort: {order: ASC, fields: name}, filter: {highest_confirmed: {gte: 10}, population: {gte: 1000000}}) {
             nodes {
                 name
-                highest_confirmed
             }
         }
         cumulative: allCumulativeJson(sort: {order: DESC, fields: highest_confirmed}, filter: {population: {gte: 100000}}) {
@@ -76,34 +78,25 @@ const GlobalContextProvider = ({ children }) => {
         countries: countries.nodes,
         select_countries: select_countries.nodes,
         cumulative_confirmed: {
-          50:  confirmed.map((node) => mapFn( node, 'confirmed', 0)),
-          100: confirmed.map((node) => mapFn( node, 'confirmed', 1)),
-          200: confirmed.map((node) => mapFn( node, 'confirmed', 2)),
-          300: confirmed.map((node) => mapFn( node, 'confirmed', 3)),
-          400: confirmed.map((node) => mapFn( node, 'confirmed', 4)),
-          500:  confirmed.map((node) => mapFn( node, 'confirmed', 5)),
-          750:  confirmed.map((node) => mapFn( node, 'confirmed', 6)),
-          1000: confirmed.map((node) => mapFn( node, 'confirmed', 7)),
+          100: confirmed.map((node) => mapFn( node, 'confirmed', 0)),
+          250: confirmed.map((node) => mapFn( node, 'confirmed', 1)),
+          500:  confirmed.map((node) => mapFn( node, 'confirmed', 2)),
+          1000: confirmed.map((node) => mapFn( node, 'confirmed', 3)),
+          5000: confirmed.map((node) => mapFn( node, 'confirmed', 4)),
 
         },
         cumulative_deaths: {
           10:   deaths.map((node) => mapFn( node, 'deaths', 0)),
-          20:   deaths.map((node) => mapFn( node, 'deaths', 1)),
-          30:   deaths.map((node) => mapFn( node, 'deaths', 2)),
-          40:   deaths.map((node) => mapFn( node, 'deaths', 3)),
-          50:   deaths.map((node) => mapFn( node, 'deaths', 4)),
-          75:   deaths.map((node) => mapFn( node, 'deaths', 5)),
-          100:  deaths.map((node) => mapFn( node, 'deaths', 6)),
-          200:  deaths.map((node) => mapFn( node, 'deaths', 7)),
-          300:  deaths.map((node) => mapFn( node, 'deaths', 8)),
-          400:  deaths.map((node) => mapFn( node, 'deaths', 9)),
-          500:  deaths.map((node) => mapFn( node, 'deaths', 10)),
+          50:   deaths.map((node) => mapFn( node, 'deaths', 1)),
+          100:  deaths.map((node) => mapFn( node, 'deaths', 2)),
+          250:  deaths.map((node) => mapFn( node, 'deaths', 3)),
+          500:  deaths.map((node) => mapFn( node, 'deaths', 4)),
         },
         update_times:{
-          global: "1:30am 8 April UTC",
-          us: "4:00pm 7 April ET",
-          nz: "1:30pm 8 April NZT",
-          nz_regional: "2:00pm 8 April NZT",
+          global: "1:20am 9 April UTC",
+          us: "4:00pm 8 April ET",
+          nz: "1:20pm 9 April NZT",
+          nz_regional: "4:00pm 8 April NZT",
         }
     });
   

@@ -57,20 +57,15 @@ export default class IndexPage extends React.Component{
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
-                <p style={{marginTop: '10px'}}><strong>April 4</strong></p>
+                <p style={{marginTop: '10px'}}><strong>April 9</strong></p>
+                <p>Global Recovery data and <Link to='/new-zealand'>New Zealand</Link> test data.</p>
+                <p><strong>April 4</strong></p>
                 <p>State level graphs for <Link to='/united-states'>United States</Link>,{' '}
                     <Link to='/canada'>Canada</Link>,{' '} 
                     <Link to='/australia'>Australia</Link> and {' '}
                     <Link to='/china'>China</Link>.</p>
                 <p><strong>April 3</strong></p>
                 <p>Regional data and demographics for <Link to='/new-zealand'>New Zealand</Link>.</p>
-                <p><strong>April 2</strong></p>
-                <p>State level cumulative graphs for
-                    <Link to='/united-states'>United States</Link>,{' '}
-                    <Link to='/canada'>Canada</Link>,{' '} 
-                    <Link to='/australia'>Australia</Link> and {' '}
-                    <Link to='/china'>China</Link>.
-                </p>
                 <p style={{marginTop: '10px'}}><strong>Coming Soon</strong></p>
                 <p>
                     Regional level data for {' '}
@@ -121,8 +116,8 @@ export default class IndexPage extends React.Component{
                             'United States',
                             'United Kingdom',
                         ]}
-                        accumulateFrom={100}
-                        accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                        accumulateFrom={500}
+                        accumulateOptions={[100, 250, 500, 1000, 5000]}
                         
                         
                     />  
@@ -149,8 +144,8 @@ export default class IndexPage extends React.Component{
                             'United States',
                             'United Kingdom',
                         ]}
-                        accumulateFrom={10}
-                        accumulateOptions={[10, 20, 30, 40, 50, 75, 100, 200, 300, 400, 500]}   
+                        accumulateFrom={50}
+                        accumulateOptions={[10, 50, 100, 250, 500]}      
                           
                     /> 
                     <div className="columns">

@@ -49,6 +49,8 @@ export default class AdvancedCountryPage extends React.Component{
             field: full_field_name
         })
 
+        const latest = active_country.time_series[active_country.time_series.length - 1]
+
         active_country.name =  this.props.country_name
         
 
@@ -60,10 +62,11 @@ export default class AdvancedCountryPage extends React.Component{
             <SEO title={`${this.props.country_name} COVID-19 Update: ${this.state.area_label} level cumulative graphs and comparisons`}/>
             <section className="section" style={{paddingBottom: 0}}>
                 <div className="container">
-                    <div className="columns info" style={{alignItems: 'flex-end'}}>
+                    <div className="columns info" style={{justifyContent: 'space-between', alignItems: 'center'}}>
                         <div className="column is-half"> 
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <table className="subtitle">
+                                <tbody>
                                 <tr>
                                     <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_confirmed)}</th>
                                     <td className="is-size-4">Cases</td>
@@ -74,10 +77,51 @@ export default class AdvancedCountryPage extends React.Component{
                                     <td className="is-size-4">Deaths</td>
                                 </tr>
                                 :<></> }
+                                {country.highest_recovered ?
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_recovered)}</th>
+                                    <td className="is-size-4">Recovered</td>
+                                </tr>
+                                :<></> }
+                                </tbody>
                             </table>
                         </div>
-                        <div className="column is-half text-right-align-desktop"> 
-                            <p className="is-size-7">
+                        <div className="column is-narrow"> 
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                                    <td className="is-size-4">Cases per million</td>
+                                </tr>
+                                {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                                    <tr>
+                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
+                                        <td className="is-size-4">Deaths per million</td>
+                                    </tr>
+                                :<></> }
+                                <tr >
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(((latest.recovered / latest.confirmed) * 100).toFixed(0))}%
+                                    </th>
+                                    <td className="is-size-4">Recovered</td>
+                                </tr>
+                                {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                                    <tr>
+                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(0))}%
+                                        </th>
+                                        <td className="is-size-4">Died</td>
+                                    </tr>
+                                :<></> }
+                                </tbody>
+
+                            </table>
+                            
+                        </div>
+                    </div>
+                    <div className="columns">
+                        <div className="column is-half">
+                        <p className="is-size-7" style={{marginBottom: '10px'}}>
                                 Global data updated at <strong>{update_times.global}</strong>
                             </p>
                             {this.props.country_name == 'United States' ? 
@@ -88,7 +132,8 @@ export default class AdvancedCountryPage extends React.Component{
                             {this.props.country_name == 'United States' ?
                                 <p className="is-size-7">
                                 The United States data is sourced from the
-                                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer">
+                                {' '}<a href="https://covidtracking.com/" target="_blank" rel="noopener noreferrer" 
+                                    style={{fontWeight: 'bold', color: "#363636"}}>
                                 COVID Tracking Project</a>.
                                 </p>
                             : <></>}
@@ -133,8 +178,8 @@ export default class AdvancedCountryPage extends React.Component{
                     field="confirmed"
                     type_of_area="state"
                     checkedAreas={this.props.checkedAreas}
-                    accumulateFrom={100}
-                    accumulateOptions={[50, 100, 200, 300, 400, 500, 750, 1000]}
+                    accumulateFrom={500}
+                    accumulateOptions={[100, 250, 500, 1000, 5000]}
                     max_area_count={this.state.max_area_count}
                     
                     
@@ -156,8 +201,8 @@ export default class AdvancedCountryPage extends React.Component{
                             field="deaths"
                             type_of_area="state"
                             checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={10}
-                            accumulateOptions={[10, 20, 30, 40, 50, 75, 100]}   
+                            accumulateFrom={50}
+                            accumulateOptions={[10, 50, 100, 250, 500]}   
                         /> 
                     </>
                 }

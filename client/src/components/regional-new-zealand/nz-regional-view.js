@@ -122,6 +122,9 @@ const NZRegionalView = ({width, height}) => {
               />
             </div>
             <div className="column is-two-thirds-desktop is-full-tablet">
+              <p className="title is-size-4" >
+                Total and confirmed cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+              </p>
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'flex-end'}}>
                 
                 <div className="control">
