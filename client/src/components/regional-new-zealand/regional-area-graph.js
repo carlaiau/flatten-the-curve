@@ -44,7 +44,7 @@ const RegionalAreaGraph = ({active_region, width, height, scale}) => {
         <YAxis width={55} scale={scale} domain={['auto', 'auto']} interval="preserveStart" tickCount={9}/>
         
         <Area type="monotone" dataKey="total" name="Total" stroke="#ff793f" fillOpacity={1} fill="url(#total)" dot={false} strokeWidth={1}/>
-        <Area type="monotone" dataKey="confirmed" name="Confirmed" stroke="#ff5252" fillOpacity={1} fill="url(#confirmed)" dot={false} strokeWidth={1}/>
+        <Area type="monotone" dataKey="confirmed" name=" Confirmed" stroke="#ff5252" fillOpacity={1} fill="url(#confirmed)" dot={false} strokeWidth={1}/>
         <Tooltip content={RegionalGraphTooltip}/>
         <Legend verticalAlign="top" iconType="square"/>
         

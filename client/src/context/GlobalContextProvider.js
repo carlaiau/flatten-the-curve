@@ -20,6 +20,7 @@ const GlobalContextProvider = ({ children }) => {
                     deaths
                     deaths_per_mil
                     recovered
+                    tests
                 }
                 highest_confirmed
                 highest_deaths

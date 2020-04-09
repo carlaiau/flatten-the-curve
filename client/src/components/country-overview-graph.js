@@ -38,7 +38,7 @@ const CountryOverviewGraph = ({active_country, width, height, scale}) => {
       else t.recovered = null
 
     })
-
+    console.log(filteredData)
     
     if(filteredData.length){
       return (
@@ -88,7 +88,6 @@ const CountryOverviewGraph = ({active_country, width, height, scale}) => {
         </AreaChart>
       )
     }
-    return <p className="is-size-3"><strong>No Deaths!</strong></p>
 }
 
 export default CountryOverviewGraph

@@ -57,20 +57,15 @@ export default class IndexPage extends React.Component{
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
-                <p style={{marginTop: '10px'}}><strong>April 4</strong></p>
+                <p style={{marginTop: '10px'}}><strong>April 9</strong></p>
+                <p>Global Recovery data and <Link to='/new-zealand'>New Zealand</Link> test data.</p>
+                <p><strong>April 4</strong></p>
                 <p>State level graphs for <Link to='/united-states'>United States</Link>,{' '}
                     <Link to='/canada'>Canada</Link>,{' '} 
                     <Link to='/australia'>Australia</Link> and {' '}
                     <Link to='/china'>China</Link>.</p>
                 <p><strong>April 3</strong></p>
                 <p>Regional data and demographics for <Link to='/new-zealand'>New Zealand</Link>.</p>
-                <p><strong>April 2</strong></p>
-                <p>State level cumulative graphs for
-                    <Link to='/united-states'>United States</Link>,{' '}
-                    <Link to='/canada'>Canada</Link>,{' '} 
-                    <Link to='/australia'>Australia</Link> and {' '}
-                    <Link to='/china'>China</Link>.
-                </p>
                 <p style={{marginTop: '10px'}}><strong>Coming Soon</strong></p>
                 <p>
                     Regional level data for {' '}

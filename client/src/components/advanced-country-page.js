@@ -178,7 +178,7 @@ export default class AdvancedCountryPage extends React.Component{
                     field="confirmed"
                     type_of_area="state"
                     checkedAreas={this.props.checkedAreas}
-                    accumulateFrom={100}
+                    accumulateFrom={500}
                     accumulateOptions={[100, 250, 500, 1000, 5000]}
                     max_area_count={this.state.max_area_count}
                     
@@ -201,7 +201,7 @@ export default class AdvancedCountryPage extends React.Component{
                             field="deaths"
                             type_of_area="state"
                             checkedAreas={this.props.checkedAreas}
-                            accumulateFrom={10}
+                            accumulateFrom={50}
                             accumulateOptions={[10, 50, 100, 250, 500]}   
                         /> 
                     </>

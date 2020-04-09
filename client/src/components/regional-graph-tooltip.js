@@ -16,6 +16,9 @@ const RegionalGraphToolTip = (tooltipProps)  => {
         "Hospitalized": "#ff793f",
         "Recovered": "#2ecc71",
         "Deaths": "#ff5252",
+        // For NZ Specific
+        "Total": "#ff793f",
+        " Confirmed": "#ff5252"
     }
     const tidy = new Intl.NumberFormat()
         return (
