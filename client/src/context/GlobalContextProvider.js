@@ -104,7 +104,7 @@ const GlobalContextProvider = ({ children }) => {
           global: "1:20am 9 April UTC",
           us: "4:00pm 8 April ET",
           nz: "1:20pm 9 April NZT",
-          nz_regional: "2:00pm 8 April NZT",
+          nz_regional: "4:00pm 8 April NZT",
         }
     });
   

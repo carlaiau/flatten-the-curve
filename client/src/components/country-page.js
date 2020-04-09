@@ -29,134 +29,84 @@ export default class CountryPage extends React.Component{
   
   render(){
     const {countries, update_times} = this.props.stateHook
-    const {selected_country, field, per} = this.state
-
-    let full_field_name = field === 'confirmed' ? 
-      per === 'total' ? 'confirmed' : 'confirmed_per_mil' :
-      per === 'total' ? 'deaths' : 'deaths_per_mil'
+    const {selected_country} = this.state
 
     
     const active_country = SetupCountry({
       country: countries.filter( (c) => c.name ===  this.state.selected_country )[0]
     })
 
-
-    const ContentBlock = () => {
-      const {name, highest} = active_country
-      const {confirmed, deaths} = highest
-      return (
-      <div className="box">
-          <h3 className="is-size-4 title">{name} must act now</h3>
-          
-          <p className="is-size-6">
-            Because of the explosive growth, it is critical we all do our best to flatten the curve, even when these early measures feel extreme. 
-            Slowing the spread is our best tool to prevent catastrophic collapse of our medical systems.
-          </p>
-          { (confirmed > 100 ||deaths > 10) && per == 'total' ?
-          <p className="is-size-6"style={{marginTop: '10px'}}>
-            The <strong>{field =='confirmed' ? 'Cases' :'Deaths'} double every 3 days</strong> comparison is based on compounding daily growth starting from when {name}'s daily figure first exceeded{' '}
-            { confirmed > 100 && field =='confirmed'? <strong>100 confirmed cases</strong> : <></> }{' '}
-            { deaths > 10 && field != 'confirmed' ? <strong>10 deaths</strong> : <></> }
-          </p>
-          : <></> }
-          <div style={{marginTop: '10px', marginBottom: '10px'}}>
-            <p className="is-size-6">
-              Global data updated at <strong>{update_times.global}</strong>
-            </p>
-            
-            {name == 'New Zealand' ?
-            <>
-              <p className="is-size-6">
-                {name} data updated at <strong>{update_times.nz}</strong>
-              </p>
-              <p className="is-size-6">
-                Regional data updated at <strong>{update_times.nz_regional}</strong>
-              </p>
-
-              <p className="is-size-6" style={{marginTop: '10px'}}>
-                While we're in lockdown please visit <a href="https://www.alonetogether.co.nz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer">Alone Together</a> for ideas to help you take care of yourself and others
-                
-              </p>
-              
-              
-
-            </>
-            : <></> }
-          </div>
-      </div>
-      )
-  }
+    const latest = active_country.time_series[active_country.time_series.length - 1]
     
     return (<>
         <SEO title={`Flatten The Curve: ${selected_country} COVID-19 Status`} />
-
-        { active_country.name == 'New Zealand' ? 
-          <>
-          <section className="section" style={{paddingBottom: 0}}>
-            <div className="container">
-                <div className="columns info" style={{alignItems: 'flex-end'}}>
-                    <div className="column is-half"> 
-                        <h2 className="is-size-2 title">{selected_country}</h2>
-                        <table className="subtitle">
-                            <tr>
-                                <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_confirmed)}</th>
-                                <td className="is-size-4">Cases</td>
-                            </tr>
-                            <tr>
-                                <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_deaths)}</th>
-                                <td className="is-size-4">{ active_country.highest_deaths == 1 ? 'Death' : 'Deaths'}</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div className="column is-half text-right-align-desktop"> 
-                        <p className="is-size-7">
-                            Global data updated at <strong>{update_times.global}</strong>
-                        </p>
-                        {selected_country== 'New Zealand' ? 
-                        <>
-                            <p className="is-size-7">
-                                Nationwide data updated at <strong>{update_times.nz}</strong>
-                            </p>
-                            <p className="is-size-7">
-                                DHB data updated at <strong>{update_times.nz_regional}</strong>
-                            </p>
-                        </>
-                        : <></>}
-                    </div>
-                </div>
-            </div>                
-          </section>
-          <NZView width={this.props.overview_width} height={this.props.overview_height}/>
-          </>
-        :
-
-
         <section className="section">
           <div className="container">
-            <div className="columns info">
-              <div className="column is-two-thirds"> 
-                <h2 className="is-size-3 title">
-                  {active_country.name}
-                </h2>
-                <p className="is-size-4 subtitle">
-                  {
-                    // Notice use of country wide constant variable, not dynamically based on highest. due to sorting
-                  active_country.highest_confirmed ? this.tidyFormat(active_country.highest_confirmed) + ' Cases' : ''}
-                  <span style={{float: 'right'}}>
-                    {active_country.highest.deaths ? this.tidyFormat(active_country.highest.deaths) + ' Deaths' : ''}
-                  </span>
-                </p>  
-                <CountryOverviewGraph 
-                  active_country={active_country}
-                  scale={this.state.overview_scale}
-                  width={this.props.overview_width}
-                  height={this.props.overview_height}
-                />
-              </div>
+            <div className="columns" style={{alignItems: 'center'}}>
               <div className="column is-one-third">
-                <div className="field is-grouped is-horizontal">
+                <h2 className="is-size-2 title">{selected_country}</h2>
+                <table style={{marginBottom: '10px'}}>
+                  <tbody>
+                    <tr>
+                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_confirmed)}</th>
+                        <td className="is-size-4">Cases</td>
+                    </tr>
+                    {active_country.highest_deaths ?
+                      <tr>
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_deaths)}</th>
+                          <td className="is-size-4">Death{active_country.highest_deaths == 1 ? '' : 's'}</td>
+                      </tr>
+                      :<></> }
+                      {active_country.highest_recovered ?
+                      <tr>
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_recovered)}</th>
+                          <td className="is-size-4">Recovered</td>
+                      </tr>
+                      :<></> }
+                      <tr >
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right', paddingTop: '15px'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                          <td className="is-size-4" style={{paddingTop: '15px'}}>Cases per million</td>
+                      </tr>
+                      {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                        <tr>
+                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
+                            <td className="is-size-4">Deaths per million</td>
+                        </tr>
+                      :<></> }
+                      <tr >
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right', paddingTop: active_country.highest_deaths > 1 ? '15px': 0}}>
+                            {this.tidyFormat(((latest.recovered / latest.confirmed) * 100).toFixed(0))}%
+                          </th>
+                          <td className="is-size-4" style={{paddingTop: active_country.highest_deaths > 1 ? '15px': 0}}>Recovered</td>
+                      </tr>
+                      {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                        <tr>
+                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                            {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(0))}%
+                            </th>
+                            <td className="is-size-4">Died</td>
+                        </tr>
+                      :<></> }
+                      </tbody>
+                  </table>
+                <div> 
+                  <p className="is-size-7" style={{marginTop: '20px'}}>
+                      Global data updated at <strong>{update_times.global}</strong>
+                  </p>
+                  {selected_country== 'New Zealand' ? 
+                  <>
+                      <p className="is-size-7">
+                          Nationwide data updated at <strong>{update_times.nz}</strong>
+                      </p>
+                      <p className="is-size-7">
+                          DHB data updated at <strong>{update_times.nz_regional}</strong>
+                      </p>
+                  </>
+                  : <></>}
+                </div>
+              </div>
+              <div className="column is-two-thirds">  
+              <div className="field is-grouped is-horizontal"  style={{width: "100%", justifyContent: 'flex-end'}}>
                   <div className="control">
                     <div className="select">
                       <select value={this.state.overview_scale} onChange={e => this.setState({overview_scale: e.target.value})}>
@@ -166,12 +116,19 @@ export default class CountryPage extends React.Component{
                     </div>
                   </div>
                 </div>
-                <ContentBlock/>
+                <CountryOverviewGraph 
+                  active_country={active_country}
+                  scale={this.state.overview_scale}
+                  width={this.props.overview_width}
+                  height={this.props.overview_height}
+                />
               </div>
             </div>
           </div>                
         </section>
-        }
+        { selected_country == 'New Zealand' ?
+          <NZView width={this.props.overview_width} height={this.props.overview_height}/>
+        : <></> }
         <CountryGrid 
           active_country={active_country}
           countries={countries}

@@ -49,6 +49,8 @@ export default class AdvancedCountryPage extends React.Component{
             field: full_field_name
         })
 
+        const latest = active_country.time_series[active_country.time_series.length - 1]
+
         active_country.name =  this.props.country_name
         
 
@@ -60,7 +62,7 @@ export default class AdvancedCountryPage extends React.Component{
             <SEO title={`${this.props.country_name} COVID-19 Update: ${this.state.area_label} level cumulative graphs and comparisons`}/>
             <section className="section" style={{paddingBottom: 0}}>
                 <div className="container">
-                    <div className="columns info" style={{alignItems: 'flex-end'}}>
+                    <div className="columns info" style={{justifyContent: 'space-between', alignItems: 'center'}}>
                         <div className="column is-half"> 
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <table className="subtitle">
@@ -84,8 +86,42 @@ export default class AdvancedCountryPage extends React.Component{
                                 </tbody>
                             </table>
                         </div>
-                        <div className="column is-half text-right-align-desktop"> 
-                            <p className="is-size-7">
+                        <div className="column is-narrow"> 
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                                    <td className="is-size-4">Cases per million</td>
+                                </tr>
+                                {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                                    <tr>
+                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
+                                        <td className="is-size-4">Deaths per million</td>
+                                    </tr>
+                                :<></> }
+                                <tr >
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(((latest.recovered / latest.confirmed) * 100).toFixed(0))}%
+                                    </th>
+                                    <td className="is-size-4">Recovered</td>
+                                </tr>
+                                {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                                    <tr>
+                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(0))}%
+                                        </th>
+                                        <td className="is-size-4">Died</td>
+                                    </tr>
+                                :<></> }
+                                </tbody>
+
+                            </table>
+                            
+                        </div>
+                    </div>
+                    <div className="columns">
+                        <div className="column is-half">
+                        <p className="is-size-7" style={{marginBottom: '10px'}}>
                                 Global data updated at <strong>{update_times.global}</strong>
                             </p>
                             {this.props.country_name == 'United States' ? 

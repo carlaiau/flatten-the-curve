@@ -41,6 +41,9 @@ const RegionalView = ({rows, headCells, all, width, height, area_label = "State"
               />
             </div>
             <div className="column is-two-thirds-desktop is-full-tablet">
+            <p className="title is-size-4" >
+                Cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion} 
+              </p>
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'flex-end'}}>
                 <div className="control">
                   <div className="select">
