@@ -1,7 +1,7 @@
 import React from 'react' 
 import { parseJSON, format } from "date-fns"
 import {AreaChart, Area, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
-import RegionalGraphTooltip from './regional-graph-tooltip'
+import RegionalGraphTooltip from '../regional-graph-tooltip'
 
 
 const RegionalAreaGraph = ({active_region, width, height, scale}) => {

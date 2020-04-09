@@ -64,6 +64,7 @@ export default class AdvancedCountryPage extends React.Component{
                         <div className="column is-half"> 
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <table className="subtitle">
+                                <tbody>
                                 <tr>
                                     <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_confirmed)}</th>
                                     <td className="is-size-4">Cases</td>
@@ -74,6 +75,13 @@ export default class AdvancedCountryPage extends React.Component{
                                     <td className="is-size-4">Deaths</td>
                                 </tr>
                                 :<></> }
+                                {country.highest_recovered ?
+                                <tr>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_recovered)}</th>
+                                    <td className="is-size-4">Recovered</td>
+                                </tr>
+                                :<></> }
+                                </tbody>
                             </table>
                         </div>
                         <div className="column is-half text-right-align-desktop"> 

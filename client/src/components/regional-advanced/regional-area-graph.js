@@ -1,15 +1,16 @@
 import React from 'react' 
 import { parseJSON, format } from "date-fns"
 import {AreaChart, Area, XAxis, YAxis, Tooltip, Legend, Label} from 'recharts'
-import RegionalGraphTooltip from './regional-graph-tooltip'
+import RegionalGraphTooltip from '../regional-graph-tooltip'
 
 
-const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
+const RegionalAreaGraph = ({active_region, width, height, scale}) => {
     
     
+
     const filteredData = active_region.time_series.filter(t => parseInt(t.confirmed) > 0)
-    
-    console.log(filteredData)
+
+    const latestDay = filteredData[filteredData.length - 1]
 
     let has_tests = false
     let has_confirmed = false
@@ -39,6 +40,7 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
     })
     
     
+    // note has_deaths && has_recovered logic to ensure that the one that has the least is shown in front
     
     return (
       <AreaChart width={width} height={height} data={filteredData} margin={{ bottom: 25, top: 15, right: 10, left: 10 }}>
@@ -48,7 +50,7 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
           name="Days"
           type="number"
           tickCount={8}
-          domain = {[0, active_region.time_series[active_region.time_series.length - 1].day]}
+          domain = {[0, latestDay.day]}
           >
             <Label value="Days since first confirmed case" offset={-15} position="insideBottom" />
           </XAxis>
@@ -63,11 +65,25 @@ const RegionalAreaGraph = ({active_region, width, height, scale, tidy}) => {
         { has_hospitalized ? 
           <Area type="monotone" dataKey="hospitalized" name="Hospitalized" stroke="#ff793f" fillOpacity={1} fill="#ff793f" dot={false} strokeWidth={1}/>
         : <></> }
-        { has_recovered ? 
+
+        { has_deaths && has_recovered && latestDay.deaths < latestDay.recovered ?
+          <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={0.9} fill="#2ecc71" dot={false} strokeWidth={1}/>
+          : <></> }
+        { has_deaths && has_recovered && latestDay.deaths < latestDay.recovered ?
+          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
+        : <></> }
+        { has_deaths && has_recovered && latestDay.deaths > latestDay.recovered ?
+          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
+        : <></> }
+        { has_deaths && has_recovered && latestDay.deaths > latestDay.recovered ?
           <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={0.9} fill="#2ecc71" dot={false} strokeWidth={1}/>
         : <></> }
-        { has_deaths ? 
-          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={0.9} fill="#ff5252" dot={false} strokeWidth={1}/>
+        
+        { has_recovered && ! has_deaths ? 
+          <Area type="monotone" dataKey="recovered" name="Recovered" stroke="#2ecc71" fillOpacity={1} fill="#2ecc71" dot={false} strokeWidth={1}/>
+        : <></> }
+        { ! has_recovered && has_deaths ? 
+          <Area type="monotone" dataKey="deaths" name="Deaths" stroke="#ff5252" fillOpacity={1} fill="#ff5252" dot={false} strokeWidth={1}/>
         : <></> }
        
         
