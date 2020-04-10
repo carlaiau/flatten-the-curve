@@ -2,16 +2,17 @@
   {
     "name": "Southern",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 199,
       "probable": 17,
       "confirmed": 182,
       "genders": {
-        "Male": 95,
-        "Female": 104
+        "Female": 104,
+        "Male": 95
       },
       "ages": {
+        "20 to 29": 1,
         "15 to 19": 12,
         "40 to 49": 25,
         "20 to 29": 57,
@@ -22,8 +23,7 @@
         "<1": 1,
         "5 to 9": 1,
         "10 to 14": 4,
-        "1 to 4": 1,
-        "20 to 29": 1
+        "1 to 4": 1
       }
     },
     "time_series": [
@@ -532,12 +532,12 @@
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
-        "total": 199,
+        "total": 198,
         "probable": 17,
-        "confirmed": 182,
+        "confirmed": 181,
         "genders": {
           "Male": 95,
-          "Female": 104
+          "Female": 103
         },
         "ages": {
           "15 to 19": 12,
@@ -550,8 +550,32 @@
           "<1": 1,
           "5 to 9": 1,
           "10 to 14": 4,
-          "1 to 4": 1,
-          "20 to 29": 1
+          "1 to 4": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 199,
+        "probable": 17,
+        "confirmed": 182,
+        "genders": {
+          "Female": 104,
+          "Male": 95
+        },
+        "ages": {
+          "20 to 29": 1,
+          "15 to 19": 12,
+          "40 to 49": 25,
+          "20 to 29": 57,
+          "50 to 59": 41,
+          "30 to 39": 26,
+          "60 to 69": 23,
+          "70+": 7,
+          "<1": 1,
+          "5 to 9": 1,
+          "10 to 14": 4,
+          "1 to 4": 1
         }
       }
     ]
@@ -559,8 +583,8 @@
   {
     "name": "Waitemata",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 171,
       "probable": 49,
       "confirmed": 122,
@@ -570,8 +594,8 @@
         "Undefined": 1
       },
       "ages": {
-        "20 to 29": 48,
         "40 to 49": 28,
+        "20 to 29": 48,
         "50 to 59": 27,
         "30 to 39": 20,
         "10 to 14": 9,
@@ -1286,6 +1310,31 @@
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
+        "total": 170,
+        "probable": 49,
+        "confirmed": 121,
+        "genders": {
+          "Female": 88,
+          "Male": 81,
+          "Undefined": 1
+        },
+        "ages": {
+          "20 to 29": 48,
+          "40 to 49": 27,
+          "50 to 59": 27,
+          "30 to 39": 20,
+          "10 to 14": 9,
+          "60 to 69": 17,
+          "15 to 19": 11,
+          "Unknown": 1,
+          "70+": 8,
+          "20 to 29": 1,
+          "5 to 9": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
         "total": 171,
         "probable": 49,
         "confirmed": 122,
@@ -1295,8 +1344,8 @@
           "Undefined": 1
         },
         "ages": {
-          "20 to 29": 48,
           "40 to 49": 28,
+          "20 to 29": 48,
           "50 to 59": 27,
           "30 to 39": 20,
           "10 to 14": 9,
@@ -1313,8 +1362,8 @@
   {
     "name": "Auckland",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 157,
       "probable": 31,
       "confirmed": 126,
@@ -2054,14 +2103,37 @@
           "15 to 19": 9,
           "70+": 6
         }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 157,
+        "probable": 31,
+        "confirmed": 126,
+        "genders": {
+          "Female": 88,
+          "Male": 69
+        },
+        "ages": {
+          "30 to 39": 25,
+          "50 to 59": 19,
+          "10 to 14": 7,
+          "20 to 29": 42,
+          "5 to 9": 2,
+          "1 to 4": 1,
+          "60 to 69": 24,
+          "40 to 49": 22,
+          "15 to 19": 9,
+          "70+": 6
+        }
       }
     ]
   },
   {
     "name": "Canterbury",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 119,
       "probable": 47,
       "confirmed": 72,
@@ -2531,14 +2603,36 @@
           "15 to 19": 5,
           "1 to 4": 2
         }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 119,
+        "probable": 47,
+        "confirmed": 72,
+        "genders": {
+          "Female": 76,
+          "Male": 42,
+          "Undefined": 1
+        },
+        "ages": {
+          "60 to 69": 11,
+          "30 to 39": 19,
+          "50 to 59": 19,
+          "20 to 29": 27,
+          "70+": 20,
+          "40 to 49": 16,
+          "15 to 19": 5,
+          "1 to 4": 2
+        }
       }
     ]
   },
   {
     "name": "Capital and Coast",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 83,
       "probable": 17,
       "confirmed": 66,
@@ -3059,14 +3153,37 @@
           "10 to 14": 2,
           "70+": 4
         }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 83,
+        "probable": 17,
+        "confirmed": 66,
+        "genders": {
+          "Female": 40,
+          "Male": 43
+        },
+        "ages": {
+          "20 to 29": 16,
+          "40 to 49": 10,
+          "5 to 9": 1,
+          "50 to 59": 17,
+          "30 to 39": 16,
+          "1 to 4": 1,
+          "60 to 69": 14,
+          "15 to 19": 2,
+          "10 to 14": 2,
+          "70+": 4
+        }
       }
     ]
   },
   {
     "name": "Counties Manukau",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 94,
       "probable": 17,
       "confirmed": 77,
@@ -3785,14 +3902,39 @@
           "<1": 1,
           "70+": 1
         }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 94,
+        "probable": 17,
+        "confirmed": 77,
+        "genders": {
+          "Female": 51,
+          "Male": 42,
+          "Undefined": 1
+        },
+        "ages": {
+          "40 to 49": 17,
+          "20 to 29": 22,
+          "60 to 69": 12,
+          "50 to 59": 16,
+          "30 to 39": 13,
+          "5 to 9": 1,
+          "15 to 19": 6,
+          "10 to 14": 4,
+          "1 to 4": 1,
+          "<1": 1,
+          "70+": 1
+        }
       }
     ]
   },
   {
     "name": "Bay of Plenty",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 40,
       "probable": 12,
       "confirmed": 28,
@@ -4131,6 +4273,26 @@
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
+        "total": 40,
+        "probable": 12,
+        "confirmed": 28,
+        "genders": {
+          "Female": 22,
+          "Male": 18
+        },
+        "ages": {
+          "50 to 59": 5,
+          "40 to 49": 7,
+          "15 to 19": 1,
+          "20 to 29": 11,
+          "30 to 39": 6,
+          "60 to 69": 4,
+          "70+": 6
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
         "total": 40,
         "probable": 12,
         "confirmed": 28,
@@ -4987,8 +5149,8 @@
   {
     "name": "Waikato",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "total": 163,
       "probable": 21,
       "confirmed": 142,
@@ -5462,6 +5624,30 @@
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
+        "total": 163,
+        "probable": 21,
+        "confirmed": 142,
+        "genders": {
+          "Female": 87,
+          "Undefined": 1,
+          "Male": 75
+        },
+        "ages": {
+          "60 to 69": 24,
+          "40 to 49": 31,
+          "30 to 39": 25,
+          "50 to 59": 28,
+          "15 to 19": 10,
+          "20 to 29": 29,
+          "70+": 11,
+          "5 to 9": 1,
+          "10 to 14": 1,
+          "1 to 4": 3
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
         "total": 163,
         "probable": 21,
         "confirmed": 142,
@@ -9108,12 +9294,13 @@
   {
     "name": "All",
     "highest": {
-      "dateObject": "2020-04-08T00:00:00.000Z",
-      "dateForSort": "20200408",
+      "dateObject": "2020-04-09T00:00:00.000Z",
+      "dateForSort": "20200409",
       "confirmed": 990,
       "total": 1235,
       "probable": 245,
       "ages": {
+        "20 to 29": 2,
         "15 to 19": 64,
         "40 to 49": 179,
         "20 to 29": 303,
@@ -9125,12 +9312,11 @@
         "5 to 9": 7,
         "10 to 14": 31,
         "1 to 4": 11,
-        "20 to 29": 2,
         "Unknown": 1
       },
       "genders": {
-        "Male": 563,
         "Female": 666,
+        "Male": 563,
         "Undefined": 6
       }
     },
@@ -9975,10 +10161,38 @@
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
+        "confirmed": 988,
+        "total": 1233,
+        "probable": 245,
+        "ages": {
+          "15 to 19": 64,
+          "40 to 49": 178,
+          "20 to 29": 303,
+          "50 to 59": 208,
+          "30 to 39": 184,
+          "60 to 69": 154,
+          "70+": 89,
+          "<1": 2,
+          "5 to 9": 7,
+          "10 to 14": 31,
+          "1 to 4": 11,
+          "Unknown": 1,
+          "20 to 29": 1
+        },
+        "genders": {
+          "Male": 563,
+          "Female": 664,
+          "Undefined": 6
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
         "confirmed": 990,
         "total": 1235,
         "probable": 245,
         "ages": {
+          "20 to 29": 2,
           "15 to 19": 64,
           "40 to 49": 179,
           "20 to 29": 303,
@@ -9990,12 +10204,11 @@
           "5 to 9": 7,
           "10 to 14": 31,
           "1 to 4": 11,
-          "20 to 29": 2,
           "Unknown": 1
         },
         "genders": {
-          "Male": 563,
           "Female": 666,
+          "Male": 563,
           "Undefined": 6
         }
       }

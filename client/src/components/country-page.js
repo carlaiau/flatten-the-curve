@@ -69,7 +69,7 @@ export default class CountryPage extends React.Component{
                       </tr>
                       {active_country.highest_deaths && active_country.highest_deaths > 1 ?
                         <tr>
-                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
+                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(1))}</th>
                             <td className="is-size-4">Deaths per million</td>
                         </tr>
                       :<></> }
@@ -82,7 +82,7 @@ export default class CountryPage extends React.Component{
                       {active_country.highest_deaths && active_country.highest_deaths > 1 ?
                         <tr>
                             <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
-                            {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(0))}%
+                            {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(1))}%
                             </th>
                             <td className="is-size-4">Died</td>
                         </tr>
