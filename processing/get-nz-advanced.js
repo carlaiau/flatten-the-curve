@@ -33,10 +33,6 @@ const getCases = (html) => {
                     age: cells[2].trim(),
                     district: cells[3].trim(),
                     travel: cells[4].trim(),
-                    last_country: cells[5].trim(),
-                    arrival_date: cells[6].trim(),
-                    flight_departure_date: cells[7].trim(),
-                    flight_number: cells[8].trim(),
                     type: i == 0 ? 'confirmed' : 'probable',
                     
                 })
