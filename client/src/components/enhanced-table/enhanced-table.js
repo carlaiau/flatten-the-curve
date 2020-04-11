@@ -121,8 +121,8 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                 padding-bottom: 0;
               }
             }
-            
           }
+          
       }
       td.MuiTableCell-body{
           text-align: right;
@@ -225,6 +225,10 @@ const EnhancedTable = ({rows = [], headCells = [], tidy = new Intl.NumberFormat(
                   .MuiTypography-body2{
                       font-size: 9px;
                   }
+              }
+              @media screen and (max-width: 420px){
+                width: 100%;
+                margin-left: 0;
               }
           }
       }
