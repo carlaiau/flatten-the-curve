@@ -76,7 +76,7 @@ export default class CountryPage extends React.Component{
                       {country.highest_recovered ?
                       <tr>
                           <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
-                              {this.tidyFormat(country.highest_deaths - country.time_series[country.time_series.length - 2].deaths)}
+                              {this.tidyFormat(country.highest_recovered - country.time_series[country.time_series.length - 2].recovered)}
                           </th>
                           <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
                               {this.tidyFormat(country.highest_recovered)}
