@@ -35,7 +35,7 @@ export default class CountryPage extends React.Component{
     const active_country = SetupCountry({
       country: countries.filter( (c) => c.name ===  this.state.selected_country )[0]
     })
-
+    const country = active_country
     const latest = active_country.time_series[active_country.time_series.length - 1]
     
     return (<>
@@ -48,43 +48,70 @@ export default class CountryPage extends React.Component{
                 <table style={{marginBottom: '10px'}}>
                   <tbody>
                     <tr>
-                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_confirmed)}</th>
-                        <td className="is-size-4">Cases</td>
+                        <td className="is-size-6" style={{paddingRight: '10px', textAlign: 'right'}}>Daily Change</td>
+                        <td className="is-size-6" style={{paddingRight: '5px', textAlign: 'right'}}>Total</td>
                     </tr>
-                    {active_country.highest_deaths ?
                       <tr>
-                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_deaths)}</th>
-                          <td className="is-size-4">Death{active_country.highest_deaths == 1 ? '' : 's'}</td>
+                      <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_confirmed - country.time_series[country.time_series.length - 2].confirmed)}
+                          </th>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_confirmed)}
+                          </th>
+                          
+                          <td className="is-size-6"style={{verticalAlign: 'middle'}}>Cases</td>
+                      </tr>
+                      {country.highest_deaths ?
+                      <tr>
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_deaths - country.time_series[country.time_series.length - 2].deaths)}
+                          </th>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_deaths)}
+                          </th>
+                          
+                          <td className="is-size-6" style={{verticalAlign: 'middle'}}>Deaths</td>
                       </tr>
                       :<></> }
-                      {active_country.highest_recovered ?
+                      {country.highest_recovered ?
                       <tr>
-                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(active_country.highest_recovered)}</th>
-                          <td className="is-size-4">Recovered</td>
+                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_deaths - country.time_series[country.time_series.length - 2].deaths)}
+                          </th>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                              {this.tidyFormat(country.highest_recovered)}
+                          </th>
+                          
+                          <td className="is-size-6" style={{verticalAlign: 'middle'}}>Recovered</td>
                       </tr>
                       :<></> }
+                      </tbody>
+                      </table>
+                      <table>
+
+                      <tbody>
                       <tr >
-                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right', paddingTop: '15px'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
-                          <td className="is-size-4" style={{paddingTop: '15px'}}>Cases per million</td>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right', paddingTop: '15px'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                          <td className="is-size-6" style={{paddingTop: '15px', verticalAlign: 'middle'}}>Cases per million</td>
                       </tr>
-                      {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                      {active_country.highest_deaths && active_country.highest_deaths > 10 ?
                         <tr>
-                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(1))}</th>
-                            <td className="is-size-4">Deaths per million</td>
+                            <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(1))}</th>
+                            <td className="is-size-6" style={{verticalAlign: 'middle'}}>Deaths per million</td>
                         </tr>
                       :<></> }
                       <tr >
-                          <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right', paddingTop: active_country.highest_deaths > 1 ? '15px': 0}}>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
                             {this.tidyFormat(((latest.recovered / latest.confirmed) * 100).toFixed(0))}%
                           </th>
-                          <td className="is-size-4" style={{paddingTop: active_country.highest_deaths > 1 ? '15px': 0}}>Recovered</td>
+                          <td className="is-size-6" style={{verticalAlign: 'middle'}}>Recovered</td>
                       </tr>
-                      {active_country.highest_deaths && active_country.highest_deaths > 1 ?
+                      {active_country.highest_deaths && active_country.highest_deaths > 10 ?
                         <tr>
-                            <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                            <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
                             {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(1))}%
                             </th>
-                            <td className="is-size-4">Died</td>
+                            <td className="is-size-6" style={{verticalAlign: 'middle'}}>Died</td>
                         </tr>
                       :<></> }
                       </tbody>

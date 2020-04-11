@@ -67,20 +67,43 @@ export default class AdvancedCountryPage extends React.Component{
                             <h2 className="is-size-3 title">{this.props.country_name}</h2>
                             <table className="subtitle">
                                 <tbody>
+                                    <tr>
+                                        <td className="is-size-6" style={{paddingRight: '10px', textAlign: 'right'}}>Daily Change</td>
+                                        <td className="is-size-6" style={{paddingRight: '5px', textAlign: 'right'}}>Total</td>
+                                        
+                                    </tr>
                                 <tr>
-                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_confirmed)}</th>
-                                    <td className="is-size-4">Cases</td>
+                                <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_confirmed - country.time_series[country.time_series.length - 2].confirmed)}
+                                    </th>
+                                    <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_confirmed)}
+                                    </th>
+                                    
+                                    <td className="is-size-6"style={{verticalAlign: 'middle'}}>Cases</td>
                                 </tr>
                                 {country.highest_deaths ?
                                 <tr>
-                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_deaths)}</th>
-                                    <td className="is-size-4">Deaths</td>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_deaths - country.time_series[country.time_series.length - 2].deaths)}
+                                    </th>
+                                    <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_deaths)}
+                                    </th>
+                                    
+                                    <td className="is-size-6"style={{verticalAlign: 'middle'}}>Deaths</td>
                                 </tr>
                                 :<></> }
                                 {country.highest_recovered ?
                                 <tr>
-                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(country.highest_recovered)}</th>
-                                    <td className="is-size-4">Recovered</td>
+                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_deaths - country.time_series[country.time_series.length - 2].deaths)}
+                                    </th>
+                                    <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
+                                        {this.tidyFormat(country.highest_recovered)}
+                                    </th>
+                                    
+                                    <td className="is-size-6" style={{verticalAlign: 'middle'}}>Recovered</td>
                                 </tr>
                                 :<></> }
                                 </tbody>
@@ -90,27 +113,27 @@ export default class AdvancedCountryPage extends React.Component{
                             <table>
                                 <tbody>
                                 <tr>
-                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
-                                    <td className="is-size-4">Cases per million</td>
+                                    <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                                    <td className="is-size-6" style={{verticalAlign: 'middle'}}>Cases per million</td>
                                 </tr>
                                 {active_country.highest_deaths && active_country.highest_deaths > 1 ?
                                     <tr>
-                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
-                                        <td className="is-size-4">Deaths per million</td>
+                                        <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(0))}</th>
+                                        <td className="is-size-6" style={{verticalAlign: 'middle'}}>Deaths per million</td>
                                     </tr>
                                 :<></> }
                                 <tr >
-                                    <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                    <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
                                         {this.tidyFormat(((latest.recovered / latest.confirmed) * 100).toFixed(0))}%
                                     </th>
-                                    <td className="is-size-4">Recovered</td>
+                                    <td className="is-size-6" style={{verticalAlign: 'middle'}}>Recovered</td>
                                 </tr>
                                 {active_country.highest_deaths && active_country.highest_deaths > 1 ?
                                     <tr>
-                                        <th className="is-size-4" style={{paddingRight: '10px', textAlign: 'right'}}>
+                                        <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>
                                         {this.tidyFormat(((latest.deaths / latest.confirmed) * 100).toFixed(0))}%
                                         </th>
-                                        <td className="is-size-4">Died</td>
+                                        <td className="is-size-6" style={{verticalAlign: 'middle'}}>Died</td>
                                     </tr>
                                 :<></> }
                                 </tbody>
@@ -121,7 +144,7 @@ export default class AdvancedCountryPage extends React.Component{
                     </div>
                     <div className="columns">
                         <div className="column is-half">
-                        <p className="is-size-7" style={{marginBottom: '10px'}}>
+                        <p className="is-size-7">
                                 Global data updated at <strong>{update_times.global}</strong>
                             </p>
                             {this.props.country_name == 'United States' ? 
