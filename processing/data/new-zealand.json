@@ -304,7 +304,7 @@
     },
     {
       "date": "2020-04-11T00:00:00.000Z",
-      "confirmed": 1340,
+      "confirmed": 1330,
       "confirmed_per_mil": 274.281035718,
       "deaths": 4,
       "deaths_per_mil": 0.81874936,
@@ -313,7 +313,7 @@
     }
 
   ],
-  "highest_confirmed": 1340,
+  "highest_confirmed": 1330,
   "highest_deaths": 4,
   "highest_tests": 	61167,
   "highest_recovered": 471,
