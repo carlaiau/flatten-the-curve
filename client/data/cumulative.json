@@ -64571,7 +64571,7 @@
     ]
   },
   {
-    "highest_confirmed": 1312,
+    "highest_confirmed": 1340,
     "highest_deaths": 4,
     "population": 4885500,
     "name": "New Zealand",
@@ -64678,6 +64678,11 @@
             "num_day": 19,
             "date": "2020-04-10T00:00:00.000Z",
             "confirmed": 1312
+          },
+          {
+            "num_day": 20,
+            "date": "2020-04-11T00:00:00.000Z",
+            "confirmed": 1340
           }
         ]
       },
@@ -64768,6 +64773,11 @@
             "num_day": 16,
             "date": "2020-04-10T00:00:00.000Z",
             "confirmed": 1312
+          },
+          {
+            "num_day": 17,
+            "date": "2020-04-11T00:00:00.000Z",
+            "confirmed": 1340
           }
         ]
       },
@@ -64843,6 +64853,11 @@
             "num_day": 13,
             "date": "2020-04-10T00:00:00.000Z",
             "confirmed": 1312
+          },
+          {
+            "num_day": 14,
+            "date": "2020-04-11T00:00:00.000Z",
+            "confirmed": 1340
           }
         ]
       },
@@ -64883,6 +64898,11 @@
             "num_day": 6,
             "date": "2020-04-10T00:00:00.000Z",
             "confirmed": 1312
+          },
+          {
+            "num_day": 7,
+            "date": "2020-04-11T00:00:00.000Z",
+            "confirmed": 1340
           }
         ]
       },
