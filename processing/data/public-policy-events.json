@@ -1,0 +1,218 @@
+[
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed according to state recommendation March 15 2020, extended until May 1 on March 31 2020",
+		"policyURLReference": "https://www.maine.gov/governor/mills/sites/maine.gov.governor.mills/files/inline-files/Corrected%202_%20An%20Order%20Regarding%20Further%20Restrictions%20on%20Public%20Contact%20and%20Movement%2C%20Schools%2C%20Vehicle%20Travel%20and%20Retail%20Business%20Operations_0.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "ME"
+	},
+	{
+		"policyEffectiveDate": "2020-03-18",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "https://www.maine.gov/governor/mills/sites/maine.gov.governor.mills/files/inline-files/EO%2014%20An%20Order%20to%20Protect%20Public%20Health.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "ME"
+	},
+	{
+		"policyEffectiveDate": "2020-03-18",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Groups reduction",
+		"policyURLReference": "https://www.maine.gov/governor/mills/sites/maine.gov.governor.mills/files/inline-files/EO%2014%20An%20Order%20to%20Protect%20Public%20Health.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "ME"
+	},
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "https://governor.vermont.gov/sites/scott/files/documents/Directive%201%20-%20Continuity%20of%20Education%20Planning.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "VT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-23",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "https://governor.vermont.gov/sites/scott/files/documents/ADDENDUM%205%20TO%20EXECUTIVE%20ORDER%2001-20.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "VT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-13",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 250",
+		"policyURLReference": "",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "VT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 50",
+		"policyURLReference": "",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "VT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-16",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed March 16; extended until May 4 on March 27",
+		"policyURLReference": "https://www.governor.nh.gov/news-media/emergency-orders/documents/emergency-order-19.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "NH"
+	},
+	{
+		"policyEffectiveDate": "2020-03-26",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "https://www.governor.nh.gov/news-media/emergency-orders/documents/emergency-order-17-1.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "NH"
+	},
+	{
+		"policyEffectiveDate": "2020-03-16",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 50",
+		"policyURLReference": "https://www.governor.nh.gov/news-media/emergency-orders/documents/emergency-order-16.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "NH"
+	},
+	{
+		"policyEffectiveDate": "2020-03-23",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 10",
+		"policyURLReference": "https://www.governor.nh.gov/news-media/emergency-orders/documents/emergency-order-16.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "NH"
+	},
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed March 15; extended March 25",
+		"policyURLReference": "https://www.mass.gov/doc/march-25-school-closure-extension-order/download",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "MA"
+	},
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Closed March 23, extended March 31",
+		"policyURLReference": "https://www.mass.gov/doc/march-31-2020-essential-services-extension-order/download",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "MA"
+	},
+	{
+		"policyEffectiveDate": "2020-03-23",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Essential services",
+		"policyURLReference": "https://www.mass.gov/doc/march-31-2020-essential-services-extension-order/download",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "MA"
+	},
+	{
+		"policyEffectiveDate": "2020-03-15",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed March 15, extended until at least April 20 on March 24",
+		"policyURLReference": "https://portal.ct.gov/-/media/Office-of-the-Governor/Executive-Orders/Lamont-Executive-Orders/Executive-Order-No-7L.pdf?la=en",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "CT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-20",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "https://portal.ct.gov/-/media/Office-of-the-Governor/Executive-Orders/Lamont-Executive-Orders/Executive-Order-No-7H.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "CT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-12",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 250",
+		"policyURLReference": "https://portal.ct.gov/-/media/Office-of-the-Governor/Executive-Orders/Lamont-Executive-Orders/Executive-Order-No-7N.pdf?la=en",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "CT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-16",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 50",
+		"policyURLReference": "https://portal.ct.gov/-/media/Office-of-the-Governor/Executive-Orders/Lamont-Executive-Orders/Executive-Order-No-7N.pdf?la=en",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "CT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-26",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 5 (religious services allowed 50)",
+		"policyURLReference": "https://portal.ct.gov/-/media/Office-of-the-Governor/Executive-Orders/Lamont-Executive-Orders/Executive-Order-No-7N.pdf?la=en",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "CT"
+	},
+	{
+		"policyEffectiveDate": "2020-03-13",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed for one week, moving break early",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-09.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-22",
+		"policyDirective": "SCHOOL_RESTRICTION",
+		"policyDescr": "Closed",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-09.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-16",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "On-premisis consumption",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-14.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-22",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Close contact businesses",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-14.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-30",
+		"policyDirective": "STORE_RESTRICTION",
+		"policyDescr": "Close non-essential businesses",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-14.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-16",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 25",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-04.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-22",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 10",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-09.pdf.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	},
+	{
+		"policyEffectiveDate": "2020-03-30",
+		"policyDirective": "EVENT_RESTRICTION",
+		"policyDescr": "Limited to groups of 5",
+		"policyURLReference": "http://www.governor.ri.gov/documents/orders/Executive-Order-20-15.pdf",
+		"policyCountry": "US",
+		"policyPrincipalSubdivision": "RI"
+	}
+]
