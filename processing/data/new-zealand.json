@@ -337,12 +337,21 @@
       "deaths_per_mil": 1.842186061,
       "tests":  66499,
       "recovered": 728
+    },
+    {
+      "date": "2020-04-15T00:00:00.000Z",
+      "confirmed": 1401,
+      "confirmed_per_mil": 286.766963463,
+      "deaths": 9,
+      "deaths_per_mil": 1.842186061,
+      "tests":  70160,
+      "recovered": 770
     }
 
   ],
-  "highest_confirmed": 1386,
+  "highest_confirmed": 1401,
   "highest_deaths": 9,
-  "highest_tests": 	66499,
-  "highest_recovered": 728,
+  "highest_tests": 	70160,
+  "highest_recovered": 770,
   "population": 4885500
 }

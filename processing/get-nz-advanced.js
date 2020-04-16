@@ -17,7 +17,6 @@ const getCases = (html) => {
         const rows = $(this).children('tr')
         // Prevent duplication when MoH adds same table twice, this will obviously break if
         // confirmed count == probable count
-        console.log(rows.length)
         if(! row_counts_encountered.includes(rows.length)){
             $(rows).each(function(){
 
@@ -29,12 +28,9 @@ const getCases = (html) => {
                 
                 cases.push({
                     original_date: cells[0].trim(),
-                    gender: cells[1].trim(),
                     age: cells[2].trim(),
                     district: cells[3].trim(),
-                    travel: cells[4].trim(),
                     type: i == 0 ? 'confirmed' : 'probable',
-                    
                 })
                     
             })
@@ -48,7 +44,7 @@ const getCases = (html) => {
         }
 
     })
-    console.log(cases.length)
+    console.log("all cases", cases.length)
     return cases
 }
 
@@ -72,11 +68,6 @@ const createStructuredCases = (cases_by_district) => {
                 day.total += 1
                 day.confirmed += c.type == 'confirmed' ? 1 : 0
                 day.probable += c.type != 'confirmed' ? 1 : 0
-                if(day.genders.hasOwnProperty(c.gender))
-                    day.genders[c.gender] += 1
-                else
-                    day.genders[c.gender == "" ? 'Undefined' : c.gender] = 1
-
                 if(c.age != ""){
                     if(day.ages.hasOwnProperty(c.age))
                         day.ages[c.age] += 1
@@ -90,10 +81,7 @@ const createStructuredCases = (cases_by_district) => {
                     dateForSort: c.dateForSort,
                     total: 1,
                     confirmed: c.type == 'confirmed' ? 1 : 0,
-                    probable: c.type != 'confirmed' ? 1 : 0,
-                    genders: {
-                        [c.gender == "" ? 'Undefined' : c.gender]: 1
-                    },
+                    probable: c.type != 'confirmed' ? 1 : 0
                 }
                 if(c.age != ""){
                     d.structured_cases[c.dateForSort].ages = {
@@ -126,15 +114,11 @@ const createTimeSeries = (cases_by_district) => {
                     dateForSort: format(parseISO(day.dateObject),'yyyyMMdd'),
                     total: day.total + previous.total,
                     probable: day.probable + previous.probable,
-                    confirmed: day.confirmed + previous.confirmed,
-                    genders: {},
+                    confirmed: day.confirmed + previous.confirmed,  
                     ages: {}
                 }
                 _.forEach(day.ages, (val, key) => {
                     new_day.ages[key] = val
-                })
-                _.forEach(day.genders, (val, key) => {
-                    new_day.genders[key] = val
                 })
 
                 _.forEach(previous.ages, (val, key) => {
@@ -144,12 +128,6 @@ const createTimeSeries = (cases_by_district) => {
                         new_day.ages[key] = val
                 })
 
-                _.forEach(previous.genders, (val, key) => {
-                    if(new_day.genders.hasOwnProperty(key))
-                        new_day.genders[key] += val
-                    else 
-                        new_day.genders[key] = val
-                })
 
                 let since_last = differenceInCalendarDays(parseISO(new_day.dateObject), parseISO(previous.dateObject))
                 if(since_last > 0){
@@ -230,9 +208,6 @@ const createTimeSeries = (cases_by_district) => {
             _.forEach(today.ages, (val, key) => {
                 yesterday.ages[key] = val
             })
-            _.forEach(today.genders, (val, key) => {
-                yesterday.genders[key] = val
-            })
             d.time_series = d.time_series.slice(0, d.time_series.length - 1)
         }
     })
@@ -254,7 +229,6 @@ const createTimeSeries = (cases_by_district) => {
             total: 0,
             probable: 0,
             ages: {},
-            genders: {}
         }
         cases_by_district.forEach(d => {
             d.time_series.filter(d => d.dateForSort == date).forEach(d => {
@@ -270,12 +244,6 @@ const createTimeSeries = (cases_by_district) => {
                         time_series_obj.ages[key] = val
                 })
 
-                _.forEach(d.genders, (val, key) => {
-                    if(time_series_obj.genders.hasOwnProperty(key))
-                        time_series_obj.genders[key] += val
-                    else 
-                        time_series_obj.genders[key] = val
-                })
             })
         })
 

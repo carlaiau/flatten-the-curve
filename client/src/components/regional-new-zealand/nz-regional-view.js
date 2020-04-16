@@ -20,21 +20,16 @@ const NZRegionalView = ({width, height}) => {
                 dateObject
                 ages {
                   _1
-                  _10_to_14
-                  _15_to_19
-                  _1_to_4
-                  _20_to_29
-                  _30_to_39
-                  _40_to_49
-                  _50_to_59
-                  _5_to_9
-                  _60_to_69
-                  _70_
-                }
-                genders {
-                  Female
-                  Male
-                  Undefined
+          _70_
+          _10_to_14
+          _15_to_19
+          _1_to_4
+          _20_to_29
+          _30_to_39
+          _40_to_49
+          _50_to_59
+          _5_to_9
+          _60_to_69
                 }
               }
               highest {
@@ -43,23 +38,18 @@ const NZRegionalView = ({width, height}) => {
                 confirmed
                 dateForSort
                 dateObject
-                genders {
-                  Female
-                  Male
-                  Undefined
-                }
                 ages {
                   _1
-                  _10_to_14
-                  _15_to_19
-                  _20_to_29
-                  _1_to_4
-                  _30_to_39
-                  _40_to_49
-                  _50_to_59
-                  _60_to_69
-                  _5_to_9
-                  _70_
+          _70_
+          _10_to_14
+          _15_to_19
+          _1_to_4
+          _20_to_29
+          _30_to_39
+          _40_to_49
+          _50_to_59
+          _5_to_9
+          _60_to_69
                 }
               }
             }
@@ -104,7 +94,7 @@ const NZRegionalView = ({width, height}) => {
                       <strong className="has-text-white">
                         here
                       </strong>
-                    </a>. Click on a row to see the data for that region.</p>
+                    </a>. <strong className="has-text-white">There is an issue with this data</strong>. Click on a row to see the data for that region.</p>
 
                       
                     <p className="has-text-white is-size-7" style={{marginTop: '10px'}}>
