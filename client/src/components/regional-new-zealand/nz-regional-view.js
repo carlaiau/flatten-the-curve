@@ -82,7 +82,7 @@ const NZRegionalView = ({width, height}) => {
             <div className="column is-one-third-desktop is-full-tablet">
               <div className="box has-background-success">
                   <h3 className="is-size-4 title has-text-white title">
-                      View by DHB
+                    April cases by DHB
                   </h3>
                   <p className="is-size-6 subtitle has-text-white">
                     We use the Ministry of Health current case data found 
@@ -94,7 +94,7 @@ const NZRegionalView = ({width, height}) => {
                       <strong className="has-text-white">
                         here
                       </strong>
-                    </a>. <strong className="has-text-white">There is an issue with this data</strong>. Click on a row to see the data for that region.</p>
+                    </a>. Click on a row to see the data for that region.</p>
 
                       
                     <p className="has-text-white is-size-7" style={{marginTop: '10px'}}>
@@ -113,7 +113,7 @@ const NZRegionalView = ({width, height}) => {
             </div>
             <div className="column is-two-thirds-desktop is-full-tablet">
               <p className="title is-size-4" >
-                Total and confirmed cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                April total and confirmed cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
               </p>
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'flex-end'}}>
                 
@@ -137,7 +137,7 @@ const NZRegionalView = ({width, height}) => {
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'space-between', marginTop: '50px'}}>
                 <div className="control">
                   <p className="title is-size-4" >
-                    Age groups {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                    April Age groups {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
                   </p>
                 </div>
                 <div className="control">
