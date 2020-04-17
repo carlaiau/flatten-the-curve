@@ -18,101 +18,6 @@ export default class CumulativeGraphContainer extends React.Component{
             max_area_count: props.max_area_count || 30,
             scale: 'log',
             
-            growth: {
-                label: "Doubles every 3 days",
-                value: 1.25992105
-            },            
-            growth_options: [
-                {
-                    label: "Doubles every day",
-                    value: 2.00
-                },
-                {
-                    label: "Doubles every 2 days",
-                    value: 1.414213562
-                },
-                {
-                    label: "Doubles every 3 days",
-                    value: 1.25992105
-                },
-                {
-                    label: "Doubles every 4 days",
-                    value: 1.189207115
-                },
-                {
-                    label: "Doubles every 5 days",
-                    value: 1.148698355
-                },
-                {
-                    label: "Doubles every 6 days",
-                    value: 1.122462048
-                },
-                {
-                    label: "Doubles every week",
-                    value: 1.104089514
-                },
-                {
-                    label: "Doubles every fortnight",
-                    value: 1.050756639
-                },
-                {
-                    label: "5% Daily Growth",
-                    value: 1.05
-                },
-                {
-                    label: "10% Daily Growth",
-                    value: 1.1
-                },
-
-                {
-                    label: "20% Daily Growth",
-                    value: 1.2
-                },
-                {
-                    label: "25% Daily Growth",
-                    value: 1.25
-                },
-                {
-                    label: "30% Daily Growth",
-                    value: 1.3
-                },
-                {
-                    label: "33% Daily Growth",
-                    value: 1.33
-                },
-                {
-                    label: "35% Daily Growth",
-                    value: 1.35
-                },
-                {
-                    label: "40% Daily Growth",
-                    value: 1.4
-                },
-                {
-                    label: "50% Daily Growth",
-                    value: 1.5
-                },
-                {
-                    label: "60% Daily Growth",
-                    value: 1.6
-                },
-                {
-                    label: "70% Daily Growth",
-                    value: 1.7
-                },
-                {
-                    label: "80% Daily Growth",
-                    value: 1.8
-                },
-                {
-                    label: "90% Daily Growth",
-                    value: 1.9
-                },
-                {
-                    label: "100% Daily Growth",
-                    value: 2.0
-                },
-            ]
             
             
         }
@@ -188,16 +93,12 @@ export default class CumulativeGraphContainer extends React.Component{
                             
                             accumulateFrom={this.state.accumulateFrom}
                             accumulateOptions={this.props.accumulateOptions}
-
-                            growth={this.state.growth}
-                            growth_options={this.state.growth_options}
                             show_all_areas={this.state.show_all_areas}
                             scaleFn={e => {this.setState({scale: e.target.value})}}
                             checkFn={e => this.areaChecked(e.target.value) }
                             clearFn={e => this.setState({checkedAreas: []})}
                             allFn={ (areas) => this.setState({checkedAreas: areas.map(a => a.name)})}
                             caseFn={e => {this.setState({accumulateFrom: e.target.value})}}
-                            growthFn={e => this.setState({growth: this.state.growth_options.find(g => e.target.value == g.value)}) }
                             maxCountFn={e => this.setState({show_all_areas: ! this.state.show_all_areas})}
                         />
                         
@@ -215,7 +116,6 @@ export default class CumulativeGraphContainer extends React.Component{
                         accumulateFrom={this.state.accumulateFrom}
                         max_area_count={this.state.max_area_count} 
                         show_all_areas={this.state.show_all_areas}
-                        growth={this.state.growth}
                         areas_to_graph={this.state.checkedAreas}/>
                 </div>
             </GraphContainer>  

@@ -13,10 +13,6 @@ const CumulativeGraph = ({
     areas_to_graph = [], 
     field = 'confirmed', 
     max_days = 30, 
-    growth = {
-        label: "Doubles every 3 days",
-        value: 1.25992105
-    }, 
     scale="log",
     accumulateFrom
 
@@ -84,24 +80,7 @@ const CumulativeGraph = ({
 
     
 
-    // Make one big array of objects 
-    if(areas_to_graph.length > 0){
-        for(let i = 0; i < max_days; i++){
-            if(i == 0){
-                if(typeof ready_to_graph[i] != 'undefined')
-                    ready_to_graph[i][growth.label] = accumulateFrom
-            }
-            else if(typeof ready_to_graph[i] != 'undefined')
-                ready_to_graph[i][growth.label] = (ready_to_graph[i - 1][growth.label] * growth.value).toFixed(0)
-             
-        }
-    }
-    else{
-        ready_to_graph.push({})
-        for(let i = 0; i < max_days; i++){
-            ready_to_graph[0].num_day = i
-        }
-    }
+
 
 
     if(areas_to_graph.length == 0) return (
@@ -123,7 +102,7 @@ const CumulativeGraph = ({
                     <Label value={`Days since ${accumulateFrom}th ${field == 'confirmed' ? 'case': 'death'}`} offset={5} position="bottom" />
                 </XAxis>
                 {Object.keys(ready_to_graph[0])
-                    .filter(key => key != 'num_day' && key != growth.label)
+                    .filter(key => key != 'num_day')
                     .map( (key, i) => {
                         return <Line 
                             type="monotone" 
@@ -135,15 +114,7 @@ const CumulativeGraph = ({
                             isAnimationActive={false}
                             />
                     })
-                }
-
-                {
-                    areas_to_graph.length > 0 ? (
-                        <Line type="monotone" stroke='#aaa' 
-                            dataKey={growth.label} strokeOpacity={0.25} dot={false} strokeWidth={3} isAnimationActive={false}/>
-                    ): <></>
-                }
-                
+                }                
                 <Tooltip content={CumulativeGraphTooltip}/>
                 <Legend align="right" verticalAlign="middle" layout="vertical" iconType="square"/>
             

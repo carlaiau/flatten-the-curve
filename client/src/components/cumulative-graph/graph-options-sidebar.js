@@ -12,9 +12,6 @@ const GraphOptionsSideBar = ({
     scale, 
     accumulateFrom,
     accumulateOptions,
-    growth,
-    growth_options,
-    
     scaleFn,    // Callback for linear / log
     caseFn,
     checkFn,    // Callback for country select or non
@@ -86,16 +83,6 @@ const GraphOptionsSideBar = ({
                     <div className="select">
                     <select value={accumulateFrom} onChange={caseFn}>
                         { accumulateOptions.map((option, i) => <option key={i} value={option}>{option}</option>) }
-                    </select>
-                    </div>
-                </div>
-            </div>
-            <div className="field ">
-                <label className="label">{field == 'confirmed' ? 'Case' : 'Death'} {growth.label.includes('%') ? 'daily growth' :'doubling rate'}</label>
-                <div className="control">
-                    <div className="select">
-                    <select value={growth.value} onChange={growthFn}>
-                        { growth_options.map( (option, i) => <option key={i} value={option.value}>{option.label}</option>) }
                     </select>
                     </div>
                 </div>
