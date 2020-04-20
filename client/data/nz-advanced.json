@@ -1,19 +1,351 @@
 [
   {
+    "name": "Bay of Plenty",
+    "highest": {
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 25,
+      "probable": 11,
+      "confirmed": 14,
+      "ages": {
+        "50 to 59": 6,
+        "40 to 49": 2,
+        "5 to 9": 1,
+        "30 to 39": 3,
+        "20 to 29": 6,
+        "1 to 4": 2,
+        "15 to 19": 1,
+        "60 to 69": 3,
+        "70+": 1
+      }
+    },
+    "time_series": [
+      {
+        "dateObject": "2020-04-01T00:00:00.000Z",
+        "dateForSort": "20200401",
+        "total": 5,
+        "confirmed": 5,
+        "probable": 0,
+        "ages": {
+          "20 to 29": 2,
+          "60 to 69": 2,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-02T00:00:00.000Z",
+        "dateForSort": "20200402",
+        "total": 9,
+        "probable": 1,
+        "confirmed": 8,
+        "ages": {
+          "20 to 29": 3,
+          "50 to 59": 2,
+          "30 to 39": 1,
+          "60 to 69": 2,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-03T00:00:00.000Z",
+        "dateForSort": "20200403",
+        "total": 10,
+        "probable": 2,
+        "confirmed": 8,
+        "ages": {
+          "20 to 29": 4,
+          "50 to 59": 2,
+          "30 to 39": 1,
+          "60 to 69": 2,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-04T00:00:00.000Z",
+        "dateForSort": "20200404",
+        "total": 10,
+        "probable": 2,
+        "confirmed": 8,
+        "ages": {
+          "20 to 29": 4,
+          "50 to 59": 2,
+          "30 to 39": 1,
+          "60 to 69": 2,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-05T00:00:00.000Z",
+        "dateForSort": "20200405",
+        "total": 11,
+        "probable": 2,
+        "confirmed": 9,
+        "ages": {
+          "60 to 69": 3,
+          "20 to 29": 4,
+          "50 to 59": 2,
+          "30 to 39": 1,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-06T00:00:00.000Z",
+        "dateForSort": "20200406",
+        "total": 15,
+        "probable": 4,
+        "confirmed": 11,
+        "ages": {
+          "20 to 29": 5,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "50 to 59": 2,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-07T00:00:00.000Z",
+        "dateForSort": "20200407",
+        "total": 16,
+        "probable": 4,
+        "confirmed": 12,
+        "ages": {
+          "50 to 59": 3,
+          "20 to 29": 5,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-08T00:00:00.000Z",
+        "dateForSort": "20200408",
+        "total": 16,
+        "probable": 4,
+        "confirmed": 12,
+        "ages": {
+          "50 to 59": 3,
+          "20 to 29": 5,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 18,
+        "probable": 6,
+        "confirmed": 12,
+        "ages": {
+          "1 to 4": 2,
+          "50 to 59": 3,
+          "20 to 29": 5,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-10T00:00:00.000Z",
+        "dateForSort": "20200410",
+        "total": 20,
+        "probable": 7,
+        "confirmed": 13,
+        "ages": {
+          "20 to 29": 6,
+          "50 to 59": 4,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-11T00:00:00.000Z",
+        "dateForSort": "20200411",
+        "total": 20,
+        "probable": 7,
+        "confirmed": 13,
+        "ages": {
+          "20 to 29": 6,
+          "50 to 59": 4,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-12T00:00:00.000Z",
+        "dateForSort": "20200412",
+        "total": 20,
+        "probable": 7,
+        "confirmed": 13,
+        "ages": {
+          "20 to 29": 6,
+          "50 to 59": 4,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-13T00:00:00.000Z",
+        "dateForSort": "20200413",
+        "total": 20,
+        "probable": 7,
+        "confirmed": 13,
+        "ages": {
+          "20 to 29": 6,
+          "50 to 59": 4,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-14T00:00:00.000Z",
+        "dateForSort": "20200414",
+        "total": 23,
+        "probable": 10,
+        "confirmed": 13,
+        "ages": {
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "50 to 59": 5,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-15T00:00:00.000Z",
+        "dateForSort": "20200415",
+        "total": 23,
+        "probable": 10,
+        "confirmed": 13,
+        "ages": {
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "50 to 59": 5,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-16T00:00:00.000Z",
+        "dateForSort": "20200416",
+        "total": 23,
+        "probable": 10,
+        "confirmed": 13,
+        "ages": {
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "50 to 59": 5,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-17T00:00:00.000Z",
+        "dateForSort": "20200417",
+        "total": 24,
+        "probable": 11,
+        "confirmed": 13,
+        "ages": {
+          "40 to 49": 2,
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "50 to 59": 5,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-18T00:00:00.000Z",
+        "dateForSort": "20200418",
+        "total": 24,
+        "probable": 11,
+        "confirmed": 13,
+        "ages": {
+          "40 to 49": 2,
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "50 to 59": 5,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 25,
+        "probable": 11,
+        "confirmed": 14,
+        "ages": {
+          "50 to 59": 6,
+          "40 to 49": 2,
+          "5 to 9": 1,
+          "30 to 39": 3,
+          "20 to 29": 6,
+          "1 to 4": 2,
+          "15 to 19": 1,
+          "60 to 69": 3,
+          "70+": 1
+        }
+      }
+    ]
+  },
+  {
     "name": "Canterbury",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 89,
-      "probable": 45,
-      "confirmed": 44,
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 92,
+      "probable": 46,
+      "confirmed": 46,
       "ages": {
+        "15 to 19": 1,
+        "20 to 29": 13,
         "70+": 20,
-        "60 to 69": 1,
+        "60 to 69": 10,
         "15 to 19": 2,
         "50 to 59": 11,
-        "20 to 29": 12,
-        "60 to 69": 9,
         "10 to 14": 4,
         "40 to 49": 10,
         "30 to 39": 19,
@@ -318,11 +650,29 @@
         "confirmed": 44,
         "ages": {
           "70+": 20,
-          "60 to 69": 1,
+          "60 to 69": 10,
           "15 to 19": 2,
           "50 to 59": 11,
           "20 to 29": 12,
-          "60 to 69": 9,
+          "10 to 14": 4,
+          "40 to 49": 10,
+          "30 to 39": 19,
+          "1 to 4": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 92,
+        "probable": 46,
+        "confirmed": 46,
+        "ages": {
+          "15 to 19": 1,
+          "20 to 29": 13,
+          "70+": 20,
+          "60 to 69": 10,
+          "15 to 19": 2,
+          "50 to 59": 11,
           "10 to 14": 4,
           "40 to 49": 10,
           "30 to 39": 19,
@@ -332,319 +682,149 @@
     ]
   },
   {
-    "name": "Counties Manukau",
+    "name": "South Canterbury",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 50,
-      "probable": 12,
-      "confirmed": 38,
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 6,
+      "probable": 0,
+      "confirmed": 6,
       "ages": {
-        "70+": 2,
-        "60 to 69": 7,
-        "50 to 59": 12,
-        "20 to 29": 11,
-        "40 to 49": 8,
-        "15 to 19": 4,
-        "30 to 39": 4,
-        "5 to 9": 1,
-        "10 to 14": 1
+        "50 to 59": 1,
+        "70+": 1,
+        "40 to 49": 2,
+        "30 to 39": 2
       }
     },
     "time_series": [
       {
-        "dateObject": "2020-04-01T00:00:00.000Z",
-        "dateForSort": "20200401",
-        "total": 3,
-        "confirmed": 3,
-        "probable": 0,
-        "ages": {
-          "20 to 29": 2,
-          "60 to 69": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-02T00:00:00.000Z",
-        "dateForSort": "20200402",
-        "total": 8,
-        "probable": 1,
-        "confirmed": 7,
-        "ages": {
-          "50 to 59": 2,
-          "30 to 39": 1,
-          "60 to 69": 2,
-          "15 to 19": 1,
-          "20 to 29": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-03T00:00:00.000Z",
-        "dateForSort": "20200403",
-        "total": 13,
-        "probable": 1,
-        "confirmed": 12,
-        "ages": {
-          "20 to 29": 4,
-          "50 to 59": 3,
-          "60 to 69": 3,
-          "10 to 14": 1,
-          "30 to 39": 1,
-          "15 to 19": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-04T00:00:00.000Z",
-        "dateForSort": "20200404",
-        "total": 16,
-        "probable": 2,
-        "confirmed": 14,
-        "ages": {
-          "20 to 29": 6,
-          "30 to 39": 2,
-          "50 to 59": 3,
-          "60 to 69": 3,
-          "10 to 14": 1,
-          "15 to 19": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-05T00:00:00.000Z",
-        "dateForSort": "20200405",
-        "total": 25,
-        "probable": 5,
-        "confirmed": 20,
-        "ages": {
-          "20 to 29": 8,
-          "40 to 49": 5,
-          "15 to 19": 2,
-          "50 to 59": 4,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "10 to 14": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-06T00:00:00.000Z",
-        "dateForSort": "20200406",
-        "total": 32,
-        "probable": 8,
-        "confirmed": 24,
-        "ages": {
-          "50 to 59": 7,
-          "20 to 29": 9,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "40 to 49": 5,
-          "15 to 19": 2,
-          "60 to 69": 3,
-          "10 to 14": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-07T00:00:00.000Z",
-        "dateForSort": "20200407",
-        "total": 34,
-        "probable": 9,
-        "confirmed": 25,
-        "ages": {
-          "60 to 69": 4,
-          "50 to 59": 8,
-          "20 to 29": 9,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "40 to 49": 5,
-          "15 to 19": 2,
-          "10 to 14": 1
-        }
-      },
-      {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
-        "total": 36,
-        "probable": 9,
-        "confirmed": 27,
+        "total": 1,
+        "confirmed": 1,
+        "probable": 0,
         "ages": {
-          "40 to 49": 6,
-          "20 to 29": 10,
-          "60 to 69": 4,
-          "50 to 59": 8,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "15 to 19": 2,
-          "10 to 14": 1
+          "30 to 39": 1
         }
       },
       {
         "dateObject": "2020-04-09T00:00:00.000Z",
         "dateForSort": "20200409",
-        "total": 41,
-        "probable": 9,
-        "confirmed": 32,
+        "total": 1,
+        "confirmed": 1,
+        "probable": 0,
         "ages": {
-          "15 to 19": 4,
-          "40 to 49": 7,
-          "60 to 69": 5,
-          "50 to 59": 9,
-          "20 to 29": 10,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "30 to 39": 1
         }
       },
       {
         "dateObject": "2020-04-10T00:00:00.000Z",
         "dateForSort": "20200410",
-        "total": 42,
-        "probable": 9,
-        "confirmed": 33,
+        "total": 1,
+        "confirmed": 1,
+        "probable": 0,
         "ages": {
-          "50 to 59": 10,
-          "15 to 19": 4,
-          "40 to 49": 7,
-          "60 to 69": 5,
-          "20 to 29": 10,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "30 to 39": 1
         }
       },
       {
         "dateObject": "2020-04-11T00:00:00.000Z",
         "dateForSort": "20200411",
-        "total": 43,
-        "probable": 9,
-        "confirmed": 34,
+        "total": 2,
+        "probable": 0,
+        "confirmed": 2,
         "ages": {
-          "50 to 59": 11,
-          "15 to 19": 4,
-          "40 to 49": 7,
-          "60 to 69": 5,
-          "20 to 29": 10,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-12T00:00:00.000Z",
         "dateForSort": "20200412",
-        "total": 44,
-        "probable": 10,
-        "confirmed": 34,
+        "total": 2,
+        "probable": 0,
+        "confirmed": 2,
         "ages": {
-          "40 to 49": 8,
-          "50 to 59": 11,
-          "15 to 19": 4,
-          "60 to 69": 5,
-          "20 to 29": 10,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-13T00:00:00.000Z",
         "dateForSort": "20200413",
-        "total": 45,
-        "probable": 11,
-        "confirmed": 34,
+        "total": 2,
+        "probable": 0,
+        "confirmed": 2,
         "ages": {
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "50 to 59": 11,
-          "15 to 19": 4,
-          "60 to 69": 5,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-14T00:00:00.000Z",
         "dateForSort": "20200414",
-        "total": 48,
-        "probable": 12,
-        "confirmed": 36,
+        "total": 3,
+        "probable": 0,
+        "confirmed": 3,
         "ages": {
-          "60 to 69": 7,
-          "50 to 59": 12,
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "15 to 19": 4,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "40 to 49": 1,
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-15T00:00:00.000Z",
         "dateForSort": "20200415",
-        "total": 48,
-        "probable": 12,
-        "confirmed": 36,
+        "total": 4,
+        "probable": 0,
+        "confirmed": 4,
         "ages": {
-          "60 to 69": 7,
-          "50 to 59": 12,
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "15 to 19": 4,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "40 to 49": 2,
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-16T00:00:00.000Z",
         "dateForSort": "20200416",
-        "total": 49,
-        "probable": 12,
-        "confirmed": 37,
+        "total": 4,
+        "probable": 0,
+        "confirmed": 4,
         "ages": {
-          "70+": 1,
-          "60 to 69": 7,
-          "50 to 59": 12,
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "15 to 19": 4,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "40 to 49": 2,
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-17T00:00:00.000Z",
         "dateForSort": "20200417",
-        "total": 49,
-        "probable": 12,
-        "confirmed": 37,
+        "total": 5,
+        "probable": 0,
+        "confirmed": 5,
         "ages": {
           "70+": 1,
-          "60 to 69": 7,
-          "50 to 59": 12,
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "15 to 19": 4,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "40 to 49": 2,
+          "30 to 39": 2
         }
       },
       {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
-        "total": 50,
-        "probable": 12,
-        "confirmed": 38,
+        "total": 5,
+        "probable": 0,
+        "confirmed": 5,
         "ages": {
-          "70+": 2,
-          "60 to 69": 7,
-          "50 to 59": 12,
-          "20 to 29": 11,
-          "40 to 49": 8,
-          "15 to 19": 4,
-          "30 to 39": 4,
-          "5 to 9": 1,
-          "10 to 14": 1
+          "70+": 1,
+          "40 to 49": 2,
+          "30 to 39": 2
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 6,
+        "probable": 0,
+        "confirmed": 6,
+        "ages": {
+          "50 to 59": 1,
+          "70+": 1,
+          "40 to 49": 2,
+          "30 to 39": 2
         }
       }
     ]
@@ -652,18 +832,18 @@
   {
     "name": "Waitemata",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 109,
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 110,
       "probable": 48,
-      "confirmed": 61,
+      "confirmed": 62,
       "ages": {
+        "60 to 69": 11,
         "30 to 39": 14,
         "5 to 9": 2,
         "20 to 29": 26,
         "50 to 59": 24,
         "70+": 7,
-        "60 to 69": 10,
         "40 to 49": 14,
         "15 to 19": 5,
         "10 to 14": 7
@@ -970,6 +1150,360 @@
           "15 to 19": 5,
           "10 to 14": 7
         }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 110,
+        "probable": 48,
+        "confirmed": 62,
+        "ages": {
+          "60 to 69": 11,
+          "30 to 39": 14,
+          "5 to 9": 2,
+          "20 to 29": 26,
+          "50 to 59": 24,
+          "70+": 7,
+          "40 to 49": 14,
+          "15 to 19": 5,
+          "10 to 14": 7
+        }
+      }
+    ]
+  },
+  {
+    "name": "Counties Manukau",
+    "highest": {
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 51,
+      "probable": 12,
+      "confirmed": 39,
+      "ages": {
+        "70+": 3,
+        "60 to 69": 7,
+        "50 to 59": 12,
+        "20 to 29": 11,
+        "40 to 49": 8,
+        "15 to 19": 4,
+        "30 to 39": 4,
+        "5 to 9": 1,
+        "10 to 14": 1
+      }
+    },
+    "time_series": [
+      {
+        "dateObject": "2020-04-01T00:00:00.000Z",
+        "dateForSort": "20200401",
+        "total": 3,
+        "confirmed": 3,
+        "probable": 0,
+        "ages": {
+          "20 to 29": 2,
+          "60 to 69": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-02T00:00:00.000Z",
+        "dateForSort": "20200402",
+        "total": 8,
+        "probable": 1,
+        "confirmed": 7,
+        "ages": {
+          "50 to 59": 2,
+          "30 to 39": 1,
+          "60 to 69": 2,
+          "15 to 19": 1,
+          "20 to 29": 2
+        }
+      },
+      {
+        "dateObject": "2020-04-03T00:00:00.000Z",
+        "dateForSort": "20200403",
+        "total": 13,
+        "probable": 1,
+        "confirmed": 12,
+        "ages": {
+          "20 to 29": 4,
+          "50 to 59": 3,
+          "60 to 69": 3,
+          "10 to 14": 1,
+          "30 to 39": 1,
+          "15 to 19": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-04T00:00:00.000Z",
+        "dateForSort": "20200404",
+        "total": 16,
+        "probable": 2,
+        "confirmed": 14,
+        "ages": {
+          "20 to 29": 6,
+          "30 to 39": 2,
+          "50 to 59": 3,
+          "60 to 69": 3,
+          "10 to 14": 1,
+          "15 to 19": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-05T00:00:00.000Z",
+        "dateForSort": "20200405",
+        "total": 25,
+        "probable": 5,
+        "confirmed": 20,
+        "ages": {
+          "20 to 29": 8,
+          "40 to 49": 5,
+          "15 to 19": 2,
+          "50 to 59": 4,
+          "30 to 39": 2,
+          "60 to 69": 3,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-06T00:00:00.000Z",
+        "dateForSort": "20200406",
+        "total": 32,
+        "probable": 8,
+        "confirmed": 24,
+        "ages": {
+          "50 to 59": 7,
+          "20 to 29": 9,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "40 to 49": 5,
+          "15 to 19": 2,
+          "60 to 69": 3,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-07T00:00:00.000Z",
+        "dateForSort": "20200407",
+        "total": 34,
+        "probable": 9,
+        "confirmed": 25,
+        "ages": {
+          "60 to 69": 4,
+          "50 to 59": 8,
+          "20 to 29": 9,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "40 to 49": 5,
+          "15 to 19": 2,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-08T00:00:00.000Z",
+        "dateForSort": "20200408",
+        "total": 36,
+        "probable": 9,
+        "confirmed": 27,
+        "ages": {
+          "40 to 49": 6,
+          "20 to 29": 10,
+          "60 to 69": 4,
+          "50 to 59": 8,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "15 to 19": 2,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-09T00:00:00.000Z",
+        "dateForSort": "20200409",
+        "total": 41,
+        "probable": 9,
+        "confirmed": 32,
+        "ages": {
+          "15 to 19": 4,
+          "40 to 49": 7,
+          "60 to 69": 5,
+          "50 to 59": 9,
+          "20 to 29": 10,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-10T00:00:00.000Z",
+        "dateForSort": "20200410",
+        "total": 42,
+        "probable": 9,
+        "confirmed": 33,
+        "ages": {
+          "50 to 59": 10,
+          "15 to 19": 4,
+          "40 to 49": 7,
+          "60 to 69": 5,
+          "20 to 29": 10,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-11T00:00:00.000Z",
+        "dateForSort": "20200411",
+        "total": 43,
+        "probable": 9,
+        "confirmed": 34,
+        "ages": {
+          "50 to 59": 11,
+          "15 to 19": 4,
+          "40 to 49": 7,
+          "60 to 69": 5,
+          "20 to 29": 10,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-12T00:00:00.000Z",
+        "dateForSort": "20200412",
+        "total": 44,
+        "probable": 10,
+        "confirmed": 34,
+        "ages": {
+          "40 to 49": 8,
+          "50 to 59": 11,
+          "15 to 19": 4,
+          "60 to 69": 5,
+          "20 to 29": 10,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-13T00:00:00.000Z",
+        "dateForSort": "20200413",
+        "total": 45,
+        "probable": 11,
+        "confirmed": 34,
+        "ages": {
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "50 to 59": 11,
+          "15 to 19": 4,
+          "60 to 69": 5,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-14T00:00:00.000Z",
+        "dateForSort": "20200414",
+        "total": 48,
+        "probable": 12,
+        "confirmed": 36,
+        "ages": {
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-15T00:00:00.000Z",
+        "dateForSort": "20200415",
+        "total": 48,
+        "probable": 12,
+        "confirmed": 36,
+        "ages": {
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-16T00:00:00.000Z",
+        "dateForSort": "20200416",
+        "total": 49,
+        "probable": 12,
+        "confirmed": 37,
+        "ages": {
+          "70+": 1,
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-17T00:00:00.000Z",
+        "dateForSort": "20200417",
+        "total": 49,
+        "probable": 12,
+        "confirmed": 37,
+        "ages": {
+          "70+": 1,
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-18T00:00:00.000Z",
+        "dateForSort": "20200418",
+        "total": 51,
+        "probable": 12,
+        "confirmed": 39,
+        "ages": {
+          "70+": 3,
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 51,
+        "probable": 12,
+        "confirmed": 39,
+        "ages": {
+          "70+": 3,
+          "60 to 69": 7,
+          "50 to 59": 12,
+          "20 to 29": 11,
+          "40 to 49": 8,
+          "15 to 19": 4,
+          "30 to 39": 4,
+          "5 to 9": 1,
+          "10 to 14": 1
+        }
       }
     ]
   },
@@ -1128,6 +1662,18 @@
       {
         "dateObject": "2020-04-17T00:00:00.000Z",
         "dateForSort": "20200417",
+        "total": 5,
+        "probable": 1,
+        "confirmed": 4,
+        "ages": {
+          "40 to 49": 1,
+          "60 to 69": 3,
+          "50 to 59": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 5,
         "probable": 1,
         "confirmed": 4,
@@ -1389,8 +1935,8 @@
         }
       },
       {
-        "dateObject": "2020-04-18T00:00:00.000Z",
-        "dateForSort": "20200418",
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 14,
         "probable": 3,
         "confirmed": 11,
@@ -1402,138 +1948,19 @@
           "10 to 14": 1,
           "30 to 39": 2
         }
-      }
-    ]
-  },
-  {
-    "name": "South Canterbury",
-    "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 5,
-      "probable": 0,
-      "confirmed": 5,
-      "ages": {
-        "70+": 1,
-        "40 to 49": 2,
-        "30 to 39": 2
-      }
-    },
-    "time_series": [
-      {
-        "dateObject": "2020-04-08T00:00:00.000Z",
-        "dateForSort": "20200408",
-        "total": 1,
-        "confirmed": 1,
-        "probable": 0,
-        "ages": {
-          "30 to 39": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-09T00:00:00.000Z",
-        "dateForSort": "20200409",
-        "total": 1,
-        "confirmed": 1,
-        "probable": 0,
-        "ages": {
-          "30 to 39": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-10T00:00:00.000Z",
-        "dateForSort": "20200410",
-        "total": 1,
-        "confirmed": 1,
-        "probable": 0,
-        "ages": {
-          "30 to 39": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-11T00:00:00.000Z",
-        "dateForSort": "20200411",
-        "total": 2,
-        "probable": 0,
-        "confirmed": 2,
-        "ages": {
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-12T00:00:00.000Z",
-        "dateForSort": "20200412",
-        "total": 2,
-        "probable": 0,
-        "confirmed": 2,
-        "ages": {
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-13T00:00:00.000Z",
-        "dateForSort": "20200413",
-        "total": 2,
-        "probable": 0,
-        "confirmed": 2,
-        "ages": {
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-14T00:00:00.000Z",
-        "dateForSort": "20200414",
-        "total": 3,
-        "probable": 0,
-        "confirmed": 3,
-        "ages": {
-          "40 to 49": 1,
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-15T00:00:00.000Z",
-        "dateForSort": "20200415",
-        "total": 4,
-        "probable": 0,
-        "confirmed": 4,
-        "ages": {
-          "40 to 49": 2,
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-16T00:00:00.000Z",
-        "dateForSort": "20200416",
-        "total": 4,
-        "probable": 0,
-        "confirmed": 4,
-        "ages": {
-          "40 to 49": 2,
-          "30 to 39": 2
-        }
-      },
-      {
-        "dateObject": "2020-04-17T00:00:00.000Z",
-        "dateForSort": "20200417",
-        "total": 5,
-        "probable": 0,
-        "confirmed": 5,
-        "ages": {
-          "70+": 1,
-          "40 to 49": 2,
-          "30 to 39": 2
-        }
       },
       {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
-        "total": 5,
-        "probable": 0,
-        "confirmed": 5,
+        "total": 14,
+        "probable": 3,
+        "confirmed": 11,
         "ages": {
-          "70+": 1,
-          "40 to 49": 2,
+          "70+": 2,
+          "50 to 59": 1,
+          "20 to 29": 6,
+          "15 to 19": 2,
+          "10 to 14": 1,
           "30 to 39": 2
         }
       }
@@ -1740,6 +2167,17 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 5,
+        "probable": 0,
+        "confirmed": 5,
+        "ages": {
+          "20 to 29": 3,
+          "30 to 39": 2
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 5,
@@ -1755,18 +2193,17 @@
   {
     "name": "Auckland",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
       "total": 81,
       "probable": 35,
       "confirmed": 46,
       "ages": {
-        "40 to 49": 1,
+        "40 to 49": 10,
         "30 to 39": 12,
         "70+": 9,
         "1 to 4": 3,
         "50 to 59": 7,
-        "40 to 49": 9,
         "20 to 29": 21,
         "60 to 69": 12,
         "5 to 9": 3,
@@ -2092,12 +2529,30 @@
         "probable": 35,
         "confirmed": 46,
         "ages": {
-          "40 to 49": 1,
+          "40 to 49": 10,
           "30 to 39": 12,
           "70+": 9,
           "1 to 4": 3,
           "50 to 59": 7,
-          "40 to 49": 9,
+          "20 to 29": 21,
+          "60 to 69": 12,
+          "5 to 9": 3,
+          "10 to 14": 3,
+          "15 to 19": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 81,
+        "probable": 35,
+        "confirmed": 46,
+        "ages": {
+          "40 to 49": 10,
+          "30 to 39": 12,
+          "70+": 9,
+          "1 to 4": 3,
+          "50 to 59": 7,
           "20 to 29": 21,
           "60 to 69": 12,
           "5 to 9": 3,
@@ -2402,6 +2857,23 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 33,
+        "probable": 16,
+        "confirmed": 17,
+        "ages": {
+          "30 to 39": 9,
+          "40 to 49": 6,
+          "60 to 69": 3,
+          "50 to 59": 6,
+          "15 to 19": 3,
+          "20 to 29": 4,
+          "5 to 9": 1,
+          "1 to 4": 1
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 33,
@@ -2423,19 +2895,19 @@
   {
     "name": "Northland",
     "highest": {
-      "dateObject": "2020-04-17T00:00:00.000Z",
-      "dateForSort": "20200417",
-      "total": 15,
-      "probable": 1,
+      "dateObject": "2020-04-18T00:00:00.000Z",
+      "dateForSort": "20200418",
+      "total": 16,
+      "probable": 2,
       "confirmed": 14,
       "ages": {
+        "50 to 59": 3,
         "70+": 2,
         "10 to 14": 2,
         "30 to 39": 2,
         "40 to 49": 4,
         "20 to 29": 1,
-        "60 to 69": 2,
-        "50 to 59": 2
+        "60 to 69": 2
       }
     },
     "time_series": [
@@ -2672,35 +3144,51 @@
         }
       },
       {
-        "dateObject": "2020-04-18T00:00:00.000Z",
-        "dateForSort": "20200418",
-        "total": 15,
-        "probable": 1,
+        "dateObject": "2020-04-17T00:00:00.000Z",
+        "dateForSort": "20200417",
+        "total": 16,
+        "probable": 2,
         "confirmed": 14,
         "ages": {
+          "50 to 59": 3,
           "70+": 2,
           "10 to 14": 2,
           "30 to 39": 2,
           "40 to 49": 4,
           "20 to 29": 1,
-          "60 to 69": 2,
-          "50 to 59": 2
+          "60 to 69": 2
         }
       },
       {
-        "dateObject": "2020-04-17T00:00:00.000Z",
-        "dateForSort": "20200417",
-        "total": 15,
-        "probable": 1,
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 16,
+        "probable": 2,
         "confirmed": 14,
         "ages": {
+          "50 to 59": 3,
           "70+": 2,
           "10 to 14": 2,
           "30 to 39": 2,
           "40 to 49": 4,
           "20 to 29": 1,
-          "60 to 69": 2,
-          "50 to 59": 2
+          "60 to 69": 2
+        }
+      },
+      {
+        "dateObject": "2020-04-18T00:00:00.000Z",
+        "dateForSort": "20200418",
+        "total": 16,
+        "probable": 2,
+        "confirmed": 14,
+        "ages": {
+          "50 to 59": 3,
+          "70+": 2,
+          "10 to 14": 2,
+          "30 to 39": 2,
+          "40 to 49": 4,
+          "20 to 29": 1,
+          "60 to 69": 2
         }
       }
     ]
@@ -3039,6 +3527,25 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 116,
+        "probable": 27,
+        "confirmed": 89,
+        "ages": {
+          "20 to 29": 33,
+          "<1": 2,
+          "10 to 14": 4,
+          "15 to 19": 9,
+          "30 to 39": 18,
+          "50 to 59": 28,
+          "40 to 49": 9,
+          "60 to 69": 9,
+          "5 to 9": 1,
+          "70+": 3
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 116,
@@ -3096,6 +3603,17 @@
       {
         "dateObject": "2020-04-13T00:00:00.000Z",
         "dateForSort": "20200413",
+        "total": 2,
+        "probable": 1,
+        "confirmed": 1,
+        "ages": {
+          "50 to 59": 1,
+          "40 to 49": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 2,
         "probable": 1,
         "confirmed": 1,
@@ -3374,6 +3892,23 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 26,
+        "probable": 6,
+        "confirmed": 20,
+        "ages": {
+          "40 to 49": 2,
+          "70+": 4,
+          "20 to 29": 5,
+          "15 to 19": 3,
+          "30 to 39": 5,
+          "60 to 69": 4,
+          "50 to 59": 2,
+          "1 to 4": 1
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 26,
@@ -3480,12 +4015,13 @@
   {
     "name": "Waikato",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 77,
-      "probable": 32,
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "total": 78,
+      "probable": 33,
       "confirmed": 45,
       "ages": {
+        "20 to 29": 1,
         "50 to 59": 14,
         "20 to 29": 17,
         "1 to 4": 4,
@@ -3838,319 +4374,26 @@
           "15 to 19": 4,
           "10 to 14": 1
         }
-      }
-    ]
-  },
-  {
-    "name": "Bay of Plenty",
-    "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "total": 24,
-      "probable": 12,
-      "confirmed": 12,
-      "ages": {
-        "40 to 49": 2,
-        "5 to 9": 1,
-        "30 to 39": 3,
-        "50 to 59": 5,
-        "20 to 29": 6,
-        "1 to 4": 2,
-        "15 to 19": 1,
-        "60 to 69": 3,
-        "70+": 1
-      }
-    },
-    "time_series": [
-      {
-        "dateObject": "2020-04-01T00:00:00.000Z",
-        "dateForSort": "20200401",
-        "total": 5,
-        "confirmed": 5,
-        "probable": 0,
-        "ages": {
-          "20 to 29": 2,
-          "60 to 69": 2,
-          "70+": 1
-        }
       },
       {
-        "dateObject": "2020-04-02T00:00:00.000Z",
-        "dateForSort": "20200402",
-        "total": 9,
-        "probable": 1,
-        "confirmed": 8,
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 78,
+        "probable": 33,
+        "confirmed": 45,
         "ages": {
-          "20 to 29": 3,
-          "50 to 59": 2,
-          "30 to 39": 1,
-          "60 to 69": 2,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-03T00:00:00.000Z",
-        "dateForSort": "20200403",
-        "total": 10,
-        "probable": 2,
-        "confirmed": 8,
-        "ages": {
-          "20 to 29": 4,
-          "50 to 59": 2,
-          "30 to 39": 1,
-          "60 to 69": 2,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-04T00:00:00.000Z",
-        "dateForSort": "20200404",
-        "total": 10,
-        "probable": 2,
-        "confirmed": 8,
-        "ages": {
-          "20 to 29": 4,
-          "50 to 59": 2,
-          "30 to 39": 1,
-          "60 to 69": 2,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-05T00:00:00.000Z",
-        "dateForSort": "20200405",
-        "total": 11,
-        "probable": 3,
-        "confirmed": 8,
-        "ages": {
-          "60 to 69": 3,
-          "20 to 29": 4,
-          "50 to 59": 2,
-          "30 to 39": 1,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-06T00:00:00.000Z",
-        "dateForSort": "20200406",
-        "total": 15,
-        "probable": 5,
-        "confirmed": 10,
-        "ages": {
-          "20 to 29": 5,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "50 to 59": 2,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-07T00:00:00.000Z",
-        "dateForSort": "20200407",
-        "total": 16,
-        "probable": 5,
-        "confirmed": 11,
-        "ages": {
-          "50 to 59": 3,
-          "20 to 29": 5,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-08T00:00:00.000Z",
-        "dateForSort": "20200408",
-        "total": 16,
-        "probable": 5,
-        "confirmed": 11,
-        "ages": {
-          "50 to 59": 3,
-          "20 to 29": 5,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-09T00:00:00.000Z",
-        "dateForSort": "20200409",
-        "total": 18,
-        "probable": 7,
-        "confirmed": 11,
-        "ages": {
-          "1 to 4": 2,
-          "50 to 59": 3,
-          "20 to 29": 5,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-10T00:00:00.000Z",
-        "dateForSort": "20200410",
-        "total": 20,
-        "probable": 8,
-        "confirmed": 12,
-        "ages": {
-          "20 to 29": 6,
-          "50 to 59": 4,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-11T00:00:00.000Z",
-        "dateForSort": "20200411",
-        "total": 20,
-        "probable": 8,
-        "confirmed": 12,
-        "ages": {
-          "20 to 29": 6,
-          "50 to 59": 4,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-12T00:00:00.000Z",
-        "dateForSort": "20200412",
-        "total": 20,
-        "probable": 8,
-        "confirmed": 12,
-        "ages": {
-          "20 to 29": 6,
-          "50 to 59": 4,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-13T00:00:00.000Z",
-        "dateForSort": "20200413",
-        "total": 20,
-        "probable": 8,
-        "confirmed": 12,
-        "ages": {
-          "20 to 29": 6,
-          "50 to 59": 4,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "30 to 39": 2,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-14T00:00:00.000Z",
-        "dateForSort": "20200414",
-        "total": 23,
-        "probable": 11,
-        "confirmed": 12,
-        "ages": {
-          "5 to 9": 1,
-          "30 to 39": 3,
-          "50 to 59": 5,
-          "20 to 29": 6,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-15T00:00:00.000Z",
-        "dateForSort": "20200415",
-        "total": 23,
-        "probable": 11,
-        "confirmed": 12,
-        "ages": {
-          "5 to 9": 1,
-          "30 to 39": 3,
-          "50 to 59": 5,
-          "20 to 29": 6,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-16T00:00:00.000Z",
-        "dateForSort": "20200416",
-        "total": 23,
-        "probable": 11,
-        "confirmed": 12,
-        "ages": {
-          "5 to 9": 1,
-          "30 to 39": 3,
-          "50 to 59": 5,
-          "20 to 29": 6,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "40 to 49": 1,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-17T00:00:00.000Z",
-        "dateForSort": "20200417",
-        "total": 24,
-        "probable": 12,
-        "confirmed": 12,
-        "ages": {
-          "40 to 49": 2,
-          "5 to 9": 1,
-          "30 to 39": 3,
-          "50 to 59": 5,
-          "20 to 29": 6,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "60 to 69": 3,
-          "70+": 1
-        }
-      },
-      {
-        "dateObject": "2020-04-18T00:00:00.000Z",
-        "dateForSort": "20200418",
-        "total": 24,
-        "probable": 12,
-        "confirmed": 12,
-        "ages": {
-          "40 to 49": 2,
-          "5 to 9": 1,
-          "30 to 39": 3,
-          "50 to 59": 5,
-          "20 to 29": 6,
-          "1 to 4": 2,
-          "15 to 19": 1,
-          "60 to 69": 3,
-          "70+": 1
+          "20 to 29": 1,
+          "50 to 59": 14,
+          "20 to 29": 17,
+          "1 to 4": 4,
+          "5 to 9": 3,
+          "30 to 39": 14,
+          "<1": 1,
+          "40 to 49": 8,
+          "70+": 4,
+          "60 to 69": 7,
+          "15 to 19": 4,
+          "10 to 14": 1
         }
       }
     ]
@@ -4256,6 +4499,21 @@
       {
         "dateObject": "2020-04-07T00:00:00.000Z",
         "dateForSort": "20200407",
+        "total": 22,
+        "probable": 11,
+        "confirmed": 11,
+        "ages": {
+          "10 to 14": 2,
+          "40 to 49": 5,
+          "50 to 59": 4,
+          "70+": 5,
+          "30 to 39": 3,
+          "20 to 29": 3
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 22,
         "probable": 11,
         "confirmed": 11,
@@ -4500,6 +4758,19 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 6,
+        "probable": 2,
+        "confirmed": 4,
+        "ages": {
+          "15 to 19": 1,
+          "40 to 49": 1,
+          "20 to 29": 3,
+          "50 to 59": 1
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 6,
@@ -4686,6 +4957,16 @@
       {
         "dateObject": "2020-04-01T00:00:00.000Z",
         "dateForSort": "20200401",
+        "total": 1,
+        "confirmed": 1,
+        "probable": 0,
+        "ages": {
+          "30 to 39": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 1,
         "confirmed": 1,
         "probable": 0,
@@ -4931,6 +5212,17 @@
         }
       },
       {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "total": 2,
+        "probable": 1,
+        "confirmed": 1,
+        "ages": {
+          "40 to 49": 1,
+          "30 to 39": 1
+        }
+      },
+      {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
         "total": 2,
@@ -5092,6 +5384,17 @@
       {
         "dateObject": "2020-04-02T00:00:00.000Z",
         "dateForSort": "20200402",
+        "total": 2,
+        "confirmed": 0,
+        "probable": 2,
+        "ages": {
+          "50 to 59": 1,
+          "40 to 49": 1
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
         "total": 2,
         "confirmed": 0,
         "probable": 2,
@@ -5281,25 +5584,25 @@
   {
     "name": "All",
     "highest": {
-      "dateObject": "2020-04-18T00:00:00.000Z",
-      "dateForSort": "20200418",
-      "confirmed": 429,
-      "total": 684,
-      "probable": 255,
+      "dateObject": "2020-04-19T00:00:00.000Z",
+      "dateForSort": "20200419",
+      "confirmed": 436,
+      "total": 693,
+      "probable": 257,
       "ages": {
-        "70+": 60,
-        "60 to 69": 1,
-        "15 to 19": 35,
-        "50 to 59": 120,
-        "20 to 29": 151,
-        "60 to 69": 69,
-        "10 to 14": 25,
-        "40 to 49": 84,
-        "30 to 39": 111,
-        "1 to 4": 12,
+        "50 to 59": 123,
+        "40 to 49": 85,
         "5 to 9": 12,
-        "40 to 49": 1,
-        "<1": 3
+        "30 to 39": 111,
+        "20 to 29": 152,
+        "1 to 4": 12,
+        "15 to 19": 35,
+        "60 to 69": 71,
+        "70+": 61,
+        "15 to 19": 1,
+        "10 to 14": 25,
+        "<1": 3,
+        "20 to 29": 1
       }
     },
     "time_series": [
@@ -5310,13 +5613,13 @@
         "total": 74,
         "probable": 13,
         "ages": {
-          "30 to 39": 14,
-          "50 to 59": 15,
           "20 to 29": 19,
           "60 to 69": 15,
+          "70+": 2,
+          "30 to 39": 14,
+          "50 to 59": 15,
           "15 to 19": 1,
           "40 to 49": 5,
-          "70+": 2,
           "10 to 14": 2,
           "1 to 4": 1
         }
@@ -5328,14 +5631,14 @@
         "total": 156,
         "probable": 37,
         "ages": {
-          "40 to 49": 12,
-          "70+": 5,
+          "20 to 29": 40,
           "50 to 59": 36,
-          "15 to 19": 6,
           "30 to 39": 27,
           "60 to 69": 24,
+          "70+": 5,
+          "40 to 49": 12,
+          "15 to 19": 6,
           "1 to 4": 4,
-          "20 to 29": 40,
           "10 to 14": 2
         }
       },
@@ -5346,14 +5649,14 @@
         "total": 229,
         "probable": 55,
         "ages": {
-          "40 to 49": 19,
+          "20 to 29": 55,
           "50 to 59": 51,
+          "30 to 39": 36,
           "60 to 69": 35,
           "70+": 12,
-          "30 to 39": 36,
+          "40 to 49": 19,
           "15 to 19": 12,
           "1 to 4": 4,
-          "20 to 29": 55,
           "10 to 14": 5
         }
       },
@@ -5364,14 +5667,14 @@
         "total": 307,
         "probable": 85,
         "ages": {
-          "40 to 49": 26,
-          "70+": 28,
-          "60 to 69": 40,
-          "30 to 39": 49,
+          "20 to 29": 71,
           "50 to 59": 62,
+          "30 to 39": 49,
+          "60 to 69": 40,
+          "70+": 28,
+          "40 to 49": 26,
           "15 to 19": 14,
           "1 to 4": 5,
-          "20 to 29": 71,
           "10 to 14": 10,
           "5 to 9": 2
         }
@@ -5379,16 +5682,16 @@
       {
         "dateObject": "2020-04-05T00:00:00.000Z",
         "dateForSort": "20200405",
-        "confirmed": 264,
+        "confirmed": 265,
         "total": 377,
-        "probable": 113,
+        "probable": 112,
         "ages": {
-          "20 to 29": 88,
-          "30 to 39": 61,
-          "40 to 49": 36,
-          "70+": 33,
           "60 to 69": 49,
+          "20 to 29": 88,
           "50 to 59": 69,
+          "30 to 39": 61,
+          "70+": 33,
+          "40 to 49": 36,
           "15 to 19": 19,
           "1 to 4": 5,
           "10 to 14": 13,
@@ -5399,79 +5702,79 @@
       {
         "dateObject": "2020-04-06T00:00:00.000Z",
         "dateForSort": "20200406",
-        "confirmed": 294,
+        "confirmed": 295,
         "total": 430,
-        "probable": 136,
+        "probable": 135,
         "ages": {
           "20 to 29": 100,
-          "50 to 59": 80,
-          "60 to 69": 52,
-          "30 to 39": 74,
-          "70+": 35,
-          "40 to 49": 41,
           "15 to 19": 22,
+          "40 to 49": 41,
+          "30 to 39": 74,
+          "60 to 69": 52,
+          "50 to 59": 80,
+          "70+": 35,
           "1 to 4": 6,
-          "5 to 9": 6,
           "10 to 14": 13,
+          "5 to 9": 6,
           "<1": 1
         }
       },
       {
         "dateObject": "2020-04-07T00:00:00.000Z",
         "dateForSort": "20200407",
-        "confirmed": 318,
+        "confirmed": 319,
         "total": 467,
-        "probable": 149,
+        "probable": 148,
         "ages": {
-          "30 to 39": 79,
           "50 to 59": 91,
           "20 to 29": 109,
+          "15 to 19": 24,
+          "40 to 49": 47,
+          "30 to 39": 79,
           "60 to 69": 54,
           "70+": 36,
-          "40 to 49": 47,
-          "15 to 19": 24,
           "1 to 4": 6,
-          "5 to 9": 6,
           "10 to 14": 14,
+          "5 to 9": 6,
           "<1": 1
         }
       },
       {
         "dateObject": "2020-04-08T00:00:00.000Z",
         "dateForSort": "20200408",
-        "confirmed": 335,
+        "confirmed": 336,
         "total": 494,
-        "probable": 159,
+        "probable": 158,
         "ages": {
-          "60 to 69": 56,
-          "20 to 29": 116,
-          "30 to 39": 85,
           "50 to 59": 93,
-          "70+": 36,
-          "40 to 49": 56,
+          "20 to 29": 116,
           "15 to 19": 25,
+          "40 to 49": 56,
+          "30 to 39": 85,
+          "60 to 69": 56,
+          "70+": 36,
           "1 to 4": 6,
-          "5 to 9": 6,
           "10 to 14": 14,
+          "5 to 9": 6,
           "<1": 1
         }
       },
       {
         "dateObject": "2020-04-09T00:00:00.000Z",
         "dateForSort": "20200409",
-        "confirmed": 365,
+        "confirmed": 366,
         "total": 539,
-        "probable": 174,
+        "probable": 173,
         "ages": {
-          "20 to 29": 127,
-          "30 to 39": 92,
+          "1 to 4": 9,
           "50 to 59": 96,
+          "20 to 29": 127,
+          "15 to 19": 29,
           "40 to 49": 62,
-          "10 to 14": 18,
+          "30 to 39": 92,
           "60 to 69": 59,
           "70+": 39,
-          "15 to 19": 29,
-          "1 to 4": 9,
+          "10 to 14": 18,
           "5 to 9": 7,
           "<1": 1
         }
@@ -5479,19 +5782,19 @@
       {
         "dateObject": "2020-04-10T00:00:00.000Z",
         "dateForSort": "20200410",
-        "confirmed": 373,
+        "confirmed": 374,
         "total": 566,
-        "probable": 193,
+        "probable": 192,
         "ages": {
-          "30 to 39": 97,
-          "50 to 59": 99,
           "20 to 29": 136,
+          "50 to 59": 99,
+          "1 to 4": 9,
+          "15 to 19": 30,
           "40 to 49": 66,
-          "10 to 14": 18,
+          "30 to 39": 97,
           "60 to 69": 60,
           "70+": 43,
-          "15 to 19": 30,
-          "1 to 4": 9,
+          "10 to 14": 18,
           "5 to 9": 7,
           "<1": 1
         }
@@ -5499,19 +5802,19 @@
       {
         "dateObject": "2020-04-11T00:00:00.000Z",
         "dateForSort": "20200411",
-        "confirmed": 385,
+        "confirmed": 386,
         "total": 591,
-        "probable": 206,
+        "probable": 205,
         "ages": {
+          "20 to 29": 141,
+          "50 to 59": 103,
+          "1 to 4": 10,
+          "15 to 19": 30,
           "40 to 49": 72,
           "30 to 39": 102,
-          "50 to 59": 103,
-          "20 to 29": 141,
-          "10 to 14": 19,
           "60 to 69": 60,
           "70+": 43,
-          "15 to 19": 30,
-          "1 to 4": 10,
+          "10 to 14": 19,
           "5 to 9": 9,
           "<1": 2
         }
@@ -5519,19 +5822,19 @@
       {
         "dateObject": "2020-04-12T00:00:00.000Z",
         "dateForSort": "20200412",
-        "confirmed": 396,
+        "confirmed": 397,
         "total": 612,
-        "probable": 216,
+        "probable": 215,
         "ages": {
-          "10 to 14": 21,
+          "20 to 29": 142,
+          "50 to 59": 107,
+          "1 to 4": 10,
+          "15 to 19": 31,
           "40 to 49": 78,
           "30 to 39": 104,
-          "50 to 59": 107,
-          "20 to 29": 142,
           "60 to 69": 64,
           "70+": 44,
-          "15 to 19": 31,
-          "1 to 4": 10,
+          "10 to 14": 21,
           "5 to 9": 9,
           "<1": 2
         }
@@ -5539,19 +5842,19 @@
       {
         "dateObject": "2020-04-13T00:00:00.000Z",
         "dateForSort": "20200413",
-        "confirmed": 400,
+        "confirmed": 401,
         "total": 624,
-        "probable": 224,
+        "probable": 223,
         "ages": {
-          "60 to 69": 65,
-          "10 to 14": 24,
+          "20 to 29": 143,
+          "50 to 59": 109,
+          "1 to 4": 10,
+          "15 to 19": 33,
           "40 to 49": 78,
           "30 to 39": 104,
-          "50 to 59": 109,
-          "20 to 29": 143,
+          "60 to 69": 65,
           "70+": 47,
-          "15 to 19": 33,
-          "1 to 4": 10,
+          "10 to 14": 24,
           "5 to 9": 9,
           "<1": 2
         }
@@ -5559,103 +5862,123 @@
       {
         "dateObject": "2020-04-14T00:00:00.000Z",
         "dateForSort": "20200414",
-        "confirmed": 404,
+        "confirmed": 405,
         "total": 637,
-        "probable": 233,
+        "probable": 232,
         "ages": {
-          "20 to 29": 145,
-          "60 to 69": 67,
-          "10 to 14": 24,
-          "40 to 49": 79,
+          "5 to 9": 10,
           "30 to 39": 107,
           "50 to 59": 113,
-          "70+": 47,
-          "15 to 19": 33,
+          "20 to 29": 145,
           "1 to 4": 10,
-          "5 to 9": 10,
+          "15 to 19": 33,
+          "40 to 49": 79,
+          "60 to 69": 67,
+          "70+": 47,
+          "10 to 14": 24,
           "<1": 2
         }
       },
       {
         "dateObject": "2020-04-15T00:00:00.000Z",
         "dateForSort": "20200415",
-        "confirmed": 408,
+        "confirmed": 409,
         "total": 647,
-        "probable": 239,
+        "probable": 238,
         "ages": {
-          "20 to 29": 146,
-          "60 to 69": 68,
-          "10 to 14": 24,
-          "40 to 49": 81,
+          "5 to 9": 11,
           "30 to 39": 107,
           "50 to 59": 115,
-          "70+": 48,
-          "15 to 19": 34,
+          "20 to 29": 146,
           "1 to 4": 11,
-          "5 to 9": 11,
+          "15 to 19": 34,
+          "40 to 49": 81,
+          "60 to 69": 68,
+          "70+": 48,
+          "10 to 14": 24,
           "<1": 2
         }
       },
       {
         "dateObject": "2020-04-16T00:00:00.000Z",
         "dateForSort": "20200416",
-        "confirmed": 420,
+        "confirmed": 421,
         "total": 664,
-        "probable": 244,
+        "probable": 243,
         "ages": {
-          "15 to 19": 35,
-          "50 to 59": 118,
-          "70+": 55,
-          "20 to 29": 147,
-          "60 to 69": 69,
-          "10 to 14": 25,
-          "40 to 49": 82,
-          "30 to 39": 108,
-          "1 to 4": 12,
           "5 to 9": 11,
+          "30 to 39": 108,
+          "50 to 59": 118,
+          "20 to 29": 147,
+          "1 to 4": 12,
+          "15 to 19": 35,
+          "40 to 49": 82,
+          "60 to 69": 69,
+          "70+": 55,
+          "10 to 14": 25,
           "<1": 2
         }
       },
       {
         "dateObject": "2020-04-17T00:00:00.000Z",
         "dateForSort": "20200417",
-        "confirmed": 425,
-        "total": 675,
+        "confirmed": 426,
+        "total": 676,
         "probable": 250,
         "ages": {
-          "15 to 19": 35,
-          "50 to 59": 119,
-          "70+": 58,
-          "20 to 29": 149,
-          "60 to 69": 69,
-          "10 to 14": 25,
           "40 to 49": 84,
-          "30 to 39": 110,
-          "1 to 4": 12,
           "5 to 9": 11,
+          "30 to 39": 110,
+          "50 to 59": 120,
+          "20 to 29": 149,
+          "1 to 4": 12,
+          "15 to 19": 35,
+          "60 to 69": 69,
+          "70+": 58,
+          "10 to 14": 25,
           "<1": 3
         }
       },
       {
         "dateObject": "2020-04-18T00:00:00.000Z",
         "dateForSort": "20200418",
-        "confirmed": 429,
-        "total": 684,
+        "confirmed": 431,
+        "total": 686,
         "probable": 255,
         "ages": {
-          "70+": 60,
-          "60 to 69": 1,
-          "15 to 19": 35,
-          "50 to 59": 120,
-          "20 to 29": 151,
-          "60 to 69": 69,
-          "10 to 14": 25,
-          "40 to 49": 84,
-          "30 to 39": 111,
-          "1 to 4": 12,
+          "40 to 49": 85,
           "5 to 9": 12,
-          "40 to 49": 1,
+          "30 to 39": 111,
+          "50 to 59": 121,
+          "20 to 29": 151,
+          "1 to 4": 12,
+          "15 to 19": 35,
+          "60 to 69": 70,
+          "70+": 61,
+          "10 to 14": 25,
           "<1": 3
+        }
+      },
+      {
+        "dateObject": "2020-04-19T00:00:00.000Z",
+        "dateForSort": "20200419",
+        "confirmed": 436,
+        "total": 693,
+        "probable": 257,
+        "ages": {
+          "50 to 59": 123,
+          "40 to 49": 85,
+          "5 to 9": 12,
+          "30 to 39": 111,
+          "20 to 29": 152,
+          "1 to 4": 12,
+          "15 to 19": 35,
+          "60 to 69": 71,
+          "70+": 61,
+          "15 to 19": 1,
+          "10 to 14": 25,
+          "<1": 3,
+          "20 to 29": 1
         }
       }
     ]
