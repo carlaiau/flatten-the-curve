@@ -91,12 +91,17 @@ export default class CountryPage extends React.Component{
 
                       <tbody>
                       <tr >
-                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right', paddingTop: '15px'}}>{this.tidyFormat(latest.confirmed_per_mil.toFixed(0))}</th>
+                          <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right', paddingTop: '15px'}}>
+                            {
+                            this.tidyFormat( ( latest.confirmed / ( active_country.population / 1000000 ) ).toFixed(0))
+                            }
+                          </th>
                           <td className="is-size-6" style={{paddingTop: '15px', verticalAlign: 'middle'}}>Cases per million</td>
                       </tr>
                       {active_country.highest_deaths && active_country.highest_deaths > 10 ?
                         <tr>
-                            <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>{this.tidyFormat(latest.deaths_per_mil.toFixed(1))}</th>
+                            <th className="is-size-4" style={{paddingRight: '5px', textAlign: 'right'}}>{
+                              this.tidyFormat( ( latest.deaths / (active_country.population / 1000000) ).toFixed(1) )}</th>
                             <td className="is-size-6" style={{verticalAlign: 'middle'}}>Deaths per million</td>
                         </tr>
                       :<></> }
