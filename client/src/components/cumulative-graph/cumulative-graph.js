@@ -11,8 +11,7 @@ const CumulativeGraph = ({
     height, 
     width, 
     areas_to_graph = [], 
-    field = 'confirmed', 
-    max_days = 30, 
+    field = 'confirmed',  
     scale="log",
     accumulateFrom
 

@@ -82,7 +82,7 @@ const NZRegionalView = ({width, height}) => {
             <div className="column is-one-third-desktop is-full-tablet">
               <div className="box has-background-success">
                   <h3 className="is-size-4 title has-text-white title">
-                    April cases by DHB
+                    April and May cases by DHB
                   </h3>
                   <p className="is-size-6 subtitle has-text-white">
                     We use the Ministry of Health current case data found 
@@ -101,6 +101,9 @@ const NZRegionalView = ({width, height}) => {
                       These comparisons are based on the case report date not when they are announced.
                       If a case have been reported for the same day as the 1pm national update they are included in the previous days results.
                     </p>
+                    <p className="has-text-white is-size-7" style={{marginTop: '10px'}}>
+                      If a region case count isn't changing I have a bug related to the outputting of the dates after the flattening occured.
+                    </p>
               </div>
               <EnhancedTable 
                 rows={rows} 
@@ -113,7 +116,7 @@ const NZRegionalView = ({width, height}) => {
             </div>
             <div className="column is-two-thirds-desktop is-full-tablet">
               <p className="title is-size-4" >
-                April total and confirmed cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
+                April and May total and confirmed cases {activeRegion == 'All' ? 'nationwide' : 'in ' + activeRegion + ' DHB'} 
               </p>
               <GraphHeader className="field is-horizontal" style={{width: "100%", justifyContent: 'flex-end'}}>
                 

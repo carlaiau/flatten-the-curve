@@ -417,7 +417,7 @@ const validKey = (key) => key != 'Country/Region' && key != 'Province/State' && 
 // Country Logic = Cumulative number of cases, by number of days since 100th case
 // Death Logic = cumulative number of deaths, by number of days since 10th deaths
 const getCumulatives = (areas) => {
-  const max_days = 50
+  const max_days = 80
   const output_areas = []
 
   const confirmed_ranges = [100, 250, 500, 1000, 5000]
