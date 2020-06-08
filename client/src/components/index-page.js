@@ -49,17 +49,10 @@ export default class IndexPage extends React.Component {
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
+                <p style={{ marginTop: '10px' }}><strong>June 8</strong></p>
+                <p><Link to='/new-zealand'>New Zealand</Link> is offically out of lockdown with zero active cases. International and US data updated.</p>
                 <p style={{ marginTop: '10px' }}><strong>May 22</strong></p>
                 <p><Link to='/new-zealand'>New Zealand</Link> DHB level and test data removed. We crushed the curve! </p>
-                <p style={{ marginTop: '10px' }}><strong>April 9</strong></p>
-                <p>Global Recovery data and <Link to='/new-zealand'>New Zealand</Link> test data.</p>
-                <p><strong>April 4</strong></p>
-                <p>State level graphs for <Link to='/united-states'>United States</Link>,{' '}
-                    <Link to='/canada'>Canada</Link>,{' '}
-                    <Link to='/australia'>Australia</Link> and {' '}
-                    <Link to='/china'>China</Link>.</p>
-                <p><strong>April 3</strong></p>
-                <p>Regional data and demographics for <Link to='/new-zealand'>New Zealand</Link>.</p>
                 <p style={{ marginTop: '10px' }}>
                     Please contact <a href="https://carlaiau.com/#section-4">us</a> with any feedback or requests.</p>
             </div>
