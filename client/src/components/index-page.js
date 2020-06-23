@@ -49,6 +49,8 @@ export default class IndexPage extends React.Component {
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
+                <p style={{ marginTop: '10px' }}><strong>June 22</strong></p>
+                <p><Link to='/new-zealand'>New Zealand</Link> has a few active cases. Site will be updated more regularly.</p>
                 <p style={{ marginTop: '10px' }}><strong>June 8</strong></p>
                 <p><Link to='/new-zealand'>New Zealand</Link> is offically out of lockdown with zero active cases. International and US data updated.</p>
                 <p style={{ marginTop: '10px' }}><strong>May 22</strong></p>
