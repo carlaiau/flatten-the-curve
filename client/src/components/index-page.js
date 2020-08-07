@@ -49,15 +49,14 @@ export default class IndexPage extends React.Component {
                 <h2 className="is-size-3">
                     <strong className="has-text-white">Updates</strong>
                 </h2>
+                <p style={{ marginTop: '10px' }}><strong>August 7</strong></p>
+                <p>Updated with recent data and changed the accumulation base values. Data not free from bugs.</p>
                 <p style={{ marginTop: '10px' }}><strong>June 22</strong></p>
                 <p><Link to='/new-zealand'>New Zealand</Link> has a few active cases. Site will be updated more regularly.</p>
                 <p style={{ marginTop: '10px' }}><strong>June 8</strong></p>
                 <p><Link to='/new-zealand'>New Zealand</Link> is offically out of lockdown with zero active cases. International and US data updated.</p>
-                <p style={{ marginTop: '10px' }}><strong>May 22</strong></p>
-                <p><Link to='/new-zealand'>New Zealand</Link> DHB level and test data removed. We crushed the curve! </p>
-                <p style={{ marginTop: '10px' }}>
-                    Please contact <a href="https://carlaiau.com/#section-4">us</a> with any feedback or requests.</p>
             </div>
+
         )
 
         return (
@@ -86,23 +85,23 @@ export default class IndexPage extends React.Component {
                                 </div>
                             </div>
                         </div>
+
                         <CumulativeGraphContainer
                             width={this.props.cum_width}
                             height={this.props.cum_height}
                             field="confirmed"
                             checkedAreas={[
-                                'Singapore',
-                                'China',
                                 'Italy',
+                                'Germany',
+                                'Sweden',
+                                'Brazil',
+                                'India',
                                 'Spain',
-                                'Iran',
-                                'South Korea',
-                                'Australia',
                                 'United States',
                                 'United Kingdom',
                             ]}
-                            accumulateFrom={500}
-                            accumulateOptions={[100, 250, 500, 1000, 5000]}
+                            accumulateFrom={50000}
+                            accumulateOptions={[1000, 5000, 10000, 50000, 100000]}
 
 
                         />
@@ -129,8 +128,8 @@ export default class IndexPage extends React.Component {
                                 'United States',
                                 'United Kingdom',
                             ]}
-                            accumulateFrom={50}
-                            accumulateOptions={[10, 50, 100, 250, 500]}
+                            accumulateFrom={1000}
+                            accumulateOptions={[100, 500, 1000, 5000, 10000]}
 
                         />
                         <div className="columns">

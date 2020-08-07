@@ -78,23 +78,23 @@ const GlobalContextProvider = ({ children }) => {
     countries: countries.nodes,
     select_countries: select_countries.nodes,
     cumulative_confirmed: {
-      100: confirmed.map((node) => mapFn(node, 'confirmed', 0)),
-      250: confirmed.map((node) => mapFn(node, 'confirmed', 1)),
-      500: confirmed.map((node) => mapFn(node, 'confirmed', 2)),
-      1000: confirmed.map((node) => mapFn(node, 'confirmed', 3)),
-      5000: confirmed.map((node) => mapFn(node, 'confirmed', 4)),
+      1000: confirmed.map((node) => mapFn(node, 'confirmed', 0)),
+      5000: confirmed.map((node) => mapFn(node, 'confirmed', 1)),
+      10000: confirmed.map((node) => mapFn(node, 'confirmed', 2)),
+      50000: confirmed.map((node) => mapFn(node, 'confirmed', 3)),
+      100000: confirmed.map((node) => mapFn(node, 'confirmed', 4)),
 
     },
     cumulative_deaths: {
-      10: deaths.map((node) => mapFn(node, 'deaths', 0)),
-      50: deaths.map((node) => mapFn(node, 'deaths', 1)),
-      100: deaths.map((node) => mapFn(node, 'deaths', 2)),
-      250: deaths.map((node) => mapFn(node, 'deaths', 3)),
-      500: deaths.map((node) => mapFn(node, 'deaths', 4)),
+      100: deaths.map((node) => mapFn(node, 'deaths', 0)),
+      500: deaths.map((node) => mapFn(node, 'deaths', 1)),
+      1000: deaths.map((node) => mapFn(node, 'deaths', 2)),
+      5000: deaths.map((node) => mapFn(node, 'deaths', 3)),
+      10000: deaths.map((node) => mapFn(node, 'deaths', 4)),
     },
     update_times: {
-      global: "12:00am 23 June UTC",
-      us: "4:00pm 22 June ET"
+      global: "12:00am 06 August UTC",
+      us: "4:00pm 06 August ET"
     }
   });
 
